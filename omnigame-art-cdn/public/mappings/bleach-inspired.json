@@ -31,6 +31,12 @@
       "slug": "razor-grimclaw",
       "canonicalName": "Grimmjow Jaegerjaquez",
       "inGameId": "grimmjow"
+    },
+    {
+      "codename": "Tactical Scholar",
+      "slug": "tactical-scholar",
+      "canonicalName": "Nanao Ise",
+      "inGameId": "nanao"
     }
   ]
 }
