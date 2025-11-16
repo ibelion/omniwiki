@@ -1,0 +1,14 @@
+{
+  "name": "omnigame-art-cdn",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Static AI-generated, fan-made artwork for Omnigame. Not affiliated with or endorsed by any original IP holders.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
