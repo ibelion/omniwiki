@@ -82,5 +82,17 @@ public/
 
 ## Future Notes
 
+### For Kodda: Site Structure Enhancement
+
+**Request:** Please make this site work like omnigames where it has different games/animes universes and make it expandable.
+
+**Details:**
+- The site should support multiple universes (games/animes) similar to how omnigames is structured
+- The architecture should be expandable to easily add new universes in the future
+- Consider how the UI/navigation should handle multiple universes
+- Ensure the current universe structure (`/universes/{universe-key}/`) can scale to support many universes
+
+---
+
 *Add specific decisions and changes here as they happen...*
 
