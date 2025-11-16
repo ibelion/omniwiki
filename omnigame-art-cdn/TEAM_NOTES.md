@@ -62,7 +62,9 @@ public/
 
 **Adding new art:**
 1. Generate/obtain AI art image
-2. Place in correct folder: `public/universes/{universe-key}/images/{codename-slug}/{variant-id}/{index}.png`
+2. **Manually copy/replace the image file in your file browser (Windows Explorer, Finder, etc.)** to the correct folder: `public/universes/{universe-key}/images/{codename-slug}/{variant-id}/{index}.png`
+   - Example: For Ichigo's base variant image #2, copy your PNG file to: `omnigame-art-cdn/public/universes/bleach-inspired/images/ember-soulblade/base/2.png`
+   - **Important:** You must physically place the file in the folder using your file browser - this is a manual file operation, not automatic
 3. Rebuild and redeploy: `npm run build` then deploy to Cloudflare Pages
 4. Verify: Open image URL in browser
 
