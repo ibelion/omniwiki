@@ -130,7 +130,7 @@ Rebuild and redeploy (same as Step 3 above).
 
 ## 🔮 Future Plans
 
-### For Kodda: Multi-Universe Support
+### With Kodda: Multi-Universe Support
 
 **What we want:** Make this site work like Omnigame, where you can have multiple universes (different games/animes) and easily add more in the future.
 
