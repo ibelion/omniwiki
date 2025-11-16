@@ -1,98 +1,156 @@
-# Team Notes - Development Log
+# Team Notes - Art CDN Project
 
-**Purpose:** Record specific decisions, changes, and notes made during development.
+**What is this?** This is our development log for the Omnigame Art CDN. Think of it as a notebook where we write down what we've done and how things work.
 
-**Last Updated:** 2025-01-27
-
-> **Note:** This file documents explicit decisions and changes. It's not a comprehensive guide - it's a log of what we did and why.
+**Last Updated:** January 27, 2025
 
 ---
 
-## 2025-01-27: Initial Art CDN Setup
+## 🎨 What We Built
 
-### What Changed
-- Created separate art CDN project for AI-generated artwork
-- Deployed to Cloudflare Pages at `https://omniart-184.pages.dev`
-- Implemented character codename mapping system for copyright compliance
+We created a separate website just for hosting AI-generated artwork for Omnigame. This keeps the art organized and makes it easy to add new images without touching the main game code.
 
-### Project Structure
-- **Base URL:** `https://omniart-184.pages.dev`
-- **Art Path:** `/universes/{universe-key}/images/{codename-slug}/{variant-id}/{index}.png`
-- **Mapping Path:** `/mappings/{universe-key}.json`
+**Live Site:** https://omniart-184.pages.dev
 
-### Character Codenames (Bleach)
+**Why?** We use codenames instead of real character names in file paths to stay on the safe side with copyright. The art is AI-generated and fan-made, but we want to be extra careful.
 
-| In-Game ID | Codename | Slug | Real Name (devs only) |
-|------------|----------|------|----------------------|
+---
+
+## 📁 How Files Are Organized
+
+All art lives at: `https://omniart-184.pages.dev/universes/bleach-inspired/images/`
+
+**The pattern is:**
+```
+/universes/{which-universe}/images/{character-codename}/{variant-type}/{image-number}.png
+```
+
+**Example:**
+- Ichigo's first base image: `/universes/bleach-inspired/images/ember-soulblade/base/1.png`
+- Ichigo's first bankai image: `/universes/bleach-inspired/images/ember-soulblade/bankai/1.png`
+
+---
+
+## 👥 Character Codenames (Bleach Universe)
+
+We use codenames for file paths, but keep the real names in a mapping file for developers:
+
+| What Omnigame Calls Them | Our Codename | Folder Name | Real Name (for reference) |
+|-------------------------|--------------|-------------|---------------------------|
 | `ichigo` | Ember Soulblade | `ember-soulblade` | Ichigo Kurosaki |
 | `rukia` | Frost Petal Reaper | `frost-petal-reaper` | Rukia Kuchiki |
 | `aizen` | Serene Schemer | `serene-schemer` | Sosuke Aizen |
 | `ulquiorra` | Void Gaze Sentinel | `void-gaze-sentinel` | Ulquiorra Cifer |
 | `grimmjow` | Razor Grimclaw | `razor-grimclaw` | Grimmjow Jaegerjaquez |
 
-**Mapping file:** `public/mappings/bleach-inspired.json`
+**Where to find the full list:** `public/mappings/bleach-inspired.json`
 
-### File Structure
+---
 
+## ✅ What Art We Have Right Now
+
+**Ichigo (Ember Soulblade):**
+- ✅ `base/1.png` - ✅ Working! You can see it on the site.
+- ⚠️ `base/2.png` - Not uploaded yet
+- ⚠️ `base/3.png` - Not uploaded yet
+- ⚠️ `bankai/1.png` - Not uploaded yet
+- ⚠️ `bankai/2.png` - Not uploaded yet
+- ⚠️ `bankai/3.png` - Not uploaded yet
+
+---
+
+## 📝 How to Add New Art (Step-by-Step)
+
+### Step 1: Get Your Image
+Generate or find your AI art image. Make sure it's a PNG file.
+
+### Step 2: Put It in the Right Place
+**This is important:** You need to manually copy the file using your file browser (Windows Explorer, Mac Finder, etc.).
+
+**Where to put it:**
 ```
-public/
-  universes/
-    bleach-inspired/
-      images/
-        {codename-slug}/
-          {variant-id}/
-            {index}.png
-  mappings/
-    bleach-inspired.json
+omnigame-art-cdn/public/universes/bleach-inspired/images/{codename-slug}/{variant-id}/{number}.png
 ```
 
-### Current Art Status
+**Real example:**
+If you want to add Ichigo's second base image, copy your PNG file to:
+```
+omnigame-art-cdn/public/universes/bleach-inspired/images/ember-soulblade/base/2.png
+```
 
-**Ichigo (ember-soulblade):**
-- ✅ `base/1.png` - uploaded and working
-- ⚠️ `base/2.png` - needs upload
-- ⚠️ `base/3.png` - needs upload
-- ⚠️ `bankai/1.png` - needs upload
-- ⚠️ `bankai/2.png` - needs upload
-- ⚠️ `bankai/3.png` - needs upload
+**⚠️ Important:** This is a manual step! You physically drag and drop (or copy/paste) the file into the folder using your computer's file browser. Nothing automatic happens here.
 
----
+### Step 3: Deploy It
+1. Open a terminal in the `omnigame-art-cdn` folder
+2. Run: `npm run build`
+3. Commit and push to GitHub (Cloudflare will automatically deploy it)
 
-## Notes for Teammates
+### Step 4: Check It Worked
+Open the image URL in your browser:
+```
+https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/base/2.png
+```
 
-**Adding new art:**
-1. Generate/obtain AI art image
-2. **Manually copy/replace the image file in your file browser (Windows Explorer, Finder, etc.)** to the correct folder: `public/universes/{universe-key}/images/{codename-slug}/{variant-id}/{index}.png`
-   - Example: For Ichigo's base variant image #2, copy your PNG file to: `omnigame-art-cdn/public/universes/bleach-inspired/images/ember-soulblade/base/2.png`
-   - **Important:** You must physically place the file in the folder using your file browser - this is a manual file operation, not automatic
-3. Rebuild and redeploy: `npm run build` then deploy to Cloudflare Pages
-4. Verify: Open image URL in browser
-
-**Adding new character codename:**
-1. Add entry to `public/mappings/{universe-key}.json`
-2. Create folder structure: `public/universes/{universe-key}/images/{codename-slug}/`
-3. Rebuild/redeploy
-
-**Rules:**
-- Always use codenames in file paths (never real character names)
-- Keep mapping JSON updated
-- Test image URLs after deployment
+If you see your image, you're done! 🎉
 
 ---
 
-## Future Notes
+## ➕ How to Add a New Character
 
-### For Kodda: Site Structure Enhancement
+### Step 1: Add to the Mapping File
+Edit `public/mappings/bleach-inspired.json` and add a new entry:
 
-**Request:** Please make this site work like omnigames where it has different games/animes universes and make it expandable.
+```json
+{
+  "codename": "Your Codename Here",
+  "slug": "your-codename-slug",
+  "canonicalName": "Real Character Name",
+  "inGameId": "game-id"
+}
+```
 
-**Details:**
-- The site should support multiple universes (games/animes) similar to how omnigames is structured
-- The architecture should be expandable to easily add new universes in the future
-- Consider how the UI/navigation should handle multiple universes
-- Ensure the current universe structure (`/universes/{universe-key}/`) can scale to support many universes
+### Step 2: Create the Folder
+Create the folder structure:
+```
+public/universes/bleach-inspired/images/your-codename-slug/
+```
+
+### Step 3: Deploy
+Rebuild and redeploy (same as Step 3 above).
 
 ---
 
-*Add specific decisions and changes here as they happen...*
+## 🚨 Important Rules
 
+1. **Always use codenames in file paths** - Never use real character names in folder/file names
+2. **Keep the mapping JSON updated** - If you add a character, update the mapping file too
+3. **Test after deploying** - Always check that your image URL works in a browser
+
+---
+
+## 🔮 Future Plans
+
+### For Kodda: Multi-Universe Support
+
+**What we want:** Make this site work like Omnigame, where you can have multiple universes (different games/animes) and easily add more in the future.
+
+**What that means:**
+- The site should support multiple universes (not just Bleach)
+- It should be easy to add new universes later
+- We need to think about how the website navigation will work with many universes
+- The current structure should be able to handle lots of universes without breaking
+
+**Current structure:** `/universes/{universe-key}/` - this should scale well, but we need to build the UI to support it.
+
+---
+
+## 📌 Quick Reference
+
+- **Live site:** https://omniart-184.pages.dev
+- **Mapping file:** `public/mappings/bleach-inspired.json`
+- **Art folder:** `public/universes/bleach-inspired/images/`
+- **Project folder:** `omnigame-art-cdn/`
+
+---
+
+*More notes will be added here as we make changes...*
