@@ -5,13 +5,14 @@
   "description": "Static AI-generated, fan-made artwork for Omnigame. Not affiliated with or endorsed by any original IP holders.",
   "scripts": {
     "dev": "vite",
-    "build": "npm run ingest:omnigame && vite build",
+    "build": "npm run generate:exports-index && npm run ingest:omnigame && vite build",
     "build:skip-ingest": "vite build",
     "preview": "vite preview",
     "ingest:omnigame": "ts-node importers/ingest.ts",
     "ingest:import": "ts-node importers/omnigame-import.ts",
     "ingest:update-index": "ts-node importers/update-universe-index.ts",
-    "export:omnigame": "ts-node src/exporters/omnigame/export.ts"
+    "export:omnigame": "ts-node src/exporters/omnigame/export.ts",
+    "generate:exports-index": "ts-node scripts/generate-exports-index.ts"
   },
   "devDependencies": {
     "vite": "^5.0.0",

@@ -32,6 +32,14 @@ export default defineConfig({
           copyDir(dataDir, distDataDir)
           console.log('✅ Copied data directory to dist')
         }
+        
+        // Copy exports to dist so they're served via CDN
+        const exportsDir = join(process.cwd(), 'exports', 'omnigame')
+        const distExportsDir = join(process.cwd(), 'dist', 'exports')
+        if (existsSync(exportsDir)) {
+          copyDir(exportsDir, distExportsDir)
+          console.log('✅ Copied exports directory to dist')
+        }
       }
     }
   ]
