@@ -1,0 +1,869 @@
+{
+  "universe": "hxh",
+  "characters": [
+    {
+      "id": "gon",
+      "name": "Gon Freecss",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "gon",
+        "gon freecss",
+        "freecss"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "killua",
+      "name": "Killua Zoldyck",
+      "universe": "hxh",
+      "tags": [
+        "Assassin",
+        "Zoldyck Family",
+        "killua",
+        "killua zoldyck",
+        "zoldyck"
+      ],
+      "metadata": {
+        "originalRole": "Assassin",
+        "originalFaction": "Zoldyck Family",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "kurapika",
+      "name": "Kurapika",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Kurta Clan",
+        "kurapika"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Kurta Clan",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "leorio",
+      "name": "Leorio Paradinight",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "leorio",
+        "leorio paradinight"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "hisoka",
+      "name": "Hisoka Morow",
+      "universe": "hxh",
+      "tags": [
+        "Magician",
+        "Phantom Troupe",
+        "hisoka",
+        "hisoka morow"
+      ],
+      "metadata": {
+        "originalRole": "Magician",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "illumi",
+      "name": "Illumi Zoldyck",
+      "universe": "hxh",
+      "tags": [
+        "Assassin",
+        "Zoldyck Family",
+        "illumi",
+        "illumi zoldyck"
+      ],
+      "metadata": {
+        "originalRole": "Assassin",
+        "originalFaction": "Zoldyck Family",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "chrollo",
+      "name": "Chrollo Lucilfer",
+      "universe": "hxh",
+      "tags": [
+        "Leader",
+        "Phantom Troupe",
+        "chrollo",
+        "chrollo lucilfer"
+      ],
+      "metadata": {
+        "originalRole": "Leader",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "feitan",
+      "name": "Feitan",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "feitan"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "phinks",
+      "name": "Phinks",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "phinks"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "machi",
+      "name": "Machi",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "machi"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "pakunoda",
+      "name": "Pakunoda",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "pakunoda"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "nobunaga",
+      "name": "Nobunaga Hazama",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "nobunaga",
+        "nobunaga hazama"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "shizuku",
+      "name": "Shizuku",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "shizuku"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "uvogin",
+      "name": "Uvogin",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "uvogin"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "shalnark",
+      "name": "Shalnark",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "shalnark"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "bonolenov",
+      "name": "Bonolenov",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "bonolenov"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "franklin",
+      "name": "Franklin",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "franklin"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "kortopi",
+      "name": "Kortopi",
+      "universe": "hxh",
+      "tags": [
+        "Member",
+        "Phantom Troupe",
+        "kortopi"
+      ],
+      "metadata": {
+        "originalRole": "Member",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "neneter",
+      "name": "Netero",
+      "universe": "hxh",
+      "tags": [
+        "Chairman",
+        "Hunter Association",
+        "netero",
+        "isaac netero"
+      ],
+      "metadata": {
+        "originalRole": "Chairman",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "biscuit",
+      "name": "Biscuit Krueger",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "biscuit",
+        "biscuit krueger",
+        "bisky"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "wing",
+      "name": "Wing",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "wing"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "zushi",
+      "name": "Zushi",
+      "universe": "hxh",
+      "tags": [
+        "Martial Artist",
+        "Heaven's Arena",
+        "zushi"
+      ],
+      "metadata": {
+        "originalRole": "Martial Artist",
+        "originalFaction": "Heaven's Arena",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "meruem",
+      "name": "Meruem",
+      "universe": "hxh",
+      "tags": [
+        "Chimera Ant King",
+        "Chimera Ants",
+        "meruem"
+      ],
+      "metadata": {
+        "originalRole": "Chimera Ant King",
+        "originalFaction": "Chimera Ants",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "pitou",
+      "name": "Neferpitou",
+      "universe": "hxh",
+      "tags": [
+        "Royal Guard",
+        "Chimera Ants",
+        "pitou",
+        "neferpitou"
+      ],
+      "metadata": {
+        "originalRole": "Royal Guard",
+        "originalFaction": "Chimera Ants",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "youpi",
+      "name": "Menthuthuyoupi",
+      "universe": "hxh",
+      "tags": [
+        "Royal Guard",
+        "Chimera Ants",
+        "youpi",
+        "menthuthuyoupi"
+      ],
+      "metadata": {
+        "originalRole": "Royal Guard",
+        "originalFaction": "Chimera Ants",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "pouf",
+      "name": "Shaiapouf",
+      "universe": "hxh",
+      "tags": [
+        "Royal Guard",
+        "Chimera Ants",
+        "pouf",
+        "shaiapouf"
+      ],
+      "metadata": {
+        "originalRole": "Royal Guard",
+        "originalFaction": "Chimera Ants",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "komugi",
+      "name": "Komugi",
+      "universe": "hxh",
+      "tags": [
+        "Gungi Player",
+        "NGL",
+        "komugi"
+      ],
+      "metadata": {
+        "originalRole": "Gungi Player",
+        "originalFaction": "NGL",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "knuckle",
+      "name": "Knuckle Bine",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "knuckle",
+        "knuckle bine"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "shoot",
+      "name": "Shoot McMahon",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "shoot",
+        "shoot mcmahon"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "palm",
+      "name": "Palm Siberia",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "palm",
+        "palm siberia"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "morel",
+      "name": "Morel Mackernasey",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "morel",
+        "morel mackernasey"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "knov",
+      "name": "Knov",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "knov"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "silva",
+      "name": "Silva Zoldyck",
+      "universe": "hxh",
+      "tags": [
+        "Assassin",
+        "Zoldyck Family",
+        "silva",
+        "silva zoldyck"
+      ],
+      "metadata": {
+        "originalRole": "Assassin",
+        "originalFaction": "Zoldyck Family",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "zeno",
+      "name": "Zeno Zoldyck",
+      "universe": "hxh",
+      "tags": [
+        "Assassin",
+        "Zoldyck Family",
+        "zeno",
+        "zeno zoldyck"
+      ],
+      "metadata": {
+        "originalRole": "Assassin",
+        "originalFaction": "Zoldyck Family",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "maha",
+      "name": "Maha Zoldyck",
+      "universe": "hxh",
+      "tags": [
+        "Assassin",
+        "Zoldyck Family",
+        "maha",
+        "maha zoldyck"
+      ],
+      "metadata": {
+        "originalRole": "Assassin",
+        "originalFaction": "Zoldyck Family",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "alluka",
+      "name": "Alluka Zoldyck",
+      "universe": "hxh",
+      "tags": [
+        "Zoldyck",
+        "Zoldyck Family",
+        "alluka",
+        "alluka zoldyck"
+      ],
+      "metadata": {
+        "originalRole": "Zoldyck",
+        "originalFaction": "Zoldyck Family",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "kalluto",
+      "name": "Kalluto Zoldyck",
+      "universe": "hxh",
+      "tags": [
+        "Assassin",
+        "Phantom Troupe",
+        "kalluto",
+        "kalluto zoldyck"
+      ],
+      "metadata": {
+        "originalRole": "Assassin",
+        "originalFaction": "Phantom Troupe",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "milluki",
+      "name": "Milluki Zoldyck",
+      "universe": "hxh",
+      "tags": [
+        "Assassin",
+        "Zoldyck Family",
+        "milluki",
+        "milluki zoldyck"
+      ],
+      "metadata": {
+        "originalRole": "Assassin",
+        "originalFaction": "Zoldyck Family",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "canary",
+      "name": "Canary",
+      "universe": "hxh",
+      "tags": [
+        "Butler",
+        "Zoldyck Family",
+        "canary"
+      ],
+      "metadata": {
+        "originalRole": "Butler",
+        "originalFaction": "Zoldyck Family",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "gotoh",
+      "name": "Gotoh",
+      "universe": "hxh",
+      "tags": [
+        "Butler",
+        "Zoldyck Family",
+        "gotoh"
+      ],
+      "metadata": {
+        "originalRole": "Butler",
+        "originalFaction": "Zoldyck Family",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "razor",
+      "name": "Razor",
+      "universe": "hxh",
+      "tags": [
+        "Criminal",
+        "Greed Island",
+        "razor"
+      ],
+      "metadata": {
+        "originalRole": "Criminal",
+        "originalFaction": "Greed Island",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "genthru",
+      "name": "Genthru",
+      "universe": "hxh",
+      "tags": [
+        "Bomber",
+        "Greed Island",
+        "genthru",
+        "little flower"
+      ],
+      "metadata": {
+        "originalRole": "Bomber",
+        "originalFaction": "Greed Island",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "goreinu",
+      "name": "Goreinu",
+      "universe": "hxh",
+      "tags": [
+        "Player",
+        "Greed Island",
+        "goreinu"
+      ],
+      "metadata": {
+        "originalRole": "Player",
+        "originalFaction": "Greed Island",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "pariston",
+      "name": "Pariston Hill",
+      "universe": "hxh",
+      "tags": [
+        "Vice Chairman",
+        "Hunter Association",
+        "pariston",
+        "pariston hill"
+      ],
+      "metadata": {
+        "originalRole": "Vice Chairman",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "cheadle",
+      "name": "Cheadle Yorkshire",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "cheadle",
+        "cheadle yorkshire"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "ginta",
+      "name": "Ginta",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "ginta"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "mizaistom",
+      "name": "Mizaistom Nana",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "mizaistom",
+        "mizaistom nana"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "saiyu",
+      "name": "Saiyu",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "saiyu"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "botobai",
+      "name": "Botobai Gigante",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "botobai",
+        "botobai gigante"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "ging",
+      "name": "Ging Freecss",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "ging",
+        "ging freecss"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "mito",
+      "name": "Mito Freecss",
+      "universe": "hxh",
+      "tags": [
+        "Guardian",
+        "Whale Island",
+        "mito",
+        "mito freecss"
+      ],
+      "metadata": {
+        "originalRole": "Guardian",
+        "originalFaction": "Whale Island",
+        "release_year": 1998,
+        "allImages": []
+      }
+    },
+    {
+      "id": "kite",
+      "name": "Kite",
+      "universe": "hxh",
+      "tags": [
+        "Hunter",
+        "Hunter Association",
+        "kite"
+      ],
+      "metadata": {
+        "originalRole": "Hunter",
+        "originalFaction": "Hunter Association",
+        "release_year": 1998,
+        "allImages": []
+      }
+    }
+  ]
+}

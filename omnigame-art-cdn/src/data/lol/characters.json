@@ -1,0 +1,5080 @@
+{
+  "universe": "lol",
+  "characters": [
+    {
+      "id": "266",
+      "name": "Aatrox",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "aatrox"
+      ],
+      "metadata": {
+        "ddKey": "Aatrox",
+        "roles": [
+          "Fighter"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Darkin",
+        "regions": [
+          "Runeterra",
+          "Shurima"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2013,
+        "allImages": []
+      }
+    },
+    {
+      "id": "103",
+      "name": "Ahri",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "ahri"
+      ],
+      "metadata": {
+        "ddKey": "Ahri",
+        "roles": [
+          "Mage",
+          "Assassin"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Vastayan",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "84",
+      "name": "Akali",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "akali"
+      ],
+      "metadata": {
+        "ddKey": "Akali",
+        "roles": [
+          "Assassin"
+        ],
+        "positions": [
+          "Mid",
+          "Top"
+        ],
+        "resource": "Energy",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "166",
+      "name": "Akshan",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "akshan"
+      ],
+      "metadata": {
+        "ddKey": "Akshan",
+        "roles": [
+          "Marksman",
+          "Assassin"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2021,
+        "allImages": []
+      }
+    },
+    {
+      "id": "12",
+      "name": "Alistar",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "alistar"
+      ],
+      "metadata": {
+        "ddKey": "Alistar",
+        "roles": [
+          "Tank",
+          "Support"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Minotaur",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "799",
+      "name": "Ambessa",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "ambessa"
+      ],
+      "metadata": {
+        "ddKey": "Ambessa",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Energy",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2024,
+        "allImages": []
+      }
+    },
+    {
+      "id": "32",
+      "name": "Amumu",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "amumu"
+      ],
+      "metadata": {
+        "ddKey": "Amumu",
+        "roles": [
+          "Tank",
+          "Support"
+        ],
+        "positions": [
+          "Jungle",
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "34",
+      "name": "Anivia",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "anivia"
+      ],
+      "metadata": {
+        "ddKey": "Anivia",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Spirit God",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "1",
+      "name": "Annie",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "annie"
+      ],
+      "metadata": {
+        "ddKey": "Annie",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Runeterra",
+          "Noxus"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "523",
+      "name": "Aphelios",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "aphelios"
+      ],
+      "metadata": {
+        "ddKey": "Aphelios",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Targon"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2019,
+        "allImages": []
+      }
+    },
+    {
+      "id": "22",
+      "name": "Ashe",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "ashe"
+      ],
+      "metadata": {
+        "ddKey": "Ashe",
+        "roles": [
+          "Marksman",
+          "Support"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "136",
+      "name": "Aurelion Sol",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "aurelion sol"
+      ],
+      "metadata": {
+        "ddKey": "AurelionSol",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Top",
+          "Jungle",
+          "Bottom",
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Celestial",
+        "regions": [
+          "Runeterra",
+          "Targon"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2016,
+        "allImages": []
+      }
+    },
+    {
+      "id": "893",
+      "name": "Aurora",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "aurora"
+      ],
+      "metadata": {
+        "ddKey": "Aurora",
+        "roles": [
+          "Mage",
+          "Assassin"
+        ],
+        "positions": [
+          "Mid",
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Bryni",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2024,
+        "allImages": []
+      }
+    },
+    {
+      "id": "268",
+      "name": "Azir",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "azir"
+      ],
+      "metadata": {
+        "ddKey": "Azir",
+        "roles": [
+          "Mage",
+          "Marksman"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "God-Warrior",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2014,
+        "allImages": []
+      }
+    },
+    {
+      "id": "432",
+      "name": "Bard",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "bard"
+      ],
+      "metadata": {
+        "ddKey": "Bard",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Celestial",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Support",
+        "release_year": 2015,
+        "allImages": []
+      }
+    },
+    {
+      "id": "200",
+      "name": "Bel'Veth",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "bel'veth"
+      ],
+      "metadata": {
+        "ddKey": "Belveth",
+        "roles": [
+          "Fighter"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Voidborn",
+        "regions": [
+          "Void",
+          "Shurima"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2022,
+        "allImages": []
+      }
+    },
+    {
+      "id": "53",
+      "name": "Blitzcrank",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "blitzcrank"
+      ],
+      "metadata": {
+        "ddKey": "Blitzcrank",
+        "roles": [
+          "Tank",
+          "Support"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Techmaturgical Golem",
+        "regions": [
+          "Zaun"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "63",
+      "name": "Brand",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "brand"
+      ],
+      "metadata": {
+        "ddKey": "Brand",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Support",
+          "Mid",
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "201",
+      "name": "Braum",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "braum"
+      ],
+      "metadata": {
+        "ddKey": "Braum",
+        "roles": [
+          "Tank",
+          "Support"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2014,
+        "allImages": []
+      }
+    },
+    {
+      "id": "233",
+      "name": "Briar",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "briar"
+      ],
+      "metadata": {
+        "ddKey": "Briar",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Blood Golem",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2023,
+        "allImages": []
+      }
+    },
+    {
+      "id": "51",
+      "name": "Caitlyn",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "caitlyn"
+      ],
+      "metadata": {
+        "ddKey": "Caitlyn",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Piltover"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "164",
+      "name": "Camille",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "camille"
+      ],
+      "metadata": {
+        "ddKey": "Camille",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human (Cyborg)",
+        "regions": [
+          "Piltover"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2016,
+        "allImages": []
+      }
+    },
+    {
+      "id": "69",
+      "name": "Cassiopeia",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "cassiopeia"
+      ],
+      "metadata": {
+        "ddKey": "Cassiopeia",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid",
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "31",
+      "name": "Cho'Gath",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "cho'gath"
+      ],
+      "metadata": {
+        "ddKey": "Chogath",
+        "roles": [
+          "Tank",
+          "Mage"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "It/Its",
+        "species": "Voidborn",
+        "regions": [
+          "Void"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "42",
+      "name": "Corki",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "corki"
+      ],
+      "metadata": {
+        "ddKey": "Corki",
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Bandle City"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "122",
+      "name": "Darius",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "darius"
+      ],
+      "metadata": {
+        "ddKey": "Darius",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "131",
+      "name": "Diana",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "diana"
+      ],
+      "metadata": {
+        "ddKey": "Diana",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Aspect",
+        "regions": [
+          "Targon"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "119",
+      "name": "Draven",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "draven"
+      ],
+      "metadata": {
+        "ddKey": "Draven",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "36",
+      "name": "Dr. Mundo",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "dr. mundo"
+      ],
+      "metadata": {
+        "ddKey": "DrMundo",
+        "roles": [
+          "Tank",
+          "Fighter"
+        ],
+        "positions": [
+          "Top",
+          "Jungle"
+        ],
+        "resource": "N/A (Uses Health)",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human (Chemically Altered)",
+        "regions": [
+          "Zaun"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "245",
+      "name": "Ekko",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "ekko"
+      ],
+      "metadata": {
+        "ddKey": "Ekko",
+        "roles": [
+          "Assassin",
+          "Mage"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Zaun"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2015,
+        "allImages": []
+      }
+    },
+    {
+      "id": "60",
+      "name": "Elise",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "elise"
+      ],
+      "metadata": {
+        "ddKey": "Elise",
+        "roles": [
+          "Assassin",
+          "Mage"
+        ],
+        "positions": [
+          "Jungle",
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Shadow Isles",
+          "Noxus"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "28",
+      "name": "Evelynn",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "evelynn"
+      ],
+      "metadata": {
+        "ddKey": "Evelynn",
+        "roles": [
+          "Assassin",
+          "Mage"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Demon",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "81",
+      "name": "Ezreal",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "ezreal"
+      ],
+      "metadata": {
+        "ddKey": "Ezreal",
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Piltover"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "9",
+      "name": "Fiddlesticks",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "fiddlesticks"
+      ],
+      "metadata": {
+        "ddKey": "Fiddlesticks",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "It",
+        "species": "Demon",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "114",
+      "name": "Fiora",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "fiora"
+      ],
+      "metadata": {
+        "ddKey": "Fiora",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "105",
+      "name": "Fizz",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "fizz"
+      ],
+      "metadata": {
+        "ddKey": "Fizz",
+        "roles": [
+          "Assassin",
+          "Fighter"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Bilgewater"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "3",
+      "name": "Galio",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "galio"
+      ],
+      "metadata": {
+        "ddKey": "Galio",
+        "roles": [
+          "Tank",
+          "Mage"
+        ],
+        "positions": [
+          "Mid",
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Petricite Golem",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "41",
+      "name": "Gangplank",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "gangplank"
+      ],
+      "metadata": {
+        "ddKey": "Gangplank",
+        "roles": [
+          "Fighter"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Bilgewater"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "86",
+      "name": "Garen",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "garen"
+      ],
+      "metadata": {
+        "ddKey": "Garen",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "150",
+      "name": "Gnar",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "gnar"
+      ],
+      "metadata": {
+        "ddKey": "Gnar",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2014,
+        "allImages": []
+      }
+    },
+    {
+      "id": "79",
+      "name": "Gragas",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "gragas"
+      ],
+      "metadata": {
+        "ddKey": "Gragas",
+        "roles": [
+          "Fighter",
+          "Mage"
+        ],
+        "positions": [
+          "Top",
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "104",
+      "name": "Graves",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "graves"
+      ],
+      "metadata": {
+        "ddKey": "Graves",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Bilgewater"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "887",
+      "name": "Gwen",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "gwen"
+      ],
+      "metadata": {
+        "ddKey": "Gwen",
+        "roles": [
+          "Fighter"
+        ],
+        "positions": [
+          "Top",
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Shadow Isles",
+          "Camavor"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2021,
+        "allImages": []
+      }
+    },
+    {
+      "id": "120",
+      "name": "Hecarim",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "hecarim"
+      ],
+      "metadata": {
+        "ddKey": "Hecarim",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Wraith",
+        "regions": [
+          "Shadow Isles",
+          "Camavor"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "74",
+      "name": "Heimerdinger",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "heimerdinger"
+      ],
+      "metadata": {
+        "ddKey": "Heimerdinger",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Piltover",
+          "Bandle City"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "910",
+      "name": "Hwei",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "hwei"
+      ],
+      "metadata": {
+        "ddKey": "Hwei",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Mid",
+          "Bottom",
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2023,
+        "allImages": []
+      }
+    },
+    {
+      "id": "420",
+      "name": "Illaoi",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "illaoi"
+      ],
+      "metadata": {
+        "ddKey": "Illaoi",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Bilgewater"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2015,
+        "allImages": []
+      }
+    },
+    {
+      "id": "39",
+      "name": "Irelia",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "irelia"
+      ],
+      "metadata": {
+        "ddKey": "Irelia",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "427",
+      "name": "Ivern",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "ivern"
+      ],
+      "metadata": {
+        "ddKey": "Ivern",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Spirit Tree",
+        "regions": [
+          "Ionia",
+          "Freljord"
+        ],
+        "originalRole": "Support",
+        "release_year": 2016,
+        "allImages": []
+      }
+    },
+    {
+      "id": "40",
+      "name": "Janna",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "janna"
+      ],
+      "metadata": {
+        "ddKey": "Janna",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Spirit God",
+        "regions": [
+          "Zaun",
+          "Shurima"
+        ],
+        "originalRole": "Support",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "59",
+      "name": "Jarvan IV",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "jarvan iv"
+      ],
+      "metadata": {
+        "ddKey": "JarvanIV",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "24",
+      "name": "Jax",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "jax"
+      ],
+      "metadata": {
+        "ddKey": "Jax",
+        "roles": [
+          "Fighter"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Unknown",
+        "regions": [
+          "Runeterra",
+          "Icathia",
+          "Shurima"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "126",
+      "name": "Jayce",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "jayce"
+      ],
+      "metadata": {
+        "ddKey": "Jayce",
+        "roles": [
+          "Fighter",
+          "Marksman"
+        ],
+        "positions": [
+          "Top",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Piltover"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "202",
+      "name": "Jhin",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "jhin"
+      ],
+      "metadata": {
+        "ddKey": "Jhin",
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2016,
+        "allImages": []
+      }
+    },
+    {
+      "id": "222",
+      "name": "Jinx",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "jinx"
+      ],
+      "metadata": {
+        "ddKey": "Jinx",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Zaun"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2013,
+        "allImages": []
+      }
+    },
+    {
+      "id": "145",
+      "name": "Kai'Sa",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "kai'sa"
+      ],
+      "metadata": {
+        "ddKey": "Kaisa",
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Void"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2018,
+        "allImages": []
+      }
+    },
+    {
+      "id": "429",
+      "name": "Kalista",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "kalista"
+      ],
+      "metadata": {
+        "ddKey": "Kalista",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Wraith",
+        "regions": [
+          "Shadow Isles",
+          "Camavor"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2014,
+        "allImages": []
+      }
+    },
+    {
+      "id": "43",
+      "name": "Karma",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "karma"
+      ],
+      "metadata": {
+        "ddKey": "Karma",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "30",
+      "name": "Karthus",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "karthus"
+      ],
+      "metadata": {
+        "ddKey": "Karthus",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Wraith",
+        "regions": [
+          "Shadow Isles",
+          "Noxus"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "38",
+      "name": "Kassadin",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "kassadin"
+      ],
+      "metadata": {
+        "ddKey": "Kassadin",
+        "roles": [
+          "Assassin",
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Void"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "55",
+      "name": "Katarina",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "katarina"
+      ],
+      "metadata": {
+        "ddKey": "Katarina",
+        "roles": [
+          "Assassin",
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "10",
+      "name": "Kayle",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "kayle"
+      ],
+      "metadata": {
+        "ddKey": "Kayle",
+        "roles": [
+          "Mage",
+          "Marksman"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Aspect",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "141",
+      "name": "Kayn",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "kayn"
+      ],
+      "metadata": {
+        "ddKey": "Kayn",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Darkin",
+        "regions": [
+          "Ionia",
+          "Noxus"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2017,
+        "allImages": []
+      }
+    },
+    {
+      "id": "85",
+      "name": "Kennen",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "kennen"
+      ],
+      "metadata": {
+        "ddKey": "Kennen",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Energy",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "121",
+      "name": "Kha'Zix",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "kha'zix"
+      ],
+      "metadata": {
+        "ddKey": "Khazix",
+        "roles": [
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Voidborn",
+        "regions": [
+          "Void"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "203",
+      "name": "Kindred",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "kindred"
+      ],
+      "metadata": {
+        "ddKey": "Kindred",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Spirit Gods",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2015,
+        "allImages": []
+      }
+    },
+    {
+      "id": "240",
+      "name": "Kled",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "kled"
+      ],
+      "metadata": {
+        "ddKey": "Kled",
+        "roles": [
+          "Fighter"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2016,
+        "allImages": []
+      }
+    },
+    {
+      "id": "96",
+      "name": "Kog'Maw",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "kog'maw"
+      ],
+      "metadata": {
+        "ddKey": "KogMaw",
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Voidborn",
+        "regions": [
+          "Void"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "897",
+      "name": "K'Sante",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "k'sante"
+      ],
+      "metadata": {
+        "ddKey": "KSante",
+        "roles": [
+          "Tank",
+          "Fighter"
+        ],
+        "positions": [
+          "Top",
+          "Jungle",
+          "Bottom",
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2022,
+        "allImages": []
+      }
+    },
+    {
+      "id": "7",
+      "name": "LeBlanc",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "leblanc"
+      ],
+      "metadata": {
+        "ddKey": "Leblanc",
+        "roles": [
+          "Assassin",
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "64",
+      "name": "Lee Sin",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "lee sin"
+      ],
+      "metadata": {
+        "ddKey": "LeeSin",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Energy",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "89",
+      "name": "Leona",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "leona"
+      ],
+      "metadata": {
+        "ddKey": "Leona",
+        "roles": [
+          "Tank",
+          "Support"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Aspect",
+        "regions": [
+          "Targon"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "876",
+      "name": "Lillia",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "lillia"
+      ],
+      "metadata": {
+        "ddKey": "Lillia",
+        "roles": [
+          "Fighter",
+          "Mage"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Fae Fawn",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2020,
+        "allImages": []
+      }
+    },
+    {
+      "id": "127",
+      "name": "Lissandra",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "lissandra"
+      ],
+      "metadata": {
+        "ddKey": "Lissandra",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2013,
+        "allImages": []
+      }
+    },
+    {
+      "id": "236",
+      "name": "Lucian",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "lucian"
+      ],
+      "metadata": {
+        "ddKey": "Lucian",
+        "roles": [
+          "Marksman",
+          "Assassin"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Runeterra",
+          "Blessed Isles",
+          "Demacia"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2013,
+        "allImages": []
+      }
+    },
+    {
+      "id": "117",
+      "name": "Lulu",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "lulu"
+      ],
+      "metadata": {
+        "ddKey": "Lulu",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Yordle",
+        "regions": [
+          "Bandle City"
+        ],
+        "originalRole": "Support",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "99",
+      "name": "Lux",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "lux"
+      ],
+      "metadata": {
+        "ddKey": "Lux",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "54",
+      "name": "Malphite",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "malphite"
+      ],
+      "metadata": {
+        "ddKey": "Malphite",
+        "roles": [
+          "Tank",
+          "Mage"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "It/Its (Masculine)[1]",
+        "species": "Elemental Golem",
+        "regions": [
+          "Ixtal",
+          "Shurima"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "90",
+      "name": "Malzahar",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "malzahar"
+      ],
+      "metadata": {
+        "ddKey": "Malzahar",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Void"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "57",
+      "name": "Maokai",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "maokai"
+      ],
+      "metadata": {
+        "ddKey": "Maokai",
+        "roles": [
+          "Tank",
+          "Support"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Treant",
+        "regions": [
+          "Shadow Isles",
+          "Blessed Isles"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "11",
+      "name": "Master Yi",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "master yi"
+      ],
+      "metadata": {
+        "ddKey": "MasterYi",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "800",
+      "name": "Mel",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "mel"
+      ],
+      "metadata": {
+        "ddKey": "Mel",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Mid",
+          "Support",
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Noxus",
+          "Piltover"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2025,
+        "allImages": []
+      }
+    },
+    {
+      "id": "902",
+      "name": "Milio",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "milio"
+      ],
+      "metadata": {
+        "ddKey": "Milio",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Ixtal"
+        ],
+        "originalRole": "Support",
+        "release_year": 2023,
+        "allImages": []
+      }
+    },
+    {
+      "id": "21",
+      "name": "Miss Fortune",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "miss fortune"
+      ],
+      "metadata": {
+        "ddKey": "MissFortune",
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Bilgewater"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "62",
+      "name": "Wukong",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "wukong"
+      ],
+      "metadata": {
+        "ddKey": "MonkeyKing",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top",
+          "Jungle",
+          "Bottom",
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Shimon",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "82",
+      "name": "Mordekaiser",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "mordekaiser"
+      ],
+      "metadata": {
+        "ddKey": "Mordekaiser",
+        "roles": [
+          "Fighter",
+          "Mage"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Revenant",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "25",
+      "name": "Morgana",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "morgana"
+      ],
+      "metadata": {
+        "ddKey": "Morgana",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Aspect",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Support",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "950",
+      "name": "Naafiri",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "naafiri"
+      ],
+      "metadata": {
+        "ddKey": "Naafiri",
+        "roles": [
+          "Assassin",
+          "Fighter"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Darkin",
+        "regions": [
+          "Runeterra",
+          "Shurima"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2023,
+        "allImages": []
+      }
+    },
+    {
+      "id": "267",
+      "name": "Nami",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "nami"
+      ],
+      "metadata": {
+        "ddKey": "Nami",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Marai",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Support",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "75",
+      "name": "Nasus",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "nasus"
+      ],
+      "metadata": {
+        "ddKey": "Nasus",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "God-Warrior",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "111",
+      "name": "Nautilus",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "nautilus"
+      ],
+      "metadata": {
+        "ddKey": "Nautilus",
+        "roles": [
+          "Tank",
+          "Support"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Revenant",
+        "regions": [
+          "Bilgewater"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "518",
+      "name": "Neeko",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "neeko"
+      ],
+      "metadata": {
+        "ddKey": "Neeko",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Oovi-Kat",
+        "regions": [
+          "Ixtal"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2018,
+        "allImages": []
+      }
+    },
+    {
+      "id": "76",
+      "name": "Nidalee",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "nidalee"
+      ],
+      "metadata": {
+        "ddKey": "Nidalee",
+        "roles": [
+          "Assassin",
+          "Mage"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Vastayan",
+        "regions": [
+          "Ixtal"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "895",
+      "name": "Nilah",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "nilah"
+      ],
+      "metadata": {
+        "ddKey": "Nilah",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Kathkan",
+          "Bilgewater"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2022,
+        "allImages": []
+      }
+    },
+    {
+      "id": "56",
+      "name": "Nocturne",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "nocturne"
+      ],
+      "metadata": {
+        "ddKey": "Nocturne",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "It",
+        "species": "Demon",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "20",
+      "name": "Nunu & Willump",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "nunu & willump"
+      ],
+      "metadata": {
+        "ddKey": "Nunu",
+        "roles": [
+          "Tank",
+          "Mage"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "2",
+      "name": "Olaf",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "olaf"
+      ],
+      "metadata": {
+        "ddKey": "Olaf",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "61",
+      "name": "Orianna",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "orianna"
+      ],
+      "metadata": {
+        "ddKey": "Orianna",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human (Cyborg)",
+        "regions": [
+          "Piltover"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "516",
+      "name": "Ornn",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "ornn"
+      ],
+      "metadata": {
+        "ddKey": "Ornn",
+        "roles": [
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Spirit God",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2017,
+        "allImages": []
+      }
+    },
+    {
+      "id": "80",
+      "name": "Pantheon",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "pantheon"
+      ],
+      "metadata": {
+        "ddKey": "Pantheon",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Support",
+          "Jungle",
+          "Top",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Aspect",
+        "regions": [
+          "Targon"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "78",
+      "name": "Poppy",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "poppy"
+      ],
+      "metadata": {
+        "ddKey": "Poppy",
+        "roles": [
+          "Tank",
+          "Fighter"
+        ],
+        "positions": [
+          "Support",
+          "Top",
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Yordle",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "555",
+      "name": "Pyke",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "pyke"
+      ],
+      "metadata": {
+        "ddKey": "Pyke",
+        "roles": [
+          "Support",
+          "Assassin"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Revenant",
+        "regions": [
+          "Bilgewater"
+        ],
+        "originalRole": "Support",
+        "release_year": 2018,
+        "allImages": []
+      }
+    },
+    {
+      "id": "246",
+      "name": "Qiyana",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "qiyana"
+      ],
+      "metadata": {
+        "ddKey": "Qiyana",
+        "roles": [
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Ixtal"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2019,
+        "allImages": []
+      }
+    },
+    {
+      "id": "133",
+      "name": "Quinn",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "quinn"
+      ],
+      "metadata": {
+        "ddKey": "Quinn",
+        "roles": [
+          "Marksman",
+          "Assassin"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2013,
+        "allImages": []
+      }
+    },
+    {
+      "id": "497",
+      "name": "Rakan",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "rakan"
+      ],
+      "metadata": {
+        "ddKey": "Rakan",
+        "roles": [
+          "Support"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Lhotlan",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Support",
+        "release_year": 2017,
+        "allImages": []
+      }
+    },
+    {
+      "id": "33",
+      "name": "Rammus",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "rammus"
+      ],
+      "metadata": {
+        "ddKey": "Rammus",
+        "roles": [
+          "Tank"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Unknown",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "421",
+      "name": "Rek'Sai",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "rek'sai"
+      ],
+      "metadata": {
+        "ddKey": "RekSai",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Xer'Sai",
+        "regions": [
+          "Void"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2014,
+        "allImages": []
+      }
+    },
+    {
+      "id": "526",
+      "name": "Rell",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "rell"
+      ],
+      "metadata": {
+        "ddKey": "Rell",
+        "roles": [
+          "Tank",
+          "Support"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2020,
+        "allImages": []
+      }
+    },
+    {
+      "id": "888",
+      "name": "Renata Glasc",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "renata glasc"
+      ],
+      "metadata": {
+        "ddKey": "Renata",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Top",
+          "Jungle",
+          "Bottom",
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Zaun"
+        ],
+        "originalRole": "Support",
+        "release_year": 2022,
+        "allImages": []
+      }
+    },
+    {
+      "id": "58",
+      "name": "Renekton",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "renekton"
+      ],
+      "metadata": {
+        "ddKey": "Renekton",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "God-Warrior",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "107",
+      "name": "Rengar",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "rengar"
+      ],
+      "metadata": {
+        "ddKey": "Rengar",
+        "roles": [
+          "Assassin",
+          "Fighter"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Kiilash",
+        "regions": [
+          "Ixtal"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "92",
+      "name": "Riven",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "riven"
+      ],
+      "metadata": {
+        "ddKey": "Riven",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Ionia",
+          "Noxus"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "68",
+      "name": "Rumble",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "rumble"
+      ],
+      "metadata": {
+        "ddKey": "Rumble",
+        "roles": [
+          "Fighter",
+          "Mage"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Bandle City"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "13",
+      "name": "Ryze",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "ryze"
+      ],
+      "metadata": {
+        "ddKey": "Ryze",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid",
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "360",
+      "name": "Samira",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "samira"
+      ],
+      "metadata": {
+        "ddKey": "Samira",
+        "roles": [
+          "Marksman",
+          "Assassin"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Shurima",
+          "Noxus"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2020,
+        "allImages": []
+      }
+    },
+    {
+      "id": "113",
+      "name": "Sejuani",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "sejuani"
+      ],
+      "metadata": {
+        "ddKey": "Sejuani",
+        "roles": [
+          "Tank"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "235",
+      "name": "Senna",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "senna"
+      ],
+      "metadata": {
+        "ddKey": "Senna",
+        "roles": [
+          "Support",
+          "Marksman"
+        ],
+        "positions": [
+          "Support",
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Wraith",
+        "regions": [
+          "Runeterra",
+          "Blessed Isles"
+        ],
+        "originalRole": "Support",
+        "release_year": 2019,
+        "allImages": []
+      }
+    },
+    {
+      "id": "147",
+      "name": "Seraphine",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "seraphine"
+      ],
+      "metadata": {
+        "ddKey": "Seraphine",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support",
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Piltover",
+          "Zaun"
+        ],
+        "originalRole": "Support",
+        "release_year": 2020,
+        "allImages": []
+      }
+    },
+    {
+      "id": "875",
+      "name": "Sett",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "sett"
+      ],
+      "metadata": {
+        "ddKey": "Sett",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Vastayan",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2020,
+        "allImages": []
+      }
+    },
+    {
+      "id": "35",
+      "name": "Shaco",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "shaco"
+      ],
+      "metadata": {
+        "ddKey": "Shaco",
+        "roles": [
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle",
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Unknown",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "98",
+      "name": "Shen",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "shen"
+      ],
+      "metadata": {
+        "ddKey": "Shen",
+        "roles": [
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Energy",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "102",
+      "name": "Shyvana",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "shyvana"
+      ],
+      "metadata": {
+        "ddKey": "Shyvana",
+        "roles": [
+          "Fighter",
+          "Mage"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Terrestrial Dragon",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "27",
+      "name": "Singed",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "singed"
+      ],
+      "metadata": {
+        "ddKey": "Singed",
+        "roles": [
+          "Tank",
+          "Mage"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Zaun",
+          "Piltover"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "14",
+      "name": "Sion",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "sion"
+      ],
+      "metadata": {
+        "ddKey": "Sion",
+        "roles": [
+          "Tank",
+          "Fighter"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Revenant",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "15",
+      "name": "Sivir",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "sivir"
+      ],
+      "metadata": {
+        "ddKey": "Sivir",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "72",
+      "name": "Skarner",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "skarner"
+      ],
+      "metadata": {
+        "ddKey": "Skarner",
+        "roles": [
+          "Tank",
+          "Fighter"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Brackern",
+        "regions": [
+          "Ixtal"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "901",
+      "name": "Smolder",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "smolder"
+      ],
+      "metadata": {
+        "ddKey": "Smolder",
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "positions": [
+          "Bottom",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Dragon",
+        "regions": [
+          "Noxus",
+          "Camavor"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2024,
+        "allImages": []
+      }
+    },
+    {
+      "id": "37",
+      "name": "Sona",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "sona"
+      ],
+      "metadata": {
+        "ddKey": "Sona",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Support",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "16",
+      "name": "Soraka",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "soraka"
+      ],
+      "metadata": {
+        "ddKey": "Soraka",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Celestial (Fallen)",
+        "regions": [
+          "Targon",
+          "Ionia"
+        ],
+        "originalRole": "Support",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "50",
+      "name": "Swain",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "swain"
+      ],
+      "metadata": {
+        "ddKey": "Swain",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Support",
+          "Mid",
+          "Top",
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "517",
+      "name": "Sylas",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "sylas"
+      ],
+      "metadata": {
+        "ddKey": "Sylas",
+        "roles": [
+          "Mage",
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2019,
+        "allImages": []
+      }
+    },
+    {
+      "id": "134",
+      "name": "Syndra",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "syndra"
+      ],
+      "metadata": {
+        "ddKey": "Syndra",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "223",
+      "name": "Tahm Kench",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "tahm kench"
+      ],
+      "metadata": {
+        "ddKey": "TahmKench",
+        "roles": [
+          "Tank",
+          "Support"
+        ],
+        "positions": [
+          "Top",
+          "Jungle",
+          "Bottom",
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Demon",
+        "regions": [
+          "Runeterra"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2015,
+        "allImages": []
+      }
+    },
+    {
+      "id": "163",
+      "name": "Taliyah",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "taliyah"
+      ],
+      "metadata": {
+        "ddKey": "Taliyah",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Mid",
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2016,
+        "allImages": []
+      }
+    },
+    {
+      "id": "91",
+      "name": "Talon",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "talon"
+      ],
+      "metadata": {
+        "ddKey": "Talon",
+        "roles": [
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Noxus"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "44",
+      "name": "Taric",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "taric"
+      ],
+      "metadata": {
+        "ddKey": "Taric",
+        "roles": [
+          "Support",
+          "Tank"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Aspect",
+        "regions": [
+          "Targon",
+          "Demacia"
+        ],
+        "originalRole": "Support",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "17",
+      "name": "Teemo",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "teemo"
+      ],
+      "metadata": {
+        "ddKey": "Teemo",
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "positions": [
+          "Top",
+          "Support",
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Bandle City"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "412",
+      "name": "Thresh",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "thresh"
+      ],
+      "metadata": {
+        "ddKey": "Thresh",
+        "roles": [
+          "Support",
+          "Tank"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Wraith",
+        "regions": [
+          "Shadow Isles",
+          "Blessed Isles"
+        ],
+        "originalRole": "Support",
+        "release_year": 2013,
+        "allImages": []
+      }
+    },
+    {
+      "id": "18",
+      "name": "Tristana",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "tristana"
+      ],
+      "metadata": {
+        "ddKey": "Tristana",
+        "roles": [
+          "Marksman",
+          "Assassin"
+        ],
+        "positions": [
+          "Bottom",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Yordle",
+        "regions": [
+          "Bandle City"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "48",
+      "name": "Trundle",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "trundle"
+      ],
+      "metadata": {
+        "ddKey": "Trundle",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Jungle",
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Troll",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "23",
+      "name": "Tryndamere",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "tryndamere"
+      ],
+      "metadata": {
+        "ddKey": "Tryndamere",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "4",
+      "name": "Twisted Fate",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "twisted fate"
+      ],
+      "metadata": {
+        "ddKey": "TwistedFate",
+        "roles": [
+          "Mage",
+          "Marksman"
+        ],
+        "positions": [
+          "Top",
+          "Jungle",
+          "Bottom",
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Bilgewater"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "29",
+      "name": "Twitch",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "twitch"
+      ],
+      "metadata": {
+        "ddKey": "Twitch",
+        "roles": [
+          "Marksman",
+          "Assassin"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Chemically Altered",
+        "regions": [
+          "Zaun"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "77",
+      "name": "Udyr",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "udyr"
+      ],
+      "metadata": {
+        "ddKey": "Udyr",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Jungle",
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Spirit",
+        "regions": [
+          "Freljord",
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "6",
+      "name": "Urgot",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "urgot"
+      ],
+      "metadata": {
+        "ddKey": "Urgot",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human (Cyborg)",
+        "regions": [
+          "Noxus",
+          "Zaun"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "110",
+      "name": "Varus",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "varus"
+      ],
+      "metadata": {
+        "ddKey": "Varus",
+        "roles": [
+          "Marksman",
+          "Mage"
+        ],
+        "positions": [
+          "Bottom",
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Darkin",
+        "regions": [
+          "Ionia",
+          "Shurima (Varus)"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "67",
+      "name": "Vayne",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "vayne"
+      ],
+      "metadata": {
+        "ddKey": "Vayne",
+        "roles": [
+          "Marksman",
+          "Assassin"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Demacia"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "45",
+      "name": "Veigar",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "veigar"
+      ],
+      "metadata": {
+        "ddKey": "Veigar",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Runeterra",
+          "Bandle City"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "161",
+      "name": "Vel'Koz",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "vel'koz"
+      ],
+      "metadata": {
+        "ddKey": "Velkoz",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Top",
+          "Jungle",
+          "Bottom",
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Voidborn",
+        "regions": [
+          "Void"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2014,
+        "allImages": []
+      }
+    },
+    {
+      "id": "711",
+      "name": "Vex",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "vex"
+      ],
+      "metadata": {
+        "ddKey": "Vex",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Yordle",
+        "regions": [
+          "Shadow Isles",
+          "Bandle City"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2021,
+        "allImages": []
+      }
+    },
+    {
+      "id": "254",
+      "name": "Vi",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "vi"
+      ],
+      "metadata": {
+        "ddKey": "Vi",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Piltover",
+          "Zaun"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "234",
+      "name": "Viego",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "viego"
+      ],
+      "metadata": {
+        "ddKey": "Viego",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Wraith",
+        "regions": [
+          "Shadow Isles",
+          "Camavor"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2021,
+        "allImages": []
+      }
+    },
+    {
+      "id": "112",
+      "name": "Viktor",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "viktor"
+      ],
+      "metadata": {
+        "ddKey": "Viktor",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human (Cyborg)",
+        "regions": [
+          "Zaun",
+          "Piltover"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "8",
+      "name": "Vladimir",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "vladimir"
+      ],
+      "metadata": {
+        "ddKey": "Vladimir",
+        "roles": [
+          "Mage",
+          "Fighter"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Noxus",
+          "Blessed Isles",
+          "Camavor"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "106",
+      "name": "Volibear",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "volibear"
+      ],
+      "metadata": {
+        "ddKey": "Volibear",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top",
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Spirit God",
+        "regions": [
+          "Freljord"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "19",
+      "name": "Warwick",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "warwick"
+      ],
+      "metadata": {
+        "ddKey": "Warwick",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human (Chemically Altered)",
+        "regions": [
+          "Zaun"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "498",
+      "name": "Xayah",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "xayah"
+      ],
+      "metadata": {
+        "ddKey": "Xayah",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Lhotlan",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2017,
+        "allImages": []
+      }
+    },
+    {
+      "id": "101",
+      "name": "Xerath",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "xerath"
+      ],
+      "metadata": {
+        "ddKey": "Xerath",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Baccai",
+        "regions": [
+          "Shurima"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "5",
+      "name": "Xin Zhao",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "xin zhao"
+      ],
+      "metadata": {
+        "ddKey": "XinZhao",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top",
+          "Jungle",
+          "Bottom",
+          "Support",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Demacia",
+          "Noxus",
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2010,
+        "allImages": []
+      }
+    },
+    {
+      "id": "157",
+      "name": "Yasuo",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "yasuo"
+      ],
+      "metadata": {
+        "ddKey": "Yasuo",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Mid",
+          "Top",
+          "Bottom"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2013,
+        "allImages": []
+      }
+    },
+    {
+      "id": "777",
+      "name": "Yone",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "yone"
+      ],
+      "metadata": {
+        "ddKey": "Yone",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Mid",
+          "Top"
+        ],
+        "resource": "N/A",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human (Spirit)",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2020,
+        "allImages": []
+      }
+    },
+    {
+      "id": "83",
+      "name": "Yorick",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "yorick"
+      ],
+      "metadata": {
+        "ddKey": "Yorick",
+        "roles": [
+          "Fighter",
+          "Tank"
+        ],
+        "positions": [
+          "Top"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Shadow Isles",
+          "Blessed Isles"
+        ],
+        "originalRole": "Fighter",
+        "release_year": 2011,
+        "allImages": []
+      }
+    },
+    {
+      "id": "804",
+      "name": "Yunara",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "yunara"
+      ],
+      "metadata": {
+        "ddKey": "Yunara",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Ionia",
+          "Spirit Realm"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2025,
+        "allImages": []
+      }
+    },
+    {
+      "id": "350",
+      "name": "Yuumi",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "yuumi"
+      ],
+      "metadata": {
+        "ddKey": "Yuumi",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Yordle",
+        "regions": [
+          "Bandle City"
+        ],
+        "originalRole": "Support",
+        "release_year": 2019,
+        "allImages": []
+      }
+    },
+    {
+      "id": "904",
+      "name": "Zaahen",
+      "universe": "lol",
+      "tags": [
+        "Fighter",
+        "zaahen"
+      ],
+      "metadata": {
+        "ddKey": "Zaahen",
+        "roles": [
+          "Fighter",
+          "Assassin"
+        ],
+        "positions": [
+          "Fighter",
+          "Assassin"
+        ],
+        "resource": "Mana",
+        "range_type": "Melee",
+        "gender": null,
+        "species": null,
+        "regions": [],
+        "originalRole": "Fighter",
+        "release_year": null,
+        "allImages": []
+      }
+    },
+    {
+      "id": "154",
+      "name": "Zac",
+      "universe": "lol",
+      "tags": [
+        "Tank",
+        "zac"
+      ],
+      "metadata": {
+        "ddKey": "Zac",
+        "roles": [
+          "Tank",
+          "Fighter"
+        ],
+        "positions": [
+          "Jungle",
+          "Top"
+        ],
+        "resource": "N/A (Uses Health)",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Ooze Golem",
+        "regions": [
+          "Zaun"
+        ],
+        "originalRole": "Tank",
+        "release_year": 2013,
+        "allImages": []
+      }
+    },
+    {
+      "id": "238",
+      "name": "Zed",
+      "universe": "lol",
+      "tags": [
+        "Assassin",
+        "zed"
+      ],
+      "metadata": {
+        "ddKey": "Zed",
+        "roles": [
+          "Assassin"
+        ],
+        "positions": [
+          "Jungle",
+          "Mid"
+        ],
+        "resource": "Energy",
+        "range_type": "Melee",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Ionia"
+        ],
+        "originalRole": "Assassin",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "221",
+      "name": "Zeri",
+      "universe": "lol",
+      "tags": [
+        "Marksman",
+        "zeri"
+      ],
+      "metadata": {
+        "ddKey": "Zeri",
+        "roles": [
+          "Marksman"
+        ],
+        "positions": [
+          "Bottom"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Human",
+        "regions": [
+          "Zaun"
+        ],
+        "originalRole": "Marksman",
+        "release_year": 2022,
+        "allImages": []
+      }
+    },
+    {
+      "id": "115",
+      "name": "Ziggs",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "ziggs"
+      ],
+      "metadata": {
+        "ddKey": "Ziggs",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Bottom",
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Yordle",
+        "regions": [
+          "Zaun",
+          "Piltover"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2012,
+        "allImages": []
+      }
+    },
+    {
+      "id": "26",
+      "name": "Zilean",
+      "universe": "lol",
+      "tags": [
+        "Support",
+        "zilean"
+      ],
+      "metadata": {
+        "ddKey": "Zilean",
+        "roles": [
+          "Support",
+          "Mage"
+        ],
+        "positions": [
+          "Support"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Male",
+        "species": "Human",
+        "regions": [
+          "Runeterra",
+          "Icathia",
+          "Shurima"
+        ],
+        "originalRole": "Support",
+        "release_year": 2009,
+        "allImages": []
+      }
+    },
+    {
+      "id": "142",
+      "name": "Zoe",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "zoe"
+      ],
+      "metadata": {
+        "ddKey": "Zoe",
+        "roles": [
+          "Mage"
+        ],
+        "positions": [
+          "Mid"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Aspect",
+        "regions": [
+          "Targon"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2017,
+        "allImages": []
+      }
+    },
+    {
+      "id": "143",
+      "name": "Zyra",
+      "universe": "lol",
+      "tags": [
+        "Mage",
+        "zyra"
+      ],
+      "metadata": {
+        "ddKey": "Zyra",
+        "roles": [
+          "Mage",
+          "Support"
+        ],
+        "positions": [
+          "Support",
+          "Jungle"
+        ],
+        "resource": "Mana",
+        "range_type": "Ranged",
+        "gender": "Female",
+        "species": "Unknown",
+        "regions": [
+          "Ixtal"
+        ],
+        "originalRole": "Mage",
+        "release_year": 2012,
+        "allImages": []
+      }
+    }
+  ]
+}

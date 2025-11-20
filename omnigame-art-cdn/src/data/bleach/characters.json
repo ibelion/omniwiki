@@ -1,0 +1,1693 @@
+{
+  "universe": "bleach",
+  "characters": [
+    {
+      "id": "ichigo",
+      "name": "Ichigo Kurosaki",
+      "universe": "bleach",
+      "tags": [
+        "Shinigami",
+        "Soul Society",
+        "ichigo",
+        "ichigo kurosaki",
+        "kurosaki"
+      ],
+      "imagePath": "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/base/1.png",
+      "metadata": {
+        "age_min": 15,
+        "age_max": 17,
+        "originalRole": "Shinigami",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [
+          {
+            "id": "base",
+            "name": "Base",
+            "images": [
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/base/1.png",
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/base/2.png",
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/base/3.png"
+            ]
+          },
+          {
+            "id": "bankai",
+            "name": "Bankai",
+            "images": [
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/bankai/1.png",
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/bankai/2.png",
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/bankai/3.png"
+            ]
+          }
+        ],
+        "allImages": [
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/base/1.png",
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/base/2.png",
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/base/3.png",
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/bankai/1.png",
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/bankai/2.png",
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/ember-soulblade/bankai/3.png"
+        ]
+      }
+    },
+    {
+      "id": "rukia",
+      "name": "Rukia Kuchiki",
+      "universe": "bleach",
+      "tags": [
+        "Shinigami",
+        "Soul Society",
+        "rukia",
+        "rukia kuchiki",
+        "kuchiki"
+      ],
+      "imagePath": "https://omniart-184.pages.dev/universes/bleach-inspired/images/frost-petal-reaper/base/1.png",
+      "metadata": {
+        "age_min": 150,
+        "age_max": 200,
+        "originalRole": "Shinigami",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [
+          {
+            "id": "base",
+            "name": "Base",
+            "images": [
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/frost-petal-reaper/base/1.png",
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/frost-petal-reaper/base/2.png",
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/frost-petal-reaper/base/3.png"
+            ]
+          }
+        ],
+        "allImages": [
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/frost-petal-reaper/base/1.png",
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/frost-petal-reaper/base/2.png",
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/frost-petal-reaper/base/3.png"
+        ]
+      }
+    },
+    {
+      "id": "renji",
+      "name": "Renji Abarai",
+      "universe": "bleach",
+      "tags": [
+        "Shinigami",
+        "Soul Society",
+        "renji",
+        "renji abarai",
+        "abarai"
+      ],
+      "metadata": {
+        "age_min": 150,
+        "age_max": 200,
+        "originalRole": "Shinigami",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "byakuya",
+      "name": "Byakuya Kuchiki",
+      "universe": "bleach",
+      "tags": [
+        "Captain",
+        "Soul Society",
+        "byakuya",
+        "byakuya kuchiki"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 250,
+        "originalRole": "Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "kenpachi",
+      "name": "Kenpachi Zaraki",
+      "universe": "bleach",
+      "tags": [
+        "Captain",
+        "Soul Society",
+        "kenpachi",
+        "kenpachi zaraki",
+        "zaraki"
+      ],
+      "metadata": {
+        "age_min": 1000,
+        "age_max": 1200,
+        "originalRole": "Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "toshiro",
+      "name": "Toshiro Hitsugaya",
+      "universe": "bleach",
+      "tags": [
+        "Captain",
+        "Soul Society",
+        "toshiro",
+        "hitsugaya",
+        "toshiro hitsugaya"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 130,
+        "originalRole": "Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "urahara",
+      "name": "Kisuke Urahara",
+      "universe": "bleach",
+      "tags": [
+        "Former Captain",
+        "Soul Society",
+        "urahara",
+        "kisuke urahara",
+        "kisuke"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Former Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "yoruichi",
+      "name": "Yoruichi Shihoin",
+      "universe": "bleach",
+      "tags": [
+        "Former Captain",
+        "Soul Society",
+        "yoruichi",
+        "yoruichi shihoin"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Former Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "aizen",
+      "name": "Sosuke Aizen",
+      "universe": "bleach",
+      "tags": [
+        "Former Captain",
+        "Hueco Mundo",
+        "aizen",
+        "sosuke aizen"
+      ],
+      "metadata": {
+        "age_min": 300,
+        "age_max": 400,
+        "originalRole": "Former Captain",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "ulquiorra",
+      "name": "Ulquiorra Cifer",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "ulquiorra",
+        "ulquiorra cifer"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "grimmjow",
+      "name": "Grimmjow Jaegerjaquez",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "grimmjow",
+        "grimmjow jaegerjaquez"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "nnoitra",
+      "name": "Nnoitra Gilga",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "nnoitra",
+        "nnoitra gilga"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "starrk",
+      "name": "Coyote Starrk",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "starrk",
+        "coyote starrk"
+      ],
+      "metadata": {
+        "age_min": 400,
+        "age_max": 600,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "barragan",
+      "name": "Barragan Luisenbarn",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "barragan",
+        "barragan luisenbarn"
+      ],
+      "metadata": {
+        "age_min": 2000,
+        "age_max": 2500,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "yammy",
+      "name": "Yammy Llargo",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "yammy",
+        "yammy llargo"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "szayelaporro",
+      "name": "Szayelaporro Granz",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "szayelaporro",
+        "szayelaporro granz",
+        "granz"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "zommari",
+      "name": "Zommari Rureaux",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "zommari",
+        "zommari rureaux"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "aaroniero",
+      "name": "Aaroniero Arruruerie",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "aaroniero",
+        "aaroniero arruruerie"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "orihime",
+      "name": "Orihime Inoue",
+      "universe": "bleach",
+      "tags": [
+        "Human",
+        "Karakura Town",
+        "orihime",
+        "orihime inoue",
+        "inoue"
+      ],
+      "metadata": {
+        "age_min": 15,
+        "age_max": 17,
+        "originalRole": "Human",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "chad",
+      "name": "Yasutora Sado",
+      "universe": "bleach",
+      "tags": [
+        "Human",
+        "Karakura Town",
+        "chad",
+        "yasutora sado",
+        "sado"
+      ],
+      "metadata": {
+        "age_min": 16,
+        "age_max": 18,
+        "originalRole": "Human",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "ishida",
+      "name": "Uryu Ishida",
+      "universe": "bleach",
+      "tags": [
+        "Quincy",
+        "Karakura Town",
+        "ishida",
+        "uryu ishida",
+        "uryu"
+      ],
+      "metadata": {
+        "age_min": 15,
+        "age_max": 17,
+        "originalRole": "Quincy",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "gin",
+      "name": "Gin Ichimaru",
+      "universe": "bleach",
+      "tags": [
+        "Former Captain",
+        "Soul Society",
+        "gin",
+        "gin ichimaru",
+        "ichimaru"
+      ],
+      "metadata": {
+        "age_min": 300,
+        "age_max": 400,
+        "originalRole": "Former Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "mayuri",
+      "name": "Mayuri Kurotsuchi",
+      "universe": "bleach",
+      "tags": [
+        "Captain",
+        "Soul Society",
+        "mayuri",
+        "mayuri kurotsuchi",
+        "kurotsuchi"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "soifon",
+      "name": "Soi Fon",
+      "universe": "bleach",
+      "tags": [
+        "Captain",
+        "Soul Society",
+        "soifon",
+        "soi fon"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 250,
+        "originalRole": "Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "komamura",
+      "name": "Sajin Komamura",
+      "universe": "bleach",
+      "tags": [
+        "Captain",
+        "Soul Society",
+        "komamura",
+        "sajin komamura"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "shunsui",
+      "name": "Shunsui Kyoraku",
+      "universe": "bleach",
+      "tags": [
+        "Captain",
+        "Soul Society",
+        "shunsui",
+        "shunsui kyoraku",
+        "kyoraku"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "jushiro",
+      "name": "Jushiro Ukitake",
+      "universe": "bleach",
+      "tags": [
+        "Captain",
+        "Soul Society",
+        "jushiro",
+        "jushiro ukitake",
+        "ukitake"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "unohana",
+      "name": "Retsu Unohana",
+      "universe": "bleach",
+      "tags": [
+        "Captain",
+        "Soul Society",
+        "unohana",
+        "retsu unohana"
+      ],
+      "metadata": {
+        "age_min": 1000,
+        "age_max": 1500,
+        "originalRole": "Captain",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "yamamoto",
+      "name": "Genryusai Yamamoto",
+      "universe": "bleach",
+      "tags": [
+        "Captain Commander",
+        "Soul Society",
+        "yamamoto",
+        "genryusai yamamoto"
+      ],
+      "metadata": {
+        "age_min": 2100,
+        "age_max": 2200,
+        "originalRole": "Captain Commander",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "ikkaku",
+      "name": "Ikkaku Madarame",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "ikkaku",
+        "ikkaku madarame",
+        "madarame"
+      ],
+      "metadata": {
+        "age_min": 150,
+        "age_max": 200,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "yumichika",
+      "name": "Yumichika Ayasegawa",
+      "universe": "bleach",
+      "tags": [
+        "Seated Officer",
+        "Soul Society",
+        "yumichika",
+        "yumichika ayasegawa",
+        "ayasegawa"
+      ],
+      "metadata": {
+        "age_min": 150,
+        "age_max": 200,
+        "originalRole": "Seated Officer",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "matsumoto",
+      "name": "Rangiku Matsumoto",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "matsumoto",
+        "rangiku matsumoto",
+        "rangiku"
+      ],
+      "metadata": {
+        "age_min": 150,
+        "age_max": 200,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "hinamori",
+      "name": "Momo Hinamori",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "hinamori",
+        "momo hinamori",
+        "momo"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 130,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "kira",
+      "name": "Izuru Kira",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "kira",
+        "izuru kira"
+      ],
+      "metadata": {
+        "age_min": 80,
+        "age_max": 100,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "hisagi",
+      "name": "Shuhei Hisagi",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "hisagi",
+        "shuhei hisagi"
+      ],
+      "metadata": {
+        "age_min": 80,
+        "age_max": 100,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "kotetsu",
+      "name": "Kiyone Kotetsu",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "kotetsu",
+        "kiyone kotetsu",
+        "kiyone"
+      ],
+      "metadata": {
+        "age_min": 80,
+        "age_max": 100,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "sentaro",
+      "name": "Sentaro Kotsubaki",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "sentaro",
+        "sentaro kotsubaki"
+      ],
+      "metadata": {
+        "age_min": 80,
+        "age_max": 100,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "nanao",
+      "name": "Nanao Ise",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "nanao",
+        "nanao ise",
+        "ise"
+      ],
+      "imagePath": "https://omniart-184.pages.dev/universes/bleach-inspired/images/tactical-scholar/base/1.png",
+      "metadata": {
+        "age_min": 100,
+        "age_max": 150,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [
+          {
+            "id": "base",
+            "name": "Base",
+            "images": [
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/tactical-scholar/base/1.png",
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/tactical-scholar/base/2.png",
+              "https://omniart-184.pages.dev/universes/bleach-inspired/images/tactical-scholar/base/3.png"
+            ]
+          }
+        ],
+        "allImages": [
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/tactical-scholar/base/1.png",
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/tactical-scholar/base/2.png",
+          "https://omniart-184.pages.dev/universes/bleach-inspired/images/tactical-scholar/base/3.png"
+        ]
+      }
+    },
+    {
+      "id": "nemu",
+      "name": "Nemu Kurotsuchi",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "nemu",
+        "nemu kurotsuchi"
+      ],
+      "metadata": {
+        "age_min": 2,
+        "age_max": 10,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "isane",
+      "name": "Isane Kotetsu",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "isane",
+        "isane kotetsu"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 150,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "hanataro",
+      "name": "Hanataro Yamada",
+      "universe": "bleach",
+      "tags": [
+        "Seated Officer",
+        "Soul Society",
+        "hanataro",
+        "hanataro yamada"
+      ],
+      "metadata": {
+        "age_min": 50,
+        "age_max": 80,
+        "originalRole": "Seated Officer",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "shinji",
+      "name": "Shinji Hirako",
+      "universe": "bleach",
+      "tags": [
+        "Visored",
+        "Soul Society",
+        "shinji",
+        "shinji hirako",
+        "hirako"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Visored",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "hachi",
+      "name": "Hachigen Ushoda",
+      "universe": "bleach",
+      "tags": [
+        "Visored",
+        "Soul Society",
+        "hachi",
+        "hachigen",
+        "hachigen ushoda"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Visored",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "love",
+      "name": "Love Aikawa",
+      "universe": "bleach",
+      "tags": [
+        "Visored",
+        "Soul Society",
+        "love",
+        "love aikawa",
+        "aikawa"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Visored",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "rose",
+      "name": "Rose Otoribashi",
+      "universe": "bleach",
+      "tags": [
+        "Visored",
+        "Soul Society",
+        "rose",
+        "rose otoribashi",
+        "otoribashi"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Visored",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "kensei",
+      "name": "Kensei Muguruma",
+      "universe": "bleach",
+      "tags": [
+        "Visored",
+        "Soul Society",
+        "kensei",
+        "kensei muguruma",
+        "muguruma"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Visored",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "mashiro",
+      "name": "Mashiro Kuna",
+      "universe": "bleach",
+      "tags": [
+        "Visored",
+        "Soul Society",
+        "mashiro",
+        "mashiro kuna",
+        "kuna"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 150,
+        "originalRole": "Visored",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "lisa",
+      "name": "Lisa Yadomaru",
+      "universe": "bleach",
+      "tags": [
+        "Visored",
+        "Soul Society",
+        "lisa",
+        "lisa yadomaru",
+        "yadomaru"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 150,
+        "originalRole": "Visored",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "hallibel",
+      "name": "Tier Harribel",
+      "universe": "bleach",
+      "tags": [
+        "Espada",
+        "Hueco Mundo",
+        "hallibel",
+        "tier harribel",
+        "harribel"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "neliel",
+      "name": "Neliel Tu Oderschvank",
+      "universe": "bleach",
+      "tags": [
+        "Former Espada",
+        "Hueco Mundo",
+        "neliel",
+        "nel",
+        "nel tu oderschvank"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Former Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "dordoni",
+      "name": "Dordoni Alessandro Del Socaccio",
+      "universe": "bleach",
+      "tags": [
+        "Arrancar",
+        "Hueco Mundo",
+        "dordoni",
+        "dordoni alessandro"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Arrancar",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "cirucci",
+      "name": "Cirucci Sanderwicci",
+      "universe": "bleach",
+      "tags": [
+        "Arrancar",
+        "Hueco Mundo",
+        "cirucci",
+        "cirucci sanderwicci"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Arrancar",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "luppi",
+      "name": "Luppi Antenor",
+      "universe": "bleach",
+      "tags": [
+        "Former Espada",
+        "Hueco Mundo",
+        "luppi",
+        "luppi antenor"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 300,
+        "originalRole": "Former Espada",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "wonderweiss",
+      "name": "Wonderweiss Margela",
+      "universe": "bleach",
+      "tags": [
+        "Arrancar",
+        "Hueco Mundo",
+        "wonderweiss",
+        "wonderweiss margela"
+      ],
+      "metadata": {
+        "age_min": 1,
+        "age_max": 5,
+        "originalRole": "Arrancar",
+        "originalFaction": "Hueco Mundo",
+        "release_year": 2004,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "zangetsu",
+      "name": "Zangetsu",
+      "universe": "bleach",
+      "tags": [
+        "Zanpakuto Spirit",
+        "Inner World",
+        "zangetsu",
+        "old man zangetsu"
+      ],
+      "metadata": {
+        "age_min": 1000,
+        "age_max": 2000,
+        "originalRole": "Zanpakuto Spirit",
+        "originalFaction": "Inner World",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "isshin",
+      "name": "Isshin Kurosaki",
+      "universe": "bleach",
+      "tags": [
+        "Former Captain",
+        "Karakura Town",
+        "isshin",
+        "isshin kurosaki"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 300,
+        "originalRole": "Former Captain",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "kon",
+      "name": "Kon",
+      "universe": "bleach",
+      "tags": [
+        "Mod Soul",
+        "Karakura Town",
+        "kon"
+      ],
+      "metadata": {
+        "age_min": 1,
+        "age_max": 2,
+        "originalRole": "Mod Soul",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "donkanonji",
+      "name": "Don Kanonji",
+      "universe": "bleach",
+      "tags": [
+        "TV Host",
+        "Karakura Town",
+        "don kanonji",
+        "kanonji",
+        "donkanonji"
+      ],
+      "metadata": {
+        "age_min": 30,
+        "age_max": 40,
+        "originalRole": "TV Host",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "tatsuki",
+      "name": "Tatsuki Arisawa",
+      "universe": "bleach",
+      "tags": [
+        "Human",
+        "Karakura Town",
+        "tatsuki",
+        "tatsuki arisawa",
+        "arisawa"
+      ],
+      "metadata": {
+        "age_min": 15,
+        "age_max": 17,
+        "originalRole": "Human",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "mizuiro",
+      "name": "Mizuiro Kojima",
+      "universe": "bleach",
+      "tags": [
+        "Human",
+        "Karakura Town",
+        "mizuiro",
+        "mizuiro kojima",
+        "kojima"
+      ],
+      "metadata": {
+        "age_min": 15,
+        "age_max": 17,
+        "originalRole": "Human",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "keigo",
+      "name": "Keigo Asano",
+      "universe": "bleach",
+      "tags": [
+        "Human",
+        "Karakura Town",
+        "keigo",
+        "keigo asano",
+        "asano"
+      ],
+      "metadata": {
+        "age_min": 15,
+        "age_max": 17,
+        "originalRole": "Human",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "karin",
+      "name": "Karin Kurosaki",
+      "universe": "bleach",
+      "tags": [
+        "Human",
+        "Karakura Town",
+        "karin",
+        "karin kurosaki"
+      ],
+      "metadata": {
+        "age_min": 11,
+        "age_max": 13,
+        "originalRole": "Human",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "yuzu",
+      "name": "Yuzu Kurosaki",
+      "universe": "bleach",
+      "tags": [
+        "Human",
+        "Karakura Town",
+        "yuzu",
+        "yuzu kurosaki"
+      ],
+      "metadata": {
+        "age_min": 11,
+        "age_max": 13,
+        "originalRole": "Human",
+        "originalFaction": "Karakura Town",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "masaki",
+      "name": "Masaki Kurosaki",
+      "universe": "bleach",
+      "tags": [
+        "Quincy",
+        "Karakura Town",
+        "masaki",
+        "masaki kurosaki"
+      ],
+      "metadata": {
+        "age_min": 30,
+        "age_max": 35,
+        "originalRole": "Quincy",
+        "originalFaction": "Karakura Town",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "ryuken",
+      "name": "Ryuken Ishida",
+      "universe": "bleach",
+      "tags": [
+        "Quincy",
+        "Karakura Town",
+        "ryuken",
+        "ryuken ishida"
+      ],
+      "metadata": {
+        "age_min": 35,
+        "age_max": 45,
+        "originalRole": "Quincy",
+        "originalFaction": "Karakura Town",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "ginjo",
+      "name": "Kugo Ginjo",
+      "universe": "bleach",
+      "tags": [
+        "Fullbringer",
+        "Xcution",
+        "ginjo",
+        "kugo ginjo"
+      ],
+      "metadata": {
+        "age_min": 25,
+        "age_max": 35,
+        "originalRole": "Fullbringer",
+        "originalFaction": "Xcution",
+        "release_year": 2011,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "giriko",
+      "name": "Giriko Kutsuzawa",
+      "universe": "bleach",
+      "tags": [
+        "Fullbringer",
+        "Xcution",
+        "giriko",
+        "giriko kutsuzawa"
+      ],
+      "metadata": {
+        "age_min": 30,
+        "age_max": 40,
+        "originalRole": "Fullbringer",
+        "originalFaction": "Xcution",
+        "release_year": 2011,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "tsukishima",
+      "name": "Shukuro Tsukishima",
+      "universe": "bleach",
+      "tags": [
+        "Fullbringer",
+        "Xcution",
+        "tsukishima",
+        "shukuro tsukishima"
+      ],
+      "metadata": {
+        "age_min": 25,
+        "age_max": 35,
+        "originalRole": "Fullbringer",
+        "originalFaction": "Xcution",
+        "release_year": 2011,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "yukio",
+      "name": "Yukio Hans Vorarlberna",
+      "universe": "bleach",
+      "tags": [
+        "Fullbringer",
+        "Xcution",
+        "yukio",
+        "yukio hans"
+      ],
+      "metadata": {
+        "age_min": 16,
+        "age_max": 18,
+        "originalRole": "Fullbringer",
+        "originalFaction": "Xcution",
+        "release_year": 2011,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "riruka",
+      "name": "Riruka Dokugamine",
+      "universe": "bleach",
+      "tags": [
+        "Fullbringer",
+        "Xcution",
+        "riruka",
+        "riruka dokugamine"
+      ],
+      "metadata": {
+        "age_min": 16,
+        "age_max": 18,
+        "originalRole": "Fullbringer",
+        "originalFaction": "Xcution",
+        "release_year": 2011,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "jackie",
+      "name": "Jackie Tristan",
+      "universe": "bleach",
+      "tags": [
+        "Fullbringer",
+        "Xcution",
+        "jackie",
+        "jackie tristan"
+      ],
+      "metadata": {
+        "age_min": 20,
+        "age_max": 30,
+        "originalRole": "Fullbringer",
+        "originalFaction": "Xcution",
+        "release_year": 2011,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "yachiru",
+      "name": "Yachiru Kusajishi",
+      "universe": "bleach",
+      "tags": [
+        "Lieutenant",
+        "Soul Society",
+        "yachiru",
+        "yachiru kusajishi"
+      ],
+      "metadata": {
+        "age_min": 100,
+        "age_max": 150,
+        "originalRole": "Lieutenant",
+        "originalFaction": "Soul Society",
+        "release_year": 2001,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "yhwach",
+      "name": "Yhwach",
+      "universe": "bleach",
+      "tags": [
+        "Quincy King",
+        "Wandenreich",
+        "yhwach"
+      ],
+      "metadata": {
+        "age_min": 1200,
+        "age_max": 1500,
+        "originalRole": "Quincy King",
+        "originalFaction": "Wandenreich",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "jugram",
+      "name": "Jugram Haschwalth",
+      "universe": "bleach",
+      "tags": [
+        "Sternritter",
+        "Wandenreich",
+        "jugram",
+        "jugram haschwalth",
+        "haschwalth"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 400,
+        "originalRole": "Sternritter",
+        "originalFaction": "Wandenreich",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "bazzb",
+      "name": "Bazz-B",
+      "universe": "bleach",
+      "tags": [
+        "Sternritter",
+        "Wandenreich",
+        "bazz-b",
+        "bazzb"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 400,
+        "originalRole": "Sternritter",
+        "originalFaction": "Wandenreich",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "asnodt",
+      "name": "As Nodt",
+      "universe": "bleach",
+      "tags": [
+        "Sternritter",
+        "Wandenreich",
+        "as nodt"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 400,
+        "originalRole": "Sternritter",
+        "originalFaction": "Wandenreich",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "bambietta",
+      "name": "Bambietta Basterbine",
+      "universe": "bleach",
+      "tags": [
+        "Sternritter",
+        "Wandenreich",
+        "bambietta",
+        "bambietta basterbine"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 400,
+        "originalRole": "Sternritter",
+        "originalFaction": "Wandenreich",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "liltotto",
+      "name": "Liltotto Lamperd",
+      "universe": "bleach",
+      "tags": [
+        "Sternritter",
+        "Wandenreich",
+        "liltotto",
+        "liltotto lamperd"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 400,
+        "originalRole": "Sternritter",
+        "originalFaction": "Wandenreich",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "giselle",
+      "name": "Giselle Gewelle",
+      "universe": "bleach",
+      "tags": [
+        "Sternritter",
+        "Wandenreich",
+        "giselle",
+        "giselle gewelle"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 400,
+        "originalRole": "Sternritter",
+        "originalFaction": "Wandenreich",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    },
+    {
+      "id": "candice",
+      "name": "Candice Catnipp",
+      "universe": "bleach",
+      "tags": [
+        "Sternritter",
+        "Wandenreich",
+        "candice",
+        "candice catnipp"
+      ],
+      "metadata": {
+        "age_min": 200,
+        "age_max": 400,
+        "originalRole": "Sternritter",
+        "originalFaction": "Wandenreich",
+        "release_year": 2012,
+        "variants": [],
+        "allImages": []
+      }
+    }
+  ]
+}
