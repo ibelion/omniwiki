@@ -1,0 +1,497 @@
+{
+  "universeId": "halo",
+  "universeName": "Halo",
+  "exportedAt": "2025-11-20T01:05:44.446Z",
+  "characters": [
+    {
+      "id": "masterchief",
+      "key": "masterchief",
+      "name": "Master Chief",
+      "universeId": "halo",
+      "tags": [
+        "Spartan",
+        "UNSC",
+        "john-117",
+        "master chief"
+      ],
+      "metadata": {
+        "originalRole": "Spartan",
+        "originalFaction": "UNSC",
+        "release_year": 2001,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "cortana",
+      "key": "cortana",
+      "name": "Cortana",
+      "universeId": "halo",
+      "tags": [
+        "AI",
+        "UNSC",
+        "cortana"
+      ],
+      "metadata": {
+        "originalRole": "AI",
+        "originalFaction": "UNSC",
+        "release_year": 2001,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "arbiter",
+      "key": "arbiter",
+      "name": "The Arbiter",
+      "universeId": "halo",
+      "tags": [
+        "Sangheili",
+        "Covenant",
+        "arbiter",
+        "the arbiter"
+      ],
+      "metadata": {
+        "originalRole": "Sangheili",
+        "originalFaction": "Covenant",
+        "release_year": 2004,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "noble6",
+      "key": "noble6",
+      "name": "Noble Six",
+      "universeId": "halo",
+      "tags": [
+        "Spartan",
+        "UNSC",
+        "noble six",
+        "noble6"
+      ],
+      "metadata": {
+        "originalRole": "Spartan",
+        "originalFaction": "UNSC",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "carter",
+      "key": "carter",
+      "name": "Carter-A259",
+      "universeId": "halo",
+      "tags": [
+        "Spartan",
+        "UNSC",
+        "carter",
+        "carter-a259"
+      ],
+      "metadata": {
+        "originalRole": "Spartan",
+        "originalFaction": "UNSC",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "kat",
+      "key": "kat",
+      "name": "Kat-B320",
+      "universeId": "halo",
+      "tags": [
+        "Spartan",
+        "UNSC",
+        "kat",
+        "kat-b320"
+      ],
+      "metadata": {
+        "originalRole": "Spartan",
+        "originalFaction": "UNSC",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "emile",
+      "key": "emile",
+      "name": "Emile-A239",
+      "universeId": "halo",
+      "tags": [
+        "Spartan",
+        "UNSC",
+        "emile",
+        "emile-a239"
+      ],
+      "metadata": {
+        "originalRole": "Spartan",
+        "originalFaction": "UNSC",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "jorge",
+      "key": "jorge",
+      "name": "Jorge-052",
+      "universeId": "halo",
+      "tags": [
+        "Spartan",
+        "UNSC",
+        "jorge",
+        "jorge-052"
+      ],
+      "metadata": {
+        "originalRole": "Spartan",
+        "originalFaction": "UNSC",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "jun",
+      "key": "jun",
+      "name": "Jun-A266",
+      "universeId": "halo",
+      "tags": [
+        "Spartan",
+        "UNSC",
+        "jun",
+        "jun-a266"
+      ],
+      "metadata": {
+        "originalRole": "Spartan",
+        "originalFaction": "UNSC",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "lordhood",
+      "key": "lordhood",
+      "name": "Tartarus",
+      "universeId": "halo",
+      "tags": [
+        "Brute",
+        "Covenant",
+        "tartarus",
+        "lord hood"
+      ],
+      "metadata": {
+        "originalRole": "Brute",
+        "originalFaction": "Covenant",
+        "release_year": 2004,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "guilty",
+      "key": "guilty",
+      "name": "Guilty Spark",
+      "universeId": "halo",
+      "tags": [
+        "Monitor",
+        "Forerunner",
+        "guilty spark",
+        "343 guilty spark"
+      ],
+      "metadata": {
+        "originalRole": "Monitor",
+        "originalFaction": "Forerunner",
+        "release_year": 2001,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "gravemind",
+      "key": "gravemind",
+      "name": "Gravemind",
+      "universeId": "halo",
+      "tags": [
+        "Flood",
+        "gravemind",
+        "the gravemind"
+      ],
+      "metadata": {
+        "originalRole": "Flood",
+        "originalFaction": "Flood",
+        "release_year": 2004,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "didact",
+      "key": "didact",
+      "name": "The Didact",
+      "universeId": "halo",
+      "tags": [
+        "Forerunner",
+        "didact",
+        "the didact"
+      ],
+      "metadata": {
+        "originalRole": "Forerunner",
+        "originalFaction": "Forerunner",
+        "release_year": 2012,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "lasky",
+      "key": "lasky",
+      "name": "Thomas Lasky",
+      "universeId": "halo",
+      "tags": [
+        "Marine",
+        "UNSC",
+        "lasky",
+        "thomas lasky"
+      ],
+      "metadata": {
+        "originalRole": "Marine",
+        "originalFaction": "UNSC",
+        "release_year": 2012,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "palmer",
+      "key": "palmer",
+      "name": "Sarah Palmer",
+      "universeId": "halo",
+      "tags": [
+        "Spartan",
+        "UNSC",
+        "palmer",
+        "sarah palmer"
+      ],
+      "metadata": {
+        "originalRole": "Spartan",
+        "originalFaction": "UNSC",
+        "release_year": 2012,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "atriox",
+      "key": "atriox",
+      "name": "Atriox",
+      "universeId": "halo",
+      "tags": [
+        "Brute",
+        "Banished",
+        "atriox"
+      ],
+      "metadata": {
+        "originalRole": "Brute",
+        "originalFaction": "Banished",
+        "release_year": 2017,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "escharum",
+      "key": "escharum",
+      "name": "Escharum",
+      "universeId": "halo",
+      "tags": [
+        "Brute",
+        "Banished",
+        "escharum"
+      ],
+      "metadata": {
+        "originalRole": "Brute",
+        "originalFaction": "Banished",
+        "release_year": 2021,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "locke",
+      "key": "locke",
+      "name": "Jameson Locke",
+      "universeId": "halo",
+      "tags": [
+        "Spartan",
+        "UNSC",
+        "locke",
+        "jameson locke"
+      ],
+      "metadata": {
+        "originalRole": "Spartan",
+        "originalFaction": "UNSC",
+        "release_year": 2015,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "buck",
+      "key": "buck",
+      "name": "Edward Buck",
+      "universeId": "halo",
+      "tags": [
+        "ODST",
+        "UNSC",
+        "buck",
+        "edward buck"
+      ],
+      "metadata": {
+        "originalRole": "ODST",
+        "originalFaction": "UNSC",
+        "release_year": 2009,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "johnson",
+      "key": "johnson",
+      "name": "Avery Johnson",
+      "universeId": "halo",
+      "tags": [
+        "Sergeant",
+        "UNSC",
+        "johnson",
+        "avery johnson",
+        "sgt johnson"
+      ],
+      "metadata": {
+        "originalRole": "Sergeant",
+        "originalFaction": "UNSC",
+        "release_year": 2001,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "miranda",
+      "key": "miranda",
+      "name": "Miranda Keyes",
+      "universeId": "halo",
+      "tags": [
+        "Commander",
+        "UNSC",
+        "miranda",
+        "miranda keyes"
+      ],
+      "metadata": {
+        "originalRole": "Commander",
+        "originalFaction": "UNSC",
+        "release_year": 2004,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "keyes",
+      "key": "keyes",
+      "name": "Jacob Keyes",
+      "universeId": "halo",
+      "tags": [
+        "Captain",
+        "UNSC",
+        "keyes",
+        "jacob keyes"
+      ],
+      "metadata": {
+        "originalRole": "Captain",
+        "originalFaction": "UNSC",
+        "release_year": 2001,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "stacker",
+      "key": "stacker",
+      "name": "Stacker",
+      "universeId": "halo",
+      "tags": [
+        "Marine",
+        "UNSC",
+        "stacker",
+        "chips dubbo"
+      ],
+      "metadata": {
+        "originalRole": "Marine",
+        "originalFaction": "UNSC",
+        "release_year": 2001,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "truth",
+      "key": "truth",
+      "name": "Prophet of Truth",
+      "universeId": "halo",
+      "tags": [
+        "Prophet",
+        "Covenant",
+        "truth",
+        "prophet of truth"
+      ],
+      "metadata": {
+        "originalRole": "Prophet",
+        "originalFaction": "Covenant",
+        "release_year": 2004,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "mercy",
+      "key": "mercy",
+      "name": "Prophet of Mercy",
+      "universeId": "halo",
+      "tags": [
+        "Prophet",
+        "Covenant",
+        "mercy",
+        "prophet of mercy"
+      ],
+      "metadata": {
+        "originalRole": "Prophet",
+        "originalFaction": "Covenant",
+        "release_year": 2004,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "regret",
+      "key": "regret",
+      "name": "Prophet of Regret",
+      "universeId": "halo",
+      "tags": [
+        "Prophet",
+        "Covenant",
+        "regret",
+        "prophet of regret"
+      ],
+      "metadata": {
+        "originalRole": "Prophet",
+        "originalFaction": "Covenant",
+        "release_year": 2004,
+        "allImages": []
+      },
+      "images": {}
+    }
+  ]
+}

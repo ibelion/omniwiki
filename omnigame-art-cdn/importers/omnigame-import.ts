@@ -123,17 +123,37 @@ async function importUniverse(universeId: string): Promise<ImportResult> {
   }
   
   // Read and validate metadata
-  let metadata: unknown;
+  let metadata: any;
   try {
     metadata = await readJson(metadataPath);
   } catch (error: any) {
     throw new Error(`Failed to read metadata: ${error.message}`);
   }
   
+  // Transform Omnigame export format to OmniArt format
+  // Omnigame uses: { universe: { key, displayName }, characters: [...] }
+  // OmniArt expects: { universeId, universeName, characters: [...] }
+  let transformedMetadata: any;
+  if (metadata.universe && metadata.characters) {
+    // Omnigame format - transform it
+    transformedMetadata = {
+      universeId: metadata.universe.key || universeId,
+      universeName: metadata.universe.displayName || universeId,
+      version: metadata.universe.version?.toString(),
+      exportedAt: metadata.exportedAt,
+      characters: metadata.characters || [],
+    };
+  } else if (metadata.universeId && metadata.characters) {
+    // Already in OmniArt format
+    transformedMetadata = metadata;
+  } else {
+    throw new Error(`Unknown metadata format. Expected universe object or universeId field.`);
+  }
+  
   // Validate schema
   let validated;
   try {
-    validated = OmniArtUniverseExportSchema.parse(metadata);
+    validated = OmniArtUniverseExportSchema.parse(transformedMetadata);
   } catch (error: any) {
     throw new Error(`Schema validation failed: ${error.message}`);
   }

@@ -1,0 +1,39 @@
+{
+  "universes": [
+    {
+      "id": "bleach",
+      "name": "Bleach",
+      "path": "/data/bleach/data.json"
+    },
+    {
+      "id": "call-of-duty",
+      "name": "Call of Duty",
+      "path": "/data/call-of-duty/data.json"
+    },
+    {
+      "id": "halo",
+      "name": "Halo",
+      "path": "/data/halo/data.json"
+    },
+    {
+      "id": "hunter-x-hunter",
+      "name": "Hunter x Hunter",
+      "path": "/data/hunter-x-hunter/data.json"
+    },
+    {
+      "id": "lol",
+      "name": "League of Legends",
+      "path": "/data/lol/data.json"
+    },
+    {
+      "id": "mortal-kombat",
+      "name": "Mortal Kombat",
+      "path": "/data/mortal-kombat/data.json"
+    },
+    {
+      "id": "pokemon",
+      "name": "Pokemon (Gen 1)",
+      "path": "/data/pokemon/data.json"
+    }
+  ]
+}

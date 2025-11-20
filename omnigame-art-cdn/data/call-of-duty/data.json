@@ -1,0 +1,493 @@
+{
+  "universeId": "call-of-duty",
+  "universeName": "Call of Duty",
+  "exportedAt": "2025-11-20T01:05:44.447Z",
+  "characters": [
+    {
+      "id": "soap",
+      "key": "soap",
+      "name": "Soap MacTavish",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "SAS",
+        "soap"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "SAS",
+        "release_year": 2009,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "captprice",
+      "key": "captprice",
+      "name": "Captain Price",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "SAS",
+        "price",
+        "captain price"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "SAS",
+        "release_year": 2003,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "ghost",
+      "key": "ghost",
+      "name": "Simon Riley",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "Task Force 141",
+        "ghost",
+        "simon riley"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "Task Force 141",
+        "release_year": 2009,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "gaz",
+      "key": "gaz",
+      "name": "Gaz",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "SAS",
+        "gaz"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "SAS",
+        "release_year": 2007,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "roach",
+      "key": "roach",
+      "name": "Gary Sanderson",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "Task Force 141",
+        "roach",
+        "gary sanderson"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "Task Force 141",
+        "release_year": 2009,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "makarov",
+      "key": "makarov",
+      "name": "Vladimir Makarov",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Terrorist",
+        "Ultranationalists",
+        "makarov",
+        "vladimir makarov"
+      ],
+      "metadata": {
+        "originalRole": "Terrorist",
+        "originalFaction": "Ultranationalists",
+        "release_year": 2009,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "zakhaev",
+      "key": "zakhaev",
+      "name": "Imran Zakhaev",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Terrorist",
+        "Ultranationalists",
+        "zakhaev",
+        "imran zakhaev"
+      ],
+      "metadata": {
+        "originalRole": "Terrorist",
+        "originalFaction": "Ultranationalists",
+        "release_year": 2007,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "shepherd",
+      "key": "shepherd",
+      "name": "General Shepherd",
+      "universeId": "call-of-duty",
+      "tags": [
+        "General",
+        "USMC",
+        "shepherd",
+        "general shepherd"
+      ],
+      "metadata": {
+        "originalRole": "General",
+        "originalFaction": "USMC",
+        "release_year": 2009,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "wood",
+      "key": "wood",
+      "name": "Griggs",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Marine",
+        "USMC",
+        "griggs",
+        "wood"
+      ],
+      "metadata": {
+        "originalRole": "Marine",
+        "originalFaction": "USMC",
+        "release_year": 2007,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "vasquez",
+      "key": "vasquez",
+      "name": "Vasquez",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Marine",
+        "USMC",
+        "vasquez"
+      ],
+      "metadata": {
+        "originalRole": "Marine",
+        "originalFaction": "USMC",
+        "release_year": 2007,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "kamrov",
+      "key": "kamrov",
+      "name": "Kamrov",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Marine",
+        "USMC",
+        "kamrov"
+      ],
+      "metadata": {
+        "originalRole": "Marine",
+        "originalFaction": "USMC",
+        "release_year": 2007,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "wallcroft",
+      "key": "wallcroft",
+      "name": "Wallcroft",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Marine",
+        "USMC",
+        "wallcroft"
+      ],
+      "metadata": {
+        "originalRole": "Marine",
+        "originalFaction": "USMC",
+        "release_year": 2007,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "yuri",
+      "key": "yuri",
+      "name": "Yuri",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "Task Force 141",
+        "yuri"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "Task Force 141",
+        "release_year": 2011,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "nikolai",
+      "key": "nikolai",
+      "name": "Nikolai",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "Militia",
+        "nikolai"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "Militia",
+        "release_year": 2009,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "farah",
+      "key": "farah",
+      "name": "Farah Karim",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "Urzikstan Liberation Force",
+        "farah",
+        "farah karim"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "Urzikstan Liberation Force",
+        "release_year": 2019,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "alex",
+      "key": "alex",
+      "name": "Alex",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "CIA",
+        "alex"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "CIA",
+        "release_year": 2019,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "hadir",
+      "key": "hadir",
+      "name": "Hadir Karim",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Terrorist",
+        "Al-Qatala",
+        "hadir",
+        "hadir karim"
+      ],
+      "metadata": {
+        "originalRole": "Terrorist",
+        "originalFaction": "Al-Qatala",
+        "release_year": 2019,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "barkov",
+      "key": "barkov",
+      "name": "Roman Barkov",
+      "universeId": "call-of-duty",
+      "tags": [
+        "General",
+        "Russian Armed Forces",
+        "barkov",
+        "roman barkov"
+      ],
+      "metadata": {
+        "originalRole": "General",
+        "originalFaction": "Russian Armed Forces",
+        "release_year": 2019,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "woods",
+      "key": "woods",
+      "name": "Frank Woods",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "SOG",
+        "woods",
+        "frank woods"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "SOG",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "mason",
+      "key": "mason",
+      "name": "Alex Mason",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "CIA",
+        "mason",
+        "alex mason"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "CIA",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "hudson",
+      "key": "hudson",
+      "name": "Jason Hudson",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "CIA",
+        "hudson",
+        "jason hudson"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "CIA",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "reznikov",
+      "key": "reznikov",
+      "name": "Lev Kravchenko",
+      "universeId": "call-of-duty",
+      "tags": [
+        "General",
+        "Soviet Army",
+        "kravchenko",
+        "lev kravchenko"
+      ],
+      "metadata": {
+        "originalRole": "General",
+        "originalFaction": "Soviet Army",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "dragsovich",
+      "key": "dragsovich",
+      "name": "Nikita Dragovich",
+      "universeId": "call-of-duty",
+      "tags": [
+        "General",
+        "Soviet Army",
+        "dragovich",
+        "nikita dragovich"
+      ],
+      "metadata": {
+        "originalRole": "General",
+        "originalFaction": "Soviet Army",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "steiner",
+      "key": "steiner",
+      "name": "Friedrich Steiner",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Scientist",
+        "Nova 6",
+        "steiner",
+        "friedrich steiner"
+      ],
+      "metadata": {
+        "originalRole": "Scientist",
+        "originalFaction": "Nova 6",
+        "release_year": 2010,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "menendez",
+      "key": "menendez",
+      "name": "Raul Menendez",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Terrorist",
+        "Cordis Die",
+        "menendez",
+        "raul menendez"
+      ],
+      "metadata": {
+        "originalRole": "Terrorist",
+        "originalFaction": "Cordis Die",
+        "release_year": 2012,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "harper",
+      "key": "harper",
+      "name": "David Mason",
+      "universeId": "call-of-duty",
+      "tags": [
+        "Operator",
+        "Navy SEALs",
+        "harper",
+        "david mason"
+      ],
+      "metadata": {
+        "originalRole": "Operator",
+        "originalFaction": "Navy SEALs",
+        "release_year": 2012,
+        "allImages": []
+      },
+      "images": {}
+    }
+  ]
+}

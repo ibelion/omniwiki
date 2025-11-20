@@ -1,0 +1,660 @@
+{
+  "universeId": "mortal-kombat",
+  "universeName": "Mortal Kombat",
+  "exportedAt": "2025-11-20T01:05:44.449Z",
+  "characters": [
+    {
+      "id": "scorpion",
+      "key": "scorpion",
+      "name": "Scorpion",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Ninja",
+        "Netherrealm",
+        "scorpion",
+        "hanzo hasashi"
+      ],
+      "metadata": {
+        "originalRole": "Ninja",
+        "originalFaction": "Netherrealm",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "subzero",
+      "key": "subzero",
+      "name": "Sub-Zero",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Ninja",
+        "Lin Kuei",
+        "sub-zero",
+        "subzero",
+        "kuai liang"
+      ],
+      "metadata": {
+        "originalRole": "Ninja",
+        "originalFaction": "Lin Kuei",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "raiden",
+      "key": "raiden",
+      "name": "Raiden",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "God",
+        "Elder Gods",
+        "raiden",
+        "thunder god"
+      ],
+      "metadata": {
+        "originalRole": "God",
+        "originalFaction": "Elder Gods",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "liukang",
+      "key": "liukang",
+      "name": "Liu Kang",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Monk",
+        "White Lotus",
+        "liu kang",
+        "liukang"
+      ],
+      "metadata": {
+        "originalRole": "Monk",
+        "originalFaction": "White Lotus",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "johnnycage",
+      "key": "johnnycage",
+      "name": "Johnny Cage",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Actor",
+        "Earthrealm",
+        "johnny cage",
+        "johnnycage"
+      ],
+      "metadata": {
+        "originalRole": "Actor",
+        "originalFaction": "Earthrealm",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "sonya",
+      "key": "sonya",
+      "name": "Sonya Blade",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Special Forces",
+        "Earthrealm",
+        "sonya",
+        "sonya blade"
+      ],
+      "metadata": {
+        "originalRole": "Special Forces",
+        "originalFaction": "Earthrealm",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "kitana",
+      "key": "kitana",
+      "name": "Kitana",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Princess",
+        "Edenia",
+        "kitana",
+        "princess kitana"
+      ],
+      "metadata": {
+        "originalRole": "Princess",
+        "originalFaction": "Edenia",
+        "release_year": 1993,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "mileena",
+      "key": "mileena",
+      "name": "Mileena",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Assassin",
+        "Outworld",
+        "mileena"
+      ],
+      "metadata": {
+        "originalRole": "Assassin",
+        "originalFaction": "Outworld",
+        "release_year": 1993,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "shangtsung",
+      "key": "shangtsung",
+      "name": "Shang Tsung",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Sorcerer",
+        "Outworld",
+        "shang tsung",
+        "shangtsung"
+      ],
+      "metadata": {
+        "originalRole": "Sorcerer",
+        "originalFaction": "Outworld",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "goro",
+      "key": "goro",
+      "name": "Goro",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Shokan",
+        "Outworld",
+        "goro"
+      ],
+      "metadata": {
+        "originalRole": "Shokan",
+        "originalFaction": "Outworld",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "kunglao",
+      "key": "kunglao",
+      "name": "Kung Lao",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Monk",
+        "White Lotus",
+        "kung lao",
+        "kunglao"
+      ],
+      "metadata": {
+        "originalRole": "Monk",
+        "originalFaction": "White Lotus",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "jax",
+      "key": "jax",
+      "name": "Jax",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Special Forces",
+        "Earthrealm",
+        "jax"
+      ],
+      "metadata": {
+        "originalRole": "Special Forces",
+        "originalFaction": "Earthrealm",
+        "release_year": 1993,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "kano",
+      "key": "kano",
+      "name": "Kano",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Criminal",
+        "Black Dragon",
+        "kano"
+      ],
+      "metadata": {
+        "originalRole": "Criminal",
+        "originalFaction": "Black Dragon",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "reptile",
+      "key": "reptile",
+      "name": "Reptile",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Ninja",
+        "Outworld",
+        "reptile"
+      ],
+      "metadata": {
+        "originalRole": "Ninja",
+        "originalFaction": "Outworld",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "subzero2",
+      "key": "subzero2",
+      "name": "Bi-Han",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Ninja",
+        "Lin Kuei",
+        "bi-han",
+        "noob saibot"
+      ],
+      "metadata": {
+        "originalRole": "Ninja",
+        "originalFaction": "Lin Kuei",
+        "release_year": 1992,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "noobsaibot",
+      "key": "noobsaibot",
+      "name": "Noob Saibot",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Wraith",
+        "Brotherhood of Shadow",
+        "noob saibot",
+        "noobsaibot"
+      ],
+      "metadata": {
+        "originalRole": "Wraith",
+        "originalFaction": "Brotherhood of Shadow",
+        "release_year": 1995,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "smoke",
+      "key": "smoke",
+      "name": "Smoke",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Ninja",
+        "Lin Kuei",
+        "smoke"
+      ],
+      "metadata": {
+        "originalRole": "Ninja",
+        "originalFaction": "Lin Kuei",
+        "release_year": 1993,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "cyrax",
+      "key": "cyrax",
+      "name": "Cyrax",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Cyborg",
+        "Lin Kuei",
+        "cyrax"
+      ],
+      "metadata": {
+        "originalRole": "Cyborg",
+        "originalFaction": "Lin Kuei",
+        "release_year": 1993,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "sektor",
+      "key": "sektor",
+      "name": "Sektor",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Cyborg",
+        "Lin Kuei",
+        "sektor"
+      ],
+      "metadata": {
+        "originalRole": "Cyborg",
+        "originalFaction": "Lin Kuei",
+        "release_year": 1993,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "ermac",
+      "key": "ermac",
+      "name": "Ermac",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Ninja",
+        "Outworld",
+        "ermac"
+      ],
+      "metadata": {
+        "originalRole": "Ninja",
+        "originalFaction": "Outworld",
+        "release_year": 1995,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "rain",
+      "key": "rain",
+      "name": "Rain",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Ninja",
+        "Edenia",
+        "rain"
+      ],
+      "metadata": {
+        "originalRole": "Ninja",
+        "originalFaction": "Edenia",
+        "release_year": 1997,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "kenshi",
+      "key": "kenshi",
+      "name": "Kenshi",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Swordsman",
+        "Earthrealm",
+        "kenshi"
+      ],
+      "metadata": {
+        "originalRole": "Swordsman",
+        "originalFaction": "Earthrealm",
+        "release_year": 2002,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "baraka",
+      "key": "baraka",
+      "name": "Baraka",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Tarkatan",
+        "Outworld",
+        "baraka"
+      ],
+      "metadata": {
+        "originalRole": "Tarkatan",
+        "originalFaction": "Outworld",
+        "release_year": 1993,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "sindel",
+      "key": "sindel",
+      "name": "Sindel",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Queen",
+        "Edenia",
+        "sindel"
+      ],
+      "metadata": {
+        "originalRole": "Queen",
+        "originalFaction": "Edenia",
+        "release_year": 1993,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "shinnok",
+      "key": "shinnok",
+      "name": "Shinnok",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Elder God",
+        "Netherrealm",
+        "shinnok"
+      ],
+      "metadata": {
+        "originalRole": "Elder God",
+        "originalFaction": "Netherrealm",
+        "release_year": 1995,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "quanch",
+      "key": "quanch",
+      "name": "Quan Chi",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Sorcerer",
+        "Netherrealm",
+        "quan chi",
+        "quanch"
+      ],
+      "metadata": {
+        "originalRole": "Sorcerer",
+        "originalFaction": "Netherrealm",
+        "release_year": 1997,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "shao",
+      "key": "shao",
+      "name": "Shao Kahn",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Emperor",
+        "Outworld",
+        "shao kahn",
+        "shao"
+      ],
+      "metadata": {
+        "originalRole": "Emperor",
+        "originalFaction": "Outworld",
+        "release_year": 1993,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "kotal",
+      "key": "kotal",
+      "name": "Kotal Kahn",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Emperor",
+        "Outworld",
+        "kotal kahn",
+        "kotal"
+      ],
+      "metadata": {
+        "originalRole": "Emperor",
+        "originalFaction": "Outworld",
+        "release_year": 2015,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "dvorah",
+      "key": "dvorah",
+      "name": "D'Vorah",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Kytinn",
+        "Outworld",
+        "d'vorah",
+        "dvorah"
+      ],
+      "metadata": {
+        "originalRole": "Kytinn",
+        "originalFaction": "Outworld",
+        "release_year": 2015,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "ferra",
+      "key": "ferra",
+      "name": "Ferra Torr",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Monster",
+        "Outworld",
+        "ferra torr",
+        "ferra",
+        "torr"
+      ],
+      "metadata": {
+        "originalRole": "Monster",
+        "originalFaction": "Outworld",
+        "release_year": 2015,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "erron",
+      "key": "erron",
+      "name": "Erron Black",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Gunslinger",
+        "Outworld",
+        "erron black",
+        "erron"
+      ],
+      "metadata": {
+        "originalRole": "Gunslinger",
+        "originalFaction": "Outworld",
+        "release_year": 2015,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "takeda",
+      "key": "takeda",
+      "name": "Takeda Takahashi",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Shirai Ryu",
+        "Earthrealm",
+        "takeda",
+        "takeda takahashi"
+      ],
+      "metadata": {
+        "originalRole": "Shirai Ryu",
+        "originalFaction": "Earthrealm",
+        "release_year": 2015,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "jacqui",
+      "key": "jacqui",
+      "name": "Jacqui Briggs",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Special Forces",
+        "Earthrealm",
+        "jacqui",
+        "jacqui briggs"
+      ],
+      "metadata": {
+        "originalRole": "Special Forces",
+        "originalFaction": "Earthrealm",
+        "release_year": 2015,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "cassie",
+      "key": "cassie",
+      "name": "Cassie Cage",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "Special Forces",
+        "Earthrealm",
+        "cassie",
+        "cassie cage"
+      ],
+      "metadata": {
+        "originalRole": "Special Forces",
+        "originalFaction": "Earthrealm",
+        "release_year": 2015,
+        "allImages": []
+      },
+      "images": {}
+    },
+    {
+      "id": "kungjin",
+      "key": "kungjin",
+      "name": "Kung Jin",
+      "universeId": "mortal-kombat",
+      "tags": [
+        "White Lotus",
+        "Earthrealm",
+        "kung jin",
+        "kungjin"
+      ],
+      "metadata": {
+        "originalRole": "White Lotus",
+        "originalFaction": "Earthrealm",
+        "release_year": 2015,
+        "allImages": []
+      },
+      "images": {}
+    }
+  ]
+}
