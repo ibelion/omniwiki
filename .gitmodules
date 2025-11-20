@@ -1,0 +1,4 @@
+[submodule "Omnigame"]
+	path = Omnigame
+	url = https://github.com/BigHertzy/Omnigame.git
+
