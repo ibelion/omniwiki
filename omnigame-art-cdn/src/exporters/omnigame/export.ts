@@ -21,7 +21,8 @@ import {
  * Configuration
  */
 const DATA_DIR = path.join(process.cwd(), 'src', 'data');
-const EXPORT_DIR = path.join(process.cwd(), 'exports', 'omnigame');
+const EXPORT_DIR = path.join(process.cwd(), 'public', 'exports');
+const CDN_BASE_URL = 'https://omniart-184.pages.dev';
 const SUPPORTED_UNIVERSES = [
   'pokemon',
   'bleach',
@@ -42,14 +43,51 @@ interface ExportResult {
 }
 
 /**
+ * Convert image path to full CDN URL
+ */
+function normalizeImageUrl(imagePath: string | null | undefined, universeId: string, characterId: string): string {
+  if (!imagePath || imagePath === '') {
+    // Empty path - construct CDN URL
+    return `${CDN_BASE_URL}/universes/${universeId}/images/${characterId}.png`;
+  }
+
+  // If already a full CDN URL, return as-is
+  if (imagePath.startsWith(CDN_BASE_URL)) {
+    return imagePath;
+  }
+
+  // If it's an external URL, return as-is (should be rare)
+  if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+    return imagePath;
+  }
+
+  // If it's a relative path, convert to full CDN URL
+  const cleanPath = imagePath.replace(/^\.?\//, '');
+  
+  // If it already looks like a CDN path (starts with universes/), prepend base URL
+  if (cleanPath.startsWith('universes/')) {
+    return `${CDN_BASE_URL}/${cleanPath}`;
+  }
+
+  // If it starts with public/, remove it
+  if (cleanPath.startsWith('public/')) {
+    return `${CDN_BASE_URL}/${cleanPath.replace(/^public\//, '')}`;
+  }
+
+  // Otherwise, construct from universe and character
+  return `${CDN_BASE_URL}/universes/${universeId}/images/${characterId}/${cleanPath}`;
+}
+
+/**
  * Normalize character from OmniArt format to Omnigame format
+ * All images are converted to full CDN URLs
  */
 async function normalizeCharacter(
   char: any,
   universeId: string,
   imageBasePath: string
 ): Promise<OmnigameCharacter> {
-  // Default image paths
+  // Default image paths (CDN URLs)
   let portrait = '';
   let full = '';
 
@@ -60,7 +98,7 @@ async function normalizeCharacter(
     // Use provided imagePath if available
     const fullPath = path.join(imageBasePath, char.imagePath);
     if (await pathExists(fullPath)) {
-      full = `images/${char.id}/${char.imagePath}`;
+      full = normalizeImageUrl(`images/${char.id}/${char.imagePath}`, universeId, char.id);
     }
   }
 
@@ -69,11 +107,25 @@ async function normalizeCharacter(
   const fullPath = path.join(charImagePath, 'full.png');
 
   if (await pathExists(portraitPath)) {
-    portrait = `images/${char.id}/portrait.png`;
+    portrait = normalizeImageUrl(`universes/${universeId}/images/${char.id}/portrait.png`, universeId, char.id);
   }
   if (await pathExists(fullPath)) {
-    full = `images/${char.id}/full.png`;
+    full = normalizeImageUrl(`universes/${universeId}/images/${char.id}/full.png`, universeId, char.id);
   }
+
+  // Check if metadata has allImages array and convert to CDN URLs
+  let allImages: string[] = [];
+  if (char.metadata?.allImages && Array.isArray(char.metadata.allImages)) {
+    allImages = char.metadata.allImages.map((img: string) => 
+      normalizeImageUrl(img, universeId, char.id)
+    );
+  }
+
+  // Create metadata with CDN URLs
+  const metadata = {
+    ...char.metadata,
+    allImages: allImages.length > 0 ? allImages : undefined,
+  };
 
   return {
     id: char.id,
@@ -81,10 +133,10 @@ async function normalizeCharacter(
     name: char.name,
     universeId: universeId,
     tags: char.tags || [],
-    metadata: char.metadata || {},
+    metadata,
     images: {
-      portrait,
-      full,
+      portrait: portrait || normalizeImageUrl('', universeId, char.id),
+      full: full || normalizeImageUrl('', universeId, char.id),
     },
   };
 }
@@ -95,8 +147,7 @@ async function normalizeCharacter(
 async function exportUniverse(universeId: string): Promise<ExportResult> {
   const universeDataPath = path.join(DATA_DIR, universeId, 'characters.json');
   const universeImagesPath = path.join(DATA_DIR, universeId, 'images');
-  const exportJsonPath = path.join(EXPORT_DIR, `${universeId}.json`);
-  const exportImagesPath = path.join(EXPORT_DIR, universeId, 'images');
+    const exportJsonPath = path.join(EXPORT_DIR, `${universeId}.json`);
 
   try {
     // Read characters.json
@@ -141,19 +192,13 @@ async function exportUniverse(universeId: string): Promise<ExportResult> {
     // Validate export bundle
     const validatedBundle = ExportBundleSchema.parse(exportBundle);
 
-    // Write JSON export
+    // Write JSON export (images are now CDN URLs, not copied files)
     await writeJson(exportJsonPath, validatedBundle);
-
-    // Copy images if they exist
-    let imagesCopied = 0;
-    if (await pathExists(universeImagesPath)) {
-      imagesCopied = await copyDirectory(universeImagesPath, exportImagesPath);
-    }
 
     return {
       universe: universeId,
       characterCount: normalizedCharacters.length,
-      imagesCopied,
+      imagesCopied: 0, // Images are CDN URLs, not copied
       success: true,
     };
   } catch (error: any) {
@@ -215,8 +260,6 @@ export async function exportToOmnigame(): Promise<void> {
 
   const results: ExportResult[] = [];
   let totalCharacters = 0;
-  let totalImages = 0;
-
   // Export each universe
   for (const universeId of availableUniverses) {
     console.log(`📦 Exporting ${universeId}...`);
@@ -225,9 +268,8 @@ export async function exportToOmnigame(): Promise<void> {
 
     if (result.success) {
       totalCharacters += result.characterCount;
-      totalImages += result.imagesCopied;
       console.log(
-        `  ✅ Success: ${result.characterCount} characters, ${result.imagesCopied} images`
+        `  ✅ Success: ${result.characterCount} characters (images use CDN URLs)`
       );
     } else {
       console.log(`  ❌ Failed: ${result.error}`);
@@ -245,7 +287,7 @@ export async function exportToOmnigame(): Promise<void> {
   );
   console.log(`❌ Failed: ${results.filter((r) => !r.success).length}`);
   console.log(`👥 Total Characters: ${totalCharacters}`);
-  console.log(`🖼️  Total Images: ${totalImages}`);
+  console.log(`🌐 CDN Base URL: ${CDN_BASE_URL}`);
   console.log('');
   console.log('📋 Exported Universes:');
   for (const result of results) {

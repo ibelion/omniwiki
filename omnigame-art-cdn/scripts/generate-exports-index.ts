@@ -1,7 +1,7 @@
 import * as fs from 'fs/promises'
 import * as path from 'path'
 
-const EXPORTS_DIR = path.join(process.cwd(), 'exports', 'omnigame')
+const EXPORTS_DIR = path.join(process.cwd(), 'public', 'exports')
 const INDEX_PATH = path.join(EXPORTS_DIR, 'index.json')
 
 async function generateIndex() {
