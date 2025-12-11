@@ -245,7 +245,7 @@ const parsePokemonTypes = (): PokemonTypeEntry[] => {
   return rows.map((row: any) => ({
     pokemonSlug: row.pokemon_slug,
     slot: toNumber(row.slot),
-    typeSlug: row.type_slug,
+    typeSlug: row.type_slug || row.type_name,
   }));
 };
 
@@ -253,7 +253,7 @@ const parsePokemonSprites = (): PokemonSpriteEntry[] => {
   const rows = readCsv("pokemon_sprites.csv");
   return rows.map((row: any) => ({
     pokemonSlug: row.pokemon_slug,
-    spriteType: row.sprite_type,
+    spriteType: row.sprite_type || row.sprite_kind || row.game,
     image: row.image,
   }));
 };

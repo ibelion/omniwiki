@@ -1,18 +1,26 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { pokemonData } from "@/lib/pokemon/data";
-import type { LearnsetEntry, PokemonRecord } from "@/lib/pokemon/types";
+import type { LearnsetEntry, PokemonRecord, MoveRecord } from "@/lib/pokemon/types";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-const moveMeta = [
+const moveMeta: { label: string; key: keyof MoveRecord }[] = [
   { label: "Power", key: "power" },
   { label: "Accuracy", key: "accuracy" },
   { label: "PP", key: "pp" },
   { label: "Priority", key: "priority" },
 ];
+
+const renderMetaValue = (move: MoveRecord, key: keyof MoveRecord) => {
+  const value = move[key];
+  if (typeof value === "number" || typeof value === "string") {
+    return value || "—";
+  }
+  return value ?? "—";
+};
 
 export default async function MoveDetail({ params }: PageProps) {
   const { slug } = await params;
@@ -101,7 +109,7 @@ export default async function MoveDetail({ params }: PageProps) {
                 {label}
               </p>
               <p className="text-lg font-semibold">
-                {(move as Record<string, number | null>)[key] ?? "—"}
+                {renderMetaValue(move, key)}
               </p>
             </div>
           ))}
