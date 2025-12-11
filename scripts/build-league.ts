@@ -144,7 +144,7 @@ const parseItems = (): ItemRecord[] => {
       .filter(Boolean);
     const stats: Record<string, number> = {};
     for (const pair of statPairs) {
-      const [key, value] = pair.split(":").map((part) => part.trim());
+      const [key, value] = pair.split(":").map((part: string) => part.trim());
       if (key && value) {
         const num = Number(value);
         stats[key] = Number.isNaN(num) ? 0 : num;
