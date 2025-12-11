@@ -77,7 +77,7 @@ const parsePokemon = (types: TypeRecord[]): PokemonRecord[] => {
       .map((entry: string) => entry.split(":").map((v) => v.trim()))
       .filter((pair: string[]) => pair.length === 2);
     const stats: Record<string, number> = Object.fromEntries(
-      statsEntries.map(([k, v]) => [k, Number(v)])
+      statsEntries.map(([k, v]: [string, string]) => [k, Number(v)])
     );
     const baseStatTotal = Object.values(stats).reduce((acc, val) => acc + val, 0);
 
