@@ -259,7 +259,7 @@ const parsePokemonSprites = (): PokemonSpriteEntry[] => {
 };
 
 const parseLearnsets = () => {
-  const rows = readCsv("pokemon_moves.csv");
+  const rows = readCsv("pokemon_moves.csv") as any[];
   const map = new Map<string, LearnsetEntry[]>();
   for (const row of rows) {
     const list = map.get(row.pokemon_slug) || [];
