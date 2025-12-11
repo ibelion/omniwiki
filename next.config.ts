@@ -1,8 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  headers: async () => [
+    {
+      source: "/exports/pokemon/bundle.json",
+      headers: [
+        { key: "Content-Type", value: "application/json; charset=utf-8" },
+        { key: "Content-Encoding", value: "gzip" },
+      ],
+    },
+  ],
 };
 
 export default nextConfig;

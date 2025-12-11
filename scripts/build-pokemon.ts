@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import zlib from "node:zlib";
 import { parse } from "csv-parse/sync";
 import { uniq } from "lodash";
 import {
@@ -20,6 +21,7 @@ import {
 const CONTENT_DIR = path.join(process.cwd(), "public", "pokemoncontent");
 const DATA_DIR = path.join(CONTENT_DIR, "data");
 const OUTPUT_DIR = DATA_DIR;
+const EXPORT_DIR = path.join(process.cwd(), "public", "exports", "pokemon");
 const PLACEHOLDER_ITEM_SLUG = "item_none";
 
 const readCsv = (filename: string) => {
@@ -45,6 +47,7 @@ const toBoolean = (value: string | undefined): boolean =>
 
 const ensureOutput = () => {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  fs.mkdirSync(EXPORT_DIR, { recursive: true });
 };
 
 const parseTypes = (): TypeRecord[] => {
@@ -299,7 +302,20 @@ const buildIndexes = (
 const writeJson = (filename: string, data: unknown) => {
   const target = path.join(OUTPUT_DIR, filename);
   fs.writeFileSync(target, JSON.stringify(data, null, 2), "utf8");
+  copyToExports(filename);
   console.log(`✅ wrote ${filename}`);
+};
+
+const copyToExports = (filename: string) => {
+  const source = path.join(OUTPUT_DIR, filename);
+  const target = path.join(EXPORT_DIR, filename);
+  if (filename === "bundle.json") {
+    const raw = fs.readFileSync(source);
+    const compressed = zlib.gzipSync(raw);
+    fs.writeFileSync(target, compressed);
+    return;
+  }
+  fs.copyFileSync(source, target);
 };
 
 const main = () => {
