@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next-on-pages",
     "start": "next start",
     "lint": "next lint",
     "build:data": "node --import tsx ./scripts/build-pokemon.ts && node --import tsx ./scripts/build-league.ts"
@@ -20,6 +20,7 @@
     "zod": "^4.1.13"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.16",
     "@tailwindcss/postcss": "^4",
     "@types/lodash": "^4.17.21",
     "@types/node": "^20",
@@ -29,6 +30,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.8",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.54.0"
   }
 }
