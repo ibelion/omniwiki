@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import zlib from "node:zlib";
 import type { PokemonDataBundle } from "./types";
 
 const bundlePath = path.join(
@@ -14,8 +15,12 @@ let cached: PokemonDataBundle | null = null;
 
 const loadBundle = (): PokemonDataBundle => {
   if (!cached) {
-    const raw = fs.readFileSync(bundlePath, "utf8");
-    cached = JSON.parse(raw) as PokemonDataBundle;
+    const buffer = fs.readFileSync(bundlePath);
+    const isGzip = buffer[0] === 0x1f && buffer[1] === 0x8b;
+    const text = isGzip
+      ? zlib.gunzipSync(buffer).toString("utf8")
+      : buffer.toString("utf8");
+    cached = JSON.parse(text) as PokemonDataBundle;
   }
   return cached;
 };

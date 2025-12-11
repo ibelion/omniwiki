@@ -301,21 +301,17 @@ const buildIndexes = (
 
 const writeJson = (filename: string, data: unknown) => {
   const target = path.join(OUTPUT_DIR, filename);
-  fs.writeFileSync(target, JSON.stringify(data, null, 2), "utf8");
-  copyToExports(filename);
-  console.log(`✅ wrote ${filename}`);
-};
-
-const copyToExports = (filename: string) => {
-  const source = path.join(OUTPUT_DIR, filename);
-  const target = path.join(EXPORT_DIR, filename);
+  const exportTarget = path.join(EXPORT_DIR, filename);
+  const json = JSON.stringify(data, null, 2);
   if (filename === "bundle.json") {
-    const raw = fs.readFileSync(source);
-    const compressed = zlib.gzipSync(raw);
+    const compressed = zlib.gzipSync(json);
     fs.writeFileSync(target, compressed);
-    return;
+    fs.writeFileSync(exportTarget, compressed);
+  } else {
+    fs.writeFileSync(target, json, "utf8");
+    fs.writeFileSync(exportTarget, json, "utf8");
   }
-  fs.copyFileSync(source, target);
+  console.log(`✅ wrote ${filename}`);
 };
 
 const main = () => {

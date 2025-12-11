@@ -9,6 +9,13 @@ const nextConfig: NextConfig = {
         { key: "Content-Encoding", value: "gzip" },
       ],
     },
+    {
+      source: "/pokemoncontent/data/bundle.json",
+      headers: [
+        { key: "Content-Type", value: "application/json; charset=utf-8" },
+        { key: "Content-Encoding", value: "gzip" },
+      ],
+    },
   ],
 };
 
