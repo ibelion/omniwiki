@@ -1,16 +1,3 @@
-id,name,slug,generation,double_damage_to,double_damage_from,half_damage_to,half_damage_from,no_damage_to,no_damage_from,sourceUrl
-1,normal,normal,generation-i,,fighting,"rock, steel",,ghost,ghost,https://pokeapi.co/api/v2/type/1/
-2,fighting,fighting,generation-i,"normal, rock, steel, ice, dark","flying, psychic, fairy","flying, poison, bug, psychic, fairy","rock, bug, dark",ghost,,https://pokeapi.co/api/v2/type/2/
-3,flying,flying,generation-i,"fighting, bug, grass","rock, electric, ice","rock, steel, electric","fighting, bug, grass",,ground,https://pokeapi.co/api/v2/type/3/
-4,poison,poison,generation-i,"grass, fairy","ground, psychic","poison, ground, rock, ghost","fighting, poison, bug, grass, fairy",steel,,https://pokeapi.co/api/v2/type/4/
-5,ground,ground,generation-i,"poison, rock, steel, fire, electric","water, grass, ice","bug, grass","poison, rock",flying,electric,https://pokeapi.co/api/v2/type/5/
-6,rock,rock,generation-i,"flying, bug, fire, ice","fighting, ground, steel, water, grass","fighting, ground, steel","normal, flying, poison, fire",,,https://pokeapi.co/api/v2/type/6/
-7,bug,bug,generation-i,"grass, psychic, dark","flying, rock, fire","fighting, flying, poison, ghost, steel, fire, fairy","fighting, ground, grass",,,https://pokeapi.co/api/v2/type/7/
-8,ghost,ghost,generation-i,"ghost, psychic","ghost, dark",dark,"poison, bug",normal,"normal, fighting",https://pokeapi.co/api/v2/type/8/
-10,fire,fire,generation-i,"bug, steel, grass, ice","ground, rock, water","rock, fire, water, dragon","bug, steel, fire, grass, ice, fairy",,,https://pokeapi.co/api/v2/type/10/
-11,water,water,generation-i,"ground, rock, fire","grass, electric","water, grass, dragon","steel, fire, water, ice",,,https://pokeapi.co/api/v2/type/11/
-12,grass,grass,generation-i,"ground, rock, water","flying, poison, bug, fire, ice","flying, poison, bug, steel, fire, grass, dragon","ground, water, grass, electric",,,https://pokeapi.co/api/v2/type/12/
-13,electric,electric,generation-i,"flying, water",ground,"grass, electric, dragon","flying, steel, electric",ground,,https://pokeapi.co/api/v2/type/13/
-14,psychic,psychic,generation-i,"fighting, poison","bug, ghost, dark","steel, psychic","fighting, psychic",dark,,https://pokeapi.co/api/v2/type/14/
-15,ice,ice,generation-i,"flying, ground, grass, dragon","fighting, rock, steel, fire","steel, fire, water, ice",ice,,,https://pokeapi.co/api/v2/type/15/
-16,dragon,dragon,generation-i,dragon,"ice, dragon, fairy",steel,"fire, water, grass, electric",fairy,,https://pokeapi.co/api/v2/type/16/
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d8186c942919a1c51cec2b25f441168b2dc36157211f4f9bf121e19d7503992
+size 2558

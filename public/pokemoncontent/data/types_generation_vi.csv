@@ -1,2 +1,3 @@
-id,name,slug,generation,double_damage_to,double_damage_from,half_damage_to,half_damage_from,no_damage_to,no_damage_from,sourceUrl
-18,fairy,fairy,generation-vi,"fighting, dragon, dark","poison, steel","poison, steel, fire","fighting, bug, dark",,dragon,https://pokeapi.co/api/v2/type/18/
+version https://git-lfs.github.com/spec/v1
+oid sha256:b72326c05af0a8bb698ae7b101125a68d849d792cf36c998fbe138130a15169d
+size 289
