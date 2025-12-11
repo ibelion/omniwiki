@@ -1,0 +1,8310 @@
+[
+  {
+    "pokemonSlug": "bulbasaur",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bulbasaur",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ivysaur",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ivysaur",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "venusaur",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "venusaur",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "charmander",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "charmeleon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "charizard",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "charizard",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "squirtle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wartortle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "blastoise",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "caterpie",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "metapod",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "butterfree",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "butterfree",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "weedle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "weedle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kakuna",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kakuna",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "beedrill",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "beedrill",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pidgey",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pidgey",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pidgeotto",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pidgeotto",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pidgeot",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pidgeot",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rattata",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "raticate",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spearow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spearow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "fearow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "fearow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ekans",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "arbok",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "raichu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sandshrew",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sandslash",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nidoran_f",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nidorina",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nidoqueen",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nidoqueen",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "nidoran_m",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nidorino",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nidoking",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nidoking",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "clefairy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "clefable",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vulpix",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ninetales",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "jigglypuff",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "jigglypuff",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "wigglytuff",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wigglytuff",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zubat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zubat",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "golbat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "golbat",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "oddish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "oddish",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gloom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gloom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "vileplume",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vileplume",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "paras",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "paras",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "parasect",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "parasect",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "venonat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "venonat",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "venomoth",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "venomoth",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "diglett",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dugtrio",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meowth",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "persian",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "psyduck",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "golduck",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mankey",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "primeape",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "growlithe",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "arcanine",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "poliwag",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "poliwhirl",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "poliwrath",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "poliwrath",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "abra",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kadabra",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "alakazam",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "machop",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "machoke",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "machamp",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bellsprout",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bellsprout",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "weepinbell",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "weepinbell",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "victreebel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "victreebel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tentacool",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tentacool",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tentacruel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tentacruel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "geodude",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "geodude",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "graveler",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "graveler",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "golem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "golem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ponyta",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rapidash",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slowpoke",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slowpoke",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "slowbro",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slowbro",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "magnemite",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magnemite",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "magneton",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magneton",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "farfetchd",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "farfetchd",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "doduo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "doduo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dodrio",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dodrio",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "seel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dewgong",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dewgong",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "grimer",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "muk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shellder",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cloyster",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cloyster",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gastly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gastly",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "haunter",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "haunter",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gengar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gengar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "onix",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "onix",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "drowzee",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hypno",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "krabby",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kingler",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "voltorb",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "electrode",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "exeggcute",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "exeggcute",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "exeggutor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "exeggutor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cubone",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "marowak",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hitmonlee",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hitmonchan",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lickitung",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "koffing",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "weezing",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rhyhorn",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rhyhorn",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rhydon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rhydon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chansey",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tangela",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kangaskhan",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "horsea",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "seadra",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "goldeen",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "seaking",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "staryu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "starmie",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "starmie",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mr_mime",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mr_mime",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scyther",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scyther",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "jynx",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "jynx",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "electabuzz",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magmar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pinsir",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tauros",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magikarp",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gyarados",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gyarados",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lapras",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lapras",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ditto",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "eevee",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vaporeon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "jolteon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "flareon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "porygon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "omanyte",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "omanyte",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "omastar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "omastar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kabuto",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kabuto",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kabutops",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kabutops",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "aerodactyl",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "aerodactyl",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "snorlax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "articuno",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "articuno",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zapdos",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zapdos",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "moltres",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "moltres",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dratini",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dragonair",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dragonite",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dragonite",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mewtwo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mew",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "venusaur_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "venusaur_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "charizard_mega_x",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "charizard_mega_x",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "charizard_mega_y",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "charizard_mega_y",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "blastoise_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "alakazam_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gengar_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gengar_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kangaskhan_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pinsir_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pinsir_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gyarados_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gyarados_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "aerodactyl_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "aerodactyl_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mewtwo_mega_x",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mewtwo_mega_x",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mewtwo_mega_y",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slowbro_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slowbro_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pidgeot_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pidgeot_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pikachu_rock_star",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_belle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_pop_star",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_phd",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_libre",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_cosplay",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "beedrill_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "beedrill_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rattata_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rattata_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "raticate_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "raticate_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "raticate_totem_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "raticate_totem_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pikachu_original_cap",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_hoenn_cap",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_sinnoh_cap",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_unova_cap",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_kalos_cap",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_alola_cap",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "raichu_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "raichu_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sandshrew_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sandshrew_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sandslash_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sandslash_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "vulpix_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ninetales_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ninetales_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "diglett_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "diglett_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dugtrio_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dugtrio_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "meowth_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "persian_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "geodude_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "geodude_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "graveler_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "graveler_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "golem_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "golem_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "grimer_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "grimer_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "muk_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "muk_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "exeggutor_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "exeggutor_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "marowak_alola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "marowak_alola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pikachu_partner_cap",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "marowak_totem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "marowak_totem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pikachu_starter",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "eevee_starter",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikachu_world_cap",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meowth_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ponyta_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rapidash_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rapidash_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "slowpoke_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slowbro_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slowbro_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "farfetchd_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "weezing_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "weezing_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mr_mime_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mr_mime_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "articuno_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "articuno_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zapdos_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zapdos_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "moltres_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "moltres_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "venusaur_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "venusaur_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "charizard_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "charizard_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "blastoise_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "butterfree_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "butterfree_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pikachu_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meowth_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "machamp_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gengar_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gengar_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kingler_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lapras_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lapras_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "eevee_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "snorlax_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "growlithe_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "growlithe_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "arcanine_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "arcanine_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "voltorb_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "voltorb_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "electrode_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "electrode_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tauros_paldea_combat_breed",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tauros_paldea_blaze_breed",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tauros_paldea_blaze_breed",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tauros_paldea_aqua_breed",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tauros_paldea_aqua_breed",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "clefable_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "clefable_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "victreebel_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "victreebel_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "starmie_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "starmie_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dragonite_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dragonite_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chikorita",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bayleef",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meganium",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cyndaquil",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "quilava",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "typhlosion",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "totodile",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "croconaw",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "feraligatr",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sentret",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "furret",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hoothoot",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hoothoot",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "noctowl",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "noctowl",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ledyba",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ledyba",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ledian",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ledian",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "spinarak",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spinarak",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ariados",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ariados",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "crobat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "crobat",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chinchou",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chinchou",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lanturn",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lanturn",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pichu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cleffa",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "igglybuff",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "igglybuff",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "togepi",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "togetic",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "togetic",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "natu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "natu",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "xatu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "xatu",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mareep",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "flaaffy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ampharos",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bellossom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "marill",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "marill",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "azumarill",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "azumarill",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sudowoodo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "politoed",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hoppip",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hoppip",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "skiploom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skiploom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "jumpluff",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "jumpluff",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "aipom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sunkern",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sunflora",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "yanma",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "yanma",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "wooper",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wooper",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "quagsire",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "quagsire",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "espeon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "umbreon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "murkrow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "murkrow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "slowking",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slowking",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "misdreavus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "unown",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wobbuffet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "girafarig",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "girafarig",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pineco",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "forretress",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "forretress",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dunsparce",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gligar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gligar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "steelix",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "steelix",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "snubbull",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "granbull",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "qwilfish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "qwilfish",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scizor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scizor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "shuckle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shuckle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "heracross",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "heracross",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sneasel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sneasel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "teddiursa",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ursaring",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slugma",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magcargo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magcargo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "swinub",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swinub",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "piloswine",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "piloswine",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "corsola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "corsola",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "remoraid",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "octillery",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "delibird",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "delibird",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mantine",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mantine",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "skarmory",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skarmory",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "houndour",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "houndour",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "houndoom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "houndoom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kingdra",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kingdra",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "phanpy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "donphan",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "porygon2",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "stantler",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "smeargle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tyrogue",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hitmontop",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "smoochum",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "smoochum",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "elekid",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magby",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "miltank",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "blissey",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "raikou",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "entei",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "suicune",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "larvitar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "larvitar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pupitar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pupitar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tyranitar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tyranitar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lugia",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lugia",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ho_oh",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ho_oh",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "celebi",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "celebi",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ampharos_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ampharos_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scizor_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scizor_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "heracross_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "heracross_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "houndoom_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "houndoom_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tyranitar_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tyranitar_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "steelix_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "steelix_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "slowking_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slowking_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "corsola_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "typhlosion_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "typhlosion_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "qwilfish_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "qwilfish_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sneasel_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sneasel_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "wooper_paldea",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wooper_paldea",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "meganium_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meganium_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "feraligatr_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "feraligatr_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "skarmory_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skarmory_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "treecko",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "grovyle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sceptile",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "torchic",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "combusken",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "combusken",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "blaziken",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "blaziken",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mudkip",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "marshtomp",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "marshtomp",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "swampert",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swampert",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "poochyena",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mightyena",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zigzagoon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "linoone",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wurmple",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "silcoon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "beautifly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "beautifly",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cascoon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dustox",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dustox",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lotad",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lotad",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lombre",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lombre",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ludicolo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ludicolo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "seedot",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nuzleaf",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nuzleaf",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "shiftry",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shiftry",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "taillow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "taillow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "swellow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swellow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "wingull",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wingull",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pelipper",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pelipper",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ralts",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ralts",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kirlia",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kirlia",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gardevoir",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gardevoir",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "surskit",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "surskit",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "masquerain",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "masquerain",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "shroomish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "breloom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "breloom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "slakoth",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vigoroth",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slaking",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nincada",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nincada",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ninjask",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ninjask",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "shedinja",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shedinja",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "whismur",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "loudred",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "exploud",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "makuhita",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hariyama",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "azurill",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "azurill",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "nosepass",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skitty",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "delcatty",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sableye",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sableye",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mawile",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mawile",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "aron",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "aron",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lairon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lairon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "aggron",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "aggron",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "meditite",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meditite",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "medicham",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "medicham",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "electrike",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "manectric",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "plusle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minun",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "volbeat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "illumise",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "roselia",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "roselia",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gulpin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swalot",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "carvanha",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "carvanha",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sharpedo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sharpedo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "wailmer",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wailord",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "numel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "numel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "camerupt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "camerupt",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "torkoal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spoink",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "grumpig",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spinda",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "trapinch",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vibrava",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vibrava",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "flygon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "flygon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cacnea",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cacturne",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cacturne",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "swablu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swablu",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "altaria",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "altaria",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zangoose",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "seviper",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lunatone",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lunatone",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "solrock",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "solrock",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "barboach",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "barboach",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "whiscash",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "whiscash",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "corphish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "crawdaunt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "crawdaunt",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "baltoy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "baltoy",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "claydol",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "claydol",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lileep",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lileep",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cradily",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cradily",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "anorith",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "anorith",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "armaldo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "armaldo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "feebas",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "milotic",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "castform",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kecleon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shuppet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "banette",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "duskull",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dusclops",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tropius",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tropius",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chimecho",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "absol",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wynaut",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "snorunt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "glalie",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spheal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spheal",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sealeo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sealeo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "walrein",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "walrein",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "clamperl",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "huntail",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gorebyss",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "relicanth",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "relicanth",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "luvdisc",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bagon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shelgon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "salamence",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "salamence",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "beldum",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "beldum",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "metang",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "metang",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "metagross",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "metagross",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "regirock",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "regice",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "registeel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "latias",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "latias",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "latios",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "latios",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kyogre",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "groudon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rayquaza",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rayquaza",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "jirachi",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "jirachi",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "deoxys_normal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "deoxys_attack",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "deoxys_defense",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "deoxys_speed",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "castform_sunny",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "castform_rainy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "castform_snowy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "blaziken_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "blaziken_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gardevoir_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gardevoir_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mawile_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mawile_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "aggron_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "medicham_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "medicham_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "manectric_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "banette_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "absol_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "latias_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "latias_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "latios_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "latios_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "swampert_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swampert_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sceptile_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sceptile_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sableye_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sableye_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "altaria_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "altaria_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sharpedo_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sharpedo_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "glalie_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "metagross_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "metagross_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kyogre_primal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "groudon_primal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "groudon_primal",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rayquaza_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rayquaza_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "camerupt_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "camerupt_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "salamence_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "salamence_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zigzagoon_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zigzagoon_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "linoone_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "linoone_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "turtwig",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "grotle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "torterra",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "torterra",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chimchar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "monferno",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "monferno",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "infernape",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "infernape",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "piplup",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "prinplup",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "empoleon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "empoleon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "starly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "starly",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "staravia",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "staravia",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "staraptor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "staraptor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bidoof",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bibarel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bibarel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kricketot",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kricketune",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shinx",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "luxio",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "luxray",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "budew",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "budew",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "roserade",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "roserade",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cranidos",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rampardos",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shieldon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shieldon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bastiodon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bastiodon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "burmy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wormadam_plant",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wormadam_plant",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mothim",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mothim",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "combee",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "combee",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "vespiquen",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vespiquen",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pachirisu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "buizel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "floatzel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cherubi",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cherrim",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shellos",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gastrodon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gastrodon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ambipom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drifloon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drifloon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "drifblim",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drifblim",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "buneary",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lopunny",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mismagius",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "honchkrow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "honchkrow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "glameow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "purugly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chingling",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "stunky",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "stunky",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "skuntank",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skuntank",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bronzor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bronzor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bronzong",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bronzong",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bonsly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mime_jr",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mime_jr",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "happiny",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chatot",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chatot",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "spiritomb",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spiritomb",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gible",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gible",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gabite",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gabite",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "garchomp",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "garchomp",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "munchlax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "riolu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lucario",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lucario",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "hippopotas",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hippowdon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skorupi",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skorupi",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "drapion",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drapion",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "croagunk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "croagunk",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "toxicroak",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toxicroak",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "carnivine",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "finneon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lumineon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mantyke",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mantyke",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "snover",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "snover",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "abomasnow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "abomasnow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "weavile",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "weavile",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "magnezone",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magnezone",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lickilicky",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rhyperior",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rhyperior",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tangrowth",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "electivire",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magmortar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "togekiss",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "togekiss",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "yanmega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "yanmega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "leafeon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "glaceon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gliscor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gliscor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mamoswine",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mamoswine",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "porygon_z",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gallade",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gallade",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "probopass",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "probopass",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dusknoir",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "froslass",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "froslass",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rotom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rotom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "uxie",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mesprit",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "azelf",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dialga",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dialga",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "palkia",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "palkia",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "heatran",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "heatran",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "regigigas",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "giratina_altered",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "giratina_altered",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cresselia",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "phione",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "manaphy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "darkrai",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shaymin_land",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "arceus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wormadam_sandy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wormadam_sandy",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "wormadam_trash",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wormadam_trash",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "shaymin_sky",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shaymin_sky",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "giratina_origin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "giratina_origin",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rotom_heat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rotom_heat",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rotom_wash",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rotom_wash",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rotom_frost",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rotom_frost",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rotom_fan",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rotom_fan",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rotom_mow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rotom_mow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "garchomp_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "garchomp_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lucario_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lucario_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "abomasnow_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "abomasnow_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gallade_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gallade_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lopunny_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lopunny_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dialga_origin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dialga_origin",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "palkia_origin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "palkia_origin",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "froslass_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "froslass_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sprigatito",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "floragato",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meowscarada",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meowscarada",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "fuecoco",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "crocalor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skeledirge",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skeledirge",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "quaxly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "quaxwell",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "quaquaval",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "quaquaval",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lechonk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "oinkologne_male",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tarountula",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spidops",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nymble",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lokix",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lokix",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pawmi",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pawmo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pawmo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pawmot",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pawmot",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tandemaus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "maushold_family_of_four",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "fidough",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dachsbun",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "smoliv",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "smoliv",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dolliv",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dolliv",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "arboliva",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "arboliva",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "squawkabilly_green_plumage",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "squawkabilly_green_plumage",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "nacli",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "naclstack",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "garganacl",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "charcadet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "armarouge",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "armarouge",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ceruledge",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ceruledge",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tadbulb",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bellibolt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wattrel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wattrel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kilowattrel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kilowattrel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "maschiff",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mabosstiff",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shroodle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shroodle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "grafaiai",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "grafaiai",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bramblin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bramblin",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "brambleghast",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "brambleghast",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "toedscool",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toedscool",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "toedscruel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toedscruel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "klawf",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "capsakid",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scovillain",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scovillain",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rellor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rabsca",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rabsca",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "flittle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "espathra",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tinkatink",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tinkatink",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tinkatuff",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tinkatuff",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tinkaton",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tinkaton",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "wiglett",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wugtrio",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bombirdier",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bombirdier",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "finizen",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "palafin_zero",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "varoom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "varoom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "revavroom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "revavroom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cyclizar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cyclizar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "orthworm",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "glimmet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "glimmet",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "glimmora",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "glimmora",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "greavard",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "houndstone",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "flamigo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "flamigo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cetoddle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cetitan",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "veluza",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "veluza",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dondozo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tatsugiri_curly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tatsugiri_curly",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "annihilape",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "annihilape",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "clodsire",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "clodsire",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "farigiraf",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "farigiraf",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dudunsparce_two_segment",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kingambit",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kingambit",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "great_tusk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "great_tusk",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scream_tail",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scream_tail",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "brute_bonnet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "brute_bonnet",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "flutter_mane",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "flutter_mane",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "slither_wing",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slither_wing",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sandy_shocks",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sandy_shocks",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_treads",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_treads",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_bundle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_bundle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_hands",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_hands",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_jugulis",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_jugulis",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_moth",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_moth",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_thorns",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_thorns",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "frigibax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "frigibax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "arctibax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "arctibax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "baxcalibur",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "baxcalibur",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gimmighoul",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gholdengo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gholdengo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "wo_chien",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wo_chien",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chien_pao",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chien_pao",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ting_lu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ting_lu",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chi_yu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chi_yu",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "roaring_moon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "roaring_moon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_valiant",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_valiant",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "koraidon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "koraidon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "miraidon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "miraidon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "walking_wake",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "walking_wake",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_leaves",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_leaves",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dipplin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dipplin",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "poltchageist",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "poltchageist",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sinistcha",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sinistcha",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "okidogi",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "okidogi",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "munkidori",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "munkidori",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "fezandipiti",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "fezandipiti",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ogerpon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "archaludon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "archaludon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "hydrapple",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hydrapple",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gouging_fire",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gouging_fire",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "raging_bolt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "raging_bolt",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_boulder",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_boulder",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "iron_crown",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "iron_crown",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "terapagos",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pecharunt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pecharunt",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "oinkologne_female",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dudunsparce_three_segment",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "palafin_hero",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "maushold_family_of_three",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tatsugiri_droopy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tatsugiri_droopy",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tatsugiri_stretchy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tatsugiri_stretchy",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "squawkabilly_blue_plumage",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "squawkabilly_blue_plumage",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "squawkabilly_yellow_plumage",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "squawkabilly_yellow_plumage",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "squawkabilly_white_plumage",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "squawkabilly_white_plumage",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gimmighoul_roaming",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "koraidon_limited_build",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "koraidon_limited_build",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "koraidon_sprinting_build",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "koraidon_sprinting_build",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "koraidon_swimming_build",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "koraidon_swimming_build",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "koraidon_gliding_build",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "koraidon_gliding_build",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "miraidon_low_power_mode",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "miraidon_low_power_mode",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "miraidon_drive_mode",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "miraidon_drive_mode",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "miraidon_aquatic_mode",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "miraidon_aquatic_mode",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "miraidon_glide_mode",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "miraidon_glide_mode",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ogerpon_wellspring_mask",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ogerpon_wellspring_mask",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ogerpon_hearthflame_mask",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ogerpon_hearthflame_mask",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ogerpon_cornerstone_mask",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ogerpon_cornerstone_mask",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "terapagos_terastal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "terapagos_stellar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "victini",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "victini",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "snivy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "servine",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "serperior",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tepig",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pignite",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pignite",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "emboar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "emboar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "oshawott",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dewott",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "samurott",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "patrat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "watchog",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lillipup",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "herdier",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "stoutland",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "purrloin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "liepard",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pansage",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "simisage",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pansear",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "simisear",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "panpour",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "simipour",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "munna",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "musharna",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pidove",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pidove",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tranquill",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tranquill",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "unfezant",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "unfezant",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "blitzle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zebstrika",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "roggenrola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "boldore",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gigalith",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "woobat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "woobat",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "swoobat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swoobat",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "drilbur",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "excadrill",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "excadrill",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "audino",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "timburr",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gurdurr",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "conkeldurr",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tympole",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "palpitoad",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "palpitoad",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "seismitoad",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "seismitoad",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "throh",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sawk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sewaddle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sewaddle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "swadloon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swadloon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "leavanny",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "leavanny",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "venipede",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "venipede",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "whirlipede",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "whirlipede",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scolipede",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scolipede",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cottonee",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cottonee",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "whimsicott",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "whimsicott",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "petilil",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lilligant",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "basculin_red_striped",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sandile",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sandile",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "krokorok",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "krokorok",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "krookodile",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "krookodile",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "darumaka",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "darmanitan_standard",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "maractus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dwebble",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dwebble",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "crustle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "crustle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scraggy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scraggy",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scrafty",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scrafty",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sigilyph",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sigilyph",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "yamask",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cofagrigus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tirtouga",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tirtouga",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "carracosta",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "carracosta",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "archen",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "archen",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "archeops",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "archeops",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "trubbish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "garbodor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zorua",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zoroark",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minccino",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cinccino",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gothita",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gothorita",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gothitelle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "solosis",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "duosion",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "reuniclus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ducklett",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ducklett",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "swanna",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swanna",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "vanillite",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vanillish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vanilluxe",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "deerling",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "deerling",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sawsbuck",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sawsbuck",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "emolga",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "emolga",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "karrablast",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "escavalier",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "escavalier",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "foongus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "foongus",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "amoonguss",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "amoonguss",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "frillish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "frillish",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "jellicent",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "jellicent",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "alomomola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "joltik",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "joltik",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "galvantula",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "galvantula",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ferroseed",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ferroseed",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ferrothorn",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ferrothorn",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "klink",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "klang",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "klinklang",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tynamo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "eelektrik",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "eelektross",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "elgyem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "beheeyem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "litwick",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "litwick",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lampent",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lampent",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chandelure",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chandelure",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "axew",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "fraxure",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "haxorus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cubchoo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "beartic",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cryogonal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shelmet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "accelgor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "stunfisk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "stunfisk",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mienfoo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mienshao",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "druddigon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "golett",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "golett",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "golurk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "golurk",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pawniard",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pawniard",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bisharp",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bisharp",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bouffalant",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rufflet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rufflet",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "braviary",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "braviary",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "vullaby",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vullaby",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mandibuzz",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mandibuzz",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "heatmor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "durant",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "durant",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "deino",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "deino",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zweilous",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zweilous",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "hydreigon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hydreigon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "larvesta",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "larvesta",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "volcarona",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "volcarona",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cobalion",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cobalion",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "terrakion",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "terrakion",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "virizion",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "virizion",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tornadus_incarnate",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "thundurus_incarnate",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "thundurus_incarnate",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "reshiram",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "reshiram",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zekrom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zekrom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "landorus_incarnate",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "landorus_incarnate",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kyurem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kyurem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "keldeo_ordinary",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "keldeo_ordinary",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "meloetta_aria",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meloetta_aria",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "genesect",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "genesect",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "basculin_blue_striped",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "darmanitan_zen",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "darmanitan_zen",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "meloetta_pirouette",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meloetta_pirouette",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tornadus_therian",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "thundurus_therian",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "thundurus_therian",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "landorus_therian",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "landorus_therian",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kyurem_black",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kyurem_black",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kyurem_white",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kyurem_white",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "keldeo_resolute",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "keldeo_resolute",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "audino_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "audino_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "darumaka_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "darmanitan_galar_standard",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "darmanitan_galar_zen",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "darmanitan_galar_zen",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "yamask_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "yamask_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "stunfisk_galar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "stunfisk_galar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "garbodor_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "samurott_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "samurott_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lilligant_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lilligant_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zorua_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zorua_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zoroark_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zoroark_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "braviary_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "braviary_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "basculin_white_striped",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "emboar_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "emboar_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "excadrill_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "excadrill_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scolipede_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scolipede_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scrafty_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scrafty_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "eelektross_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chandelure_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chandelure_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chespin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "quilladin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chesnaught",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chesnaught",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "fennekin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "braixen",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "delphox",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "delphox",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "froakie",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "frogadier",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "greninja",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "greninja",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bunnelby",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "diggersby",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "diggersby",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "fletchling",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "fletchling",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "fletchinder",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "fletchinder",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "talonflame",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "talonflame",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "scatterbug",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spewpa",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vivillon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vivillon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "litleo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "litleo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pyroar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pyroar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "flabebe",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "floette",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "florges",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skiddo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gogoat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pancham",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pangoro",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pangoro",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "furfrou",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "espurr",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meowstic_male",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "honedge",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "honedge",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "doublade",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "doublade",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "aegislash_shield",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "aegislash_shield",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "spritzee",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "aromatisse",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "swirlix",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "slurpuff",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "inkay",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "inkay",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "malamar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "malamar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "binacle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "binacle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "barbaracle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "barbaracle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "skrelp",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skrelp",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dragalge",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dragalge",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "clauncher",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "clawitzer",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "helioptile",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "helioptile",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "heliolisk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "heliolisk",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tyrunt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tyrunt",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tyrantrum",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tyrantrum",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "amaura",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "amaura",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "aurorus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "aurorus",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sylveon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hawlucha",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hawlucha",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dedenne",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dedenne",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "carbink",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "carbink",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "goomy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sliggoo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "goodra",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "klefki",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "klefki",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "phantump",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "phantump",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "trevenant",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "trevenant",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pumpkaboo_average",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pumpkaboo_average",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gourgeist_average",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gourgeist_average",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bergmite",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "avalugg",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "noibat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "noibat",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "noivern",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "noivern",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "xerneas",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "yveltal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "yveltal",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zygarde_50",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zygarde_50",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "diancie",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "diancie",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "hoopa",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hoopa",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "volcanion",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "volcanion",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "meowstic_female",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "aegislash_blade",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "aegislash_blade",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pumpkaboo_small",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pumpkaboo_small",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pumpkaboo_large",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pumpkaboo_large",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pumpkaboo_super",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pumpkaboo_super",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gourgeist_small",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gourgeist_small",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gourgeist_large",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gourgeist_large",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "gourgeist_super",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gourgeist_super",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "floette_eternal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "diancie_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "diancie_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "hoopa_unbound",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hoopa_unbound",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "greninja_battle_bond",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "greninja_battle_bond",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "greninja_ash",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "greninja_ash",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zygarde_10_power_construct",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zygarde_10_power_construct",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zygarde_50_power_construct",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zygarde_50_power_construct",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zygarde_complete",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zygarde_complete",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zygarde_10",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zygarde_10",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sliggoo_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sliggoo_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "goodra_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "goodra_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "avalugg_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "avalugg_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "chesnaught_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chesnaught_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "delphox_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "delphox_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "greninja_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "greninja_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pyroar_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pyroar_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "floette_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "malamar_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "malamar_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "barbaracle_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "barbaracle_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dragalge_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dragalge_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "hawlucha_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hawlucha_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zygarde_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zygarde_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rowlet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rowlet",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dartrix",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dartrix",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "decidueye",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "decidueye",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "litten",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "torracat",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "incineroar",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "incineroar",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "popplio",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "brionne",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "primarina",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "primarina",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pikipek",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pikipek",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "trumbeak",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "trumbeak",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "toucannon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toucannon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "yungoos",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gumshoos",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "grubbin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "charjabug",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "charjabug",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "vikavolt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vikavolt",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "crabrawler",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "crabominable",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "crabominable",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "oricorio_baile",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "oricorio_baile",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cutiefly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cutiefly",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ribombee",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ribombee",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rockruff",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lycanroc_midday",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wishiwashi_solo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mareanie",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mareanie",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "toxapex",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toxapex",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mudbray",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mudsdale",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dewpider",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dewpider",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "araquanid",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "araquanid",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "fomantis",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lurantis",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "morelull",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "morelull",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "shiinotic",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "shiinotic",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "salandit",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "salandit",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "salazzle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "salazzle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "stufful",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "stufful",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bewear",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bewear",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bounsweet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "steenee",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tsareena",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "comfey",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "oranguru",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "oranguru",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "passimian",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wimpod",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wimpod",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "golisopod",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "golisopod",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sandygast",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sandygast",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "palossand",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "palossand",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pyukumuku",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "type_null",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "silvally",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_red_meteor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_red_meteor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "komala",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "turtonator",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "turtonator",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "togedemaru",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "togedemaru",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mimikyu_disguised",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mimikyu_disguised",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "bruxish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "bruxish",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "drampa",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drampa",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dhelmise",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dhelmise",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "jangmo_o",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hakamo_o",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hakamo_o",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kommo_o",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kommo_o",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tapu_koko",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tapu_koko",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tapu_lele",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tapu_lele",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tapu_bulu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tapu_bulu",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "tapu_fini",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "tapu_fini",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cosmog",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cosmoem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "solgaleo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "solgaleo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lunala",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lunala",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "nihilego",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "nihilego",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "buzzwole",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "buzzwole",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "pheromosa",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pheromosa",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "xurkitree",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "celesteela",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "celesteela",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kartana",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kartana",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "guzzlord",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "guzzlord",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "necrozma",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magearna",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magearna",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "marshadow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "marshadow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "poipole",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "naganadel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "naganadel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "stakataka",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "stakataka",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "blacephalon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "blacephalon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zeraora",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "meltan",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "melmetal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gumshoos_totem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vikavolt_totem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "vikavolt_totem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "oricorio_pom_pom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "oricorio_pom_pom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "oricorio_pau",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "oricorio_pau",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "oricorio_sensu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "oricorio_sensu",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "lycanroc_midnight",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wishiwashi_school",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lurantis_totem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "salazzle_totem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "salazzle_totem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_orange_meteor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_orange_meteor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_yellow_meteor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_yellow_meteor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_green_meteor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_green_meteor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_blue_meteor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_blue_meteor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_indigo_meteor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_indigo_meteor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_violet_meteor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_violet_meteor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_red",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_red",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_orange",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_orange",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_yellow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_yellow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_green",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_green",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_blue",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_blue",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_indigo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_indigo",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "minior_violet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "minior_violet",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mimikyu_busted",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mimikyu_busted",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mimikyu_totem_disguised",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mimikyu_totem_disguised",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "mimikyu_totem_busted",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mimikyu_totem_busted",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kommo_o_totem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kommo_o_totem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "magearna_original",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "magearna_original",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ribombee_totem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ribombee_totem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rockruff_own_tempo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "lycanroc_dusk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "araquanid_totem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "araquanid_totem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "togedemaru_totem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "togedemaru_totem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "necrozma_dusk",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "necrozma_dusk",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "necrozma_dawn",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "necrozma_dawn",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "necrozma_ultra",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "necrozma_ultra",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "melmetal_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "decidueye_hisui",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "decidueye_hisui",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "drampa_mega",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drampa_mega",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "grookey",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "thwackey",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rillaboom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "scorbunny",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "raboot",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cinderace",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sobble",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drizzile",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "inteleon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "skwovet",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "greedent",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rookidee",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "corvisquire",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "corviknight",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "corviknight",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "blipbug",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dottler",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dottler",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "orbeetle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "orbeetle",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "nickit",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "thievul",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "gossifleur",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "eldegoss",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wooloo",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dubwool",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "chewtle",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drednaw",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drednaw",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "yamper",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "boltund",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "rolycoly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "carkol",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "carkol",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "coalossal",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "coalossal",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "applin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "applin",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "flapple",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "flapple",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "appletun",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "appletun",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "silicobra",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sandaconda",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cramorant",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cramorant",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "arrokuda",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "barraskewda",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toxel",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toxel",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "toxtricity_amped",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toxtricity_amped",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sizzlipede",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sizzlipede",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "centiskorch",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "centiskorch",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "clobbopus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "grapploct",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sinistea",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "polteageist",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hatenna",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hattrem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hatterene",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hatterene",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "impidimp",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "impidimp",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "morgrem",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "morgrem",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "grimmsnarl",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "grimmsnarl",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "obstagoon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "obstagoon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "perrserker",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cursola",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sirfetchd",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mr_rime",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "mr_rime",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "runerigus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "runerigus",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "milcery",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "alcremie",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "falinks",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "pincurchin",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "snom",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "snom",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "frosmoth",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "frosmoth",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "stonjourner",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "eiscue_ice",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "indeedee_male",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "indeedee_male",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "morpeko_full_belly",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "morpeko_full_belly",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cufant",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "copperajah",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dracozolt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dracozolt",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "arctozolt",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "arctozolt",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dracovish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dracovish",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "arctovish",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "arctovish",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "duraludon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "duraludon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dreepy",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dreepy",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "drakloak",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drakloak",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "dragapult",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "dragapult",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zacian",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zamazenta",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "eternatus",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "eternatus",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kubfu",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "urshifu_single_strike",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "urshifu_single_strike",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zarude",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zarude",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "regieleki",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "regidrago",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "glastrier",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "spectrier",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "calyrex",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "calyrex",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "wyrdeer",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "wyrdeer",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "kleavor",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "kleavor",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ursaluna",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ursaluna",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "basculegion_male",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "basculegion_male",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sneasler",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "sneasler",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "overqwil",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "overqwil",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "enamorus_incarnate",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "enamorus_incarnate",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cramorant_gulping",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cramorant_gulping",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "cramorant_gorging",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cramorant_gorging",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "toxtricity_low_key",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toxtricity_low_key",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "eiscue_noice",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "indeedee_female",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "indeedee_female",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "morpeko_hangry",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "morpeko_hangry",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zacian_crowned",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zacian_crowned",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zamazenta_crowned",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zamazenta_crowned",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "eternatus_eternamax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "eternatus_eternamax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "urshifu_rapid_strike",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "urshifu_rapid_strike",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "zarude_dada",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "zarude_dada",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "calyrex_ice",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "calyrex_ice",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "calyrex_shadow",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "calyrex_shadow",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "rillaboom_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "cinderace_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "inteleon_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "corviknight_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "corviknight_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "orbeetle_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "orbeetle_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "drednaw_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "drednaw_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "coalossal_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "coalossal_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "flapple_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "flapple_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "appletun_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "appletun_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "sandaconda_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toxtricity_amped_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toxtricity_amped_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "centiskorch_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "centiskorch_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "hatterene_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "hatterene_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "grimmsnarl_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "grimmsnarl_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "alcremie_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "copperajah_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "duraludon_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "duraludon_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "urshifu_single_strike_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "urshifu_single_strike_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "urshifu_rapid_strike_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "urshifu_rapid_strike_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "toxtricity_low_key_gmax",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "toxtricity_low_key_gmax",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "basculegion_female",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "basculegion_female",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "enamorus_therian",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "enamorus_therian",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "ursaluna_bloodmoon",
+    "slot": 1
+  },
+  {
+    "pokemonSlug": "ursaluna_bloodmoon",
+    "slot": 2
+  },
+  {
+    "pokemonSlug": "falinks_mega",
+    "slot": 1
+  }
+]

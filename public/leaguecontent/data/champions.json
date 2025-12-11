@@ -1,0 +1,5125 @@
+[
+  {
+    "id": 432,
+    "slug": "bard",
+    "name": "Bard",
+    "image": "champions/Bard/images/Bard_icon.png",
+    "splashImage": "champions/Bard/images/Bard_splash.jpg",
+    "roles": [
+      "CATCHER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2015,
+    "releasePatch": "5.5",
+    "lastPatch": "25.12",
+    "difficulty": 9,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/432.png"
+  },
+  {
+    "id": 523,
+    "slug": "aphelios",
+    "name": "Aphelios",
+    "image": "champions/Aphelios/images/Aphelios_icon.png",
+    "splashImage": "champions/Aphelios/images/Aphelios_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "mount-targon",
+      "mount-targon"
+    ],
+    "releaseYear": 2019,
+    "releasePatch": "9.24",
+    "lastPatch": "25.12",
+    "difficulty": 10,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/523.png"
+  },
+  {
+    "id": 164,
+    "slug": "camille",
+    "name": "Camille",
+    "image": "champions/Camille/images/Camille_icon.png",
+    "splashImage": "champions/Camille/images/Camille_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "FIGHTER"
+    ],
+    "positions": [
+      "SUPPORT",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "piltover",
+      "piltover"
+    ],
+    "releaseYear": 2016,
+    "releasePatch": "6.24",
+    "lastPatch": "14.21",
+    "difficulty": 4,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/164.png"
+  },
+  {
+    "id": 12,
+    "slug": "alistar",
+    "name": "Alistar",
+    "image": "champions/Alistar/images/Alistar_icon.png",
+    "splashImage": "champions/Alistar/images/Alistar_splash.jpg",
+    "roles": [
+      "SUPPORT",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.15",
+    "difficulty": 7,
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/12.png"
+  },
+  {
+    "id": 60,
+    "slug": "elise",
+    "name": "Elise",
+    "image": "champions/Elise/images/Elise_icon.png",
+    "splashImage": "champions/Elise/images/Elise_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "MAGE"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.150",
+    "lastPatch": "25.14",
+    "difficulty": 9,
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/60.png"
+  },
+  {
+    "id": 28,
+    "slug": "evelynn",
+    "name": "Evelynn",
+    "image": "champions/Evelynn/images/Evelynn_icon.png",
+    "splashImage": "champions/Evelynn/images/Evelynn_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MAGE"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "May 1, 2009 Patch",
+    "lastPatch": "25.14",
+    "difficulty": 10,
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/28.png"
+  },
+  {
+    "id": 53,
+    "slug": "blitzcrank",
+    "name": "Blitzcrank",
+    "image": "champions/Blitzcrank/images/Blitzcrank_icon.png",
+    "splashImage": "champions/Blitzcrank/images/Blitzcrank_splash.jpg",
+    "roles": [
+      "CATCHER",
+      "SUPPORT",
+      "TANK"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.22.16",
+    "lastPatch": "25.08",
+    "difficulty": 4,
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/53.png"
+  },
+  {
+    "id": 268,
+    "slug": "azir",
+    "name": "Azir",
+    "image": "champions/Azir/images/Azir_icon.png",
+    "splashImage": "champions/Azir/images/Azir_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN",
+      "SPECIALIST"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2014,
+    "releasePatch": "4.16",
+    "lastPatch": "25.14",
+    "difficulty": 9,
+    "tags": [
+      "Mage",
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/268.png"
+  },
+  {
+    "id": 41,
+    "slug": "gangplank",
+    "name": "Gangplank",
+    "image": "champions/Gangplank/images/Gangplank_icon.png",
+    "splashImage": "champions/Gangplank/images/Gangplank_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "SPECIALIST"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "bilgewater",
+      "bilgewater"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.22.15",
+    "lastPatch": "25.14",
+    "difficulty": 9,
+    "tags": [
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/41.png"
+  },
+  {
+    "id": 136,
+    "slug": "aurelion-sol",
+    "name": "Aurelion Sol",
+    "image": "champions/AurelionSol/images/AurelionSol_icon.png",
+    "splashImage": "champions/AurelionSol/images/AurelionSol_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2016,
+    "releasePatch": "6.6",
+    "lastPatch": "25.12",
+    "difficulty": 7,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/136.png"
+  },
+  {
+    "id": 266,
+    "slug": "aatrox",
+    "name": "Aatrox",
+    "image": "champions/Aatrox/images/Aatrox_icon.png",
+    "splashImage": "champions/Aatrox/images/Aatrox_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Blood Well",
+    "rangeType": "Melee",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2013,
+    "releasePatch": "3.8",
+    "lastPatch": "25.12",
+    "difficulty": 4,
+    "tags": [
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/266.png"
+  },
+  {
+    "id": 233,
+    "slug": "briar",
+    "name": "Briar",
+    "image": "champions/Briar/images/Briar_icon.png",
+    "splashImage": "champions/Briar/images/Briar_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "FIGHTER"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Frenzy",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2023,
+    "releasePatch": "13.18",
+    "lastPatch": "25.14",
+    "difficulty": 3,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/233.png"
+  },
+  {
+    "id": 114,
+    "slug": "fiora",
+    "name": "Fiora",
+    "image": "champions/Fiora/images/Fiora_icon.png",
+    "splashImage": "champions/Fiora/images/Fiora_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.135",
+    "lastPatch": "25.14",
+    "difficulty": 3,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/114.png"
+  },
+  {
+    "id": 131,
+    "slug": "diana",
+    "name": "Diana",
+    "image": "champions/Diana/images/Diana_icon.png",
+    "splashImage": "champions/Diana/images/Diana_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "FIGHTER"
+    ],
+    "positions": [
+      "JUNGLE",
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "mount-targon",
+      "mount-targon"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.144",
+    "lastPatch": "25.11",
+    "difficulty": 4,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/131.png"
+  },
+  {
+    "id": 51,
+    "slug": "caitlyn",
+    "name": "Caitlyn",
+    "image": "champions/Caitlyn/images/Caitlyn_icon.png",
+    "splashImage": "champions/Caitlyn/images/Caitlyn_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "piltover",
+      "piltover"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.108",
+    "lastPatch": "25.06",
+    "difficulty": 6,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/51.png"
+  },
+  {
+    "id": 32,
+    "slug": "amumu",
+    "name": "Amumu",
+    "image": "champions/Amumu/images/Amumu_icon.png",
+    "splashImage": "champions/Amumu/images/Amumu_splash.jpg",
+    "roles": [
+      "SUPPORT",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "JUNGLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "June 26, 2009 Patch",
+    "lastPatch": "14.9",
+    "difficulty": 3,
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/32.png"
+  },
+  {
+    "id": 200,
+    "slug": "bel-veth",
+    "name": "Bel'Veth",
+    "image": "champions/Belveth/images/Belveth_icon.png",
+    "splashImage": "champions/Belveth/images/Belveth_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "None",
+    "rangeType": "Melee",
+    "regions": [
+      "void",
+      "void"
+    ],
+    "releaseYear": 2022,
+    "releasePatch": "12.11",
+    "lastPatch": "25.15",
+    "difficulty": 10,
+    "tags": [
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/200.png"
+  },
+  {
+    "id": 202,
+    "slug": "jhin",
+    "name": "Jhin",
+    "image": "champions/Jhin/images/Jhin_icon.png",
+    "splashImage": "champions/Jhin/images/Jhin_splash.jpg",
+    "roles": [
+      "CATCHER",
+      "MAGE",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2016,
+    "releasePatch": "6.2",
+    "lastPatch": "25.14",
+    "difficulty": 6,
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/202.png"
+  },
+  {
+    "id": 245,
+    "slug": "ekko",
+    "name": "Ekko",
+    "image": "champions/Ekko/images/Ekko_icon.png",
+    "splashImage": "champions/Ekko/images/Ekko_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MAGE"
+    ],
+    "positions": [
+      "JUNGLE",
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2015,
+    "releasePatch": "5.10",
+    "lastPatch": "25.04",
+    "difficulty": 8,
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/245.png"
+  },
+  {
+    "id": 36,
+    "slug": "dr-mundo",
+    "name": "Dr. Mundo",
+    "image": "champions/DrMundo/images/DrMundo_icon.png",
+    "splashImage": "champions/DrMundo/images/DrMundo_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Health",
+    "rangeType": "Melee",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.22.16",
+    "lastPatch": "25.05",
+    "difficulty": 5,
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/36.png"
+  },
+  {
+    "id": 84,
+    "slug": "akali",
+    "name": "Akali",
+    "image": "champions/Akali/images/Akali_icon.png",
+    "splashImage": "champions/Akali/images/Akali_splash.jpg",
+    "roles": [
+      "ASSASSIN"
+    ],
+    "positions": [
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Energy",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.85",
+    "lastPatch": "25.12",
+    "difficulty": 7,
+    "tags": [
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/84.png"
+  },
+  {
+    "id": 105,
+    "slug": "fizz",
+    "name": "Fizz",
+    "image": "champions/Fizz/images/Fizz_icon.png",
+    "splashImage": "champions/Fizz/images/Fizz_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.129",
+    "lastPatch": "25.14",
+    "difficulty": 6,
+    "tags": [
+      "Assassin",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/105.png"
+  },
+  {
+    "id": 799,
+    "slug": "ambessa",
+    "name": "Ambessa",
+    "image": "champions/Ambessa/images/Ambessa_icon.png",
+    "splashImage": "champions/Ambessa/images/Ambessa_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Energy",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2024,
+    "releasePatch": "14.22",
+    "lastPatch": "25.11",
+    "difficulty": 10,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/799.png"
+  },
+  {
+    "id": 887,
+    "slug": "gwen",
+    "name": "Gwen",
+    "image": "champions/Gwen/images/Gwen_icon.png",
+    "splashImage": "champions/Gwen/images/Gwen_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2021,
+    "releasePatch": "11.8",
+    "lastPatch": "25.12",
+    "difficulty": 5,
+    "tags": [
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/887.png"
+  },
+  {
+    "id": 427,
+    "slug": "ivern",
+    "name": "Ivern",
+    "image": "champions/Ivern/images/Ivern_icon.png",
+    "splashImage": "champions/Ivern/images/Ivern_splash.jpg",
+    "roles": [
+      "CATCHER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2016,
+    "releasePatch": "6.20",
+    "lastPatch": "25.12",
+    "difficulty": 7,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/427.png"
+  },
+  {
+    "id": 3,
+    "slug": "galio",
+    "name": "Galio",
+    "image": "champions/Galio/images/Galio_icon.png",
+    "splashImage": "champions/Galio/images/Galio_splash.jpg",
+    "roles": [
+      "MAGE",
+      "TANK",
+      "WARDEN"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.98",
+    "lastPatch": "25.03",
+    "difficulty": 5,
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/3.png"
+  },
+  {
+    "id": 79,
+    "slug": "gragas",
+    "name": "Gragas",
+    "image": "champions/Gragas/images/Gragas_icon.png",
+    "splashImage": "champions/Gragas/images/Gragas_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "MAGE",
+      "VANGUARD"
+    ],
+    "positions": [
+      "JUNGLE",
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.72",
+    "lastPatch": "25.09",
+    "difficulty": 5,
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/79.png"
+  },
+  {
+    "id": 429,
+    "slug": "kalista",
+    "name": "Kalista",
+    "image": "champions/Kalista/images/Kalista_icon.png",
+    "splashImage": "champions/Kalista/images/Kalista_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2014,
+    "releasePatch": "4.20",
+    "lastPatch": "25.12",
+    "difficulty": 7,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/429.png"
+  },
+  {
+    "id": 22,
+    "slug": "ashe",
+    "name": "Ashe",
+    "image": "champions/Ashe/images/Ashe_icon.png",
+    "splashImage": "champions/Ashe/images/Ashe_splash.jpg",
+    "roles": [
+      "MARKSMAN",
+      "SUPPORT"
+    ],
+    "positions": [
+      "BOTTOM",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.11",
+    "difficulty": 4,
+    "tags": [
+      "Marksman",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/22.png"
+  },
+  {
+    "id": 38,
+    "slug": "kassadin",
+    "name": "Kassadin",
+    "image": "champions/Kassadin/images/Kassadin_icon.png",
+    "splashImage": "champions/Kassadin/images/Kassadin_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "void",
+      "void"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.22.7",
+    "lastPatch": "25.11",
+    "difficulty": 8,
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/38.png"
+  },
+  {
+    "id": 74,
+    "slug": "heimerdinger",
+    "name": "Heimerdinger",
+    "image": "champions/Heimerdinger/images/Heimerdinger_icon.png",
+    "splashImage": "champions/Heimerdinger/images/Heimerdinger_splash.jpg",
+    "roles": [
+      "MAGE",
+      "SPECIALIST",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "piltover",
+      "piltover"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.25.34",
+    "lastPatch": "25.14",
+    "difficulty": 8,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/74.png"
+  },
+  {
+    "id": 240,
+    "slug": "kled",
+    "name": "Kled",
+    "image": "champions/Kled/images/Kled_icon.png",
+    "splashImage": "champions/Kled/images/Kled_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "SKIRMISHER",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Courage",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2016,
+    "releasePatch": "6.16",
+    "lastPatch": "25.15",
+    "difficulty": 7,
+    "tags": [
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/240.png"
+  },
+  {
+    "id": 120,
+    "slug": "hecarim",
+    "name": "Hecarim",
+    "image": "champions/Hecarim/images/Hecarim_icon.png",
+    "splashImage": "champions/Hecarim/images/Hecarim_splash.jpg",
+    "roles": [
+      "DIVER",
+      "FIGHTER",
+      "TANK"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.138",
+    "lastPatch": "14.24",
+    "difficulty": 6,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/120.png"
+  },
+  {
+    "id": 910,
+    "slug": "hwei",
+    "name": "Hwei",
+    "image": "champions/Hwei/images/Hwei_icon.png",
+    "splashImage": "champions/Hwei/images/Hwei_splash.jpg",
+    "roles": [
+      "ARTILLERY",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2023,
+    "releasePatch": "13.24",
+    "lastPatch": "25.13",
+    "difficulty": 9,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/910.png"
+  },
+  {
+    "id": 42,
+    "slug": "corki",
+    "name": "Corki",
+    "image": "champions/Corki/images/Corki_icon.png",
+    "splashImage": "champions/Corki/images/Corki_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "bandle-city",
+      "bandle-city"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.25.21",
+    "lastPatch": "25.15",
+    "difficulty": 6,
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/42.png"
+  },
+  {
+    "id": 59,
+    "slug": "jarvan-iv",
+    "name": "Jarvan IV",
+    "image": "champions/JarvanIV/images/JarvanIV_icon.png",
+    "splashImage": "champions/JarvanIV/images/JarvanIV_splash.jpg",
+    "roles": [
+      "DIVER",
+      "FIGHTER",
+      "TANK"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.112",
+    "lastPatch": "25.06",
+    "difficulty": 5,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/59.png"
+  },
+  {
+    "id": 99,
+    "slug": "lux",
+    "name": "Lux",
+    "image": "champions/Lux/images/Lux_icon.png",
+    "splashImage": "champions/Lux/images/Lux_splash.jpg",
+    "roles": [
+      "ARTILLERY",
+      "BURST",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.103",
+    "lastPatch": "14.10",
+    "difficulty": 5,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/99.png"
+  },
+  {
+    "id": 63,
+    "slug": "brand",
+    "name": "Brand",
+    "image": "champions/Brand/images/Brand_icon.png",
+    "splashImage": "champions/Brand/images/Brand_splash.jpg",
+    "roles": [
+      "BURST",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "JUNGLE",
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.115",
+    "lastPatch": "25.12",
+    "difficulty": 4,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/63.png"
+  },
+  {
+    "id": 43,
+    "slug": "karma",
+    "name": "Karma",
+    "image": "champions/Karma/images/Karma_icon.png",
+    "splashImage": "champions/Karma/images/Karma_splash.jpg",
+    "roles": [
+      "BURST",
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.110",
+    "lastPatch": "25.13",
+    "difficulty": 5,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/43.png"
+  },
+  {
+    "id": 85,
+    "slug": "kennen",
+    "name": "Kennen",
+    "image": "champions/Kennen/images/Kennen_icon.png",
+    "splashImage": "champions/Kennen/images/Kennen_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN",
+      "SPECIALIST"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Energy",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.82",
+    "lastPatch": "25.14",
+    "difficulty": 4,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/85.png"
+  },
+  {
+    "id": 1,
+    "slug": "annie",
+    "name": "Annie",
+    "image": "champions/Annie/images/Annie_icon.png",
+    "splashImage": "champions/Annie/images/Annie_splash.jpg",
+    "roles": [
+      "BURST",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.11",
+    "difficulty": 6,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png"
+  },
+  {
+    "id": 126,
+    "slug": "jayce",
+    "name": "Jayce",
+    "image": "champions/Jayce/images/Jayce_icon.png",
+    "splashImage": "champions/Jayce/images/Jayce_splash.jpg",
+    "roles": [
+      "ARTILLERY",
+      "FIGHTER",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "piltover",
+      "piltover"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.142",
+    "lastPatch": "25.14",
+    "difficulty": 7,
+    "tags": [
+      "Fighter",
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/126.png"
+  },
+  {
+    "id": 40,
+    "slug": "janna",
+    "name": "Janna",
+    "image": "champions/Janna/images/Janna_icon.png",
+    "splashImage": "champions/Janna/images/Janna_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.22.16",
+    "lastPatch": "14.20",
+    "difficulty": 7,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/40.png"
+  },
+  {
+    "id": 897,
+    "slug": "k-sante",
+    "name": "K'Sante",
+    "image": "champions/KSante/images/KSante_icon.png",
+    "splashImage": "champions/KSante/images/KSante_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "SKIRMISHER",
+      "TANK",
+      "WARDEN"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2022,
+    "releasePatch": "12.21",
+    "lastPatch": "25.11",
+    "difficulty": 9,
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/897.png"
+  },
+  {
+    "id": 201,
+    "slug": "braum",
+    "name": "Braum",
+    "image": "champions/Braum/images/Braum_icon.png",
+    "splashImage": "champions/Braum/images/Braum_splash.jpg",
+    "roles": [
+      "SUPPORT",
+      "TANK",
+      "WARDEN"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2014,
+    "releasePatch": "4.7",
+    "lastPatch": "25.15",
+    "difficulty": 3,
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/201.png"
+  },
+  {
+    "id": 876,
+    "slug": "lillia",
+    "name": "Lillia",
+    "image": "champions/Lillia/images/Lillia_icon.png",
+    "splashImage": "champions/Lillia/images/Lillia_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "MAGE",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2020,
+    "releasePatch": "10.15",
+    "lastPatch": "25.07",
+    "difficulty": 8,
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/876.png"
+  },
+  {
+    "id": 141,
+    "slug": "kayn",
+    "name": "Kayn",
+    "image": "champions/Kayn/images/Kayn_icon.png",
+    "splashImage": "champions/Kayn/images/Kayn_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2017,
+    "releasePatch": "7.14",
+    "lastPatch": "25.10",
+    "difficulty": 8,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/141.png"
+  },
+  {
+    "id": 57,
+    "slug": "maokai",
+    "name": "Maokai",
+    "image": "champions/Maokai/images/Maokai_icon.png",
+    "splashImage": "champions/Maokai/images/Maokai_splash.jpg",
+    "roles": [
+      "SUPPORT",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "JUNGLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.111",
+    "lastPatch": "14.22",
+    "difficulty": 3,
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/57.png"
+  },
+  {
+    "id": 30,
+    "slug": "karthus",
+    "name": "Karthus",
+    "image": "champions/Karthus/images/Karthus_icon.png",
+    "splashImage": "champions/Karthus/images/Karthus_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "MAGE"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "June 12, 2009 Patch",
+    "lastPatch": "14.24",
+    "difficulty": 7,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/30.png"
+  },
+  {
+    "id": 800,
+    "slug": "mel",
+    "name": "Mel",
+    "image": "champions/Mel/images/Mel_icon.png",
+    "splashImage": "champions/Mel/images/Mel_splash.jpg",
+    "roles": [
+      "ARTILLERY",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2025,
+    "releasePatch": "25.02",
+    "lastPatch": "25.14",
+    "difficulty": 5,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/800.png"
+  },
+  {
+    "id": 222,
+    "slug": "jinx",
+    "name": "Jinx",
+    "image": "champions/Jinx/images/Jinx_icon.png",
+    "splashImage": "champions/Jinx/images/Jinx_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2013,
+    "releasePatch": "3.12",
+    "lastPatch": "25.06",
+    "difficulty": 6,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/222.png"
+  },
+  {
+    "id": 145,
+    "slug": "kai-sa",
+    "name": "Kai'Sa",
+    "image": "champions/Kaisa/images/Kaisa_icon.png",
+    "splashImage": "champions/Kaisa/images/Kaisa_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "void",
+      "void"
+    ],
+    "releaseYear": 2018,
+    "releasePatch": "8.5",
+    "lastPatch": "25.14",
+    "difficulty": 6,
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/145.png"
+  },
+  {
+    "id": 11,
+    "slug": "master-yi",
+    "name": "Master Yi",
+    "image": "champions/MasterYi/images/MasterYi_icon.png",
+    "splashImage": "champions/MasterYi/images/MasterYi_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.15",
+    "difficulty": 4,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/11.png"
+  },
+  {
+    "id": 121,
+    "slug": "kha-zix",
+    "name": "Kha'Zix",
+    "image": "champions/Khazix/images/Khazix_icon.png",
+    "splashImage": "champions/Khazix/images/Khazix_splash.jpg",
+    "roles": [
+      "ASSASSIN"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "void",
+      "void"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.148",
+    "lastPatch": "25.06",
+    "difficulty": 6,
+    "tags": [
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/121.png"
+  },
+  {
+    "id": 96,
+    "slug": "kog-maw",
+    "name": "Kog'Maw",
+    "image": "champions/KogMaw/images/KogMaw_icon.png",
+    "splashImage": "champions/KogMaw/images/KogMaw_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "void",
+      "void"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.94",
+    "lastPatch": "25.04",
+    "difficulty": 6,
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/96.png"
+  },
+  {
+    "id": 34,
+    "slug": "anivia",
+    "name": "Anivia",
+    "image": "champions/Anivia/images/Anivia_icon.png",
+    "splashImage": "champions/Anivia/images/Anivia_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "July 10, 2009 Patch",
+    "lastPatch": "25.13",
+    "difficulty": 10,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/34.png"
+  },
+  {
+    "id": 54,
+    "slug": "malphite",
+    "name": "Malphite",
+    "image": "champions/Malphite/images/Malphite_icon.png",
+    "splashImage": "champions/Malphite/images/Malphite_splash.jpg",
+    "roles": [
+      "MAGE",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "ixtal",
+      "ixtal"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.22.16",
+    "lastPatch": "14.21",
+    "difficulty": 2,
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/54.png"
+  },
+  {
+    "id": 236,
+    "slug": "lucian",
+    "name": "Lucian",
+    "image": "champions/Lucian/images/Lucian_icon.png",
+    "splashImage": "champions/Lucian/images/Lucian_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2013,
+    "releasePatch": "3.10a",
+    "lastPatch": "25.11",
+    "difficulty": 6,
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/236.png"
+  },
+  {
+    "id": 166,
+    "slug": "akshan",
+    "name": "Akshan",
+    "image": "champions/Akshan/images/Akshan_icon.png",
+    "splashImage": "champions/Akshan/images/Akshan_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2021,
+    "releasePatch": "11.15",
+    "lastPatch": "14.22",
+    "difficulty": 0,
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/166.png"
+  },
+  {
+    "id": 76,
+    "slug": "nidalee",
+    "name": "Nidalee",
+    "image": "champions/Nidalee/images/Nidalee_icon.png",
+    "splashImage": "champions/Nidalee/images/Nidalee_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MAGE",
+      "SPECIALIST"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ixtal",
+      "ixtal"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "1.0.0.63",
+    "lastPatch": "25.14",
+    "difficulty": 8,
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/76.png"
+  },
+  {
+    "id": 117,
+    "slug": "lulu",
+    "name": "Lulu",
+    "image": "champions/Lulu/images/Lulu_icon.png",
+    "splashImage": "champions/Lulu/images/Lulu_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "bandle-city",
+      "bandle-city"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.136",
+    "lastPatch": "25.14",
+    "difficulty": 5,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/117.png"
+  },
+  {
+    "id": 7,
+    "slug": "leblanc",
+    "name": "LeBlanc",
+    "image": "champions/Leblanc/images/Leblanc_icon.png",
+    "splashImage": "champions/Leblanc/images/Leblanc_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "BURST",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.104",
+    "lastPatch": "25.12",
+    "difficulty": 9,
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/7.png"
+  },
+  {
+    "id": 103,
+    "slug": "ahri",
+    "name": "Ahri",
+    "image": "champions/Ahri/images/Ahri_icon.png",
+    "splashImage": "champions/Ahri/images/Ahri_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "BURST",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.131",
+    "lastPatch": "25.13",
+    "difficulty": 5,
+    "tags": [
+      "Mage",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/103.png"
+  },
+  {
+    "id": 127,
+    "slug": "lissandra",
+    "name": "Lissandra",
+    "image": "champions/Lissandra/images/Lissandra_icon.png",
+    "splashImage": "champions/Lissandra/images/Lissandra_splash.jpg",
+    "roles": [
+      "BURST",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2013,
+    "releasePatch": "3.6",
+    "lastPatch": "25.06",
+    "difficulty": 6,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/127.png"
+  },
+  {
+    "id": 420,
+    "slug": "illaoi",
+    "name": "Illaoi",
+    "image": "champions/Illaoi/images/Illaoi_icon.png",
+    "splashImage": "champions/Illaoi/images/Illaoi_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "bilgewater",
+      "bilgewater"
+    ],
+    "releaseYear": 2015,
+    "releasePatch": "5.23",
+    "lastPatch": "25.15",
+    "difficulty": 4,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/420.png"
+  },
+  {
+    "id": 104,
+    "slug": "graves",
+    "name": "Graves",
+    "image": "champions/Graves/images/Graves_icon.png",
+    "splashImage": "champions/Graves/images/Graves_splash.jpg",
+    "roles": [
+      "MARKSMAN",
+      "SPECIALIST"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "bilgewater",
+      "bilgewater"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.127",
+    "lastPatch": "25.14",
+    "difficulty": 3,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/104.png"
+  },
+  {
+    "id": 82,
+    "slug": "mordekaiser",
+    "name": "Mordekaiser",
+    "image": "champions/Mordekaiser/images/Mordekaiser_icon.png",
+    "splashImage": "champions/Mordekaiser/images/Mordekaiser_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "MAGE"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Shield",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.75",
+    "lastPatch": "25.12",
+    "difficulty": 4,
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/82.png"
+  },
+  {
+    "id": 75,
+    "slug": "nasus",
+    "name": "Nasus",
+    "image": "champions/Nasus/images/Nasus_icon.png",
+    "splashImage": "champions/Nasus/images/Nasus_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.25.24",
+    "lastPatch": "25.03",
+    "difficulty": 6,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/75.png"
+  },
+  {
+    "id": 25,
+    "slug": "morgana",
+    "name": "Morgana",
+    "image": "champions/Morgana/images/Morgana_icon.png",
+    "splashImage": "champions/Morgana/images/Morgana_splash.jpg",
+    "roles": [
+      "CATCHER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.09",
+    "difficulty": 1,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/25.png"
+  },
+  {
+    "id": 902,
+    "slug": "milio",
+    "name": "Milio",
+    "image": "champions/Milio/images/Milio_icon.png",
+    "splashImage": "champions/Milio/images/Milio_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ixtal",
+      "ixtal"
+    ],
+    "releaseYear": 2023,
+    "releasePatch": "13.6",
+    "lastPatch": "25.13",
+    "difficulty": 5,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/902.png"
+  },
+  {
+    "id": 111,
+    "slug": "nautilus",
+    "name": "Nautilus",
+    "image": "champions/Nautilus/images/Nautilus_icon.png",
+    "splashImage": "champions/Nautilus/images/Nautilus_splash.jpg",
+    "roles": [
+      "SUPPORT",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "bilgewater",
+      "bilgewater"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.134",
+    "lastPatch": "25.04",
+    "difficulty": 6,
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/111.png"
+  },
+  {
+    "id": 31,
+    "slug": "cho-gath",
+    "name": "Cho'Gath",
+    "image": "champions/Chogath/images/Chogath_icon.png",
+    "splashImage": "champions/Chogath/images/Chogath_splash.jpg",
+    "roles": [
+      "MAGE",
+      "SPECIALIST",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "void",
+      "void"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "June 26, 2009 Patch",
+    "lastPatch": "25.11",
+    "difficulty": 5,
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/31.png"
+  },
+  {
+    "id": 518,
+    "slug": "neeko",
+    "name": "Neeko",
+    "image": "champions/Neeko/images/Neeko_icon.png",
+    "splashImage": "champions/Neeko/images/Neeko_splash.jpg",
+    "roles": [
+      "BURST",
+      "CATCHER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ixtal",
+      "ixtal"
+    ],
+    "releaseYear": 2018,
+    "releasePatch": "8.24",
+    "lastPatch": "25.14",
+    "difficulty": 5,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/518.png"
+  },
+  {
+    "id": 69,
+    "slug": "cassiopeia",
+    "name": "Cassiopeia",
+    "image": "champions/Cassiopeia/images/Cassiopeia_icon.png",
+    "splashImage": "champions/Cassiopeia/images/Cassiopeia_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.107",
+    "lastPatch": "25.03",
+    "difficulty": 10,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/69.png"
+  },
+  {
+    "id": 20,
+    "slug": "nunu-willump",
+    "name": "Nunu & Willump",
+    "image": "champions/Nunu/images/Nunu_icon.png",
+    "splashImage": "champions/Nunu/images/Nunu_splash.jpg",
+    "roles": [
+      "MAGE",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.09",
+    "difficulty": 4,
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/20.png"
+  },
+  {
+    "id": 119,
+    "slug": "draven",
+    "name": "Draven",
+    "image": "champions/Draven/images/Draven_icon.png",
+    "splashImage": "champions/Draven/images/Draven_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.140b",
+    "lastPatch": "25.06",
+    "difficulty": 8,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/119.png"
+  },
+  {
+    "id": 9,
+    "slug": "fiddlesticks",
+    "name": "Fiddlesticks",
+    "image": "champions/Fiddlesticks/images/Fiddlesticks_icon.png",
+    "splashImage": "champions/Fiddlesticks/images/Fiddlesticks_splash.jpg",
+    "roles": [
+      "MAGE",
+      "SPECIALIST",
+      "SUPPORT"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.13",
+    "difficulty": 9,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/9.png"
+  },
+  {
+    "id": 92,
+    "slug": "riven",
+    "name": "Riven",
+    "image": "champions/Riven/images/Riven_icon.png",
+    "splashImage": "champions/Riven/images/Riven_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "None",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.125",
+    "lastPatch": "25.14",
+    "difficulty": 8,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/92.png"
+  },
+  {
+    "id": 893,
+    "slug": "aurora",
+    "name": "Aurora",
+    "image": "champions/Aurora/images/Aurora_icon.png",
+    "splashImage": "champions/Aurora/images/Aurora_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "BURST",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2024,
+    "releasePatch": "14.14",
+    "lastPatch": "25.14",
+    "difficulty": 5,
+    "tags": [
+      "Mage",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/893.png"
+  },
+  {
+    "id": 122,
+    "slug": "darius",
+    "name": "Darius",
+    "image": "champions/Darius/images/Darius_icon.png",
+    "splashImage": "champions/Darius/images/Darius_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.140",
+    "lastPatch": "25.14",
+    "difficulty": 2,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/122.png"
+  },
+  {
+    "id": 10,
+    "slug": "kayle",
+    "name": "Kayle",
+    "image": "champions/Kayle/images/Kayle_icon.png",
+    "splashImage": "champions/Kayle/images/Kayle_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN",
+      "SPECIALIST"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.14",
+    "difficulty": 7,
+    "tags": [
+      "Mage",
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/10.png"
+  },
+  {
+    "id": 86,
+    "slug": "garen",
+    "name": "Garen",
+    "image": "champions/Garen/images/Garen_icon.png",
+    "splashImage": "champions/Garen/images/Garen_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "None",
+    "rangeType": "Melee",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.83",
+    "lastPatch": "25.12",
+    "difficulty": 5,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/86.png"
+  },
+  {
+    "id": 150,
+    "slug": "gnar",
+    "name": "Gnar",
+    "image": "champions/Gnar/images/Gnar_icon.png",
+    "splashImage": "champions/Gnar/images/Gnar_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "SPECIALIST",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Rage",
+    "rangeType": "Ranged",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2014,
+    "releasePatch": "4.18",
+    "lastPatch": "14.18",
+    "difficulty": 8,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/150.png"
+  },
+  {
+    "id": 39,
+    "slug": "irelia",
+    "name": "Irelia",
+    "image": "champions/Irelia/images/Irelia_icon.png",
+    "splashImage": "champions/Irelia/images/Irelia_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "FIGHTER"
+    ],
+    "positions": [
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.105",
+    "lastPatch": "25.15",
+    "difficulty": 5,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/39.png"
+  },
+  {
+    "id": 246,
+    "slug": "qiyana",
+    "name": "Qiyana",
+    "image": "champions/Qiyana/images/Qiyana_icon.png",
+    "splashImage": "champions/Qiyana/images/Qiyana_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "ixtal",
+      "ixtal"
+    ],
+    "releaseYear": 2019,
+    "releasePatch": "9.13",
+    "lastPatch": "14.21",
+    "difficulty": 8,
+    "tags": [
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/246.png"
+  },
+  {
+    "id": 24,
+    "slug": "jax",
+    "name": "Jax",
+    "image": "champions/Jax/images/Jax_icon.png",
+    "splashImage": "champions/Jax/images/Jax_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.12",
+    "difficulty": 5,
+    "tags": [
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/24.png"
+  },
+  {
+    "id": 203,
+    "slug": "kindred",
+    "name": "Kindred",
+    "image": "champions/Kindred/images/Kindred_icon.png",
+    "splashImage": "champions/Kindred/images/Kindred_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2015,
+    "releasePatch": "5.20",
+    "lastPatch": "25.13",
+    "difficulty": 4,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/203.png"
+  },
+  {
+    "id": 56,
+    "slug": "nocturne",
+    "name": "Nocturne",
+    "image": "champions/Nocturne/images/Nocturne_icon.png",
+    "splashImage": "champions/Nocturne/images/Nocturne_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.113",
+    "lastPatch": "25.10",
+    "difficulty": 4,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/56.png"
+  },
+  {
+    "id": 89,
+    "slug": "leona",
+    "name": "Leona",
+    "image": "champions/Leona/images/Leona_icon.png",
+    "splashImage": "champions/Leona/images/Leona_splash.jpg",
+    "roles": [
+      "SUPPORT",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "mount-targon",
+      "mount-targon"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.121",
+    "lastPatch": "25.09",
+    "difficulty": 4,
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/89.png"
+  },
+  {
+    "id": 895,
+    "slug": "nilah",
+    "name": "Nilah",
+    "image": "champions/Nilah/images/Nilah_icon.png",
+    "splashImage": "champions/Nilah/images/Nilah_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "bilgewater",
+      "bilgewater"
+    ],
+    "releaseYear": 2022,
+    "releasePatch": "12.13",
+    "lastPatch": "25.15",
+    "difficulty": 10,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/895.png"
+  },
+  {
+    "id": 62,
+    "slug": "wukong",
+    "name": "Wukong",
+    "image": "champions/MonkeyKing/images/MonkeyKing_icon.png",
+    "splashImage": "champions/MonkeyKing/images/MonkeyKing_splash.jpg",
+    "roles": [
+      "DIVER",
+      "FIGHTER",
+      "TANK"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.122",
+    "lastPatch": "25.03",
+    "difficulty": 3,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/62.png"
+  },
+  {
+    "id": 950,
+    "slug": "naafiri",
+    "name": "Naafiri",
+    "image": "champions/Naafiri/images/Naafiri_icon.png",
+    "splashImage": "champions/Naafiri/images/Naafiri_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2023,
+    "releasePatch": "13.14",
+    "lastPatch": "25.11",
+    "difficulty": 2,
+    "tags": [
+      "Assassin",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/950.png"
+  },
+  {
+    "id": 55,
+    "slug": "katarina",
+    "name": "Katarina",
+    "image": "champions/Katarina/images/Katarina_icon.png",
+    "splashImage": "champions/Katarina/images/Katarina_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "None",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.25.21",
+    "lastPatch": "25.13",
+    "difficulty": 8,
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/55.png"
+  },
+  {
+    "id": 17,
+    "slug": "teemo",
+    "name": "Teemo",
+    "image": "champions/Teemo/images/Teemo_icon.png",
+    "splashImage": "champions/Teemo/images/Teemo_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN",
+      "SPECIALIST"
+    ],
+    "positions": [
+      "JUNGLE",
+      "SUPPORT",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "bandle-city",
+      "bandle-city"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.04",
+    "difficulty": 6,
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/17.png"
+  },
+  {
+    "id": 61,
+    "slug": "orianna",
+    "name": "Orianna",
+    "image": "champions/Orianna/images/Orianna_icon.png",
+    "splashImage": "champions/Orianna/images/Orianna_splash.jpg",
+    "roles": [
+      "BURST",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "piltover",
+      "piltover"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.119",
+    "lastPatch": "25.09",
+    "difficulty": 7,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/61.png"
+  },
+  {
+    "id": 497,
+    "slug": "rakan",
+    "name": "Rakan",
+    "image": "champions/Rakan/images/Rakan_icon.png",
+    "splashImage": "champions/Rakan/images/Rakan_splash.jpg",
+    "roles": [
+      "CATCHER",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2017,
+    "releasePatch": "7.8",
+    "lastPatch": "25.03",
+    "difficulty": 5,
+    "tags": [
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/497.png"
+  },
+  {
+    "id": 888,
+    "slug": "renata-glasc",
+    "name": "Renata Glasc",
+    "image": "champions/Renata/images/Renata_icon.png",
+    "splashImage": "champions/Renata/images/Renata_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "zaun"
+    ],
+    "releaseYear": 2022,
+    "releasePatch": "12.4",
+    "lastPatch": "25.14",
+    "difficulty": 8,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/888.png"
+  },
+  {
+    "id": 875,
+    "slug": "sett",
+    "name": "Sett",
+    "image": "champions/Sett/images/Sett_icon.png",
+    "splashImage": "champions/Sett/images/Sett_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Grit",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2020,
+    "releasePatch": "10.1",
+    "lastPatch": "25.14",
+    "difficulty": 2,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/875.png"
+  },
+  {
+    "id": 526,
+    "slug": "rell",
+    "name": "Rell",
+    "image": "champions/Rell/images/Rell_icon.png",
+    "splashImage": "champions/Rell/images/Rell_splash.jpg",
+    "roles": [
+      "SUPPORT",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2020,
+    "releasePatch": "10.25",
+    "lastPatch": "25.15",
+    "difficulty": 0,
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/526.png"
+  },
+  {
+    "id": 58,
+    "slug": "renekton",
+    "name": "Renekton",
+    "image": "champions/Renekton/images/Renekton_icon.png",
+    "splashImage": "champions/Renekton/images/Renekton_splash.jpg",
+    "roles": [
+      "DIVER",
+      "FIGHTER",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Fury",
+    "rangeType": "Melee",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.109",
+    "lastPatch": "25.08",
+    "difficulty": 3,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/58.png"
+  },
+  {
+    "id": 81,
+    "slug": "ezreal",
+    "name": "Ezreal",
+    "image": "champions/Ezreal/images/Ezreal_icon.png",
+    "splashImage": "champions/Ezreal/images/Ezreal_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "piltover",
+      "piltover"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.79",
+    "lastPatch": "25.06",
+    "difficulty": 7,
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/81.png"
+  },
+  {
+    "id": 555,
+    "slug": "pyke",
+    "name": "Pyke",
+    "image": "champions/Pyke/images/Pyke_icon.png",
+    "splashImage": "champions/Pyke/images/Pyke_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "CATCHER",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "bilgewater",
+      "bilgewater"
+    ],
+    "releaseYear": 2018,
+    "releasePatch": "8.11",
+    "lastPatch": "25.11",
+    "difficulty": 7,
+    "tags": [
+      "Support",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/555.png"
+  },
+  {
+    "id": 516,
+    "slug": "ornn",
+    "name": "Ornn",
+    "image": "champions/Ornn/images/Ornn_icon.png",
+    "splashImage": "champions/Ornn/images/Ornn_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2017,
+    "releasePatch": "7.17",
+    "lastPatch": "25.02",
+    "difficulty": 5,
+    "tags": [
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/516.png"
+  },
+  {
+    "id": 421,
+    "slug": "rek-sai",
+    "name": "Rek'Sai",
+    "image": "champions/RekSai/images/RekSai_icon.png",
+    "splashImage": "champions/RekSai/images/RekSai_splash.jpg",
+    "roles": [
+      "DIVER",
+      "FIGHTER",
+      "TANK"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Rage",
+    "rangeType": "Melee",
+    "regions": [
+      "void",
+      "void"
+    ],
+    "releaseYear": 2014,
+    "releasePatch": "4.21",
+    "lastPatch": "25.15",
+    "difficulty": 3,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/421.png"
+  },
+  {
+    "id": 107,
+    "slug": "rengar",
+    "name": "Rengar",
+    "image": "champions/Rengar/images/Rengar_icon.png",
+    "splashImage": "champions/Rengar/images/Rengar_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "FIGHTER"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Ferocity",
+    "rangeType": "Melee",
+    "regions": [
+      "ixtal",
+      "ixtal"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.145",
+    "lastPatch": "25.14",
+    "difficulty": 8,
+    "tags": [
+      "Assassin",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/107.png"
+  },
+  {
+    "id": 13,
+    "slug": "ryze",
+    "name": "Ryze",
+    "image": "champions/Ryze/images/Ryze_icon.png",
+    "splashImage": "champions/Ryze/images/Ryze_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "FIGHTER",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.13",
+    "difficulty": 7,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/13.png"
+  },
+  {
+    "id": 68,
+    "slug": "rumble",
+    "name": "Rumble",
+    "image": "champions/Rumble/images/Rumble_icon.png",
+    "splashImage": "champions/Rumble/images/Rumble_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "FIGHTER",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Heat",
+    "rangeType": "Melee",
+    "regions": [
+      "bandle-city",
+      "bandle-city"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.116",
+    "lastPatch": "25.12",
+    "difficulty": 10,
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/68.png"
+  },
+  {
+    "id": 360,
+    "slug": "samira",
+    "name": "Samira",
+    "image": "champions/Samira/images/Samira_icon.png",
+    "splashImage": "champions/Samira/images/Samira_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2020,
+    "releasePatch": "10.19",
+    "lastPatch": "25.14",
+    "difficulty": 6,
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/360.png"
+  },
+  {
+    "id": 113,
+    "slug": "sejuani",
+    "name": "Sejuani",
+    "image": "champions/Sejuani/images/Sejuani_icon.png",
+    "splashImage": "champions/Sejuani/images/Sejuani_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.132",
+    "lastPatch": "14.15",
+    "difficulty": 4,
+    "tags": [
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/113.png"
+  },
+  {
+    "id": 15,
+    "slug": "sivir",
+    "name": "Sivir",
+    "image": "champions/Sivir/images/Sivir_icon.png",
+    "splashImage": "champions/Sivir/images/Sivir_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.11",
+    "difficulty": 4,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/15.png"
+  },
+  {
+    "id": 90,
+    "slug": "malzahar",
+    "name": "Malzahar",
+    "image": "champions/Malzahar/images/Malzahar_icon.png",
+    "splashImage": "champions/Malzahar/images/Malzahar_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "BATTLEMAGE",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "void",
+      "void"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.86",
+    "lastPatch": "25.04",
+    "difficulty": 6,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/90.png"
+  },
+  {
+    "id": 8,
+    "slug": "vladimir",
+    "name": "Vladimir",
+    "image": "champions/Vladimir/images/Vladimir_icon.png",
+    "splashImage": "champions/Vladimir/images/Vladimir_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "FIGHTER",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Crimson Rush",
+    "rangeType": "Ranged",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.97",
+    "lastPatch": "25.11",
+    "difficulty": 7,
+    "tags": [
+      "Mage",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/8.png"
+  },
+  {
+    "id": 2,
+    "slug": "olaf",
+    "name": "Olaf",
+    "image": "champions/Olaf/images/Olaf_icon.png",
+    "splashImage": "champions/Olaf/images/Olaf_splash.jpg",
+    "roles": [
+      "DIVER",
+      "FIGHTER",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.87",
+    "lastPatch": "25.07",
+    "difficulty": 3,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/2.png"
+  },
+  {
+    "id": 16,
+    "slug": "soraka",
+    "name": "Soraka",
+    "image": "champions/Soraka/images/Soraka_icon.png",
+    "splashImage": "champions/Soraka/images/Soraka_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "mount-targon",
+      "mount-targon"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "14.24",
+    "difficulty": 3,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/16.png"
+  },
+  {
+    "id": 412,
+    "slug": "thresh",
+    "name": "Thresh",
+    "image": "champions/Thresh/images/Thresh_icon.png",
+    "splashImage": "champions/Thresh/images/Thresh_splash.jpg",
+    "roles": [
+      "CATCHER",
+      "SUPPORT",
+      "TANK"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2013,
+    "releasePatch": "1.0.0.154",
+    "lastPatch": "25.03",
+    "difficulty": 7,
+    "tags": [
+      "Support",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/412.png"
+  },
+  {
+    "id": 50,
+    "slug": "swain",
+    "name": "Swain",
+    "image": "champions/Swain/images/Swain_icon.png",
+    "splashImage": "champions/Swain/images/Swain_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "BOTTOM",
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.102",
+    "lastPatch": "25.12",
+    "difficulty": 8,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/50.png"
+  },
+  {
+    "id": 35,
+    "slug": "shaco",
+    "name": "Shaco",
+    "image": "champions/Shaco/images/Shaco_icon.png",
+    "splashImage": "champions/Shaco/images/Shaco_splash.jpg",
+    "roles": [
+      "ASSASSIN"
+    ],
+    "positions": [
+      "JUNGLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.25.34",
+    "lastPatch": "25.07",
+    "difficulty": 9,
+    "tags": [
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/35.png"
+  },
+  {
+    "id": 223,
+    "slug": "tahm-kench",
+    "name": "Tahm Kench",
+    "image": "champions/TahmKench/images/TahmKench_icon.png",
+    "splashImage": "champions/TahmKench/images/TahmKench_splash.jpg",
+    "roles": [
+      "SUPPORT",
+      "TANK",
+      "WARDEN"
+    ],
+    "positions": [
+      "SUPPORT",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2015,
+    "releasePatch": "5.13",
+    "lastPatch": "25.02",
+    "difficulty": 5,
+    "tags": [
+      "Tank",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/223.png"
+  },
+  {
+    "id": 14,
+    "slug": "sion",
+    "name": "Sion",
+    "image": "champions/Sion/images/Sion_icon.png",
+    "splashImage": "champions/Sion/images/Sion_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.11",
+    "difficulty": 5,
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/14.png"
+  },
+  {
+    "id": 102,
+    "slug": "shyvana",
+    "name": "Shyvana",
+    "image": "champions/Shyvana/images/Shyvana_icon.png",
+    "splashImage": "champions/Shyvana/images/Shyvana_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "MAGE"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Fury",
+    "rangeType": "Melee",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.128",
+    "lastPatch": "14.23",
+    "difficulty": 4,
+    "tags": [
+      "Fighter",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/102.png"
+  },
+  {
+    "id": 106,
+    "slug": "volibear",
+    "name": "Volibear",
+    "image": "champions/Volibear/images/Volibear_icon.png",
+    "splashImage": "champions/Volibear/images/Volibear_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.130",
+    "lastPatch": "25.07",
+    "difficulty": 3,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/106.png"
+  },
+  {
+    "id": 901,
+    "slug": "smolder",
+    "name": "Smolder",
+    "image": "champions/Smolder/images/Smolder_icon.png",
+    "splashImage": "champions/Smolder/images/Smolder_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM",
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2024,
+    "releasePatch": "14.2",
+    "lastPatch": "25.11",
+    "difficulty": 6,
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/901.png"
+  },
+  {
+    "id": 27,
+    "slug": "singed",
+    "name": "Singed",
+    "image": "champions/Singed/images/Singed_icon.png",
+    "splashImage": "champions/Singed/images/Singed_splash.jpg",
+    "roles": [
+      "MAGE",
+      "SPECIALIST",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "April 18, 2009 Patch",
+    "lastPatch": "25.08",
+    "difficulty": 5,
+    "tags": [
+      "Tank",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/27.png"
+  },
+  {
+    "id": 72,
+    "slug": "skarner",
+    "name": "Skarner",
+    "image": "champions/Skarner/images/Skarner_icon.png",
+    "splashImage": "champions/Skarner/images/Skarner_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "ixtal",
+      "ixtal"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.123",
+    "lastPatch": "25.09",
+    "difficulty": 5,
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/72.png"
+  },
+  {
+    "id": 23,
+    "slug": "tryndamere",
+    "name": "Tryndamere",
+    "image": "champions/Tryndamere/images/Tryndamere_icon.png",
+    "splashImage": "champions/Tryndamere/images/Tryndamere_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Fury",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "May 1, 2009 Patch",
+    "lastPatch": "14.20",
+    "difficulty": 5,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/23.png"
+  },
+  {
+    "id": 18,
+    "slug": "tristana",
+    "name": "Tristana",
+    "image": "champions/Tristana/images/Tristana_icon.png",
+    "splashImage": "champions/Tristana/images/Tristana_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM",
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "bandle-city",
+      "bandle-city"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.08",
+    "difficulty": 4,
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/18.png"
+  },
+  {
+    "id": 37,
+    "slug": "sona",
+    "name": "Sona",
+    "image": "champions/Sona/images/Sona_icon.png",
+    "splashImage": "champions/Sona/images/Sona_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.101",
+    "lastPatch": "25.08",
+    "difficulty": 4,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/37.png"
+  },
+  {
+    "id": 98,
+    "slug": "shen",
+    "name": "Shen",
+    "image": "champions/Shen/images/Shen_icon.png",
+    "splashImage": "champions/Shen/images/Shen_splash.jpg",
+    "roles": [
+      "TANK",
+      "WARDEN"
+    ],
+    "positions": [
+      "SUPPORT",
+      "TOP"
+    ],
+    "resource": "Energy",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.81",
+    "lastPatch": "25.12",
+    "difficulty": 4,
+    "tags": [
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/98.png"
+  },
+  {
+    "id": 163,
+    "slug": "taliyah",
+    "name": "Taliyah",
+    "image": "champions/Taliyah/images/Taliyah_icon.png",
+    "splashImage": "champions/Taliyah/images/Taliyah_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "JUNGLE",
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2016,
+    "releasePatch": "6.10",
+    "lastPatch": "25.12",
+    "difficulty": 5,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/163.png"
+  },
+  {
+    "id": 110,
+    "slug": "varus",
+    "name": "Varus",
+    "image": "champions/Varus/images/Varus_icon.png",
+    "splashImage": "champions/Varus/images/Varus_splash.jpg",
+    "roles": [
+      "ARTILLERY",
+      "MAGE",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.139",
+    "lastPatch": "25.12",
+    "difficulty": 2,
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/110.png"
+  },
+  {
+    "id": 254,
+    "slug": "vi",
+    "name": "Vi",
+    "image": "champions/Vi/images/Vi_icon.png",
+    "splashImage": "champions/Vi/images/Vi_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "FIGHTER"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "piltover",
+      "piltover"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.153",
+    "lastPatch": "25.13",
+    "difficulty": 4,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/254.png"
+  },
+  {
+    "id": 134,
+    "slug": "syndra",
+    "name": "Syndra",
+    "image": "champions/Syndra/images/Syndra_icon.png",
+    "splashImage": "champions/Syndra/images/Syndra_splash.jpg",
+    "roles": [
+      "BURST",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.147",
+    "lastPatch": "25.08",
+    "difficulty": 8,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/134.png"
+  },
+  {
+    "id": 77,
+    "slug": "udyr",
+    "name": "Udyr",
+    "image": "champions/Udyr/images/Udyr_icon.png",
+    "splashImage": "champions/Udyr/images/Udyr_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "1.0.0.61",
+    "lastPatch": "25.11",
+    "difficulty": 7,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/77.png"
+  },
+  {
+    "id": 44,
+    "slug": "taric",
+    "name": "Taric",
+    "image": "champions/Taric/images/Taric_icon.png",
+    "splashImage": "champions/Taric/images/Taric_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "SUPPORT",
+      "TANK",
+      "WARDEN"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "mount-targon",
+      "mount-targon"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.9.22.15",
+    "lastPatch": "14.21",
+    "difficulty": 3,
+    "tags": [
+      "Support",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/44.png"
+  },
+  {
+    "id": 48,
+    "slug": "trundle",
+    "name": "Trundle",
+    "image": "champions/Trundle/images/Trundle_icon.png",
+    "splashImage": "champions/Trundle/images/Trundle_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "freljord",
+      "freljord"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.106",
+    "lastPatch": "25.07",
+    "difficulty": 5,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/48.png"
+  },
+  {
+    "id": 4,
+    "slug": "twisted-fate",
+    "name": "Twisted Fate",
+    "image": "champions/TwistedFate/images/TwistedFate_icon.png",
+    "splashImage": "champions/TwistedFate/images/TwistedFate_splash.jpg",
+    "roles": [
+      "BURST",
+      "MAGE",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM",
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "bilgewater",
+      "bilgewater"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.14",
+    "difficulty": 9,
+    "tags": [
+      "Mage",
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/4.png"
+  },
+  {
+    "id": 157,
+    "slug": "yasuo",
+    "name": "Yasuo",
+    "image": "champions/Yasuo/images/Yasuo_icon.png",
+    "splashImage": "champions/Yasuo/images/Yasuo_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "BOTTOM",
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Flow",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2013,
+    "releasePatch": "3.15",
+    "lastPatch": "25.14",
+    "difficulty": 10,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/157.png"
+  },
+  {
+    "id": 29,
+    "slug": "twitch",
+    "name": "Twitch",
+    "image": "champions/Twitch/images/Twitch_icon.png",
+    "splashImage": "champions/Twitch/images/Twitch_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "May 1, 2009 Patch",
+    "lastPatch": "25.13",
+    "difficulty": 6,
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/29.png"
+  },
+  {
+    "id": 101,
+    "slug": "xerath",
+    "name": "Xerath",
+    "image": "champions/Xerath/images/Xerath_icon.png",
+    "splashImage": "champions/Xerath/images/Xerath_splash.jpg",
+    "roles": [
+      "ARTILLERY",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.126",
+    "lastPatch": "25.08",
+    "difficulty": 8,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/101.png"
+  },
+  {
+    "id": 498,
+    "slug": "xayah",
+    "name": "Xayah",
+    "image": "champions/Xayah/images/Xayah_icon.png",
+    "splashImage": "champions/Xayah/images/Xayah_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2017,
+    "releasePatch": "7.8",
+    "lastPatch": "14.21",
+    "difficulty": 5,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/498.png"
+  },
+  {
+    "id": 67,
+    "slug": "vayne",
+    "name": "Vayne",
+    "image": "champions/Vayne/images/Vayne_icon.png",
+    "splashImage": "champions/Vayne/images/Vayne_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.118",
+    "lastPatch": "14.22",
+    "difficulty": 8,
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/67.png"
+  },
+  {
+    "id": 6,
+    "slug": "urgot",
+    "name": "Urgot",
+    "image": "champions/Urgot/images/Urgot_icon.png",
+    "splashImage": "champions/Urgot/images/Urgot_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.99",
+    "lastPatch": "25.06",
+    "difficulty": 8,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/6.png"
+  },
+  {
+    "id": 143,
+    "slug": "zyra",
+    "name": "Zyra",
+    "image": "champions/Zyra/images/Zyra_icon.png",
+    "splashImage": "champions/Zyra/images/Zyra_splash.jpg",
+    "roles": [
+      "CATCHER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ixtal",
+      "ixtal"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.143",
+    "lastPatch": "14.24",
+    "difficulty": 7,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/143.png"
+  },
+  {
+    "id": 21,
+    "slug": "miss-fortune",
+    "name": "Miss Fortune",
+    "image": "champions/MissFortune/images/MissFortune_icon.png",
+    "splashImage": "champions/MissFortune/images/MissFortune_splash.jpg",
+    "roles": [
+      "MAGE",
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "bilgewater",
+      "bilgewater"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.100",
+    "lastPatch": "25.03",
+    "difficulty": 1,
+    "tags": [
+      "Marksman",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/21.png"
+  },
+  {
+    "id": 5,
+    "slug": "xin-zhao",
+    "name": "Xin Zhao",
+    "image": "champions/XinZhao/images/XinZhao_icon.png",
+    "splashImage": "champions/XinZhao/images/XinZhao_splash.jpg",
+    "roles": [
+      "DIVER",
+      "FIGHTER",
+      "TANK"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.96",
+    "lastPatch": "25.14",
+    "difficulty": 2,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/5.png"
+  },
+  {
+    "id": 161,
+    "slug": "vel-koz",
+    "name": "Vel'Koz",
+    "image": "champions/Velkoz/images/Velkoz_icon.png",
+    "splashImage": "champions/Velkoz/images/Velkoz_splash.jpg",
+    "roles": [
+      "ARTILLERY",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "void",
+      "void"
+    ],
+    "releaseYear": 2014,
+    "releasePatch": "4.3",
+    "lastPatch": "25.14",
+    "difficulty": 8,
+    "tags": [
+      "Mage",
+      "Support"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/161.png"
+  },
+  {
+    "id": 45,
+    "slug": "veigar",
+    "name": "Veigar",
+    "image": "champions/Veigar/images/Veigar_icon.png",
+    "splashImage": "champions/Veigar/images/Veigar_splash.jpg",
+    "roles": [
+      "BURST",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "bandle-city",
+      "bandle-city"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "0.8.22.115",
+    "lastPatch": "25.09",
+    "difficulty": 7,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/45.png"
+  },
+  {
+    "id": 711,
+    "slug": "vex",
+    "name": "Vex",
+    "image": "champions/Vex/images/Vex_icon.png",
+    "splashImage": "champions/Vex/images/Vex_splash.jpg",
+    "roles": [
+      "BURST",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2021,
+    "releasePatch": "11.19",
+    "lastPatch": "25.09",
+    "difficulty": 0,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/711.png"
+  },
+  {
+    "id": 112,
+    "slug": "viktor",
+    "name": "Viktor",
+    "image": "champions/Viktor/images/Viktor_icon.png",
+    "splashImage": "champions/Viktor/images/Viktor_splash.jpg",
+    "roles": [
+      "BATTLEMAGE",
+      "MAGE"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.131",
+    "lastPatch": "25.06",
+    "difficulty": 9,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/112.png"
+  },
+  {
+    "id": 19,
+    "slug": "warwick",
+    "name": "Warwick",
+    "image": "champions/Warwick/images/Warwick_icon.png",
+    "splashImage": "champions/Warwick/images/Warwick_splash.jpg",
+    "roles": [
+      "DIVER",
+      "FIGHTER",
+      "TANK"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "Alpha Week 2",
+    "lastPatch": "25.08",
+    "difficulty": 3,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/19.png"
+  },
+  {
+    "id": 804,
+    "slug": "yunara",
+    "name": "Yunara",
+    "image": "champions/Yunara/images/Yunara_icon.png",
+    "splashImage": "champions/Yunara/images/Yunara_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2025,
+    "releasePatch": "25.14",
+    "lastPatch": "25.14",
+    "difficulty": 4,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/804.png"
+  },
+  {
+    "id": 133,
+    "slug": "quinn",
+    "name": "Quinn",
+    "image": "champions/Quinn/images/Quinn_icon.png",
+    "splashImage": "champions/Quinn/images/Quinn_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "MARKSMAN",
+      "SPECIALIST"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2013,
+    "releasePatch": "3.03",
+    "lastPatch": "25.15",
+    "difficulty": 5,
+    "tags": [
+      "Marksman",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/133.png"
+  },
+  {
+    "id": 777,
+    "slug": "yone",
+    "name": "Yone",
+    "image": "champions/Yone/images/Yone_icon.png",
+    "splashImage": "champions/Yone/images/Yone_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Flow",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2020,
+    "releasePatch": "10.16",
+    "lastPatch": "25.09",
+    "difficulty": 8,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/777.png"
+  },
+  {
+    "id": 33,
+    "slug": "rammus",
+    "name": "Rammus",
+    "image": "champions/Rammus/images/Rammus_icon.png",
+    "splashImage": "champions/Rammus/images/Rammus_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "shurima",
+      "shurima"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "July 10, 2009 Patch",
+    "lastPatch": "25.13",
+    "difficulty": 5,
+    "tags": [
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/33.png"
+  },
+  {
+    "id": 78,
+    "slug": "poppy",
+    "name": "Poppy",
+    "image": "champions/Poppy/images/Poppy_icon.png",
+    "splashImage": "champions/Poppy/images/Poppy_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "TANK",
+      "WARDEN"
+    ],
+    "positions": [
+      "JUNGLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.70",
+    "lastPatch": "25.09",
+    "difficulty": 6,
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/78.png"
+  },
+  {
+    "id": 80,
+    "slug": "pantheon",
+    "name": "Pantheon",
+    "image": "champions/Pantheon/images/Pantheon_icon.png",
+    "splashImage": "champions/Pantheon/images/Pantheon_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "FIGHTER"
+    ],
+    "positions": [
+      "JUNGLE",
+      "MIDDLE",
+      "SUPPORT",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "mount-targon",
+      "mount-targon"
+    ],
+    "releaseYear": 2010,
+    "releasePatch": "1.0.0.72",
+    "lastPatch": "25.15",
+    "difficulty": 4,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/80.png"
+  },
+  {
+    "id": 517,
+    "slug": "sylas",
+    "name": "Sylas",
+    "image": "champions/Sylas/images/Sylas_icon.png",
+    "splashImage": "champions/Sylas/images/Sylas_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "BURST",
+      "MAGE",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "MIDDLE",
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "demacia",
+      "demacia"
+    ],
+    "releaseYear": 2019,
+    "releasePatch": "9.2",
+    "lastPatch": "25.13",
+    "difficulty": 5,
+    "tags": [
+      "Mage",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/517.png"
+  },
+  {
+    "id": 238,
+    "slug": "zed",
+    "name": "Zed",
+    "image": "champions/Zed/images/Zed_icon.png",
+    "splashImage": "champions/Zed/images/Zed_splash.jpg",
+    "roles": [
+      "ASSASSIN"
+    ],
+    "positions": [
+      "JUNGLE",
+      "MIDDLE"
+    ],
+    "resource": "Energy",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.151",
+    "lastPatch": "25.08",
+    "difficulty": 7,
+    "tags": [
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/238.png"
+  },
+  {
+    "id": 350,
+    "slug": "yuumi",
+    "name": "Yuumi",
+    "image": "champions/Yuumi/images/Yuumi_icon.png",
+    "splashImage": "champions/Yuumi/images/Yuumi_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "bandle-city",
+      "bandle-city"
+    ],
+    "releaseYear": 2019,
+    "releasePatch": "9.10",
+    "lastPatch": "25.14",
+    "difficulty": 2,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/350.png"
+  },
+  {
+    "id": 26,
+    "slug": "zilean",
+    "name": "Zilean",
+    "image": "champions/Zilean/images/Zilean_icon.png",
+    "splashImage": "champions/Zilean/images/Zilean_splash.jpg",
+    "roles": [
+      "MAGE",
+      "SPECIALIST",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2009,
+    "releasePatch": "April 18, 2009 Patch",
+    "lastPatch": "25.13",
+    "difficulty": 6,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/26.png"
+  },
+  {
+    "id": 154,
+    "slug": "zac",
+    "name": "Zac",
+    "image": "champions/Zac/images/Zac_icon.png",
+    "splashImage": "champions/Zac/images/Zac_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "TANK",
+      "VANGUARD"
+    ],
+    "positions": [
+      "JUNGLE",
+      "SUPPORT",
+      "TOP"
+    ],
+    "resource": "Health",
+    "rangeType": "Melee",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2013,
+    "releasePatch": "3.5",
+    "lastPatch": "25.13",
+    "difficulty": 8,
+    "tags": [
+      "Tank",
+      "Fighter"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/154.png"
+  },
+  {
+    "id": 235,
+    "slug": "senna",
+    "name": "Senna",
+    "image": "champions/Senna/images/Senna_icon.png",
+    "splashImage": "champions/Senna/images/Senna_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "MARKSMAN",
+      "SUPPORT"
+    ],
+    "positions": [
+      "BOTTOM",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2019,
+    "releasePatch": "9.22",
+    "lastPatch": "25.12",
+    "difficulty": 7,
+    "tags": [
+      "Support",
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/235.png"
+  },
+  {
+    "id": 221,
+    "slug": "zeri",
+    "name": "Zeri",
+    "image": "champions/Zeri/images/Zeri_icon.png",
+    "splashImage": "champions/Zeri/images/Zeri_splash.jpg",
+    "roles": [
+      "MARKSMAN"
+    ],
+    "positions": [
+      "BOTTOM"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2022,
+    "releasePatch": "12.2",
+    "lastPatch": "25.12",
+    "difficulty": 6,
+    "tags": [
+      "Marksman"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/221.png"
+  },
+  {
+    "id": 115,
+    "slug": "ziggs",
+    "name": "Ziggs",
+    "image": "champions/Ziggs/images/Ziggs_icon.png",
+    "splashImage": "champions/Ziggs/images/Ziggs_splash.jpg",
+    "roles": [
+      "ARTILLERY",
+      "MAGE"
+    ],
+    "positions": [
+      "BOTTOM",
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "zaun",
+      "zaun"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.133",
+    "lastPatch": "25.14",
+    "difficulty": 4,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/115.png"
+  },
+  {
+    "id": 91,
+    "slug": "talon",
+    "name": "Talon",
+    "image": "champions/Talon/images/Talon_icon.png",
+    "splashImage": "champions/Talon/images/Talon_splash.jpg",
+    "roles": [
+      "ASSASSIN"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "noxus",
+      "noxus"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.124",
+    "lastPatch": "25.11",
+    "difficulty": 7,
+    "tags": [
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/91.png"
+  },
+  {
+    "id": 83,
+    "slug": "yorick",
+    "name": "Yorick",
+    "image": "champions/Yorick/images/Yorick_icon.png",
+    "splashImage": "champions/Yorick/images/Yorick_splash.jpg",
+    "roles": [
+      "FIGHTER",
+      "JUGGERNAUT",
+      "TANK"
+    ],
+    "positions": [
+      "TOP"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.120",
+    "lastPatch": "25.13",
+    "difficulty": 6,
+    "tags": [
+      "Fighter",
+      "Tank"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/83.png"
+  },
+  {
+    "id": 234,
+    "slug": "viego",
+    "name": "Viego",
+    "image": "champions/Viego/images/Viego_icon.png",
+    "splashImage": "champions/Viego/images/Viego_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "FIGHTER",
+      "SKIRMISHER"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "None",
+    "rangeType": "Melee",
+    "regions": [
+      "shadow-isles",
+      "shadow-isles"
+    ],
+    "releaseYear": 2021,
+    "releasePatch": "11.2",
+    "lastPatch": "25.14",
+    "difficulty": 5,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/234.png"
+  },
+  {
+    "id": 142,
+    "slug": "zoe",
+    "name": "Zoe",
+    "image": "champions/Zoe/images/Zoe_icon.png",
+    "splashImage": "champions/Zoe/images/Zoe_splash.jpg",
+    "roles": [
+      "BURST",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "MIDDLE"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "mount-targon",
+      "mount-targon"
+    ],
+    "releaseYear": 2017,
+    "releasePatch": "7.23",
+    "lastPatch": "25.14",
+    "difficulty": 5,
+    "tags": [
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/142.png"
+  },
+  {
+    "id": 904,
+    "slug": "zaahen",
+    "name": "Zaahen",
+    "image": "champions/Zaahen/images/Zaahen_icon.png",
+    "splashImage": "champions/Zaahen/images/Zaahen_splash.jpg",
+    "roles": [],
+    "positions": [],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "unaffiliated"
+    ],
+    "releaseYear": null,
+    "releasePatch": null,
+    "lastPatch": null,
+    "difficulty": 2,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/904.png"
+  },
+  {
+    "id": 147,
+    "slug": "seraphine",
+    "name": "Seraphine",
+    "image": "champions/Seraphine/images/Seraphine_icon.png",
+    "splashImage": "champions/Seraphine/images/Seraphine_splash.jpg",
+    "roles": [
+      "BURST",
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "BOTTOM",
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "piltover",
+      "piltover"
+    ],
+    "releaseYear": 2020,
+    "releasePatch": "10.22",
+    "lastPatch": "25.05",
+    "difficulty": 0,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Seraphine.png"
+  },
+  {
+    "id": 64,
+    "slug": "lee-sin",
+    "name": "Lee Sin",
+    "image": "champions/LeeSin/images/LeeSin_icon.png",
+    "splashImage": "champions/LeeSin/images/LeeSin_splash.jpg",
+    "roles": [
+      "ASSASSIN",
+      "DIVER",
+      "FIGHTER"
+    ],
+    "positions": [
+      "JUNGLE"
+    ],
+    "resource": "Energy",
+    "rangeType": "Melee",
+    "regions": [
+      "ionia",
+      "ionia"
+    ],
+    "releaseYear": 2011,
+    "releasePatch": "1.0.0.114",
+    "lastPatch": "25.14",
+    "difficulty": 6,
+    "tags": [
+      "Fighter",
+      "Assassin"
+    ],
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/LeeSin.png"
+  },
+  {
+    "id": 267,
+    "slug": "nami",
+    "name": "Nami",
+    "image": "champions/Nami/images/Nami_icon.png",
+    "splashImage": "champions/Nami/images/Nami_splash.jpg",
+    "roles": [
+      "ENCHANTER",
+      "MAGE",
+      "SUPPORT"
+    ],
+    "positions": [
+      "SUPPORT"
+    ],
+    "resource": "Mana",
+    "rangeType": "Ranged",
+    "regions": [
+      "unaffiliated",
+      "unaffiliated"
+    ],
+    "releaseYear": 2012,
+    "releasePatch": "1.0.0.152",
+    "lastPatch": "14.24",
+    "difficulty": 5,
+    "tags": [
+      "Support",
+      "Mage"
+    ],
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nami.png"
+  }
+]

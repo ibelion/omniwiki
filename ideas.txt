@@ -1,9 +1,0 @@
-hint tokens
-per universe flavor
-share option
-results screen/summary card
-Streak and difficulty
-Visible streak bar near the header: current streak, longest streak, and a tiny “don’t break the chain” message when you’re close to a milestone.
-input & accessibility
-Quick shortcuts: G to focus guess, H to reveal next hint, 1/2/3 to switch mode (identity/crop/quote), N for next puzzle when solved.
-Colorblind‑safe hints: keep your arrows/indicators but back them with text labels and icons so the meaning is clear without color.

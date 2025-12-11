@@ -1,0 +1,166 @@
+id,name,slug,generation,effect,short_effect,pokemon,sourceUrl
+124,pickpocket,pickpocket,generation-v,"Whenever a move makes contact with this Pokémon, if it does not have a held item, it steals the attacker's held item.
+
+This Pokémon cannot steal upon being knocked out.  It can steal if the attacker has a substitute, but cannot steal when its own Substitute is hit.  If a move hits multiple times, only the last hit triggers this ability.  If this Pokémon is wild, it cannot steal from a trained Pokémon.",Steals attacking Pokémon's held items on contact.,"sneasel, seedot, nuzleaf, shiftry, weavile, binacle, barbaracle, impidimp, morgrem, grimmsnarl, shroodle, tinkatink, tinkatuff, tinkaton, grimmsnarl-gmax, sneasel-hisui",https://pokeapi.co/api/v2/ability/124/
+125,sheer-force,sheer_force,generation-v,"This Pokémon's moves with extra effects have 1.3× their power, but lose their extra effects.
+
+An effect chance is a move's chance to inflict a status ailment, cause a stat change, or make the target flinch in addition to the move's main effect. For example, thunder shock's paralysis is an extra effect, but thunder wave's is not, nor are knock off's item removal and air cutter's increased critical hit rate.
+
+Moves that lower the user's stats are unaffected.","Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects.","nidoqueen, nidoking, krabby, kingler, tauros, totodile, croconaw, feraligatr, steelix, makuhita, hariyama, mawile, trapinch, bagon, cranidos, rampardos, timburr, gurdurr, conkeldurr, darmanitan-standard, druddigon, rufflet, braviary, landorus-incarnate, toucannon, cufant, copperajah, kleavor, cetoddle, cetitan, darmanitan-zen, camerupt-mega, kingler-gmax, copperajah-gmax, braviary-hisui, squawkabilly-yellow-plumage, squawkabilly-white-plumage",https://pokeapi.co/api/v2/ability/125/
+126,contrary,contrary,generation-v,"Whenever this Pokémon's stats would be raised, they are instead lowered by the same amount, and vice versa.",Inverts stat changes.,"shuckle, spinda, snivy, servine, serperior, inkay, malamar, fomantis, lurantis, enamorus-incarnate, lurantis-totem",https://pokeapi.co/api/v2/ability/126/
+127,unnerve,unnerve,generation-v,"Opposing Pokémon cannot eat held Berries while this Pokémon is in battle.
+
+Affected Pokémon can still use bug bite or pluck to eat a target's Berry.",Prevents opposing Pokémon from eating held Berries.,"ekans, arbok, meowth, persian, aerodactyl, mewtwo, ursaring, houndour, houndoom, tyranitar, masquerain, vespiquen, joltik, galvantula, axew, fraxure, haxorus, litleo, pyroar, bewear, rookidee, corvisquire, corviknight, calyrex, ursaluna, meowth-galar, meowth-gmax, corviknight-gmax",https://pokeapi.co/api/v2/ability/127/
+128,defiant,defiant,generation-v,"When any of this Pokémon's stats are lowered, its Attack rises by two stages.
+
+If multiple stats are lowered at once, this ability takes effect with each stat lowered.",Raises Attack two stages upon having any stat lowered.,"mankey, primeape, farfetchd, purugly, pawniard, bisharp, braviary, tornadus-incarnate, thundurus-incarnate, passimian, obstagoon, falinks, annihilape, kingambit, ogerpon, zapdos-galar",https://pokeapi.co/api/v2/ability/128/
+129,defeatist,defeatist,generation-v,This Pokémon's Attack and Special Attack are halved when it has half its HP or less.,Halves Attack and Special Attack at 50% max HP or less.,"archen, archeops",https://pokeapi.co/api/v2/ability/129/
+130,cursed-body,cursed_body,generation-v,Moves that hit this Pokémon have a 30% chance of being Disabled afterward.,Has a 30% chance of Disabling any move that hits the Pokémon.,"gengar, shuppet, banette, froslass, frillish, jellicent, sinistea, polteageist, dreepy, drakloak, dragapult, marowak-alola, marowak-totem, corsola-galar, gengar-gmax",https://pokeapi.co/api/v2/ability/130/
+131,healer,healer,generation-v,Friendly Pokémon next to this Pokémon in double and triple battles each have a 30% chance of being cured of any major status ailment after each turn.,Has a 30% chance of curing each adjacent ally of any major status ailment after each turn.,"chansey, bellossom, blissey, audino, alomomola, spritzee, aromatisse, hatenna, hattrem, hatterene, audino-mega, hatterene-gmax",https://pokeapi.co/api/v2/ability/131/
+132,friend-guard,friend_guard,generation-v,"All friendly Pokémon take 0.75× as much direct damage from moves while this Pokémon is in battle.
+
+This effect stacks if multiple allied Pokémon have it.",Decreases all direct damage taken by friendly Pokémon to 0.75×.,"clefairy, jigglypuff, cleffa, igglybuff, happiny, scatterbug, spewpa, vivillon, maushold-family-of-four, maushold-family-of-three",https://pokeapi.co/api/v2/ability/132/
+133,weak-armor,weak_armor,generation-v,"Whenever a physical move hits this Pokémon, its Speed rises one stage and its Defense falls one stage.
+
+This ability triggers on every hit of a multiple-hit move.",Raises Speed and lowers Defense by one stage each upon being hit by a physical move.,"onix, omanyte, omastar, kabuto, kabutops, slugma, magcargo, skarmory, roggenrola, boldore, dwebble, crustle, garbodor, vanillite, vanillish, vanilluxe, vullaby, mandibuzz, sinistea, polteageist, cursola, armarouge, ceruledge, corsola-galar, garbodor-gmax",https://pokeapi.co/api/v2/ability/133/
+134,heavy-metal,heavy_metal,generation-v,This Pokémon has double the usual weight for its species.,Doubles the Pokémon's weight.,"aron, lairon, aggron, bronzor, bronzong, cufant, copperajah, duraludon, copperajah-gmax, duraludon-gmax",https://pokeapi.co/api/v2/ability/134/
+135,light-metal,light_metal,generation-v,This Pokémon has half the usual weight for its species.,Halves the Pokémon's weight.,"scizor, beldum, metang, metagross, registeel, duraludon, duraludon-gmax",https://pokeapi.co/api/v2/ability/135/
+136,multiscale,multiscale,generation-v,This Pokémon takes half as much damage when it is hit having full HP.,Halves damage taken from full HP.,"dragonite, lugia",https://pokeapi.co/api/v2/ability/136/
+137,toxic-boost,toxic_boost,generation-v,This Pokémon has 1.5× its Attack when poisoned.,Increases Attack to 1.5× when poisoned.,zangoose,https://pokeapi.co/api/v2/ability/137/
+138,flare-boost,flare_boost,generation-v,This Pokémon has 1.5× its Special Attack when burned.,Increases Special Attack to 1.5× when burned.,"drifloon, drifblim",https://pokeapi.co/api/v2/ability/138/
+139,harvest,harvest,generation-v,"After each turn, if the last item this Pokémon consumed was a Berry and it is not currently holding an item, it has a 50% chance of regaining that Berry, or a 100% chance during strong sunlight.",Has a 50% chance of restoring a used Berry after each turn if the Pokémon has held no items in the meantime.,"exeggcute, exeggutor, tropius, phantump, trevenant, smoliv, dolliv, arboliva, exeggutor-alola",https://pokeapi.co/api/v2/ability/139/
+140,telepathy,telepathy,generation-v,"This Pokémon does not take damage from friendly Pokémon's moves, including single-target moves aimed at it.",Protects against friendly Pokémon's damaging moves.,"wobbuffet, ralts, kirlia, gardevoir, meditite, medicham, wynaut, dialga, palkia, giratina-altered, munna, musharna, elgyem, beheeyem, noibat, noivern, oranguru, tapu-koko, tapu-lele, tapu-bulu, tapu-fini, blipbug, dottler, orbeetle, rabsca, orbeetle-gmax, dialga-origin, palkia-origin",https://pokeapi.co/api/v2/ability/140/
+141,moody,moody,generation-v,"After each turn, one of this Pokémon's stats at random rises two stages, and another falls one stage.
+
+If a stat is already at 6 or -6 stages, it will not be chosen to be increased or decreased, respectively.",Raises a random stat two stages and lowers another one stage after each turn.,"remoraid, octillery, smeargle, snorunt, glalie, bidoof, bibarel, scovillain",https://pokeapi.co/api/v2/ability/141/
+142,overcoat,overcoat,generation-v,This Pokémon does not take damage from weather.,Protects against damage from weather.,"shellder, cloyster, pineco, forretress, shelgon, burmy, wormadam-plant, sewaddle, swadloon, leavanny, solosis, duosion, reuniclus, escavalier, shelmet, vullaby, mandibuzz, jangmo-o, hakamo-o, kommo-o, varoom, revavroom, wormadam-sandy, wormadam-trash, kommo-o-totem, enamorus-therian",https://pokeapi.co/api/v2/ability/142/
+143,poison-touch,poison_touch,generation-v,"This Pokémon's contact moves have a 30% chance of poisoning the target with each hit.
+
+This counts as an extra effect for the purposes of shield dust.  This ability takes effect before mummy.",Has a 30% chance of poisoning target Pokémon upon contact.,"grimer, muk, croagunk, toxicroak, seismitoad, skrelp, dragalge, sneasler, grafaiai, grimer-alola, muk-alola",https://pokeapi.co/api/v2/ability/143/
+144,regenerator,regenerator,generation-v,"This Pokémon regains 1/3 of its maximum HP when it is switched out for another Pokémon under any circumstances other than having fainted.
+
+This ability does not take effect when a battle ends.",Heals for 1/3 max HP upon switching out.,"slowpoke, slowbro, tangela, slowking, corsola, ho-oh, tangrowth, audino, solosis, duosion, reuniclus, foongus, amoonguss, alomomola, mienfoo, mienshao, mareanie, toxapex, gossifleur, eldegoss, klawf, cyclizar, hydrapple, tornadus-therian, slowpoke-galar, slowbro-galar, slowking-galar",https://pokeapi.co/api/v2/ability/144/
+145,big-pecks,big_pecks,generation-v,"This Pokémon's Defense cannot be lowered by other Pokémon.
+
+This Pokémon can still be passed negative Defense modifiers through heart swap or guard swap.",Protects against Defense drops.,"pidgey, pidgeotto, pidgeot, chatot, pidove, tranquill, unfezant, ducklett, swanna, vullaby, mandibuzz, fletchling, rookidee, corvisquire, bombirdier",https://pokeapi.co/api/v2/ability/145/
+146,sand-rush,sand_rush,generation-v,"This Pokémon's Speed is doubled during a sandstorm, and it does not take sandstorm damage, regardless of type.",Doubles Speed during a sandstorm.  Protects against sandstorm damage.,"sandshrew, sandslash, herdier, stoutland, drilbur, excadrill, lycanroc-midday, dracozolt, dracovish, houndstone",https://pokeapi.co/api/v2/ability/146/
+147,wonder-skin,wonder_skin,generation-v,Non-damaging moves have exactly 50% base accuracy against this Pokémon.,Lowers incoming non-damaging moves' base accuracy to exactly 50%.,"venomoth, skitty, delcatty, sigilyph, bruxish",https://pokeapi.co/api/v2/ability/147/
+148,analytic,analytic,generation-v,"This Pokémon's moves have 1.3× their power when it moves last in a turn.
+
+future sight and doom desire are unaffected.",Strengthens moves to 1.3× their power when moving last.,"magnemite, magneton, staryu, starmie, porygon, porygon2, magnezone, porygon-z, patrat, watchog, elgyem, beheeyem",https://pokeapi.co/api/v2/ability/148/
+149,illusion,illusion,generation-v,"This Pokémon, upon being sent out, appears to have the species, nickname, and Poké Ball of the last Pokémon in the party that is able to battle.  This illusion breaks upon being hit by a damaging move.
+
+Other damage, e.g. from weather or spikes, does not break the illusion, nor does damage done to a substitute.
+
+If the party order becomes temporarily shuffled around as Pokémon are switched out in battle, this ability chooses the last Pokémon according to that shuffled order.",Takes the appearance of the last conscious party Pokémon upon being sent out until hit by a damaging move.,"zorua, zoroark, zorua-hisui, zoroark-hisui",https://pokeapi.co/api/v2/ability/149/
+150,imposter,imposter,generation-v,This Pokémon transforms into a random opponent upon entering battle.  This effect is identical to the move transform.,Transforms upon entering battle.,ditto,https://pokeapi.co/api/v2/ability/150/
+151,infiltrator,infiltrator,generation-v,"This Pokémon's moves ignore light screen, reflect, and safeguard.","Bypasses light screen, reflect, and safeguard.","zubat, golbat, crobat, hoppip, skiploom, jumpluff, ninjask, seviper, spiritomb, cottonee, whimsicott, litwick, lampent, chandelure, espurr, meowstic-male, inkay, malamar, noibat, noivern, dreepy, drakloak, dragapult, bramblin, brambleghast, meowstic-female",https://pokeapi.co/api/v2/ability/151/
+152,mummy,mummy,generation-v,"Whenever a contact move hits this Pokémon, the attacking Pokémon's ability changes to Mummy.
+
+multitype is unaffected.  If a Pokémon with moxie knocks this Pokémon out, the former's ability will change without taking effect.",Changes attacking Pokémon's abilities to Mummy on contact.,"yamask, cofagrigus",https://pokeapi.co/api/v2/ability/152/
+153,moxie,moxie,generation-v,"This Pokémon's Attack rises one stage upon knocking out another Pokémon, even a friendly Pokémon.
+
+This ability does not take effect when the Pokémon indirectly causes another Pokémon to faint, e.g. through poison or spikes.
+
+If this Pokémon knocks out a Pokémon with mummy, the former's ability will change without taking effect.",Raises Attack one stage upon KOing a Pokémon.,"pinsir, gyarados, heracross, mightyena, salamence, honchkrow, sandile, krokorok, krookodile, scraggy, scrafty, litleo, pyroar, quaxly, quaxwell, quaquaval",https://pokeapi.co/api/v2/ability/153/
+154,justified,justified,generation-v,"Whenever a dark-type move hits this Pokémon, its Attack rises one stage.
+
+The move is not negated in any way.",Raises Attack one stage upon taking damage from a dark move.,"growlithe, arcanine, absol, lucario, gallade, cobalion, terrakion, virizion, keldeo-ordinary, keldeo-resolute",https://pokeapi.co/api/v2/ability/154/
+155,rattled,rattled,generation-v,"This Pokémon's Speed rises one stage with each hit from a damaging dark-, ghost-, or bug-type move.","Raises Speed one stage upon being hit by a dark, ghost, or bug move.","magikarp, ledyba, sudowoodo, dunsparce, snubbull, granbull, poochyena, whismur, clamperl, bonsly, cubchoo, yamper, toxel, wiglett, wugtrio, dudunsparce-two-segment, gimmighoul, meowth-alola, persian-alola, basculin-white-striped, dudunsparce-three-segment",https://pokeapi.co/api/v2/ability/155/
+156,magic-bounce,magic_bounce,generation-v,"When this Pokémon is targeted by a move flagged as being reflectable, the move is redirected to its user.
+
+All reflectable moves are non-damaging, and most non-damaging moves that target other Pokémon are reflectable.
+
+A move reflected by this ability or magic coat cannot be reflected back.",Reflects most non-damaging moves back at their user.,"natu, xatu, espeon, hatenna, hattrem, hatterene, absol-mega, sableye-mega, diancie-mega, hatterene-gmax",https://pokeapi.co/api/v2/ability/156/
+157,sap-sipper,sap_sipper,generation-v,"Whenever a grass-type move hits this Pokémon, its Attack rises one stage, negating any other effect on it.","Absorbs grass moves, raising Attack one stage.","marill, azumarill, girafarig, stantler, miltank, azurill, blitzle, zebstrika, deerling, sawsbuck, bouffalant, skiddo, gogoat, goomy, sliggoo, goodra, drampa, wyrdeer, farigiraf, sliggoo-hisui, goodra-hisui",https://pokeapi.co/api/v2/ability/157/
+158,prankster,prankster,generation-v,This Pokémon's non-damaging moves have their priority increased by one stage.,Raises non-damaging moves' priority by one stage.,"murkrow, sableye, volbeat, illumise, riolu, purrloin, liepard, cottonee, whimsicott, tornadus-incarnate, thundurus-incarnate, meowstic-male, klefki, impidimp, morgrem, grimmsnarl, shroodle, grafaiai, banette-mega, grimmsnarl-gmax",https://pokeapi.co/api/v2/ability/158/
+159,sand-force,sand_force,generation-v,"During a sandstorm, this Pokémon's rock-, ground-, and steel-type moves have 1.3× their base power.  This Pokémon does not take sandstorm damage, regardless of type.","Strengthens rock, ground, and steel moves to 1.3× their power during a sandstorm.  Protects against sandstorm damage.","diglett, dugtrio, nosepass, shellos, gastrodon, hippopotas, hippowdon, probopass, roggenrola, boldore, gigalith, drilbur, excadrill, landorus-incarnate, garchomp-mega, steelix-mega, diglett-alola, dugtrio-alola",https://pokeapi.co/api/v2/ability/159/
+160,iron-barbs,iron_barbs,generation-v,"Whenever a move makes contact with this Pokémon, the move's user takes 1/8 of its maximum HP in damage.
+
+This ability functions identically to rough skin.",Damages attacking Pokémon for 1/8 their max HP on contact.,"ferroseed, ferrothorn, togedemaru, togedemaru-totem",https://pokeapi.co/api/v2/ability/160/
+161,zen-mode,zen_mode,generation-v,"This Pokémon switches between Standard Mode and Zen Mode after each turn depending on its HP.  Below 50% of its maximum HP, it switches to Zen Mode, and at 50% or above, it switches to Standard Mode.
+
+This Pokémon returns to Standard Mode upon leaving battle or losing this ability.  This ability has no effect if this Pokémon is not a darmanitan.","Changes darmanitan's form after each turn depending on its HP: Zen Mode below 50% max HP, and Standard Mode otherwise.","darmanitan-standard, darmanitan-zen, darmanitan-galar-standard, darmanitan-galar-zen",https://pokeapi.co/api/v2/ability/161/
+162,victory-star,victory_star,generation-v,"All friendly Pokémon's moves, including this Pokémon's own moves, have 1.1× their usual accuracy while this Pokémon is in battle.",Increases moves' accuracy to 1.1× for friendly Pokémon.,victini,https://pokeapi.co/api/v2/ability/162/
+163,turboblaze,turboblaze,generation-v,"This Pokémon's moves completely ignore abilities that could hinder or prevent their effect on the target.
+
+For example, this Pokémon's moves ignore abilities that would fully negate them, such as water absorb; abilities that would prevent any of their effects, such as clear body, shell armor, or sticky hold; and abilities that grant any general protective benefit, such as simple, snow cloak, or thick fat.  If an ability could either hinder or help this Pokémon's moves, e.g. dry skin or unaware, the ability is ignored either way.
+
+Abilities that do not fit this description, even if they could hinder moves in some other way, are not affected.  For example, cursed body only affects potential future uses of the move, while liquid ooze and shadow tag can only hinder a move's effect on the user.  This ablity cannot ignore type or form changes granted by abilities, for example color change or forecast; nor effects that were caused by abilities but are no longer tied to an ability, such as the rain from drizzle.  This ability cannot ignore multitype at all.
+
+An ability ignored by this ability is only nullified while the move is being used.  For example, this Pokémon's moves can paralyze a Pokémon with limber, but Limber will activate and heal the paralysis immediately thereafter, and this Pokémon's spikes are not affected by this ability after they have been placed.
+
+When this Pokémon enters battle, all participating trainers are notified that it has this ability.
+
+This ability functions identically to mold breaker and teravolt.",Bypasses targets' abilities if they could hinder or prevent moves.,"reshiram, kyurem-white",https://pokeapi.co/api/v2/ability/163/
+164,teravolt,teravolt,generation-v,"This Pokémon's moves completely ignore abilities that could hinder or prevent their effect on the target.
+
+For example, this Pokémon's moves ignore abilities that would fully negate them, such as water absorb; abilities that would prevent any of their effects, such as clear body, shell armor, or sticky hold; and abilities that grant any general protective benefit, such as simple, snow cloak, or thick fat.  If an ability could either hinder or help this Pokémon's moves, e.g. dry skin or unaware, the ability is ignored either way.
+
+Abilities that do not fit this description, even if they could hinder moves in some other way, are not affected.  For example, cursed body only affects potential future uses of the move, while liquid ooze and shadow tag can only hinder a move's effect on the user.  This ablity cannot ignore type or form changes granted by abilities, for example color change or forecast; nor effects that were caused by abilities but are no longer tied to an ability, such as the rain from drizzle.  This ability cannot ignore multitype at all.
+
+An ability ignored by this ability is only nullified while the move is being used.  For example, this Pokémon's moves can paralyze a Pokémon with limber, but Limber will activate and heal the paralysis immediately thereafter, and this Pokémon's spikes are not affected by this ability after they have been placed.
+
+When this Pokémon enters battle, all participating trainers are notified that it has this ability.
+
+This ability functions identically to mold breaker and turboblaze.",Bypasses targets' abilities if they could hinder or prevent moves.,"zekrom, kyurem-black",https://pokeapi.co/api/v2/ability/164/
+10001,mountaineer,mountaineer,generation-v,,,,https://pokeapi.co/api/v2/ability/10001/
+10002,wave-rider,wave_rider,generation-v,,,,https://pokeapi.co/api/v2/ability/10002/
+10003,skater,skater,generation-v,,,,https://pokeapi.co/api/v2/ability/10003/
+10004,thrust,thrust,generation-v,,,,https://pokeapi.co/api/v2/ability/10004/
+10005,perception,perception,generation-v,,,,https://pokeapi.co/api/v2/ability/10005/
+10006,parry,parry,generation-v,,,,https://pokeapi.co/api/v2/ability/10006/
+10007,instinct,instinct,generation-v,,,,https://pokeapi.co/api/v2/ability/10007/
+10008,dodge,dodge,generation-v,,,,https://pokeapi.co/api/v2/ability/10008/
+10009,jagged-edge,jagged_edge,generation-v,,,,https://pokeapi.co/api/v2/ability/10009/
+10010,frostbite,frostbite,generation-v,,,,https://pokeapi.co/api/v2/ability/10010/
+10011,tenacity,tenacity,generation-v,,,,https://pokeapi.co/api/v2/ability/10011/
+10012,pride,pride,generation-v,,,,https://pokeapi.co/api/v2/ability/10012/
+10013,deep-sleep,deep_sleep,generation-v,,,,https://pokeapi.co/api/v2/ability/10013/
+10014,power-nap,power_nap,generation-v,,,,https://pokeapi.co/api/v2/ability/10014/
+10015,spirit,spirit,generation-v,,,,https://pokeapi.co/api/v2/ability/10015/
+10016,warm-blanket,warm_blanket,generation-v,,,,https://pokeapi.co/api/v2/ability/10016/
+10017,gulp,gulp,generation-v,,,,https://pokeapi.co/api/v2/ability/10017/
+10018,herbivore,herbivore,generation-v,,,,https://pokeapi.co/api/v2/ability/10018/
+10019,sandpit,sandpit,generation-v,,,,https://pokeapi.co/api/v2/ability/10019/
+10020,hot-blooded,hot_blooded,generation-v,,,,https://pokeapi.co/api/v2/ability/10020/
+10021,medic,medic,generation-v,,,,https://pokeapi.co/api/v2/ability/10021/
+10022,life-force,life_force,generation-v,,,,https://pokeapi.co/api/v2/ability/10022/
+10023,lunchbox,lunchbox,generation-v,,,,https://pokeapi.co/api/v2/ability/10023/
+10024,nurse,nurse,generation-v,,,,https://pokeapi.co/api/v2/ability/10024/
+10025,melee,melee,generation-v,,,,https://pokeapi.co/api/v2/ability/10025/
+10026,sponge,sponge,generation-v,,,,https://pokeapi.co/api/v2/ability/10026/
+10027,bodyguard,bodyguard,generation-v,,,,https://pokeapi.co/api/v2/ability/10027/
+10028,hero,hero,generation-v,,,,https://pokeapi.co/api/v2/ability/10028/
+10029,last-bastion,last_bastion,generation-v,,,,https://pokeapi.co/api/v2/ability/10029/
+10030,stealth,stealth,generation-v,,,,https://pokeapi.co/api/v2/ability/10030/
+10031,vanguard,vanguard,generation-v,,,,https://pokeapi.co/api/v2/ability/10031/
+10032,nomad,nomad,generation-v,,,,https://pokeapi.co/api/v2/ability/10032/
+10033,sequence,sequence,generation-v,,,,https://pokeapi.co/api/v2/ability/10033/
+10034,grass-cloak,grass_cloak,generation-v,,,,https://pokeapi.co/api/v2/ability/10034/
+10035,celebrate,celebrate,generation-v,,,,https://pokeapi.co/api/v2/ability/10035/
+10036,lullaby,lullaby,generation-v,,,,https://pokeapi.co/api/v2/ability/10036/
+10037,calming,calming,generation-v,,,,https://pokeapi.co/api/v2/ability/10037/
+10038,daze,daze,generation-v,,,,https://pokeapi.co/api/v2/ability/10038/
+10039,frighten,frighten,generation-v,,,,https://pokeapi.co/api/v2/ability/10039/
+10040,interference,interference,generation-v,,,,https://pokeapi.co/api/v2/ability/10040/
+10041,mood-maker,mood_maker,generation-v,,,,https://pokeapi.co/api/v2/ability/10041/
+10042,confidence,confidence,generation-v,,,,https://pokeapi.co/api/v2/ability/10042/
+10043,fortune,fortune,generation-v,,,,https://pokeapi.co/api/v2/ability/10043/
+10044,bonanza,bonanza,generation-v,,,,https://pokeapi.co/api/v2/ability/10044/
+10045,explode,explode,generation-v,,,,https://pokeapi.co/api/v2/ability/10045/
+10046,omnipotent,omnipotent,generation-v,,,,https://pokeapi.co/api/v2/ability/10046/
+10047,share,share,generation-v,,,,https://pokeapi.co/api/v2/ability/10047/
+10048,black-hole,black_hole,generation-v,,,,https://pokeapi.co/api/v2/ability/10048/
+10049,shadow-dash,shadow_dash,generation-v,,,,https://pokeapi.co/api/v2/ability/10049/
+10050,sprint,sprint,generation-v,,,,https://pokeapi.co/api/v2/ability/10050/
+10051,disgust,disgust,generation-v,,,,https://pokeapi.co/api/v2/ability/10051/
+10052,high-rise,high_rise,generation-v,,,,https://pokeapi.co/api/v2/ability/10052/
+10053,climber,climber,generation-v,,,,https://pokeapi.co/api/v2/ability/10053/
+10054,flame-boost,flame_boost,generation-v,,,,https://pokeapi.co/api/v2/ability/10054/
+10055,aqua-boost,aqua_boost,generation-v,,,,https://pokeapi.co/api/v2/ability/10055/
+10056,run-up,run_up,generation-v,,,,https://pokeapi.co/api/v2/ability/10056/
+10057,conqueror,conqueror,generation-v,,,,https://pokeapi.co/api/v2/ability/10057/
+10058,shackle,shackle,generation-v,,,,https://pokeapi.co/api/v2/ability/10058/
+10059,decoy,decoy,generation-v,,,,https://pokeapi.co/api/v2/ability/10059/
+10060,shield,shield,generation-v,,,,https://pokeapi.co/api/v2/ability/10060/

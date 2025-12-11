@@ -1,0 +1,132 @@
+id,name,slug,type,power,accuracy,pp,priority,damage_class,target,generation,effect,short_effect,sourceUrl
+743,max-guard,max_guard,normal,None,None,10,4,status,user,generation-viii,"No moves will hit the user for the remainder of this turn.  If the user is last to act this turn, this move will fail.
+
+If the user successfully used detect, endure, protect, quick guard, or wide guard on the last turn, this move has a 50% chance to fail.
+
+lock on, mind reader, and no guard provide a (100 – accuracy)% chance for moves to break through this move.  This does not apply to one-hit KO moves (fissure, guillotine, horn drill, and sheer cold); those are always blocked by this move.
+
+thunder during rain dance and blizzard during hail have a 30% chance to break through this move.
+
+The following effects are not prevented by this move:
+
+* acupressure from an ally
+* curse’s curse effect
+* Delayed damage from doom desire and future sight; however, these moves will be prevented if they are used this turn
+* feint, which will also end this move’s protection after it hits
+* imprison
+* perish song
+* shadow force
+* Moves that merely copy the user, such as transform or psych up
+
+This move cannot be selected by assist or metronome.",Prevents any moves from hitting the user this turn.,https://pokeapi.co/api/v2/move/743/
+744,dynamax-cannon,dynamax_cannon,dragon,100,100,5,0,special,selected-pokemon,generation-viii,"Inflicts regular damage, then (if successful) sets light screen on the user’s side of the field.",Sets Light Screen on the user’s side of the field after inflicting damage.,https://pokeapi.co/api/v2/move/744/
+745,snipe-shot,snipe_shot,water,80,100,15,0,special,selected-pokemon,generation-viii,"Inflicts regular damage, then (if successful) sets reflect on the user’s side of the field.",Sets Reflect on the user’s side of the field after inflicting damage.,https://pokeapi.co/api/v2/move/745/
+746,jaw-lock,jaw_lock,dark,80,100,10,0,physical,selected-pokemon,generation-viii,"Inflicts regular damage, then (if successful) sets leech seed on the target.",Seeds the target after inflicting damage.,https://pokeapi.co/api/v2/move/746/
+747,stuff-cheeks,stuff_cheeks,normal,None,None,10,0,status,user,generation-viii,"Inflicts regular damage, then (if successful) removes major status effects from every Pokémon in the user’s party.",Cures the entire party of major status effects after inflicting damage.,https://pokeapi.co/api/v2/move/747/
+748,no-retreat,no_retreat,fighting,None,None,5,0,status,user,generation-viii,"Inflicts regular damage.  Hits twice in one turn, with a 100% chance to make the target flinch.","Hits twice in one turn, with a 100% chance to make the target flinch.",https://pokeapi.co/api/v2/move/748/
+749,tar-shot,tar_shot,rock,None,100,15,0,status,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/749/
+750,magic-powder,magic_powder,psychic,None,100,20,0,status,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/750/
+751,dragon-darts,dragon_darts,dragon,50,100,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/751/
+752,teatime,teatime,normal,None,None,10,0,status,all-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/752/
+753,octolock,octolock,fighting,None,100,15,0,status,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/753/
+754,bolt-beak,bolt_beak,electric,85,100,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/754/
+755,fishious-rend,fishious_rend,water,85,100,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/755/
+756,court-change,court_change,normal,None,100,10,0,status,entire-field,generation-viii,,,https://pokeapi.co/api/v2/move/756/
+757,max-flare,max_flare,fire,100,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/757/
+758,max-flutterby,max_flutterby,bug,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/758/
+759,max-lightning,max_lightning,electric,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/759/
+760,max-strike,max_strike,normal,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/760/
+761,max-knuckle,max_knuckle,fighting,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/761/
+762,max-phantasm,max_phantasm,ghost,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/762/
+763,max-hailstorm,max_hailstorm,ice,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/763/
+764,max-ooze,max_ooze,poison,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/764/
+765,max-geyser,max_geyser,water,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/765/
+766,max-airstream,max_airstream,flying,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/766/
+767,max-starfall,max_starfall,fairy,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/767/
+768,max-wyrmwind,max_wyrmwind,dragon,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/768/
+769,max-mindstorm,max_mindstorm,psychic,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/769/
+770,max-rockfall,max_rockfall,rock,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/770/
+771,max-quake,max_quake,ground,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/771/
+772,max-darkness,max_darkness,dark,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/772/
+773,max-overgrowth,max_overgrowth,grass,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/773/
+774,max-steelspike,max_steelspike,steel,10,None,10,0,physical,selected-pokemon-me-first,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/774/
+775,clangorous-soul,clangorous_soul,dragon,None,100,5,0,status,user,generation-viii,,,https://pokeapi.co/api/v2/move/775/
+776,body-press,body_press,fighting,80,100,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/776/
+777,decorate,decorate,fairy,None,None,15,0,status,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/777/
+778,drum-beating,drum_beating,grass,80,100,10,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.  Has a 100% chance to lower the target’s Speed by one stage.,Has a 100% chance to lower the target’s Speed by one stage.,https://pokeapi.co/api/v2/move/778/
+779,snap-trap,snap_trap,grass,35,100,15,0,physical,selected-pokemon,generation-viii,"Inflicts regular damage.  For the next 2–5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.  The user continues to use other moves during this time.  If the user leaves the field, this effect ends.
+
+Has a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.
+
+rapid spin cancels this effect.",Prevents the target from fleeing and inflicts damage for 2-5 turns.,https://pokeapi.co/api/v2/move/779/
+780,pyro-ball,pyro_ball,fire,120,90,5,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.  Has a 10% chance to burn the target.,Has a 10% chance to burn the target.,https://pokeapi.co/api/v2/move/780/
+781,behemoth-blade,behemoth_blade,steel,100,100,5,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/781/
+782,behemoth-bash,behemoth_bash,steel,100,100,5,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/782/
+783,aura-wheel,aura_wheel,electric,110,100,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/783/
+784,breaking-swipe,breaking_swipe,dragon,60,100,15,0,physical,all-opponents,generation-viii,Inflicts regular damage.  Lowers the target’s Attack by one stage.,Lowers the target’s Attack by one stage after inflicting damage.,https://pokeapi.co/api/v2/move/784/
+785,branch-poke,branch_poke,grass,40,100,40,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/785/
+786,overdrive,overdrive,electric,80,100,10,0,special,all-opponents,generation-viii,,,https://pokeapi.co/api/v2/move/786/
+787,apple-acid,apple_acid,grass,80,100,10,0,special,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/787/
+788,grav-apple,grav_apple,grass,80,100,10,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.  Lowers the target’s Defense by one stage.,Lowers the target’s Defense by one stage after inflicting damage.,https://pokeapi.co/api/v2/move/788/
+789,spirit-break,spirit_break,fairy,75,100,15,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.  Has a 100% chance to lower the target’s Special Attack by one stage.,Has a 100% chance to lower the target’s Special Attack by one stage.,https://pokeapi.co/api/v2/move/789/
+790,strange-steam,strange_steam,fairy,90,95,10,0,special,selected-pokemon,generation-viii,Inflicts regular damage.  Has a 20% chance to confuse the target.,Has a 20% chance to confuse the target.,https://pokeapi.co/api/v2/move/790/
+791,life-dew,life_dew,water,None,None,10,0,status,user-and-allies,generation-viii,,,https://pokeapi.co/api/v2/move/791/
+792,obstruct,obstruct,dark,None,100,10,4,status,user,generation-viii,,,https://pokeapi.co/api/v2/move/792/
+793,false-surrender,false_surrender,dark,80,None,10,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.  Ignores accuracy and evasion modifiers.,Never misses.,https://pokeapi.co/api/v2/move/793/
+794,meteor-assault,meteor_assault,fighting,150,100,5,0,physical,selected-pokemon,generation-viii,"Inflicts regular damage.  User loses its next turn to ""recharge"", and cannot attack or switch out during that turn.",User foregoes its next turn to recharge.,https://pokeapi.co/api/v2/move/794/
+795,eternabeam,eternabeam,dragon,160,90,5,0,special,selected-pokemon,generation-viii,"Inflicts regular damage.  User loses its next turn to ""recharge"", and cannot attack or switch out during that turn.",User foregoes its next turn to recharge.,https://pokeapi.co/api/v2/move/795/
+796,steel-beam,steel_beam,steel,140,95,5,0,special,selected-pokemon,generation-viii,"Inflicts damage, and the user takes damage equal to half of its max HP, rounded up. The user still takes damage if the move is blocked by Protect or Substitute, misses, or if the target has Flash Fire.","Inflicts damage, and the user takes damage equal to half of its max HP, rounded up.",https://pokeapi.co/api/v2/move/796/
+797,expanding-force,expanding_force,psychic,80,100,10,0,special,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/797/
+798,steel-roller,steel_roller,steel,130,100,5,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/798/
+799,scale-shot,scale_shot,dragon,25,90,20,0,physical,selected-pokemon,generation-viii,"Inflicts regular damage two to five times in a row, raising the user’s Speed and lowering the user’s Defense by one stage each upon last hit.",Boosts the user’s Speed and lowers their Defense by one stage after inflicting damage two to five times in a row.,https://pokeapi.co/api/v2/move/799/
+800,meteor-beam,meteor_beam,rock,120,90,10,0,special,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/800/
+801,shell-side-arm,shell_side_arm,poison,90,100,10,0,special,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/801/
+802,misty-explosion,misty_explosion,fairy,100,100,5,0,special,all-other-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/802/
+803,grassy-glide,grassy_glide,grass,55,100,20,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/803/
+804,rising-voltage,rising_voltage,electric,70,100,20,0,special,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/804/
+805,terrain-pulse,terrain_pulse,normal,50,100,10,0,special,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/805/
+806,skitter-smack,skitter_smack,bug,70,90,10,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/806/
+807,burning-jealousy,burning_jealousy,fire,70,100,5,0,special,all-opponents,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/807/
+808,lash-out,lash_out,dark,75,100,5,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/808/
+809,poltergeist,poltergeist,ghost,110,90,5,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/809/
+810,corrosive-gas,corrosive_gas,poison,None,100,40,0,status,all-other-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/810/
+811,coaching,coaching,fighting,None,None,10,0,status,user-and-allies,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/811/
+812,flip-turn,flip_turn,water,60,100,20,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/812/
+813,triple-axel,triple_axel,ice,20,90,10,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/813/
+814,dual-wingbeat,dual_wingbeat,flying,40,90,10,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/814/
+815,scorching-sands,scorching_sands,ground,70,100,10,0,special,selected-pokemon,generation-viii,Inflicts regular damage.  Has a 30% chance to burn the target.,Has a 30% chance to burn the target.,https://pokeapi.co/api/v2/move/815/
+816,jungle-healing,jungle_healing,grass,None,None,10,0,status,user-and-allies,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/816/
+817,wicked-blow,wicked_blow,dark,75,100,5,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/817/
+818,surging-strikes,surging_strikes,water,25,100,5,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/818/
+819,thunder-cage,thunder_cage,electric,80,90,15,0,special,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/819/
+820,dragon-energy,dragon_energy,dragon,150,100,5,0,special,all-opponents,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/820/
+821,freezing-glare,freezing_glare,psychic,90,100,10,0,special,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/821/
+822,fiery-wrath,fiery_wrath,dark,90,100,10,0,special,all-opponents,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/822/
+823,thunderous-kick,thunderous_kick,fighting,90,100,10,0,physical,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/823/
+824,glacial-lance,glacial_lance,ice,120,100,5,0,physical,all-opponents,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/824/
+825,astral-barrage,astral_barrage,ghost,120,100,5,0,special,all-opponents,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/825/
+826,eerie-spell,eerie_spell,psychic,80,100,5,0,special,selected-pokemon,generation-viii,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/826/
+827,dire-claw,dire_claw,poison,80,100,15,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/827/
+828,psyshield-bash,psyshield_bash,psychic,70,90,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/828/
+829,power-shift,power_shift,normal,0,None,10,0,status,user,generation-viii,,,https://pokeapi.co/api/v2/move/829/
+830,stone-axe,stone_axe,rock,65,90,15,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/830/
+831,springtide-storm,springtide_storm,fairy,100,80,5,0,special,all-opponents,generation-viii,,,https://pokeapi.co/api/v2/move/831/
+832,mystical-power,mystical_power,psychic,70,90,10,0,special,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/832/
+833,raging-fury,raging_fury,fire,120,100,10,0,physical,random-opponent,generation-viii,,,https://pokeapi.co/api/v2/move/833/
+834,wave-crash,wave_crash,water,120,100,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/834/
+835,chloroblast,chloroblast,grass,150,95,5,0,special,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/835/
+836,mountain-gale,mountain_gale,ice,100,85,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/836/
+837,victory-dance,victory_dance,fighting,0,None,10,0,status,user,generation-viii,,,https://pokeapi.co/api/v2/move/837/
+838,headlong-rush,headlong_rush,ground,120,100,5,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/838/
+839,barb-barrage,barb_barrage,poison,60,100,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/839/
+840,esper-wing,esper_wing,psychic,80,100,10,0,special,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/840/
+841,bitter-malice,bitter_malice,ghost,75,100,10,0,special,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/841/
+842,shelter,shelter,steel,0,None,10,0,status,user,generation-viii,,,https://pokeapi.co/api/v2/move/842/
+843,triple-arrows,triple_arrows,fighting,90,100,10,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/843/
+844,infernal-parade,infernal_parade,ghost,60,100,15,0,special,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/844/
+845,ceaseless-edge,ceaseless_edge,dark,65,90,15,0,physical,selected-pokemon,generation-viii,,,https://pokeapi.co/api/v2/move/845/
+846,bleakwind-storm,bleakwind_storm,flying,100,80,10,0,special,all-opponents,generation-viii,,,https://pokeapi.co/api/v2/move/846/
+847,wildbolt-storm,wildbolt_storm,electric,100,80,10,0,special,all-opponents,generation-viii,,,https://pokeapi.co/api/v2/move/847/
+848,sandsear-storm,sandsear_storm,ground,100,80,10,0,special,all-opponents,generation-viii,,,https://pokeapi.co/api/v2/move/848/
+849,lunar-blessing,lunar_blessing,psychic,0,None,5,0,status,all-allies,generation-viii,,,https://pokeapi.co/api/v2/move/849/
+850,take-heart,take_heart,psychic,0,None,10,0,status,all-allies,generation-viii,,,https://pokeapi.co/api/v2/move/850/

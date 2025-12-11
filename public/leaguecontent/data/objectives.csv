@@ -1,0 +1,16 @@
+category,objective_id,title,objective_type,tag,start,end
+Trials of Twilight: Worlds,Daily_Pooled_Objectives,Daily,pooledObjectives,LOL_DAILY,1704326400000,4102430400000
+Trials of Twilight: Worlds,Weekly_Pooled_Objectives,Weeklies,pooledObjectives,LOL_WEEKLY,1704067200000,4102430400000
+Trials of Twilight: Worlds,Events_Non_Pooled_Objectives,Trials of Twilight: Worlds,nonPooledObjectives,LOL_EVENTS,0,4102430400000
+Trials of Twilight: Worlds,Seasonal_Non_Pooled_Objectives,Trials of Twilight: Worlds,nonPooledObjectives,LOL_SEASONAL,0,4102430400000
+Trials of Twilight: Worlds,Mastery_Non_Pooled_Objectives,Trials of Twilight: Worlds,nonPooledObjectives,LOL_MASTERY,1704070800000,4102344000000
+Spirit Blossom Beyond: Act 2,Daily_Pooled_Objectives,Daily,pooledObjectives,LOL_DAILY,1704326400000,4102430400000
+Spirit Blossom Beyond: Act 2,Weekly_Pooled_Objectives,Weeklies,pooledObjectives,LOL_WEEKLY,1704067200000,4102430400000
+Spirit Blossom Beyond: Act 2,Events_Non_Pooled_Objectives,Spirit Blossom Beyond: Act 2,nonPooledObjectives,LOL_EVENTS,0,4102430400000
+Spirit Blossom Beyond: Act 2,Seasonal_Non_Pooled_Objectives,Spirit Blossom Beyond: Act 2,nonPooledObjectives,LOL_SEASONAL,0,4102430400000
+Spirit Blossom Beyond: Act 2,Mastery_Non_Pooled_Objectives,Spirit Blossom Beyond: Act 2,nonPooledObjectives,LOL_MASTERY,1704070800000,4102344000000
+The Battle of Koeshin,Bloom_MG_Petals,The Battle of Koeshin,nonPooledObjectives,LOL_BLOOM_PETALS,1704067200000,1756234740000
+The Battle of Koeshin,Bloom_MG_Bonds,The Battle of Koeshin,nonPooledObjectives,LOL_BLOOM_BONDS,1704067200000,1756234740000
+The Battle of Koeshin,Bloom_MG_Story,The Battle of Koeshin,nonPooledObjectives,LOL_BLOOM_STORY,1704067200000,1756234740000
+Ranked,Ranked_Non_Pooled_Objectives,Ranked,nonPooledObjectives,LOL_RANKED,1704067200000,4102344000000
+New Player,npe_objective_missions,New Player,nonPooledObjectives,LOL_NPE,1704067200000,4102344000000

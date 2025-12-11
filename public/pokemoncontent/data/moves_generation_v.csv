@@ -1,0 +1,171 @@
+id,name,slug,type,power,accuracy,pp,priority,damage_class,target,generation,effect,short_effect,sourceUrl
+468,hone-claws,hone_claws,dark,None,None,15,0,status,user,generation-v,Raises the user’s Attack and accuracy by one stage.,Raises the user’s Attack and accuracy by one stage.,https://pokeapi.co/api/v2/move/468/
+469,wide-guard,wide_guard,rock,None,None,10,3,status,users-field,generation-v,"Moves with multiple targets will not hit friendly Pokémon for the remainder of this turn.  If the user is last to act this turn, this move will fail.
+
+This move cannot be selected by assist or metronome.",Prevents any multi-target moves from hitting friendly Pokémon this turn.,https://pokeapi.co/api/v2/move/469/
+470,guard-split,guard_split,psychic,None,None,10,0,status,selected-pokemon,generation-v,Averages the user’s unmodified Defense with the target’s unmodified Defense; the value becomes the unmodified Defense for both Pokémon. Unmodified Special Defense is averaged the same way.,Averages Defense and Special Defense with the target.,https://pokeapi.co/api/v2/move/470/
+471,power-split,power_split,psychic,None,None,10,0,status,selected-pokemon,generation-v,"Averages the user’s unmodified Attack with the target’s unmodified Attack; the value becomes the unmodified Attack for both Pokémon. Unmodified Special Attack is averaged the same way.
+
+This effect applies before any other persistent changes to unmodified Attack or Special Attack, such as flower gift during sunny day.",Averages Attack and Special Attack with the target.,https://pokeapi.co/api/v2/move/471/
+472,wonder-room,wonder_room,psychic,None,None,10,0,status,entire-field,generation-v,"For five turns (including this one), every Pokémon’s Defense and Special Defense are swapped.",All Pokémon’s Defense and Special Defense are swapped for 5 turns.,https://pokeapi.co/api/v2/move/472/
+473,psyshock,psyshock,psychic,80,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  Damage calculation always uses the target’s Defense, regardless of this move’s damage class.","Inflicts damage based on the target’s Defense, not Special Defense.",https://pokeapi.co/api/v2/move/473/
+474,venoshock,venoshock,poison,65,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If the target is poisoned, this move has double power.",Inflicts double damage if the target is Poisoned.,https://pokeapi.co/api/v2/move/474/
+475,autotomize,autotomize,steel,None,None,15,0,status,user,generation-v,Raises the user’s Speed by two stages.  Halves the user’s weight; this effect does not stack.,Raises the user’s Speed by two stages and halves the user’s weight.,https://pokeapi.co/api/v2/move/475/
+476,rage-powder,rage_powder,bug,None,None,20,2,status,user,generation-v,"Until the end of this turn, any moves that opposing Pokémon target solely at the user’s ally will instead target the user.  If both Pokémon on the same side of the field use this move on the same turn, the Pokémon that uses it last will become the target.
+
+This effect takes priority over lightning rod and storm drain.
+
+If the user’s ally switches out, opposing Pokémon may still hit it with pursuit.
+
+This move cannot be selected by assist or metronome.",Redirects the target’s single-target effects to the user for this turn.,https://pokeapi.co/api/v2/move/476/
+477,telekinesis,telekinesis,psychic,None,None,15,0,status,selected-pokemon,generation-v,"For three turns (including this one), moves used against the target have 100% accuracy, but the target is immune to ground damage.  Accuracy of one-hit KO moves is exempt from this effect.
+
+This effect is removed by gravity.  If Gravity is already in effect, this move will fail.",Moves have 100% accuracy against the target for three turns.,https://pokeapi.co/api/v2/move/477/
+478,magic-room,magic_room,psychic,None,None,10,0,status,entire-field,generation-v,"For five turns (including this one), passive effects of held items are ignored, and Pokémon will not use their held items.",Negates held items for five turns.,https://pokeapi.co/api/v2/move/478/
+479,smack-down,smack_down,rock,50,100,15,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  Removes the target’s immunity to ground-type damage.  This effect removes any existing Ground immunity due to levitate, magnet rise, or telekinesis, and causes the target’s flying type to be ignored when it takes Ground damage.
+
+If the target isn’t immune to Ground damage, this move will fail.
+
+This move can hit Pokémon under the effect of bounce, fly, or sky drop, and ends the effect of Bounce or Fly.",Removes any immunity to Ground damage.,https://pokeapi.co/api/v2/move/479/
+480,storm-throw,storm_throw,fighting,60,100,10,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Always scores a critical hit.,Always scores a critical hit.,https://pokeapi.co/api/v2/move/480/
+481,flame-burst,flame_burst,fire,70,100,15,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If this move successfully hits the target, any Pokémon adjacent to the target are damaged for 1/16 their max HP.",Deals splash damage to Pokémon next to the target.,https://pokeapi.co/api/v2/move/481/
+482,sludge-wave,sludge_wave,poison,95,100,10,0,special,all-other-pokemon,generation-v,Inflicts regular damage.  Has a 10% chance to poison the target.,Has a 10% chance to poison the target.,https://pokeapi.co/api/v2/move/482/
+483,quiver-dance,quiver_dance,bug,None,None,20,0,status,user,generation-v,"Raises the user’s Special Attack, Special Defense, and Speed by one stage each.","Raises the user’s Special Attack, Special Defense, and Speed by one stage each.",https://pokeapi.co/api/v2/move/483/
+484,heavy-slam,heavy_slam,steel,None,100,10,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  The greater the user’s weight compared to the target’s, the higher power this move has, to a maximum of 120.
+
+User’s weight                    | Power
+-------------------------------- | ----:
+Up to 2× the target’s weight     |    40
+Up to 3× the target’s weight     |    60
+Up to 4× the target’s weight     |    80
+Up to 5× the target’s weight     |   100
+More than 5× the target’s weight |   120
+","Power is higher when the user weighs more than the target, up to a maximum of 120.",https://pokeapi.co/api/v2/move/484/
+485,synchronoise,synchronoise,psychic,120,100,10,0,special,all-other-pokemon,generation-v,Inflicts regular damage.  Only Pokémon that share a type with the user will take damage from this move.,Hits any Pokémon that shares a type with the user.,https://pokeapi.co/api/v2/move/485/
+486,electro-ball,electro_ball,electric,None,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  The greater the user’s Speed compared to the target’s, the higher power this move has, to a maximum of 150.
+
+User’s Speed                     | Power
+-------------------------------- | ----:
+Up to 2× the target’s Speed      |    60
+Up to 3× the target’s Speed      |    80
+Up to 4× the target’s Speed      |   120
+More than 4× the target’s Speed  |   150
+","Power is higher when the user has greater Speed than the target, up to a maximum of 150.",https://pokeapi.co/api/v2/move/486/
+487,soak,soak,water,None,100,20,0,status,selected-pokemon,generation-v,"Changes the target to pure water-type until it leaves the field.  If the target has multitype, this move will fail.",Changes the target’s type to Water.,https://pokeapi.co/api/v2/move/487/
+488,flame-charge,flame_charge,fire,50,100,20,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Raises the user’s Speed by one stage.,Inflicts regular damage.  Raises the user’s Speed by one stage.,https://pokeapi.co/api/v2/move/488/
+489,coil,coil,poison,None,None,20,0,status,user,generation-v,"Raises the user’s Attack, Defense, and accuracy by one stage each.","Raises the user’s Attack, Defense, and accuracy by one stage each.",https://pokeapi.co/api/v2/move/489/
+490,low-sweep,low_sweep,fighting,65,100,20,0,physical,selected-pokemon,generation-v,Lowers the target’s Speed by one stage.,Lowers the target’s Speed by one stage.,https://pokeapi.co/api/v2/move/490/
+491,acid-spray,acid_spray,poison,40,100,20,0,special,selected-pokemon,generation-v,Inflicts regular damage.  Lowers the target’s Special Defense by two stages.,Lowers the target’s Special Defense by two stages.,https://pokeapi.co/api/v2/move/491/
+492,foul-play,foul_play,dark,95,100,15,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Damage is calculated using the target’s attacking stat rather than the user’s.,Calculates damage with the target’s attacking stat.,https://pokeapi.co/api/v2/move/492/
+493,simple-beam,simple_beam,normal,None,100,15,0,status,selected-pokemon,generation-v,Changes the target’s ability to simple.,Changes the target’s ability to Simple.,https://pokeapi.co/api/v2/move/493/
+494,entrainment,entrainment,normal,None,100,15,0,status,selected-pokemon,generation-v,Changes the target’s ability to match the user’s.  This effect ends when the target leaves battle.,Copies the user’s ability onto the target.,https://pokeapi.co/api/v2/move/494/
+495,after-you,after_you,normal,None,None,15,0,status,selected-pokemon,generation-v,"The target will act next this turn, regardless of Speed or move priority.
+If the target has already acted this turn, this move will fail.",Makes the target act next this turn.,https://pokeapi.co/api/v2/move/495/
+496,round,round,normal,60,100,15,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If round has already been used this turn, this move’s power is doubled.  After this move is used, any other Pokémon using it this turn will immediately do so (in the order they would otherwise act), regardless of Speed or priority.  Pokémon using other moves will then continue to act as usual.",Has double power if it’s used more than once per turn.,https://pokeapi.co/api/v2/move/496/
+497,echoed-voice,echoed_voice,normal,40,100,15,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If any friendly Pokémon used this move earlier this turn or on the previous turn, that use’s power is added to this move’s power, to a maximum of 200.","Power increases by 100% for each consecutive use by any friendly Pokémon, to a maximum of 200.",https://pokeapi.co/api/v2/move/497/
+498,chip-away,chip_away,normal,70,100,20,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  Damage calculation ignores the target’s stat modifiers, including evasion.",Ignores the target’s stat modifiers.,https://pokeapi.co/api/v2/move/498/
+499,clear-smog,clear_smog,poison,50,None,15,0,special,selected-pokemon,generation-v,Inflicts regular damage.  All of the target’s stat modifiers are reset to zero.,Removes all of the target’s stat modifiers.,https://pokeapi.co/api/v2/move/499/
+500,stored-power,stored_power,psychic,20,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  Power is increased by 100% its original value for every stage any of the user’s stats have been raised.  Accuracy, evasion, and lowered stats do not affect this move’s power.  For a Pokémon with all five stats modified to +6, this move’s power is 31×.","Power is higher the more the user’s stats have been raised, to a maximum of 31×.",https://pokeapi.co/api/v2/move/500/
+501,quick-guard,quick_guard,fighting,None,None,15,3,status,users-field,generation-v,"Moves with priority greater than 0 will not hit friendly Pokémon for the remainder of this turn.  If the user is last to act this turn, this move will fail.
+
+This move cannot be selected by assist or metronome.",Prevents any priority moves from hitting friendly Pokémon this turn.,https://pokeapi.co/api/v2/move/501/
+502,ally-switch,ally_switch,psychic,None,None,15,2,status,user,generation-v,"User switches position on the field with the friendly Pokémon opposite it.  If the user is in the middle position in a triple battle, or there are no other friendly Pokémon, this move will fail.",User switches places with the friendly Pokémon opposite it.,https://pokeapi.co/api/v2/move/502/
+503,scald,scald,water,80,100,15,0,special,selected-pokemon,generation-v,Inflicts regular damage.  Has a 30% chance to burn the target.,Has a 30% chance to burn the target.,https://pokeapi.co/api/v2/move/503/
+504,shell-smash,shell_smash,normal,None,None,15,0,status,user,generation-v,"Raises the user’s Attack, Special Attack, and Speed by two stages each.  Lowers the user’s Defense and Special Defense by one stage each.","Raises user’s Attack, Special Attack, and Speed by two stages.  Lower user’s Defense and Special Defense by one stage.",https://pokeapi.co/api/v2/move/504/
+505,heal-pulse,heal_pulse,psychic,None,None,10,0,status,selected-pokemon,generation-v,Heals the target for half its max HP.,Heals the target for half its max HP.,https://pokeapi.co/api/v2/move/505/
+506,hex,hex,ghost,65,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If the target has a major status ailment, this move has double power.",Has double power if the target has a major status ailment.,https://pokeapi.co/api/v2/move/506/
+507,sky-drop,sky_drop,flying,60,100,10,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  User carries the target high into the air for one turn, during which no moves will hit either Pokémon and neither can act.  On the following turn, the user drops the target, inflicting damage and ending the effect.
+
+If the target is flying-type, this move will function as normal but inflict no damage.
+
+gust, hurricane, sky uppercut, smack down, thunder, twister, and whirlwind can hit both the user and the target during this effect.  gust and twister will additionally have double power.
+
+The damage from hail and sandstorm still applies during this effect.
+
+Either Pokémon may be hit during this effect if also under the effect of lock on, mind reader, or no guard.
+
+This move cannot be used while gravity is in effect.
+
+This move cannot be selected by sleep talk.
+
+*Bug*: If gravity is used during a double or triple battle while this move is in effect, this move is not correctly canceled on the target, and it remains high in the air indefinitely.  As this move prevents the target from acting, the only way to subsequently remove it from the field is to faint it.","Carries the target high into the air, dodging all attacks against either, and drops it next turn.",https://pokeapi.co/api/v2/move/507/
+508,shift-gear,shift_gear,steel,None,None,10,0,status,user,generation-v,Raises the user’s Attack by one stage and its Speed by two stages.,Raises the user’s Attack by one stage and its Speed by two stages.,https://pokeapi.co/api/v2/move/508/
+509,circle-throw,circle_throw,fighting,60,90,10,-6,physical,selected-pokemon,generation-v,"Inflicts regular damage, then switches the target out for another of its trainer’s Pokémon, selected at random.
+
+If the target is under the effect of ingrain or suction cups, or it has a substitute, or its Trainer has no more usable Pokémon, it will not be switched out.  If the target is a wild Pokémon, the battle ends instead.",Ends wild battles.  Forces trainers to switch Pokémon.,https://pokeapi.co/api/v2/move/509/
+510,incinerate,incinerate,fire,60,100,15,0,special,all-opponents,generation-v,"Inflicts regular damage.  If the target is holding a berry, it’s destroyed and cannot be used in response to this move.",Destroys the target’s held berry.,https://pokeapi.co/api/v2/move/510/
+511,quash,quash,dark,None,100,15,0,status,selected-pokemon,generation-v,"Forces the target to act last this turn, regardless of Speed or move priority.  If the target has already acted this turn, this move will fail.",Makes the target act last this turn.,https://pokeapi.co/api/v2/move/511/
+512,acrobatics,acrobatics,flying,55,100,15,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  If the user has no held item, this move has double power.",Has double power if the user has no held item.,https://pokeapi.co/api/v2/move/512/
+513,reflect-type,reflect_type,normal,None,None,15,0,status,selected-pokemon,generation-v,User’s type changes to match the target’s.,User becomes the target’s type.,https://pokeapi.co/api/v2/move/513/
+514,retaliate,retaliate,normal,70,100,5,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  If a friendly Pokémon fainted on the previous turn, this move has double power.",Has double power if a friendly Pokémon fainted last turn.,https://pokeapi.co/api/v2/move/514/
+515,final-gambit,final_gambit,fighting,None,100,5,0,special,selected-pokemon,generation-v,Inflicts damage equal to the user’s remaining HP.  User faints.,Inflicts damage equal to the user’s remaining HP.  User faints.,https://pokeapi.co/api/v2/move/515/
+516,bestow,bestow,normal,None,None,15,0,status,selected-pokemon,generation-v,"Transfers the user’s held item to the target.  If the user has no held item, or the target already has a held item, this move will fail.",Gives the user’s held item to the target.,https://pokeapi.co/api/v2/move/516/
+517,inferno,inferno,fire,100,50,5,0,special,selected-pokemon,generation-v,Inflicts regular damage.  Has a 100% chance to burn the target.,Has a 100% chance to burn the target.,https://pokeapi.co/api/v2/move/517/
+518,water-pledge,water_pledge,water,80,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If a friendly Pokémon used grass pledge earlier this turn, all opposing Pokémon have halved Speed for four turns (including this one).","With Grass Pledge, halves opposing Pokémon’s Speed for four turns.",https://pokeapi.co/api/v2/move/518/
+519,fire-pledge,fire_pledge,fire,80,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If a friendly Pokémon used water pledge earlier this turn, moves used by any friendly Pokémon have doubled effect chance for four turns (including this one).","With Water Pledge, doubles the effect chance of friendly Pokémon’s moves for four turns.",https://pokeapi.co/api/v2/move/519/
+520,grass-pledge,grass_pledge,grass,80,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If a friendly Pokémon used fire pledge earlier this turn, all opposing Pokémon will take 1/8 their max HP in damage at the end of every turn for four turns (including this one).","With Fire Pledge, damages opposing Pokémon for 1/8 their max HP every turn for four turns.",https://pokeapi.co/api/v2/move/520/
+521,volt-switch,volt_switch,electric,70,100,20,0,special,selected-pokemon,generation-v,"Inflicts regular damage, then the user immediately switches out, and the trainer selects a replacement Pokémon from the party.  If the target faints from this attack, the user’s trainer selects the new Pokémon to send out first.  If the user is the last Pokémon in its party that can battle, it will not switch out.
+
+The user may be hit by pursuit when it switches out, if it has been targeted and pursuit has not yet been used.
+
+This move may be used even if the user is under the effect of ingrain.  ingrain’s effect will end.",User must switch out after attacking.,https://pokeapi.co/api/v2/move/521/
+522,struggle-bug,struggle_bug,bug,50,100,20,0,special,all-opponents,generation-v,Inflicts regular damage.  Has a 100% chance to lower the target’s Special Attack by one stage.,Has a 100% chance to lower the target’s Special Attack by one stage.,https://pokeapi.co/api/v2/move/522/
+523,bulldoze,bulldoze,ground,60,100,20,0,physical,all-other-pokemon,generation-v,Inflicts regular damage.  Has a 100% chance to lower the target’s Speed by one stage.,Has a 100% chance to lower the target’s Speed by one stage.,https://pokeapi.co/api/v2/move/523/
+524,frost-breath,frost_breath,ice,60,90,10,0,special,selected-pokemon,generation-v,Inflicts regular damage.  Always scores a critical hit.,Always scores a critical hit.,https://pokeapi.co/api/v2/move/524/
+525,dragon-tail,dragon_tail,dragon,60,90,10,-6,physical,selected-pokemon,generation-v,"Inflicts regular damage, then switches the target out for another of its trainer’s Pokémon, selected at random.
+
+If the target is under the effect of ingrain or suction cups, or it has a substitute, or its Trainer has no more usable Pokémon, it will not be switched out.  If the target is a wild Pokémon, the battle ends instead.",Ends wild battles.  Forces trainers to switch Pokémon.,https://pokeapi.co/api/v2/move/525/
+526,work-up,work_up,normal,None,None,30,0,status,user,generation-v,Raises the user’s Attack and Special Attack by one stage each.,Raises the user’s Attack and Special Attack by one stage each.,https://pokeapi.co/api/v2/move/526/
+527,electroweb,electroweb,electric,55,95,15,0,special,all-opponents,generation-v,Lowers the target’s Speed by one stage.,Lowers the target’s Speed by one stage.,https://pokeapi.co/api/v2/move/527/
+528,wild-charge,wild_charge,electric,90,100,15,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  User takes 1/4 the damage it inflicts in recoil.,User receives 1/4 the damage it inflicts in recoil.,https://pokeapi.co/api/v2/move/528/
+529,drill-run,drill_run,ground,80,95,10,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  User’s critical hit rate is one level higher when using this move.,Has an increased chance for a critical hit.,https://pokeapi.co/api/v2/move/529/
+530,dual-chop,dual_chop,dragon,40,90,15,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Hits twice in one turn.,Hits twice in one turn.,https://pokeapi.co/api/v2/move/530/
+531,heart-stamp,heart_stamp,psychic,60,100,25,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Has a 30% chance to make the target flinch.,Has a 30% chance to make the target flinch.,https://pokeapi.co/api/v2/move/531/
+532,horn-leech,horn_leech,grass,75,100,10,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Drains half the damage inflicted to heal the user.,Drains half the damage inflicted to heal the user.,https://pokeapi.co/api/v2/move/532/
+533,sacred-sword,sacred_sword,fighting,90,100,15,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  Damage calculation ignores the target’s stat modifiers, including evasion.",Ignores the target’s stat modifiers.,https://pokeapi.co/api/v2/move/533/
+534,razor-shell,razor_shell,water,75,95,10,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Has a 50% chance to lower the target’s Defense by one stage.,Has a 50% chance to lower the target’s Defense by one stage.,https://pokeapi.co/api/v2/move/534/
+535,heat-crash,heat_crash,fire,None,100,10,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  The greater the user’s weight compared to the target’s, the higher power this move has, to a maximum of 120.
+
+User’s weight                    | Power
+-------------------------------- | ----:
+Up to 2× the target’s weight     |    40
+Up to 3× the target’s weight     |    60
+Up to 4× the target’s weight     |    80
+Up to 5× the target’s weight     |   100
+More than 5× the target’s weight |   120
+","Power is higher when the user weighs more than the target, up to a maximum of 120.",https://pokeapi.co/api/v2/move/535/
+536,leaf-tornado,leaf_tornado,grass,65,90,10,0,special,selected-pokemon,generation-v,Inflicts regular damage.  Has a 50% chance to lower the target’s accuracy by one stage.,Has a 50% chance to lower the target’s accuracy by one stage.,https://pokeapi.co/api/v2/move/536/
+537,steamroller,steamroller,bug,65,100,20,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  Has a 30% chance to make the target flinch.
+
+Power is doubled against Pokémon that have used minimize since entering the field.",Has a 30% chance to make the target flinch.,https://pokeapi.co/api/v2/move/537/
+538,cotton-guard,cotton_guard,grass,None,None,10,0,status,user,generation-v,Raises the user’s Defense by three stages.,Raises the user’s Defense by three stages.,https://pokeapi.co/api/v2/move/538/
+539,night-daze,night_daze,dark,85,95,10,0,special,selected-pokemon,generation-v,Inflicts regular damage.  Has a 40% chance to lower the target’s accuracy by one stage.,Has a 40% chance to lower the target’s accuracy by one stage.,https://pokeapi.co/api/v2/move/539/
+540,psystrike,psystrike,psychic,100,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  Damage calculation always uses the target’s Defense, regardless of this move’s damage class.","Inflicts damage based on the target’s Defense, not Special Defense.",https://pokeapi.co/api/v2/move/540/
+541,tail-slap,tail_slap,normal,25,85,10,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  Hits 2–5 times in one turn.
+
+Has a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.",Hits 2-5 times in one turn.,https://pokeapi.co/api/v2/move/541/
+542,hurricane,hurricane,flying,110,70,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  Has a 30% chance to confuse the target.
+
+This move can hit Pokémon under the effect of bounce, fly, or sky drop.
+
+During rain dance, this move has 100% accuracy.  During sunny day, this move has 50% accuracy.",Has a 30% chance to confuse the target.,https://pokeapi.co/api/v2/move/542/
+543,head-charge,head_charge,normal,120,100,15,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  User takes 1/4 the damage it inflicts in recoil.,User receives 1/4 the damage it inflicts in recoil.,https://pokeapi.co/api/v2/move/543/
+544,gear-grind,gear_grind,steel,50,85,15,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Hits twice in one turn.,Hits twice in one turn.,https://pokeapi.co/api/v2/move/544/
+545,searing-shot,searing_shot,fire,100,100,5,0,special,all-other-pokemon,generation-v,Inflicts regular damage.  Has a 30% chance to burn the target.,Has a 30% chance to burn the target.,https://pokeapi.co/api/v2/move/545/
+546,techno-blast,techno_blast,normal,120,100,5,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If the user is holding a plate or a drive, this move’s type is the type corresponding to that item.
+
+Note: This effect is technically shared by both techno blast and judgment; however, Techno Blast is only affected by drives, and Judgment is only affected by plates.","If the user is holding a appropriate plate or drive, the damage inflicted will match it.",https://pokeapi.co/api/v2/move/546/
+547,relic-song,relic_song,normal,75,100,10,0,special,all-opponents,generation-v,"Inflicts regular damage.  Has a 10% chance to put the target to sleep.
+If the user is a meloetta, it will toggle between Aria and Pirouette Forme.",Has a 10% chance to put the target to sleep.,https://pokeapi.co/api/v2/move/547/
+548,secret-sword,secret_sword,fighting,85,100,10,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  Damage calculation always uses the target’s Defense, regardless of this move’s damage class.","Inflicts damage based on the target’s Defense, not Special Defense.",https://pokeapi.co/api/v2/move/548/
+549,glaciate,glaciate,ice,65,95,10,0,special,all-opponents,generation-v,Inflicts regular damage.  Lowers the target’s Speed by one stage.,Lowers the target’s Speed by one stage.,https://pokeapi.co/api/v2/move/549/
+550,bolt-strike,bolt_strike,electric,130,85,5,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Has a 20% chance to paralyze the target.,Has a 20% chance to paralyze the target.,https://pokeapi.co/api/v2/move/550/
+551,blue-flare,blue_flare,fire,130,85,5,0,special,selected-pokemon,generation-v,Inflicts regular damage.  Has a 20% chance to burn the target.,Has a 20% chance to burn the target.,https://pokeapi.co/api/v2/move/551/
+552,fiery-dance,fiery_dance,fire,80,100,10,0,special,selected-pokemon,generation-v,Inflicts regular damage.  Has a 50% chance to raise the user’s Special Attack by one stage.,Has a 50% chance to raise the user’s Special Attack by one stage.,https://pokeapi.co/api/v2/move/552/
+553,freeze-shock,freeze_shock,ice,140,90,5,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Has a 30% chance to paralyze the target.  User charges for one turn before attacking.,Requires a turn to charge before attacking.  Has a 30% chance to paralyze the target.,https://pokeapi.co/api/v2/move/553/
+554,ice-burn,ice_burn,ice,140,90,5,0,special,selected-pokemon,generation-v,Inflicts regular damage.  Has a 30% chance to burn the target.  User charges for one turn before attacking.,Requires a turn to charge before attacking.  Has a 30% chance to burn the target.,https://pokeapi.co/api/v2/move/554/
+555,snarl,snarl,dark,55,95,15,0,special,all-opponents,generation-v,Inflicts regular damage.  Has a 100% chance to lower the target’s Special Attack by one stage.,Has a 100% chance to lower the target’s Special Attack by one stage.,https://pokeapi.co/api/v2/move/555/
+556,icicle-crash,icicle_crash,ice,85,90,10,0,physical,selected-pokemon,generation-v,Inflicts regular damage.  Has a 30% chance to make the target flinch.,Has a 30% chance to make the target flinch.,https://pokeapi.co/api/v2/move/556/
+557,v-create,v_create,fire,180,95,5,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  Lowers the user’s Defense, Special Defense, and Speed by one stage each.","Lowers the user’s Defense, Special Defense, and Speed by one stage each.",https://pokeapi.co/api/v2/move/557/
+558,fusion-flare,fusion_flare,fire,100,100,5,0,special,selected-pokemon,generation-v,"Inflicts regular damage.  If a friendly Pokémon used fusion bolt earlier this turn, this move has double power.","With Fusion Bolt, inflicts double damage.",https://pokeapi.co/api/v2/move/558/
+559,fusion-bolt,fusion_bolt,electric,100,100,5,0,physical,selected-pokemon,generation-v,"Inflicts regular damage.  If a friendly Pokémon used fusion flare earlier this turn, this move has double power.","With Fusion Flare, inflicts double damage.",https://pokeapi.co/api/v2/move/559/

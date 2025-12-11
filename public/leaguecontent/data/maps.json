@@ -1,0 +1,44 @@
+[
+  {
+    "id": 11,
+    "name": "Summoner's Rift",
+    "image": "images/maps/summoner_s_rift.png",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map11.png"
+  },
+  {
+    "id": 12,
+    "name": "Howling Abyss",
+    "image": "images/maps/howling_abyss.png",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map12.png"
+  },
+  {
+    "id": 21,
+    "name": "Nexus Blitz",
+    "image": "images/maps/nexus_blitz.png",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map21.png"
+  },
+  {
+    "id": 22,
+    "name": "Teamfight Tactics",
+    "image": "images/maps/teamfight_tactics.png",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map22.png"
+  },
+  {
+    "id": 30,
+    "name": "Arena",
+    "image": "images/maps/arena.png",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map30.png"
+  },
+  {
+    "id": 33,
+    "name": "Map 33",
+    "image": "images/maps/map_33.png",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map33.png"
+  },
+  {
+    "id": 35,
+    "name": "Map 35",
+    "image": "images/maps/map_35.png",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map35.png"
+  }
+]

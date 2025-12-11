@@ -1,0 +1,1541 @@
+[
+  {
+    "champion": "Ambessa",
+    "slug": "Ambessa",
+    "title": "the Matriarch of War",
+    "releaseDate": "2024-10-28T18:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "All who know the name Medarda respect and fear the family’s leader, Ambessa. As a Noxian general, she embodies a deadly combination of ruthless strength and fearless resolve in battle. Her role as matriarch is no different, requiring great cunning to empower the Medardas while leaving no room for failure or compassion. Embracing the merciless ways of the Wolf, Ambessa will do whatever it takes to protect her family's legacy, even at the cost of her own children's love.",
+    "loreLong": null
+  },
+  {
+    "champion": "Mel",
+    "slug": "Mel",
+    "title": "the Soul's Reflection",
+    "releaseDate": "2025-01-23T20:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "Mel Medarda is the presumed heir of the Medarda family, once one of the most powerful in Noxus. In appearance she is a graceful aristocrat, but beneath the surface lies a skilled politician who makes it her business to know everything about everyone she meets. After an encounter with the mysterious Black Rose, Mel discovered the depths of her mother's deception and, for once, faced a situation potentially beyond her control. With newly awakened magical abilities, she sailed home in search of answers—and though many still seek to temper the light within her, Mel's soul remains forever defiant.",
+    "loreLong": null
+  },
+  {
+    "champion": "Nunu & Willump",
+    "slug": "Nunu",
+    "title": "the Boy and His Yeti",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Once upon a time, there was a boy who wanted to prove he was a hero by slaying a fearsome monster—only to discover that the beast, a lonely and magical yeti, merely needed a friend. Bound together by ancient power and a shared love of snowballs, Nunu and Willump now ramble wildly across the Freljord, breathing life into imagined adventures. They hope that somewhere out there, they will find Nunu’s mother. If they can save her, maybe they will be heroes after all…",
+    "loreLong": null
+  },
+  {
+    "champion": "Master Yi",
+    "slug": "MasterYi",
+    "title": "the Wuju Bladesman",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Master Yi has tempered his body and sharpened his mind, so that thought and action have become almost as one. Though he chooses to enter into violence only as a last resort, the grace and speed of his blade ensures resolution is always swift. As one of the last living practitioners of the Ionian art of Wuju, Yi has devoted his life to continuing the legacy of his people—scrutinizing potential new disciples with the Seven Lenses of Insight to identify the most worthy among them.",
+    "loreLong": null
+  },
+  {
+    "champion": "Yunara",
+    "slug": "Yunara",
+    "title": "The Unbroken Faith",
+    "releaseDate": "2025-07-16T18:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Unwavering in her devotion to Ionia, Yunara has spent centuries cloistered away in the spirit realm honing her skills with the Aion Er’na, a legendary Kinkou relic. Despite all she has sacrificed, Yunara’s vow to rid the land of disharmony and strife remains unbroken, as does her faith. But the world that now awaits her—and the shadow of an ancient threat risen once more—will test every ounce of her resolve.",
+    "loreLong": null
+  },
+  {
+    "champion": "Azir",
+    "slug": "Azir",
+    "title": "the Emperor of the Sands",
+    "releaseDate": "2014-09-16T00:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his greatest triumph, but now, millennia later, he has been reborn as an Ascended being of immense power. With his buried city risen from the sand, Azir seeks to restore Shurima to its former glory.",
+    "loreLong": null
+  },
+  {
+    "champion": "Aatrox",
+    "slug": "Aatrox",
+    "title": "the Darkin Blade",
+    "releaseDate": "2013-06-13T19:43:26.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.",
+    "loreLong": null
+  },
+  {
+    "champion": "Amumu",
+    "slug": "Amumu",
+    "title": "the Sad Mummy",
+    "releaseDate": "2009-06-26T00:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his touch is death, his affection ruin. Those who claim to have seen him describe a living cadaver, small in stature and wrapped in creeping bandages. Amumu has inspired myths, songs, and folklore told and retold for generations—such that it is impossible to separate truth from fiction.",
+    "loreLong": null
+  },
+  {
+    "champion": "Twisted Fate",
+    "slug": "TwistedFate",
+    "title": "the Card Master",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "bilgewater",
+    "loreShort": "Twisted Fate is an infamous cardsharp and swindler who has gambled and charmed his way across much of the known world, earning the enmity and admiration of the rich and foolish alike. He rarely takes things seriously, greeting each day with a mocking smile and an insouciant swagger. In every possible way, Twisted Fate always has an ace up his sleeve.",
+    "loreLong": null
+  },
+  {
+    "champion": "Aphelios",
+    "slug": "Aphelios",
+    "title": "the Weapon of the Faithful",
+    "releaseDate": "2019-11-19T19:43:26.000Z",
+    "faction": "mount-targon",
+    "loreShort": "Emerging from moonlight’s shadow with weapons drawn, Aphelios kills the enemies of his faith in brooding silence—speaking only through the certainty of his aim, and the firing of each gun. Though fueled by a poison that renders him mute, he is guided by his sister Alune in her distant temple sanctuary from where she pushes an arsenal of moonstone weapons into his hands. For as long as the moon shines overhead, Aphelios will never be alone.",
+    "loreLong": null
+  },
+  {
+    "champion": "Lillia",
+    "slug": "Lillia",
+    "title": "the Bashful Bloom",
+    "releaseDate": "2020-07-07T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Intensely shy, the fae fawn Lillia skittishly wanders Ionia’s forests. Hiding just out of sight of mortals—whose mysterious natures have long captivated, but intimidated, her—Lillia hopes to discover why their dreams no longer reach the ancient Dreaming Tree. She now travels Ionia with a magical branch in hand, in an effort to find people’s unrealized dreams. Only then can Lillia herself bloom and help others untangle their fears to find the sparkle within. Eep!",
+    "loreLong": null
+  },
+  {
+    "champion": "Blitzcrank",
+    "slug": "Blitzcrank",
+    "title": "the Great Steam Golem",
+    "releaseDate": "2009-09-02T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "A behemoth of burnished metal, steam, and crackling electricity, Blitzcrank walks the streets of Zaun in a tireless effort to improve the undercity and give aid to those in need. Created to descend into the most caustic and dangerous of environments in Zaun to dispose of harmful waste, they have evolved beyond the bounds of their original programming, thanks to the genius of their inventor, and the mysterious power of hextech.",
+    "loreLong": null
+  },
+  {
+    "champion": "Lulu",
+    "slug": "Lulu",
+    "title": "the Fae Sorceress",
+    "releaseDate": "2012-03-20T00:00:00.000Z",
+    "faction": "bandle-city",
+    "loreShort": "The yordle mage Lulu is known for conjuring dreamlike illusions and fanciful creatures as she roams Runeterra with her fairy companion Pix. Lulu shapes reality on a whim, warping the fabric of the world, and what she views as the constraints of this mundane, physical realm. While others might consider her magic at best unnatural, and at worst dangerous, she believes everyone could use a touch of enchantment.",
+    "loreLong": null
+  },
+  {
+    "champion": "Miss Fortune",
+    "slug": "MissFortune",
+    "title": "the Bounty Hunter",
+    "releaseDate": "2010-09-08T00:00:00.000Z",
+    "faction": "bilgewater",
+    "loreShort": "A Bilgewater captain famed for her looks but feared for her ruthlessness, Sarah Fortune paints a stark figure among the hardened criminals of the port city. As a child, she witnessed the reaver king Gangplank murder her family—an act she brutally avenged years later, blowing up his flagship while he was still aboard. Those who underestimate her will face a beguiling and unpredictable opponent… and, likely, a bullet or two in their guts.",
+    "loreLong": null
+  },
+  {
+    "champion": "Anivia",
+    "slug": "Anivia",
+    "title": "the Cryophoenix",
+    "releaseDate": "2009-07-10T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth to protect the Freljord. A demi-god born of unforgiving ice and bitter winds, she wields those elemental powers to thwart any who dare disturb her homeland. Anivia guides and protects the tribes of the harsh north, who revere her as a symbol of hope, and a portent of great change. She fights with every ounce of her being, knowing that through her sacrifice, her memory will endure, and she will be reborn into a new tomorrow.",
+    "loreLong": null
+  },
+  {
+    "champion": "Diana",
+    "slug": "Diana",
+    "title": "Scorn of the Moon",
+    "releaseDate": "2012-08-07T00:00:00.000Z",
+    "faction": "mount-targon",
+    "loreShort": "Bearing her crescent moonblade and clad in shimmering armor the color of winter snow at night, Diana is a living embodiment of the silver moon’s power. Imbued with the essence of an Aspect from beyond Targon’s towering summit, Diana is no longer wholly human, and struggles to understand her power and purpose in this world.",
+    "loreLong": null
+  },
+  {
+    "champion": "Bard",
+    "slug": "Bard",
+    "title": "the Wandering Caretaker",
+    "releaseDate": "2015-03-12T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "A traveler from beyond the stars, Bard is an agent of serendipity who strives to maintain the harmony between creation, and the cold indifference of what lies beyond it. Many Runeterrans sing songs that ponder his extraordinary nature, yet they all agree that the cosmic vagabond is drawn to artifacts of great magical power. Surrounded by a jubilant choir of helpful meeps, it is impossible to mistake his actions as malevolent, as Bard always serves the greater good… in his own odd way.",
+    "loreLong": null
+  },
+  {
+    "champion": "Neeko",
+    "slug": "Neeko",
+    "title": "the Curious Chameleon",
+    "releaseDate": "2018-11-19T08:00:26.000Z",
+    "faction": "ixtal",
+    "loreShort": "Hailing from a long lost tribe of vastaya, Neeko can blend into any crowd by borrowing the appearances of others, even absorbing something of their emotional state to tell friend from foe in an instant. No one is ever sure where—or who —Neeko might be, but those who intend to do her harm will soon witness her true colors revealed, and feel the full power of her primordial spirit magic unleashed upon them.",
+    "loreLong": null
+  },
+  {
+    "champion": "Caitlyn",
+    "slug": "Caitlyn",
+    "title": "the Sheriff of Piltover",
+    "releaseDate": "2011-01-04T00:00:00.000Z",
+    "faction": "piltover",
+    "loreShort": "Renowned as its finest peacekeeper, Caitlyn Kiramman is also Piltover’s best shot at ridding the city of its elusive criminal elements. She is often paired with Vi, acting as a cool counterpoint to her partner’s more impetuous nature. Even though she carries a one-of-a-kind hextech rifle, Caitlyn’s most powerful weapon is her superior intellect, allowing her to lay elaborate traps for any lawbreakers foolish enough to operate in the City of Progress.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kalista",
+    "slug": "Kalista",
+    "title": "the Spear of Vengeance",
+    "releaseDate": "2014-11-20T00:00:00.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "An undying specter of wrath and retribution, Kalista is an armored nightmare summoned from the Shadow Isles to hunt deceivers and traitors. The betrayed may cry out in blood to be avenged, but Kalista only answers those willing to pay with their very souls. Those who become the focus of Kalista’s wrath should make their final peace, for any pact sealed with this grim hunter can only be ended by the cold, piercing fire of her soul-spears.",
+    "loreLong": null
+  },
+  {
+    "champion": "Hecarim",
+    "slug": "Hecarim",
+    "title": "the Shadow of War",
+    "releaseDate": "2012-04-18T00:00:00.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "Hecarim is a spectral fusion of man and beast, cursed to ride down the souls of the living for all eternity. When the Blessed Isles fell into shadow, this proud knight was undone by the destructive energies of the Ruination, along with all his cavalry and their mounts. Now, whenever the Black Mist reaches out across Runeterra, he leads their devastating charge, reveling in the slaughter and crushing foes beneath his armored hooves.",
+    "loreLong": null
+  },
+  {
+    "champion": "Ivern",
+    "slug": "Ivern",
+    "title": "the Green Father",
+    "releaseDate": "2016-10-05T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Ivern, known to many as Bramblefoot or the Old Woodsman, is a peculiar half-man, half-tree who roams the wilds of Runeterra, cultivating life everywhere he goes. He knows all the secrets of the natural world, and holds deep friendships with things that grow, fly, and scuttle. Ivern enriches the forests, imparts strange wisdom to any mortal he meets, and occasionally entrusts loose-lipped butterflies with his secrets.",
+    "loreLong": null
+  },
+  {
+    "champion": "Corki",
+    "slug": "Corki",
+    "title": "the Daring Bombardier",
+    "releaseDate": "2009-09-19T00:00:00.000Z",
+    "faction": "bandle-city",
+    "loreShort": "The yordle pilot Corki loves two things above all others: flying, and his glamorous mustache... though not necessarily in that order. After leaving Bandle City, he settled in Piltover and fell in love with the wondrous machines he found there. He dedicated himself to the development of flying contraptions, leading an aerial defense force of seasoned veterans known as the Screaming Yipsnakes. Calm under fire, Corki patrols the skies around his adopted home, and has never encountered a problem that a good missile barrage couldn’t solve.",
+    "loreLong": null
+  },
+  {
+    "champion": "Bel'Veth",
+    "slug": "Belveth",
+    "title": "the Empress of the Void",
+    "releaseDate": "2022-05-20T17:00:00.000Z",
+    "faction": "void",
+    "loreShort": "A nightmarish empress created from the raw material of an entire devoured city, Bel’Veth is the end of Runeterra itself... and the beginning of a monstrous reality of her own design. Driven by epochs of repurposed history, knowledge, and memories from the world above, she voraciously feeds an ever-expanding need for new experiences and emotions, consuming all that crosses her path. Yet her wants could never be sated by only one world as she turns her hungry eyes toward the Void’s old masters...",
+    "loreLong": null
+  },
+  {
+    "champion": "Gangplank",
+    "slug": "Gangplank",
+    "title": "the Saltwater Scourge",
+    "releaseDate": "2009-08-19T00:00:00.000Z",
+    "faction": "bilgewater",
+    "loreShort": "As unpredictable as he is brutal, the dethroned reaver king Gangplank is feared far and wide. Once, he ruled the port city of Bilgewater, and while his reign is over, there are those who believe this has only made him more dangerous. Gangplank would see Bilgewater bathed in blood once more before letting someone else take it—and now with pistol, cutlass, and barrels of gunpowder, he is determined to reclaim what he has lost.",
+    "loreLong": null
+  },
+  {
+    "champion": "Ekko",
+    "slug": "Ekko",
+    "title": "the Boy Who Shattered Time",
+    "releaseDate": "2015-05-28T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "A prodigy from the rough streets of Zaun, Ekko is able to manipulate time to twist any situation to his advantage. He uses his own invention, the Z-Drive, to explore the branching possibilities of reality, crafting the perfect moment to seemingly achieve the impossible the first time, every time. Though Ekko revels in this freedom, when there’s a threat to those he cares about, he and the Firelights will do anything to defend them.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kled",
+    "slug": "Kled",
+    "title": "the Cantankerous Cavalier",
+    "releaseDate": "2016-08-10T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "A warrior as fearless as he is ornery, the yordle Kled embodies the furious bravado of Noxus. Many claim Kled has fought in every campaign the warhosts have waged, acquired every military title, and never once backed down from a fight. Though the truth of the matter is often questionable, one part of his legend is always the same: charging into battle on his un-trusty steed, Skaarl, Kled fights to protect what’s his… and takes whatever else he can get.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kassadin",
+    "slug": "Kassadin",
+    "title": "the Void Walker",
+    "releaseDate": "2009-08-07T00:00:00.000Z",
+    "faction": "void",
+    "loreShort": "Cutting a burning swath through the darkest places of the world, Kassadin knows his days are numbered. A widely traveled Shuriman guide and adventurer, he had chosen to raise a family among the peaceful southern tribes—until the day his village was consumed by the Void. He vowed vengeance, combining a number of arcane artifacts and forbidden technologies for the struggle ahead. Finally, Kassadin set out for the wastelands of Icathia, ready to face any monstrous Void-construct in his search for their self-proclaimed prophet, Malzahar.",
+    "loreLong": null
+  },
+  {
+    "champion": "Gwen",
+    "slug": "Gwen",
+    "title": "the Hallowed Seamstress",
+    "releaseDate": "2021-03-30T00:00:00.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "A former doll transformed and brought to life by magic, Gwen wields the very tools that once created her. She carries the weight of her maker’s love with every step, taking nothing for granted. At her command is the Hallowed Mist, an ancient and protective magic that has blessed Gwen’s scissors, needles, and sewing thread. So much is new to her, but Gwen remains joyfully determined to fight for the good that survives in a broken world.",
+    "loreLong": null
+  },
+  {
+    "champion": "Qiyana",
+    "slug": "Qiyana",
+    "title": "The Empress of Elements",
+    "releaseDate": "2019-06-07T00:00:00.000Z",
+    "faction": "ixtal",
+    "loreShort": "In the jungle city of Ixaocan, Qiyana plots her own ruthless path to the high seat of the Yun Tal. Last in line to succeed her parents, she faces those who stand in her way with brash confidence and unprecedented mastery over elemental magic. With the land itself obeying her every command, Qiyana sees herself as the greatest elementalist in the history of Ixaocan—and by that right, deserving of not only a city, but an empire.",
+    "loreLong": null
+  },
+  {
+    "champion": "Lucian",
+    "slug": "Lucian",
+    "title": "the Purifier",
+    "releaseDate": "2013-08-22T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Lucian, a Sentinel of Light, is a grim hunter of wraiths and specters, pursuing them relentlessly and annihilating them with his twin relic pistols. After the specter Thresh slew his wife, Lucian embarked on the path of vengeance—but even with her return to life, his rage is undiminished. Merciless and single-minded, Lucian will stop at nothing to protect the living from the long-dead horrors of the Black Mist.",
+    "loreLong": null
+  },
+  {
+    "champion": "Briar",
+    "slug": "Briar",
+    "title": "the Restrained Hunger",
+    "releaseDate": "2023-08-28T17:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "A failed experiment by the Black Rose, Briar’s uncontrollable bloodlust required a special pillory to focus her frenzied mind. After years of confinement, this living weapon broke free from her restraints and unleashed herself into the world. Now she’s controlled by no one—following only her hunger for knowledge and blood—and relishes the opportunities to let loose, even if reining back the frenzy isn’t easy.",
+    "loreLong": null
+  },
+  {
+    "champion": "Evelynn",
+    "slug": "Evelynn",
+    "title": "Agony's Embrace",
+    "releaseDate": "2009-05-01T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Within the dark seams of Runeterra, the demon Evelynn searches for her next victim. She lures in prey with the voluptuous façade of a human female, but once a person succumbs to her charms, Evelynn’s true form is unleashed. She then subjects her victim to unspeakable torment, gratifying herself with their pain. To the demon, these liaisons are innocent flings. To the rest of Runeterra, they are ghoulish tales of lust gone awry and horrific reminders of the cost of wanton desire.",
+    "loreLong": null
+  },
+  {
+    "champion": "Lux",
+    "slug": "Lux",
+    "title": "the Lady of Luminosity",
+    "releaseDate": "2010-10-19T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Luxanna Crownguard hails from Demacia, an insular realm where magical abilities are viewed with fear and suspicion. Able to bend light to her will, she grew up dreading discovery and exile, and was forced to keep her power secret in order to preserve her family’s noble status. Nonetheless, Lux’s optimism and resilience have led her to embrace her unique talents, and she now seeks to bring greater tolerance and understanding to her homeland.",
+    "loreLong": null
+  },
+  {
+    "champion": "Karma",
+    "slug": "Karma",
+    "title": "the Enlightened One",
+    "releaseDate": "2011-02-01T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "No mortal exemplifies the spiritual traditions of Ionia more than Karma. She is the living embodiment of an ancient soul reincarnated countless times, carrying all her accumulated memories into each new life, and blessed with power that few can comprehend. She has done her best to guide her people in recent times of crisis, though she knows that peace and harmony may come only at a considerable cost—both to her, and to the land she holds most dear.",
+    "loreLong": null
+  },
+  {
+    "champion": "Ashe",
+    "slug": "Ashe",
+    "title": "the Frost Archer",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Iceborn warmother of the Avarosan tribe, Ashe commands the most populous horde in the north. Stoic, intelligent, and idealistic, yet uncomfortable with her role as leader, she taps into the ancestral magics of her lineage to wield a bow of True Ice. With her people’s belief that she is the mythological hero Avarosa reincarnated, Ashe hopes to unify the Freljord once more by retaking their ancient, tribal lands.",
+    "loreLong": null
+  },
+  {
+    "champion": "Sett",
+    "slug": "Sett",
+    "title": "the Boss",
+    "releaseDate": "2019-12-18T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "A leader of Ionia’s growing criminal underworld, Sett rose to prominence in the wake of the war with Noxus. Though he began as a humble challenger in the fighting pits of Navori, he quickly gained notoriety for his savage strength, and his ability to take seemingly endless amounts of punishment. Now, having climbed through the ranks of local combatants, Sett has muscled to the top, reigning over the pits he once fought in.",
+    "loreLong": null
+  },
+  {
+    "champion": "Aurora",
+    "slug": "Aurora",
+    "title": "the Witch between Worlds",
+    "releaseDate": "2024-06-19T17:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "From the moment she was born, Aurora navigated life with a unique ability to move between the spirit and material realms. Determined to learn more about the spirit realm's inhabitants, she left her home to further her research and happened upon a wayward demigod who’d become twisted and lost to time. Witnessing his desperation, Aurora resolved to find a way to help her feral friend regain his forgotten identity—a journey that would take her to the farthest reaches of the Freljord.",
+    "loreLong": null
+  },
+  {
+    "champion": "Alistar",
+    "slug": "Alistar",
+    "title": "the Minotaur",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Always a mighty warrior with a fearsome reputation, Alistar seeks revenge for the death of his clan at the hands of the Noxian empire. Though he was enslaved and forced into the life of a gladiator, his unbreakable will was what kept him from truly becoming a beast. Now, free of the chains of his former masters, he fights in the name of the downtrodden and the disadvantaged, his rage as much a weapon as his horns, hooves and fists.",
+    "loreLong": null
+  },
+  {
+    "champion": "Fiora",
+    "slug": "Fiora",
+    "title": "the Grand Duelist",
+    "releaseDate": "2012-02-29T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "The most feared duelist in all Valoran, Fiora is as renowned for her brusque manner and political cunning as she is for the speed of her rapier. Born to the noble Laurent family in Demacia, Fiora claimed the household from her father in the wake of a scandal that nearly destroyed them—now she is dedicated to restoring the Laurents to their rightful place among the great and good of the kingdom.",
+    "loreLong": null
+  },
+  {
+    "champion": "Galio",
+    "slug": "Galio",
+    "title": "the Colossus",
+    "releaseDate": "2010-08-10T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Outside the Great City of Demacia, the stone colossus Galio keeps vigilant watch. Built as a bulwark against enemy mages, he often stands motionless for decades until the presence of powerful magic stirs him to life. Once activated, Galio makes the most of his time, savoring the thrill of a fight and the rare honor of defending his countrymen. But his triumphs are always bittersweet, for the magic he destroys is also his source of reanimation, and each victory leaves him dormant once again.",
+    "loreLong": null
+  },
+  {
+    "champion": "Akshan",
+    "slug": "Akshan",
+    "title": "the Rogue Sentinel",
+    "releaseDate": "2021-07-08T19:43:26.000Z",
+    "faction": "shurima",
+    "loreShort": "Raising an eyebrow in the face of danger, Akshan fights evil with dashing charisma, righteous vengeance, and a conspicuous lack of shirts. He is highly skilled in the art of stealth combat, able to evade the eyes of his enemies and reappear when they least expect him. With a keen sense of justice and a legendary death-reversing weapon, he rights the wrongs of Runeterra’s many scoundrels while living by his own moral code: “Don’t be an ass.”",
+    "loreLong": null
+  },
+  {
+    "champion": "LeBlanc",
+    "slug": "Leblanc",
+    "title": "the Deceiver",
+    "releaseDate": "2010-11-02T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "Mysterious even to other members of the Black Rose cabal, LeBlanc is but one of many names for a pale woman who has manipulated people and events since the earliest days of Noxus. Using her magic to mirror herself, the sorceress can appear to anyone, anywhere, and even be in many places at once. Always plotting just out of sight, LeBlanc’s true motives are as inscrutable as her shifting identity.",
+    "loreLong": null
+  },
+  {
+    "champion": "Mordekaiser",
+    "slug": "Mordekaiser",
+    "title": "the Iron Revenant",
+    "releaseDate": "2010-02-24T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "Twice slain and thrice born, Mordekaiser is a brutal warlord from a foregone epoch, who uses his necromantic sorcery to bind souls into an eternity of servitude. Few now remain who remember his earlier conquests, or know the true extent of his powers—but there are some ancient souls that do, and they fear the day when he may return to claim dominion over both the living and the dead.",
+    "loreLong": null
+  },
+  {
+    "champion": "Nasus",
+    "slug": "Nasus",
+    "title": "the Curator of the Sands",
+    "releaseDate": "2009-10-01T00:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Nasus is an imposing, jackal-headed Ascended—those heroic and god-like figures once revered by the people of Shurima. Fiercely intelligent, he was a guardian of knowledge and peerless strategist whose wisdom guided the empire to greatness for many centuries. After the failed Ascension of Azir, Nasus went into self-imposed exile, becoming little more than a legend. Now that the Sun Disc has risen once more, he has returned, determined to ensure it never falls again.",
+    "loreLong": null
+  },
+  {
+    "champion": "Fizz",
+    "slug": "Fizz",
+    "title": "the Tidal Trickster",
+    "releaseDate": "2011-11-15T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Fizz is an amphibious yordle, who dwells among the reefs surrounding Bilgewater. He often retrieves and returns the tithes cast into the sea by superstitious captains, but even the saltiest of sailors know better than to cross him—for many are the tales of those who have underestimated this slippery character. Often mistaken for some manner of capricious ocean spirit, he seems able to command the beasts of the deep, and delights in confounding his allies and enemies alike.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kayle",
+    "slug": "Kayle",
+    "title": "The Righteous",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Born to a Targonian Aspect at the height of the Rune Wars, Kayle honored her mother’s legacy by fighting for justice on wings of divine flame. She and her twin sister Morgana were the protectors of Demacia for many years—until Kayle became disillusioned with the repeated failings of mortals, and abandoned this realm altogether. Still, legends are told of her punishing the unjust with her fiery swords, and many hope that she will one day return…",
+    "loreLong": null
+  },
+  {
+    "champion": "Syndra",
+    "slug": "Syndra",
+    "title": "the Dark Sovereign",
+    "releaseDate": "2012-09-13T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Syndra is a fearsome Ionian mage with incredible power at her command. As a child, she disturbed the village elders with her reckless and wild magic. She was sent away to be taught greater control, but eventually discovered her supposed mentor was restraining her abilities. Forming her feelings of betrayal and hurt into dark spheres of energy, Syndra has sworn to destroy all who would try to control her.",
+    "loreLong": null
+  },
+  {
+    "champion": "Nautilus",
+    "slug": "Nautilus",
+    "title": "the Titan of the Depths",
+    "releaseDate": "2012-02-14T00:00:00.000Z",
+    "faction": "bilgewater",
+    "loreShort": "A lonely legend as old as the first piers sunk in Bilgewater, the armored goliath known as Nautilus roams the dark waters off the coast of the Blue Flame Isles. Driven by a forgotten betrayal, he strikes without warning, swinging his enormous anchor to save the wretched, and drag the greedy to their doom. It is said he comes for those who forget to pay the “Bilgewater tithe”, pulling them down beneath the waves with him—an iron-clad reminder that none can escape the depths.",
+    "loreLong": null
+  },
+  {
+    "champion": "Fiddlesticks",
+    "slug": "Fiddlesticks",
+    "title": "the Ancient Fear",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Something has awoken in Runeterra. Something ancient. Something terrible. The ageless horror known as Fiddlesticks stalks the edges of mortal society, drawn to areas thick with paranoia where it feeds upon terrorized victims. Wielding a jagged scythe, the haggard, makeshift creature reaps fear itself, shattering the minds of those unlucky enough to survive in its wake. Beware the sounding of the crow, or the whispering of the shape that appears almost human… Fiddlesticks has returned.",
+    "loreLong": null
+  },
+  {
+    "champion": "Shyvana",
+    "slug": "Shyvana",
+    "title": "the Half-Dragon",
+    "releaseDate": "2011-11-01T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Shyvana is a creature with pure elemental magic blazing in her heart. Though she most often appears humanoid, she can take her true form when necessary—that of a fearsome dragon, incinerating her foes with fiery breath. Having saved the life of the crown prince Jarvan IV, Shyvana now serves uneasily in his royal guard, struggling to find acceptance among the suspicious people of Demacia.",
+    "loreLong": null
+  },
+  {
+    "champion": "Maokai",
+    "slug": "Maokai",
+    "title": "the Twisted Treant",
+    "releaseDate": "2011-02-16T00:00:00.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "Maokai is a rageful, towering treant who fights the unnatural horrors of the Shadow Isles. He was twisted into a force of vengeance after a magical cataclysm destroyed his home, surviving undeath only through the Waters of Life infused within his heartwood. Once a peaceful nature spirit, Maokai now furiously battles to banish the scourge of unlife from the Shadow Isles and restore his home to its former beauty.",
+    "loreLong": null
+  },
+  {
+    "champion": "Ahri",
+    "slug": "Ahri",
+    "title": "the Nine-Tailed Fox",
+    "releaseDate": "2011-12-14T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Innately connected to the magic of the spirit realm, Ahri is a fox-like vastaya who can manipulate her prey's emotions and consume their essence—receiving flashes of their memory and insight from each soul she consumes. Once a powerful yet wayward predator, Ahri is now traveling the world in search of remnants of her ancestors while also trying to replace her stolen memories with ones of her own making.",
+    "loreLong": null
+  },
+  {
+    "champion": "Elise",
+    "slug": "Elise",
+    "title": "the Spider Queen",
+    "releaseDate": "2012-10-26T00:00:00.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "Elise is a deadly predator who dwells in a shuttered, lightless palace, deep within the oldest city of Noxus. She was once the mistress of a powerful noble house, until the bite of a vile spider-god transformed her into something utterly inhuman, yet still beautiful—an arachnoid creature, drawing unsuspecting prey into her web. Elise now feeds upon the naive and the faithless, and there are few who can resist her seductions.",
+    "loreLong": null
+  },
+  {
+    "champion": "Hwei",
+    "slug": "Hwei",
+    "title": "the Visionary",
+    "releaseDate": "2023-11-22T18:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Hwei is a brooding painter who creates brilliant art in order to confront Ionia’s criminals and comfort their victims. Beneath his melancholy roils a torn, emotional mind—haunted by both the vibrant visions of his imagination and the gruesome memories of his temple’s massacre. Hwei seeks to understand this light and dark, which drives him inevitably toward the artist who unraveled him. With paintbrush and palette, Hwei shapes endless possibilities as he draws ever closer to earning closure or embracing despair.",
+    "loreLong": null
+  },
+  {
+    "champion": "Jax",
+    "slug": "Jax",
+    "title": "Grandmaster at Arms",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Runeterra’s greatest weapons master, Jax is the only survivor of the Kohari—champions sworn to the defense of Icathia. But when the Void was unleashed against the Shuriman empire’s Ascended Host, Icathia was destroyed, leaving Jax without a home or purpose. He gathered the “last light of Icathia”, a symbol of his hope to one day defeat the Void, and now travels the world, searching for warriors strong enough to face the coming darkness by his side.",
+    "loreLong": null
+  },
+  {
+    "champion": "Orianna",
+    "slug": "Orianna",
+    "title": "the Lady of Clockwork",
+    "releaseDate": "2011-06-01T00:00:00.000Z",
+    "faction": "piltover",
+    "loreShort": "Once a curious girl of flesh and blood, Orianna is now a technological marvel composed entirely of clockwork. She became gravely ill after an accident in the lower districts of Zaun, and her failing body had to be replaced with exquisite artifice, piece by piece. Accompanied by the extraordinary brass orb that houses her hextech arsenal, Orianna is now free to explore the wonders of Piltover, and beyond.",
+    "loreLong": null
+  },
+  {
+    "champion": "Braum",
+    "slug": "Braum",
+    "title": "the Heart of the Freljord",
+    "releaseDate": "2014-05-12T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Blessed with massive biceps and an even bigger heart, Braum is a beloved Iceborn hero of the Freljord. Every mead hall north of Frostheld toasts his legendary strength and tells tales of how he felled a forest of oaks in a single night, and punched an entire mountain into rubble. With his shield, an enchanted vault door forged in ages past, Braum roams the frozen north as a cheerful protector, helping the vulnerable as he works toward his dream of a peaceful Freljord.",
+    "loreLong": null
+  },
+  {
+    "champion": "Riven",
+    "slug": "Riven",
+    "title": "the Exile",
+    "releaseDate": "2011-09-14T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "Once a swordmaster in the warhosts of Noxus, Riven rose through the ranks on the strength of her conviction and brutal efficiency, and was rewarded with a legendary runic blade and a warband of her own. However, on the Ionian front, Riven’s faith in her nation was tested and ultimately broken. She severed all ties to the empire, seeking to find her place in a shattered world, even as rumors abounded that Noxus had been reforged. Now forced to return in chains, she faces the judgment of her former homeland...",
+    "loreLong": null
+  },
+  {
+    "champion": "Rell",
+    "slug": "Rell",
+    "title": "the Iron Maiden",
+    "releaseDate": "2020-11-23T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "The product of brutal experimentation at the hands of the Black Rose, Rell is a defiant, living weapon determined to topple Noxus. Her childhood was one of misery and horror, enduring unspeakable procedures to perfect and weaponize her magical control over metal... until she made a violent escape, killing many of her captors in the process. Now branded as a criminal, Rell attacks Noxian soldiers on sight as she searches for survivors of her old “academy”, defending the meek while delivering merciless death to her former instructors.",
+    "loreLong": null
+  },
+  {
+    "champion": "Heimerdinger",
+    "slug": "Heimerdinger",
+    "title": "the Revered Inventor",
+    "releaseDate": "2009-10-10T00:00:00.000Z",
+    "faction": "piltover",
+    "loreShort": "The eccentric Professor Cecil B. Heimerdinger is one of the most innovative and esteemed inventors the world has ever known. As the longest serving member of the Council of Piltover, he saw the best and the worst of the city's unending desire for progress. Nonetheless, this brilliant scientist and teacher will always remain dedicated to using his unconventional devices to improve the lives of others.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kha'Zix",
+    "slug": "Khazix",
+    "title": "the Voidreaver",
+    "releaseDate": "2012-09-27T00:00:00.000Z",
+    "faction": "void",
+    "loreShort": "The Void grows, and the Void adapts—in none of its myriad spawn are these truths more apparent than Kha’Zix. Evolution drives the core of this mutating horror, born to survive and to slay the strong. Where it struggles to do so, it grows new, more effective ways to counter and kill its prey. Initially a mindless beast, Kha’Zix’s intelligence has developed as much as its form. Now, the creature plans out its hunts, and even utilizes the visceral terror it engenders in its victims.",
+    "loreLong": null
+  },
+  {
+    "champion": "Gragas",
+    "slug": "Gragas",
+    "title": "the Rabble Rouser",
+    "releaseDate": "2010-02-02T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Equal parts jolly and imposing, Gragas is a massive, rowdy brewmaster on his own quest for the perfect pint of ale. Hailing from parts unknown, he now searches for rare ingredients among the unblemished wastes of the Freljord, trying each recipe as he goes. Often intoxicated and extremely impulsive, he is legendary for the brawls he starts, which often end in all-night parties and widespread property damage. Any appearance from Gragas must surely foreshadow drinking and destruction—in that order.",
+    "loreLong": null
+  },
+  {
+    "champion": "Rek'Sai",
+    "slug": "RekSai",
+    "title": "the Void Burrower",
+    "releaseDate": "2014-12-11T00:00:00.000Z",
+    "faction": "void",
+    "loreShort": "An apex predator, Rek’Sai is a merciless Void-spawn that tunnels beneath the ground to ambush and devour unsuspecting prey. Her insatiable hunger has laid waste to entire regions of the once-great empire of Shurima—merchants, traders, even armed caravans, will go hundreds of miles out of their way to avoid her and her offspring’s hunting grounds. All know that once Rek’Sai is seen on the horizon, death from below is all but guaranteed.",
+    "loreLong": null
+  },
+  {
+    "champion": "Jarvan IV",
+    "slug": "JarvanIV",
+    "title": "the Exemplar of Demacia",
+    "releaseDate": "2011-03-01T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "As the king’s only son, Prince Jarvan is heir apparent to the throne of Demacia. Raised to be a paragon of his nation’s greatest virtues, he is forced to balance the heavy expectations placed upon him with his own desire to prove himself on the battlefield. An exceptional warrior in his own right, Jarvan also inspires his troops with fearsome courage and selfless determination, raising his family’s colors high and revealing his true strength as a future leader of his people.",
+    "loreLong": null
+  },
+  {
+    "champion": "Rakan",
+    "slug": "Rakan",
+    "title": "the Charmer",
+    "releaseDate": "2017-04-11T19:43:26.000Z",
+    "faction": "ionia",
+    "loreShort": "As mercurial as he is charming, Rakan is an infamous vastayan troublemaker and the greatest battle-dancer in Lhotlan tribal history. To the humans of the Ionian highlands, his name had long been synonymous with wild festivals, uncontrollable parties, and anarchic music. But this energetic, traveling showman has left his old life behind, dedicating himself to the cause of his lover, the rebel Xayah. Together, they seek to free Ionia’s wild magic, restoring the vastaya’s birthright.",
+    "loreLong": null
+  },
+  {
+    "champion": "Warwick",
+    "slug": "Warwick",
+    "title": "The Uncaged Wrath of Zaun",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "Warwick is a monster who hunts the gray alleys of Zaun. Transformed by agonizing experiments, his body is fused with an intricate system of chambers and pumps, machinery filling his veins with alchemical rage. He bursts from the shadows to prey upon those criminals who terrorize the city’s depths. Warwick is drawn to blood, driven mad by its scent… and none who spill it can escape him.",
+    "loreLong": null
+  },
+  {
+    "champion": "Akali",
+    "slug": "Akali",
+    "title": "the Rogue Assassin",
+    "releaseDate": "2010-05-11T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Abandoning the Kinkou Order and her title of the Fist of Shadow, Akali now strikes alone, ready to be the deadly weapon her people need. Though she holds onto all she learned from her master Shen, she has pledged to defend Ionia from its enemies, one kill at a time. Akali may strike in silence, but her message will be heard loud and clear: fear the assassin with no master.",
+    "loreLong": null
+  },
+  {
+    "champion": "Rumble",
+    "slug": "Rumble",
+    "title": "the Mechanized Menace",
+    "releaseDate": "2011-04-26T00:00:00.000Z",
+    "faction": "bandle-city",
+    "loreShort": "Rumble is a young inventor with a temper. Using nothing more than his own two hands and a heap of scrap, the feisty yordle constructed a colossal mech suit outfitted with an arsenal of electrified harpoons and incendiary rockets. Though others may scoff and sneer at his junkyard creations, Rumble doesn't mind—after all, he's the one with the flamespitter.",
+    "loreLong": null
+  },
+  {
+    "champion": "Brand",
+    "slug": "Brand",
+    "title": "the Burning Vengeance",
+    "releaseDate": "2011-04-12T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Once a tribesman of the icy Freljord named Kegan Rodhe, the creature known as Brand is a lesson in the temptation of greater power. Seeking one of the legendary World Runes, Kegan betrayed his companions and seized it for himself—and, in an instant, the man was no more. His soul burned away, his body a vessel of living flame, Brand now roams Valoran in search of other Runes, swearing revenge for wrongs he could not have suffered in a dozen mortal lifetimes.",
+    "loreLong": null
+  },
+  {
+    "champion": "Samira",
+    "slug": "Samira",
+    "title": "the Desert Rose",
+    "releaseDate": "2020-09-21T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "Samira stares death in the eye with unyielding confidence, seeking thrill wherever she goes. After her Shuriman home was destroyed as a child, Samira found her true calling in Noxus, where she built a reputation as a stylish daredevil taking on dangerous missions of the highest caliber. Wielding black-powder pistols and a custom-engineered blade, Samira thrives in life-or-death circumstances, eliminating any who stand in her way with flash and flair.",
+    "loreLong": null
+  },
+  {
+    "champion": "Garen",
+    "slug": "Garen",
+    "title": "The Might of Demacia",
+    "releaseDate": "2010-04-27T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "A proud and noble soldier, Garen fights at the head of the Dauntless Vanguard. He is popular among his fellows, and respected well enough by his enemies—not least as a scion of the prestigious Crownguard family, entrusted with defending Demacia and its ideals. Clad in magic-resistant armor and bearing a mighty broadsword, Garen stands ready to confront mages and sorcerers on the field of battle, in a veritable whirlwind of righteous steel.",
+    "loreLong": null
+  },
+  {
+    "champion": "Malphite",
+    "slug": "Malphite",
+    "title": "Shard of the Monolith",
+    "releaseDate": "2009-09-02T00:00:00.000Z",
+    "faction": "ixtal",
+    "loreShort": "A massive creature of living stone, Malphite was born from the heart of the great Ixtali construct known as the Monolith. He has studied the elemental balance of Runeterra for centuries, using his tremendous strength to maintain order in a frequently chaotic world, and crush the dark things that crawl beneath it. Now, roused all too often from his slumbers, Malphite endures the fluid temperaments of mortals, in pursuit of the only cause worthy of the last of his kind.",
+    "loreLong": null
+  },
+  {
+    "champion": "Darius",
+    "slug": "Darius",
+    "title": "the Hand of Noxus",
+    "releaseDate": "2012-05-23T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "There is no greater symbol of Noxian might than Darius, the nation’s most feared and battle-hardened leader. Rising from humble origins to become the Hand of Noxus, he cleaves through the empire’s enemies—many of them Noxians themselves. Knowing that he never doubts his cause is just, and never hesitates once his axe is raised, those who stand against the commander of the Trifarian Legion can expect no mercy.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kai'Sa",
+    "slug": "Kaisa",
+    "title": "Daughter of the Void",
+    "releaseDate": "2018-03-02T00:00:00.000Z",
+    "faction": "void",
+    "loreShort": "Claimed by the Void when she was only a child, Kai’Sa managed to survive through sheer tenacity and strength of will. Her experiences have made her a deadly hunter and, to some, the harbinger of a future they would rather not live to see. Having entered into an uneasy symbiosis with a living Void carapace, the time will soon come when she must decide whether to forgive those mortals who would call her a monster, and defeat the coming darkness together… or simply to forget, as the Void consumes the world that left her behind.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kog'Maw",
+    "slug": "KogMaw",
+    "title": "the Mouth of the Abyss",
+    "releaseDate": "2010-06-24T00:00:00.000Z",
+    "faction": "void",
+    "loreShort": "Belched forth from a rotting Void incursion deep in the wastelands of Icathia, Kog’Maw is an inquisitive yet putrid creature with a caustic, gaping mouth. This particular Void-spawn needs to gnaw and drool on anything within reach to truly understand it. Though not inherently evil, Kog’Maw’s beguiling naiveté is dangerous, as it often precedes a feeding frenzy—not for sustenance, but to satisfy its unending curiosity.",
+    "loreLong": null
+  },
+  {
+    "champion": "Olaf",
+    "slug": "Olaf",
+    "title": "the Berserker",
+    "releaseDate": "2010-06-09T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "An unstoppable force of destruction, the axe-wielding Olaf wants nothing but to die in glorious combat. Hailing from the brutal Freljordian peninsula of Lokfar, he once received a prophecy foretelling his peaceful passing—a coward's fate, and a great insult among his people. Seeking death, and fueled by rage, he rampaged across the land, slaughtering scores of great warriors and legendary beasts in search of any opponent who could stop him. Now a brutal enforcer for the Winter's Claw, he seeks his end in the great wars to come.",
+    "loreLong": null
+  },
+  {
+    "champion": "Sejuani",
+    "slug": "Sejuani",
+    "title": "the Winter's Wrath",
+    "releaseDate": "2012-01-17T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Sejuani is the brutal, unforgiving Warmother of the Winter’s Claw, one of the most feared tribes of the Freljord. Her people’s survival is a constant, desperate battle against the elements, forcing them to raid Noxians, Demacians, and Avarosans alike to survive the harsh winters. Sejuani herself spearheads the most dangerous of these attacks from the saddle of her drüvask boar Bristle, using her True Ice flail to freeze and shatter her enemies.",
+    "loreLong": null
+  },
+  {
+    "champion": "Graves",
+    "slug": "Graves",
+    "title": "the Outlaw",
+    "releaseDate": "2011-10-19T00:00:00.000Z",
+    "faction": "bilgewater",
+    "loreShort": "Malcolm Graves is a renowned mercenary, gambler, and thief—a wanted man in every city and empire he has visited. Even though he has an explosive temper, he possesses a sense of criminal honor, often enforced at the business end of his double-barreled shotgun Destiny. In recent years, he has reconciled a troubled partnership with Twisted Fate, and together they have prospered once more in the turmoil of Bilgewater’s criminal underbelly.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kayn",
+    "slug": "Kayn",
+    "title": "the Shadow Reaper",
+    "releaseDate": "2017-07-10T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "A peerless practitioner of lethal shadow magic, Shieda Kayn battles to achieve his true destiny—to one day lead the Order of Shadow into a new era of Ionian supremacy. He wields the sentient Darkin weapon Rhaast, undeterred by its creeping corruption of his body and mind. There are only two possible outcomes: either Kayn bends the weapon to his will... or the malevolent blade consumes him completely, paving the way for the destruction of all Runeterra.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kindred",
+    "slug": "Kindred",
+    "title": "The Eternal Hunters",
+    "releaseDate": "2015-10-14T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Separate, but never parted, Kindred represents the twin essences of death. Lamb’s bow offers a swift release from the mortal realm for those who accept their fate. Wolf hunts down those who run from their end, delivering violent finality within his crushing jaws. Though interpretations of Kindred’s nature vary across Runeterra, every mortal must choose the true face of their death.",
+    "loreLong": null
+  },
+  {
+    "champion": "Shen",
+    "slug": "Shen",
+    "title": "the Eye of Twilight",
+    "releaseDate": "2010-03-24T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Among the secretive, Ionian warriors known as the Kinkou, Shen serves as their leader, the Eye of Twilight. He longs to remain free from the confusion of emotion, prejudice, and ego, and walks the unseen path of dispassionate judgment between the spirit realm and the physical world. Tasked with enforcing the equilibrium between them, Shen wields blades of steel and arcane energy against any who would threaten it.",
+    "loreLong": null
+  },
+  {
+    "champion": "Naafiri",
+    "slug": "Naafiri",
+    "title": "the Hound of a Hundred Bites",
+    "releaseDate": "2023-06-23T18:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Across the sands of Shurima, a chorus of howls rings out. It is the call of the dune hounds, voracious predators who form packs and compete for the right to hunt in these barren lands. Among them, one pack stands above all, for they are driven not only by canine instincts, but by the ancient power of the Darkin.",
+    "loreLong": null
+  },
+  {
+    "champion": "Tryndamere",
+    "slug": "Tryndamere",
+    "title": "the Barbarian King",
+    "releaseDate": "2009-05-01T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Fueled by unbridled fury and rage, Tryndamere once carved his way through the Freljord, openly challenging the greatest warriors of the north to prepare himself for even darker days ahead. The wrathful barbarian has long sought revenge for the annihilation of his clan, but more recently he has found companionship with Ashe, forging an alliance of marriage with the Avarosan warmother. His almost inhuman strength and fortitude are legendary, and have delivered him and his new allies countless victories against the greatest of odds.",
+    "loreLong": null
+  },
+  {
+    "champion": "Swain",
+    "slug": "Swain",
+    "title": "the Noxian Grand General",
+    "releaseDate": "2010-10-05T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "Jericho Swain is the visionary ruler of Noxus, an expansionist nation that reveres only strength. Though he was cast down and crippled in the Ionian wars, his left arm severed, he seized control of the empire with ruthless determination… and a new, demonic hand. Now, Swain commands from the front lines, marching against a coming darkness that only he can see—in glimpses gathered by shadowy ravens from the corpses all around him. In a swirl of sacrifice and secrets, the greatest secret of all is that the true enemy lies within.",
+    "loreLong": null
+  },
+  {
+    "champion": "Cho'Gath",
+    "slug": "Chogath",
+    "title": "the Terror of the Void",
+    "releaseDate": "2009-06-26T00:00:00.000Z",
+    "faction": "void",
+    "loreShort": "From the moment Cho’Gath first emerged into the harsh light of Runeterra’s sun, the beast was driven by the most pure and insatiable hunger. A perfect expression of the Void’s desire to consume all life, Cho’Gath’s complex biology quickly converts matter into new bodily growth—increasing its muscle mass and density, or hardening its outer carapace like organic diamond. When growing larger does not suit the Void-spawn’s needs, it vomits out the excess material as razor-sharp spines, leaving prey skewered and ready to feast upon later.",
+    "loreLong": null
+  },
+  {
+    "champion": "Thresh",
+    "slug": "Thresh",
+    "title": "the Chain Warden",
+    "releaseDate": "2013-01-23T00:00:00.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "Sadistic and cunning, Thresh is an ambitious and restless specter of the Shadow Isles. Once the custodian of countless arcane secrets, he was undone by a power greater than life or death, and now sustains himself by tormenting and breaking others with slow, excruciating inventiveness. His victims suffer far beyond their brief mortal coil as Thresh wreaks agony upon their souls, imprisoning them in his unholy lantern to torture for all eternity.",
+    "loreLong": null
+  },
+  {
+    "champion": "Tahm Kench",
+    "slug": "TahmKench",
+    "title": "the River King",
+    "releaseDate": "2015-07-09T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Known by many names throughout history, the demon Tahm Kench travels the waterways of Runeterra, feeding his insatiable appetite with the misery of others. Though he may appear singularly charming and proud, he swaggers through the physical realm like a vagabond in search of unsuspecting prey. His lashing tongue can stun even a heavily armored warrior from a dozen paces, and to fall into his rumbling belly is to tumble into an abyss from which there is little hope of return.",
+    "loreLong": null
+  },
+  {
+    "champion": "Pyke",
+    "slug": "Pyke",
+    "title": "the Bloodharbor Ripper",
+    "releaseDate": "2018-05-31T00:00:00.000Z",
+    "faction": "bilgewater",
+    "loreShort": "A renowned harpooner from the slaughter docks of Bilgewater, Pyke should have met his death in the belly of a gigantic jaull-fish… and yet, he returned. Now, stalking the dank alleys and backways of his former hometown, he uses his new supernatural gifts to bring a swift and gruesome end to those who make their fortune by exploiting others—and a city that prides itself on hunting monsters now finds a monster hunting them.",
+    "loreLong": null
+  },
+  {
+    "champion": "Sivir",
+    "slug": "Sivir",
+    "title": "the Battle Mistress",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Sivir is a renowned mercenary captain who plies her trade in the deserts of Shurima. Armed with her legendary jeweled crossblade, she has fought and won countless battles for those who can afford her services, and prides herself on recovering lost treasures from the catacombs beneath the old empire—for a generous share of the profits, of course. With ancient forces stirring the very bones of Shurima, Sivir now finds herself torn between conflicting destinies…",
+    "loreLong": null
+  },
+  {
+    "champion": "Nilah",
+    "slug": "Nilah",
+    "title": "the Joy Unbound",
+    "releaseDate": "2022-06-22T17:00:00.000Z",
+    "faction": "bilgewater",
+    "loreShort": "Nilah is an ascetic warrior from a distant land, seeking the world’s deadliest, most titanic opponents so that she might challenge and destroy them. Having won her power through an encounter with the long-imprisoned demon of joy, she has no emotions other than unceasing jubilation—a small price to pay for the vast strength she now possesses. Channeling the demon’s liquid form into a blade of unparalleled might, she stands defiant against ancient threats long forgotten.",
+    "loreLong": null
+  },
+  {
+    "champion": "Taric",
+    "slug": "Taric",
+    "title": "the Shield of Valoran",
+    "releaseDate": "2009-08-19T00:00:00.000Z",
+    "faction": "mount-targon",
+    "loreShort": "Taric is host to the Aspect of the Protector, wielding incredible power as Runeterra’s guardian of life, love, and beauty. Shamed by a dereliction of duty and exiled from his homeland of Demacia, Taric climbed Mount Targon to find redemption, only to discover a higher calling among the stars. Imbued with the might of a celestial being, the “Shield of Valoran” now stands ever vigilant, against any who would threaten the people of this world.",
+    "loreLong": null
+  },
+  {
+    "champion": "Rengar",
+    "slug": "Rengar",
+    "title": "the Pridestalker",
+    "releaseDate": "2012-08-21T00:00:00.000Z",
+    "faction": "ixtal",
+    "loreShort": "Rengar is a ferocious vastayan trophy hunter who lives for the thrill of tracking down and killing dangerous creatures. He scours the world for the most fearsome beasts he can find, especially seeking any trace of Kha’Zix, the void creature who scratched out his eye. Rengar stalks his prey neither for food nor glory, but for the sheer beauty of the pursuit.",
+    "loreLong": null
+  },
+  {
+    "champion": "Janna",
+    "slug": "Janna",
+    "title": "the Storm's Fury",
+    "releaseDate": "2009-09-02T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "An ancient and mysterious wind spirit, Janna has come to protect the dispossessed of Zaun. While her presence is most often felt as a soothing breeze or a ferocious tempest, she also can manifest in corporeal form as an ethereal figure, comforting the downtrodden. Over the eons, Janna has witnessed the rise and fall of civilizations. Through it all, she remains steadfast as a beacon of hope to those in need.",
+    "loreLong": null
+  },
+  {
+    "champion": "Lissandra",
+    "slug": "Lissandra",
+    "title": "the Ice Witch",
+    "releaseDate": "2013-04-30T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "As the reclusive leader of the Frostguard, many believe Lissandra is a living saint whose followers bring healing and wisdom to the tribes of the Freljord. The truth is perhaps more sinister, as she uses her elemental magic to twist the power of True Ice into something dark and terrible, entombing or impaling any who would reveal her deepest secrets. Indeed, the legacy of her past may yet be the beginning of the end for Runeterra.",
+    "loreLong": null
+  },
+  {
+    "champion": "Varus",
+    "slug": "Varus",
+    "title": "the Arrow of Retribution",
+    "releaseDate": "2012-05-08T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "One of the ancient Darkin, Varus was a deadly killer who loved to torment his foes, driving them almost to insanity before delivering the killing arrow. He was imprisoned at the end of the Great Darkin War, but escaped centuries later in the remade flesh of two Ionian hunters—they had unwittingly released him, cursed to bear the bow containing his bound essence. Varus now seeks out those who trapped him, in order to enact his brutal vengeance, but the mortal souls within still resist him every step of the way.",
+    "loreLong": null
+  },
+  {
+    "champion": "Vel'Koz",
+    "slug": "Velkoz",
+    "title": "the Eye of the Void",
+    "releaseDate": "2014-02-27T00:00:00.000Z",
+    "faction": "void",
+    "loreShort": "It is unclear if Vel’Koz was the first Voidborn to emerge on Runeterra, but there has certainly never been another to match his level of cruel, calculating sentience. While his kin devour or defile everything around them, he seeks instead to scrutinize and study the physical realm—and the strange, warlike beings that dwell there—for any weakness the Void might exploit. But Vel’Koz is far from a passive observer, striking back at threats with deadly plasma, or by disrupting the very fabric of the world itself.",
+    "loreLong": null
+  },
+  {
+    "champion": "Kennen",
+    "slug": "Kennen",
+    "title": "the Heart of the Tempest",
+    "releaseDate": "2010-04-08T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "The longest-standing member of the ancient Kinkou Order, the yordle Kennen is the first and only Heart of the Tempest. For centuries, he has used diplomacy—and force—to maintain the sacred balance in his adopted home of Ionia. Lightning fast and bearing the wisdom of a long and storied life, Kennen works with the Eye of Twilight, Shen, to protect the fragile harmony of the First Lands with a whirling storm of shuriken and devastating electrical energy.",
+    "loreLong": null
+  },
+  {
+    "champion": "Rammus",
+    "slug": "Rammus",
+    "title": "the Armordillo",
+    "releaseDate": "2009-07-10T00:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Idolized by many, dismissed by some, mystifying to all, the curious being Rammus is an enigma. Protected by a spiked shell, he inspires increasingly disparate theories on his origin wherever he goes—from demigod, to sacred oracle, to a mere beast transformed by magic. Whatever the truth may be, Rammus keeps his own counsel and stops for no one as he roams the Shuriman desert.",
+    "loreLong": null
+  },
+  {
+    "champion": "Renekton",
+    "slug": "Renekton",
+    "title": "the Butcher of the Sands",
+    "releaseDate": "2011-01-18T00:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Renekton is a terrifying, rage-fueled Ascended warrior from the scorched deserts of Shurima. Once, he was his empire’s most esteemed champion, leading its grand armies to countless victories. However, after the fall of the Sun Disc, Renekton was entombed beneath the sands—and slowly, as the world above changed, he succumbed to insanity. Now free once more, he is utterly consumed with wreaking vengeance upon his brother, Nasus, who he blames for the centuries lost in darkness.",
+    "loreLong": null
+  },
+  {
+    "champion": "Leona",
+    "slug": "Leona",
+    "title": "the Radiant Dawn",
+    "releaseDate": "2011-07-13T00:00:00.000Z",
+    "faction": "mount-targon",
+    "loreShort": "Imbued with the fire of the sun, Leona is a holy warrior of the Solari who defends Mount Targon with her Zenith Blade and the Shield of Daybreak. Her skin shimmers with starfire while her eyes burn with the power of the celestial Aspect within her. Armored in gold and bearing a terrible burden of ancient knowledge, Leona brings enlightenment to some, death to others.",
+    "loreLong": null
+  },
+  {
+    "champion": "Ornn",
+    "slug": "Ornn",
+    "title": "the Fire Below the Mountain",
+    "releaseDate": "2017-08-22T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Ornn is the Freljordian demi-god of forging and craftsmanship. He works in the solitude of a massive smithy, hammered out from the lava caverns beneath the volcano Hearth-Home. There he stokes bubbling cauldrons of molten rock to purify ores and fashion items of unsurpassed quality. When other deities—especially Volibear—walk the earth and meddle in mortal affairs, Ornn arises to put these impetuous beings back in their place, either with his trusty hammer or the fiery power of the mountains themselves.",
+    "loreLong": null
+  },
+  {
+    "champion": "Yone",
+    "slug": "Yone",
+    "title": "the Unforgotten",
+    "releaseDate": "2020-07-24T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "In life, he was Yone—half-brother of Yasuo, and renowned student of his village’s sword school. But upon his death at the hands of his brother, he found himself hunted by a malevolent entity of the spirit realm, and was forced to slay it with its own sword. Now, cursed to wear its demonic mask upon his face, Yone tirelessly hunts all such creatures in order to understand what he has become.",
+    "loreLong": null
+  },
+  {
+    "champion": "Draven",
+    "slug": "Draven",
+    "title": "the Glorious Executioner",
+    "releaseDate": "2012-06-06T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "In Noxus, warriors known as reckoners face one another in arenas where blood is spilled and strength tested—but none has ever been as celebrated as Draven. A former soldier, he found that the crowds uniquely appreciated his flair for the dramatic, not to mention the spray of blood from each of his spinning axes. Addicted to the spectacle of his own brash perfection, Draven has sworn to defeat whomever he must to ensure that his name is chanted throughout the empire forever more.",
+    "loreLong": null
+  },
+  {
+    "champion": "Jhin",
+    "slug": "Jhin",
+    "title": "the Virtuoso",
+    "releaseDate": "2016-02-01T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Jhin is a meticulous criminal psychopath who believes murder is art. Once an Ionian prisoner, but freed by shadowy elements within Ionia’s ruling council, the serial killer now works as their cabal's assassin. Using his gun as his paintbrush, Jhin creates works of artistic brutality, horrifying victims and onlookers. He gains a cruel pleasure from putting on his gruesome theater, making him the ideal choice to send the most powerful of messages: terror.",
+    "loreLong": null
+  },
+  {
+    "champion": "Cassiopeia",
+    "slug": "Cassiopeia",
+    "title": "the Serpent's Embrace",
+    "releaseDate": "2010-12-14T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "Cassiopeia is a deadly creature bent on manipulating others to her will. Youngest and most beautiful daughter of the noble Du Couteau family of Noxus, she ventured deep into the crypts beneath Shurima in search of ancient power. There, she was bitten by a gruesome tomb guardian, whose venom transformed her into a viper-like predator. Cunning and agile, Cassiopeia now slithers under the veil of night, petrifying her enemies with her baleful gaze.",
+    "loreLong": null
+  },
+  {
+    "champion": "Smolder",
+    "slug": "Smolder",
+    "title": "the Fiery Fledgling",
+    "releaseDate": "2024-01-31T18:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Hidden amongst the craggy cliffs of the Noxian frontier, under the watchful eyes of his mother, a young dragon is learning what it means to be heir to the Camavoran imperial dragon lineage. Playful and eager to grow up, Smolder looks for any excuse to practice his burgeoning abilities. Though he’s still a fledgling, his skills are nothing to sneeze at, easily setting fire to anything that burns.",
+    "loreLong": null
+  },
+  {
+    "champion": "K'Sante",
+    "slug": "KSante",
+    "title": "the Pride of Nazumah",
+    "releaseDate": "2022-10-18T15:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Defiant and courageous, K’Sante battles colossal beasts and ruthless Ascended to protect his home of Nazumah, a coveted oasis amid the sands of Shurima. But after a falling-out with his former partner, K'Sante realizes that in order to become a warrior worthy of leading his city, he must temper his single-minded drive for success. Only then can he avoid falling prey to his own pride and find the wisdom he needs to defeat the vicious monsters threatening his people.",
+    "loreLong": null
+  },
+  {
+    "champion": "Singed",
+    "slug": "Singed",
+    "title": "the Mad Chemist",
+    "releaseDate": "2009-04-18T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "Singed is a brilliant alchemist of dubious morality, whose experiments would turn the stomach of even the most cutthroat criminal. Selling his skills to the highest bidder, he cares little for how his noxious concoctions are used, with the ensuing chaos an experiment in itself. His most infamous work is “shimmer”, which enabled the chembarons to turn Zaun into their personal playground—but fueled by madness, Singed is always working on something new, with each endeavor more depraved than the last...",
+    "loreLong": null
+  },
+  {
+    "champion": "Soraka",
+    "slug": "Soraka",
+    "title": "the Starchild",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "mount-targon",
+    "loreShort": "A wanderer from the celestial realm, Soraka gave up her immortal form to protect the mortal races from their own ignorance and violent instincts. She endeavors to spread the virtues of compassion and mercy to everyone she meets—guiding the lost, and healing the wounded. For all Soraka has seen of this world's struggles, she still believes the people of Runeterra have yet to reach their full potential.",
+    "loreLong": null
+  },
+  {
+    "champion": "Katarina",
+    "slug": "Katarina",
+    "title": "the Sinister Blade",
+    "releaseDate": "2009-09-19T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "Decisive in judgment and lethal in combat, Katarina is a Noxian assassin of the highest caliber. Eldest daughter to the legendary General Du Couteau, she made her talents known with swift kills against unsuspecting enemies. Her fiery ambition has driven her to pursue heavily-guarded targets, even at the risk of endangering her allies—but no matter the mission, Katarina will not hesitate to execute her duty amid a whirlwind of serrated daggers.",
+    "loreLong": null
+  },
+  {
+    "champion": "Teemo",
+    "slug": "Teemo",
+    "title": "the Swift Scout",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "bandle-city",
+    "loreShort": "Teemo is the fearless leader of the Bandle Scouts—a group of intrepid yordles dedicated to exploring Runeterra and learning about the great big world. He ventures far and wide, completing challenges to earn merit badges, writing new rules to add to the ever-growing Bandle Scout Handbook, and leaving exploding mushrooms around as a surprise gift for new friends. As a scout leader, nothing bad ever happens when Teemo’s around!",
+    "loreLong": null
+  },
+  {
+    "champion": "Vladimir",
+    "slug": "Vladimir",
+    "title": "the Crimson Reaper",
+    "releaseDate": "2010-07-27T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "A fiend with a thirst for mortal blood, Vladimir has influenced the affairs of Noxus since the empire’s earliest days. In addition to unnaturally extending his life, his mastery of hemomancy allows him to control the minds and bodies of others as easily as his own. In the flamboyant salons of the Noxian aristocracy, this enabled him to build a fanatical cult of personality around himself—while in the lowest back alleys, it allows him to bleed his enemies dry.",
+    "loreLong": null
+  },
+  {
+    "champion": "Annie",
+    "slug": "Annie",
+    "title": "the Dark Child",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Dangerous, yet disarmingly precocious, Annie is a child mage with immense pyromantic power. Even in the shadows of the mountains north of Noxus, she is a magical outlier. Her natural affinity for fire manifested early in life through unpredictable, emotional outbursts, though she eventually learned to control these “playful tricks.” Her favorite includes the summoning of her beloved teddy bear, Tibbers, as a fiery protector. Lost in the perpetual innocence of childhood, Annie wanders the dark forests, always looking for someone to play with.",
+    "loreLong": null
+  },
+  {
+    "champion": "Shaco",
+    "slug": "Shaco",
+    "title": "the Demon Jester",
+    "releaseDate": "2009-10-10T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Crafted long ago as a plaything for a lonely prince, the enchanted marionette Shaco now delights in murder and mayhem. Corrupted by dark magic and the loss of his beloved charge, the once-kind puppet finds pleasure only in the misery of the poor souls he torments. He uses toys and simple tricks to deadly effect, finding the results of his bloody “games” hilarious—and for those who hear a dark chuckle in the dead of night, the Demon Jester may have marked them as his next plaything.",
+    "loreLong": null
+  },
+  {
+    "champion": "Malzahar",
+    "slug": "Malzahar",
+    "title": "the Prophet of the Void",
+    "releaseDate": "2010-06-01T00:00:00.000Z",
+    "faction": "void",
+    "loreShort": "A zealous seer dedicated to the unification of all life, Malzahar truly believes the newly emergent Void to be the path to Runeterra’s salvation. In the desert wastes of Shurima, he followed the voices that whispered in his mind, all the way to ancient Icathia. Amidst the ruins of that land, he gazed into the dark heart of the Void itself, and was gifted new power and purpose. Malzahar now sees himself as a shepherd, empowered to bring others into the fold… or to release the voidling creatures that dwell beneath.",
+    "loreLong": null
+  },
+  {
+    "champion": "Zyra",
+    "slug": "Zyra",
+    "title": "Rise of the Thorns",
+    "releaseDate": "2012-07-24T00:00:00.000Z",
+    "faction": "ixtal",
+    "loreShort": "Born in an ancient, sorcerous catastrophe, Zyra is the wrath of nature given form—an alluring hybrid of plant and human, kindling new life with every step. She views the many mortals of Valoran as little more than prey for her seeded progeny, and thinks nothing of slaying them with flurries of deadly spines. Though her true purpose has not been revealed, Zyra wanders the world, indulging her most primal urges to colonize, and strangle all other life from it.",
+    "loreLong": null
+  },
+  {
+    "champion": "Sona",
+    "slug": "Sona",
+    "title": "Maven of the Strings",
+    "releaseDate": "2010-09-21T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Sona is a virtuoso of the stringed etwahl , speaking only through her graceful chords and vibrant arias. Her genteel manner has endeared her to the Demacian nobility, though some speculate her arresting melodies actually emanate magic—a dangerous prospect in the kingdom. Silent to outsiders but understood easily enough by close companions, Sona plucks her harmonies not only to soothe injured allies, but also to strike down unsuspecting enemies.",
+    "loreLong": null
+  },
+  {
+    "champion": "Milio",
+    "slug": "Milio",
+    "title": "the Gentle Flame",
+    "releaseDate": "2023-03-04T18:00:00.000Z",
+    "faction": "ixtal",
+    "loreShort": "Milio is a warmhearted boy from Ixtal who has, despite his young age, mastered the fire axiom and discovered something new: soothing fire. With this newfound power, Milio plans to help his family escape their exile by joining the Yun Tal—just like his grandmother once did. Having traveled through the Ixtal jungles to the capital of Ixaocan, Milio now prepares to face the Vidalion and join the Yun Tal, unaware of the trials—and dangers—that await him.",
+    "loreLong": null
+  },
+  {
+    "champion": "Volibear",
+    "slug": "Volibear",
+    "title": "the Relentless Storm",
+    "releaseDate": "2011-11-29T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "To those who still revere him, the Volibear is the storm made manifest. Destructive, wild, and stubbornly resolute, he existed before mortals walked the Freljord’s tundra, and is fiercely protective of the lands that he and his demi-god kin created. Cultivating a deep hatred of civilization and the weakness it brought with it, he now fights to return to the old ways—when the land was untamed, and blood spilled freely—and eagerly battles all who oppose him, with tooth, claw, and thundering domination.",
+    "loreLong": null
+  },
+  {
+    "champion": "Pantheon",
+    "slug": "Pantheon",
+    "title": "The Unbreakable Spear",
+    "releaseDate": "2010-02-02T00:00:00.000Z",
+    "faction": "mount-targon",
+    "loreShort": "Once an unwilling host to the Aspect of War, Atreus survived when the celestial power within him was slain, refusing to succumb to a blow that tore stars from the heavens. In time, he learned to embrace the power of his own mortality, and the stubborn resilience that goes along with it. Atreus now opposes the divine as Pantheon reborn, his unbreakable will fueling the fallen Aspect’s weapons on the field of battle.",
+    "loreLong": null
+  },
+  {
+    "champion": "Karthus",
+    "slug": "Karthus",
+    "title": "the Deathsinger",
+    "releaseDate": "2009-06-12T00:00:00.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "The harbinger of oblivion, Karthus is an undying specter whose haunting songs are a prelude to the horror of his nightmarish appearance. The living fear the eternity of undeath, but Karthus sees only beauty and purity in its embrace, a perfect union of life and death. When Karthus emerges from the Shadow Isles, it is to bring the joy of death to mortals, an apostle of the unliving.",
+    "loreLong": null
+  },
+  {
+    "champion": "Yasuo",
+    "slug": "Yasuo",
+    "title": "the Unforgiven",
+    "releaseDate": "2013-12-13T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. As a proud young man, he was falsely accused of murdering his master—unable to prove his innocence, he was forced to slay his own brother in self-defense. In time, his master’s true killer was revealed, and his brother mysteriously returned from death, yet Yasuo still could not forgive himself for all he had done. Now, he wanders the world with only the wind to guide his blade.",
+    "loreLong": null
+  },
+  {
+    "champion": "Twitch",
+    "slug": "Twitch",
+    "title": "the Plague Rat",
+    "releaseDate": "2009-05-01T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "A Zaunite plague rat by birth, but a connoisseur of filth by passion, Twitch is not afraid to get his paws dirty. Aiming a chem-powered crossbow at the gilded heart of Piltover, he has vowed to show those in the city above just how filthy they really are. Always a sneaky sneak, when he’s not rooting around in the Sump, he’s digging deep into other people’s garbage for discarded treasures… and perhaps a moldy sandwich.",
+    "loreLong": null
+  },
+  {
+    "champion": "Aurelion Sol",
+    "slug": "AurelionSol",
+    "title": "The Star Forger",
+    "releaseDate": "2016-03-24T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Aurelion Sol once graced the vast emptiness of the celestial realm with wonders of his own devising, but was tricked by the Aspects of Targon into revealing the secrets of a sun that he himself created. His awesome power was channeled into immortal god-warriors to protect the apparently insignificant world of Runeterra—now, desiring a return to his mastery of the cosmos, Aurelion Sol will drag the very stars from the sky, if he must, in order to regain his freedom.",
+    "loreLong": null
+  },
+  {
+    "champion": "Tristana",
+    "slug": "Tristana",
+    "title": "the Yordle Gunner",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "bandle-city",
+    "loreShort": "While many other yordles channel their energy into discovery, invention, or just plain mischief-making, Tristana was always inspired by the adventures of great warriors. She had heard much about Runeterra, its factions, and its wars, and believed her kind could become worthy of legend too. Setting foot in the world for the first time, she took up her trusty cannon Boomer, and now leaps into battle with steadfast courage and optimism.",
+    "loreLong": null
+  },
+  {
+    "champion": "Skarner",
+    "slug": "Skarner",
+    "title": "the Primordial Sovereign",
+    "releaseDate": "2011-08-09T00:00:00.000Z",
+    "faction": "ixtal",
+    "loreShort": "The ancient, colossal brackern Skarner is revered in Ixtal as one of the founding members of its ruling caste, the Yun Tal. Devoted to keeping his nation safe from the rest of the world, Skarner dwells in a chamber beneath Ixaocan where he can hear the vibrations of the earth and detect potential threats. As more members of the Yun Tal begin questioning Ixtal's self-isolation, Skarner grows increasingly paranoid and will do anything to keep Ixtal and its people safe—no matter the cost.",
+    "loreLong": null
+  },
+  {
+    "champion": "Vex",
+    "slug": "Vex",
+    "title": "the Gloomist",
+    "releaseDate": "2021-09-08T19:43:26.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "In the black heart of the Shadow Isles, a lone yordle trudges through the spectral fog, content in its murky misery. With an endless supply of teen angst and a powerful shadow in tow, Vex lives in her own self-made slice of gloom, far from the revolting cheer of the “normie” world. Though she lacks ambition, she is quick to strike down color and happiness, stopping all would-be interlopers with her magical malaise.",
+    "loreLong": null
+  },
+  {
+    "champion": "Vayne",
+    "slug": "Vayne",
+    "title": "the Night Hunter",
+    "releaseDate": "2011-05-10T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Shauna Vayne is a deadly, remorseless Demacian monster hunter, who has dedicated her life to finding and destroying the demon that murdered her family. Armed with a wrist-mounted crossbow and a heart full of vengeance, she is only truly happy when slaying practitioners or creations of the dark arts, striking from the shadows with a flurry of silver bolts.",
+    "loreLong": null
+  },
+  {
+    "champion": "Xayah",
+    "slug": "Xayah",
+    "title": "the Rebel",
+    "releaseDate": "2017-04-11T19:43:26.000Z",
+    "faction": "ionia",
+    "loreShort": "Deadly and precise, Xayah is a vastayan revolutionary waging a personal war to save her people. She uses her speed, guile, and razor-sharp feather blades to cut down anyone who stands in her way. Xayah fights alongside her partner and lover, Rakan, to protect their dwindling tribe, and restore their race to her vision of its former glory.",
+    "loreLong": null
+  },
+  {
+    "champion": "Urgot",
+    "slug": "Urgot",
+    "title": "the Dreadnought",
+    "releaseDate": "2010-08-24T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "Once a powerful Noxian headsman, Urgot was betrayed by the empire for which he had killed so many. Bound in iron chains, he was forced to learn the true meaning of strength in the Dredge—a prison mine deep beneath Zaun. Emerging in a disaster that spread chaos throughout the city, he now casts an imposing shadow over its criminal underworld. Raising his victims on the very chains that once enslaved him, he will purge his new home of the unworthy, making it a crucible of pain.",
+    "loreLong": null
+  },
+  {
+    "champion": "Dr. Mundo",
+    "slug": "DrMundo",
+    "title": "the Madman of Zaun",
+    "releaseDate": "2009-09-02T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "Utterly mad, tragically homicidal, and horrifyingly purple, Dr. Mundo is what keeps many of Zaun’s citizens indoors on particularly dark nights. Now a self-proclaimed physician, he was once a patient of Zaun’s most infamous asylum. After “curing” the entire staff, Dr. Mundo established his practice in the empty wards that once treated him and began mimicking the highly unethical procedures he had so often experienced himself. With a full cabinet of medicines and zero medical knowledge, he now makes himself more monstrous with each injection and terrifies the hapless “patients” who wander near his office.",
+    "loreLong": null
+  },
+  {
+    "champion": "Ezreal",
+    "slug": "Ezreal",
+    "title": "the Prodigal Explorer",
+    "releaseDate": "2010-03-16T00:00:00.000Z",
+    "faction": "piltover",
+    "loreShort": "A dashing adventurer, unknowingly gifted in the magical arts, Ezreal raids long-lost catacombs, tangles with ancient curses, and overcomes seemingly impossible odds with ease. His courage and bravado knowing no bounds, he prefers to improvise his way out of any situation, relying partially on his wits, but mostly on his mystical Shuriman gauntlet, which he uses to unleash devastating arcane blasts. One thing is for sure—whenever Ezreal is around, trouble isn’t too far behind. Or ahead. Probably everywhere.",
+    "loreLong": null
+  },
+  {
+    "champion": "Zed",
+    "slug": "Zed",
+    "title": "the Master of Shadows",
+    "releaseDate": "2012-11-13T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Utterly ruthless and without mercy, Zed is the leader of the Order of Shadow, an organization he created with the intent of militarizing Ionia’s magical and martial traditions to drive out Noxian invaders. During the war, desperation led him to unlock the secret shadow form—a malevolent spirit magic as dangerous and corrupting as it is powerful. Zed has mastered all of these forbidden techniques to destroy anything he sees as a threat to his nation, or his new order.",
+    "loreLong": null
+  },
+  {
+    "champion": "Irelia",
+    "slug": "Irelia",
+    "title": "the Blade Dancer",
+    "releaseDate": "2010-11-16T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "The Noxian occupation of Ionia produced many heroes, none more unlikely than young Irelia of Navori. Trained in the ancient dances of her province, she adapted her art for war, using the graceful and carefully practised movements to levitate a host of deadly blades. After proving herself as a fighter, she was thrust into the role of resistance leader and figurehead, and to this day remains dedicated to the preservation of her homeland.",
+    "loreLong": null
+  },
+  {
+    "champion": "Taliyah",
+    "slug": "Taliyah",
+    "title": "the Stoneweaver",
+    "releaseDate": "2016-05-18T00:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Taliyah is a nomadic mage from Shurima, torn between teenage wonder and adult responsibility. She has crossed nearly all of Valoran on a journey to learn the true nature of her growing powers, though more recently she has returned to protect her tribe. Some have mistaken her compassion for weakness and paid the ultimate price—for beneath Taliyah’s youthful demeanor is a will strong enough to move mountains, and a spirit fierce enough to make the earth itself tremble.",
+    "loreLong": null
+  },
+  {
+    "champion": "Vi",
+    "slug": "Vi",
+    "title": "the Piltover Enforcer",
+    "releaseDate": "2012-12-19T00:00:00.000Z",
+    "faction": "piltover",
+    "loreShort": "Raised on the mean streets of Zaun, Vi is a hotheaded, impulsive, and fearsome woman with very little respect for authority. She has always been a shrewd survivor, both from her youthful troublemaking topside and an unfairly long stint in Stillwater Hold. Now working with the Piltover Enforcers to keep the peace instead of breaking it, she wields mighty hextech gauntlets that can punch through walls—and criminals—with equal ease.",
+    "loreLong": null
+  },
+  {
+    "champion": "Veigar",
+    "slug": "Veigar",
+    "title": "the Tiny Master of Evil",
+    "releaseDate": "2009-07-24T00:00:00.000Z",
+    "faction": "bandle-city",
+    "loreShort": "An enthusiastic yordle sorcerer, Veigar has embraced powers that few others dare even approach. As a free-spirited inhabitant of Bandle City, he once longed to learn more of the celestial magic practiced by mortals, but his natural curiosity was twisted by imprisonment in the Immortal Bastion. Now a stubborn creature with the dark fury of the stars at his command, Veigar is often underestimated by others—and though he believes himself truly evil, there are some who still question his deeper motivations…",
+    "loreLong": null
+  },
+  {
+    "champion": "Sion",
+    "slug": "Sion",
+    "title": "the Undead Juggernaut",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "A brutal warlord from a bygone era, Sion was revered in Noxus for choking the life out of a Demacian king with his bare hands—but, denied the peace of death, he was resurrected to serve his empire once more. His indiscriminate slaughter claims all who stand in his way, regardless of allegiance, proving he has retained little of his former humanity. With crude armor bolted onto his rotten flesh, Sion continues to charge into battle with reckless abandon, struggling to remember his true self between the swings of his mighty axe.",
+    "loreLong": null
+  },
+  {
+    "champion": "Senna",
+    "slug": "Senna",
+    "title": "the Redeemer",
+    "releaseDate": "2019-10-20T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Cursed from childhood to be haunted by the supernatural Black Mist, Senna joined a sacred order known as the Sentinels of Light, and fiercely fought back—only to be killed, her soul imprisoned in a lantern by the cruel specter Thresh. But refusing to lose hope, within the lantern Senna learned to use the Mist, and reemerged to new life, forever changed. Now wielding darkness along with light, Senna seeks to end the Black Mist by turning it against itself—with every blast of her relic weapon, redeeming the souls lost within.",
+    "loreLong": null
+  },
+  {
+    "champion": "Gnar",
+    "slug": "Gnar",
+    "title": "the Missing Link",
+    "releaseDate": "2014-08-14T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Gnar is an excitable yordle whose playful antics can erupt into a toddler’s outrage in an instant, transforming him into a massive beast bent on destruction. Frozen in True Ice for millennia, the curious creature broke free and now hops about a changed world he sees as exotic and wondrous. Delighted by danger, Gnar flings whatever he can at his enemies, be it his bonetooth boomerang... or an uprooted tree.",
+    "loreLong": null
+  },
+  {
+    "champion": "Jinx",
+    "slug": "Jinx",
+    "title": "the Loose Cannon",
+    "releaseDate": "2013-10-10T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "An unhinged and impulsive criminal from the undercity, Jinx is haunted by the consequences of her past—but that doesn’t stop her from bringing her own chaotic brand of pandemonium to Piltover and Zaun. She uses her arsenal of DIY weapons to devastating effect, unleashing torrents of colorful explosions and gunfire, inspiring the disenfranchised to rebellion and resistance with the mayhem she leaves in her wake.",
+    "loreLong": null
+  },
+  {
+    "champion": "Nidalee",
+    "slug": "Nidalee",
+    "title": "the Bestial Huntress",
+    "releaseDate": "2009-12-17T00:00:00.000Z",
+    "faction": "ixtal",
+    "loreShort": "Raised in the deepest wilderness, Nidalee is a master tracker who can shapeshift into a ferocious pakaa jungle cat at will. Neither wholly woman nor beast, she viciously defends her territory from any and all trespassers, with carefully placed traps and deft spear throws. She cripples her quarry before pouncing on them in feline form—the lucky few who survive tell tales of a wild woman with razor-sharp instincts, and even sharper claws...",
+    "loreLong": null
+  },
+  {
+    "champion": "Trundle",
+    "slug": "Trundle",
+    "title": "the Troll King",
+    "releaseDate": "2010-12-01T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "Trundle is a hulking and devious troll with a particularly vicious streak, and there is nothing he cannot bludgeon into submission—not even the Freljord itself. Fiercely territorial, he chases down anyone foolish enough to enter his domain. Then, his massive club of True Ice at the ready, he chills his enemies to the bone and impales them with jagged, frozen pillars, laughing as they bleed out onto the tundra.",
+    "loreLong": null
+  },
+  {
+    "champion": "Morgana",
+    "slug": "Morgana",
+    "title": "The Fallen",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Conflicted between her celestial and mortal natures, Morgana bound her wings to embrace humanity, and inflicts her pain and bitterness upon the dishonest and the corrupt. She rejects laws and traditions she believes are unjust, and fights for truth from the shadows of Demacia—even as others seek to repress it—by casting shields and chains of dark fire. More than anything else, Morgana truly believes that even the banished and outcast may one day rise again.",
+    "loreLong": null
+  },
+  {
+    "champion": "Xerath",
+    "slug": "Xerath",
+    "title": "the Magus Ascendant",
+    "releaseDate": "2011-10-05T00:00:00.000Z",
+    "faction": "shurima",
+    "loreShort": "Xerath is an Ascended Magus of ancient Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus. For millennia, he was trapped beneath the desert sands, but the rise of Shurima freed him from his ancient prison. Driven insane with power, he now seeks to take what he believes is rightfully his and replace the upstart civilizations of the world with one fashioned in his image.",
+    "loreLong": null
+  },
+  {
+    "champion": "Udyr",
+    "slug": "Udyr",
+    "title": "the Spirit Walker",
+    "releaseDate": "2022-08-09T00:00:00.000Z",
+    "faction": "freljord",
+    "loreShort": "The most powerful spirit walker alive, Udyr communes with all the spirits of the Freljord, whether by empathically understanding their needs, or by channeling and transforming their ethereal energy into his own primal fighting style. He seeks balance within, so that his mind does not get lost amidst others, but he also seeks balance without—for the Freljord's mystical landscape can only thrive with the growth that comes from conflict and struggle, and Udyr knows that sacrifices must be made to keep peaceful stagnance at bay.",
+    "loreLong": null
+  },
+  {
+    "champion": "Nocturne",
+    "slug": "Nocturne",
+    "title": "the Eternal Nightmare",
+    "releaseDate": "2011-03-15T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "A demonic amalgamation drawn from the nightmares that haunt every sentient mind, the thing known as Nocturne has become a primordial force of pure terror. It is liquidly chaotic in aspect, a faceless shadow with cold eyes and armed with wicked-looking blades. After freeing itself from the spirit realm, Nocturne now continually descends upon the waking world, to feed on the kind of fear that can only thrive in true darkness.",
+    "loreLong": null
+  },
+  {
+    "champion": "Yuumi",
+    "slug": "Yuumi",
+    "title": "the Magical Cat",
+    "releaseDate": "2019-04-25T00:00:00.000Z",
+    "faction": "bandle-city",
+    "loreShort": "A magical cat from Bandle City, Yuumi was once the familiar of a yordle enchantress, Norra. When her master mysteriously disappeared, Yuumi became the Keeper of Norra’s sentient Book of Thresholds, traveling through portals in its pages to search for her. Yearning for affection, Yuumi seeks friendly companions to partner with on her journey, protecting them with luminous shields and fierce resolve. While Book strives to keep her on task, Yuumi is often drawn to worldly comforts, such as naps and fish. In the end, however, she always returns to her quest to find her friend.",
+    "loreLong": null
+  },
+  {
+    "champion": "Ziggs",
+    "slug": "Ziggs",
+    "title": "the Hexplosives Expert",
+    "releaseDate": "2012-02-01T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "With a love of big bombs and short fuses, the yordle Ziggs is an explosive force of nature. As an inventor’s assistant in Piltover, he was bored by his predictable life and befriended a mad, blue-haired bomber named Jinx. After a wild night on the town, Ziggs took her advice and moved to Zaun, where he now explores his fascinations more freely, terrorizing the chem-barons and regular citizens alike in his never ending quest to blow stuff up.",
+    "loreLong": null
+  },
+  {
+    "champion": "Illaoi",
+    "slug": "Illaoi",
+    "title": "the Kraken Priestess",
+    "releaseDate": "2015-11-24T00:00:00.000Z",
+    "faction": "bilgewater",
+    "loreShort": "Illaoi’s powerful physique is dwarfed only by her indomitable faith. As the prophet of the Great Kraken, she uses a huge, golden idol to rip her foes’ spirits from their bodies and shatter their perception of reality. All who challenge the “Truth Bearer of Nagakabouros” soon discover Illaoi never battles alone—the god of the Serpent Isles fights by her side.",
+    "loreLong": null
+  },
+  {
+    "champion": "Quinn",
+    "slug": "Quinn",
+    "title": "Demacia's Wings",
+    "releaseDate": "2013-03-01T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Sponsored by the noble Buvelle family, Quinn is a ranger-knight of Demacia who undertakes dangerous missions deep in enemy territory. She and her legendary eagle, Valor, share an unbreakable bond, and their foes are often slain before they realize they are fighting not one, but two of the kingdom’s greatest heroes. Nimble and acrobatic, Quinn takes aim with her crossbow while Valor marks their elusive targets from above, making them a deadly pair on the battlefield.",
+    "loreLong": null
+  },
+  {
+    "champion": "Talon",
+    "slug": "Talon",
+    "title": "the Blade's Shadow",
+    "releaseDate": "2011-08-24T00:00:00.000Z",
+    "faction": "noxus",
+    "loreShort": "Talon is the knife in the darkness, a merciless killer able to strike without warning and escape before any alarm is raised. He carved out a dangerous reputation on the brutal streets of Noxus, where he was forced to fight, kill, and steal to survive. Adopted by the notorious Du Couteau family, he now plies his deadly trade at the empire’s command, assassinating enemy leaders, captains, and heroes… as well as any Noxian foolish enough to earn the scorn of their masters.",
+    "loreLong": null
+  },
+  {
+    "champion": "Ryze",
+    "slug": "Ryze",
+    "title": "the Rune Mage",
+    "releaseDate": "2009-02-21T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Widely considered one of the most adept sorcerers on Runeterra, Ryze is an ancient, hard-bitten archmage with an impossibly heavy burden to bear. Armed with immense arcane power and a boundless constitution, he tirelessly hunts for World Runes—fragments of the raw magic that once shaped the world from nothingness. He must retrieve these artifacts before they fall into the wrong hands, for Ryze understands the horrors they could unleash on Runeterra.",
+    "loreLong": null
+  },
+  {
+    "champion": "Viktor",
+    "slug": "Viktor",
+    "title": "Herald of the Arcane",
+    "releaseDate": "2011-12-29T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "The fully biomechanical evolution of his former self, Viktor has embraced his Glorious Evolution and become something of a messiah to his followers. He sacrificed his own humanity under the logic that eliminating emotion would thereby eliminate suffering—and now seeks to bring the revelation of the hexcore to the rest of the world, even if they’re incapable of understanding the benefit. After all, to this master of the arcane, violence is merely a variable necessary to balance the ultimate equation.",
+    "loreLong": null
+  },
+  {
+    "champion": "Xin Zhao",
+    "slug": "XinZhao",
+    "title": "the Seneschal of Demacia",
+    "releaseDate": "2010-07-13T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Xin Zhao is a resolute warrior loyal to the royal family of Demacia. Once condemned to the fighting pits of Noxus, he survived countless Reckonings—but after facing the forces of King Jarvan III in battle, he decided to relinquish his past life in favor of serving what he saw as a more honorable cause. Armed with a Demacian steel spear gifted to him by the throne, Xin Zhao now fights for his adopted kingdom, audaciously challenging any foe no matter the odds.",
+    "loreLong": null
+  },
+  {
+    "champion": "Zilean",
+    "slug": "Zilean",
+    "title": "the Chronokeeper",
+    "releaseDate": "2009-04-18T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "Once a member of Icathia’s governing council, Zilean is a prodigious elemental mage who seeks mastery over time itself. After using his powers in an attempt to save his people from the Void, he now drifts through the past, present, and future, bending and warping the flow of time around him. Zilean has traveled from Runeterra’s mysterious creation, all the way to its seemingly inevitable ending, searching tirelessly for any strand of fate that might undo his homeland’s destruction.",
+    "loreLong": null
+  },
+  {
+    "champion": "Wukong",
+    "slug": "MonkeyKing",
+    "title": "the Monkey King",
+    "releaseDate": "2011-07-26T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "Wukong is a vastayan trickster who uses his strength, agility, and intelligence to confuse his opponents and gain the upper hand. After finding a lifelong friend in the warrior known as Master Yi, Wukong became the last student of the ancient martial art known as Wuju. Armed with an enchanted staff, Wukong seeks to prevent Ionia from falling to ruin.",
+    "loreLong": null
+  },
+  {
+    "champion": "Zac",
+    "slug": "Zac",
+    "title": "the Secret Weapon",
+    "releaseDate": "2013-03-29T00:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "Zac is the product of a toxic spill that ran through a chemtech seam and pooled in an isolated cavern deep in Zaun’s Sump. Despite such humble origins, Zac has grown from primordial ooze into a thinking being who dwells in the city’s pipes, occasionally emerging to help those who cannot help themselves or to rebuild the broken infrastructure of Zaun.",
+    "loreLong": null
+  },
+  {
+    "champion": "Poppy",
+    "slug": "Poppy",
+    "title": "Keeper of the Hammer",
+    "releaseDate": "2010-01-13T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Runeterra has no shortage of valiant champions, but few are as tenacious as Poppy. Bearing the legendary hammer of Orlon, a weapon twice her size, this determined yordle has spent untold years searching in secret for the fabled “Hero of Demacia,” said to be its rightful wielder. Until then, she dutifully charges into battle, pushing back the kingdom’s enemies with every whirling strike.",
+    "loreLong": null
+  },
+  {
+    "champion": "Zeri",
+    "slug": "Zeri",
+    "title": "the Spark of Zaun",
+    "releaseDate": "2022-01-05T18:00:00.000Z",
+    "faction": "zaun",
+    "loreShort": "A headstrong, spirited young woman from Zaun’s working-class, Zeri channels her electric magic to charge herself and her custom-crafted gun. Her volatile power mirrors her emotions, its sparks reflecting her lightning-fast approach to life. Deeply compassionate toward others, Zeri carries the love of her family and her home into every fight. Though her eagerness to help can sometimes backfire, Zeri believes one truth to be certain: stand up for your community, and it will stand up with you.",
+    "loreLong": null
+  },
+  {
+    "champion": "Yorick",
+    "slug": "Yorick",
+    "title": "Shepherd of Souls",
+    "releaseDate": "2011-06-22T00:00:00.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "The last survivor of a long-forgotten religious order, Yorick is both blessed and cursed with power over the dead. Trapped on the Shadow Isles, his only companions are the rotting corpses and shrieking wraiths that he gathers to him. Yorick’s monstrous actions belie his noble purpose: to free his home from the curse of the Ruination.",
+    "loreLong": null
+  },
+  {
+    "champion": "Viego",
+    "slug": "Viego",
+    "title": "the Ruined King",
+    "releaseDate": "2021-01-05T00:00:00.000Z",
+    "faction": "shadow-isles",
+    "loreShort": "Once ruler of a long-lost kingdom, Viego perished over a thousand years ago when his attempt to bring his wife back from the dead triggered the magical catastrophe known as the Ruination. Transformed into a powerful, unliving specter tortured by an obsessive longing for his centuries-dead queen, Viego now stands as the Ruined King, controlling the deadly Harrowings as he scours Runeterra for anything that might one day restore her, and destroying all in his path as the Black Mist pours endlessly from his cruel, broken heart.",
+    "loreLong": null
+  },
+  {
+    "champion": "Sylas",
+    "slug": "Sylas",
+    "title": "the Unshackled",
+    "releaseDate": "2018-01-08T00:00:00.000Z",
+    "faction": "demacia",
+    "loreShort": "Raised in one of Demacia’s lesser quarters, Sylas of Dregbourne has come to symbolize the darker side of the Great City. As a boy, his ability to root out hidden sorcery caught the attention of the notorious mageseekers, who eventually imprisoned him for turning those same powers against them. Having now broken free, Sylas lives as a hardened revolutionary, using the magic of those around him to destroy the kingdom he once served… and his band of outcast mage followers seems to grow by the day.",
+    "loreLong": null
+  },
+  {
+    "champion": "Lee Sin",
+    "slug": "LeeSin",
+    "title": "the Blind Monk",
+    "releaseDate": "2011-04-01T00:00:00.000Z",
+    "faction": "ionia",
+    "loreShort": "A master of Ionia’s ancient martial arts, Lee Sin is a principled fighter who channels the essence of the dragon spirit to face any challenge. Though he lost his sight many years ago, the warrior-monk has devoted his life to protecting his homeland against any who would dare upset its sacred balance. Enemies who underestimate his meditative demeanor will endure his fabled burning fists and blazing roundhouse kicks.",
+    "loreLong": null
+  },
+  {
+    "champion": "Nami",
+    "slug": "Nami",
+    "title": "the Tidecaller",
+    "releaseDate": "2012-12-07T00:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "A headstrong young vastaya of the seas, Nami was the first of the Marai tribe to leave the waves and venture onto dry land, when their ancient accord with the Targonians was broken. With no other option, she took it upon herself to complete the sacred ritual that would ensure the safety of her people. Amidst the chaos of this new age, Nami faces an uncertain future with grit and determination, using her Tidecaller staff to summon the strength of the oceans themselves.",
+    "loreLong": null
+  },
+  {
+    "champion": "Zoe",
+    "slug": "Zoe",
+    "title": "the Aspect of Twilight",
+    "releaseDate": "2017-11-09T00:00:00.000Z",
+    "faction": "mount-targon",
+    "loreShort": "As the embodiment of mischief, imagination, and change, Zoe acts as the cosmic messenger of Targon, heralding major events that reshape worlds. Her mere presence warps the arcane mathematics governing realities, sometimes causing cataclysms without conscious effort or malice. This perhaps explains the breezy nonchalance with which Zoe approaches her duties, giving her plenty of time to focus on playing games, tricking mortals, or otherwise amusing herself. An encounter with Zoe can be joyous and life affirming, but it is always more than it appears and often extremely dangerous.",
+    "loreLong": null
+  },
+  {
+    "champion": "Jayce",
+    "slug": "Jayce",
+    "title": "the Defender of Tomorrow",
+    "releaseDate": "2012-07-07T00:00:00.000Z",
+    "faction": "piltover",
+    "loreShort": "Jayce Talis is a brilliant inventor who, along with his friend Viktor, made the first great discoveries in the field of hextech. Celebrated across Piltover, he tries to live up to his reputation as \"the Man of Progress,\" but often struggles with the expectations placed upon him. Because of this, Jayce has begun to see the ways in which his invention has furthered the division between Piltover and Zaun—and armed with his hextech hammer, he stands ready to defend tomorrow.",
+    "loreLong": null
+  },
+  {
+    "champion": "Zaahen",
+    "slug": "Zaahen",
+    "title": "The Unsundered ",
+    "releaseDate": "2025-11-19T18:00:00.000Z",
+    "faction": "unaffiliated",
+    "loreShort": "A fallen god wielding both divine and profane power, Zaahen hunts his fellow Darkin while defying the corruption that threatens to consume him. Once willingly sealed within his glaive to stave off madness, he now walks free, noble in heart and vicious in purpose. Zaahen fights an eternal war within—but so long as he endures, he will rise above all who seek to bring Runeterra to ruin.",
+    "loreLong": null
+  },
+  {
+    "champion": "Camille",
+    "slug": "Camille",
+    "title": "the Steel Shadow",
+    "releaseDate": "2016-11-28T00:00:00.000Z",
+    "faction": "piltover",
+    "loreShort": "Weaponized to operate outside the boundaries of the law, Camille is the Principal Intelligencer of Clan Ferros—an elegant and elite agent who ensures the Piltover machine and its Zaunite underbelly run smoothly. Adaptable and precise, she views sloppy technique as an embarrassment that must be put to order. With a mind as sharp as the blades she bears, Camille's pursuit of superiority through hextech body augmentation has left many to wonder if she is now more machine than human.",
+    "loreLong": null
+  },
+  {
+    "champion": "Seraphine",
+    "slug": "Seraphine",
+    "title": "the Starry-Eyed Songstress",
+    "releaseDate": "2020-10-12T00:00:00.000Z",
+    "faction": "piltover",
+    "loreShort": "Born in Piltover to Zaunite parents, Seraphine can hear the souls of others—the world sings to her, and she sings back. Though these sounds overwhelmed her in her youth, she now draws on them for inspiration, turning the chaos into a symphony. She performs for the sister cities to remind their citizens that they’re not alone, that they’re stronger together, and that, in her eyes, their potential is limitless.",
+    "loreLong": null
+  }
+]

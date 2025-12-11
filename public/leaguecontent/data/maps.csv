@@ -1,0 +1,8 @@
+map_id,name,image,sourceUrl
+11,Summoner's Rift,images/maps/summoner_s_rift.png,https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map11.png
+12,Howling Abyss,images/maps/howling_abyss.png,https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map12.png
+21,Nexus Blitz,images/maps/nexus_blitz.png,https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map21.png
+22,Teamfight Tactics,images/maps/teamfight_tactics.png,https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map22.png
+30,Arena,images/maps/arena.png,https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map30.png
+33,Map 33,images/maps/map_33.png,https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map33.png
+35,Map 35,images/maps/map_35.png,https://ddragon.leagueoflegends.com/cdn/15.24.1/img/map/map35.png

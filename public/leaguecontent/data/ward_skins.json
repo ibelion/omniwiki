@@ -1,0 +1,2074 @@
+[
+  {
+    "id": 0,
+    "name": "Default Ward",
+    "description": "Base Ward Skin",
+    "isLegacy": false,
+    "image": "images/ward_skins/default_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_0.png"
+  },
+  {
+    "id": 1,
+    "name": "Bat-o-lantern Ward",
+    "description": "Harrowing 2012",
+    "isLegacy": true,
+    "image": "images/ward_skins/bat_o_lantern_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_1.png"
+  },
+  {
+    "id": 2,
+    "name": "Haunting Ward",
+    "description": "Harrowing 2012",
+    "isLegacy": true,
+    "image": "images/ward_skins/haunting_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_2.png"
+  },
+  {
+    "id": 3,
+    "name": "Widow Ward",
+    "description": "Harrowing 2012",
+    "isLegacy": true,
+    "image": "images/ward_skins/widow_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_3.png"
+  },
+  {
+    "id": 4,
+    "name": "Deadfall Ward",
+    "description": "Harrowing 2012",
+    "isLegacy": true,
+    "image": "images/ward_skins/deadfall_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_4.png"
+  },
+  {
+    "id": 5,
+    "name": "Tomb Angel Ward",
+    "description": "Harrowing 2012",
+    "isLegacy": true,
+    "image": "images/ward_skins/tomb_angel_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_5.png"
+  },
+  {
+    "id": 6,
+    "name": "Snowman Ward",
+    "description": "Snowdown Showdown 2012",
+    "isLegacy": true,
+    "image": "images/ward_skins/snowman_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_6.png"
+  },
+  {
+    "id": 7,
+    "name": "Gingerbread Ward",
+    "description": "Snowdown Showdown 2012",
+    "isLegacy": true,
+    "image": "images/ward_skins/gingerbread_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_7.png"
+  },
+  {
+    "id": 8,
+    "name": "Lantern of the Serpent Ward",
+    "description": "Lunar Revel 2013",
+    "isLegacy": true,
+    "image": "images/ward_skins/lantern_of_the_serpent_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_8.png"
+  },
+  {
+    "id": 9,
+    "name": "Banner of the Serpent Ward",
+    "description": "Lunar Revel 2013",
+    "isLegacy": true,
+    "image": "images/ward_skins/banner_of_the_serpent_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_9.png"
+  },
+  {
+    "id": 10,
+    "name": "Starcall Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/starcall_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_10.png"
+  },
+  {
+    "id": 11,
+    "name": "Ward of Draven",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/ward_of_draven.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_11.png"
+  },
+  {
+    "id": 12,
+    "name": "Luminosity Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/luminosity_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_12.png"
+  },
+  {
+    "id": 13,
+    "name": "Season 3 Victorious Ward",
+    "description": "Season 3 Reward for being Silver or higher in ranked play",
+    "isLegacy": false,
+    "image": "images/ward_skins/season_3_victorious_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_13.png"
+  },
+  {
+    "id": 14,
+    "name": "Worlds 2013 Ward",
+    "description": "World Finals 2013",
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2013_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_14.png"
+  },
+  {
+    "id": 15,
+    "name": "Candy Cane Ward",
+    "description": "Snowdown 2013",
+    "isLegacy": true,
+    "image": "images/ward_skins/candy_cane_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_15.png"
+  },
+  {
+    "id": 16,
+    "name": "Banner of the Horse Ward",
+    "description": "Lunar Revel 2014",
+    "isLegacy": true,
+    "image": "images/ward_skins/banner_of_the_horse_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_16.png"
+  },
+  {
+    "id": 17,
+    "name": "Gong Ward",
+    "description": "Lunar Revel 2014",
+    "isLegacy": true,
+    "image": "images/ward_skins/gong_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_17.png"
+  },
+  {
+    "id": 18,
+    "name": "Bouquet Ward",
+    "description": "Valentine's Day 2014",
+    "isLegacy": false,
+    "image": "images/ward_skins/bouquet_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_18.png"
+  },
+  {
+    "id": 19,
+    "name": "Fist Bump Ward",
+    "description": "You met a Rioter!",
+    "isLegacy": true,
+    "image": "images/ward_skins/fist_bump_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_19.png"
+  },
+  {
+    "id": 20,
+    "name": "SKT T1 Ward",
+    "description": "Commemorate SKT T1's sweeping World Championship victory for season 3",
+    "isLegacy": true,
+    "image": "images/ward_skins/skt_t1_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_20.png"
+  },
+  {
+    "id": 21,
+    "name": "Dragonslayer Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/dragonslayer_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_21.png"
+  },
+  {
+    "id": 22,
+    "name": "All-Star 2014 Ward",
+    "description": "All-Stars 2014",
+    "isLegacy": false,
+    "image": "images/ward_skins/all_star_2014_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_22.png"
+  },
+  {
+    "id": 23,
+    "name": "Golden Goal Ward",
+    "description": "World Cup 2014",
+    "isLegacy": false,
+    "image": "images/ward_skins/golden_goal_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_23.png"
+  },
+  {
+    "id": 24,
+    "name": "Mecha Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/mecha_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_24.png"
+  },
+  {
+    "id": 25,
+    "name": "Armordillo Ward",
+    "description": "Shurima Event 2014",
+    "isLegacy": false,
+    "image": "images/ward_skins/armordillo_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_25.png"
+  },
+  {
+    "id": 26,
+    "name": "Sad Mummy Ward",
+    "description": "Shurima Event 2014",
+    "isLegacy": false,
+    "image": "images/ward_skins/sad_mummy_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_26.png"
+  },
+  {
+    "id": 27,
+    "name": "Sun Disc Ward",
+    "description": "Shurima Event 2014",
+    "isLegacy": false,
+    "image": "images/ward_skins/sun_disc_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_27.png"
+  },
+  {
+    "id": 28,
+    "name": "Worlds 2014 Ward",
+    "description": "World Finals 2014",
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2014_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_28.png"
+  },
+  {
+    "id": 29,
+    "name": "2014 Conquering Ward",
+    "description": "Ranked Team Rewards 2014 Season - 20 points",
+    "isLegacy": false,
+    "image": "images/ward_skins/2014_conquering_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_29.png"
+  },
+  {
+    "id": 30,
+    "name": "2014 Triumphant Ward",
+    "description": "Ranked Team Rewards 2014 Season - 45 points",
+    "isLegacy": false,
+    "image": "images/ward_skins/2014_triumphant_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_30.png"
+  },
+  {
+    "id": 31,
+    "name": "2014 Victorious Ward",
+    "description": "Ranked Team Rewards 2014 Season - 75 points",
+    "isLegacy": false,
+    "image": "images/ward_skins/2014_victorious_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_31.png"
+  },
+  {
+    "id": 32,
+    "name": "Battlecast Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/battlecast_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_32.png"
+  },
+  {
+    "id": 33,
+    "name": "Poro Ward",
+    "description": "Snowdown 2014",
+    "isLegacy": true,
+    "image": "images/ward_skins/poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_33.png"
+  },
+  {
+    "id": 34,
+    "name": "Astronaut Poro Ward",
+    "description": "Snowdown 2014",
+    "isLegacy": true,
+    "image": "images/ward_skins/astronaut_poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_34.png"
+  },
+  {
+    "id": 35,
+    "name": "Gentleman Poro Ward",
+    "description": "Snowdown 2014",
+    "isLegacy": true,
+    "image": "images/ward_skins/gentleman_poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_35.png"
+  },
+  {
+    "id": 36,
+    "name": "Battlecast Poro Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/battlecast_poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_36.png"
+  },
+  {
+    "id": 37,
+    "name": "Dragonslayer Poro Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/dragonslayer_poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_37.png"
+  },
+  {
+    "id": 38,
+    "name": "Underworld Poro Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/underworld_poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_38.png"
+  },
+  {
+    "id": 39,
+    "name": "Firecracker Ward",
+    "description": "Lunar Revel 2015",
+    "isLegacy": false,
+    "image": "images/ward_skins/firecracker_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_39.png"
+  },
+  {
+    "id": 40,
+    "name": "Heartseeker Ward",
+    "description": "Valentine's Day 2015",
+    "isLegacy": true,
+    "image": "images/ward_skins/heartseeker_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_40.png"
+  },
+  {
+    "id": 41,
+    "name": "Urf Ward",
+    "description": "URF 2015",
+    "isLegacy": false,
+    "image": "images/ward_skins/urf_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_41.png"
+  },
+  {
+    "id": 42,
+    "name": "Mother Serpent Ward",
+    "description": "Bilgewater Event 2015",
+    "isLegacy": false,
+    "image": "images/ward_skins/mother_serpent_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_42.png"
+  },
+  {
+    "id": 43,
+    "name": "Slaughter Fleet Ward",
+    "description": "Bilgewater Event 2015",
+    "isLegacy": false,
+    "image": "images/ward_skins/slaughter_fleet_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_43.png"
+  },
+  {
+    "id": 44,
+    "name": "Optic Enhancer Ward",
+    "description": "PROJECT: 2015",
+    "isLegacy": false,
+    "image": "images/ward_skins/optic_enhancer_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_44.png"
+  },
+  {
+    "id": 45,
+    "name": "Worlds 2015 Ward",
+    "description": "World Finals 2015",
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2015_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_45.png"
+  },
+  {
+    "id": 46,
+    "name": "2015 Conquering Ward",
+    "description": "Ranked Team Rewards 2015 Season - 20 points",
+    "isLegacy": false,
+    "image": "images/ward_skins/2015_conquering_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_46.png"
+  },
+  {
+    "id": 47,
+    "name": "2015 Triumphant Ward",
+    "description": "Ranked Team Rewards 2015 Season - 45 points",
+    "isLegacy": false,
+    "image": "images/ward_skins/2015_triumphant_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_47.png"
+  },
+  {
+    "id": 48,
+    "name": "2015 Victorious Ward",
+    "description": "Ranked Team Rewards 2015 Season - 75 points",
+    "isLegacy": false,
+    "image": "images/ward_skins/2015_victorious_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_48.png"
+  },
+  {
+    "id": 49,
+    "name": "Riggle Ward",
+    "description": "Take flight!",
+    "isLegacy": false,
+    "image": "images/ward_skins/riggle_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_49.png"
+  },
+  {
+    "id": 50,
+    "name": "All-Star 2015 Team Fire Ward",
+    "description": "All-Star 2015 Team Fire",
+    "isLegacy": false,
+    "image": "images/ward_skins/all_star_2015_team_fire_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_50.png"
+  },
+  {
+    "id": 51,
+    "name": "All-Star 2015 Team Ice Ward",
+    "description": "All-Star 2015 Team Ice",
+    "isLegacy": false,
+    "image": "images/ward_skins/all_star_2015_team_ice_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_51.png"
+  },
+  {
+    "id": 52,
+    "name": "Penguin Skier Ward",
+    "description": "Snowdown 2015",
+    "isLegacy": true,
+    "image": "images/ward_skins/penguin_skier_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_52.png"
+  },
+  {
+    "id": 53,
+    "name": "Rising Dawn Ward",
+    "description": "Lunar Revel 2016",
+    "isLegacy": true,
+    "image": "images/ward_skins/rising_dawn_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_53.png"
+  },
+  {
+    "id": 54,
+    "name": "Harpseeker Ward",
+    "description": "Valentine's Day 2016",
+    "isLegacy": true,
+    "image": "images/ward_skins/harpseeker_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_54.png"
+  },
+  {
+    "id": 55,
+    "name": "Hextech Ward",
+    "description": "Hextech Crafting Launch",
+    "isLegacy": true,
+    "image": "images/ward_skins/hextech_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_55.png"
+  },
+  {
+    "id": 56,
+    "name": "Definitely Not A Ward",
+    "description": "Draven Day 2016",
+    "isLegacy": false,
+    "image": "images/ward_skins/definitely_not_a_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_56.png"
+  },
+  {
+    "id": 57,
+    "name": "Mecha Zero Ward",
+    "description": "Mecha Zero Sion",
+    "isLegacy": false,
+    "image": "images/ward_skins/mecha_zero_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_57.png"
+  },
+  {
+    "id": 58,
+    "name": "El Poro Ward",
+    "description": "El Poro",
+    "isLegacy": true,
+    "image": "images/ward_skins/el_poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_58.png"
+  },
+  {
+    "id": 59,
+    "name": "Dark Star Ward",
+    "description": "Dark Star",
+    "isLegacy": true,
+    "image": "images/ward_skins/dark_star_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_59.png"
+  },
+  {
+    "id": 60,
+    "name": "His Royal Crabness Ward",
+    "description": "Pool Party 2016",
+    "isLegacy": false,
+    "image": "images/ward_skins/his_royal_crabness_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_60.png"
+  },
+  {
+    "id": 61,
+    "name": "Recon Drone Ward",
+    "description": "PROJECT 2016",
+    "isLegacy": false,
+    "image": "images/ward_skins/recon_drone_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_61.png"
+  },
+  {
+    "id": 62,
+    "name": "Game On Ward",
+    "description": "Arcade 2016",
+    "isLegacy": false,
+    "image": "images/ward_skins/game_on_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_62.png"
+  },
+  {
+    "id": 63,
+    "name": "Star Guardian Ward",
+    "description": "Star Guardian 2016",
+    "isLegacy": false,
+    "image": "images/ward_skins/star_guardian_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_63.png"
+  },
+  {
+    "id": 64,
+    "name": "Worlds 2016 Ward",
+    "description": "World Finals 2016",
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2016_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_64.png"
+  },
+  {
+    "id": 65,
+    "name": "Mechs vs. Minions Ward",
+    "description": "Mechs vs. Minions",
+    "isLegacy": false,
+    "image": "images/ward_skins/mechs_vs_minions_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_65.png"
+  },
+  {
+    "id": 66,
+    "name": "2016 Conquering Ward",
+    "description": "2016 Conquering",
+    "isLegacy": false,
+    "image": "images/ward_skins/2016_conquering_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_66.png"
+  },
+  {
+    "id": 67,
+    "name": "2016 Triumphant Ward",
+    "description": "2016 Triumphant",
+    "isLegacy": false,
+    "image": "images/ward_skins/2016_triumphant_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_67.png"
+  },
+  {
+    "id": 68,
+    "name": "2016 Victorious Ward",
+    "description": "2016 Victorious",
+    "isLegacy": false,
+    "image": "images/ward_skins/2016_victorious_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_68.png"
+  },
+  {
+    "id": 69,
+    "name": "Elementalist Ward",
+    "description": "Elementalist Lux",
+    "isLegacy": true,
+    "image": "images/ward_skins/elementalist_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_69.png"
+  },
+  {
+    "id": 70,
+    "name": "Vamporo Ward",
+    "description": "Tales from the Rift 2016",
+    "isLegacy": true,
+    "image": "images/ward_skins/vamporo_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_70.png"
+  },
+  {
+    "id": 71,
+    "name": "Santa Penguin Ward",
+    "description": "Snowdown 2016",
+    "isLegacy": true,
+    "image": "images/ward_skins/santa_penguin_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_71.png"
+  },
+  {
+    "id": 72,
+    "name": "Crest of the Rooster Ward",
+    "description": "Lunar Revel 2017",
+    "isLegacy": true,
+    "image": "images/ward_skins/crest_of_the_rooster_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_72.png"
+  },
+  {
+    "id": 73,
+    "name": "2016 All-Star Ward",
+    "description": "2016 All-Star",
+    "isLegacy": false,
+    "image": "images/ward_skins/2016_all_star_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_73.png"
+  },
+  {
+    "id": 74,
+    "name": "Blood Demon Ward",
+    "description": "Blood Moon 2017",
+    "isLegacy": false,
+    "image": "images/ward_skins/blood_demon_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_74.png"
+  },
+  {
+    "id": 75,
+    "name": "Love Dove Ward",
+    "description": "Love Dove Ward",
+    "isLegacy": true,
+    "image": "images/ward_skins/love_dove_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_75.png"
+  },
+  {
+    "id": 76,
+    "name": "Eye of the Dragon Ward",
+    "description": "Eye of the Dragon Ward",
+    "isLegacy": false,
+    "image": "images/ward_skins/eye_of_the_dragon_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_76.png"
+  },
+  {
+    "id": 77,
+    "name": "Pulsefire Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/pulsefire_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_77.png"
+  },
+  {
+    "id": 78,
+    "name": "Dawnbringer Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/dawnbringer_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_78.png"
+  },
+  {
+    "id": 79,
+    "name": "Nightbringer Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/nightbringer_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_79.png"
+  },
+  {
+    "id": 80,
+    "name": "God Fist Ward",
+    "description": "God Fist Ward",
+    "isLegacy": false,
+    "image": "images/ward_skins/god_fist_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_80.png"
+  },
+  {
+    "id": 81,
+    "name": "Pentakill Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/pentakill_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_81.png"
+  },
+  {
+    "id": 82,
+    "name": "Corruptant Ward",
+    "description": "Corruptant Ward",
+    "isLegacy": false,
+    "image": "images/ward_skins/corruptant_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_82.png"
+  },
+  {
+    "id": 83,
+    "name": "Conqueror Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/conqueror_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_83.png"
+  },
+  {
+    "id": 84,
+    "name": "Omega Squad Ward",
+    "description": "Omega Squad Ward",
+    "isLegacy": false,
+    "image": "images/ward_skins/omega_squad_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_84.png"
+  },
+  {
+    "id": 85,
+    "name": "Arcade Poro Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/arcade_poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_85.png"
+  },
+  {
+    "id": 86,
+    "name": "Mimi Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/mimi_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_86.png"
+  },
+  {
+    "id": 87,
+    "name": "SKT T1 kkOma Ward",
+    "description": "SKT T1 kkOma Ward",
+    "isLegacy": true,
+    "image": "images/ward_skins/skt_t1_kkoma_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_87.png"
+  },
+  {
+    "id": 88,
+    "name": "New Horizon Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/new_horizon_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_88.png"
+  },
+  {
+    "id": 89,
+    "name": "Worlds 2017 Ward",
+    "description": "Worlds 2017 Ward",
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2017_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_89.png"
+  },
+  {
+    "id": 90,
+    "name": "Worlds 2017 Golden Ward",
+    "description": "Worlds 2017 Golden Ward",
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2017_golden_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_90.png"
+  },
+  {
+    "id": 91,
+    "name": "Divine Sword Ward",
+    "description": "Divine Sword Ward",
+    "isLegacy": false,
+    "image": "images/ward_skins/divine_sword_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_91.png"
+  },
+  {
+    "id": 92,
+    "name": "Glorious Legend Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/glorious_legend_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_92.png"
+  },
+  {
+    "id": 93,
+    "name": "Honor 3 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/honor_3_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_93.png"
+  },
+  {
+    "id": 94,
+    "name": "Honor 4 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/honor_4_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_94.png"
+  },
+  {
+    "id": 95,
+    "name": "Honor 5 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/honor_5_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_95.png"
+  },
+  {
+    "id": 96,
+    "name": "Rune Enthusiast Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/rune_enthusiast_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_96.png"
+  },
+  {
+    "id": 97,
+    "name": "2017 Victorious Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2017_victorious_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_97.png"
+  },
+  {
+    "id": 98,
+    "name": "Dearest Deer Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/dearest_deer_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_98.png"
+  },
+  {
+    "id": 99,
+    "name": "Lovebirds Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/lovebirds_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_99.png"
+  },
+  {
+    "id": 100,
+    "name": "Death Sworn Ward",
+    "description": "Death Sworn Ward",
+    "isLegacy": false,
+    "image": "images/ward_skins/death_sworn_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_100.png"
+  },
+  {
+    "id": 101,
+    "name": "Essence Collector Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/essence_collector_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_101.png"
+  },
+  {
+    "id": 102,
+    "name": "Puppy Warwick Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/puppy_warwick_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_102.png"
+  },
+  {
+    "id": 103,
+    "name": "Puppy Nasus Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/puppy_nasus_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_103.png"
+  },
+  {
+    "id": 104,
+    "name": "Exo-Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/exo_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_104.png"
+  },
+  {
+    "id": 105,
+    "name": "Pizza Chicken Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/pizza_chicken_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_105.png"
+  },
+  {
+    "id": 106,
+    "name": "2018 Conqueror Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/2018_conqueror_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_106.png"
+  },
+  {
+    "id": 107,
+    "name": "Pulsefire 2018 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/pulsefire_2018_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_107.png"
+  },
+  {
+    "id": 108,
+    "name": "The Ripper Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/the_ripper_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_108.png"
+  },
+  {
+    "id": 109,
+    "name": "The Lion Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/the_lion_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_109.png"
+  },
+  {
+    "id": 110,
+    "name": "The Wolf Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/the_wolf_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_110.png"
+  },
+  {
+    "id": 111,
+    "name": "World Rune Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/world_rune_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_111.png"
+  },
+  {
+    "id": 112,
+    "name": "Surfin' Pengu Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/surfin_pengu_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_112.png"
+  },
+  {
+    "id": 113,
+    "name": "Wipeout Pengu Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/wipeout_pengu_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_113.png"
+  },
+  {
+    "id": 114,
+    "name": "Hang Loose Pengu Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/hang_loose_pengu_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_114.png"
+  },
+  {
+    "id": 115,
+    "name": "Space Lizard Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/space_lizard_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_115.png"
+  },
+  {
+    "id": 116,
+    "name": "Devil Vulture Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/devil_vulture_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_116.png"
+  },
+  {
+    "id": 117,
+    "name": "Gold Space Lizard Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/gold_space_lizard_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_117.png"
+  },
+  {
+    "id": 118,
+    "name": "Worlds 2018 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2018_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_118.png"
+  },
+  {
+    "id": 119,
+    "name": "Pumpkin Cat Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/pumpkin_cat_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_119.png"
+  },
+  {
+    "id": 120,
+    "name": "Pajama Guardian Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/pajama_guardian_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_120.png"
+  },
+  {
+    "id": 121,
+    "name": "Worlds 2018 Golden Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/worlds_2018_golden_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_121.png"
+  },
+  {
+    "id": 122,
+    "name": "Trained Dragon Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/trained_dragon_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_122.png"
+  },
+  {
+    "id": 123,
+    "name": "Queen Poro Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/queen_poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_123.png"
+  },
+  {
+    "id": 124,
+    "name": "Pop Music A-ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/pop_music_a_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_124.png"
+  },
+  {
+    "id": 125,
+    "name": "2018 Honor 3 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2018_honor_3_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_125.png"
+  },
+  {
+    "id": 126,
+    "name": "2018 Honor 4 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2018_honor_4_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_126.png"
+  },
+  {
+    "id": 127,
+    "name": "2018 Honor 5 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2018_honor_5_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_127.png"
+  },
+  {
+    "id": 128,
+    "name": "Year of the Pig Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/year_of_the_pig_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_128.png"
+  },
+  {
+    "id": 129,
+    "name": "Golden Year of the Pig Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/golden_year_of_the_pig_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_129.png"
+  },
+  {
+    "id": 130,
+    "name": "Unassuming Snowman Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/unassuming_snowman_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_130.png"
+  },
+  {
+    "id": 131,
+    "name": "Golden Snowman Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/golden_snowman_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_131.png"
+  },
+  {
+    "id": 132,
+    "name": "Blood Moon Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/blood_moon_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_132.png"
+  },
+  {
+    "id": 133,
+    "name": "Cat Lover Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/cat_lover_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_133.png"
+  },
+  {
+    "id": 134,
+    "name": "Dog Lover Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/dog_lover_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_134.png"
+  },
+  {
+    "id": 135,
+    "name": "2019 Conqueror Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2019_conqueror_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_135.png"
+  },
+  {
+    "id": 136,
+    "name": "Battle Academia Durandal Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/battle_academia_durandal_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_136.png"
+  },
+  {
+    "id": 137,
+    "name": "Championship Hot Dog Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/championship_hot_dog_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_137.png"
+  },
+  {
+    "id": 138,
+    "name": "Battle Academia Desk Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/battle_academia_desk_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_138.png"
+  },
+  {
+    "id": 139,
+    "name": "Arcade 2019 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/arcade_2019_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_139.png"
+  },
+  {
+    "id": 140,
+    "name": "SK telecom T1 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/sk_telecom_t1_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_140.png"
+  },
+  {
+    "id": 141,
+    "name": "Demacia Vice Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/demacia_vice_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_141.png"
+  },
+  {
+    "id": 142,
+    "name": "TSM Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/tsm_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_142.png"
+  },
+  {
+    "id": 143,
+    "name": "Echo Fox Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/echo_fox_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_143.png"
+  },
+  {
+    "id": 144,
+    "name": "100 Thieves Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/100_thieves_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_144.png"
+  },
+  {
+    "id": 145,
+    "name": "Cloud9 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/cloud9_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_145.png"
+  },
+  {
+    "id": 146,
+    "name": "CLG Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/clg_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_146.png"
+  },
+  {
+    "id": 147,
+    "name": "Team Liquid Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/team_liquid_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_147.png"
+  },
+  {
+    "id": 148,
+    "name": "Team OpTic Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/team_optic_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_148.png"
+  },
+  {
+    "id": 149,
+    "name": "Golden Guardians Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/golden_guardians_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_149.png"
+  },
+  {
+    "id": 150,
+    "name": "FlyQuest Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/flyquest_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_150.png"
+  },
+  {
+    "id": 151,
+    "name": "Clutch Gaming Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/clutch_gaming_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_151.png"
+  },
+  {
+    "id": 152,
+    "name": "Excel Esports Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/excel_esports_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_152.png"
+  },
+  {
+    "id": 153,
+    "name": "Fnatic Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/fnatic_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_153.png"
+  },
+  {
+    "id": 154,
+    "name": "G2 Esports Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/g2_esports_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_154.png"
+  },
+  {
+    "id": 155,
+    "name": "Misfits Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/misfits_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_155.png"
+  },
+  {
+    "id": 156,
+    "name": "Origen Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/origen_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_156.png"
+  },
+  {
+    "id": 157,
+    "name": "Rogue Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/rogue_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_157.png"
+  },
+  {
+    "id": 158,
+    "name": "Schalke 04 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/schalke_04_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_158.png"
+  },
+  {
+    "id": 159,
+    "name": "SK Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/sk_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_159.png"
+  },
+  {
+    "id": 160,
+    "name": "Splyce Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/splyce_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_160.png"
+  },
+  {
+    "id": 161,
+    "name": "Vitality Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/vitality_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_161.png"
+  },
+  {
+    "id": 162,
+    "name": "Fan Pass Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/fan_pass_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_162.png"
+  },
+  {
+    "id": 163,
+    "name": "Bilibili Gaming Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/bilibili_gaming_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_163.png"
+  },
+  {
+    "id": 164,
+    "name": "Dominus Esports Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/dominus_esports_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_164.png"
+  },
+  {
+    "id": 165,
+    "name": "Edward Gaming Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/edward_gaming_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_165.png"
+  },
+  {
+    "id": 166,
+    "name": "FunPlus Phoenix Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/funplus_phoenix_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_166.png"
+  },
+  {
+    "id": 167,
+    "name": "Invictus Gaming Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/invictus_gaming_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_167.png"
+  },
+  {
+    "id": 168,
+    "name": "JD Gaming Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/jd_gaming_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_168.png"
+  },
+  {
+    "id": 169,
+    "name": "LGD Gaming Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/lgd_gaming_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_169.png"
+  },
+  {
+    "id": 170,
+    "name": "LNG Esports Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/lng_esports_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_170.png"
+  },
+  {
+    "id": 171,
+    "name": "Oh My God Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/oh_my_god_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_171.png"
+  },
+  {
+    "id": 172,
+    "name": "Royal Never Give Up Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/royal_never_give_up_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_172.png"
+  },
+  {
+    "id": 173,
+    "name": "Rogue Warriors Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/rogue_warriors_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_173.png"
+  },
+  {
+    "id": 174,
+    "name": "Suning Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/suning_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_174.png"
+  },
+  {
+    "id": 175,
+    "name": "TOP Esports Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/top_esports_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_175.png"
+  },
+  {
+    "id": 176,
+    "name": "Victory Five Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/victory_five_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_176.png"
+  },
+  {
+    "id": 177,
+    "name": "Vici Gaming Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/vici_gaming_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_177.png"
+  },
+  {
+    "id": 178,
+    "name": "Team WE Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/team_we_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_178.png"
+  },
+  {
+    "id": 179,
+    "name": "KING-ZONE DragonX Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/king_zone_dragonx_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_179.png"
+  },
+  {
+    "id": 180,
+    "name": "Afreeca Freecs Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/afreeca_freecs_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_180.png"
+  },
+  {
+    "id": 181,
+    "name": "DAMWON Gaming Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/damwon_gaming_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_181.png"
+  },
+  {
+    "id": 182,
+    "name": "Gen.G Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/gen_g_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_182.png"
+  },
+  {
+    "id": 183,
+    "name": "GRIFFIN Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/griffin_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_183.png"
+  },
+  {
+    "id": 184,
+    "name": "Hanwha Life Esports Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/hanwha_life_esports_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_184.png"
+  },
+  {
+    "id": 185,
+    "name": "Jin Air Greenwings Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/jin_air_greenwings_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_185.png"
+  },
+  {
+    "id": 186,
+    "name": "kt Rolster Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/kt_rolster_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_186.png"
+  },
+  {
+    "id": 187,
+    "name": "SANDBOX Gaming Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/sandbox_gaming_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_187.png"
+  },
+  {
+    "id": 188,
+    "name": "Star Guardian 2019 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/star_guardian_2019_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_188.png"
+  },
+  {
+    "id": 189,
+    "name": "PROJECT: Reckoning Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/project_reckoning_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_189.png"
+  },
+  {
+    "id": 190,
+    "name": "Worlds 2019 Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/worlds_2019_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_190.png"
+  },
+  {
+    "id": 191,
+    "name": "Frontier Devil Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/frontier_devil_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_191.png"
+  },
+  {
+    "id": 192,
+    "name": "True Damage Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/true_damage_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_192.png"
+  },
+  {
+    "id": 193,
+    "name": "10th Anniversary Ward",
+    "description": null,
+    "isLegacy": true,
+    "image": "images/ward_skins/10th_anniversary_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_193.png"
+  },
+  {
+    "id": 194,
+    "name": "Tales From the Rift 2019 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/tales_from_the_rift_2019_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_194.png"
+  },
+  {
+    "id": 195,
+    "name": "Night & Dawn Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/night_dawn_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_195.png"
+  },
+  {
+    "id": 196,
+    "name": "Prestige 2019 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/prestige_2019_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_196.png"
+  },
+  {
+    "id": 197,
+    "name": "Mecha Kingdoms 2020 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/mecha_kingdoms_2020_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_197.png"
+  },
+  {
+    "id": 198,
+    "name": "Galaxies 2020 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/galaxies_2020_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_198.png"
+  },
+  {
+    "id": 199,
+    "name": "2020 Pulsefire Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2020_pulsefire_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_199.png"
+  },
+  {
+    "id": 200,
+    "name": "2020 Spirit Blossom Kanmei Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2020_spirit_blossom_kanmei_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_200.png"
+  },
+  {
+    "id": 201,
+    "name": "2020 Spirit Blossom Akana Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2020_spirit_blossom_akana_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_201.png"
+  },
+  {
+    "id": 202,
+    "name": "Riot Games Fist Bump Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/riot_games_fist_bump_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_202.png"
+  },
+  {
+    "id": 203,
+    "name": "Tellstones: King's Gambit Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/tellstones_king_s_gambit_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_203.png"
+  },
+  {
+    "id": 204,
+    "name": "PsyOps 2020 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/psyops_2020_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_204.png"
+  },
+  {
+    "id": 205,
+    "name": "K/DA ALL OUT Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/k_da_all_out_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_205.png"
+  },
+  {
+    "id": 206,
+    "name": "Worlds 2020 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2020_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_206.png"
+  },
+  {
+    "id": 207,
+    "name": "Dragonmancer Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/dragonmancer_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_207.png"
+  },
+  {
+    "id": 208,
+    "name": "Battle Queens Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/battle_queens_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_208.png"
+  },
+  {
+    "id": 209,
+    "name": "2021 Lunar Beast Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2021_lunar_beast_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_209.png"
+  },
+  {
+    "id": 210,
+    "name": "2021 Space Groove Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2021_space_groove_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_210.png"
+  },
+  {
+    "id": 211,
+    "name": "PROJECT 2021 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/project_2021_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_211.png"
+  },
+  {
+    "id": 212,
+    "name": "Sentinel Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/sentinel_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_212.png"
+  },
+  {
+    "id": 213,
+    "name": "Coven Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/coven_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_213.png"
+  },
+  {
+    "id": 214,
+    "name": "2021 Hextech Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2021_hextech_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_214.png"
+  },
+  {
+    "id": 215,
+    "name": "Ruined Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/ruined_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_215.png"
+  },
+  {
+    "id": 216,
+    "name": "Phoenix Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/phoenix_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_216.png"
+  },
+  {
+    "id": 217,
+    "name": "Night & Dawn 2021 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/night_dawn_2021_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_217.png"
+  },
+  {
+    "id": 218,
+    "name": "Arcane Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/arcane_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_218.png"
+  },
+  {
+    "id": 219,
+    "name": "2022 Firecracker Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2022_firecracker_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_219.png"
+  },
+  {
+    "id": 220,
+    "name": "Forge God - Season 2022 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/forge_god_season_2022_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_220.png"
+  },
+  {
+    "id": 221,
+    "name": "Debonair Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/debonair_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_221.png"
+  },
+  {
+    "id": 222,
+    "name": "Primordial Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/primordial_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_222.png"
+  },
+  {
+    "id": 223,
+    "name": "Ashen Knight Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/ashen_knight_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_223.png"
+  },
+  {
+    "id": 224,
+    "name": "LoL Esports Ward Season 2022",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/lol_esports_ward_season_2022.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_224.png"
+  },
+  {
+    "id": 225,
+    "name": "MSI 2022 High Noon Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/msi_2022_high_noon_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_225.png"
+  },
+  {
+    "id": 226,
+    "name": "Ocean Song Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/ocean_song_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_226.png"
+  },
+  {
+    "id": 227,
+    "name": "Star Guardian 2022 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/star_guardian_2022_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_227.png"
+  },
+  {
+    "id": 228,
+    "name": "I.S.R Drone Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/i_s_r_drone_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_228.png"
+  },
+  {
+    "id": 229,
+    "name": "Worlds 2022 Trophy Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2022_trophy_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_229.png"
+  },
+  {
+    "id": 230,
+    "name": "2022 Spirit Blossom Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2022_spirit_blossom_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_230.png"
+  },
+  {
+    "id": 231,
+    "name": "Hyperion Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/hyperion_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_231.png"
+  },
+  {
+    "id": 232,
+    "name": "Empyrean Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/empyrean_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_232.png"
+  },
+  {
+    "id": 233,
+    "name": "Winterblessed Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/winterblessed_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_233.png"
+  },
+  {
+    "id": 234,
+    "name": "2023 Lunar Revel Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2023_lunar_revel_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_234.png"
+  },
+  {
+    "id": 235,
+    "name": "2023 Season Start Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2023_season_start_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_235.png"
+  },
+  {
+    "id": 237,
+    "name": "Faerie Court Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/faerie_court_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_237.png"
+  },
+  {
+    "id": 238,
+    "name": "Inkshadow Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/inkshadow_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_238.png"
+  },
+  {
+    "id": 239,
+    "name": "Mysterious Garment Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/mysterious_garment_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_239.png"
+  },
+  {
+    "id": 240,
+    "name": "DRX Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/drx_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_240.png"
+  },
+  {
+    "id": 241,
+    "name": "Space & Time Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/space_time_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_241.png"
+  },
+  {
+    "id": 242,
+    "name": "Soul Fighter Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/soul_fighter_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_242.png"
+  },
+  {
+    "id": 244,
+    "name": "HEARTSTEEL Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/heartsteel_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_244.png"
+  },
+  {
+    "id": 245,
+    "name": "2023 Coven Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2023_coven_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_245.png"
+  },
+  {
+    "id": 246,
+    "name": "2023 Winterblessed Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2023_winterblessed_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_246.png"
+  },
+  {
+    "id": 247,
+    "name": "Crystalis Motus Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/crystalis_motus_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_247.png"
+  },
+  {
+    "id": 248,
+    "name": "Heavenscale Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/heavenscale_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_248.png"
+  },
+  {
+    "id": 249,
+    "name": "Hide on bush Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/hide_on_bush_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_249.png"
+  },
+  {
+    "id": 250,
+    "name": "Anima Squad Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/anima_squad_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_250.png"
+  },
+  {
+    "id": 251,
+    "name": "T1 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/t1_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_251.png"
+  },
+  {
+    "id": 252,
+    "name": "Gaming Fan Poro Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/gaming_fan_poro_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_252.png"
+  },
+  {
+    "id": 253,
+    "name": "Worlds 2024 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/worlds_2024_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_253.png"
+  },
+  {
+    "id": 254,
+    "name": "Mysterious Arcane Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/mysterious_arcane_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_254.png"
+  },
+  {
+    "id": 255,
+    "name": "Masque of the Black Rose Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/masque_of_the_black_rose_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_255.png"
+  },
+  {
+    "id": 256,
+    "name": "2025 Spirit Blossom Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/2025_spirit_blossom_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_256.png"
+  },
+  {
+    "id": 257,
+    "name": "Soak It Up Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/soak_it_up_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_257.png"
+  },
+  {
+    "id": 258,
+    "name": "Battle Academia Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/battle_academia_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_258.png"
+  },
+  {
+    "id": 259,
+    "name": "Vision of the Fallen Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/vision_of_the_fallen_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_259.png"
+  },
+  {
+    "id": 260,
+    "name": "T1 2024 Ward",
+    "description": null,
+    "isLegacy": false,
+    "image": "images/ward_skins/t1_2024_ward.png",
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/assets/content/src/leagueclient/wardskinimages/wardhero_260.png"
+  }
+]

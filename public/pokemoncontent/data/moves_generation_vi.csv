@@ -1,0 +1,93 @@
+id,name,slug,type,power,accuracy,pp,priority,damage_class,target,generation,effect,short_effect,sourceUrl
+560,flying-press,flying_press,fighting,100,95,10,0,physical,selected-pokemon,generation-vi,"Inflicts regular damage.  For the purposes of type effectiveness, this move is both fighting- and flying-type: its final effectiveness is determined by multiplying the effectiveness of each type against each of the target’s types.
+
+For all other purposes, this move is pure Fighting-type.  If this move’s type is changed, its Fighting typing is overwritten, and its secondary type remains Flying.
+
+If the target has used minimize since entering battle, this move has double power and will never miss.",Deals both fighting and flying-type damage.,https://pokeapi.co/api/v2/move/560/
+561,mat-block,mat_block,fighting,None,None,10,0,status,users-field,generation-vi,Protects all friendly Pokémon from damaging moves.  Only works on the first turn after the user is sent out.,Protects all friendly Pokémon from damaging moves.  Only works on the first turn after the user is sent out.,https://pokeapi.co/api/v2/move/561/
+562,belch,belch,poison,120,90,10,0,special,selected-pokemon,generation-vi,"Inflicts regular damage.  Can only be used if the user has eaten a berry since the beginning of the battle.
+
+After the user eats a berry, it may use this move any number of times until the end of the battle, even if it switches out.  Eating a held berry, eating a berry via bug bite or pluck, or being the target of a Flung berry will enable this move.  Feeding a Pokémon a berry from the bag or using natural gift will not.
+
+If the trainer chooses this move when it cannot be used, the choice is rejected outright and the trainer must choose another move.",Can only be used after the user has eaten a berry.,https://pokeapi.co/api/v2/move/562/
+563,rototiller,rototiller,ground,None,None,10,0,status,all-pokemon,generation-vi,Raises the Attack and Special Attack of all grass Pokémon in battle.,Raises the Attack and Special Attack of all grass Pokémon in battle.,https://pokeapi.co/api/v2/move/563/
+564,sticky-web,sticky_web,bug,None,None,20,0,status,opponents-field,generation-vi,"Shoots a web over the opponents’ side of the field, which lowers the Speed of any opposing Pokémon that enters the field by one stage.
+
+Pokémon in the air, such as flying-types and those with levitate, are unaffected.  rapid spin removes Sticky Web from the user’s side of the field; defog removes it from both sides.","Covers the opposing field, lowering opponents’ Speed by one stage upon switching in.",https://pokeapi.co/api/v2/move/564/
+565,fell-stinger,fell_stinger,bug,50,100,25,0,physical,selected-pokemon,generation-vi,Inflicts regular damage.  Raises the user’s Attack by two stages if it KOs the target.,Raises the user’s Attack by two stages if it KOs the target.,https://pokeapi.co/api/v2/move/565/
+566,phantom-force,phantom_force,ghost,90,100,10,0,physical,selected-pokemon,generation-vi,"Inflicts regular damage.  User vanishes for one turn, becoming immune to attack, and hits on the second turn.
+
+This move ignores the effects of detect and protect.
+
+This move cannot be selected by sleep talk.","User vanishes, dodging all attacks, and hits next turn.  Hits through Protect and Detect.",https://pokeapi.co/api/v2/move/566/
+567,trick-or-treat,trick_or_treat,ghost,None,100,20,0,status,selected-pokemon,generation-vi,Adds ghost to the target’s types.,Adds ghost to the target’s types.,https://pokeapi.co/api/v2/move/567/
+568,noble-roar,noble_roar,normal,None,100,30,0,status,selected-pokemon,generation-vi,Lowers the target’s Attack and Special Attack by one stage.,Lowers the target’s Attack and Special Attack by one stage.,https://pokeapi.co/api/v2/move/568/
+569,ion-deluge,ion_deluge,electric,None,None,25,1,status,entire-field,generation-vi,Changes all Pokémon’s normal moves to electric moves for the rest of the turn.,Changes all normal moves to electric moves for the rest of the turn.,https://pokeapi.co/api/v2/move/569/
+570,parabolic-charge,parabolic_charge,electric,65,100,20,0,special,all-other-pokemon,generation-vi,Heals the user for half the total damage dealt to all targets.,Heals the user for half the total damage dealt to all targets.,https://pokeapi.co/api/v2/move/570/
+571,forests-curse,forests_curse,grass,None,100,20,0,status,selected-pokemon,generation-vi,Adds grass to the target’s types.,Adds grass to the target’s types.,https://pokeapi.co/api/v2/move/571/
+572,petal-blizzard,petal_blizzard,grass,90,100,15,0,physical,all-other-pokemon,generation-vi,Inflicts regular damage.,Inflicts regular damage.,https://pokeapi.co/api/v2/move/572/
+573,freeze-dry,freeze_dry,ice,70,100,20,0,special,selected-pokemon,generation-vi,"Inflicts regular damage.  This move is super-effective against the water type.
+
+The target’s other type will affect damage as usual.  If this move’s type is changed, it remains super-effective against Water regardless of its type.",Super-effective against water.,https://pokeapi.co/api/v2/move/573/
+574,disarming-voice,disarming_voice,fairy,40,None,15,0,special,all-opponents,generation-vi,Inflicts regular damage.  Ignores accuracy and evasion.,Never misses.,https://pokeapi.co/api/v2/move/574/
+575,parting-shot,parting_shot,dark,None,100,20,0,status,selected-pokemon,generation-vi,Lowers all targets’ Attack and Special Attack by one stage.  Makes the user switch out.,Lowers all targets’ Attack and Special Attack by one stage.  Makes the user switch out.,https://pokeapi.co/api/v2/move/575/
+576,topsy-turvy,topsy_turvy,dark,None,None,20,0,status,selected-pokemon,generation-vi,Inverts the target’s stat modifiers.,Inverts the target’s stat modifiers.,https://pokeapi.co/api/v2/move/576/
+577,draining-kiss,draining_kiss,fairy,50,100,10,0,special,selected-pokemon,generation-vi,Deals regular damage.  Drains 75% of the damage inflicted to heal the user.,Drains 75% of the damage inflicted to heal the user.,https://pokeapi.co/api/v2/move/577/
+578,crafty-shield,crafty_shield,fairy,None,None,10,3,status,users-field,generation-vi,"Protects all friendly Pokémon from non-damaging moves for the rest of the turn.
+
+Unlike other blocking moves, this move may be used consecutively without its chance of success falling.",Protects all friendly Pokémon from non-damaging moves.,https://pokeapi.co/api/v2/move/578/
+579,flower-shield,flower_shield,fairy,None,None,10,0,status,all-pokemon,generation-vi,Raises the Defense of all grass Pokémon in battle.,Raises the Defense of all grass Pokémon in battle.,https://pokeapi.co/api/v2/move/579/
+580,grassy-terrain,grassy_terrain,grass,None,None,10,0,status,entire-field,generation-vi,"For five turns, heals all Pokémon on the ground for 1/16 their max HP each turn and strengthens their grass moves to 1.5× their power.
+
+Changes nature power to energy ball.","For five turns, heals all Pokémon on the ground for 1/16 max HP each turn and strengthens their grass moves to 1.5× their power.",https://pokeapi.co/api/v2/move/580/
+581,misty-terrain,misty_terrain,fairy,None,None,10,0,status,entire-field,generation-vi,"For five turns, protects all Pokémon on the ground from major status ailments and confusion and weakens dragon moves used against them to 0.5× their power.
+
+Changes nature power to moonblast.","For five turns, protects all Pokémon on the ground from major status ailments and confusion, and halves the power of incoming dragon moves.",https://pokeapi.co/api/v2/move/581/
+582,electrify,electrify,electric,None,None,20,0,status,selected-pokemon,generation-vi,Changes the target’s move’s type to electric if it hasn’t moved yet this turn.,Changes the target’s move’s type to electric if it hasn’t moved yet this turn.,https://pokeapi.co/api/v2/move/582/
+583,play-rough,play_rough,fairy,90,90,10,0,physical,selected-pokemon,generation-vi,Inflicts regular damage.  Has a 10% chance to lower the target’s Attack by one stage.,Has a 10% chance to lower the target’s Attack by one stage.,https://pokeapi.co/api/v2/move/583/
+584,fairy-wind,fairy_wind,fairy,40,100,30,0,special,selected-pokemon,generation-vi,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/584/
+585,moonblast,moonblast,fairy,95,100,15,0,special,selected-pokemon,generation-vi,Inflicts regular damage.  Has a 30% chance to lower the target’s Special Attack by one stage.,Has a 30% chance to lower the target’s Special Attack by one stage.,https://pokeapi.co/api/v2/move/585/
+586,boomburst,boomburst,normal,140,100,10,0,special,all-other-pokemon,generation-vi,Inflicts regular damage.,Inflicts regular damage.,https://pokeapi.co/api/v2/move/586/
+587,fairy-lock,fairy_lock,fairy,None,None,10,0,status,entire-field,generation-vi,Prevents all Pokémon from fleeing or switching out during the next turn.,Prevents all Pokémon from fleeing or switching out during the next turn.,https://pokeapi.co/api/v2/move/587/
+588,kings-shield,kings_shield,steel,None,None,10,4,status,user,generation-vi,Blocks damaging attacks and lowers attacking Pokémon’s Attack by two stages on contact.  Switches Aegislash to Shield Forme.,Blocks damaging attacks and lowers attacking Pokémon’s Attack by two stages on contact.  Switches Aegislash to Shield Forme.,https://pokeapi.co/api/v2/move/588/
+589,play-nice,play_nice,normal,None,None,20,0,status,selected-pokemon,generation-vi,Lowers the target’s Attack by one stage.,Lowers the target’s Attack by one stage.,https://pokeapi.co/api/v2/move/589/
+590,confide,confide,normal,None,None,20,0,status,selected-pokemon,generation-vi,Lowers the target’s Special Attack by one stage.,Lowers the target’s Special Attack by one stage.,https://pokeapi.co/api/v2/move/590/
+591,diamond-storm,diamond_storm,rock,100,95,5,0,physical,all-opponents,generation-vi,Inflicts regular damage.  Has a 50% chance to raise the user’s Defense by two stages for each target hit.,Has a 50% chance to raise the user’s Defense by two stages for each target hit.,https://pokeapi.co/api/v2/move/591/
+592,steam-eruption,steam_eruption,water,110,95,5,0,special,selected-pokemon,generation-vi,Inflicts regular damage.  Has a 30% chance to burn the target.,Has a 30% chance to burn the target.,https://pokeapi.co/api/v2/move/592/
+593,hyperspace-hole,hyperspace_hole,psychic,80,None,5,0,special,selected-pokemon,generation-vi,Inflicts regular damage.  Bypasses and removes any protection effect on the target.,Ignores and destroys protection effects.,https://pokeapi.co/api/v2/move/593/
+594,water-shuriken,water_shuriken,water,15,100,20,1,special,selected-pokemon,generation-vi,Inflicts regular damage.  Hits 2–5 times.,Hits 2–5 times.,https://pokeapi.co/api/v2/move/594/
+595,mystical-fire,mystical_fire,fire,75,100,10,0,special,selected-pokemon,generation-vi,Inflicts regular damage.  Has a 100% chance to lower the target’s Special Attack by one stage.,Has a 100% chance to lower the target’s Special Attack by one stage.,https://pokeapi.co/api/v2/move/595/
+596,spiky-shield,spiky_shield,grass,None,None,10,4,status,user,generation-vi,Blocks damaging attacks and damages attacking Pokémon for 1/8 their max HP.,Blocks damaging attacks and damages attacking Pokémon for 1/8 their max HP.,https://pokeapi.co/api/v2/move/596/
+597,aromatic-mist,aromatic_mist,fairy,None,None,20,0,status,ally,generation-vi,Raises a selected ally’s Special Defense by one stage.,Raises a selected ally’s Special Defense by one stage.,https://pokeapi.co/api/v2/move/597/
+598,eerie-impulse,eerie_impulse,electric,None,100,15,0,status,selected-pokemon,generation-vi,Lowers the target’s Special Attack by two stages.,Lowers the target’s Special Attack by two stages.,https://pokeapi.co/api/v2/move/598/
+599,venom-drench,venom_drench,poison,None,100,20,0,status,all-opponents,generation-vi,"Lowers the target’s Attack, Special Attack, and Speed by one stage if it is poisoned.","Lowers the target’s Attack, Special Attack, and Speed by one stage if it is poisoned.",https://pokeapi.co/api/v2/move/599/
+600,powder,powder,bug,None,100,20,1,status,selected-pokemon,generation-vi,"Explodes if the target uses a fire move this turn, damaging it for 1/4 its max HP and preventing the move.","Explodes if the target uses a fire move this turn, damaging it for 1/4 its max HP and preventing the move.",https://pokeapi.co/api/v2/move/600/
+601,geomancy,geomancy,fairy,None,None,10,0,status,user,generation-vi,"Takes one turn to charge, then raises the user’s Special Attack, Special Defense, and Speed by two stages.","Takes one turn to charge, then raises the user’s Special Attack, Special Defense, and Speed by two stages.",https://pokeapi.co/api/v2/move/601/
+602,magnetic-flux,magnetic_flux,electric,None,None,20,0,status,user-and-allies,generation-vi,Raises the Defense and Special Defense of all friendly Pokémon with plus or minus by one stage.,Raises the Defense and Special Defense of all friendly Pokémon with plus or minus by one stage.,https://pokeapi.co/api/v2/move/602/
+603,happy-hour,happy_hour,normal,None,None,30,0,status,users-field,generation-vi,"Doubles prize money.
+
+Stacks with a held item.  Only works once per battle.",Doubles prize money.,https://pokeapi.co/api/v2/move/603/
+604,electric-terrain,electric_terrain,electric,None,None,10,0,status,entire-field,generation-vi,"For five turns, prevents all Pokémon on the ground from sleeping and strengthens their electric moves to 1.5× their power.
+
+Changes nature power to thunderbolt.","For five turns, prevents all Pokémon on the ground from sleeping and strengthens their electric moves to 1.5× their power.",https://pokeapi.co/api/v2/move/604/
+605,dazzling-gleam,dazzling_gleam,fairy,80,100,10,0,special,all-opponents,generation-vi,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/605/
+606,celebrate,celebrate,normal,None,None,40,0,status,user,generation-vi,Does nothing.,Does nothing.,https://pokeapi.co/api/v2/move/606/
+607,hold-hands,hold_hands,normal,None,None,40,0,status,ally,generation-vi,Does nothing.,Does nothing.,https://pokeapi.co/api/v2/move/607/
+608,baby-doll-eyes,baby_doll_eyes,fairy,None,100,30,1,status,selected-pokemon,generation-vi,Lowers the target’s Attack by one stage.,Lowers the target’s Attack by one stage.,https://pokeapi.co/api/v2/move/608/
+609,nuzzle,nuzzle,electric,20,100,20,0,physical,selected-pokemon,generation-vi,Inflicts regular damage.  Has a 100% chance to paralyze the target.,Has a 100% chance to paralyze the target.,https://pokeapi.co/api/v2/move/609/
+610,hold-back,hold_back,normal,40,100,40,0,physical,selected-pokemon,generation-vi,Inflicts regular damage.  Will not reduce the target’s HP below 1.,Cannot lower the target’s HP below 1.,https://pokeapi.co/api/v2/move/610/
+611,infestation,infestation,bug,20,100,20,0,special,selected-pokemon,generation-vi,"Inflicts regular damage.  For the next 2–5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.  The user continues to use other moves during this time.  If the user leaves the field, this effect ends.
+
+Has a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times.  Averages to 3 hits per use.
+
+rapid spin cancels this effect.",Prevents the target from fleeing and inflicts damage for 2-5 turns.,https://pokeapi.co/api/v2/move/611/
+612,power-up-punch,power_up_punch,fighting,40,100,20,0,physical,selected-pokemon,generation-vi,Inflicts regular damage.  Raises the user’s Attack by one stage.,Raises the user’s Attack by one stage after inflicting damage.,https://pokeapi.co/api/v2/move/612/
+613,oblivion-wing,oblivion_wing,flying,80,100,10,0,special,selected-pokemon,generation-vi,Deals regular damage.  Drains 75% of the damage inflicted to heal the user.,Drains 75% of the damage inflicted to heal the user.,https://pokeapi.co/api/v2/move/613/
+614,thousand-arrows,thousand_arrows,ground,90,100,10,0,physical,all-opponents,generation-vi,Inflicts regular damage.  Grounds the target until it leaves battle.  Ignores levitation effects and the immunity of flying-type Pokémon.,"Grounds the target, and hits even Flying-type or levitating Pokémon.",https://pokeapi.co/api/v2/move/614/
+615,thousand-waves,thousand_waves,ground,90,100,10,0,physical,all-opponents,generation-vi,Inflicts regular damage.  Traps the target.,Prevents the target from leaving battle.,https://pokeapi.co/api/v2/move/615/
+616,lands-wrath,lands_wrath,ground,90,100,10,0,physical,all-opponents,generation-vi,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/616/
+617,light-of-ruin,light_of_ruin,fairy,140,90,5,0,special,selected-pokemon,generation-vi,Inflicts regular damage.  User takes 1/2 the damage it inflicts in recoil.,User receives 1/2 the damage inflicted in recoil.,https://pokeapi.co/api/v2/move/617/
+618,origin-pulse,origin_pulse,water,110,85,10,0,special,all-opponents,generation-vi,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/618/
+619,precipice-blades,precipice_blades,ground,120,85,10,0,physical,all-opponents,generation-vi,Inflicts regular damage.,Inflicts regular damage with no additional effect.,https://pokeapi.co/api/v2/move/619/
+620,dragon-ascent,dragon_ascent,flying,120,100,5,0,physical,selected-pokemon,generation-vi,"Inflicts regular damage, then lowers the user’s Defense and Special Defense by one stage each.",Lowers the user’s Defense and Special Defense by one stage after inflicting damage.,https://pokeapi.co/api/v2/move/620/
+621,hyperspace-fury,hyperspace_fury,dark,100,None,5,0,physical,selected-pokemon,generation-vi,Inflicts regular damage.  Bypasses and removes any protection effect on the target.,Ignores and destroys protection effects.,https://pokeapi.co/api/v2/move/621/

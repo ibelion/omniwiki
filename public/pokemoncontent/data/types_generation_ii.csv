@@ -1,0 +1,4 @@
+id,name,slug,generation,double_damage_to,double_damage_from,half_damage_to,half_damage_from,no_damage_to,no_damage_from,sourceUrl
+9,steel,steel,generation-ii,"rock, ice, fairy","fighting, ground, fire","steel, fire, water, electric","normal, flying, rock, bug, steel, grass, psychic, ice, dragon, fairy",,poison,https://pokeapi.co/api/v2/type/9/
+17,dark,dark,generation-ii,"ghost, psychic","fighting, bug, fairy","fighting, dark, fairy","ghost, dark",,psychic,https://pokeapi.co/api/v2/type/17/
+10001,unknown,unknown,generation-ii,,,,,,,https://pokeapi.co/api/v2/type/10001/

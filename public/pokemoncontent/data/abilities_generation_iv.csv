@@ -1,0 +1,156 @@
+id,name,slug,generation,effect,short_effect,pokemon,sourceUrl
+77,tangled-feet,tangled_feet,generation-iv,"When this Pokémon is confused, it has twice its evasion.",Doubles evasion when confused.,"pidgey, pidgeotto, pidgeot, doduo, dodrio, spinda, chatot, mr-rime, flamigo",https://pokeapi.co/api/v2/ability/77/
+78,motor-drive,motor_drive,generation-iv,"Whenever an electric-type move hits this Pokémon, its Speed rises one stage, negating any other effect on it.
+
+This ability will not take effect if this Pokémon is immune to Electric moves.  Electric moves will ignore this Pokémon's substitute.
+
+This effect includes non-damaging moves, i.e. thunder wave.","Absorbs electric moves, raising Speed one stage.","electivire, blitzle, zebstrika, emolga",https://pokeapi.co/api/v2/ability/78/
+79,rivalry,rivalry,generation-iv,"This Pokémon inflicts 1.25× as much regular damage against Pokémon of the same gender and 0.75× as much regular damage against Pokémon of the opposite gender.
+
+If either Pokémon is genderless, damage is unaffected.","Increases damage inflicted to 1.25× against Pokémon of the same gender, but decreases damage to 0.75× against the opposite gender.","nidoran-f, nidorina, nidoqueen, nidoran-m, nidorino, nidoking, beautifly, shinx, luxio, luxray, pidove, tranquill, unfezant, axew, fraxure, haxorus, litleo, pyroar",https://pokeapi.co/api/v2/ability/79/
+80,steadfast,steadfast,generation-iv,"Whenever this Pokémon flinches, its Speed rises one stage.",Raises Speed one stage upon flinching.,"machop, machoke, machamp, scyther, tyrogue, hitmontop, riolu, lucario, gallade, rockruff, lycanroc-midday, dubwool, sirfetchd, mewtwo-mega-x, farfetchd-galar, machamp-gmax",https://pokeapi.co/api/v2/ability/80/
+81,snow-cloak,snow_cloak,generation-iv,"During hail, this Pokémon has 1.25× its evasion, and it does not take hail damage regardless of type.
+
+The evasion bonus does not count as a stat modifier.
+
+Overworld: If the lead Pokémon has this ability, the wild encounter rate is halved in snow.",Increases evasion to 1.25× during hail.  Protects against hail damage.,"articuno, swinub, piloswine, glaceon, mamoswine, froslass, vanillite, vanillish, cubchoo, beartic, cetoddle, sandshrew-alola, sandslash-alola, vulpix-alola, ninetales-alola",https://pokeapi.co/api/v2/ability/81/
+82,gluttony,gluttony,generation-iv,"This Pokémon eats any held Berry triggered by low HP when it falls below 50% of its HP, regardless of the Berry's usual threshold.",Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP.,"bellsprout, weepinbell, victreebel, snorlax, shuckle, zigzagoon, linoone, gulpin, swalot, spoink, grumpig, munchlax, pansage, simisage, pansear, simisear, panpour, simipour, heatmor, skwovet, greedent, applin, flapple, appletun, lechonk, oinkologne-male, dipplin, rattata-alola, raticate-alola, raticate-totem-alola, grimer-alola, muk-alola, slowpoke-galar, zigzagoon-galar, linoone-galar, snorlax-gmax, flapple-gmax, appletun-gmax, oinkologne-female",https://pokeapi.co/api/v2/ability/82/
+83,anger-point,anger_point,generation-iv,"Whenever this Pokémon receives a critical hit, its Attack rises to the maximum of 6 stages.
+
+This ability will still take effect if the critical hit is received by a substitute.",Raises Attack to the maximum of six stages upon receiving a critical hit.,"mankey, primeape, tauros, camerupt, sandile, krokorok, krookodile, crabrawler, crabominable, tauros-paldea-combat-breed, tauros-paldea-blaze-breed, tauros-paldea-aqua-breed",https://pokeapi.co/api/v2/ability/83/
+84,unburden,unburden,generation-iv,"When this Pokémon uses or loses its held item, its Speed is doubled.  If it gains another item or leaves battle, this bonus is lost.
+
+This includes when the Pokémon drops its item because of knock off.  This bonus does not count as a stat modifier.  There is no notification when this ability takes effect.",Doubles Speed upon using or losing a held item.,"hitmonlee, treecko, grovyle, sceptile, drifloon, drifblim, purrloin, liepard, accelgor, swirlix, slurpuff, hawlucha, nickit, thievul, sneasler, shroodle, grafaiai",https://pokeapi.co/api/v2/ability/84/
+85,heatproof,heatproof,generation-iv,This Pokémon takes half as much damage from fire-type moves and burns.,Halves damage from fire moves and burns.,"bronzor, bronzong, rolycoly, poltchageist, sinistcha",https://pokeapi.co/api/v2/ability/85/
+86,simple,simple,generation-iv,"Each stage of this Pokémon's stat modifiers acts as two stages.  These doubled stages are still limited to a minimum of -6 and a maximum of 6.
+
+This Pokémon can still accumulate less than -3 or more than 3 stages of stat modifiers, even though the extra ones have no effect after doubling.",Doubles the Pokémon's stat modifiers.  These doubled modifiers are still capped at -6 or 6 stages.,"numel, bidoof, bibarel, woobat, swoobat",https://pokeapi.co/api/v2/ability/86/
+87,dry-skin,dry_skin,generation-iv,"This Pokémon takes 1/8 of its maximum HP in damage after each turn during strong sunlight, but it heals for 1/8 of its HP each turn during rain.  This Pokémon takes 1.25× as much damage from fire-type moves, but whenever a water move hits it, it heals for 1/4 its maximum HP instead.","Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain.  Increases damage from fire moves to 1.25×, but absorbs water moves, healing for 1/4 max HP.","paras, parasect, jynx, croagunk, toxicroak, helioptile, heliolisk",https://pokeapi.co/api/v2/ability/87/
+88,download,download,generation-iv,"When this Pokémon enters battle, its Attack or Special Attack, whichever corresponds to its opponents' weaker total defensive stat, rises one stage.  In the event of a tie, Special Attack is raised.
+
+This ability also takes effect when acquired during a battle.",Raises the attack stat corresponding to the opponents' weaker defense one stage upon entering battle.,"porygon, porygon2, porygon-z, genesect",https://pokeapi.co/api/v2/ability/88/
+89,iron-fist,iron_fist,generation-iv,"Moves flagged as being punch-based have 1.2× their base power for this Pokémon.
+
+sucker punch is not flagged as punch-based; its original, Japanese name only means ""surprise attack"".",Strengthens punch-based moves to 1.2× their power.,"hitmonchan, ledian, chimchar, monferno, infernape, timburr, gurdurr, conkeldurr, golett, golurk, pancham, pangoro, crabrawler, crabominable, melmetal, pawmi, pawmo, pawmot, melmetal-gmax",https://pokeapi.co/api/v2/ability/89/
+90,poison-heal,poison_heal,generation-iv,"If this Pokémon is poisoned, it will heal for 1/8 of its maximum HP after each turn rather than taking damage.  This includes bad poison.",Heals for 1/8 max HP after each turn when poisoned in place of damage.,"shroomish, breloom, gliscor",https://pokeapi.co/api/v2/ability/90/
+91,adaptability,adaptability,generation-iv,"This Pokémon inflicts twice as much damage with moves whose types match its own, rather than the usual same-type attack bonus of 1.5×.",Increases the same-type attack bonus from 1.5× to 2×.,"eevee, corphish, crawdaunt, feebas, porygon-z, basculin-red-striped, skrelp, dragalge, yungoos, gumshoos, basculegion-male, basculin-blue-striped, lucario-mega, beedrill-mega, gumshoos-totem, eevee-starter, eevee-gmax, basculin-white-striped, basculegion-female",https://pokeapi.co/api/v2/ability/91/
+92,skill-link,skill_link,generation-iv,"This Pokémon always hits five times with two-to-five-hit moves, such as icicle spear.  It also bypasses the accuracy checks on triple kick's second and third hits.",Extends two-to-five-hit moves and triple kick to their full length every time.,"shellder, cloyster, aipom, ambipom, minccino, cinccino, pikipek, trumbeak, toucannon, heracross-mega",https://pokeapi.co/api/v2/ability/92/
+93,hydration,hydration,generation-iv,This Pokémon is cured of any major status ailment after each turn during rain.,Cures any major status ailment after each turn during rain.,"seel, dewgong, lapras, vaporeon, smoochum, wingull, barboach, whiscash, gorebyss, luvdisc, phione, manaphy, tympole, palpitoad, ducklett, swanna, alomomola, shelmet, accelgor, goomy, sliggoo, goodra, lapras-gmax",https://pokeapi.co/api/v2/ability/93/
+94,solar-power,solar_power,generation-iv,"During strong sunlight, this Pokémon has 1.5× its Special Attack but takes 1/8 of its maximum HP in damage after each turn.",Increases Special Attack to 1.5× but costs 1/8 max HP after each turn during strong sunlight.,"charmander, charmeleon, charizard, sunkern, sunflora, tropius, helioptile, heliolisk, houndoom-mega, charizard-gmax",https://pokeapi.co/api/v2/ability/94/
+95,quick-feet,quick_feet,generation-iv,"Whenever this Pokémon has a major status ailment, it has 1.5× its Speed.  This Pokémon is not affected by the usual Speed cut from paralysis.
+
+Overworld: If the lead Pokémon has this ability, the wild encounter rate is halved.",Increases Speed to 1.5× with a major status ailment.,"jolteon, granbull, teddiursa, ursaring, poochyena, mightyena, zigzagoon, linoone, shroomish, zigzagoon-galar, linoone-galar",https://pokeapi.co/api/v2/ability/95/
+96,normalize,normalize,generation-iv,"This Pokémon's moves all act as if they were normal-type.
+
+Moves that inflict typeless damage do so as usual.  Moves of variable type, such as hidden power, are affected.  They otherwise work as usual, however; weather ball, for example, is always forced to be Normal, but it still has doubled power and looks different during weather.
+
+As thunder wave is prevented by immunities, unlike most non-damaging moves, it does not affect ghost-type Pokémon under the effect of this ability.",Makes the Pokémon's moves all act normal-type.,"skitty, delcatty",https://pokeapi.co/api/v2/ability/96/
+97,sniper,sniper,generation-iv,"This Pokémon inflicts triple damage with critical hits, rather than the usual double damage.",Strengthens critical hits to inflict 3× damage rather than 2×.,"beedrill, spearow, fearow, horsea, seadra, spinarak, ariados, remoraid, octillery, kingdra, skorupi, drapion, binacle, barbaracle, sobble, drizzile, inteleon, inteleon-gmax",https://pokeapi.co/api/v2/ability/97/
+98,magic-guard,magic_guard,generation-iv,"This Pokémon is immune to damage not directly caused by a move.
+
+For example, this Pokémon takes no damage from from weather, recoil, status ailments, or spikes, but it still suffers from the Attack cut when burned, and a life orb will still power up this Pokémon's moves without damaging it.  Anything that directly depends on such damage will also not happen; for example, leech seed will neither hurt this Pokémon nor heal the opponent, and Pokémon with a jaboca berry or rowap berry will not consume the berry when hit by this Pokémon.
+
+The following are unaffected: struggle, pain split (whether used by or against this Pokémon), belly drum, substitute, curse, moves that knock the user out, and damage from confusion.
+
+This Pokémon will neither lose nor regain HP if it drains HP from a Pokémon with liquid ooze.
+
+If this Pokémon is badly poisoned, the poison counter is still increased each turn; if the Pokémon loses this ability, it will begin taking as much damage as it would be if it had been taking increasing damage each turn.",Protects against damage not directly caused by a move.,"clefairy, clefable, abra, kadabra, alakazam, cleffa, sigilyph, solosis, duosion, reuniclus",https://pokeapi.co/api/v2/ability/98/
+99,no-guard,no_guard,generation-iv,"Moves used by or against this Pokémon never miss.
+
+One-hit KO moves are unaffected.  Moves affected by this ability can hit Pokémon during the preparation turn of moves like dig or fly.
+
+Overworld: If the lead Pokémon has this ability, the wild encounter rate is doubled.",Ensures all moves used by and against the Pokémon hit.,"machop, machoke, machamp, karrablast, golett, golurk, honedge, doublade, pidgeot-mega, lycanroc-midnight, machamp-gmax",https://pokeapi.co/api/v2/ability/99/
+100,stall,stall,generation-iv,"This Pokémon moves last within its priority bracket.
+
+Multiple Pokémon with this ability move in order of Speed amongst themselves.
+
+The full incense and lagging tail take precedence over this ability; that is, Pokémon with these items move after Pokémon with this ability.  Pokémon with both this ability and one of these items are delayed as much as if they had only the item.
+
+This ability works as usual during trick room: Pokémon with this ability will move in reverse order of Speed after Pokémon without it.",Makes the Pokémon move last within its move's priority bracket.,sableye,https://pokeapi.co/api/v2/ability/100/
+101,technician,technician,generation-iv,"This Pokémon's moves have 1.5× their power if their base power is 60 or less.
+
+This includes moves of variable power, such as hidden power and magnitude, when their power is 60 or less.  helping hand's power boost is taken into account for any move, as is defense curl's power boost for rollout.",Strengthens moves of 60 base power or less to 1.5× their power.,"meowth, persian, mr-mime, scyther, scizor, smeargle, hitmontop, breloom, kricketune, roserade, ambipom, mime-jr, minccino, cinccino, marshadow, toxtricity-amped, clobbopus, grapploct, maushold-family-of-four, fezandipiti, scizor-mega, meowth-alola, persian-alola, toxtricity-low-key, meowth-gmax, toxtricity-amped-gmax, toxtricity-low-key-gmax, maushold-family-of-three",https://pokeapi.co/api/v2/ability/101/
+102,leaf-guard,leaf_guard,generation-iv,"This Pokémon cannot be given a major status ailment during strong sunlight.
+
+This ability does not heal prior status ailments.  rest will fail altogether with this ability in effect.  yawn will immediately fail if used on this Pokémon during strong sunlight, and an already-used Yawn will fail if the weather turns to strong sunlight in the meantime.",Protects against major status ailments during strong sunlight.,"tangela, chikorita, bayleef, meganium, hoppip, skiploom, jumpluff, roselia, budew, tangrowth, leafeon, swadloon, petilil, lilligant, fomantis, lurantis, bounsweet, steenee, tsareena, zarude, lurantis-totem, zarude-dada, lilligant-hisui",https://pokeapi.co/api/v2/ability/102/
+103,klutz,klutz,generation-iv,"In battle, this Pokémon cannot use its held item, nor will the item have any passive effect on the battle, positive or negative.  This Pokémon also cannot use fling.
+
+The Speed cut from the iron ball and the effort items (the macho brace, power weight, power bracer, power belt, power lens, power band, and power anklet) is unaffected.  Items that do not directly affect the battle, such as the exp share, the amulet coin, or the soothe bell, work as usual.  All held items work as usual out of battle.
+
+Other moves that use the held item, such as natural gift and switcheroo, work as usual.",Prevents the Pokémon from using its held item in battle.,"buneary, lopunny, woobat, swoobat, audino, golett, golurk, stufful, bewear, toxel, fidough, capsakid",https://pokeapi.co/api/v2/ability/103/
+104,mold-breaker,mold_breaker,generation-iv,"This Pokémon's moves completely ignore abilities that could hinder or prevent their effect on the target.
+
+For example, this Pokémon's moves ignore abilities that would fully negate them, such as water absorb; abilities that would prevent any of their effects, such as clear body, shell armor, or sticky hold; and abilities that grant any general protective benefit, such as simple, snow cloak, or thick fat.  If an ability could either hinder or help this Pokémon's moves, e.g. dry skin or unaware, the ability is ignored either way.
+
+Abilities that do not fit this description, even if they could hinder moves in some other way, are not affected.  For example, cursed body only affects potential future uses of the move, while liquid ooze and shadow tag can only hinder a move's effect on the user.  This ablity cannot ignore type or form changes granted by abilities, for example color change or forecast; nor effects that were caused by abilities but are no longer tied to an ability, such as the rain from drizzle.  This ability cannot ignore multitype at all.
+
+An ability ignored by this ability is only nullified while the move is being used.  For example, this Pokémon's moves can paralyze a Pokémon with limber, but Limber will activate and heal the paralysis immediately thereafter, and this Pokémon's spikes are not affected by this ability after they have been placed.
+
+When this Pokémon enters battle, all participating trainers are notified that it has this ability.
+
+This ability functions identically to teravolt and turboblaze.",Bypasses targets' abilities if they could hinder or prevent a move.,"pinsir, cranidos, rampardos, drilbur, excadrill, throh, sawk, basculin-red-striped, axew, fraxure, haxorus, druddigon, pancham, pangoro, hawlucha, basculegion-male, tinkatink, tinkatuff, tinkaton, veluza, basculin-blue-striped, gyarados-mega, ampharos-mega, basculin-white-striped, basculegion-female, ogerpon-hearthflame-mask",https://pokeapi.co/api/v2/ability/104/
+105,super-luck,super_luck,generation-iv,This Pokémon's moves have critical hit rates one stage higher than normal.,Raises moves' critical hit rates one stage.,"togepi, togetic, murkrow, absol, honchkrow, togekiss, pidove, tranquill, unfezant",https://pokeapi.co/api/v2/ability/105/
+106,aftermath,aftermath,generation-iv,"When this Pokémon is knocked out by a move that makes contact, the move's user takes 1/4 its maximum HP in damage.",Damages the attacker for 1/4 its max HP when knocked out by a contact move.,"voltorb, electrode, drifloon, drifblim, stunky, skuntank, trubbish, garbodor, garbodor-gmax, voltorb-hisui, electrode-hisui",https://pokeapi.co/api/v2/ability/106/
+107,anticipation,anticipation,generation-iv,"When this Pokémon enters battle, if one of its opponents has a move that is super effective against it, self destruct, explosion, or a one-hit knockout move, all participating trainers are notified.
+
+The move itself is not revealed; only that there is such a move.  Moves that inflict typeless damage, such as future sight, and moves of variable type, such as hidden power, count as their listed types.  counter, metal burst, mirror coat, and one-hit KO moves to which this Pokémon is immune do not trigger this ability.","Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move.","eevee, barboach, whiscash, wormadam-plant, croagunk, toxicroak, ferrothorn, hatenna, hattrem, hatterene, flittle, wormadam-sandy, wormadam-trash, eevee-starter, ponyta-galar, rapidash-galar, eevee-gmax, hatterene-gmax",https://pokeapi.co/api/v2/ability/107/
+108,forewarn,forewarn,generation-iv,"When this Pokémon enters battle, it reveals the move with the highest base power known by any opposing Pokémon to all participating trainers.
+
+In the event of a tie, one is chosen at random.
+
+Moves without a listed base power are assigned one as follows:
+
+Power | Moves
+----: | -----
+  160 | One-hit KO moves: fissure, guillotine, horn drill, and sheer cold
+  120 | Counter moves: counter, metal burst, and mirror coat
+   80 | Variable power or set damage: crush grip, dragon rage, electro ball, endeavor, final gambit, flail, frustration, grass knot, gyro ball, heat crash, heavy slam, hidden power, low kick, natural gift, night shade, psywave, return, reversal, seismic toss, sonic boom, trump card, and wring out
+    0 | Any such move not listed
+",Reveals the opponents' strongest move upon entering battle.,"drowzee, hypno, jynx, smoochum, munna, musharna",https://pokeapi.co/api/v2/ability/108/
+109,unaware,unaware,generation-iv,"This Pokémon ignores other Pokémon's stat modifiers for the purposes of damage and accuracy calculation.
+
+Effectively, this affects modifiers of every stat except Speed.
+
+The power of punishment and stored power is calculated as usual.  When this Pokémon hurts itself in confusion, its stat modifiers affect damage as usual.",Ignores other Pokémon's stat modifiers for damage and accuracy calculation.,"clefable, wooper, quagsire, bidoof, bibarel, woobat, swoobat, pyukumuku, cosmog, fuecoco, crocalor, skeledirge, dondozo, clodsire, wooper-paldea",https://pokeapi.co/api/v2/ability/109/
+110,tinted-lens,tinted_lens,generation-iv,This Pokémon deals twice as much damage with moves that are not very effective against the target.,Doubles damage inflicted with not-very-effective moves.,"butterfree, venonat, venomoth, hoothoot, noctowl, illumise, mothim, yanmega, sigilyph, nymble, lokix, butterfree-gmax, braviary-hisui",https://pokeapi.co/api/v2/ability/110/
+111,filter,filter,generation-iv,"This Pokémon takes 0.75× as much damage from moves that are super effective against it.
+
+This ability functions identically to solid rock.",Decreases damage taken from super-effective moves by 1/4.,"mr-mime, mime-jr, revavroom, aggron-mega",https://pokeapi.co/api/v2/ability/111/
+112,slow-start,slow_start,generation-iv,"This Pokémon's Attack and Speed are halved for five turns upon entering battle.
+
+This ability also takes effect when acquired during battle.  If this Pokémon loses its ability before the five turns are up, its Attack and Speed return to normal; if it then regains this ability without leaving battle, its Attack and Speed are halved again, but the counter keeps counting from where it was.",Halves Attack and Speed for five turns upon entering battle.,"regigigas, varoom",https://pokeapi.co/api/v2/ability/112/
+113,scrappy,scrappy,generation-iv,"This Pokémon ignores ghost-type Pokémon's immunity to normal- and fighting-type moves.
+
+Ghost Pokémon's other types affect damage as usual.",Lets the Pokémon's normal and fighting moves hit ghost Pokémon.,"kangaskhan, miltank, taillow, swellow, loudred, exploud, herdier, stoutland, pancham, pangoro, sirfetchd, flamigo, lopunny-mega, farfetchd-galar, decidueye-hisui",https://pokeapi.co/api/v2/ability/113/
+114,storm-drain,storm_drain,generation-iv,"All other Pokémon's single-target water-type moves are redirected to this Pokémon, if it is an eligible target.  Other Pokémon's Water moves raise this Pokémon's Special Attack one stage, negating any other effect on it, and cannot miss it.
+
+If the move's intended target also has this ability, the move is not redirected.  When multiple Pokémon with this ability are possible targets for redirection, the move is redirected to the one with the highest Speed stat, or, in the case of a tie, to a random tied Pokémon.  follow me takes precedence over this ability.","Redirects single-target water moves to this Pokémon where possible.  Absorbs Water moves, raising Special Attack one stage.","lileep, cradily, shellos, gastrodon, finneon, lumineon, maractus, tatsugiri-curly, tatsugiri-droopy, tatsugiri-stretchy",https://pokeapi.co/api/v2/ability/114/
+115,ice-body,ice_body,generation-iv,"This Pokémon heals for 1/16 of its maximum HP after each turn during hail, and it does not take hail damage regardless of type.",Heals for 1/16 max HP after each turn during hail.  Protects against hail damage.,"seel, dewgong, snorunt, glalie, spheal, sealeo, walrein, regice, glaceon, vanillite, vanillish, vanilluxe, bergmite, avalugg, mr-rime, arctovish, frigibax, arctibax, baxcalibur, mr-mime-galar, avalugg-hisui",https://pokeapi.co/api/v2/ability/115/
+116,solid-rock,solid_rock,generation-iv,"This Pokémon takes 0.75× as much damage from moves that are super effective against it.
+
+This ability functions identically to filter.",Decreases damage taken from super-effective moves by 1/4.,"camerupt, rhyperior, tirtouga, carracosta",https://pokeapi.co/api/v2/ability/116/
+117,snow-warning,snow_warning,generation-iv,"The weather changes to hail when this Pokémon enters battle and does not end unless cancelled by another weather condition.
+
+If multiple Pokémon with this ability, drizzle, drought, or sand stream are sent out at the same time, the abilities will activate in order of Speed, respecting trick room.  Each ability's weather will cancel the previous weather, and only the weather summoned by the slowest of the Pokémon will stay.",Summons hail that lasts indefinitely upon entering battle.,"snover, abomasnow, vanilluxe, amaura, aurorus, abomasnow-mega, vulpix-alola, ninetales-alola",https://pokeapi.co/api/v2/ability/117/
+118,honey-gather,honey_gather,generation-iv,"This Pokémon has a chance of picking up honey after each battle.  This chance starts at 5% and rises another 5% after every tenth level: 5% from level 1–10, 10% from 11–20, and so on, up to 50% from 91–100.
+
+This ability is checked after the battle ends, at which point any temporary ability changes have worn off.",The Pokémon may pick up honey after battle.,"teddiursa, combee, cutiefly, ribombee, ribombee-totem",https://pokeapi.co/api/v2/ability/118/
+119,frisk,frisk,generation-iv,"When this Pokémon enters battle, it reveals an opposing Pokémon's held item to all participating trainers.
+
+In a double battle, if one opponent has an item, this Pokémon will Frisk that Pokémon; if both have an item, it will Frisk one at random.",Reveals an opponent's held item upon entering battle.,"wigglytuff, sentret, furret, yanma, stantler, shuppet, banette, duskull, dusclops, yanmega, dusknoir, gothita, gothorita, gothitelle, phantump, trevenant, pumpkaboo-average, gourgeist-average, noibat, noivern, orbeetle, impidimp, morgrem, grimmsnarl, wyrdeer, flittle, espathra, munkidori, pumpkaboo-small, pumpkaboo-large, pumpkaboo-super, gourgeist-small, gourgeist-large, gourgeist-super, exeggutor-alola, orbeetle-gmax, grimmsnarl-gmax, typhlosion-hisui",https://pokeapi.co/api/v2/ability/119/
+120,reckless,reckless,generation-iv,"This Pokémon's recoil moves and crash moves have 1.2× their base power.
+
+struggle is unaffected.
+
+The ""crash moves"" are the moves that damage the user upon missing: jump kick and high jump kick.",Strengthens recoil moves to 1.2× their power.,"hitmonlee, rhyhorn, rhydon, starly, staravia, staraptor, rhyperior, emboar, basculin-red-striped, mienfoo, mienshao, bouffalant, obstagoon",https://pokeapi.co/api/v2/ability/120/
+121,multitype,multitype,generation-iv,"If this Pokémon is holding an elemental Plate, its type and form change to match the Plate.
+
+This Pokémon's held item, whether or not it is a Plate, cannot be taken by covet or thief, nor removed by knock off, nor traded by switcheroo or trick.  Covet, Thief, and Knock Off still inflict damage against this Pokémon.  Unlike with sticky hold, this Pokémon cannot use fling, Switcheroo, or Trick to lose its item itself, nor gain an item through Switcheroo or Trick if it does not have one.
+
+This ability has no effect for any Pokémon other than arceus.  This ability cannot be traded with skill swap, nor copied with role play or trace, nor disabled with gastro acid, nor changed with worry seed.  This Pokémon cannot use Skill Swap or Role Play to lose its ability itself.  mold breaker cannot ignore this ability.
+
+If a Pokémon Transforms into an Arceus with this ability, it will Transform into Arceus's default, normal-type form.  If the Transforming Pokémon is holding a Plate, this ability will then activate and change the Pokémon into the corresponding form.",Changes arceus's type and form to match its held Plate.,arceus,https://pokeapi.co/api/v2/ability/121/
+122,flower-gift,flower_gift,generation-iv,"Friendly Pokémon have 1.5× their Attack and Special Defense during strong sunlight if any friendly Pokémon has this ability.
+
+Unlike forecast, multitype, and zen mode, this ability is not tied to its Pokémon's form change; cherrim will switch between its forms even if it loses this ability.  As such, this ability also works if obtained by a Pokémon other than Cherrim.",Increases friendly Pokémon's Attack and Special Defense to 1.5× during strong sunlight.,cherrim,https://pokeapi.co/api/v2/ability/122/
+123,bad-dreams,bad_dreams,generation-iv,Opposing Pokémon take 1/8 of their maximum HP in damage after each turn while they are asleep.,Damages sleeping opponents for 1/8 their max HP after each turn.,darkrai,https://pokeapi.co/api/v2/ability/123/

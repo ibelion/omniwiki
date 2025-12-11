@@ -1,0 +1,2 @@
+id,name,slug,generation,double_damage_to,double_damage_from,half_damage_to,half_damage_from,no_damage_to,no_damage_from,sourceUrl
+18,fairy,fairy,generation-vi,"fighting, dragon, dark","poison, steel","poison, steel, fire","fighting, bug, dark",,dragon,https://pokeapi.co/api/v2/type/18/
