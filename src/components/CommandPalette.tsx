@@ -2,17 +2,21 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { pokemonData } from "../lib/pokemon/data";
 
 const OPEN_EVENT = "omniwiki:open-command-palette";
 
-const entries =
-  pokemonData.indexes?.nameIndex ??
-  pokemonData.pokemon.map((p) => ({ slug: p.slug, name: p.name }));
+export type CommandPaletteEntry = {
+  slug: string;
+  name: string;
+};
 
 const normalize = (value: string) => value.toLowerCase().trim();
 
-export function CommandPalette() {
+type CommandPaletteProps = {
+  entries: CommandPaletteEntry[];
+};
+
+export function CommandPalette({ entries }: CommandPaletteProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
@@ -63,7 +67,7 @@ export function CommandPalette() {
     return entries
       .filter((entry) => normalize(entry.name).includes(normalized))
       .slice(0, 12);
-  }, [query]);
+  }, [entries, query]);
 
   if (!isOpen) return null;
 
@@ -83,15 +87,15 @@ export function CommandPalette() {
             ref={inputRef}
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search Pokémon (Ctrl/Cmd + K)"
+            placeholder="Search Pokemon (Ctrl/Cmd + K)"
             className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-900 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
-            aria-label="Search Pokémon"
+            aria-label="Search Pokemon"
           />
         </div>
         <ul className="max-h-80 overflow-y-auto">
           {results.length === 0 && (
             <li className="px-4 py-3 text-sm text-gray-500">
-              No Pokémon match “{query}”.
+              No Pokemon match "{query}".
             </li>
           )}
           {results.map((entry) => (
@@ -103,7 +107,7 @@ export function CommandPalette() {
               >
                 <span>{entry.name}</span>
                 <span className="text-xs uppercase tracking-wide text-gray-400">
-                  Pokémon
+                  Pokemon
                 </span>
               </Link>
             </li>
