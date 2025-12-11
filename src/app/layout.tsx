@@ -2,12 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {
-  CommandPalette,
-  CommandPaletteEntry,
-} from "../components/CommandPalette";
+import { CommandPalette } from "../components/CommandPalette";
 import { CommandPaletteButton } from "../components/CommandPaletteButton";
-import { pokemonData } from "../lib/pokemon/data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,10 +25,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const paletteEntries: CommandPaletteEntry[] =
-    pokemonData.indexes?.nameIndex ??
-    pokemonData.pokemon.map((p) => ({ slug: p.slug, name: p.name }));
-
   return (
     <html lang="en">
       <body
@@ -89,7 +81,7 @@ export default function RootLayout({
           </div>
         </header>
         {children}
-        <CommandPalette entries={paletteEntries} />
+        <CommandPalette />
       </body>
     </html>
   );

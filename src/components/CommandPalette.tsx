@@ -2,24 +2,22 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import type { PokemonRecord } from "@/lib/pokemon/types";
 
 const OPEN_EVENT = "omniwiki:open-command-palette";
 
-export type CommandPaletteEntry = {
+type CommandPaletteEntry = {
   slug: string;
   name: string;
 };
 
 const normalize = (value: string) => value.toLowerCase().trim();
 
-type CommandPaletteProps = {
-  entries: CommandPaletteEntry[];
-};
-
-export function CommandPalette({ entries }: CommandPaletteProps) {
+export function CommandPalette() {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
+  const [entries, setEntries] = useState<CommandPaletteEntry[]>([]);
 
   useEffect(() => {
     const handleShortcut = (event: KeyboardEvent) => {
@@ -43,6 +41,28 @@ export function CommandPalette({ entries }: CommandPaletteProps) {
     return () => {
       window.removeEventListener("keydown", handleShortcut);
       window.removeEventListener(OPEN_EVENT, handleExternalOpen);
+    };
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    const load = async () => {
+      try {
+        const res = await fetch("/pokemoncontent/data/pokemon.json", {
+          cache: "force-cache",
+        });
+        if (!res.ok) return;
+        const pokemon = (await res.json()) as PokemonRecord[];
+        if (!cancelled) {
+          setEntries(pokemon.map((p) => ({ slug: p.slug, name: p.name })));
+        }
+      } catch {
+        // ignore fetch errors in the palette UI
+      }
+    };
+    load();
+    return () => {
+      cancelled = true;
     };
   }, []);
 

@@ -1,6 +1,8 @@
+export const runtime = "edge";
+
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { pokemonData, getPokemonBySlug } from "@/lib/pokemon/data";
+import { getPokemonBundleEdge } from "@/lib/edge-data";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -8,7 +10,8 @@ type PageProps = {
 
 export default async function PokemonDetail({ params }: PageProps) {
   const { slug } = await params;
-  const pokemon = getPokemonBySlug(slug);
+  const pokemonData = await getPokemonBundleEdge();
+  const pokemon = pokemonData.pokemon.find((p) => p.slug === slug);
   if (!pokemon) {
     notFound();
   }

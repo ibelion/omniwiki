@@ -1,7 +1,13 @@
+export const runtime = "edge";
+
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { pokemonData } from "@/lib/pokemon/data";
-import type { LearnsetEntry, PokemonRecord, MoveRecord } from "@/lib/pokemon/types";
+import { getPokemonBundleEdge } from "@/lib/edge-data";
+import type {
+  LearnsetEntry,
+  PokemonRecord,
+  MoveRecord,
+} from "@/lib/pokemon/types";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -24,6 +30,7 @@ const renderMetaValue = (move: MoveRecord, key: keyof MoveRecord) => {
 
 export default async function MoveDetail({ params }: PageProps) {
   const { slug } = await params;
+  const pokemonData = await getPokemonBundleEdge();
   const move = pokemonData.moves.find((m) => m.slug === slug);
   if (!move) {
     notFound();

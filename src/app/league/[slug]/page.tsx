@@ -1,6 +1,8 @@
+export const runtime = "edge";
+
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getChampionBySlug, leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -8,7 +10,8 @@ type PageProps = {
 
 export default async function ChampionDetail({ params }: PageProps) {
   const { slug } = await params;
-  const champion = getChampionBySlug(slug);
+  const leagueData = await getLeagueBundleEdge();
+  const champion = leagueData.champions.find((c) => c.slug === slug);
   if (!champion) {
     notFound();
   }

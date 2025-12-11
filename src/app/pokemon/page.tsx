@@ -1,21 +1,12 @@
-import Link from "next/link";
-import { pokemonData } from "../../lib/pokemon/data";
+export const runtime = "edge";
 
-const universeStats = [
-  { label: "Pokémon", value: pokemonData.pokemon.length },
-  { label: "Moves", value: pokemonData.moves.length },
-  { label: "Abilities", value: pokemonData.abilities.length },
-  { label: "Items", value: pokemonData.items?.length ?? 0 },
-];
+import Link from "next/link";
+import { getPokemonBundleEdge } from "@/lib/edge-data";
 
 type SearchParams = {
   q?: string;
   type?: string;
 };
-
-const typeOptions = Array.from(
-  new Set(pokemonData.types.map((t) => t.slug))
-).sort();
 
 const dataLinks = [
   { label: "Items", href: "/pokemon/items" },
@@ -32,6 +23,17 @@ export default async function PokemonIndex({
 }: {
   searchParams: Promise<SearchParams>;
 }) {
+  const pokemonData = await getPokemonBundleEdge();
+  const universeStats = [
+    { label: "Pokémon", value: pokemonData.pokemon.length },
+    { label: "Moves", value: pokemonData.moves.length },
+    { label: "Abilities", value: pokemonData.abilities.length },
+    { label: "Items", value: pokemonData.items?.length ?? 0 },
+  ];
+  const typeOptions = Array.from(
+    new Set(pokemonData.types.map((t) => t.slug))
+  ).sort();
+
   const resolved = await searchParams;
   const query = (resolved.q || "").toLowerCase();
   const typeFilter = resolved.type || "";
