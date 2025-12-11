@@ -95,7 +95,7 @@ export function CommandPalette({ entries }: CommandPaletteProps) {
         <ul className="max-h-80 overflow-y-auto">
           {results.length === 0 && (
             <li className="px-4 py-3 text-sm text-gray-500">
-              No Pokemon match "{query}".
+              No Pokemon match &ldquo;{query}&rdquo;.
             </li>
           )}
           {results.map((entry) => (

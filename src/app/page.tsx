@@ -136,7 +136,7 @@ export default function Home() {
           <p className="max-w-3xl text-lg text-gray-600">
             Browse living dossiers for Pokemon and League of Legends - fueled by
             your scrapers - and preview the next universe coming online. Pick a
-            card to inspect each world's live stats, links, and roadmap.
+            card to inspect each world&apos;s live stats, links, and roadmap.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link

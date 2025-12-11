@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { CommandPalette, CommandPaletteEntry } from "../components/CommandPalette";
+import {
+  CommandPalette,
+  CommandPaletteEntry,
+} from "../components/CommandPalette";
 import { CommandPaletteButton } from "../components/CommandPaletteButton";
 import { pokemonData } from "../lib/pokemon/data";
 
@@ -51,27 +55,27 @@ export default function RootLayout({
             </div>
             <div className="flex items-center gap-2">
               <nav className="flex items-center gap-2 text-sm font-semibold">
-                <a
+                <Link
                   href="/"
                   className="rounded-lg px-3 py-2 text-gray-900 transition hover:bg-gray-100"
                   aria-label="Home"
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/pokemon"
                   className="rounded-lg px-3 py-2 text-indigo-700 transition hover:bg-indigo-50"
-                  aria-label="Pokémon universe"
+                  aria-label="Pokemon universe"
                 >
-                  Pokémon
-                </a>
-                <a
+                  Pokemon
+                </Link>
+                <Link
                   href="/league"
                   className="rounded-lg px-3 py-2 text-emerald-700 transition hover:bg-emerald-50"
                   aria-label="League universe"
                 >
                   League
-                </a>
+                </Link>
                 <a
                   href="#"
                   className="rounded-lg px-3 py-2 text-gray-400 transition hover:bg-gray-100"
