@@ -16,6 +16,13 @@ const nextConfig: NextConfig = {
         { key: "Content-Encoding", value: "gzip" },
       ],
     },
+    {
+      source: "/pokemoncontent/data/pokemon_moves.csv",
+      headers: [
+        { key: "Content-Type", value: "text/csv; charset=utf-8" },
+        { key: "Content-Encoding", value: "gzip" },
+      ],
+    },
   ],
 };
 
