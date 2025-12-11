@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next-on-pages",
+    "build": "next build",
+    "cf:build": "next-on-pages",
     "start": "next start",
     "lint": "next lint",
     "build:data": "node --import tsx ./scripts/build-pokemon.ts && node --import tsx ./scripts/build-league.ts"
