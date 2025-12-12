@@ -47,13 +47,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  experimental: Array.isArray(
-    (NextConfig as unknown as { experimental?: unknown }).experimental
-  )
-    ? {
-        serverComponentsExternalPackages: ["sharp"],
-      }
-    : undefined,
 };
 
 export default nextConfig;
