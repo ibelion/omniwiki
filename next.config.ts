@@ -47,6 +47,12 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  experimental: {
+    runtime: {
+      // Keep League & other pages on edge, but run Pokémon pages as Node.js
+      "(pokemon)": "nodejs",
+    },
+  },
 };
 
 export default nextConfig;
