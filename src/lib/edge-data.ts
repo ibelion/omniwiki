@@ -7,8 +7,11 @@ const getBaseUrl = () => {
     if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
     if (process.env.CF_PAGES_URL) return `https://${process.env.CF_PAGES_URL}`;
     if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+    if (process.env.NODE_ENV === "development") {
+      return "http://127.0.0.1:3000";
+    }
   }
-  return "http://127.0.0.1:3000";
+  return "https://omniwiki.pages.dev";
 };
 
 const fetchJson = async <T>(path: string): Promise<T> => {
