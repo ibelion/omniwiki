@@ -24,9 +24,15 @@ const OUTPUT_DIR = DATA_DIR;
 const EXPORT_DIR = path.join(process.cwd(), "public", "exports", "pokemon");
 const PLACEHOLDER_ITEM_SLUG = "item_none";
 
+const isGzipBuffer = (buffer: Buffer) =>
+  buffer.length > 2 && buffer[0] === 0x1f && buffer[1] === 0x8b;
+
 const readCsv = (filename: string) => {
   const filePath = path.join(DATA_DIR, filename);
-  const raw = fs.readFileSync(filePath, "utf8");
+  const buffer = fs.readFileSync(filePath);
+  const raw = isGzipBuffer(buffer)
+    ? zlib.gunzipSync(buffer).toString("utf8")
+    : buffer.toString("utf8");
   return parse(raw, { columns: true, skip_empty_lines: true });
 };
 
@@ -309,9 +315,27 @@ const writeJson = (filename: string, data: unknown) => {
     fs.writeFileSync(exportTarget, compressed);
   } else {
     fs.writeFileSync(target, json, "utf8");
-    fs.writeFileSync(exportTarget, json, "utf8");
+  fs.writeFileSync(exportTarget, json, "utf8");
   }
   console.log(`✅ wrote ${filename}`);
+};
+
+const compressLargeCsvs = () => {
+  const entries = fs.readdirSync(DATA_DIR, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isFile() || !entry.name.endsWith(".csv")) continue;
+    const filePath = path.join(DATA_DIR, entry.name);
+    const buffer = fs.readFileSync(filePath);
+    if (isGzipBuffer(buffer)) continue;
+    if (buffer.length < 5 * 1024 * 1024) continue;
+    const gz = zlib.gzipSync(buffer);
+    fs.writeFileSync(filePath, gz);
+    console.log(
+      `🌀 compressed ${entry.name} (${(buffer.length / 1024 / 1024).toFixed(
+        1
+      )}MB → ${(gz.length / 1024 / 1024).toFixed(1)}MB)`
+    );
+  }
 };
 
 const main = () => {
@@ -356,6 +380,7 @@ const main = () => {
   writeJson("pokemon_types.json", pokemonTypes);
   writeJson("sprites.json", sprites);
   writeJson("bundle.json", bundle);
+  compressLargeCsvs();
 };
 
 main();
