@@ -2,4 +2,3 @@ public/pokemoncontent/data/*.csv filter=lfs diff=lfs merge=lfs -text
 public/exports/pokemon/*.json filter=lfs diff=lfs merge=lfs -text
 public/pokemoncontent/data/bundle.json filter=lfs diff=lfs merge=lfs -text
 public/exports/pokemon/bundle.json filter=lfs diff=lfs merge=lfs -text
-public/pokemoncontent/data/learnsets.json filter=lfs diff=lfs merge=lfs -text
