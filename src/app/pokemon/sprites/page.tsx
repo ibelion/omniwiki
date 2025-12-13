@@ -33,6 +33,9 @@ export default function PokemonSpritesPage() {
               src={`/pokemoncontent/${sprite.image}`}
               alt={`${sprite.pokemonSlug} ${sprite.spriteType}`}
               className="h-32 w-full rounded-lg border border-gray-100 object-contain bg-gray-50"
+              onError={(e) => {
+                e.currentTarget.src = "/globe.svg";
+              }}
             />
             <p className="text-xs text-gray-500 break-all">{sprite.image}</p>
           </article>

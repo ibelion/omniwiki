@@ -151,6 +151,9 @@ export default async function PokemonIndex({
                 alt={`${pokemon.name} sprite`}
                 className="h-16 w-16 rounded-lg border border-gray-100 bg-gray-50 object-contain"
                 loading="lazy"
+                onError={(e) => {
+                  e.currentTarget.src = "/globe.svg";
+                }}
               />
               <h2 className="text-lg font-semibold text-gray-900">
                 {pokemon.name}

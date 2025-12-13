@@ -1,6 +1,7 @@
-import { leagueData } from "@/lib/league/data";
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
-const objectives = leagueData.objectives;
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
 const formatDate = (value: number | null) => {
   if (!value) return "Unknown";
@@ -8,7 +9,10 @@ const formatDate = (value: number | null) => {
   return isNaN(date.getTime()) ? value.toString() : date.toISOString();
 };
 
-export default function LeagueObjectivesPage() {
+export default async function LeagueObjectivesPage() {
+  const leagueData = await getLeagueBundleEdge();
+  const objectives = leagueData.objectives;
+
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-4 bg-gray-50 px-6 py-10">
       <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">

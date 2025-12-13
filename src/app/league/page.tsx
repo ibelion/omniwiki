@@ -1,5 +1,8 @@
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
+
 import Link from "next/link";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
 const dataLinks = [
   { label: "Items", href: "/league/items" },
@@ -14,7 +17,8 @@ const dataLinks = [
   { label: "Ward Skins", href: "/league/wards" },
 ];
 
-export default function LeaguePage() {
+export default async function LeaguePage() {
+  const leagueData = await getLeagueBundleEdge();
   const champions = leagueData.champions;
   const featuredItems = leagueData.items.slice(0, 6);
   const keystoneRunes = leagueData.runes
@@ -98,6 +102,9 @@ export default function LeaguePage() {
                 }
                 alt={`${champion.name} icon`}
                 className="h-16 w-16 rounded-xl border border-gray-100 object-cover"
+                onError={(e) => {
+                  e.currentTarget.src = "/globe.svg";
+                }}
               />
               <div>
                 <p className="text-sm font-semibold text-gray-500">
@@ -167,6 +174,9 @@ export default function LeaguePage() {
                     src={item.image ? `/leaguecontent/${item.image}` : "/file.svg"}
                     alt={`${item.name} icon`}
                     className="h-10 w-10 rounded-lg border border-gray-200 object-cover"
+                    onError={(e) => {
+                      e.currentTarget.src = "/file.svg";
+                    }}
                   />
                   <div>
                     <p className="font-semibold">{item.name}</p>
@@ -209,6 +219,9 @@ export default function LeaguePage() {
                     src={rune.icon ? `/leaguecontent/${rune.icon}` : "/globe.svg"}
                     alt={`${rune.name} icon`}
                     className="h-10 w-10 rounded-lg border border-gray-200 object-cover"
+                    onError={(e) => {
+                      e.currentTarget.src = "/globe.svg";
+                    }}
                   />
                   <div>
                     <p className="font-semibold">{rune.name}</p>
@@ -296,6 +309,9 @@ export default function LeaguePage() {
                     src={`/leaguecontent/${skin.splash}`}
                     alt={`${skin.name} splash`}
                     className="mt-2 h-28 w-full rounded-lg object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
                   />
                 )}
               </div>

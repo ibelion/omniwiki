@@ -1,12 +1,15 @@
-import { leagueData } from "@/lib/league/data";
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
-const runes = leagueData.runes;
-const spells = leagueData.summonerSpells;
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
-const keystones = runes.filter((rune) => rune.slot === 0);
-const minorRunes = runes.filter((rune) => rune.slot !== 0);
+export default async function LeagueSystemsPage() {
+  const leagueData = await getLeagueBundleEdge();
+  const runes = leagueData.runes;
+  const spells = leagueData.summonerSpells;
 
-export default function LeagueSystemsPage() {
+  const keystones = runes.filter((rune) => rune.slot === 0);
+  const minorRunes = runes.filter((rune) => rune.slot !== 0);
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-gray-50 px-6 py-10">
       <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -46,6 +49,9 @@ export default function LeagueSystemsPage() {
                   }
                   alt={`${rune.name} icon`}
                   className="h-12 w-12 rounded-lg border border-gray-200 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "/globe.svg";
+                  }}
                 />
                 <div>
                   <p className="text-xs font-semibold uppercase text-gray-500">

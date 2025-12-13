@@ -1,8 +1,11 @@
-import { leagueData } from "@/lib/league/data";
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
-const maps = leagueData.maps;
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
-export default function LeagueMapsPage() {
+export default async function LeagueMapsPage() {
+  const leagueData = await getLeagueBundleEdge();
+  const maps = leagueData.maps;
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-4 bg-gray-50 px-6 py-10">
       <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -29,6 +32,9 @@ export default function LeagueMapsPage() {
                 }
                 alt={map.name}
                 className="h-16 w-16 rounded-xl border border-gray-100 object-cover"
+                onError={(e) => {
+                  e.currentTarget.src = "/globe.svg";
+                }}
               />
               <div>
                 <p className="text-xs uppercase text-gray-500">ID {map.id}</p>

@@ -98,12 +98,18 @@ export default async function PokemonDetail({ params }: PageProps) {
               src={`/pokemoncontent/${pokemon?.sprites.default}`}
               alt={`${pokemon?.name} sprite`}
               className="h-32 w-32 rounded-2xl border border-gray-200 bg-white object-contain shadow-sm"
+              onError={(e) => {
+                e.currentTarget.src = "/globe.svg";
+              }}
             />
             <p className="text-xs text-gray-500">Default</p>
             <img
               src={`/pokemoncontent/${pokemon?.sprites.shiny}`}
               alt={`${pokemon?.name} shiny sprite`}
               className="h-24 w-24 rounded-xl border border-gray-200 bg-white object-contain shadow-sm"
+              onError={(e) => {
+                e.currentTarget.src = "/globe.svg";
+              }}
             />
             <p className="text-xs text-amber-600">Shiny</p>
           </div>

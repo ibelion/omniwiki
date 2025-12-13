@@ -60,6 +60,9 @@ export default async function ChampionDetail({ params }: PageProps) {
               src={`/leaguecontent/${champion.image}`}
               alt={`${champion.name} icon`}
               className="h-24 w-24 rounded-2xl border border-gray-100 object-cover"
+              onError={(e) => {
+                e.currentTarget.src = "/globe.svg";
+              }}
             />
             <div>
               <p className="text-sm uppercase tracking-wide text-emerald-600">
@@ -122,6 +125,9 @@ export default async function ChampionDetail({ params }: PageProps) {
                   src={`/leaguecontent/${ability.image}`}
                   alt={`${ability.name} icon`}
                   className="h-12 w-12 rounded-lg border border-gray-200 object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "/globe.svg";
+                  }}
                 />
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
@@ -180,6 +186,9 @@ export default async function ChampionDetail({ params }: PageProps) {
                     src={`/leaguecontent/${skin.splash}`}
                     alt={`${skin.name} splash`}
                     className="mt-3 h-40 w-full rounded-xl object-cover"
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
                   />
                 )}
               </div>

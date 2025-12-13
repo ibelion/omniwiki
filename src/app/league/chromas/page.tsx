@@ -1,8 +1,11 @@
-import { leagueData } from "@/lib/league/data";
+export const runtime = "edge";
+export const dynamic = "force-dynamic";
 
-const chromas = leagueData.chromas;
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
-export default function LeagueChromasPage() {
+export default async function LeagueChromasPage() {
+  const leagueData = await getLeagueBundleEdge();
+  const chromas = leagueData.chromas;
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-4 bg-gray-50 px-6 py-10">
       <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -41,6 +44,9 @@ export default function LeagueChromasPage() {
                   src={`/leaguecontent/${chroma.image}`}
                   alt={chroma.name}
                   className="mt-2 h-36 w-full rounded-lg object-cover"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none";
+                  }}
                 />
               )}
             </article>
