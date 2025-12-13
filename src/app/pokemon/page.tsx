@@ -3,6 +3,7 @@ export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { getPokemonBundleEdge } from "@/lib/edge-data";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 type SearchParams = {
   q?: string;
@@ -146,14 +147,11 @@ export default async function PokemonIndex({
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <img
+              <ImageWithFallback
                 src={`/pokemoncontent/${pokemon.sprites.default}`}
                 alt={`${pokemon.name} sprite`}
                 className="h-16 w-16 rounded-lg border border-gray-100 bg-gray-50 object-contain"
                 loading="lazy"
-                onError={(e) => {
-                  e.currentTarget.src = "/globe.svg";
-                }}
               />
               <h2 className="text-lg font-semibold text-gray-900">
                 {pokemon.name}

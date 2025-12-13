@@ -3,6 +3,7 @@ export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 const tierBadge = (tags: string[]) => {
   if (tags.some((tag) => tag.toLowerCase().includes("mythic"))) {
@@ -54,7 +55,7 @@ export default async function LeagueItemsPage() {
               className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm"
             >
               <div className="flex items-center gap-3">
-                <img
+                <ImageWithFallback
                   src={
                     item.image
                       ? `/leaguecontent/${item.image}`
@@ -62,9 +63,7 @@ export default async function LeagueItemsPage() {
                   }
                   alt={`${item.name} icon`}
                   className="h-12 w-12 rounded-lg border border-gray-100 object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = "/file.svg";
-                  }}
+                  fallback="/file.svg"
                 />
                 <div>
                   <p className="text-sm font-semibold text-gray-500">

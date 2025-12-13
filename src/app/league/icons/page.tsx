@@ -2,6 +2,7 @@ export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 export default async function LeagueIconsPage() {
   const leagueData = await getLeagueBundleEdge();
@@ -26,15 +27,12 @@ export default async function LeagueIconsPage() {
             key={icon.id}
             className="flex items-center gap-3 rounded-xl border border-gray-100 bg-white p-4 shadow-sm"
           >
-            <img
+            <ImageWithFallback
               src={
                 icon.image ? `/leaguecontent/${icon.image}` : "/globe.svg"
               }
               alt={icon.title}
               className="h-16 w-16 rounded-lg border border-gray-200 object-cover"
-              onError={(e) => {
-                e.currentTarget.src = "/globe.svg";
-              }}
             />
             <div className="text-sm">
               <p className="text-xs uppercase text-gray-500">

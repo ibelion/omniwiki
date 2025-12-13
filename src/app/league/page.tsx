@@ -3,6 +3,7 @@ export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 const dataLinks = [
   { label: "Items", href: "/league/items" },
@@ -94,7 +95,7 @@ export default async function LeaguePage() {
             className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-emerald-200 hover:bg-emerald-50"
           >
             <div className="flex items-center gap-3">
-              <img
+              <ImageWithFallback
                 src={
                   champion.image
                     ? `/leaguecontent/${champion.image}`
@@ -102,9 +103,6 @@ export default async function LeaguePage() {
                 }
                 alt={`${champion.name} icon`}
                 className="h-16 w-16 rounded-xl border border-gray-100 object-cover"
-                onError={(e) => {
-                  e.currentTarget.src = "/globe.svg";
-                }}
               />
               <div>
                 <p className="text-sm font-semibold text-gray-500">
@@ -170,13 +168,11 @@ export default async function LeaguePage() {
                 className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800"
               >
                 <div className="flex items-center gap-3">
-                  <img
+                  <ImageWithFallback
                     src={item.image ? `/leaguecontent/${item.image}` : "/file.svg"}
                     alt={`${item.name} icon`}
                     className="h-10 w-10 rounded-lg border border-gray-200 object-cover"
-                    onError={(e) => {
-                      e.currentTarget.src = "/file.svg";
-                    }}
+                    fallback="/file.svg"
                   />
                   <div>
                     <p className="font-semibold">{item.name}</p>
@@ -215,13 +211,10 @@ export default async function LeaguePage() {
                 className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800"
               >
                 <div className="flex items-center gap-3">
-                  <img
+                  <ImageWithFallback
                     src={rune.icon ? `/leaguecontent/${rune.icon}` : "/globe.svg"}
                     alt={`${rune.name} icon`}
                     className="h-10 w-10 rounded-lg border border-gray-200 object-cover"
-                    onError={(e) => {
-                      e.currentTarget.src = "/globe.svg";
-                    }}
                   />
                   <div>
                     <p className="font-semibold">{rune.name}</p>
@@ -305,13 +298,10 @@ export default async function LeaguePage() {
                   {skin.cost ?? "?"} RP
                 </p>
                 {skin.splash && (
-                  <img
+                  <ImageWithFallback
                     src={`/leaguecontent/${skin.splash}`}
                     alt={`${skin.name} splash`}
                     className="mt-2 h-28 w-full rounded-lg object-cover"
-                    onError={(e) => {
-                      e.currentTarget.style.display = "none";
-                    }}
                   />
                 )}
               </div>

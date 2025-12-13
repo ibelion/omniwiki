@@ -2,6 +2,7 @@ export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 export default async function LeagueWardsPage() {
   const leagueData = await getLeagueBundleEdge();
@@ -27,15 +28,12 @@ export default async function LeagueWardsPage() {
             className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm"
           >
             <div className="flex items-center gap-3">
-              <img
+              <ImageWithFallback
                 src={
                   ward.image ? `/leaguecontent/${ward.image}` : "/globe.svg"
                 }
                 alt={ward.name}
                 className="h-16 w-16 rounded-lg border border-gray-100 object-cover"
-                onError={(e) => {
-                  e.currentTarget.src = "/globe.svg";
-                }}
               />
               <div>
                 <p className="text-xs uppercase text-gray-500">

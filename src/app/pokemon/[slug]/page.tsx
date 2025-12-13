@@ -4,6 +4,7 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPokemonBundleEdge } from "@/lib/edge-data";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -94,22 +95,16 @@ export default async function PokemonDetail({ params }: PageProps) {
             </div>
           </div>
           <div className="flex flex-col items-center gap-3">
-            <img
+            <ImageWithFallback
               src={`/pokemoncontent/${pokemon?.sprites.default}`}
               alt={`${pokemon?.name} sprite`}
               className="h-32 w-32 rounded-2xl border border-gray-200 bg-white object-contain shadow-sm"
-              onError={(e) => {
-                e.currentTarget.src = "/globe.svg";
-              }}
             />
             <p className="text-xs text-gray-500">Default</p>
-            <img
+            <ImageWithFallback
               src={`/pokemoncontent/${pokemon?.sprites.shiny}`}
               alt={`${pokemon?.name} shiny sprite`}
               className="h-24 w-24 rounded-xl border border-gray-200 bg-white object-contain shadow-sm"
-              onError={(e) => {
-                e.currentTarget.src = "/globe.svg";
-              }}
             />
             <p className="text-xs text-amber-600">Shiny</p>
           </div>

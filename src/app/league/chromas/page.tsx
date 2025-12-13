@@ -2,6 +2,7 @@ export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 export default async function LeagueChromasPage() {
   const leagueData = await getLeagueBundleEdge();
@@ -40,13 +41,10 @@ export default async function LeagueChromasPage() {
                 Colors: {chroma.colors.join(", ") || "Unknown"}
               </p>
               {chroma.image && (
-                <img
+                <ImageWithFallback
                   src={`/leaguecontent/${chroma.image}`}
                   alt={chroma.name}
                   className="mt-2 h-36 w-full rounded-lg object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = "none";
-                  }}
                 />
               )}
             </article>

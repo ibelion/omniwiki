@@ -3,6 +3,7 @@ export const runtime = "edge";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -56,13 +57,10 @@ export default async function ChampionDetail({ params }: PageProps) {
       <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
-            <img
+            <ImageWithFallback
               src={`/leaguecontent/${champion.image}`}
               alt={`${champion.name} icon`}
               className="h-24 w-24 rounded-2xl border border-gray-100 object-cover"
-              onError={(e) => {
-                e.currentTarget.src = "/globe.svg";
-              }}
             />
             <div>
               <p className="text-sm uppercase tracking-wide text-emerald-600">
@@ -121,13 +119,10 @@ export default async function ChampionDetail({ params }: PageProps) {
               className="flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800"
             >
               <div className="flex items-center gap-3">
-                <img
+                <ImageWithFallback
                   src={`/leaguecontent/${ability.image}`}
                   alt={`${ability.name} icon`}
                   className="h-12 w-12 rounded-lg border border-gray-200 object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = "/globe.svg";
-                  }}
                 />
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
@@ -182,13 +177,10 @@ export default async function ChampionDetail({ params }: PageProps) {
                   Cost: {skin.cost ?? "?"} · {skin.availability || "Status unknown"}
                 </p>
                 {skin.splash && (
-                  <img
+                  <ImageWithFallback
                     src={`/leaguecontent/${skin.splash}`}
                     alt={`${skin.name} splash`}
                     className="mt-3 h-40 w-full rounded-xl object-cover"
-                    onError={(e) => {
-                      e.currentTarget.style.display = "none";
-                    }}
                   />
                 )}
               </div>
