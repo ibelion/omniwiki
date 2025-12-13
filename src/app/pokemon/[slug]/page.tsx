@@ -4,6 +4,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { pokemonData } from "@/lib/pokemon/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
+import { PokemonMovesSection } from "@/components/PokemonMovesSection";
+import { aggregateLearnsets } from "@/lib/pokemon/learnsets";
+import type { MoveRecord } from "@/lib/pokemon/types";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -35,12 +38,35 @@ export default async function PokemonDetail({ params }: PageProps) {
   const species = pokemonData.species.find((s) => s.id === pokemon?.id);
   const learnsetEntries = pokemonData.learnsets?.[pokemon.slug] ?? [];
   const moveIndex = new Map(pokemonData.moves.map((move) => [move.slug, move]));
-  const moveDetails = learnsetEntries
-    .map((entry) => ({
-      entry,
-      move: moveIndex.get(entry.move),
-    }))
-    .filter((record) => record.move);
+  
+  const movesByGeneration = new Map<
+    string,
+    Array<{ move: MoveRecord; entry: import("@/lib/pokemon/learnsets").AggregatedLearnsetEntry }>
+  >();
+  
+  const movesByMoveSlug = new Map<string, typeof learnsetEntries>();
+  for (const entry of learnsetEntries) {
+    if (!movesByMoveSlug.has(entry.move)) {
+      movesByMoveSlug.set(entry.move, []);
+    }
+    movesByMoveSlug.get(entry.move)!.push(entry);
+  }
+  
+  for (const [moveSlug, entries] of movesByMoveSlug.entries()) {
+    const move = moveIndex.get(moveSlug);
+    if (!move) continue;
+    
+    const aggregated = aggregateLearnsets(entries);
+    for (const [generation, aggregatedEntries] of aggregated.entries()) {
+      if (!movesByGeneration.has(generation)) {
+        movesByGeneration.set(generation, []);
+      }
+      for (const entry of aggregatedEntries) {
+        movesByGeneration.get(generation)!.push({ move, entry });
+      }
+    }
+  }
+  
   const abilities = pokemonData.abilities.filter((a) =>
     a.pokemon.includes(pokemon?.slug ?? "")
   );
@@ -266,50 +292,7 @@ export default async function PokemonDetail({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-        <div className="mb-3 flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">Moves</h2>
-          <Link
-            href="/moves"
-            className="text-sm font-semibold text-indigo-600 transition hover:text-indigo-800"
-          >
-            Browse moves →
-          </Link>
-        </div>
-        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {moveDetails.slice(0, 30).map(({ move, entry }) => (
-            <Link
-              key={`${move?.id}-${entry.move}-${entry.method}-${entry.level}`}
-              href={`/moves/${move?.slug}`}
-              className="rounded-lg border border-gray-100 bg-gray-50 p-3 text-sm text-gray-700 transition hover:border-indigo-200 hover:bg-white"
-            >
-              <div className="flex items-center justify-between">
-                <p className="font-semibold text-gray-900">{move?.name}</p>
-                <span className="rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-700">
-                  {move?.type || "—"}
-                </span>
-              </div>
-              <p className="text-gray-600">{move?.shortEffect}</p>
-              <div className="mt-2 flex flex-wrap gap-2 text-[11px] text-gray-600">
-                <span className="rounded bg-white px-2 py-0.5 shadow-sm">
-                  Method: {entry.method}
-                </span>
-                <span className="rounded bg-white px-2 py-0.5 shadow-sm">
-                  Level: {entry.level ?? "—"}
-                </span>
-                <span className="rounded bg-white px-2 py-0.5 shadow-sm">
-                  Gen: {entry.generation}
-                </span>
-              </div>
-            </Link>
-          ))}
-          {moveDetails.length === 0 && (
-            <p className="text-sm text-gray-500">
-              No learnset data is available for this Pokémon.
-            </p>
-          )}
-        </div>
-      </section>
+      <PokemonMovesSection movesByGeneration={movesByGeneration} />
     </main>
   );
 }
