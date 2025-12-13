@@ -22,7 +22,7 @@ const METHOD_ORDER = [
 ];
 
 const getGenerationWeight = (generation: string): number => {
-  const index = GENERATION_ORDER.indexOf(generation);
+  const index = (GENERATION_ORDER as readonly string[]).indexOf(generation);
   return index === -1 ? GENERATION_ORDER.length : index;
 };
 

@@ -31,11 +31,22 @@ const METHOD_LABELS: Record<string, string> = {
   "transfer": "Transfer",
 };
 
+const METHOD_ORDER = [
+  "level-up",
+  "machine",
+  "tutor",
+  "egg",
+  "light-ball-egg",
+  "form-change",
+  "special",
+  "transfer",
+] as const;
+
 export const PokemonMovesSection = ({
   movesByGeneration,
 }: PokemonMovesSectionProps) => {
   const [expandedGenerations, setExpandedGenerations] = useState<Set<string>>(
-    new Set([GENERATION_ORDER[0]])
+    new Set(GENERATION_ORDER.length > 0 ? [GENERATION_ORDER[0]] : [])
   );
 
   const handleToggleGeneration = (generation: string) => {
@@ -125,17 +136,11 @@ export const PokemonMovesSection = ({
                   <div className="space-y-4">
                     {Array.from(methodGroups.entries())
                       .sort(([a], [b]) => {
-                        const order = [
-                          "level-up",
-                          "machine",
-                          "tutor",
-                          "egg",
-                          "light-ball-egg",
-                          "form-change",
-                          "special",
-                          "transfer",
-                        ];
-                        return order.indexOf(a) - order.indexOf(b);
+                        const indexA = (METHOD_ORDER as readonly string[]).indexOf(a);
+                        const indexB = (METHOD_ORDER as readonly string[]).indexOf(b);
+                        const orderA = indexA === -1 ? METHOD_ORDER.length : indexA;
+                        const orderB = indexB === -1 ? METHOD_ORDER.length : indexB;
+                        return orderA - orderB;
                       })
                       .map(([method, methodMoves]) => (
                         <div key={method}>
@@ -152,7 +157,7 @@ export const PokemonMovesSection = ({
                               })
                               .map(({ move, entry }) => (
                                 <Link
-                                  key={`${move.id}-${entry.method}-${entry.level ?? "none"}`}
+                                  key={`${move.id}-${entry.generation}-${entry.method}-${entry.level ?? "none"}-${entry.versionGroups.join(",")}`}
                                   href={`/moves/${move.slug}`}
                                   className="rounded-lg border border-gray-100 bg-white p-3 text-sm text-gray-700 transition hover:border-indigo-200 hover:bg-indigo-50"
                                 >
