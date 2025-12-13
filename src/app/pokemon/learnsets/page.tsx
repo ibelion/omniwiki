@@ -1,5 +1,4 @@
 export const dynamic = "force-dynamic";
-export const runtime = "edge";
 
 import { pokemonData } from "@/lib/pokemon/data";
 import LearnsetsMovesStyleClient from "@/components/LearnsetsMovesStyleClient";
@@ -19,6 +18,7 @@ const getGenerationWeight = (generation: string) => {
 export default function PokemonLearnsetsPage() {
   const learnsets = pokemonData.learnsets ?? {};
   const pokemonMap = new Map(pokemonData.pokemon.map(p => [p.slug, { id: p.id, generation: p.generation }]));
+  const pokemonMapEntries = Array.from(pokemonMap.entries());
   const entries = Object.entries(learnsets).sort(([slugA], [slugB]) => {
     const aData = pokemonMap.get(slugA);
     const bData = pokemonMap.get(slugB);
@@ -38,7 +38,7 @@ export default function PokemonLearnsetsPage() {
       <LearnsetsMovesStyleClient
         entries={entries}
         movesIndex={Object.fromEntries(pokemonData.moves.map((m: MoveRecord) => [m.slug, m]))}
-        pokemonMap={pokemonMap}
+        pokemonMapEntries={pokemonMapEntries}
       />
     </main>
   );

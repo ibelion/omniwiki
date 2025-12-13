@@ -38,13 +38,17 @@ export function ChromasList({ chromas, champions }: ChromasListProps) {
           Chromas ({filtered.length})
         </h1>
         <p className="text-gray-600">
-          Raw chorma list grouped by champion/skin, sourced from
-          `leaguecontent/data/chromas.csv`.
+          Raw chroma list grouped by champion/skin, sourced from leaguecontent/data/chromas.csv.
         </p>
         <div className="mt-4">
+          <label className="sr-only" htmlFor="chromas-search">
+            Search chromas by name, champion, or skin
+          </label>
           <input
+            id="chromas-search"
             type="text"
             placeholder="Search chromas by name, champion, or skin..."
+            aria-label="Search chromas by name, champion, or skin"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
@@ -54,34 +58,37 @@ export function ChromasList({ chromas, champions }: ChromasListProps) {
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((chroma) => {
-            const champion = champions.find(c => c.name.toLowerCase() === chroma.champion.toLowerCase());
-            const championSlug = champion?.slug || '';
+            const champion = champions.find(
+              (c) => c.name.toLowerCase() === (chroma.champion || "").toLowerCase()
+            );
+            const championSlug = champion?.slug;
+            const colors = chroma.colors?.length ? chroma.colors.join(", ") : "Unknown";
+            const href = championSlug ? `/league/${championSlug}` : "/league/champions";
             return (
-            <Link
-              key={`${chroma.skinId}-${chroma.chromaId}`}
-              href={`/league/${championSlug}`}
-              className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
-            >
-              <p className="text-xs uppercase text-gray-500">
-                {chroma.champion}
-              </p>
-              <h2 className="text-lg font-semibold text-gray-900">
-                {chroma.name}
-              </h2>
-              <p className="text-xs text-gray-500">
-                Base skin: {chroma.skinName} (#{chroma.skinId})
-              </p>
-              <p className="text-xs text-gray-500">
-                Colors: {chroma.colors.join(", ") || "Unknown"}
-              </p>
-              {chroma.image && (
-                <ImageWithFallback
-                  src={`/leaguecontent/${chroma.image}`}
-                  alt={chroma.name}
-                  className="mt-2 h-36 w-full rounded-lg object-cover"
-                />
-              )}
-            </Link>
+              <Link
+                key={`${chroma.skinId}-${chroma.chromaId}`}
+                href={href}
+                aria-label={championSlug ? `View ${chroma.champion} chroma` : "View champion list"}
+                className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
+              >
+                <p className="text-xs uppercase text-gray-500">
+                  {chroma.champion || "Unknown champion"}
+                </p>
+                <h2 className="text-lg font-semibold text-gray-900">
+                  {chroma.name || "Unknown chroma"}
+                </h2>
+                <p className="text-xs text-gray-500">
+                  Base skin: {chroma.skinName || "Unknown"} (#{chroma.skinId ?? "?"})
+                </p>
+                <p className="text-xs text-gray-500">Colors: {colors}</p>
+                {chroma.image && (
+                  <ImageWithFallback
+                    src={`/leaguecontent/${chroma.image}`}
+                    alt={chroma.name || "Chroma image"}
+                    className="mt-2 h-36 w-full rounded-lg object-cover"
+                  />
+                )}
+              </Link>
             );
           })}
         </div>

@@ -44,10 +44,10 @@ export function UniverseShowcase({ universes }: UniverseShowcaseProps) {
     const labelLower = label.toLowerCase();
     if (activeUniverse.id === "pokemon") {
       if (labelLower.includes("pokémon") || labelLower.includes("pokemon")) {
-        return "/pokemon";
+        return "/pokemon/pokedex";
       }
-      if (labelLower.includes("move")) return "/moves";
-      if (labelLower.includes("abilit")) return "/abilities";
+      if (labelLower.includes("move")) return "/pokemon/moves";
+      if (labelLower.includes("abilit")) return "/pokemon/abilities";
       if (labelLower.includes("item")) return "/pokemon/items";
     }
     if (activeUniverse.id === "league") {

@@ -17,7 +17,7 @@ type GenerationGroup = {
 };
 
 type PokemonMovesSectionProps = {
-  movesByGeneration: Map<string, MoveWithEntry[]>;
+  movesByGeneration: Record<string, MoveWithEntry[]>;
 };
 
 const METHOD_LABELS: Record<string, string> = {
@@ -61,7 +61,7 @@ export const PokemonMovesSection = ({
 
   const generations: GenerationGroup[] = GENERATION_ORDER.map((gen) => ({
     generation: gen,
-    moves: movesByGeneration.get(gen) || [],
+    moves: movesByGeneration[gen] || [],
   })).filter((group) => group.moves.length > 0);
 
   if (generations.length === 0) {

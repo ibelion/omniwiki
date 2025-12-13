@@ -42,10 +42,10 @@ export default async function PokemonDetail({ params }: PageProps) {
   const learnsetEntries = pokemonData.learnsets?.[pokemon.slug] ?? [];
   const moveIndex = createNormalizedMoveIndex(pokemonData.moves);
   
-  const movesByGeneration = new Map<
+  const movesByGeneration: Record<
     string,
     Array<{ move: MoveRecord; entry: import("@/lib/pokemon/learnsets").AggregatedLearnsetEntry }>
-  >();
+  > = {};
   
   const movesByMoveSlug = new Map<string, typeof learnsetEntries>();
   for (const entry of learnsetEntries) {
@@ -63,11 +63,11 @@ export default async function PokemonDetail({ params }: PageProps) {
     
     const aggregated = aggregateLearnsets(entries);
     for (const [generation, aggregatedEntries] of aggregated.entries()) {
-      if (!movesByGeneration.has(generation)) {
-        movesByGeneration.set(generation, []);
+      if (!movesByGeneration[generation]) {
+        movesByGeneration[generation] = [];
       }
       for (const entry of aggregatedEntries) {
-        movesByGeneration.get(generation)!.push({ move, entry });
+        movesByGeneration[generation].push({ move, entry });
       }
     }
   }
