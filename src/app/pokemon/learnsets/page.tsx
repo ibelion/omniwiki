@@ -1,4 +1,5 @@
 export const dynamic = "force-dynamic";
+export const runtime = "edge";
 
 import { pokemonData } from "@/lib/pokemon/data";
 import LearnsetsMovesStyleClient from "@/components/LearnsetsMovesStyleClient";
