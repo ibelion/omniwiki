@@ -1,20 +1,18 @@
-import { pokemonData } from "@/lib/pokemon/data";
-
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 export async function GET() {
   try {
-    const response = {
-      learnsets: pokemonData.learnsets ?? {},
-      pokemon: pokemonData.pokemon.map(p => ({
-        id: p.id,
-        generation: p.generation,
-        slug: p.slug,
-      })),
-      moves: pokemonData.moves,
-    };
+    const response = await fetch(
+      `${process.env.VERCEL_URL ? "https://" + process.env.VERCEL_URL : "http://localhost:3000"}/pokemoncontent/data/learnsets.json`
+    );
+    
+    if (!response.ok) {
+      throw new Error("Failed to fetch learnsets data");
+    }
 
-    return Response.json(response, {
+    const data = await response.json();
+
+    return Response.json(data, {
       headers: {
         "Cache-Control": "public, max-age=3600, s-maxage=86400",
       },

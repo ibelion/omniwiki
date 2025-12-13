@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/generate-learnsets.ts",
     "build": "next build",
     "cf:build": "next-on-pages",
     "start": "next start",
