@@ -1,44 +1,36 @@
 import { pokemonData } from "@/lib/pokemon/data";
-import { ImageWithFallback } from "@/components/ImageWithFallback";
+import { SpritesSearchClient } from "@/components/SpritesSearchClient";
+import { BackLink } from "@/components/BackLink";
 
-const sprites = pokemonData.sprites ?? [];
+const GENERATION_ORDER = [
+  "generation-i", "generation-ii", "generation-iii", "generation-iv",
+  "generation-v", "generation-vi", "generation-vii", "generation-viii", "generation-ix"
+];
+
+const getGenerationWeight = (generation: string) => {
+  const index = GENERATION_ORDER.indexOf(generation);
+  return index === -1 ? GENERATION_ORDER.length : index;
+};
 
 export default function PokemonSpritesPage() {
+  const pokemonMap = new Map(pokemonData.pokemon.map(p => [p.slug, { id: p.id, generation: p.generation }]));
+  const sprites = [...(pokemonData.sprites ?? [])].sort((a, b) => {
+    const aData = pokemonMap.get(a.pokemonSlug);
+    const bData = pokemonMap.get(b.pokemonSlug);
+    if (aData && bData) {
+      if (aData.id !== bData.id) return aData.id - bData.id;
+      const genDiff = getGenerationWeight(aData.generation) - getGenerationWeight(bData.generation);
+      if (genDiff !== 0) return genDiff;
+    }
+    return a.pokemonSlug.localeCompare(b.pokemonSlug);
+  });
+
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-gray-50 px-6 py-10">
-      <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
-          Pokémon
-        </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
-          Sprite Catalog ({sprites.length})
-        </h1>
-        <p className="text-gray-600">
-          Sprite entries from `pokemon_sprites.csv`. Useful for verifying asset
-          availability or powering external ingestion.
-        </p>
-      </header>
-      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {sprites.map((sprite) => (
-          <article
-            key={`${sprite.pokemonSlug}-${sprite.spriteType}`}
-            className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm text-sm"
-          >
-            <p className="text-xs uppercase text-gray-500">
-              {sprite.pokemonSlug}
-            </p>
-            <p className="text-lg font-semibold text-gray-900">
-              {sprite.spriteType}
-            </p>
-            <ImageWithFallback
-              src={`/pokemoncontent/${sprite.image}`}
-              alt={`${sprite.pokemonSlug} ${sprite.spriteType}`}
-              className="h-32 w-full rounded-lg border border-gray-100 object-contain bg-gray-50"
-            />
-            <p className="text-xs text-gray-500 break-all">{sprite.image}</p>
-          </article>
-        ))}
-      </section>
+      <div className="flex items-center justify-between">
+        <BackLink href="/pokemon" label="Back to Pokémon" />
+      </div>
+      <SpritesSearchClient sprites={sprites} />
     </main>
   );
 }

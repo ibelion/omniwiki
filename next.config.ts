@@ -4,6 +4,14 @@ const CDN_BASE =
   "https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn";
 
 const nextConfig: NextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "raw.communitydragon.org",
+      },
+    ],
+  },
   headers: async () => [
     {
       source: "/exports/pokemon/bundle.json",

@@ -20,6 +20,25 @@ const dataLinks = [
     },
   },
   {
+    label: "Champion Abilities",
+    href: "/league/abilities",
+    description: "All champion abilities and passives",
+    getPreview: () => {
+      const ability = leagueData.abilities[0];
+      return ability
+        ? {
+            name: ability.name,
+            subtitle: `${ability.championName} · ${ability.slot}`,
+            image: ability.image,
+            extra:
+              ability.description?.slice(0, 50) +
+                (ability.description && ability.description.length > 50 ? "..." : "") ||
+              "No description",
+          }
+        : null;
+    },
+  },
+  {
     label: "Items",
     href: "/league/items",
     description: "Mythics, legendaries, and component gear",
@@ -36,9 +55,9 @@ const dataLinks = [
     },
   },
   {
-    label: "Runes & Spells",
-    href: "/league/systems",
-    description: "Keystone runes and summoner spells",
+    label: "Keystone Runes",
+    href: "/league/runes",
+    description: "Powerful keystone rune selections",
     getPreview: () => {
       const rune = leagueData.runes.find((r) => r.slot === 0);
       return rune
@@ -55,17 +74,71 @@ const dataLinks = [
     },
   },
   {
-    label: "Skins & Chromas",
-    href: "/league/chromas",
-    description: "Champion skins and color variants",
+    label: "Summoner Spells",
+    href: "/league/summoner-spells",
+    description: "Summoner spell abilities",
+    getPreview: () => {
+      const spell = leagueData.summonerSpells[0];
+      return spell
+        ? {
+            name: spell.name,
+            subtitle: "Summoner spell",
+            image: spell.image,
+            extra:
+              spell.description?.slice(0, 50) +
+                (spell.description && spell.description.length > 50 ? "..." : "") ||
+              "No description",
+          }
+        : null;
+    },
+  },
+  {
+    label: "Skins",
+    href: "/league/skins",
+    description: "Champion skins with rarities and costs",
     getPreview: () => {
       const skin = leagueData.skins[0];
       return skin
         ? {
             name: skin.name,
             subtitle: skin.championName,
-            image: skin.splash,
+            image: skin.splash || skin.tile || skin.loadScreen,
             extra: skin.rarity || "Standard",
+          }
+        : null;
+    },
+  },
+  {
+    label: "Chromas",
+    href: "/league/chromas",
+    description: "Champion skin color variants",
+    getPreview: () => {
+      const chroma = leagueData.chromas[0];
+      return chroma
+        ? {
+            name: chroma.name,
+            subtitle: chroma.champion,
+            image: chroma.image,
+            extra: `Colors: ${chroma.colors.slice(0, 2).join(", ")}`,
+          }
+        : null;
+    },
+  },
+  {
+    label: "Voicelines",
+    href: "/league/quotes",
+    description: "Champion quotes and voicelines",
+    getPreview: () => {
+      const quote = leagueData.quotes[0];
+      return quote
+        ? {
+            name: quote.champion,
+            subtitle: "Quote",
+            image: null,
+            extra:
+              quote.text?.slice(0, 50) +
+                (quote.text && quote.text.length > 50 ? "..." : "") ||
+              "No quote",
           }
         : null;
     },
@@ -219,12 +292,12 @@ export default function LeaguePage() {
     {
       label: "Skins",
       value: leagueData.skins.length,
-      href: "/league/chromas",
+      href: "/league/skins",
       preview: sampleSkin
         ? {
             name: sampleSkin.name,
             subtitle: sampleSkin.championName,
-            image: sampleSkin.splash,
+            image: sampleSkin.splash || sampleSkin.tile || sampleSkin.loadScreen,
             extra: sampleSkin.rarity || "Standard",
           }
         : null,
@@ -245,7 +318,7 @@ export default function LeaguePage() {
     {
       label: "Quotes",
       value: leagueData.quotes.length,
-      href: "/league",
+      href: "/league/quotes",
       preview: sampleQuote
         ? {
             name: sampleQuote.champion,

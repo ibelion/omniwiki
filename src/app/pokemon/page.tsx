@@ -118,6 +118,38 @@ const dataLinks = [
     },
   },
   {
+    label: "Abilities",
+    href: "/pokemon/abilities",
+    description: "All Pokémon abilities with effects and descriptions",
+    getPreview: () => {
+      const ability = pokemonData.abilities?.[0];
+      return ability
+        ? {
+            name: ability.name,
+            subtitle: "Ability",
+            image: null,
+            extra: ability.shortEffect || "No description",
+          }
+        : null;
+    },
+  },
+  {
+    label: "Moves",
+    href: "/pokemon/moves",
+    description: "All moves with type, power, accuracy, and effects",
+    getPreview: () => {
+      const move = pokemonData.moves?.[0];
+      return move
+        ? {
+            name: move.name,
+            subtitle: move.type || "—",
+            image: null,
+            extra: `Power: ${move.power ?? "—"} • Acc: ${move.accuracy ?? "—"}`,
+          }
+        : null;
+    },
+  },
+  {
     label: "Learnsets",
     href: "/pokemon/learnsets",
     description: "Move learning data by generation",
@@ -165,7 +197,7 @@ export default function PokemonIndex() {
     {
       label: "Moves",
       value: pokemonData.moves.length,
-      href: "/moves",
+      href: "/pokemon/moves",
       preview: sampleMove
         ? {
             name: sampleMove.name,
@@ -178,7 +210,7 @@ export default function PokemonIndex() {
     {
       label: "Abilities",
       value: pokemonData.abilities.length,
-      href: "/abilities",
+      href: "/pokemon/abilities",
       preview: sampleAbility
         ? {
             name: sampleAbility.name,

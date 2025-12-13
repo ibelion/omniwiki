@@ -11,13 +11,16 @@
     "build:data": "node --import tsx ./scripts/build-pokemon.ts && node --import tsx ./scripts/build-league.ts"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "csv-parse": "^6.1.0",
     "fflate": "^0.8.2",
     "fs-extra": "^11.3.2",
     "lodash": "^4.17.21",
+    "lucide-react": "^0.561.0",
     "next": "^15.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.5.2",
     "tsx": "^4.21.0",
     "zod": "^4.1.13"
   },

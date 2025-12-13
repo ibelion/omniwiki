@@ -2,6 +2,7 @@ import Link from "next/link";
 import { pokemonData } from "@/lib/pokemon/data";
 import { PokemonSearch } from "@/components/PokemonSearch";
 import { isBaseForm } from "@/lib/pokemon/forms";
+import { BackLink } from "@/components/BackLink";
 
 export default function PokedexPage() {
   const baseForms = pokemonData.pokemon.filter(isBaseForm);
@@ -11,6 +12,9 @@ export default function PokedexPage() {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-gray-50 px-6 py-10">
+      <div className="flex items-center justify-between">
+        <BackLink href="/pokemon" label="Back to Pokémon" />
+      </div>
       <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="flex flex-col gap-3">
           <div className="flex items-center justify-between">

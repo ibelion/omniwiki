@@ -70,7 +70,7 @@ export const PokemonMovesSection = ({
         <div className="mb-3 flex items-center justify-between">
           <h2 className="text-base font-semibold text-gray-900">Moves</h2>
           <Link
-            href="/moves"
+            href="/pokemon/moves"
             className="text-sm font-semibold text-indigo-600 transition hover:text-indigo-800"
           >
             Browse moves →
@@ -100,7 +100,7 @@ export const PokemonMovesSection = ({
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-base font-semibold text-gray-900">Moves</h2>
         <Link
-          href="/moves"
+          href="/pokemon/moves"
           className="text-sm font-semibold text-indigo-600 transition hover:text-indigo-800"
         >
           Browse moves →
@@ -117,6 +117,7 @@ export const PokemonMovesSection = ({
               className="rounded-lg border border-gray-100 bg-gray-50"
             >
               <button
+                type="button"
                 onClick={() => handleToggleGeneration(generation)}
                 className="w-full flex items-center justify-between px-4 py-3 text-left transition hover:bg-gray-100"
                 aria-expanded={isExpanded}

@@ -9,6 +9,7 @@ import { aggregateLearnsets } from "@/lib/pokemon/learnsets";
 import { createNormalizedMoveIndex, normalizeMoveSlug } from "@/lib/pokemon/moveNormalization";
 import { getAlternateForms, getBasePokemonName } from "@/lib/pokemon/forms";
 import type { MoveRecord } from "@/lib/pokemon/types";
+import { BackLink } from "@/components/BackLink";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -29,15 +30,13 @@ export default async function PokemonDetail({ params }: PageProps) {
   const baseName = getBasePokemonName(pokemon.slug);
   const alternateForms = getAlternateForms(pokemonData.pokemon, baseName, pokemon.slug);
 
-  const nameIndex =
-    pokemonData.indexes?.nameIndex ??
-    pokemonData.pokemon.map((p) => ({ slug: p.slug, name: p.name }));
-  const currentIndex = nameIndex.findIndex((entry) => entry.slug === pokemon.slug);
-  const previous = currentIndex > 0 ? nameIndex[currentIndex - 1] : null;
-  const next =
-    currentIndex >= 0 && currentIndex < nameIndex.length - 1
-      ? nameIndex[currentIndex + 1]
-      : null;
+  // Quick nav should follow Pokédex order (by id), not alphabetical
+  const dexIndex = [...pokemonData.pokemon]
+    .map((p) => ({ slug: p.slug, name: p.name, id: p.id }))
+    .sort((a, b) => a.id - b.id || a.name.localeCompare(b.name));
+  const currentIndex = dexIndex.findIndex((entry) => entry.slug === pokemon.slug);
+  const previous = currentIndex > 0 ? dexIndex[currentIndex - 1] : null;
+  const next = currentIndex >= 0 && currentIndex < dexIndex.length - 1 ? dexIndex[currentIndex + 1] : null;
 
   const species = pokemonData.species.find((s) => s.id === pokemon?.id);
   const learnsetEntries = pokemonData.learnsets?.[pokemon.slug] ?? [];
@@ -106,6 +105,9 @@ export default async function PokemonDetail({ params }: PageProps) {
             <li className="rounded px-2 py-1 text-gray-700">{pokemon?.name}</li>
           </ol>
         </nav>
+        <div className="flex items-center justify-between">
+          <BackLink href="/pokemon" label="Back to Pokémon" />
+        </div>
         <div className="flex flex-col gap-6 rounded-3xl border border-gray-200 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-2">
             <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">

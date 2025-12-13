@@ -4,6 +4,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
+import { loadChampionPositions } from "@/lib/league/positions";
+import { BackLink } from "@/components/BackLink";
+
+function loadPositionsForChampion(name: string): string[] {
+  const map = loadChampionPositions();
+  return map.get(name.toLowerCase()) || [];
+}
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -21,10 +28,9 @@ export default async function ChampionDetail({ params }: PageProps) {
   if (!champion) {
     notFound();
   }
-  const championIndex = leagueData.champions.map((c) => ({
-    slug: c.slug,
-    name: c.name,
-  }));
+  const championIndex = [...leagueData.champions]
+    .map((c) => ({ slug: c.slug, name: c.name }))
+    .sort((a, b) => a.name.localeCompare(b.name));
   const currentIndex = championIndex.findIndex(
     (entry) => entry.slug === champion.slug
   );
@@ -37,6 +43,8 @@ export default async function ChampionDetail({ params }: PageProps) {
   const abilities = leagueData.abilities.filter(
     (ability) => ability.championId === champion.id
   );
+  const positions = loadPositionsForChampion(champion.name);
+  const mainPosition = positions[0];
   const skins = leagueData.skins.filter(
     (skin) => skin.championId === champion.id
   );
@@ -47,6 +55,7 @@ export default async function ChampionDetail({ params }: PageProps) {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-gray-50 px-6 py-10">
+      <BackLink href="/league" label="Back to League" />
       <nav className="text-sm text-gray-500" aria-label="Breadcrumb">
         <ol className="flex flex-wrap items-center gap-1">
           <li>
@@ -90,17 +99,42 @@ export default async function ChampionDetail({ params }: PageProps) {
                 Difficulty {champion.difficulty ?? "?"} ·{" "}
                 {champion.rangeType} · {champion.resource}
               </p>
+              {mainPosition && (
+                <p className="mt-1 text-sm font-semibold text-emerald-700">
+                  Main Position: {mainPosition}
+                </p>
+              )}
             </div>
           </div>
-          <div className="flex flex-wrap gap-2 text-xs font-semibold text-gray-900">
-            {champion.roles.map((role) => (
-              <span
-                key={role}
-                className="rounded-full bg-emerald-50 px-3 py-1 text-emerald-700"
-              >
-                {role}
-              </span>
-            ))}
+          <div className="flex flex-col gap-2">
+            {/* Top row: champion positions from CSV (main highlighted) */}
+            {positions.length > 0 && (
+              <div className="flex flex-wrap gap-2 text-xs font-semibold text-gray-900">
+                {positions.map((pos, idx) => (
+                  <span
+                    key={`pos-${idx}`}
+                    className={
+                      idx === 0
+                        ? "rounded-full bg-emerald-100 px-3 py-1 text-emerald-700"
+                        : "rounded-full bg-gray-100 px-3 py-1 text-gray-700"
+                    }
+                  >
+                    {pos}
+                  </span>
+                ))}
+              </div>
+            )}
+            {/* Bottom row: roles badges */}
+            <div className="flex flex-wrap gap-2 text-xs font-medium text-gray-900">
+              {champion.roles.map((role) => (
+                <span
+                  key={role}
+                  className="rounded-full bg-indigo-100 px-3 py-1 text-indigo-700"
+                >
+                  {role}
+                </span>
+              ))}
+            </div>
           </div>
           <div className="flex flex-col gap-2 text-sm text-gray-600">
             <p className="font-semibold text-gray-900">Quick navigation</p>
@@ -147,6 +181,12 @@ export default async function ChampionDetail({ params }: PageProps) {
             <p className="text-sm text-gray-800">
               Patch {champion.releasePatch || "?"} (
               {champion.releaseYear ?? "Unknown"})
+            </p>
+          </div>
+          <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
+            <p className="text-xs uppercase tracking-wide text-gray-500">Positions</p>
+            <p className="text-sm text-gray-800">
+              {positions.length > 0 ? positions.join(", ") : "Unknown"}
             </p>
           </div>
         </div>

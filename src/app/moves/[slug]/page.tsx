@@ -220,10 +220,14 @@ export default async function MoveDetail({ params }: PageProps) {
   if (!move) {
     notFound();
   }
-  const moveIndex = pokemonData.moves.map((m) => ({
-    slug: m.slug,
-    name: m.name,
-  }));
+  // Sort moves by generation, then alphabetically for consistent quick nav
+  const moveIndex = [...pokemonData.moves]
+    .map((m) => ({ slug: m.slug, name: m.name, generation: m.generation }))
+    .sort((a, b) => {
+      const genDiff = getGenerationWeight(a.generation) - getGenerationWeight(b.generation);
+      if (genDiff !== 0) return genDiff;
+      return a.name.localeCompare(b.name);
+    });
   const currentIndex = moveIndex.findIndex((entry) => entry.slug === move.slug);
   const previous = currentIndex > 0 ? moveIndex[currentIndex - 1] : null;
   const next =
@@ -259,7 +263,7 @@ export default async function MoveDetail({ params }: PageProps) {
           <li aria-hidden="true">/</li>
           <li>
             <Link
-              href="/moves"
+              href="/pokemon/moves"
               className="rounded px-2 py-1 transition hover:bg-gray-100 hover:text-gray-900"
             >
               Moves

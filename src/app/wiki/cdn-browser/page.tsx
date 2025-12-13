@@ -1,10 +1,10 @@
 // app/wiki/cdn-browser/page.tsx
 import React from 'react';
 import Link from 'next/link';
-import { fetchAndTransformLeagueData } from '@/lib/omni-transformer';
+import { getLeagueData } from '@/lib/league-service';
 
 export default async function CdnBrowserPage() {
-  const champions = await fetchAndTransformLeagueData();
+  const champions = await getLeagueData();
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-200 p-8 font-sans">
@@ -25,14 +25,14 @@ export default async function CdnBrowserPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {champions.map((champ) => (
             <div 
-              key={champ.id} 
+              key={champ.uid} 
               className="bg-slate-900 border border-slate-800 rounded-lg p-4 hover:border-indigo-500/50 transition-all group"
             >
               <div className="flex justify-between items-start mb-2">
                 <h3 className="font-bold text-lg text-slate-100 group-hover:text-indigo-300 transition-colors">
                   {champ.name}
                 </h3>
-                <span className="text-xs text-slate-500 font-mono">{champ.id}</span>
+                <span className="text-xs text-slate-500 font-mono">{champ.uid}</span>
               </div>
               
               <p className="text-sm text-slate-400 italic mb-3">
@@ -46,19 +46,15 @@ export default async function CdnBrowserPage() {
                   <span className="text-slate-300">{champ.tags.join(', ')}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Resource:</span>
-                  <span className="text-slate-300">{champ.resourceType}</span>
-                </div>
-                <div className="flex justify-between">
                   <span>Difficulty:</span>
-                  <span className="text-slate-300">{champ.stats.difficulty}/10</span>
+                  <span className="text-slate-300">{champ.stats.difficulty / 10}/10</span>
                 </div>
               </div>
 
               <div className="mt-4 pt-3 border-t border-slate-800 flex justify-end">
                  {/* Link to the detailed wiki page we built previously */}
                 <Link 
-                  href={`/league/champions/${champ.id}`}
+                  href={`/league/champions/${champ.uid.replace('lol-', '')}`}
                   className="text-xs font-semibold text-indigo-400 hover:text-indigo-300"
                 >
                   View Full Wiki Entry &rarr;

@@ -45,9 +45,9 @@ const universes: UniverseDescriptor[] = [
       { label: "Items", value: pokemonData.items?.length ?? 0 },
     ],
     quickLinks: [
-      { label: "Pokemon Index", href: "/pokemon" },
-      { label: "Moves Explorer", href: "/moves" },
-      { label: "Abilities Library", href: "/abilities" },
+      { label: "Pokédex", href: "/pokemon/pokedex" },
+      { label: "Moves Explorer", href: "/pokemon/moves" },
+      { label: "Abilities Library", href: "/pokemon/abilities" },
     ],
     heroImage:
       pokemonData.pokemon[0]?.sprites.default
@@ -76,9 +76,9 @@ const universes: UniverseDescriptor[] = [
       { label: "Quotes", value: leagueData.quotes.length },
     ],
     quickLinks: [
-      { label: "Champion Hub", href: "/league#champions" },
-      { label: "Item Catalog", href: "/league#items" },
-      { label: "Runes & Spells", href: "/league#runes" },
+      { label: "Champion Hub", href: "/league/champions" },
+      { label: "Item Catalog", href: "/league/items" },
+      { label: "Skins", href: "/league/skins" },
     ],
     heroImage:
       leagueData.champions[0]?.image
