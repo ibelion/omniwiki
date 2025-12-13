@@ -1,5 +1,3 @@
-export const dynamic = "force-dynamic";
-
 import { pokemonData } from "@/lib/pokemon/data";
 import LearnsetsMovesStyleClient from "@/components/LearnsetsMovesStyleClient";
 import type { MoveRecord } from "@/lib/pokemon/types";
