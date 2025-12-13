@@ -1,5 +1,4 @@
 import { leagueData } from "@/lib/league/data";
-import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
 export default function LeagueWardsPage() {

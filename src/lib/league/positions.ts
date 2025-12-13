@@ -11,7 +11,7 @@ export function loadChampionPositions(
   let content = "";
   try {
     content = fs.readFileSync(csvPath, "utf-8");
-  } catch (e) {
+  } catch {
     return new Map<string, string[]>();
   }
 
