@@ -14,7 +14,8 @@ const ensureAbsoluteUrl = (value?: string | null) => {
 };
 
 const getBaseUrl = () => {
-  if (typeof process !== "undefined") {
+  // In Edge runtime, try to get URL from environment or use default
+  if (typeof process !== "undefined" && process.env) {
     const fromEnv =
       ensureAbsoluteUrl(process.env.NEXT_PUBLIC_SITE_URL) ??
       ensureAbsoluteUrl(process.env.CF_PAGES_URL) ??
@@ -24,6 +25,7 @@ const getBaseUrl = () => {
       return "http://127.0.0.1:3000";
     }
   }
+  // Default to production URL
   return "https://omniwiki.pages.dev";
 };
 
@@ -41,12 +43,53 @@ const gunzipArrayBuffer = async (buffer: ArrayBuffer) => {
 };
 
 const fetchJson = async <T>(path: string): Promise<T> => {
-  const base = getBaseUrl();
-  const url = path.startsWith("http") ? path : `${base}${path}`;
-  const res = await fetch(url, { cache: "force-cache" });
-  if (!res.ok) {
-    throw new Error(`Failed to fetch ${path}: ${res.status}`);
+  // Try relative URL first (works in Edge runtime for static assets)
+  const relativeUrl = path.startsWith("/") ? path : `/${path}`;
+  
+  // If path already has protocol, use it directly
+  if (path.startsWith("http")) {
+    const res = await fetch(path, { cache: "force-cache" });
+    if (!res.ok) {
+      throw new Error(`Failed to fetch ${path}: ${res.status} ${res.statusText}`);
+    }
+    const buffer = await res.arrayBuffer();
+    const text = await gunzipArrayBuffer(buffer);
+    return JSON.parse(text) as T;
   }
+
+  // Try relative URL first (works in Edge runtime)
+  try {
+    const res = await fetch(relativeUrl, { 
+      cache: "force-cache",
+      // Add headers to help with CORS if needed
+      headers: {
+        'Accept': 'application/json',
+      }
+    });
+    if (res.ok) {
+      const buffer = await res.arrayBuffer();
+      const text = await gunzipArrayBuffer(buffer);
+      return JSON.parse(text) as T;
+    }
+  } catch (error) {
+    // If relative URL fails, try with base URL
+    console.warn(`Relative fetch failed for ${relativeUrl}, trying with base URL`, error);
+  }
+
+  // Fallback to absolute URL
+  const base = getBaseUrl();
+  const absoluteUrl = `${base}${relativeUrl}`;
+  const res = await fetch(absoluteUrl, { 
+    cache: "force-cache",
+    headers: {
+      'Accept': 'application/json',
+    }
+  });
+  
+  if (!res.ok) {
+    throw new Error(`Failed to fetch ${path} (tried ${relativeUrl} and ${absoluteUrl}): ${res.status} ${res.statusText}`);
+  }
+  
   const buffer = await res.arrayBuffer();
   const text = await gunzipArrayBuffer(buffer);
   return JSON.parse(text) as T;

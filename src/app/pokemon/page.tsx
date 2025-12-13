@@ -1,7 +1,8 @@
+export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
-import { pokemonData } from "@/lib/pokemon/data";
+import { getPokemonBundleEdge } from "@/lib/edge-data";
 
 type SearchParams = {
   q?: string;
@@ -23,6 +24,7 @@ export default async function PokemonIndex({
 }: {
   searchParams: Promise<SearchParams>;
 }) {
+  const pokemonData = await getPokemonBundleEdge();
   const universeStats = [
     { label: "Pokémon", value: pokemonData.pokemon.length },
     { label: "Moves", value: pokemonData.moves.length },
