@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 type ImageWithFallbackProps = {
   src: string;
@@ -24,13 +25,16 @@ export const ImageWithFallback = ({
   };
 
   return (
-    <img
-      src={imgSrc}
-      alt={alt}
-      className={className}
-      loading={loading}
-      onError={handleError}
-    />
+    <div className={`relative ${className}`}>
+      <Image
+        src={imgSrc}
+        alt={alt}
+        fill
+        className="object-contain"
+        loading={loading}
+        onError={handleError}
+      />
+    </div>
   );
 };
 

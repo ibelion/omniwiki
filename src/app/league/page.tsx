@@ -3,306 +3,362 @@ import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 const dataLinks = [
-  { label: "Items", href: "/league/items" },
-  { label: "Runes & Spells", href: "/league/systems" },
-  { label: "Skins & Chromas", href: "/league/chromas" },
-  { label: "Emotes", href: "/league/emotes" },
-  { label: "Factions", href: "/league/factions" },
-  { label: "Maps", href: "/league/maps" },
-  { label: "Objectives", href: "/league/objectives" },
-  { label: "Queues", href: "/league/queues" },
-  { label: "Summoner Icons", href: "/league/icons" },
-  { label: "Ward Skins", href: "/league/wards" },
+  {
+    label: "Browse Champions",
+    href: "/league/champions",
+    description: "Search and filter all champions",
+    getPreview: () => {
+      const champion = leagueData.champions[0];
+      return champion
+        ? {
+            name: champion.name,
+            subtitle: `#${champion.id}`,
+            image: champion.image,
+            extra: champion.roles.slice(0, 2).join(", "),
+          }
+        : null;
+    },
+  },
+  {
+    label: "Items",
+    href: "/league/items",
+    description: "Mythics, legendaries, and component gear",
+    getPreview: () => {
+      const item = leagueData.items[0];
+      return item
+        ? {
+            name: item.name,
+            subtitle: item.tags[0] || "Item",
+            image: item.image,
+            extra: `Cost: ${item.goldTotal ?? "—"}g`,
+          }
+        : null;
+    },
+  },
+  {
+    label: "Runes & Spells",
+    href: "/league/systems",
+    description: "Keystone runes and summoner spells",
+    getPreview: () => {
+      const rune = leagueData.runes.find((r) => r.slot === 0);
+      return rune
+        ? {
+            name: rune.name,
+            subtitle: "Keystone rune",
+            image: rune.icon,
+            extra:
+              rune.shortDesc?.slice(0, 50) +
+                (rune.shortDesc && rune.shortDesc.length > 50 ? "..." : "") ||
+              "No description",
+          }
+        : null;
+    },
+  },
+  {
+    label: "Skins & Chromas",
+    href: "/league/chromas",
+    description: "Champion skins and color variants",
+    getPreview: () => {
+      const skin = leagueData.skins[0];
+      return skin
+        ? {
+            name: skin.name,
+            subtitle: skin.championName,
+            image: skin.splash,
+            extra: skin.rarity || "Standard",
+          }
+        : null;
+    },
+  },
+  {
+    label: "Emotes",
+    href: "/league/emotes",
+    description: "Champion emotes and expressions",
+    getPreview: () => {
+      const emote = leagueData.emotes?.[0];
+      if (!emote) return null;
+
+      const championId = emote.championIds?.[0];
+      const champion = championId
+        ? leagueData.champions.find((c) => c.id === Number(championId))
+        : null;
+
+      return {
+        name: emote.name || "Emote",
+        subtitle: champion?.name || "General",
+        image: emote.image,
+        extra: null,
+      };
+    },
+  },
+  {
+    label: "Factions",
+    href: "/league/factions",
+    description: "Regional factions and lore groups",
+    getPreview: () => {
+      const faction = leagueData.factions?.[0];
+      return faction
+        ? {
+            name: faction.name || "Faction",
+            subtitle: "Region",
+            image: null,
+            extra:
+              faction.description?.slice(0, 50) +
+                (faction.description && faction.description.length > 50 ? "..." : "") ||
+              "No description",
+          }
+        : null;
+    },
+  },
+  {
+    label: "Maps",
+    href: "/league/maps",
+    description: "Game maps and battlegrounds",
+    getPreview: () => {
+      const map = leagueData.maps?.[0];
+      return map
+        ? {
+            name: map.name || "Map",
+            subtitle: "Battleground",
+            image: map.image,
+            extra: null,
+          }
+        : null;
+    },
+  },
+  {
+    label: "Objectives",
+    href: "/league/objectives",
+    description: "Neutral objectives and monsters",
+    getPreview: () => {
+      const objective = leagueData.objectives?.[0];
+      return objective
+        ? {
+            name: objective.title || "Objective",
+            subtitle: "Neutral",
+            image: null,
+            extra: null,
+          }
+        : null;
+    },
+  },
+  {
+    label: "Queues",
+    href: "/league/queues",
+    description: "Game modes and queue types",
+    getPreview: () => {
+      const queue = leagueData.queues?.[0];
+      return queue
+        ? {
+            name: queue.map || "Queue",
+            subtitle: "Game mode",
+            image: null,
+            extra:
+              queue.description?.slice(0, 50) +
+                (queue.description && queue.description.length > 50 ? "..." : "") ||
+              "No description",
+          }
+        : null;
+    },
+  },
+  {
+    label: "Summoner Icons",
+    href: "/league/icons",
+    description: "Profile icons and avatars",
+    getPreview: () => {
+      const icon = leagueData.summonerIcons?.[0];
+      return icon
+        ? {
+            name: icon.title || "Icon",
+            subtitle: "Summoner icon",
+            image: icon.image,
+            extra: null,
+          }
+        : null;
+    },
+  },
+  {
+    label: "Ward Skins",
+    href: "/league/wards",
+    description: "Ward skins and trinket cosmetics",
+    getPreview: () => {
+      const ward = leagueData.wardSkins?.[0];
+      return ward
+        ? {
+            name: ward.name || "Ward",
+            subtitle: "Ward skin",
+            image: ward.image,
+            extra: null,
+          }
+        : null;
+    },
+  },
 ];
 
 export default function LeaguePage() {
   const champions = leagueData.champions;
-  const featuredItems = leagueData.items.slice(0, 6);
-  const keystoneRunes = leagueData.runes
-    .filter((rune) => rune.slot === 0)
-    .slice(0, 6);
-  const featuredSpells = leagueData.summonerSpells.slice(0, 6);
-  const featuredSkins = leagueData.skins.slice(0, 6);
+  const sampleChampion = champions[0];
+  const sampleSkin = leagueData.skins[0];
+  const sampleItem = leagueData.items[0];
+  const sampleQuote = leagueData.quotes[0];
+
+  const universeStats = [
+    {
+      label: "Champions",
+      value: champions.length,
+      href: "/league/champions",
+      preview: sampleChampion
+        ? {
+            name: sampleChampion.name,
+            subtitle: `#${sampleChampion.id}`,
+            image: sampleChampion.image,
+            extra: sampleChampion.roles.slice(0, 2).join(", "),
+          }
+        : null,
+    },
+    {
+      label: "Skins",
+      value: leagueData.skins.length,
+      href: "/league/chromas",
+      preview: sampleSkin
+        ? {
+            name: sampleSkin.name,
+            subtitle: sampleSkin.championName,
+            image: sampleSkin.splash,
+            extra: sampleSkin.rarity || "Standard",
+          }
+        : null,
+    },
+    {
+      label: "Items",
+      value: leagueData.items.length,
+      href: "/league/items",
+      preview: sampleItem
+        ? {
+            name: sampleItem.name,
+            subtitle: sampleItem.tags[0] || "Item",
+            image: sampleItem.image,
+            extra: `Cost: ${sampleItem.goldTotal ?? "—"}g`,
+          }
+        : null,
+    },
+    {
+      label: "Quotes",
+      value: leagueData.quotes.length,
+      href: "/league",
+      preview: sampleQuote
+        ? {
+            name: sampleQuote.champion,
+            subtitle: "Quote",
+            image: null,
+            extra:
+              sampleQuote.text?.slice(0, 60) +
+                (sampleQuote.text && sampleQuote.text.length > 60 ? "..." : "") ||
+              "No quote",
+          }
+        : null,
+    },
+  ];
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-8 bg-gray-50 px-6 py-10">
-      <header className="flex flex-col gap-4 rounded-3xl border border-emerald-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
-          League of Legends
-        </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
-          Champions ({champions.length})
-        </h1>
-        <p className="text-gray-600">
-          Browse the live League roster with roles, regions, patches, ability
-          art, cosmetics, and systems data direct from `leaguecontent`.
-        </p>
-        <div className="grid gap-3 sm:grid-cols-4">
-          <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4 text-center">
-            <p className="text-sm text-gray-600">Champions</p>
-            <p className="text-2xl font-semibold text-emerald-700">
-              {leagueData.champions.length}
-            </p>
-          </div>
-          <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4 text-center">
-            <p className="text-sm text-gray-600">Skins</p>
-            <p className="text-2xl font-semibold text-emerald-700">
-              {leagueData.skins.length}
-            </p>
-          </div>
-          <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4 text-center">
-            <p className="text-sm text-gray-600">Items</p>
-            <p className="text-2xl font-semibold text-emerald-700">
-              {leagueData.items.length}
-            </p>
-          </div>
-          <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-4 text-center">
-            <p className="text-sm text-gray-600">Quotes</p>
-            <p className="text-2xl font-semibold text-emerald-700">
-              {leagueData.quotes.length}
-            </p>
-          </div>
+    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-gray-50 px-6 py-10">
+      <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+        <div className="flex flex-col gap-3">
+          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+            League of Legends Universe
+          </p>
+          <h1 className="text-3xl font-semibold text-gray-900">
+            Welcome to the League of Legends Universe
+          </h1>
+          <p className="text-gray-600">
+            Browse the live League roster with roles, regions, patches, ability
+            art, cosmetics, and systems data direct from your scraped data.
+          </p>
         </div>
-      </header>
-      <section className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-          Data feeds
-        </p>
-        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {dataLinks.map((link) => (
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {universeStats.map((stat) => (
             <Link
-              key={link.href}
-              href={link.href}
-              className="rounded-xl border border-gray-100 bg-gray-50 p-3 text-sm font-semibold text-gray-900 transition hover:border-emerald-200 hover:bg-emerald-50"
+              key={stat.label}
+              href={stat.href}
+              className="group flex flex-col gap-3 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
+              aria-label={`View ${stat.label}`}
             >
-              {link.label}
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-semibold text-gray-500">{stat.label}</p>
+                <p className="text-2xl font-semibold text-gray-900">
+                  {stat.value.toLocaleString()}
+                </p>
+              </div>
+              {stat.preview && (
+                <div className="mt-2 flex flex-col gap-2 border-t border-gray-200 pt-3">
+                  {stat.preview.image && (
+                    <ImageWithFallback
+                      src={`/leaguecontent/${stat.preview.image}`}
+                      alt={stat.preview.name}
+                      className="h-16 w-16 rounded-lg border border-gray-100 bg-white object-contain"
+                      loading="lazy"
+                      fallback="/globe.svg"
+                    />
+                  )}
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900">
+                      {stat.preview.name}
+                    </p>
+                    <p className="text-xs text-gray-600">{stat.preview.subtitle}</p>
+                    {stat.preview.extra && (
+                      <p className="mt-1 text-xs text-gray-500">{stat.preview.extra}</p>
+                    )}
+                  </div>
+                </div>
+              )}
             </Link>
           ))}
         </div>
       </section>
-      <section
-        id="champions"
-        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        {champions.map((champion) => (
-          <Link
-            key={champion.id}
-            href={`/league/${champion.slug}`}
-            className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-emerald-200 hover:bg-emerald-50"
-          >
-            <div className="flex items-center gap-3">
-              <ImageWithFallback
-                src={
-                  champion.image
-                    ? `/leaguecontent/${champion.image}`
-                    : "/globe.svg"
-                }
-                alt={`${champion.name} icon`}
-                className="h-16 w-16 rounded-xl border border-gray-100 object-cover"
-              />
-              <div>
-                <p className="text-sm font-semibold text-gray-500">
-                  #{champion.id}
-                </p>
-                <h2 className="text-xl font-semibold text-gray-900">
-                  {champion.name}
-                </h2>
-              </div>
-            </div>
-            <div className="flex flex-wrap gap-2 text-xs font-semibold text-gray-700">
-              {champion.roles.slice(0, 3).map((role) => (
-                <span
-                  key={role}
-                  className="rounded-full bg-emerald-50 px-2 py-1 text-emerald-700"
-                >
-                  {role}
-                </span>
-              ))}
-            </div>
-            <p className="text-sm text-gray-600">
-              Regions: {champion.regions.slice(0, 2).join(", ") || "Unknown"}
-            </p>
-            <p className="text-sm text-gray-600">
-              Released in {champion.releasePatch || "?"} (
-              {champion.releaseYear ?? "Unknown"})
-            </p>
-            <div className="flex items-center justify-between text-xs text-gray-500">
-              <span>Difficulty {champion.difficulty ?? "?"}</span>
-              <span className="text-sm font-semibold text-emerald-700">
-                View profile →
-              </span>
-            </div>
-          </Link>
-        ))}
-      </section>
 
-      <section
-        id="items"
-        className="grid gap-4 lg:grid-cols-2"
-      >
-        <div
-          id="runes"
-          className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-                System
-              </p>
-              <h2 className="text-xl font-semibold text-gray-900">
-                Featured Items
-              </h2>
-            </div>
-            <span className="text-sm text-gray-500">
-              {leagueData.items.length} items
-            </span>
-          </div>
-          <div className="mt-3 grid gap-3 sm:grid-cols-2">
-            {featuredItems.map((item) => (
-              <div
-                key={item.id}
-                className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800"
+      <section className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+          Data feeds
+        </p>
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {dataLinks.map((link) => {
+            const preview = link.getPreview();
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="group flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
+                aria-label={`View ${link.label}`}
               >
-                <div className="flex items-center gap-3">
-                  <ImageWithFallback
-                    src={item.image ? `/leaguecontent/${item.image}` : "/file.svg"}
-                    alt={`${item.name} icon`}
-                    className="h-10 w-10 rounded-lg border border-gray-200 object-cover"
-                    fallback="/file.svg"
-                  />
-                  <div>
-                    <p className="font-semibold">{item.name}</p>
-                    <p className="text-xs text-gray-500">
-                      {item.tags.slice(0, 2).join(", ") || "General"}
-                    </p>
-                  </div>
+                <div>
+                  <p className="text-sm font-semibold text-gray-900">{link.label}</p>
+                  <p className="mt-1 text-xs text-gray-600">{link.description}</p>
                 </div>
-                <p className="mt-2 text-xs text-gray-600">{item.plaintext}</p>
-                <p className="mt-2 text-xs text-gray-500">
-                  Cost: {item.goldTotal ?? "?"}g · Sell: {item.goldSell ?? "?"}g
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-                Keystone
-              </p>
-              <h2 className="text-xl font-semibold text-gray-900">
-                Rune Highlights
-              </h2>
-            </div>
-            <span className="text-sm text-gray-500">
-              {leagueData.runes.length} runes
-            </span>
-          </div>
-          <div className="mt-3 grid gap-3 sm:grid-cols-2">
-            {keystoneRunes.map((rune) => (
-              <div
-                key={rune.runeId}
-                className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800"
-              >
-                <div className="flex items-center gap-3">
-                  <ImageWithFallback
-                    src={rune.icon ? `/leaguecontent/${rune.icon}` : "/globe.svg"}
-                    alt={`${rune.name} icon`}
-                    className="h-10 w-10 rounded-lg border border-gray-200 object-cover"
-                  />
-                  <div>
-                    <p className="font-semibold">{rune.name}</p>
-                    <p className="text-xs uppercase text-gray-500">
-                      Slot {rune.slot} · Tree {rune.treeId}
-                    </p>
+                {preview && (
+                  <div className="mt-2 flex items-start gap-3 border-t border-gray-200 pt-3">
+                    {preview.image && (
+                      <ImageWithFallback
+                        src={`/leaguecontent/${preview.image}`}
+                        alt={preview.name}
+                        className="h-12 w-12 flex-shrink-0 rounded-lg border border-gray-100 bg-white object-contain"
+                        loading="lazy"
+                        fallback="/globe.svg"
+                      />
+                    )}
+                    <div className="min-w-0 flex-1">
+                      <p className="truncate text-sm font-semibold text-gray-900">
+                        {preview.name}
+                      </p>
+                      <p className="text-xs text-gray-600">{preview.subtitle}</p>
+                      {preview.extra && (
+                        <p className="mt-1 text-xs text-gray-500">{preview.extra}</p>
+                      )}
+                    </div>
                   </div>
-                </div>
-                <p className="mt-2 text-xs text-gray-600">{rune.shortDesc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="grid gap-4 lg:grid-cols-2">
-        <div
-          id="spells"
-          className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-                Summoner Spells
-              </p>
-              <h2 className="text-xl font-semibold text-gray-900">
-                Battle Utilities
-              </h2>
-            </div>
-            <span className="text-sm text-gray-500">
-              {leagueData.summonerSpells.length} spells
-            </span>
-          </div>
-          <div className="mt-3 grid gap-3 sm:grid-cols-2">
-            {featuredSpells.map((spell) => (
-              <div
-                key={spell.id}
-                className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800"
-              >
-                <p className="font-semibold">{spell.name}</p>
-                <p className="text-xs text-gray-500">
-                  Cooldown {spell.cooldown}s · Level {spell.summonerLevel ?? "?"}
-                </p>
-                <p className="mt-2 text-xs text-gray-600">
-                  {spell.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div
-          id="skins"
-          className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-                Skins
-              </p>
-              <h2 className="text-xl font-semibold text-gray-900">
-                Featured Cosmetics
-              </h2>
-            </div>
-            <span className="text-sm text-gray-500">
-              {leagueData.skins.length} skins
-            </span>
-          </div>
-          <div className="mt-3 grid gap-3 sm:grid-cols-2">
-            {featuredSkins.map((skin) => (
-              <div
-                key={skin.skinId}
-                className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800"
-              >
-                <p className="font-semibold">{skin.name}</p>
-                <p className="text-xs text-gray-500">
-                  {skin.championName} · {skin.rarity || "Standard"}
-                </p>
-                <p className="mt-2 text-xs text-gray-600">
-                  {skin.availability || "Status unknown"} · Cost{" "}
-                  {skin.cost ?? "?"} RP
-                </p>
-                {skin.splash && (
-                  <ImageWithFallback
-                    src={`/leaguecontent/${skin.splash}`}
-                    alt={`${skin.name} splash`}
-                    className="mt-2 h-28 w-full rounded-lg object-cover"
-                  />
                 )}
-              </div>
-            ))}
-          </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
     </main>

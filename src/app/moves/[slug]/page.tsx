@@ -220,6 +220,16 @@ export default async function MoveDetail({ params }: PageProps) {
   if (!move) {
     notFound();
   }
+  const moveIndex = pokemonData.moves.map((m) => ({
+    slug: m.slug,
+    name: m.name,
+  }));
+  const currentIndex = moveIndex.findIndex((entry) => entry.slug === move.slug);
+  const previous = currentIndex > 0 ? moveIndex[currentIndex - 1] : null;
+  const next =
+    currentIndex >= 0 && currentIndex < moveIndex.length - 1
+      ? moveIndex[currentIndex + 1]
+      : null;
 
   const pokemonMap = new Map<string, PokemonRecord>(
     pokemonData.pokemon.map((p) => [p.slug, p])
@@ -284,6 +294,34 @@ export default async function MoveDetail({ params }: PageProps) {
             <span className="rounded-full bg-gray-100 px-3 py-1 text-gray-700">
               {move.generation}
             </span>
+          </div>
+          <div className="flex flex-col gap-2 text-sm text-gray-600">
+            <p className="font-semibold text-gray-900">Quick navigation</p>
+            <div className="flex flex-wrap gap-2">
+              {previous && (
+                <Link
+                  href={`/moves/${previous.slug}`}
+                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-indigo-200 hover:bg-indigo-50"
+                >
+                  ← {previous.name}
+                </Link>
+              )}
+              {next && (
+                <Link
+                  href={`/moves/${next.slug}`}
+                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-indigo-200 hover:bg-indigo-50"
+                >
+                  {next.name} →
+                </Link>
+              )}
+              <Link
+                href="/moves"
+                className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-gray-300 hover:bg-gray-50"
+                aria-label="Back to Moves list"
+              >
+                Index
+              </Link>
+            </div>
           </div>
         </div>
         <div className="mt-6 grid gap-3 sm:grid-cols-2">

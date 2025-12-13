@@ -21,6 +21,12 @@
     "tsx": "^4.21.0",
     "zod": "^4.1.13"
   },
+  "overrides": {
+    "cookie": "0.7.0",
+    "path-to-regexp": "8.3.0",
+    "undici": "7.16.0",
+    "esbuild": "0.27.1"
+  },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.16",
     "@tailwindcss/postcss": "^4",

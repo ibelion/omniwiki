@@ -6,6 +6,8 @@ import { pokemonData } from "@/lib/pokemon/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { PokemonMovesSection } from "@/components/PokemonMovesSection";
 import { aggregateLearnsets } from "@/lib/pokemon/learnsets";
+import { createNormalizedMoveIndex, normalizeMoveSlug } from "@/lib/pokemon/moveNormalization";
+import { getAlternateForms, getBasePokemonName } from "@/lib/pokemon/forms";
 import type { MoveRecord } from "@/lib/pokemon/types";
 
 type PageProps = {
@@ -24,6 +26,8 @@ export default async function PokemonDetail({ params }: PageProps) {
   if (!pokemon) {
     notFound();
   }
+  const baseName = getBasePokemonName(pokemon.slug);
+  const alternateForms = getAlternateForms(pokemonData.pokemon, baseName, pokemon.slug);
 
   const nameIndex =
     pokemonData.indexes?.nameIndex ??
@@ -37,7 +41,7 @@ export default async function PokemonDetail({ params }: PageProps) {
 
   const species = pokemonData.species.find((s) => s.id === pokemon?.id);
   const learnsetEntries = pokemonData.learnsets?.[pokemon.slug] ?? [];
-  const moveIndex = new Map(pokemonData.moves.map((move) => [move.slug, move]));
+  const moveIndex = createNormalizedMoveIndex(pokemonData.moves);
   
   const movesByGeneration = new Map<
     string,
@@ -46,10 +50,12 @@ export default async function PokemonDetail({ params }: PageProps) {
   
   const movesByMoveSlug = new Map<string, typeof learnsetEntries>();
   for (const entry of learnsetEntries) {
-    if (!movesByMoveSlug.has(entry.move)) {
-      movesByMoveSlug.set(entry.move, []);
+    // Normalize the move slug to handle version suffixes (_2, _3, etc.)
+    const normalizedSlug = normalizeMoveSlug(entry.move);
+    if (!movesByMoveSlug.has(normalizedSlug)) {
+      movesByMoveSlug.set(normalizedSlug, []);
     }
-    movesByMoveSlug.get(entry.move)!.push(entry);
+    movesByMoveSlug.get(normalizedSlug)!.push(entry);
   }
   
   for (const [moveSlug, entries] of movesByMoveSlug.entries()) {
@@ -291,6 +297,45 @@ export default async function PokemonDetail({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {alternateForms.length > 0 && (
+        <section className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+          <h2 className="mb-3 text-base font-semibold text-gray-900">
+            Alternate Forms ({alternateForms.length})
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {alternateForms.map((form) => (
+              <Link
+                key={form.id}
+                href={`/pokemon/${form.slug}`}
+                className="flex items-center gap-3 rounded-lg border border-gray-100 bg-gray-50 p-3 transition hover:border-indigo-200 hover:bg-indigo-50"
+              >
+                <ImageWithFallback
+                  src={`/pokemoncontent/${form.sprites.default}`}
+                  alt={`${form.name} sprite`}
+                  className="h-12 w-12 rounded-lg border border-gray-100 bg-white object-contain"
+                />
+                <div className="flex-1">
+                  <p className="font-semibold text-gray-900">{form.name}</p>
+                  <div className="mt-1 flex flex-wrap gap-1">
+                    {form.types.map((type) => (
+                      <span
+                        key={type}
+                        className="rounded-full bg-indigo-50 px-1.5 py-0.5 text-[10px] font-semibold text-indigo-700"
+                      >
+                        {type}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="mt-1 text-xs text-gray-500">
+                    BST {form.baseStatTotal}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <PokemonMovesSection movesByGeneration={movesByGeneration} />
     </main>

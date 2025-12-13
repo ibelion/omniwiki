@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export type UniverseId = "pokemon" | "league" | "onepiece" | string;
 
@@ -38,6 +39,23 @@ export function UniverseShowcase({ universes }: UniverseShowcaseProps) {
   }, [universes, selectedId]);
 
   if (!activeUniverse) return null;
+
+  const getStatHref = (label: string) => {
+    const labelLower = label.toLowerCase();
+    if (activeUniverse.id === "pokemon") {
+      if (labelLower.includes("pokémon") || labelLower.includes("pokemon")) {
+        return "/pokemon";
+      }
+      if (labelLower.includes("move")) return "/moves";
+      if (labelLower.includes("abilit")) return "/abilities";
+      if (labelLower.includes("item")) return "/pokemon/items";
+    }
+    if (activeUniverse.id === "league") {
+      if (labelLower.includes("champion")) return "/league";
+      if (labelLower.includes("item")) return "/league/items";
+    }
+    return "#";
+  };
 
   return (
     <>
@@ -94,28 +112,34 @@ export function UniverseShowcase({ universes }: UniverseShowcaseProps) {
             <p className="text-gray-600">{activeUniverse.description}</p>
           </div>
           {activeUniverse.heroImage && (
-            <img
+            <Image
               src={activeUniverse.heroImage}
               alt={activeUniverse.heroAlt || activeUniverse.name}
-              className="h-32 w-32 rounded-2xl border border-gray-100 object-cover"
+              width={128}
+              height={128}
+              className="rounded-2xl border border-gray-100 object-cover"
             />
           )}
         </div>
 
         <div className="mt-6 grid gap-3 sm:grid-cols-4">
-          {activeUniverse.stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-2xl border border-gray-100 bg-gray-50 p-4 text-center"
-            >
-              <p className="text-sm text-gray-500">{stat.label}</p>
-              <p className="text-2xl font-semibold text-gray-900">
-                {typeof stat.value === "number"
-                  ? stat.value.toLocaleString()
-                  : stat.value}
-              </p>
-            </div>
-          ))}
+          {activeUniverse.stats.map((stat) => {
+            const href = getStatHref(stat.label);
+            return (
+              <Link
+                key={stat.label}
+                href={href}
+                className="rounded-2xl border border-gray-100 bg-gray-50 p-4 text-center transition hover:border-indigo-200 hover:bg-indigo-50"
+              >
+                <p className="text-sm text-gray-500">{stat.label}</p>
+                <p className="text-2xl font-semibold text-gray-900">
+                  {typeof stat.value === "number"
+                    ? stat.value.toLocaleString()
+                    : stat.value}
+                </p>
+              </Link>
+            );
+          })}
         </div>
 
         <div className="mt-6 grid gap-3 sm:grid-cols-3">

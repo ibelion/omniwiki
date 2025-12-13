@@ -21,6 +21,18 @@ export default async function ChampionDetail({ params }: PageProps) {
   if (!champion) {
     notFound();
   }
+  const championIndex = leagueData.champions.map((c) => ({
+    slug: c.slug,
+    name: c.name,
+  }));
+  const currentIndex = championIndex.findIndex(
+    (entry) => entry.slug === champion.slug
+  );
+  const previous = currentIndex > 0 ? championIndex[currentIndex - 1] : null;
+  const next =
+    currentIndex >= 0 && currentIndex < championIndex.length - 1
+      ? championIndex[currentIndex + 1]
+      : null;
 
   const abilities = leagueData.abilities.filter(
     (ability) => ability.championId === champion.id
@@ -89,6 +101,34 @@ export default async function ChampionDetail({ params }: PageProps) {
                 {role}
               </span>
             ))}
+          </div>
+          <div className="flex flex-col gap-2 text-sm text-gray-600">
+            <p className="font-semibold text-gray-900">Quick navigation</p>
+            <div className="flex flex-wrap gap-2">
+              {previous && (
+                <Link
+                  href={`/league/${previous.slug}`}
+                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-emerald-200 hover:bg-emerald-50"
+                >
+                  ← {previous.name}
+                </Link>
+              )}
+              {next && (
+                <Link
+                  href={`/league/${next.slug}`}
+                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-emerald-200 hover:bg-emerald-50"
+                >
+                  {next.name} →
+                </Link>
+              )}
+              <Link
+                href="/league"
+                className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-gray-300 hover:bg-gray-50"
+                aria-label="Back to League champions list"
+              >
+                Index
+              </Link>
+            </div>
           </div>
         </div>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">

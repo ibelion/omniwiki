@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { PokemonRecord } from "@/lib/pokemon/types";
+import { isBaseForm } from "@/lib/pokemon/forms";
 
 type PokemonSearchProps = {
   pokemon: PokemonRecord[];
@@ -14,8 +15,10 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
   const [query, setQuery] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
 
+  const baseFormsOnly = useMemo(() => pokemon.filter(isBaseForm), [pokemon]);
+
   const filtered = useMemo(() => {
-    return pokemon.filter((p) => {
+    return baseFormsOnly.filter((p) => {
       const matchesQuery =
         !query ||
         p.name.toLowerCase().includes(query.toLowerCase()) ||
@@ -23,7 +26,7 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
       const matchesType = !typeFilter || p.types.includes(typeFilter);
       return matchesQuery && matchesType;
     });
-  }, [pokemon, query, typeFilter]);
+  }, [baseFormsOnly, query, typeFilter]);
 
   return (
     <>
@@ -112,4 +115,3 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
     </>
   );
 };
-

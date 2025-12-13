@@ -2,7 +2,7 @@ import Link from "next/link";
 import { pokemonData } from "@/lib/pokemon/data";
 
 export default function MovesPage() {
-  const moves = pokemonData.moves.slice(0, 200);
+  const moves = pokemonData.moves;
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-gray-50 px-6 py-10">
@@ -11,10 +11,10 @@ export default function MovesPage() {
           Moves
         </p>
         <h1 className="text-3xl font-semibold text-gray-900">
-          Moves ({moves.length} shown)
+          Moves ({moves.length} total)
         </h1>
         <p className="text-gray-600">
-          Sampling of moves with type, class, power, accuracy, and PP.
+          All moves with type, class, power, accuracy, and PP.
         </p>
       </header>
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
