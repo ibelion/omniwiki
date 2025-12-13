@@ -1,10 +1,6 @@
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
+import { leagueData } from "@/lib/league/data";
 
-import { getLeagueBundleEdge } from "@/lib/edge-data";
-
-export default async function LeagueFactionsPage() {
-  const leagueData = await getLeagueBundleEdge();
+export default function LeagueFactionsPage() {
   const factions = leagueData.factions;
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-4 bg-gray-50 px-6 py-10">

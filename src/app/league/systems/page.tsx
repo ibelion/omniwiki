@@ -1,11 +1,7 @@
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
-
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 
-export default async function LeagueSystemsPage() {
-  const leagueData = await getLeagueBundleEdge();
+export default function LeagueSystemsPage() {
   const runes = leagueData.runes;
   const spells = leagueData.summonerSpells;
 

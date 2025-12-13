@@ -1,8 +1,8 @@
-export const runtime = "edge";
+export const dynamicParams = false;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPokemonBundleEdge } from "@/lib/edge-data";
+import { pokemonData } from "@/lib/pokemon/data";
 import type {
   LearnsetEntry,
   PokemonRecord,
@@ -28,9 +28,14 @@ const renderMetaValue = (move: MoveRecord, key: keyof MoveRecord) => {
   return value ?? "—";
 };
 
+export async function generateStaticParams() {
+  return pokemonData.moves.map((m) => ({
+    slug: m.slug,
+  }));
+}
+
 export default async function MoveDetail({ params }: PageProps) {
   const { slug } = await params;
-  const pokemonData = await getPokemonBundleEdge();
   const move = pokemonData.moves.find((m) => m.slug === slug);
   if (!move) {
     notFound();

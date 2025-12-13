@@ -1,8 +1,5 @@
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
-
 import Link from "next/link";
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 const tierBadge = (tags: string[]) => {
@@ -18,8 +15,7 @@ const tierBadge = (tags: string[]) => {
   return { label: "Standard", color: "bg-gray-100 text-gray-600" };
 };
 
-export default async function LeagueItemsPage() {
-  const leagueData = await getLeagueBundleEdge();
+export default function LeagueItemsPage() {
   const items = leagueData.items;
 
   return (

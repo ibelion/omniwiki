@@ -1,8 +1,5 @@
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
-
 import Link from "next/link";
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 const dataLinks = [
@@ -18,8 +15,7 @@ const dataLinks = [
   { label: "Ward Skins", href: "/league/wards" },
 ];
 
-export default async function LeaguePage() {
-  const leagueData = await getLeagueBundleEdge();
+export default function LeaguePage() {
   const champions = leagueData.champions;
   const featuredItems = leagueData.items.slice(0, 6);
   const keystoneRunes = leagueData.runes

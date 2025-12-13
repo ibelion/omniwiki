@@ -1,11 +1,7 @@
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
-
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 
-export default async function LeagueIconsPage() {
-  const leagueData = await getLeagueBundleEdge();
+export default function LeagueIconsPage() {
   const icons = leagueData.summonerIcons;
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-4 bg-gray-50 px-6 py-10">

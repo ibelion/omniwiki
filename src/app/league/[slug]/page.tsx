@@ -1,17 +1,22 @@
-export const runtime = "edge";
+export const dynamicParams = false;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  return leagueData.champions.map((c) => ({
+    slug: c.slug,
+  }));
+}
+
 export default async function ChampionDetail({ params }: PageProps) {
   const { slug } = await params;
-  const leagueData = await getLeagueBundleEdge();
   const champion = leagueData.champions.find((c) => c.slug === slug);
   if (!champion) {
     notFound();

@@ -1,7 +1,4 @@
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
-
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 
 const formatDate = (value: number | null) => {
   if (!value) return "Unknown";
@@ -9,8 +6,7 @@ const formatDate = (value: number | null) => {
   return isNaN(date.getTime()) ? value.toString() : date.toISOString();
 };
 
-export default async function LeagueObjectivesPage() {
-  const leagueData = await getLeagueBundleEdge();
+export default function LeagueObjectivesPage() {
   const objectives = leagueData.objectives;
 
   return (

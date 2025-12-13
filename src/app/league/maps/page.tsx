@@ -1,11 +1,7 @@
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
-
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 
-export default async function LeagueMapsPage() {
-  const leagueData = await getLeagueBundleEdge();
+export default function LeagueMapsPage() {
   const maps = leagueData.maps;
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-4 bg-gray-50 px-6 py-10">

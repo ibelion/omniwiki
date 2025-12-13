@@ -1,18 +1,22 @@
-export const runtime = "edge";
-export const dynamic = "force-dynamic";
+export const dynamicParams = false;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPokemonBundleEdge } from "@/lib/edge-data";
+import { pokemonData } from "@/lib/pokemon/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  return pokemonData.pokemon.map((p) => ({
+    slug: p.slug,
+  }));
+}
+
 export default async function PokemonDetail({ params }: PageProps) {
   const { slug } = await params;
-  const pokemonData = await getPokemonBundleEdge();
   const pokemon = pokemonData.pokemon.find((p) => p.slug === slug);
   if (!pokemon) {
     notFound();
