@@ -1,9 +1,8 @@
-export const runtime = "edge";
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPokemonBundleEdge } from "@/lib/edge-data";
+import { pokemonData } from "@/lib/pokemon/data";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -11,7 +10,6 @@ type PageProps = {
 
 export default async function PokemonDetail({ params }: PageProps) {
   const { slug } = await params;
-  const pokemonData = await getPokemonBundleEdge();
   const pokemon = pokemonData.pokemon.find((p) => p.slug === slug);
   if (!pokemon) {
     notFound();
