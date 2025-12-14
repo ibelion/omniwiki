@@ -1,16 +1,21 @@
 {
   "champions": [],
   "abilities": [],
-  "items": [],
-  "maps": [],
-  "queues": [],
-  "emotes": [],
-  "icons": [],
-  "chromas": [],
-  "factions": [],
-  "objectives": [],
-  "quotes": [],
   "skins": [],
+  "items": [],
+  "runes": [],
   "summonerSpells": [],
-  "systems": []
+  "lore": [],
+  "quotes": [],
+  "chromas": [],
+  "emotes": [],
+  "factions": [],
+  "maps": [],
+  "objectives": [],
+  "queues": [],
+  "summonerIcons": [],
+  "wardSkins": [],
+  "indexes": {
+    "championNames": []
+  }
 }
