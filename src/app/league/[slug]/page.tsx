@@ -4,13 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
-import { loadChampionPositions } from "@/lib/league/positions";
 import { BackLink } from "@/components/BackLink";
-
-function loadPositionsForChampion(name: string): string[] {
-  const map = loadChampionPositions();
-  return map.get(name.toLowerCase()) || [];
-}
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -37,7 +31,7 @@ export default async function ChampionDetail({ params }: PageProps) {
   const abilities = leagueData.abilities.filter(
     (ability) => ability.championId === champion.id
   );
-  const positions = loadPositionsForChampion(champion.name);
+  const positions = champion.positions;
   const mainPosition = positions[0];
   const skins = leagueData.skins.filter(
     (skin) => skin.championId === champion.id
