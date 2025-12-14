@@ -53,6 +53,10 @@ const nextConfig: NextConfig = {
         destination: `${CDN_BASE}/leaguecontent/images/:path*`,
       },
       {
+        source: "/leaguecontent/info/:path*",
+        destination: `${CDN_BASE}/leaguecontent/info/:path*`,
+      },
+      {
         source: "/pokemoncontent/pokemon/:path*",
         destination: `${CDN_BASE}/pokemoncontent/pokemon/:path*`,
       },
