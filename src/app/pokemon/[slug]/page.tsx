@@ -1,5 +1,4 @@
 export const runtime = 'edge';
-export const dynamicParams = false;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -15,12 +14,6 @@ import { BackLink } from "@/components/BackLink";
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
-
-export async function generateStaticParams() {
-  return pokemonData.pokemon.map((p) => ({
-    slug: p.slug,
-  }));
-}
 
 export default async function PokemonDetail({ params }: PageProps) {
   const { slug } = await params;

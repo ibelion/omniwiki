@@ -1,5 +1,4 @@
 export const runtime = 'edge';
-export const dynamicParams = false;
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
