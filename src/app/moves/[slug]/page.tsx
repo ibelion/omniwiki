@@ -208,12 +208,6 @@ const summarizeLearners = (
   return summariesList.sort((a, b) => a.pokemon.id - b.pokemon.id);
 };
 
-export async function generateStaticParams() {
-  return pokemonData.moves.map((m) => ({
-    slug: m.slug,
-  }));
-}
-
 export default async function MoveDetail({ params }: PageProps) {
   const { slug } = await params;
   const move = pokemonData.moves.find((m) => m.slug === slug);
