@@ -88,6 +88,8 @@ const parseChampions = (): ChampionRecord[] => {
     positions: toArray(row.positions),
     resource: row.resource,
     rangeType: row.range_type,
+    gender: row.gender || null,
+    species: toArray(row.species),
     regions: toArray(row.regions),
     releaseYear: toNumber(row.release_year),
     releasePatch: row.release_patch || null,
