@@ -24,6 +24,8 @@ export type ChampionRecord = {
   positions: string[];
   resource: string;
   rangeType: string;
+  gender: string | null;
+  species: string[];
   regions: string[];
   releaseYear: number | null;
   releasePatch: string | null;

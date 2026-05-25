@@ -7,18 +7,16 @@
       "image": "champions/Bard/images/Bard_icon.png",
       "splashImage": "champions/Bard/images/Bard_splash.jpg",
       "roles": [
-        "CATCHER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Runeterra"
       ],
       "releaseYear": 2015,
       "releasePatch": "5.5",
@@ -28,7 +26,11 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/432.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/432.png",
+      "gender": "Male",
+      "species": [
+        "Celestial"
+      ]
     },
     {
       "id": 523,
@@ -37,16 +39,15 @@
       "image": "champions/Aphelios/images/Aphelios_icon.png",
       "splashImage": "champions/Aphelios/images/Aphelios_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "mount-targon",
-        "mount-targon"
+        "Targon"
       ],
       "releaseYear": 2019,
       "releasePatch": "9.24",
@@ -55,7 +56,12 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/523.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/523.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 164,
@@ -64,19 +70,16 @@
       "image": "champions/Camille/images/Camille_icon.png",
       "splashImage": "champions/Camille/images/Camille_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "FIGHTER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "SUPPORT",
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "piltover",
-        "piltover"
+        "Piltover"
       ],
       "releaseYear": 2016,
       "releasePatch": "6.24",
@@ -86,7 +89,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/164.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/164.png",
+      "gender": "Female",
+      "species": [
+        "Cyborg",
+        "Human"
+      ]
     },
     {
       "id": 12,
@@ -95,18 +103,17 @@
       "image": "champions/Alistar/images/Alistar_icon.png",
       "splashImage": "champions/Alistar/images/Alistar_splash.jpg",
       "roles": [
-        "SUPPORT",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Support"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Noxus",
+        "Runeterra"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -116,7 +123,11 @@
         "Tank",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/12.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/12.png",
+      "gender": "Male",
+      "species": [
+        "Minotaur"
+      ]
     },
     {
       "id": 60,
@@ -125,18 +136,18 @@
       "image": "champions/Elise/images/Elise_icon.png",
       "splashImage": "champions/Elise/images/Elise_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "MAGE"
+        "Assassin",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle",
+        "Support"
       ],
       "resource": "Mana",
-      "rangeType": "Ranged",
+      "rangeType": "Melee, Ranged",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Noxus",
+        "Shadow Isles"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.150",
@@ -146,7 +157,12 @@
         "Assassin",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/60.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/60.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 28,
@@ -155,17 +171,16 @@
       "image": "champions/Evelynn/images/Evelynn_icon.png",
       "splashImage": "champions/Evelynn/images/Evelynn_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MAGE"
+        "Assassin",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Runeterra"
       ],
       "releaseYear": 2009,
       "releasePatch": "May 1, 2009 Patch",
@@ -175,7 +190,12 @@
         "Assassin",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/28.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/28.png",
+      "gender": "Female",
+      "species": [
+        "Demon",
+        "Spirit"
+      ]
     },
     {
       "id": 53,
@@ -184,18 +204,16 @@
       "image": "champions/Blitzcrank/images/Blitzcrank_icon.png",
       "splashImage": "champions/Blitzcrank/images/Blitzcrank_splash.jpg",
       "roles": [
-        "CATCHER",
-        "SUPPORT",
-        "TANK"
+        "Tank",
+        "Support"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "zaun",
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.22.16",
@@ -205,7 +223,11 @@
         "Tank",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/53.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/53.png",
+      "gender": "Other",
+      "species": [
+        "Golem"
+      ]
     },
     {
       "id": 268,
@@ -214,18 +236,16 @@
       "image": "champions/Azir/images/Azir_icon.png",
       "splashImage": "champions/Azir/images/Azir_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN",
-        "SPECIALIST"
+        "Mage",
+        "Marksman"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2014,
       "releasePatch": "4.16",
@@ -235,7 +255,11 @@
         "Mage",
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/268.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/268.png",
+      "gender": "Male",
+      "species": [
+        "God-Warrior"
+      ]
     },
     {
       "id": 41,
@@ -244,17 +268,15 @@
       "image": "champions/Gangplank/images/Gangplank_icon.png",
       "splashImage": "champions/Gangplank/images/Gangplank_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "SPECIALIST"
+        "Fighter"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "bilgewater",
-        "bilgewater"
+        "Bilgewater"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.22.15",
@@ -263,7 +285,11 @@
       "tags": [
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/41.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/41.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 136,
@@ -272,17 +298,16 @@
       "image": "champions/AurelionSol/images/AurelionSol_icon.png",
       "splashImage": "champions/AurelionSol/images/AurelionSol_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Runeterra",
+        "Targon"
       ],
       "releaseYear": 2016,
       "releasePatch": "6.6",
@@ -291,7 +316,12 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/136.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/136.png",
+      "gender": "Male",
+      "species": [
+        "Celestial",
+        "Dragon"
+      ]
     },
     {
       "id": 266,
@@ -300,18 +330,15 @@
       "image": "champions/Aatrox/images/Aatrox_icon.png",
       "splashImage": "champions/Aatrox/images/Aatrox_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Blood Well",
       "rangeType": "Melee",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Runeterra"
       ],
       "releaseYear": 2013,
       "releasePatch": "3.8",
@@ -320,7 +347,11 @@
       "tags": [
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/266.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/266.png",
+      "gender": "Male",
+      "species": [
+        "Darkin"
+      ]
     },
     {
       "id": 233,
@@ -329,18 +360,16 @@
       "image": "champions/Briar/images/Briar_icon.png",
       "splashImage": "champions/Briar/images/Briar_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "FIGHTER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Frenzy",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2023,
       "releasePatch": "13.18",
@@ -350,7 +379,11 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/233.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/233.png",
+      "gender": "Female",
+      "species": [
+        "Golem"
+      ]
     },
     {
       "id": 114,
@@ -359,18 +392,16 @@
       "image": "champions/Fiora/images/Fiora_icon.png",
       "splashImage": "champions/Fiora/images/Fiora_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.135",
@@ -380,7 +411,11 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/114.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/114.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 131,
@@ -389,19 +424,17 @@
       "image": "champions/Diana/images/Diana_icon.png",
       "splashImage": "champions/Diana/images/Diana_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "FIGHTER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE",
-        "MIDDLE"
+        "Jungle",
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "mount-targon",
-        "mount-targon"
+        "Targon"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.144",
@@ -411,7 +444,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/131.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/131.png",
+      "gender": "Female",
+      "species": [
+        "Aspect",
+        "Human"
+      ]
     },
     {
       "id": 51,
@@ -420,16 +458,15 @@
       "image": "champions/Caitlyn/images/Caitlyn_icon.png",
       "splashImage": "champions/Caitlyn/images/Caitlyn_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "piltover",
-        "piltover"
+        "Piltover"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.108",
@@ -438,7 +475,11 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/51.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/51.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 32,
@@ -447,19 +488,16 @@
       "image": "champions/Amumu/images/Amumu_icon.png",
       "splashImage": "champions/Amumu/images/Amumu_splash.jpg",
       "roles": [
-        "SUPPORT",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Support"
       ],
       "positions": [
-        "JUNGLE",
-        "SUPPORT"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2009,
       "releasePatch": "June 26, 2009 Patch",
@@ -469,7 +507,12 @@
         "Tank",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/32.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/32.png",
+      "gender": "Male",
+      "species": [
+        "Undead",
+        "Yordle"
+      ]
     },
     {
       "id": 200,
@@ -478,17 +521,15 @@
       "image": "champions/Belveth/images/Belveth_icon.png",
       "splashImage": "champions/Belveth/images/Belveth_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "None",
       "rangeType": "Melee",
       "regions": [
-        "void",
-        "void"
+        "Void"
       ],
       "releaseYear": 2022,
       "releasePatch": "12.11",
@@ -497,7 +538,11 @@
       "tags": [
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/200.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/200.png",
+      "gender": "Female",
+      "species": [
+        "Void-Being"
+      ]
     },
     {
       "id": 202,
@@ -506,18 +551,16 @@
       "image": "champions/Jhin/images/Jhin_icon.png",
       "splashImage": "champions/Jhin/images/Jhin_splash.jpg",
       "roles": [
-        "CATCHER",
-        "MAGE",
-        "MARKSMAN"
+        "Marksman",
+        "Mage"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2016,
       "releasePatch": "6.2",
@@ -527,7 +570,12 @@
         "Marksman",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/202.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/202.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 245,
@@ -536,18 +584,17 @@
       "image": "champions/Ekko/images/Ekko_icon.png",
       "splashImage": "champions/Ekko/images/Ekko_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MAGE"
+        "Assassin",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE",
-        "MIDDLE"
+        "Jungle",
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "zaun",
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2015,
       "releasePatch": "5.10",
@@ -557,7 +604,11 @@
         "Assassin",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/245.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/245.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 36,
@@ -566,18 +617,16 @@
       "image": "champions/DrMundo/images/DrMundo_icon.png",
       "splashImage": "champions/DrMundo/images/DrMundo_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Tank",
+        "Fighter"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Health",
       "rangeType": "Melee",
       "regions": [
-        "zaun",
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.22.16",
@@ -587,7 +636,12 @@
         "Tank",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/36.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/36.png",
+      "gender": "Male",
+      "species": [
+        "Chemically Altered",
+        "Human"
+      ]
     },
     {
       "id": 84,
@@ -596,17 +650,15 @@
       "image": "champions/Akali/images/Akali_icon.png",
       "splashImage": "champions/Akali/images/Akali_splash.jpg",
       "roles": [
-        "ASSASSIN"
+        "Assassin"
       ],
       "positions": [
-        "MIDDLE",
-        "TOP"
+        "Middle"
       ],
       "resource": "Energy",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.85",
@@ -615,7 +667,11 @@
       "tags": [
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/84.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/84.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 105,
@@ -624,17 +680,16 @@
       "image": "champions/Fizz/images/Fizz_icon.png",
       "splashImage": "champions/Fizz/images/Fizz_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER"
+        "Assassin",
+        "Fighter"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Bilgewater"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.129",
@@ -644,7 +699,11 @@
         "Assassin",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/105.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/105.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 799,
@@ -653,19 +712,17 @@
       "image": "champions/Ambessa/images/Ambessa_icon.png",
       "splashImage": "champions/Ambessa/images/Ambessa_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Energy",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus",
+        "Piltover"
       ],
       "releaseYear": 2024,
       "releasePatch": "14.22",
@@ -675,7 +732,11 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/799.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/799.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 887,
@@ -684,19 +745,17 @@
       "image": "champions/Gwen/images/Gwen_icon.png",
       "splashImage": "champions/Gwen/images/Gwen_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Camavor",
+        "Shadow Isles"
       ],
       "releaseYear": 2021,
       "releasePatch": "11.8",
@@ -705,7 +764,12 @@
       "tags": [
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/887.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/887.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 427,
@@ -714,18 +778,17 @@
       "image": "champions/Ivern/images/Ivern_icon.png",
       "splashImage": "champions/Ivern/images/Ivern_splash.jpg",
       "roles": [
-        "CATCHER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Freljord",
+        "Ionia"
       ],
       "releaseYear": 2016,
       "releasePatch": "6.20",
@@ -735,7 +798,12 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/427.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/427.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 3,
@@ -744,19 +812,16 @@
       "image": "champions/Galio/images/Galio_icon.png",
       "splashImage": "champions/Galio/images/Galio_splash.jpg",
       "roles": [
-        "MAGE",
-        "TANK",
-        "WARDEN"
+        "Tank",
+        "Mage"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.98",
@@ -766,7 +831,11 @@
         "Tank",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/3.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/3.png",
+      "gender": "Male",
+      "species": [
+        "Golem"
+      ]
     },
     {
       "id": 79,
@@ -775,20 +844,17 @@
       "image": "champions/Gragas/images/Gragas_icon.png",
       "splashImage": "champions/Gragas/images/Gragas_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "MAGE",
-        "VANGUARD"
+        "Fighter",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE",
-        "MIDDLE",
-        "TOP"
+        "Jungle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.72",
@@ -798,7 +864,12 @@
         "Fighter",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/79.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/79.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Iceborn"
+      ]
     },
     {
       "id": 429,
@@ -807,16 +878,16 @@
       "image": "champions/Kalista/images/Kalista_icon.png",
       "splashImage": "champions/Kalista/images/Kalista_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Camavor",
+        "Shadow Isles"
       ],
       "releaseYear": 2014,
       "releasePatch": "4.20",
@@ -825,7 +896,11 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/429.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/429.png",
+      "gender": "Female",
+      "species": [
+        "Undead"
+      ]
     },
     {
       "id": 22,
@@ -834,18 +909,16 @@
       "image": "champions/Ashe/images/Ashe_icon.png",
       "splashImage": "champions/Ashe/images/Ashe_splash.jpg",
       "roles": [
-        "MARKSMAN",
-        "SUPPORT"
+        "Marksman",
+        "Support"
       ],
       "positions": [
-        "BOTTOM",
-        "SUPPORT"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -855,7 +928,12 @@
         "Marksman",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/22.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/22.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Iceborn"
+      ]
     },
     {
       "id": 38,
@@ -864,17 +942,17 @@
       "image": "champions/Kassadin/images/Kassadin_icon.png",
       "splashImage": "champions/Kassadin/images/Kassadin_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MAGE"
+        "Assassin",
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "void",
-        "void"
+        "Shurima",
+        "Void"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.22.7",
@@ -884,7 +962,12 @@
         "Assassin",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/38.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/38.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Void-Being"
+      ]
     },
     {
       "id": 74,
@@ -893,20 +976,17 @@
       "image": "champions/Heimerdinger/images/Heimerdinger_icon.png",
       "splashImage": "champions/Heimerdinger/images/Heimerdinger_splash.jpg",
       "roles": [
-        "MAGE",
-        "SPECIALIST",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT",
-        "TOP"
+        "Middle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "piltover",
-        "piltover"
+        "Piltover"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.25.34",
@@ -916,7 +996,11 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/74.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/74.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 240,
@@ -925,18 +1009,15 @@
       "image": "champions/Kled/images/Kled_icon.png",
       "splashImage": "champions/Kled/images/Kled_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "SKIRMISHER",
-        "TANK"
+        "Fighter"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Courage",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2016,
       "releasePatch": "6.16",
@@ -945,7 +1026,11 @@
       "tags": [
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/240.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/240.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 120,
@@ -954,18 +1039,17 @@
       "image": "champions/Hecarim/images/Hecarim_icon.png",
       "splashImage": "champions/Hecarim/images/Hecarim_splash.jpg",
       "roles": [
-        "DIVER",
-        "FIGHTER",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Camavor",
+        "Shadow Isles"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.138",
@@ -975,7 +1059,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/120.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/120.png",
+      "gender": "Male",
+      "species": [
+        "Undead"
+      ]
     },
     {
       "id": 910,
@@ -984,19 +1072,16 @@
       "image": "champions/Hwei/images/Hwei_icon.png",
       "splashImage": "champions/Hwei/images/Hwei_splash.jpg",
       "roles": [
-        "ARTILLERY",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2023,
       "releasePatch": "13.24",
@@ -1006,7 +1091,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/910.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/910.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 42,
@@ -1015,17 +1105,18 @@
       "image": "champions/Corki/images/Corki_icon.png",
       "splashImage": "champions/Corki/images/Corki_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN"
+        "Marksman",
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Bottom",
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "bandle-city",
-        "bandle-city"
+        "Bandle City",
+        "Piltover"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.25.21",
@@ -1035,7 +1126,11 @@
         "Marksman",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/42.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/42.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 59,
@@ -1044,18 +1139,16 @@
       "image": "champions/JarvanIV/images/JarvanIV_icon.png",
       "splashImage": "champions/JarvanIV/images/JarvanIV_splash.jpg",
       "roles": [
-        "DIVER",
-        "FIGHTER",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.112",
@@ -1065,7 +1158,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/59.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/59.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 99,
@@ -1074,20 +1171,17 @@
       "image": "champions/Lux/images/Lux_icon.png",
       "splashImage": "champions/Lux/images/Lux_splash.jpg",
       "roles": [
-        "ARTILLERY",
-        "BURST",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT"
+        "Middle",
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.103",
@@ -1097,7 +1191,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/99.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/99.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 63,
@@ -1106,20 +1205,17 @@
       "image": "champions/Brand/images/Brand_icon.png",
       "splashImage": "champions/Brand/images/Brand_splash.jpg",
       "roles": [
-        "BURST",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "JUNGLE",
-        "MIDDLE",
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Freljord",
+        "Runeterra"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.115",
@@ -1129,7 +1225,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/63.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/63.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 43,
@@ -1138,21 +1239,16 @@
       "image": "champions/Karma/images/Karma_icon.png",
       "splashImage": "champions/Karma/images/Karma_splash.jpg",
       "roles": [
-        "BURST",
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT",
-        "TOP"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.110",
@@ -1162,7 +1258,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/43.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/43.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 85,
@@ -1171,18 +1272,16 @@
       "image": "champions/Kennen/images/Kennen_icon.png",
       "splashImage": "champions/Kennen/images/Kennen_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN",
-        "SPECIALIST"
+        "Mage"
       ],
       "positions": [
-        "TOP"
+        "Middle",
+        "Top"
       ],
       "resource": "Energy",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.82",
@@ -1191,7 +1290,11 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/85.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/85.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 1,
@@ -1200,18 +1303,17 @@
       "image": "champions/Annie/images/Annie_icon.png",
       "splashImage": "champions/Annie/images/Annie_splash.jpg",
       "roles": [
-        "BURST",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Noxus",
+        "Runeterra"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -1221,7 +1323,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/1.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 126,
@@ -1230,19 +1337,16 @@
       "image": "champions/Jayce/images/Jayce_icon.png",
       "splashImage": "champions/Jayce/images/Jayce_splash.jpg",
       "roles": [
-        "ARTILLERY",
-        "FIGHTER",
-        "MARKSMAN"
+        "Fighter",
+        "Marksman"
       ],
       "positions": [
-        "MIDDLE",
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
-      "rangeType": "Ranged",
+      "rangeType": "Melee, Ranged",
       "regions": [
-        "piltover",
-        "piltover"
+        "Piltover"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.142",
@@ -1252,7 +1356,11 @@
         "Fighter",
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/126.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/126.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 40,
@@ -1261,18 +1369,17 @@
       "image": "champions/Janna/images/Janna_icon.png",
       "splashImage": "champions/Janna/images/Janna_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "zaun",
-        "zaun"
+        "Shurima",
+        "Zaun"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.22.16",
@@ -1282,7 +1389,12 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/40.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/40.png",
+      "gender": "Female",
+      "species": [
+        "God",
+        "Spirit"
+      ]
     },
     {
       "id": 897,
@@ -1291,19 +1403,16 @@
       "image": "champions/KSante/images/KSante_icon.png",
       "splashImage": "champions/KSante/images/KSante_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "SKIRMISHER",
-        "TANK",
-        "WARDEN"
+        "Tank",
+        "Fighter"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2022,
       "releasePatch": "12.21",
@@ -1313,7 +1422,11 @@
         "Tank",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/897.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/897.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 201,
@@ -1322,18 +1435,16 @@
       "image": "champions/Braum/images/Braum_icon.png",
       "splashImage": "champions/Braum/images/Braum_splash.jpg",
       "roles": [
-        "SUPPORT",
-        "TANK",
-        "WARDEN"
+        "Tank",
+        "Support"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2014,
       "releasePatch": "4.7",
@@ -1343,7 +1454,12 @@
         "Tank",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/201.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/201.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Iceborn"
+      ]
     },
     {
       "id": 876,
@@ -1352,18 +1468,16 @@
       "image": "champions/Lillia/images/Lillia_icon.png",
       "splashImage": "champions/Lillia/images/Lillia_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "MAGE",
-        "SKIRMISHER"
+        "Fighter",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
-      "rangeType": "Melee",
+      "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2020,
       "releasePatch": "10.15",
@@ -1373,7 +1487,11 @@
         "Fighter",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/876.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/876.png",
+      "gender": "Female",
+      "species": [
+        "Spirit"
+      ]
     },
     {
       "id": 141,
@@ -1382,18 +1500,19 @@
       "image": "champions/Kayn/images/Kayn_icon.png",
       "splashImage": "champions/Kayn/images/Kayn_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia",
+        "Noxus",
+        "Runeterra",
+        "Shurima"
       ],
       "releaseYear": 2017,
       "releasePatch": "7.14",
@@ -1403,7 +1522,13 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/141.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/141.png",
+      "gender": "Male",
+      "species": [
+        "Darkin",
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 57,
@@ -1412,19 +1537,16 @@
       "image": "champions/Maokai/images/Maokai_icon.png",
       "splashImage": "champions/Maokai/images/Maokai_splash.jpg",
       "roles": [
-        "SUPPORT",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Support"
       ],
       "positions": [
-        "JUNGLE",
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Shadow Isles"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.111",
@@ -1434,7 +1556,11 @@
         "Tank",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/57.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/57.png",
+      "gender": "Male",
+      "species": [
+        "Spirit"
+      ]
     },
     {
       "id": 30,
@@ -1443,17 +1569,16 @@
       "image": "champions/Karthus/images/Karthus_icon.png",
       "splashImage": "champions/Karthus/images/Karthus_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Noxus",
+        "Shadow Isles"
       ],
       "releaseYear": 2009,
       "releasePatch": "June 12, 2009 Patch",
@@ -1462,7 +1587,11 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/30.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/30.png",
+      "gender": "Male",
+      "species": [
+        "Undead"
+      ]
     },
     {
       "id": 800,
@@ -1471,19 +1600,18 @@
       "image": "champions/Mel/images/Mel_icon.png",
       "splashImage": "champions/Mel/images/Mel_splash.jpg",
       "roles": [
-        "ARTILLERY",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT"
+        "Middle",
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus",
+        "Piltover"
       ],
       "releaseYear": 2025,
       "releasePatch": "25.02",
@@ -1493,7 +1621,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/800.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/800.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 222,
@@ -1502,16 +1635,15 @@
       "image": "champions/Jinx/images/Jinx_icon.png",
       "splashImage": "champions/Jinx/images/Jinx_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "zaun",
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2013,
       "releasePatch": "3.12",
@@ -1520,7 +1652,12 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/222.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/222.png",
+      "gender": "Female",
+      "species": [
+        "Chemically Altered",
+        "Human"
+      ]
     },
     {
       "id": 145,
@@ -1529,17 +1666,17 @@
       "image": "champions/Kaisa/images/Kaisa_icon.png",
       "splashImage": "champions/Kaisa/images/Kaisa_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN"
+        "Marksman",
+        "Mage"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "void",
-        "void"
+        "Shurima",
+        "Void"
       ],
       "releaseYear": 2018,
       "releasePatch": "8.5",
@@ -1549,7 +1686,12 @@
         "Marksman",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/145.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/145.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Void-Being"
+      ]
     },
     {
       "id": 11,
@@ -1558,18 +1700,16 @@
       "image": "champions/MasterYi/images/MasterYi_icon.png",
       "splashImage": "champions/MasterYi/images/MasterYi_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -1579,7 +1719,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/11.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/11.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 121,
@@ -1588,16 +1733,15 @@
       "image": "champions/Khazix/images/Khazix_icon.png",
       "splashImage": "champions/Khazix/images/Khazix_splash.jpg",
       "roles": [
-        "ASSASSIN"
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "void",
-        "void"
+        "Void"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.148",
@@ -1606,7 +1750,11 @@
       "tags": [
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/121.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/121.png",
+      "gender": "Male",
+      "species": [
+        "Void-Being"
+      ]
     },
     {
       "id": 96,
@@ -1615,17 +1763,16 @@
       "image": "champions/KogMaw/images/KogMaw_icon.png",
       "splashImage": "champions/KogMaw/images/KogMaw_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN"
+        "Marksman",
+        "Mage"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "void",
-        "void"
+        "Void"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.94",
@@ -1635,7 +1782,11 @@
         "Marksman",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/96.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/96.png",
+      "gender": "Male",
+      "species": [
+        "Void-Being"
+      ]
     },
     {
       "id": 34,
@@ -1644,18 +1795,15 @@
       "image": "champions/Anivia/images/Anivia_icon.png",
       "splashImage": "champions/Anivia/images/Anivia_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "MAGE",
-        "SUPPORT"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2009,
       "releasePatch": "July 10, 2009 Patch",
@@ -1664,7 +1812,12 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/34.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/34.png",
+      "gender": "Female",
+      "species": [
+        "God",
+        "Spirit"
+      ]
     },
     {
       "id": 54,
@@ -1673,20 +1826,17 @@
       "image": "champions/Malphite/images/Malphite_icon.png",
       "splashImage": "champions/Malphite/images/Malphite_splash.jpg",
       "roles": [
-        "MAGE",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Mage"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT",
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "ixtal",
-        "ixtal"
+        "Ixtal",
+        "Shurima"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.22.16",
@@ -1696,7 +1846,11 @@
         "Tank",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/54.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/54.png",
+      "gender": "Male",
+      "species": [
+        "Golem"
+      ]
     },
     {
       "id": 236,
@@ -1705,17 +1859,17 @@
       "image": "champions/Lucian/images/Lucian_icon.png",
       "splashImage": "champions/Lucian/images/Lucian_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MARKSMAN"
+        "Marksman",
+        "Assassin"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Demacia",
+        "Shadow Isles"
       ],
       "releaseYear": 2013,
       "releasePatch": "3.10a",
@@ -1725,7 +1879,11 @@
         "Marksman",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/236.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/236.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 166,
@@ -1734,17 +1892,16 @@
       "image": "champions/Akshan/images/Akshan_icon.png",
       "splashImage": "champions/Akshan/images/Akshan_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MARKSMAN"
+        "Marksman",
+        "Assassin"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2021,
       "releasePatch": "11.15",
@@ -1754,7 +1911,11 @@
         "Marksman",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/166.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/166.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 76,
@@ -1763,18 +1924,16 @@
       "image": "champions/Nidalee/images/Nidalee_icon.png",
       "splashImage": "champions/Nidalee/images/Nidalee_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MAGE",
-        "SPECIALIST"
+        "Assassin",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
-      "rangeType": "Ranged",
+      "rangeType": "Melee, Ranged",
       "regions": [
-        "ixtal",
-        "ixtal"
+        "Ixtal"
       ],
       "releaseYear": 2009,
       "releasePatch": "1.0.0.63",
@@ -1784,7 +1943,12 @@
         "Assassin",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/76.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/76.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 117,
@@ -1793,18 +1957,16 @@
       "image": "champions/Lulu/images/Lulu_icon.png",
       "splashImage": "champions/Lulu/images/Lulu_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "bandle-city",
-        "bandle-city"
+        "Bandle City"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.136",
@@ -1814,7 +1976,11 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/117.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/117.png",
+      "gender": "Female",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 7,
@@ -1823,18 +1989,16 @@
       "image": "champions/Leblanc/images/Leblanc_icon.png",
       "splashImage": "champions/Leblanc/images/Leblanc_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "BURST",
-        "MAGE"
+        "Assassin",
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.104",
@@ -1844,7 +2008,12 @@
         "Assassin",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/7.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/7.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 103,
@@ -1853,18 +2022,16 @@
       "image": "champions/Ahri/images/Ahri_icon.png",
       "splashImage": "champions/Ahri/images/Ahri_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "BURST",
-        "MAGE"
+        "Mage",
+        "Assassin"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.131",
@@ -1874,7 +2041,11 @@
         "Mage",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/103.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/103.png",
+      "gender": "Female",
+      "species": [
+        "Vastayan"
+      ]
     },
     {
       "id": 127,
@@ -1883,17 +2054,15 @@
       "image": "champions/Lissandra/images/Lissandra_icon.png",
       "splashImage": "champions/Lissandra/images/Lissandra_splash.jpg",
       "roles": [
-        "BURST",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2013,
       "releasePatch": "3.6",
@@ -1902,7 +2071,12 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/127.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/127.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Iceborn"
+      ]
     },
     {
       "id": 420,
@@ -1911,18 +2085,16 @@
       "image": "champions/Illaoi/images/Illaoi_icon.png",
       "splashImage": "champions/Illaoi/images/Illaoi_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "bilgewater",
-        "bilgewater"
+        "Bilgewater"
       ],
       "releaseYear": 2015,
       "releasePatch": "5.23",
@@ -1932,7 +2104,12 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/420.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/420.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 104,
@@ -1941,17 +2118,15 @@
       "image": "champions/Graves/images/Graves_icon.png",
       "splashImage": "champions/Graves/images/Graves_splash.jpg",
       "roles": [
-        "MARKSMAN",
-        "SPECIALIST"
+        "Marksman"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "bilgewater",
-        "bilgewater"
+        "Bilgewater"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.127",
@@ -1960,7 +2135,11 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/104.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/104.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 82,
@@ -1969,18 +2148,17 @@
       "image": "champions/Mordekaiser/images/Mordekaiser_icon.png",
       "splashImage": "champions/Mordekaiser/images/Mordekaiser_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "MAGE"
+        "Fighter",
+        "Mage"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Shield",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus",
+        "Shadow Isles"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.75",
@@ -1990,7 +2168,11 @@
         "Fighter",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/82.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/82.png",
+      "gender": "Male",
+      "species": [
+        "Revenant"
+      ]
     },
     {
       "id": 75,
@@ -1999,18 +2181,16 @@
       "image": "champions/Nasus/images/Nasus_icon.png",
       "splashImage": "champions/Nasus/images/Nasus_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.25.24",
@@ -2020,7 +2200,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/75.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/75.png",
+      "gender": "Male",
+      "species": [
+        "God-Warrior"
+      ]
     },
     {
       "id": 25,
@@ -2029,18 +2213,17 @@
       "image": "champions/Morgana/images/Morgana_icon.png",
       "splashImage": "champions/Morgana/images/Morgana_splash.jpg",
       "roles": [
-        "CATCHER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia",
+        "Targon"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -2050,7 +2233,13 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/25.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/25.png",
+      "gender": "Female",
+      "species": [
+        "Aspect",
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 902,
@@ -2059,18 +2248,16 @@
       "image": "champions/Milio/images/Milio_icon.png",
       "splashImage": "champions/Milio/images/Milio_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ixtal",
-        "ixtal"
+        "Ixtal"
       ],
       "releaseYear": 2023,
       "releasePatch": "13.6",
@@ -2080,7 +2267,12 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/902.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/902.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 111,
@@ -2089,18 +2281,16 @@
       "image": "champions/Nautilus/images/Nautilus_icon.png",
       "splashImage": "champions/Nautilus/images/Nautilus_splash.jpg",
       "roles": [
-        "SUPPORT",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Support"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "bilgewater",
-        "bilgewater"
+        "Bilgewater"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.134",
@@ -2110,7 +2300,11 @@
         "Tank",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/111.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/111.png",
+      "gender": "Male",
+      "species": [
+        "Revenant"
+      ]
     },
     {
       "id": 31,
@@ -2119,18 +2313,17 @@
       "image": "champions/Chogath/images/Chogath_icon.png",
       "splashImage": "champions/Chogath/images/Chogath_splash.jpg",
       "roles": [
-        "MAGE",
-        "SPECIALIST",
-        "TANK"
+        "Tank",
+        "Mage"
       ],
       "positions": [
-        "TOP"
+        "Middle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "void",
-        "void"
+        "Void"
       ],
       "releaseYear": 2009,
       "releasePatch": "June 26, 2009 Patch",
@@ -2140,7 +2333,11 @@
         "Tank",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/31.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/31.png",
+      "gender": "Male",
+      "species": [
+        "Void-Being"
+      ]
     },
     {
       "id": 518,
@@ -2149,20 +2346,17 @@
       "image": "champions/Neeko/images/Neeko_icon.png",
       "splashImage": "champions/Neeko/images/Neeko_splash.jpg",
       "roles": [
-        "BURST",
-        "CATCHER",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT"
+        "Middle",
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ixtal",
-        "ixtal"
+        "Ixtal"
       ],
       "releaseYear": 2018,
       "releasePatch": "8.24",
@@ -2172,7 +2366,11 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/518.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/518.png",
+      "gender": "Female",
+      "species": [
+        "Vastayan"
+      ]
     },
     {
       "id": 69,
@@ -2181,17 +2379,17 @@
       "image": "champions/Cassiopeia/images/Cassiopeia_icon.png",
       "splashImage": "champions/Cassiopeia/images/Cassiopeia_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus",
+        "Shurima"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.107",
@@ -2200,7 +2398,12 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/69.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/69.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 20,
@@ -2209,18 +2412,16 @@
       "image": "champions/Nunu/images/Nunu_icon.png",
       "splashImage": "champions/Nunu/images/Nunu_splash.jpg",
       "roles": [
-        "MAGE",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -2230,7 +2431,12 @@
         "Tank",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/20.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/20.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Yeti"
+      ]
     },
     {
       "id": 119,
@@ -2239,16 +2445,15 @@
       "image": "champions/Draven/images/Draven_icon.png",
       "splashImage": "champions/Draven/images/Draven_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.140b",
@@ -2257,7 +2462,11 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/119.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/119.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 9,
@@ -2266,18 +2475,17 @@
       "image": "champions/Fiddlesticks/images/Fiddlesticks_icon.png",
       "splashImage": "champions/Fiddlesticks/images/Fiddlesticks_splash.jpg",
       "roles": [
-        "MAGE",
-        "SPECIALIST",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle",
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Runeterra"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -2287,7 +2495,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/9.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/9.png",
+      "gender": "Other",
+      "species": [
+        "Demon",
+        "Spirit"
+      ]
     },
     {
       "id": 92,
@@ -2296,18 +2509,17 @@
       "image": "champions/Riven/images/Riven_icon.png",
       "splashImage": "champions/Riven/images/Riven_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "None",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Ionia",
+        "Noxus"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.125",
@@ -2317,7 +2529,11 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/92.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/92.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 893,
@@ -2326,19 +2542,16 @@
       "image": "champions/Aurora/images/Aurora_icon.png",
       "splashImage": "champions/Aurora/images/Aurora_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "BURST",
-        "MAGE"
+        "Mage",
+        "Assassin"
       ],
       "positions": [
-        "MIDDLE",
-        "TOP"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2024,
       "releasePatch": "14.14",
@@ -2348,7 +2561,11 @@
         "Mage",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/893.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/893.png",
+      "gender": "Female",
+      "species": [
+        "Vastayan"
+      ]
     },
     {
       "id": 122,
@@ -2357,18 +2574,17 @@
       "image": "champions/Darius/images/Darius_icon.png",
       "splashImage": "champions/Darius/images/Darius_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Jungle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.140",
@@ -2378,7 +2594,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/122.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/122.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 10,
@@ -2387,18 +2607,17 @@
       "image": "champions/Kayle/images/Kayle_icon.png",
       "splashImage": "champions/Kayle/images/Kayle_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN",
-        "SPECIALIST"
+        "Mage",
+        "Marksman"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
-      "rangeType": "Melee",
+      "rangeType": "Melee, Ranged",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia",
+        "Targon"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -2408,7 +2627,13 @@
         "Mage",
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/10.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/10.png",
+      "gender": "Female",
+      "species": [
+        "Aspect",
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 86,
@@ -2417,18 +2642,16 @@
       "image": "champions/Garen/images/Garen_icon.png",
       "splashImage": "champions/Garen/images/Garen_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "None",
       "rangeType": "Melee",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.83",
@@ -2438,7 +2661,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/86.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/86.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 150,
@@ -2447,18 +2674,16 @@
       "image": "champions/Gnar/images/Gnar_icon.png",
       "splashImage": "champions/Gnar/images/Gnar_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "SPECIALIST",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Rage",
-      "rangeType": "Ranged",
+      "rangeType": "Melee, Ranged",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2014,
       "releasePatch": "4.18",
@@ -2468,7 +2693,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/150.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/150.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 39,
@@ -2477,19 +2706,17 @@
       "image": "champions/Irelia/images/Irelia_icon.png",
       "splashImage": "champions/Irelia/images/Irelia_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "FIGHTER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "MIDDLE",
-        "TOP"
+        "Middle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.105",
@@ -2499,7 +2726,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/39.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/39.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 246,
@@ -2508,17 +2740,15 @@
       "image": "champions/Qiyana/images/Qiyana_icon.png",
       "splashImage": "champions/Qiyana/images/Qiyana_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER"
+        "Assassin"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "ixtal",
-        "ixtal"
+        "Ixtal"
       ],
       "releaseYear": 2019,
       "releasePatch": "9.13",
@@ -2527,7 +2757,12 @@
       "tags": [
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/246.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/246.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 24,
@@ -2536,19 +2771,18 @@
       "image": "champions/Jax/images/Jax_icon.png",
       "splashImage": "champions/Jax/images/Jax_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Icathia",
+        "Runeterra",
+        "Shurima"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -2557,7 +2791,11 @@
       "tags": [
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/24.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/24.png",
+      "gender": "Male",
+      "species": [
+        "Unknown"
+      ]
     },
     {
       "id": 203,
@@ -2566,16 +2804,15 @@
       "image": "champions/Kindred/images/Kindred_icon.png",
       "splashImage": "champions/Kindred/images/Kindred_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Runeterra"
       ],
       "releaseYear": 2015,
       "releasePatch": "5.20",
@@ -2584,7 +2821,12 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/203.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/203.png",
+      "gender": "Other",
+      "species": [
+        "God",
+        "Spirit"
+      ]
     },
     {
       "id": 56,
@@ -2593,17 +2835,16 @@
       "image": "champions/Nocturne/images/Nocturne_icon.png",
       "splashImage": "champions/Nocturne/images/Nocturne_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Runeterra"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.113",
@@ -2613,7 +2854,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/56.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/56.png",
+      "gender": "Male",
+      "species": [
+        "Demon",
+        "Spirit"
+      ]
     },
     {
       "id": 89,
@@ -2622,18 +2868,16 @@
       "image": "champions/Leona/images/Leona_icon.png",
       "splashImage": "champions/Leona/images/Leona_splash.jpg",
       "roles": [
-        "SUPPORT",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Support"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "mount-targon",
-        "mount-targon"
+        "Targon"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.121",
@@ -2643,7 +2887,12 @@
         "Tank",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/89.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/89.png",
+      "gender": "Female",
+      "species": [
+        "Aspect",
+        "Human"
+      ]
     },
     {
       "id": 895,
@@ -2652,18 +2901,16 @@
       "image": "champions/Nilah/images/Nilah_icon.png",
       "splashImage": "champions/Nilah/images/Nilah_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "bilgewater",
-        "bilgewater"
+        "Bilgewater"
       ],
       "releaseYear": 2022,
       "releasePatch": "12.13",
@@ -2673,7 +2920,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/895.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/895.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 62,
@@ -2682,19 +2934,16 @@
       "image": "champions/MonkeyKing/images/MonkeyKing_icon.png",
       "splashImage": "champions/MonkeyKing/images/MonkeyKing_splash.jpg",
       "roles": [
-        "DIVER",
-        "FIGHTER",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.122",
@@ -2704,7 +2953,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/62.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/62.png",
+      "gender": "Male",
+      "species": [
+        "Vastayan"
+      ]
     },
     {
       "id": 950,
@@ -2713,17 +2966,17 @@
       "image": "champions/Naafiri/images/Naafiri_icon.png",
       "splashImage": "champions/Naafiri/images/Naafiri_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER"
+        "Assassin",
+        "Fighter"
       ],
       "positions": [
-        "MIDDLE"
+        "Jungle",
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2023,
       "releasePatch": "13.14",
@@ -2733,7 +2986,12 @@
         "Assassin",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/950.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/950.png",
+      "gender": "Female",
+      "species": [
+        "Darkin",
+        "Dog"
+      ]
     },
     {
       "id": 55,
@@ -2742,17 +3000,16 @@
       "image": "champions/Katarina/images/Katarina_icon.png",
       "splashImage": "champions/Katarina/images/Katarina_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MAGE"
+        "Assassin",
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "None",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.25.21",
@@ -2762,7 +3019,11 @@
         "Assassin",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/55.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/55.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 17,
@@ -2771,20 +3032,16 @@
       "image": "champions/Teemo/images/Teemo_icon.png",
       "splashImage": "champions/Teemo/images/Teemo_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN",
-        "SPECIALIST"
+        "Marksman",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE",
-        "SUPPORT",
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "bandle-city",
-        "bandle-city"
+        "Bandle City"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -2794,7 +3051,11 @@
         "Marksman",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/17.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/17.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 61,
@@ -2803,18 +3064,16 @@
       "image": "champions/Orianna/images/Orianna_icon.png",
       "splashImage": "champions/Orianna/images/Orianna_splash.jpg",
       "roles": [
-        "BURST",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "piltover",
-        "piltover"
+        "Piltover"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.119",
@@ -2824,7 +3083,11 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/61.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/61.png",
+      "gender": "Female",
+      "species": [
+        "Golem"
+      ]
     },
     {
       "id": 497,
@@ -2833,17 +3096,15 @@
       "image": "champions/Rakan/images/Rakan_icon.png",
       "splashImage": "champions/Rakan/images/Rakan_splash.jpg",
       "roles": [
-        "CATCHER",
-        "SUPPORT"
+        "Support"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
-      "rangeType": "Melee",
+      "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2017,
       "releasePatch": "7.8",
@@ -2852,7 +3113,11 @@
       "tags": [
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/497.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/497.png",
+      "gender": "Male",
+      "species": [
+        "Vastayan"
+      ]
     },
     {
       "id": 888,
@@ -2861,17 +3126,16 @@
       "image": "champions/Renata/images/Renata_icon.png",
       "splashImage": "champions/Renata/images/Renata_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2022,
       "releasePatch": "12.4",
@@ -2881,7 +3145,12 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/888.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/888.png",
+      "gender": "Female",
+      "species": [
+        "Chemically Altered",
+        "Human"
+      ]
     },
     {
       "id": 875,
@@ -2890,18 +3159,16 @@
       "image": "champions/Sett/images/Sett_icon.png",
       "splashImage": "champions/Sett/images/Sett_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Grit",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2020,
       "releasePatch": "10.1",
@@ -2911,7 +3178,12 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/875.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/875.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Vastayan"
+      ]
     },
     {
       "id": 526,
@@ -2920,18 +3192,16 @@
       "image": "champions/Rell/images/Rell_icon.png",
       "splashImage": "champions/Rell/images/Rell_splash.jpg",
       "roles": [
-        "SUPPORT",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Support"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2020,
       "releasePatch": "10.25",
@@ -2941,7 +3211,13 @@
         "Tank",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/526.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/526.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magically Altered",
+        "Magicborn"
+      ]
     },
     {
       "id": 58,
@@ -2950,18 +3226,16 @@
       "image": "champions/Renekton/images/Renekton_icon.png",
       "splashImage": "champions/Renekton/images/Renekton_splash.jpg",
       "roles": [
-        "DIVER",
-        "FIGHTER",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Fury",
       "rangeType": "Melee",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.109",
@@ -2971,7 +3245,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/58.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/58.png",
+      "gender": "Male",
+      "species": [
+        "God-Warrior"
+      ]
     },
     {
       "id": 81,
@@ -2980,17 +3258,16 @@
       "image": "champions/Ezreal/images/Ezreal_icon.png",
       "splashImage": "champions/Ezreal/images/Ezreal_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN"
+        "Marksman",
+        "Mage"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "piltover",
-        "piltover"
+        "Piltover"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.79",
@@ -3000,7 +3277,12 @@
         "Marksman",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/81.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/81.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 555,
@@ -3009,18 +3291,16 @@
       "image": "champions/Pyke/images/Pyke_icon.png",
       "splashImage": "champions/Pyke/images/Pyke_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "CATCHER",
-        "SUPPORT"
+        "Support",
+        "Assassin"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "bilgewater",
-        "bilgewater"
+        "Bilgewater"
       ],
       "releaseYear": 2018,
       "releasePatch": "8.11",
@@ -3030,7 +3310,11 @@
         "Support",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/555.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/555.png",
+      "gender": "Male",
+      "species": [
+        "Revenant"
+      ]
     },
     {
       "id": 516,
@@ -3039,18 +3323,15 @@
       "image": "champions/Ornn/images/Ornn_icon.png",
       "splashImage": "champions/Ornn/images/Ornn_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "TANK",
-        "VANGUARD"
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2017,
       "releasePatch": "7.17",
@@ -3059,7 +3340,12 @@
       "tags": [
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/516.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/516.png",
+      "gender": "Male",
+      "species": [
+        "God",
+        "Spirit"
+      ]
     },
     {
       "id": 421,
@@ -3068,18 +3354,17 @@
       "image": "champions/RekSai/images/RekSai_icon.png",
       "splashImage": "champions/RekSai/images/RekSai_splash.jpg",
       "roles": [
-        "DIVER",
-        "FIGHTER",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Rage",
       "rangeType": "Melee",
       "regions": [
-        "void",
-        "void"
+        "Shurima",
+        "Void"
       ],
       "releaseYear": 2014,
       "releasePatch": "4.21",
@@ -3089,7 +3374,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/421.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/421.png",
+      "gender": "Female",
+      "species": [
+        "Void-Being"
+      ]
     },
     {
       "id": 107,
@@ -3098,19 +3387,17 @@
       "image": "champions/Rengar/images/Rengar_icon.png",
       "splashImage": "champions/Rengar/images/Rengar_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "FIGHTER"
+        "Assassin",
+        "Fighter"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle"
       ],
       "resource": "Ferocity",
       "rangeType": "Melee",
       "regions": [
-        "ixtal",
-        "ixtal"
+        "Ixtal",
+        "Shurima"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.145",
@@ -3120,7 +3407,11 @@
         "Assassin",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/107.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/107.png",
+      "gender": "Male",
+      "species": [
+        "Vastayan"
+      ]
     },
     {
       "id": 13,
@@ -3129,18 +3420,16 @@
       "image": "champions/Ryze/images/Ryze_icon.png",
       "splashImage": "champions/Ryze/images/Ryze_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "FIGHTER",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Runeterra"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -3149,7 +3438,12 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/13.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/13.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 68,
@@ -3158,19 +3452,16 @@
       "image": "champions/Rumble/images/Rumble_icon.png",
       "splashImage": "champions/Rumble/images/Rumble_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "FIGHTER",
-        "MAGE"
+        "Fighter",
+        "Mage"
       ],
       "positions": [
-        "MIDDLE",
-        "TOP"
+        "Top"
       ],
       "resource": "Heat",
       "rangeType": "Melee",
       "regions": [
-        "bandle-city",
-        "bandle-city"
+        "Bandle City"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.116",
@@ -3180,7 +3471,11 @@
         "Fighter",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/68.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/68.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 360,
@@ -3189,17 +3484,17 @@
       "image": "champions/Samira/images/Samira_icon.png",
       "splashImage": "champions/Samira/images/Samira_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MARKSMAN"
+        "Marksman",
+        "Assassin"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus",
+        "Shurima"
       ],
       "releaseYear": 2020,
       "releasePatch": "10.19",
@@ -3209,7 +3504,11 @@
         "Marksman",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/360.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/360.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 113,
@@ -3218,18 +3517,15 @@
       "image": "champions/Sejuani/images/Sejuani_icon.png",
       "splashImage": "champions/Sejuani/images/Sejuani_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "TANK",
-        "VANGUARD"
+        "Tank"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.132",
@@ -3238,7 +3534,12 @@
       "tags": [
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/113.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/113.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Iceborn"
+      ]
     },
     {
       "id": 15,
@@ -3247,16 +3548,15 @@
       "image": "champions/Sivir/images/Sivir_icon.png",
       "splashImage": "champions/Sivir/images/Sivir_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -3265,7 +3565,11 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/15.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/15.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 90,
@@ -3274,18 +3578,16 @@
       "image": "champions/Malzahar/images/Malzahar_icon.png",
       "splashImage": "champions/Malzahar/images/Malzahar_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "BATTLEMAGE",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "void",
-        "void"
+        "Shurima",
+        "Void"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.86",
@@ -3294,7 +3596,11 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/90.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/90.png",
+      "gender": "Male",
+      "species": [
+        "Void-Being"
+      ]
     },
     {
       "id": 8,
@@ -3303,19 +3609,19 @@
       "image": "champions/Vladimir/images/Vladimir_icon.png",
       "splashImage": "champions/Vladimir/images/Vladimir_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "FIGHTER",
-        "MAGE"
+        "Mage",
+        "Fighter"
       ],
       "positions": [
-        "MIDDLE",
-        "TOP"
+        "Middle",
+        "Top"
       ],
       "resource": "Crimson Rush",
       "rangeType": "Ranged",
       "regions": [
-        "noxus",
-        "noxus"
+        "Camavor",
+        "Noxus",
+        "Shadow Isles"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.97",
@@ -3325,7 +3631,12 @@
         "Mage",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/8.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/8.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 2,
@@ -3334,18 +3645,16 @@
       "image": "champions/Olaf/images/Olaf_icon.png",
       "splashImage": "champions/Olaf/images/Olaf_splash.jpg",
       "roles": [
-        "DIVER",
-        "FIGHTER",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.87",
@@ -3355,7 +3664,12 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/2.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/2.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Iceborn"
+      ]
     },
     {
       "id": 16,
@@ -3364,18 +3678,17 @@
       "image": "champions/Soraka/images/Soraka_icon.png",
       "splashImage": "champions/Soraka/images/Soraka_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "mount-targon",
-        "mount-targon"
+        "Ionia",
+        "Targon"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -3385,7 +3698,11 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/16.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/16.png",
+      "gender": "Female",
+      "species": [
+        "Celestial"
+      ]
     },
     {
       "id": 412,
@@ -3394,18 +3711,16 @@
       "image": "champions/Thresh/images/Thresh_icon.png",
       "splashImage": "champions/Thresh/images/Thresh_splash.jpg",
       "roles": [
-        "CATCHER",
-        "SUPPORT",
-        "TANK"
+        "Support",
+        "Tank"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Shadow Isles"
       ],
       "releaseYear": 2013,
       "releasePatch": "1.0.0.154",
@@ -3415,7 +3730,11 @@
         "Support",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/412.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/412.png",
+      "gender": "Male",
+      "species": [
+        "Undead"
+      ]
     },
     {
       "id": 50,
@@ -3424,20 +3743,16 @@
       "image": "champions/Swain/images/Swain_icon.png",
       "splashImage": "champions/Swain/images/Swain_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "BOTTOM",
-        "MIDDLE",
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.102",
@@ -3447,7 +3762,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/50.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/50.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 35,
@@ -3456,17 +3776,16 @@
       "image": "champions/Shaco/images/Shaco_icon.png",
       "splashImage": "champions/Shaco/images/Shaco_splash.jpg",
       "roles": [
-        "ASSASSIN"
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE",
-        "SUPPORT"
+        "Jungle",
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Runeterra"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.25.34",
@@ -3475,7 +3794,11 @@
       "tags": [
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/35.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/35.png",
+      "gender": "Male",
+      "species": [
+        "Spirit"
+      ]
     },
     {
       "id": 223,
@@ -3484,19 +3807,18 @@
       "image": "champions/TahmKench/images/TahmKench_icon.png",
       "splashImage": "champions/TahmKench/images/TahmKench_splash.jpg",
       "roles": [
-        "SUPPORT",
-        "TANK",
-        "WARDEN"
+        "Tank",
+        "Support"
       ],
       "positions": [
-        "SUPPORT",
-        "TOP"
+        "Support",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Bilgewater",
+        "Runeterra"
       ],
       "releaseYear": 2015,
       "releasePatch": "5.13",
@@ -3506,7 +3828,12 @@
         "Tank",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/223.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/223.png",
+      "gender": "Male",
+      "species": [
+        "Demon",
+        "Spirit"
+      ]
     },
     {
       "id": 14,
@@ -3515,18 +3842,16 @@
       "image": "champions/Sion/images/Sion_icon.png",
       "splashImage": "champions/Sion/images/Sion_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Fighter"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -3536,7 +3861,11 @@
         "Tank",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/14.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/14.png",
+      "gender": "Male",
+      "species": [
+        "Revenant"
+      ]
     },
     {
       "id": 102,
@@ -3545,18 +3874,16 @@
       "image": "champions/Shyvana/images/Shyvana_icon.png",
       "splashImage": "champions/Shyvana/images/Shyvana_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "MAGE"
+        "Fighter",
+        "Mage"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Fury",
       "rangeType": "Melee",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.128",
@@ -3566,7 +3893,12 @@
         "Fighter",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/102.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/102.png",
+      "gender": "Female",
+      "species": [
+        "Dragon",
+        "Magically Altered"
+      ]
     },
     {
       "id": 106,
@@ -3575,19 +3907,17 @@
       "image": "champions/Volibear/images/Volibear_icon.png",
       "splashImage": "champions/Volibear/images/Volibear_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.130",
@@ -3597,7 +3927,12 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/106.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/106.png",
+      "gender": "Male",
+      "species": [
+        "God",
+        "Spirit"
+      ]
     },
     {
       "id": 901,
@@ -3606,19 +3941,17 @@
       "image": "champions/Smolder/images/Smolder_icon.png",
       "splashImage": "champions/Smolder/images/Smolder_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN"
+        "Marksman",
+        "Mage"
       ],
       "positions": [
-        "BOTTOM",
-        "MIDDLE",
-        "TOP"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Camavor",
+        "Noxus"
       ],
       "releaseYear": 2024,
       "releasePatch": "14.2",
@@ -3628,7 +3961,11 @@
         "Marksman",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/901.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/901.png",
+      "gender": "Male",
+      "species": [
+        "Dragon"
+      ]
     },
     {
       "id": 27,
@@ -3637,18 +3974,17 @@
       "image": "champions/Singed/images/Singed_icon.png",
       "splashImage": "champions/Singed/images/Singed_splash.jpg",
       "roles": [
-        "MAGE",
-        "SPECIALIST",
-        "TANK"
+        "Tank",
+        "Mage"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "zaun",
-        "zaun"
+        "Piltover",
+        "Zaun"
       ],
       "releaseYear": 2009,
       "releasePatch": "April 18, 2009 Patch",
@@ -3658,7 +3994,12 @@
         "Tank",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/27.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/27.png",
+      "gender": "Male",
+      "species": [
+        "Chemically Altered",
+        "Human"
+      ]
     },
     {
       "id": 72,
@@ -3667,20 +4008,16 @@
       "image": "champions/Skarner/images/Skarner_icon.png",
       "splashImage": "champions/Skarner/images/Skarner_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Fighter"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "ixtal",
-        "ixtal"
+        "Ixtal"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.123",
@@ -3690,7 +4027,11 @@
         "Tank",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/72.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/72.png",
+      "gender": "Male",
+      "species": [
+        "Brackern"
+      ]
     },
     {
       "id": 23,
@@ -3699,18 +4040,16 @@
       "image": "champions/Tryndamere/images/Tryndamere_icon.png",
       "splashImage": "champions/Tryndamere/images/Tryndamere_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Fury",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2009,
       "releasePatch": "May 1, 2009 Patch",
@@ -3720,7 +4059,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/23.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/23.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 18,
@@ -3729,18 +4073,16 @@
       "image": "champions/Tristana/images/Tristana_icon.png",
       "splashImage": "champions/Tristana/images/Tristana_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MARKSMAN"
+        "Marksman",
+        "Assassin"
       ],
       "positions": [
-        "BOTTOM",
-        "MIDDLE"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "bandle-city",
-        "bandle-city"
+        "Bandle City"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -3750,7 +4092,11 @@
         "Marksman",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/18.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/18.png",
+      "gender": "Female",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 37,
@@ -3759,18 +4105,17 @@
       "image": "champions/Sona/images/Sona_icon.png",
       "splashImage": "champions/Sona/images/Sona_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia",
+        "Ionia"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.101",
@@ -3780,7 +4125,12 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/37.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/37.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 98,
@@ -3789,18 +4139,16 @@
       "image": "champions/Shen/images/Shen_icon.png",
       "splashImage": "champions/Shen/images/Shen_splash.jpg",
       "roles": [
-        "TANK",
-        "WARDEN"
+        "Tank"
       ],
       "positions": [
-        "SUPPORT",
-        "TOP"
+        "Support",
+        "Top"
       ],
       "resource": "Energy",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.81",
@@ -3809,7 +4157,12 @@
       "tags": [
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/98.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/98.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 163,
@@ -3818,19 +4171,16 @@
       "image": "champions/Taliyah/images/Taliyah_icon.png",
       "splashImage": "champions/Taliyah/images/Taliyah_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "JUNGLE",
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2016,
       "releasePatch": "6.10",
@@ -3840,7 +4190,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/163.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/163.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 110,
@@ -3849,18 +4204,18 @@
       "image": "champions/Varus/images/Varus_icon.png",
       "splashImage": "champions/Varus/images/Varus_splash.jpg",
       "roles": [
-        "ARTILLERY",
-        "MAGE",
-        "MARKSMAN"
+        "Marksman",
+        "Mage"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia",
+        "Runeterra",
+        "Shurima"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.139",
@@ -3870,7 +4225,12 @@
         "Marksman",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/110.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/110.png",
+      "gender": "Male",
+      "species": [
+        "Darkin",
+        "Human"
+      ]
     },
     {
       "id": 254,
@@ -3879,18 +4239,17 @@
       "image": "champions/Vi/images/Vi_icon.png",
       "splashImage": "champions/Vi/images/Vi_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "FIGHTER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "piltover",
-        "piltover"
+        "Piltover",
+        "Zaun"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.153",
@@ -3900,7 +4259,11 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/254.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/254.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 134,
@@ -3909,17 +4272,15 @@
       "image": "champions/Syndra/images/Syndra_icon.png",
       "splashImage": "champions/Syndra/images/Syndra_splash.jpg",
       "roles": [
-        "BURST",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.147",
@@ -3928,7 +4289,12 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/134.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/134.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 77,
@@ -3937,19 +4303,17 @@
       "image": "champions/Udyr/images/Udyr_icon.png",
       "splashImage": "champions/Udyr/images/Udyr_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord",
+        "Ionia"
       ],
       "releaseYear": 2009,
       "releasePatch": "1.0.0.61",
@@ -3959,7 +4323,12 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/77.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/77.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 44,
@@ -3968,20 +4337,17 @@
       "image": "champions/Taric/images/Taric_icon.png",
       "splashImage": "champions/Taric/images/Taric_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "SUPPORT",
-        "TANK",
-        "WARDEN"
+        "Support",
+        "Tank"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "mount-targon",
-        "mount-targon"
+        "Demacia",
+        "Targon"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.9.22.15",
@@ -3991,7 +4357,12 @@
         "Support",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/44.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/44.png",
+      "gender": "Male",
+      "species": [
+        "Aspect",
+        "Human"
+      ]
     },
     {
       "id": 48,
@@ -4000,19 +4371,17 @@
       "image": "champions/Trundle/images/Trundle_icon.png",
       "splashImage": "champions/Trundle/images/Trundle_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "freljord",
-        "freljord"
+        "Freljord"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.106",
@@ -4022,7 +4391,12 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/48.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/48.png",
+      "gender": "Male",
+      "species": [
+        "Iceborn",
+        "Troll"
+      ]
     },
     {
       "id": 4,
@@ -4031,20 +4405,16 @@
       "image": "champions/TwistedFate/images/TwistedFate_icon.png",
       "splashImage": "champions/TwistedFate/images/TwistedFate_splash.jpg",
       "roles": [
-        "BURST",
-        "MAGE",
-        "MARKSMAN"
+        "Mage",
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM",
-        "MIDDLE",
-        "TOP"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "bilgewater",
-        "bilgewater"
+        "Bilgewater"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -4054,7 +4424,12 @@
         "Mage",
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/4.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/4.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 157,
@@ -4063,20 +4438,16 @@
       "image": "champions/Yasuo/images/Yasuo_icon.png",
       "splashImage": "champions/Yasuo/images/Yasuo_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "BOTTOM",
-        "MIDDLE",
-        "TOP"
+        "Middle"
       ],
       "resource": "Flow",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2013,
       "releasePatch": "3.15",
@@ -4086,7 +4457,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/157.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/157.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 29,
@@ -4095,18 +4471,16 @@
       "image": "champions/Twitch/images/Twitch_icon.png",
       "splashImage": "champions/Twitch/images/Twitch_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MARKSMAN"
+        "Marksman",
+        "Assassin"
       ],
       "positions": [
-        "BOTTOM",
-        "SUPPORT"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "zaun",
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2009,
       "releasePatch": "May 1, 2009 Patch",
@@ -4116,7 +4490,12 @@
         "Marksman",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/29.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/29.png",
+      "gender": "Male",
+      "species": [
+        "Chemically Altered",
+        "Rat"
+      ]
     },
     {
       "id": 101,
@@ -4125,19 +4504,17 @@
       "image": "champions/Xerath/images/Xerath_icon.png",
       "splashImage": "champions/Xerath/images/Xerath_splash.jpg",
       "roles": [
-        "ARTILLERY",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT"
+        "Middle",
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.126",
@@ -4147,7 +4524,11 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/101.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/101.png",
+      "gender": "Male",
+      "species": [
+        "Baccai"
+      ]
     },
     {
       "id": 498,
@@ -4156,16 +4537,15 @@
       "image": "champions/Xayah/images/Xayah_icon.png",
       "splashImage": "champions/Xayah/images/Xayah_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2017,
       "releasePatch": "7.8",
@@ -4174,7 +4554,11 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/498.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/498.png",
+      "gender": "Female",
+      "species": [
+        "Vastayan"
+      ]
     },
     {
       "id": 67,
@@ -4183,18 +4567,16 @@
       "image": "champions/Vayne/images/Vayne_icon.png",
       "splashImage": "champions/Vayne/images/Vayne_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MARKSMAN"
+        "Marksman",
+        "Assassin"
       ],
       "positions": [
-        "BOTTOM",
-        "TOP"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.118",
@@ -4204,7 +4586,11 @@
         "Marksman",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/67.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/67.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 6,
@@ -4213,18 +4599,17 @@
       "image": "champions/Urgot/images/Urgot_icon.png",
       "splashImage": "champions/Urgot/images/Urgot_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "zaun",
-        "zaun"
+        "Noxus",
+        "Zaun"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.99",
@@ -4234,7 +4619,13 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/6.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/6.png",
+      "gender": "Male",
+      "species": [
+        "Chemically Altered",
+        "Cyborg",
+        "Human"
+      ]
     },
     {
       "id": 143,
@@ -4243,18 +4634,16 @@
       "image": "champions/Zyra/images/Zyra_icon.png",
       "splashImage": "champions/Zyra/images/Zyra_splash.jpg",
       "roles": [
-        "CATCHER",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ixtal",
-        "ixtal"
+        "Ixtal"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.143",
@@ -4264,7 +4653,12 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/143.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/143.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Plant"
+      ]
     },
     {
       "id": 21,
@@ -4273,17 +4667,16 @@
       "image": "champions/MissFortune/images/MissFortune_icon.png",
       "splashImage": "champions/MissFortune/images/MissFortune_splash.jpg",
       "roles": [
-        "MAGE",
-        "MARKSMAN"
+        "Marksman",
+        "Mage"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "bilgewater",
-        "bilgewater"
+        "Bilgewater"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.100",
@@ -4293,7 +4686,11 @@
         "Marksman",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/21.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/21.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 5,
@@ -4302,18 +4699,18 @@
       "image": "champions/XinZhao/images/XinZhao_icon.png",
       "splashImage": "champions/XinZhao/images/XinZhao_splash.jpg",
       "roles": [
-        "DIVER",
-        "FIGHTER",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia",
+        "Ionia",
+        "Noxus"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.96",
@@ -4323,7 +4720,11 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/5.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/5.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 161,
@@ -4332,19 +4733,17 @@
       "image": "champions/Velkoz/images/Velkoz_icon.png",
       "splashImage": "champions/Velkoz/images/Velkoz_splash.jpg",
       "roles": [
-        "ARTILLERY",
-        "MAGE",
-        "SUPPORT"
+        "Mage",
+        "Support"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT"
+        "Middle",
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "void",
-        "void"
+        "Void"
       ],
       "releaseYear": 2014,
       "releasePatch": "4.3",
@@ -4354,7 +4753,11 @@
         "Mage",
         "Support"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/161.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/161.png",
+      "gender": "Male",
+      "species": [
+        "Void-Being"
+      ]
     },
     {
       "id": 45,
@@ -4363,18 +4766,17 @@
       "image": "champions/Veigar/images/Veigar_icon.png",
       "splashImage": "champions/Veigar/images/Veigar_splash.jpg",
       "roles": [
-        "BURST",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE",
-        "SUPPORT"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "bandle-city",
-        "bandle-city"
+        "Bandle City",
+        "Runeterra",
+        "Shadow Isles"
       ],
       "releaseYear": 2009,
       "releasePatch": "0.8.22.115",
@@ -4383,7 +4785,11 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/45.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/45.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 711,
@@ -4392,17 +4798,16 @@
       "image": "champions/Vex/images/Vex_icon.png",
       "splashImage": "champions/Vex/images/Vex_splash.jpg",
       "roles": [
-        "BURST",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Bandle City",
+        "Shadow Isles"
       ],
       "releaseYear": 2021,
       "releasePatch": "11.19",
@@ -4411,7 +4816,11 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/711.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/711.png",
+      "gender": "Female",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 112,
@@ -4420,17 +4829,16 @@
       "image": "champions/Viktor/images/Viktor_icon.png",
       "splashImage": "champions/Viktor/images/Viktor_splash.jpg",
       "roles": [
-        "BATTLEMAGE",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "zaun",
-        "zaun"
+        "Piltover",
+        "Zaun"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.131",
@@ -4439,7 +4847,12 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/112.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/112.png",
+      "gender": "Male",
+      "species": [
+        "Cyborg",
+        "Human"
+      ]
     },
     {
       "id": 19,
@@ -4448,19 +4861,17 @@
       "image": "champions/Warwick/images/Warwick_icon.png",
       "splashImage": "champions/Warwick/images/Warwick_splash.jpg",
       "roles": [
-        "DIVER",
-        "FIGHTER",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "zaun",
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2009,
       "releasePatch": "Alpha Week 2",
@@ -4470,7 +4881,13 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/19.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/19.png",
+      "gender": "Male",
+      "species": [
+        "Chemically Altered",
+        "Cyborg",
+        "Human"
+      ]
     },
     {
       "id": 804,
@@ -4479,16 +4896,15 @@
       "image": "champions/Yunara/images/Yunara_icon.png",
       "splashImage": "champions/Yunara/images/Yunara_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2025,
       "releasePatch": "25.14",
@@ -4497,7 +4913,12 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/804.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/804.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 133,
@@ -4506,18 +4927,17 @@
       "image": "champions/Quinn/images/Quinn_icon.png",
       "splashImage": "champions/Quinn/images/Quinn_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "MARKSMAN",
-        "SPECIALIST"
+        "Marksman",
+        "Assassin"
       ],
       "positions": [
-        "TOP"
+        "Middle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia"
       ],
       "releaseYear": 2013,
       "releasePatch": "3.03",
@@ -4527,7 +4947,11 @@
         "Marksman",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/133.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/133.png",
+      "gender": "Female",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 777,
@@ -4536,19 +4960,17 @@
       "image": "champions/Yone/images/Yone_icon.png",
       "splashImage": "champions/Yone/images/Yone_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "MIDDLE",
-        "TOP"
+        "Middle",
+        "Top"
       ],
       "resource": "Flow",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2020,
       "releasePatch": "10.16",
@@ -4558,7 +4980,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/777.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/777.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 33,
@@ -4567,18 +4994,15 @@
       "image": "champions/Rammus/images/Rammus_icon.png",
       "splashImage": "champions/Rammus/images/Rammus_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "TANK",
-        "VANGUARD"
+        "Tank"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "shurima",
-        "shurima"
+        "Shurima"
       ],
       "releaseYear": 2009,
       "releasePatch": "July 10, 2009 Patch",
@@ -4587,7 +5011,11 @@
       "tags": [
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/33.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/33.png",
+      "gender": "Male",
+      "species": [
+        "Unknown"
+      ]
     },
     {
       "id": 78,
@@ -4596,19 +5024,18 @@
       "image": "champions/Poppy/images/Poppy_icon.png",
       "splashImage": "champions/Poppy/images/Poppy_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "TANK",
-        "WARDEN"
+        "Tank",
+        "Fighter"
       ],
       "positions": [
-        "JUNGLE",
-        "TOP"
+        "Jungle",
+        "Support",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.70",
@@ -4618,7 +5045,11 @@
         "Tank",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/78.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/78.png",
+      "gender": "Female",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 80,
@@ -4627,21 +5058,18 @@
       "image": "champions/Pantheon/images/Pantheon_icon.png",
       "splashImage": "champions/Pantheon/images/Pantheon_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "FIGHTER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE",
-        "MIDDLE",
-        "SUPPORT",
-        "TOP"
+        "Jungle",
+        "Support",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "mount-targon",
-        "mount-targon"
+        "Targon"
       ],
       "releaseYear": 2010,
       "releasePatch": "1.0.0.72",
@@ -4651,7 +5079,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/80.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/80.png",
+      "gender": "Male",
+      "species": [
+        "Aspect",
+        "Human"
+      ]
     },
     {
       "id": 517,
@@ -4660,20 +5093,17 @@
       "image": "champions/Sylas/images/Sylas_icon.png",
       "splashImage": "champions/Sylas/images/Sylas_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "BURST",
-        "MAGE",
-        "SKIRMISHER"
+        "Mage",
+        "Assassin"
       ],
       "positions": [
-        "MIDDLE",
-        "TOP"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "demacia",
-        "demacia"
+        "Demacia",
+        "Freljord"
       ],
       "releaseYear": 2019,
       "releasePatch": "9.2",
@@ -4683,7 +5113,12 @@
         "Mage",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/517.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/517.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 238,
@@ -4692,17 +5127,16 @@
       "image": "champions/Zed/images/Zed_icon.png",
       "splashImage": "champions/Zed/images/Zed_splash.jpg",
       "roles": [
-        "ASSASSIN"
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE",
-        "MIDDLE"
+        "Jungle",
+        "Middle"
       ],
       "resource": "Energy",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.151",
@@ -4711,7 +5145,12 @@
       "tags": [
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/238.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/238.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 350,
@@ -4720,18 +5159,16 @@
       "image": "champions/Yuumi/images/Yuumi_icon.png",
       "splashImage": "champions/Yuumi/images/Yuumi_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "bandle-city",
-        "bandle-city"
+        "Bandle City"
       ],
       "releaseYear": 2019,
       "releasePatch": "9.10",
@@ -4741,7 +5178,12 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/350.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/350.png",
+      "gender": "Female",
+      "species": [
+        "Cat",
+        "Magically Altered"
+      ]
     },
     {
       "id": 26,
@@ -4750,18 +5192,18 @@
       "image": "champions/Zilean/images/Zilean_icon.png",
       "splashImage": "champions/Zilean/images/Zilean_splash.jpg",
       "roles": [
-        "MAGE",
-        "SPECIALIST",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Icathia",
+        "Runeterra",
+        "Shurima"
       ],
       "releaseYear": 2009,
       "releasePatch": "April 18, 2009 Patch",
@@ -4771,7 +5213,12 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/26.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/26.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 154,
@@ -4780,20 +5227,16 @@
       "image": "champions/Zac/images/Zac_icon.png",
       "splashImage": "champions/Zac/images/Zac_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "TANK",
-        "VANGUARD"
+        "Tank",
+        "Fighter"
       ],
       "positions": [
-        "JUNGLE",
-        "SUPPORT",
-        "TOP"
+        "Jungle"
       ],
       "resource": "Health",
       "rangeType": "Melee",
       "regions": [
-        "zaun",
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2013,
       "releasePatch": "3.5",
@@ -4803,7 +5246,11 @@
         "Tank",
         "Fighter"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/154.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/154.png",
+      "gender": "Male",
+      "species": [
+        "Golem"
+      ]
     },
     {
       "id": 235,
@@ -4812,19 +5259,16 @@
       "image": "champions/Senna/images/Senna_icon.png",
       "splashImage": "champions/Senna/images/Senna_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "MARKSMAN",
-        "SUPPORT"
+        "Support",
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM",
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Shadow Isles"
       ],
       "releaseYear": 2019,
       "releasePatch": "9.22",
@@ -4834,7 +5278,12 @@
         "Support",
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/235.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/235.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Undead"
+      ]
     },
     {
       "id": 221,
@@ -4843,16 +5292,15 @@
       "image": "champions/Zeri/images/Zeri_icon.png",
       "splashImage": "champions/Zeri/images/Zeri_splash.jpg",
       "roles": [
-        "MARKSMAN"
+        "Marksman"
       ],
       "positions": [
-        "BOTTOM"
+        "Bottom"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "zaun",
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2022,
       "releasePatch": "12.2",
@@ -4861,7 +5309,12 @@
       "tags": [
         "Marksman"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/221.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/221.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 115,
@@ -4870,18 +5323,16 @@
       "image": "champions/Ziggs/images/Ziggs_icon.png",
       "splashImage": "champions/Ziggs/images/Ziggs_splash.jpg",
       "roles": [
-        "ARTILLERY",
-        "MAGE"
+        "Mage"
       ],
       "positions": [
-        "BOTTOM",
-        "MIDDLE"
+        "Bottom",
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "zaun",
-        "zaun"
+        "Zaun"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.133",
@@ -4890,7 +5341,11 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/115.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/115.png",
+      "gender": "Male",
+      "species": [
+        "Yordle"
+      ]
     },
     {
       "id": 91,
@@ -4899,16 +5354,16 @@
       "image": "champions/Talon/images/Talon_icon.png",
       "splashImage": "champions/Talon/images/Talon_splash.jpg",
       "roles": [
-        "ASSASSIN"
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle",
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "noxus",
-        "noxus"
+        "Noxus"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.124",
@@ -4917,7 +5372,11 @@
       "tags": [
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/91.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/91.png",
+      "gender": "Male",
+      "species": [
+        "Human"
+      ]
     },
     {
       "id": 83,
@@ -4926,18 +5385,17 @@
       "image": "champions/Yorick/images/Yorick_icon.png",
       "splashImage": "champions/Yorick/images/Yorick_splash.jpg",
       "roles": [
-        "FIGHTER",
-        "JUGGERNAUT",
-        "TANK"
+        "Fighter",
+        "Tank"
       ],
       "positions": [
-        "TOP"
+        "Jungle",
+        "Top"
       ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Shadow Isles"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.120",
@@ -4947,7 +5405,12 @@
         "Fighter",
         "Tank"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/83.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/83.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Magically Altered"
+      ]
     },
     {
       "id": 234,
@@ -4956,18 +5419,17 @@
       "image": "champions/Viego/images/Viego_icon.png",
       "splashImage": "champions/Viego/images/Viego_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "FIGHTER",
-        "SKIRMISHER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "None",
       "rangeType": "Melee",
       "regions": [
-        "shadow-isles",
-        "shadow-isles"
+        "Camavor",
+        "Shadow Isles"
       ],
       "releaseYear": 2021,
       "releasePatch": "11.2",
@@ -4977,7 +5439,11 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/234.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/234.png",
+      "gender": "Male",
+      "species": [
+        "Undead"
+      ]
     },
     {
       "id": 142,
@@ -4986,18 +5452,15 @@
       "image": "champions/Zoe/images/Zoe_icon.png",
       "splashImage": "champions/Zoe/images/Zoe_splash.jpg",
       "roles": [
-        "BURST",
-        "MAGE",
-        "SUPPORT"
+        "Mage"
       ],
       "positions": [
-        "MIDDLE"
+        "Middle"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "mount-targon",
-        "mount-targon"
+        "Targon"
       ],
       "releaseYear": 2017,
       "releasePatch": "7.23",
@@ -5006,7 +5469,12 @@
       "tags": [
         "Mage"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/142.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/142.png",
+      "gender": "Female",
+      "species": [
+        "Aspect",
+        "Human"
+      ]
     },
     {
       "id": 904,
@@ -5014,12 +5482,20 @@
       "name": "Zaahen",
       "image": "champions/Zaahen/images/Zaahen_icon.png",
       "splashImage": "champions/Zaahen/images/Zaahen_splash.jpg",
-      "roles": [],
-      "positions": [],
+      "roles": [
+        "Fighter",
+        "Assassin"
+      ],
+      "positions": [
+        "Top",
+        "Jungle"
+      ],
       "resource": "Mana",
       "rangeType": "Melee",
       "regions": [
-        "unaffiliated"
+        "Shurima",
+        "Ionia",
+        "Runeterra"
       ],
       "releaseYear": null,
       "releasePatch": null,
@@ -5029,7 +5505,11 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/904.png"
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/904.png",
+      "gender": "Male",
+      "species": [
+        "Darkin"
+      ]
     },
     {
       "id": 147,
@@ -5038,20 +5518,17 @@
       "image": "champions/Seraphine/images/Seraphine_icon.png",
       "splashImage": "champions/Seraphine/images/Seraphine_splash.jpg",
       "roles": [
-        "BURST",
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "BOTTOM",
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "piltover",
-        "piltover"
+        "Piltover",
+        "Zaun"
       ],
       "releaseYear": 2020,
       "releasePatch": "10.22",
@@ -5061,7 +5538,12 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Seraphine.png"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Seraphine.png",
+      "gender": "Female",
+      "species": [
+        "Human",
+        "Magicborn"
+      ]
     },
     {
       "id": 64,
@@ -5070,18 +5552,16 @@
       "image": "champions/LeeSin/images/LeeSin_icon.png",
       "splashImage": "champions/LeeSin/images/LeeSin_splash.jpg",
       "roles": [
-        "ASSASSIN",
-        "DIVER",
-        "FIGHTER"
+        "Fighter",
+        "Assassin"
       ],
       "positions": [
-        "JUNGLE"
+        "Jungle"
       ],
       "resource": "Energy",
       "rangeType": "Melee",
       "regions": [
-        "ionia",
-        "ionia"
+        "Ionia"
       ],
       "releaseYear": 2011,
       "releasePatch": "1.0.0.114",
@@ -5091,7 +5571,12 @@
         "Fighter",
         "Assassin"
       ],
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/LeeSin.png"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/LeeSin.png",
+      "gender": "Male",
+      "species": [
+        "Human",
+        "Spiritualist"
+      ]
     },
     {
       "id": 267,
@@ -5100,18 +5585,17 @@
       "image": "champions/Nami/images/Nami_icon.png",
       "splashImage": "champions/Nami/images/Nami_splash.jpg",
       "roles": [
-        "ENCHANTER",
-        "MAGE",
-        "SUPPORT"
+        "Support",
+        "Mage"
       ],
       "positions": [
-        "SUPPORT"
+        "Support"
       ],
       "resource": "Mana",
       "rangeType": "Ranged",
       "regions": [
-        "unaffiliated",
-        "unaffiliated"
+        "Bilgewater",
+        "Runeterra"
       ],
       "releaseYear": 2012,
       "releasePatch": "1.0.0.152",
@@ -5121,7 +5605,11 @@
         "Support",
         "Mage"
       ],
-      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nami.png"
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nami.png",
+      "gender": "Female",
+      "species": [
+        "Vastayan"
+      ]
     }
   ],
   "abilities": [

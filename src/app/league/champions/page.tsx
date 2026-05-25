@@ -14,7 +14,7 @@ export default function LeagueChampionsPage() {
   const positionsByName = loadPositionsMap();
   const champions = leagueData.champions.map((c) => ({
     ...c,
-    positions: positionsByName[c.name.toLowerCase()] || [],
+    positions: positionsByName[c.name.toLowerCase()] || c.positions,
   }));
 
   return (
