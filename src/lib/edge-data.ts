@@ -96,7 +96,7 @@ const fetchJson = async <T>(path: string): Promise<T> => {
 };
 
 export const getPokemonBundleEdge = cache(async () =>
-  fetchJson<PokemonDataBundle>("/pokemoncontent/data/bundle.json")
+  fetchJson<PokemonDataBundle>("/exports/pokemon/bundle.json")
 );
 
 export const getLeagueBundleEdge = cache(async () =>
