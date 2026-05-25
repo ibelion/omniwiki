@@ -2,7 +2,7 @@ export const runtime = 'edge';
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { pokemonData } from "@/lib/pokemon/data";
+import { getPokemonBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { PokemonMovesSection } from "@/components/PokemonMovesSection";
 import { aggregateLearnsets } from "@/lib/pokemon/learnsets";
@@ -17,6 +17,7 @@ type PageProps = {
 
 export default async function PokemonDetail({ params }: PageProps) {
   const { slug } = await params;
+  const pokemonData = await getPokemonBundleEdge();
   const pokemon = pokemonData.pokemon.find((p) => p.slug === slug);
   if (!pokemon) {
     notFound();

@@ -2,7 +2,7 @@ export const runtime = 'edge';
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
@@ -12,6 +12,7 @@ type PageProps = {
 
 export default async function ChampionDetail({ params }: PageProps) {
   const { slug } = await params;
+  const leagueData = await getLeagueBundleEdge();
   const champion = leagueData.champions.find((c) => c.slug === slug);
   if (!champion) {
     notFound();
