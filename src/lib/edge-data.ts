@@ -51,7 +51,7 @@ const fetchJson = async <T>(path: string): Promise<T> => {
   
   // If path already has protocol, use it directly
   if (path.startsWith("http")) {
-    const res = await fetch(path, { cache: "force-cache" });
+    const res = await fetch(path);
     if (!res.ok) {
       throw new Error(`Failed to fetch ${path}: ${res.status} ${res.statusText}`);
     }
@@ -62,9 +62,7 @@ const fetchJson = async <T>(path: string): Promise<T> => {
 
   // Try relative URL first (works in Edge runtime)
   try {
-    const res = await fetch(relativeUrl, { 
-      cache: "force-cache",
-      // Add headers to help with CORS if needed
+    const res = await fetch(relativeUrl, {
       headers: {
         'Accept': 'application/json',
       }
@@ -82,8 +80,7 @@ const fetchJson = async <T>(path: string): Promise<T> => {
   // Fallback to absolute URL
   const base = getBaseUrl();
   const absoluteUrl = `${base}${relativeUrl}`;
-  const res = await fetch(absoluteUrl, { 
-    cache: "force-cache",
+  const res = await fetch(absoluteUrl, {
     headers: {
       'Accept': 'application/json',
     }
