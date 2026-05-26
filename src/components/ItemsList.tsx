@@ -20,6 +20,7 @@ const tierBadge = (tags: string[]) => {
 
 export function ItemsList({ items }: { items: ItemRecord[] }) {
   const [search, setSearch] = useState("");
+  const itemMap = new Map(items.map((item) => [item.id, item.name]));
   
   const filtered = items
     .filter((item) =>
@@ -101,6 +102,28 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
                   <span key={idx}>#{tag}</span>
                 ))}
               </div>
+              {item.from && item.from.length > 0 && (
+                <div className="text-xs text-gray-500">
+                  <span className="font-medium text-gray-700">Built from: </span>
+                  {item.from.map((id, idx) => (
+                    <span key={id}>
+                      {idx > 0 && ", "}
+                      <span className="text-gray-600">{itemMap.get(id) ?? `#${id}`}</span>
+                    </span>
+                  ))}
+                </div>
+              )}
+              {item.into && item.into.length > 0 && (
+                <div className="text-xs text-gray-500">
+                  <span className="font-medium text-gray-700">Builds into: </span>
+                  {item.into.map((id, idx) => (
+                    <span key={id}>
+                      {idx > 0 && ", "}
+                      <span className="text-gray-600">{itemMap.get(id) ?? `#${id}`}</span>
+                    </span>
+                  ))}
+                </div>
+              )}
             </article>
           );
         })}

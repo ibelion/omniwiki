@@ -2,6 +2,7 @@ import { cache } from "react";
 import { gunzipSync } from "fflate";
 import type { PokemonDataBundle } from "./pokemon/types";
 import type { LeagueDataBundle } from "./league/types";
+import type { TFTDataBundle } from "./tft/types";
 
 const CDN_BASE =
   "https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn";
@@ -101,4 +102,8 @@ export const getPokemonBundleEdge = cache(async () =>
 
 export const getLeagueBundleEdge = cache(async () =>
   fetchJson<LeagueDataBundle>(`${CDN_BASE}/leaguecontent/data/bundle.json`)
+);
+
+export const getTFTBundleEdge = cache(async () =>
+  fetchJson<TFTDataBundle>(`${CDN_BASE}/tftcontent/data/bundle.json`)
 );

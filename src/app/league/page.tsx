@@ -266,6 +266,38 @@ const dataLinks = [
         : null;
     },
   },
+  {
+    label: "Skin Lines",
+    href: "/league/skin-lines",
+    description: "Thematic skin collections grouped by universe",
+    getPreview: () => {
+      const line = leagueData.skinLines?.[0];
+      return line
+        ? {
+            name: line.name,
+            subtitle: "Skin line",
+            image: null,
+            extra: null,
+          }
+        : null;
+    },
+  },
+  {
+    label: "Loot",
+    href: "/league/loot",
+    description: "Hextech chests, capsules, shards, and tokens",
+    getPreview: () => {
+      const item = leagueData.lootItems?.[0];
+      return item
+        ? {
+            name: item.name,
+            subtitle: item.type ?? "Loot",
+            image: item.image,
+            extra: item.rarity ?? null,
+          }
+        : null;
+    },
+  },
 ];
 
 export default function LeaguePage() {

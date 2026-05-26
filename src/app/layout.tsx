@@ -38,7 +38,7 @@ export default function RootLayout({
               </span>
               <div className="text-sm text-gray-600">
                 <p className="font-semibold text-gray-900">
-                  Pokémon & League live now
+                  Pokémon, League & TFT live now
                 </p>
                 <p className="text-xs text-gray-500">
                   One Piece data pipeline is up next
@@ -67,6 +67,13 @@ export default function RootLayout({
                   aria-label="League universe"
                 >
                   League
+                </Link>
+                <Link
+                  href="/tft"
+                  className="rounded-lg px-3 py-2 text-teal-700 transition hover:bg-teal-50"
+                  aria-label="TFT universe"
+                >
+                  TFT
                 </Link>
                 <a
                   href="#"

@@ -14,6 +14,28 @@ export type ChampionAbility = {
   sourceUrl: string;
 };
 
+export type ChampionStats = {
+  hp: number;
+  hpperlevel: number;
+  mp: number;
+  mpperlevel: number;
+  movespeed: number;
+  armor: number;
+  armorperlevel: number;
+  spellblock: number;
+  spellblockperlevel: number;
+  attackrange: number;
+  hpregen: number;
+  hpregenperlevel: number;
+  mpregen: number;
+  mpregenperlevel: number;
+  crit: number;
+  attackdamage: number;
+  attackdamageperlevel: number;
+  attackspeedperlevel: number;
+  attackspeed: number;
+};
+
 export type ChampionRecord = {
   id: number;
   slug: string;
@@ -33,6 +55,9 @@ export type ChampionRecord = {
   difficulty: number | null;
   tags: string[];
   sourceUrl: string;
+  stats?: ChampionStats;
+  allytips?: string[];
+  enemytips?: string[];
 };
 
 export type ChampionSkin = {
@@ -48,6 +73,7 @@ export type ChampionSkin = {
   splash: string | null;
   tile: string | null;
   loadScreen: string | null;
+  skinLineIds?: number[];
 };
 
 export type ItemRecord = {
@@ -63,6 +89,8 @@ export type ItemRecord = {
   stats: Record<string, number>;
   image: string | null;
   sourceUrl: string;
+  from?: number[];
+  into?: number[];
 };
 
 export type RuneRecord = {
@@ -139,6 +167,22 @@ export type RuneTreeRecord = {
   icon: string;
 };
 
+export type SkinLineRecord = {
+  id: number;
+  name: string;
+};
+
+export type LootItemRecord = {
+  id: string;
+  name: string;
+  description: string;
+  image: string | null;
+  rarity: string | null;
+  type: string | null;
+  startDate?: string | null;
+  endDate?: string | null;
+};
+
 export type MapRecord = {
   id: number;
   name: string;
@@ -189,6 +233,7 @@ export type LeagueDataBundle = {
   items: ItemRecord[];
   runes: RuneRecord[];
   runeTrees?: RuneTreeRecord[];
+  skinLines?: SkinLineRecord[];
   summonerSpells: SummonerSpellRecord[];
   lore: LoreRecord[];
   quotes: QuoteRecord[];
@@ -200,6 +245,7 @@ export type LeagueDataBundle = {
   queues: QueueRecord[];
   summonerIcons: SummonerIconRecord[];
   wardSkins: WardSkinRecord[];
+  lootItems?: LootItemRecord[];
   indexes: {
     championNames: { slug: string; name: string }[];
   };

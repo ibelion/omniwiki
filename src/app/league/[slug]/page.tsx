@@ -185,6 +185,33 @@ export default async function ChampionDetail({ params }: PageProps) {
         </div>
       </section>
 
+      {champion.stats && (
+        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <h2 className="mb-4 text-base font-semibold text-gray-900">Base Stats</h2>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {[
+              { label: "HP", value: champion.stats.hp, per: champion.stats.hpperlevel },
+              { label: "Mana", value: champion.stats.mp, per: champion.stats.mpperlevel },
+              { label: "Move Speed", value: champion.stats.movespeed },
+              { label: "Armor", value: champion.stats.armor, per: champion.stats.armorperlevel },
+              { label: "Magic Resist", value: champion.stats.spellblock, per: champion.stats.spellblockperlevel },
+              { label: "Attack Damage", value: champion.stats.attackdamage, per: champion.stats.attackdamageperlevel },
+              { label: "Attack Speed", value: champion.stats.attackspeed, per: champion.stats.attackspeedperlevel },
+              { label: "Attack Range", value: champion.stats.attackrange },
+              { label: "HP Regen", value: champion.stats.hpregen, per: champion.stats.hpregenperlevel },
+            ].map(({ label, value, per }) => (
+              <div key={label} className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
+                <p className="text-xs uppercase tracking-wide text-gray-500">{label}</p>
+                <p className="text-sm font-semibold text-gray-900">{value}</p>
+                {per !== undefined && per > 0 && (
+                  <p className="text-xs text-gray-400">+{per}/lvl</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-base font-semibold text-gray-900">Abilities</h2>
@@ -262,6 +289,42 @@ export default async function ChampionDetail({ params }: PageProps) {
               <p className="mt-2 text-sm leading-relaxed text-gray-600">{lore.loreLong}</p>
             </details>
           )}
+        </section>
+      )}
+
+      {((champion.allytips && champion.allytips.length > 0) || (champion.enemytips && champion.enemytips.length > 0)) && (
+        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <h2 className="mb-4 text-base font-semibold text-gray-900">Tips</h2>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {champion.allytips && champion.allytips.length > 0 && (
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-emerald-600">
+                  Playing as {champion.name}
+                </p>
+                <ul className="flex flex-col gap-2">
+                  {champion.allytips.map((tip, idx) => (
+                    <li key={idx} className="rounded-lg border border-emerald-100 bg-emerald-50 px-3 py-2 text-xs text-gray-700">
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {champion.enemytips && champion.enemytips.length > 0 && (
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-red-600">
+                  Playing against {champion.name}
+                </p>
+                <ul className="flex flex-col gap-2">
+                  {champion.enemytips.map((tip, idx) => (
+                    <li key={idx} className="rounded-lg border border-red-100 bg-red-50 px-3 py-2 text-xs text-gray-700">
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
         </section>
       )}
 
