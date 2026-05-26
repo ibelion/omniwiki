@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
-import type { RuneRecord } from "@/lib/league/types";
+import type { RuneRecord, RuneTreeRecord } from "@/lib/league/types";
 
-export function SystemsList({ runes }: { runes: RuneRecord[] }) {
+export function SystemsList({ runes, runeTrees = [] }: { runes: RuneRecord[]; runeTrees?: RuneTreeRecord[] }) {
   const [search, setSearch] = useState("");
   
   const keystones = runes.filter((rune) => rune.slot === 0);
@@ -96,33 +96,50 @@ export function SystemsList({ runes }: { runes: RuneRecord[] }) {
             Minor Runes ({filteredMinors.length})
           </h2>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {filteredMinors.map((rune) => (
-            <article
-              key={rune.runeId}
-              className="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition-all hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
-            >
-              <div className="flex items-center gap-3">
-                <ImageWithFallback
-                  src={
-                    rune.icon ? `/leaguecontent/${rune.icon}` : "/globe.svg"
-                  }
-                  alt={`${rune.name} icon`}
-                  className="h-12 w-12 rounded-lg border border-gray-200 object-cover"
-                />
-                <div>
-                  <p className="text-xs uppercase text-gray-500">
-                    Tree {rune.treeId} · Slot {rune.slot}
-                  </p>
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    {rune.name}
+        {(() => {
+          const treeIds = [...new Set(filteredMinors.map((r) => r.treeId))].sort((a, b) => a - b);
+          return treeIds.map((treeId) => {
+            const tree = runeTrees.find((t) => t.id === treeId);
+            const runesInTree = filteredMinors.filter((r) => r.treeId === treeId);
+            return (
+              <div key={treeId} className="mb-6 last:mb-0">
+                <div className="mb-3 flex items-center gap-2 border-b border-gray-100 pb-2">
+                  {tree?.icon && (
+                    <ImageWithFallback
+                      src={`/leaguecontent/${tree.icon}`}
+                      alt={`${tree.name ?? treeId} icon`}
+                      className="h-6 w-6 object-contain"
+                    />
+                  )}
+                  <h3 className="text-sm font-semibold uppercase tracking-wide text-gray-700">
+                    {tree?.name ?? `Tree ${treeId}`}
                   </h3>
                 </div>
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {runesInTree.map((rune) => (
+                    <article
+                      key={rune.runeId}
+                      className="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition-all hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
+                    >
+                      <div className="flex items-center gap-3">
+                        <ImageWithFallback
+                          src={rune.icon ? `/leaguecontent/${rune.icon}` : "/globe.svg"}
+                          alt={`${rune.name} icon`}
+                          className="h-12 w-12 rounded-lg border border-gray-200 object-cover"
+                        />
+                        <div>
+                          <p className="text-xs uppercase text-gray-500">Slot {rune.slot}</p>
+                          <h4 className="text-lg font-semibold text-gray-900">{rune.name}</h4>
+                        </div>
+                      </div>
+                      <p className="text-xs text-gray-600">{rune.shortDesc}</p>
+                    </article>
+                  ))}
+                </div>
               </div>
-              <p className="text-xs text-gray-600">{rune.shortDesc}</p>
-            </article>
-          ))}
-        </div>
+            );
+          });
+        })()}
       </section>
     </>
   );

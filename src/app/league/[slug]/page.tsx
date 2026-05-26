@@ -29,6 +29,7 @@ export default async function ChampionDetail({ params }: PageProps) {
       ? championIndex[currentIndex + 1]
       : null;
 
+  const lore = leagueData.lore?.find((l) => l.slug === slug) ?? null;
   const abilities = leagueData.abilities.filter(
     (ability) => ability.championId === champion.id
   );
@@ -84,6 +85,9 @@ export default async function ChampionDetail({ params }: PageProps) {
               <h1 className="text-3xl font-semibold text-gray-900">
                 {champion.name}
               </h1>
+              {lore?.title && (
+                <p className="text-sm italic text-gray-500">{lore.title}</p>
+              )}
               <p className="text-sm text-gray-600">
                 Difficulty {champion.difficulty ?? "?"} ·{" "}
                 {champion.rangeType} · {champion.resource}
@@ -208,6 +212,16 @@ export default async function ChampionDetail({ params }: PageProps) {
                 </div>
               </div>
               <p className="text-gray-600">{ability.description}</p>
+              {ability.tooltip && (
+                <details className="text-xs">
+                  <summary className="cursor-pointer select-none text-gray-400 hover:text-gray-600">
+                    Tooltip (with values)
+                  </summary>
+                  <p className="mt-1 whitespace-pre-wrap text-gray-500">
+                    {ability.tooltip.replace(/\{\{[^}]+\}\}/g, "??")}
+                  </p>
+                </details>
+              )}
               {ability.cooldown && (
                 <p className="text-xs text-gray-500">
                   Cooldown: {ability.cooldown} · Cost: {ability.cost || "—"} ·
@@ -223,6 +237,33 @@ export default async function ChampionDetail({ params }: PageProps) {
           )}
         </div>
       </section>
+
+      {lore && (
+        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="text-base font-semibold text-gray-900">Lore</h2>
+            {lore.faction && (
+              <Link
+                href="/league/factions"
+                className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 transition hover:bg-emerald-200"
+              >
+                {lore.faction}
+              </Link>
+            )}
+          </div>
+          {lore.loreShort && (
+            <p className="text-sm leading-relaxed text-gray-700">{lore.loreShort}</p>
+          )}
+          {lore.loreLong && (
+            <details className="mt-3">
+              <summary className="cursor-pointer select-none text-sm font-medium text-gray-500 hover:text-gray-700">
+                Full lore
+              </summary>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">{lore.loreLong}</p>
+            </details>
+          )}
+        </section>
+      )}
 
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="mb-4 flex items-center justify-between">

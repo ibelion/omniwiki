@@ -129,6 +129,14 @@ export type FactionRecord = {
   slug: string;
   name: string;
   description: string | null;
+  image?: string | null;
+};
+
+export type RuneTreeRecord = {
+  id: number;
+  key: string;
+  name: string;
+  icon: string;
 };
 
 export type MapRecord = {
@@ -180,6 +188,7 @@ export type LeagueDataBundle = {
   skins: ChampionSkin[];
   items: ItemRecord[];
   runes: RuneRecord[];
+  runeTrees?: RuneTreeRecord[];
   summonerSpells: SummonerSpellRecord[];
   lore: LoreRecord[];
   quotes: QuoteRecord[];

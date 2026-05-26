@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { FactionRecord } from "@/lib/league/types";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 
 export function FactionsList({ factions }: { factions: FactionRecord[] }) {
   const [search, setSearch] = useState("");
@@ -42,15 +43,24 @@ export function FactionsList({ factions }: { factions: FactionRecord[] }) {
           {filtered.map((faction) => (
             <article
               key={faction.slug}
-              className="rounded-xl border border-gray-100 bg-gray-50 p-4"
+              className="flex gap-4 rounded-xl border border-gray-100 bg-gray-50 p-4"
             >
-              <p className="text-xs uppercase text-gray-500">{faction.slug}</p>
-              <h2 className="text-xl font-semibold text-gray-900">
-                {faction.name}
-              </h2>
-              <p className="text-sm text-gray-700">
-                {faction.description || "No description."}
-              </p>
+              {faction.image && (
+                <ImageWithFallback
+                  src={`/leaguecontent/${faction.image}`}
+                  alt={`${faction.name} banner`}
+                  className="h-24 w-36 flex-shrink-0 rounded-lg object-cover"
+                />
+              )}
+              <div className="flex flex-col justify-center">
+                <p className="text-xs uppercase text-gray-500">{faction.slug}</p>
+                <h2 className="text-xl font-semibold text-gray-900">
+                  {faction.name}
+                </h2>
+                <p className="text-sm text-gray-700">
+                  {faction.description || "No description."}
+                </p>
+              </div>
             </article>
           ))}
         </div>
