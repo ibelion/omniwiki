@@ -3,6 +3,9 @@ import { gunzipSync } from "fflate";
 import type { PokemonDataBundle } from "./pokemon/types";
 import type { LeagueDataBundle } from "./league/types";
 
+const CDN_BASE =
+  "https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn";
+
 const ensureAbsoluteUrl = (value?: string | null) => {
   if (!value) return null;
   const trimmed = value.trim();
@@ -96,9 +99,9 @@ const fetchJson = async <T>(path: string): Promise<T> => {
 };
 
 export const getPokemonBundleEdge = cache(async () =>
-  fetchJson<PokemonDataBundle>("/exports/pokemon/bundle.json")
+  fetchJson<PokemonDataBundle>(`${CDN_BASE}/pokemoncontent/data/bundle.json`)
 );
 
 export const getLeagueBundleEdge = cache(async () =>
-  fetchJson<LeagueDataBundle>("/leaguecontent/data/bundle.json")
+  fetchJson<LeagueDataBundle>(`${CDN_BASE}/leaguecontent/data/bundle.json`)
 );
