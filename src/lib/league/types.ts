@@ -170,6 +170,8 @@ export type RuneTreeRecord = {
 export type SkinLineRecord = {
   id: number;
   name: string;
+  skinIds?: number[];
+  skinCount?: number;
 };
 
 export type LootItemRecord = {
@@ -177,6 +179,7 @@ export type LootItemRecord = {
   name: string;
   description: string;
   image: string | null;
+  sourceUrl?: string | null;
   rarity: string | null;
   type: string | null;
   startDate?: string | null;

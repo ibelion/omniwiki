@@ -120,9 +120,9 @@ export default function LootPage() {
             key={item.id}
             className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-emerald-200 hover:shadow-md"
           >
-            {item.image && (
+            {(item.image ?? item.sourceUrl) && (
               <ImageWithFallback
-                src={item.image}
+                src={(item.image ?? item.sourceUrl) as string}
                 alt={item.name}
                 className="h-14 w-14 rounded-xl border border-gray-100 object-contain"
               />
