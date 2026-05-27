@@ -77,7 +77,7 @@ export function SystemsList({ runes, runeTrees = [] }: { runes: RuneRecord[]; ru
                 />
                 <div>
                   <p className="text-xs uppercase text-gray-500">
-                    Tree {rune.treeId} · Slot {rune.slot}
+                    {runeTrees.find((t) => t.id === rune.treeId)?.name ?? `Tree ${rune.treeId}`} · Keystone
                   </p>
                   <h3 className="text-lg font-semibold text-gray-900">
                     {rune.name}

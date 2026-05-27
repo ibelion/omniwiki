@@ -391,13 +391,12 @@ export default async function ChampionDetail({ params }: PageProps) {
                   </p>
                 )}
                 {quote.audio && (
-                  <audio controls className="mt-2 w-full">
-                    <source
-                      src={`/leaguecontent/${quote.audio}`}
-                      type="audio/ogg"
-                    />
-                    Your browser does not support the audio element.
-                  </audio>
+                  <audio
+                    controls
+                    preload="none"
+                    className="mt-2 w-full"
+                    src={`/leaguecontent/${quote.audio}`}
+                  />
                 )}
               </blockquote>
             ))}

@@ -1,12 +1,14 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { execSync } from 'node:child_process';
+import zlib from 'node:zlib';
 
 type CommunityDragonEmote = {
   id: number;
+  contentId?: string;
   name: string;
   description: string;
-  inventoryIconPath: string;
+  inventoryIcon: string;
+  taggedChampionsIds?: number[];
 };
 
 type BundleEmote = {
@@ -25,14 +27,18 @@ type Bundle = {
 
 const EMOTES_URL =
   'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/summoner-emotes.json';
-const PUBLIC_BUNDLE_PATH = path.resolve('public/leaguecontent/data/bundle.json');
+const CD_BASE = 'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default';
+const STUB_PATH = '/lol-game-data/assets/';
 
-function toSourceUrl(inventoryIconPath: string | undefined): string | null {
-  if (!inventoryIconPath) return null;
-  const normalizedPath = inventoryIconPath
-    .toLowerCase()
-    .replace('/lol-game-data/assets/', '');
-  return `https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/${normalizedPath}`;
+const PUBLIC_BUNDLE_PATH = path.resolve('public/leaguecontent/data/bundle.json');
+const CDN_BUNDLE_PATH = path.resolve('cdn/leaguecontent/data/bundle.json');
+
+function toSourceUrl(inventoryIcon: string | undefined): string | null {
+  if (!inventoryIcon || inventoryIcon.trim() === STUB_PATH || inventoryIcon.trim() === STUB_PATH.slice(0, -1)) {
+    return null;
+  }
+  const normalized = inventoryIcon.toLowerCase().replace('/lol-game-data/assets/', '');
+  return `${CD_BASE}/${normalized}`;
 }
 
 async function main(): Promise<void> {
@@ -51,29 +57,31 @@ async function main(): Promise<void> {
       throw new Error('Unexpected emotes response format.');
     }
 
-    // Skip entries with no name (placeholder/unused slots)
     const emotes: BundleEmote[] = data
-      .filter((emote) => emote.name && emote.name.trim())
-      .map((emote) => ({
-        id: emote.id,
-        name: emote.name,
-        description: emote.description ?? '',
-        championIds: [],
+      .filter((e) => e.name && e.name.trim())
+      .map((e) => ({
+        id: e.id,
+        name: e.name,
+        description: e.description ?? '',
+        championIds: e.taggedChampionsIds ?? [],
         image: null,
-        sourceUrl: toSourceUrl(emote.inventoryIconPath) ?? '',
+        sourceUrl: toSourceUrl(e.inventoryIcon) ?? '',
       }));
+
+    const withImages = emotes.filter((e) => e.sourceUrl);
+    console.log(`Mapped ${emotes.length} emotes, ${withImages.length} with image URLs.`);
 
     const rawBundle = fs.readFileSync(PUBLIC_BUNDLE_PATH, 'utf8');
     const bundle = JSON.parse(rawBundle) as Bundle;
     bundle.emotes = emotes;
 
-    fs.writeFileSync(PUBLIC_BUNDLE_PATH, JSON.stringify(bundle, null, 2) + '\n', 'utf8');
-    execSync('gzip -c public/leaguecontent/data/bundle.json > cdn/leaguecontent/data/bundle.json', {
-      shell: true,
-      stdio: 'inherit',
-    });
+    const bundleJson = JSON.stringify(bundle, null, 2) + '\n';
+    fs.writeFileSync(PUBLIC_BUNDLE_PATH, bundleJson, 'utf8');
 
-    console.log(`Fixed ${emotes.length} emotes and recompressed bundle.`);
+    const compressed = zlib.gzipSync(Buffer.from(bundleJson, 'utf8'));
+    fs.writeFileSync(CDN_BUNDLE_PATH, compressed);
+
+    console.log('Emotes patched and bundle recompressed. Done.');
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`Failed to patch emotes: ${message}`);

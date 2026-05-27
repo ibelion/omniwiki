@@ -1,7 +1,7 @@
 [
   {
     "champion": "Ambessa",
-    "slug": "Ambessa",
+    "slug": "ambessa",
     "title": "the Matriarch of War",
     "releaseDate": "2024-10-28T18:00:00.000Z",
     "faction": "noxus",
@@ -10,7 +10,7 @@
   },
   {
     "champion": "Mel",
-    "slug": "Mel",
+    "slug": "mel",
     "title": "the Soul's Reflection",
     "releaseDate": "2025-01-23T20:00:00.000Z",
     "faction": "noxus",
@@ -19,7 +19,7 @@
   },
   {
     "champion": "Nunu & Willump",
-    "slug": "Nunu",
+    "slug": "nunu-willump",
     "title": "the Boy and His Yeti",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "freljord",
@@ -28,7 +28,7 @@
   },
   {
     "champion": "Master Yi",
-    "slug": "MasterYi",
+    "slug": "master-yi",
     "title": "the Wuju Bladesman",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "ionia",
@@ -37,7 +37,7 @@
   },
   {
     "champion": "Yunara",
-    "slug": "Yunara",
+    "slug": "yunara",
     "title": "The Unbroken Faith",
     "releaseDate": "2025-07-16T18:00:00.000Z",
     "faction": "ionia",
@@ -46,7 +46,7 @@
   },
   {
     "champion": "Azir",
-    "slug": "Azir",
+    "slug": "azir",
     "title": "the Emperor of the Sands",
     "releaseDate": "2014-09-16T00:00:00.000Z",
     "faction": "shurima",
@@ -55,7 +55,7 @@
   },
   {
     "champion": "Aatrox",
-    "slug": "Aatrox",
+    "slug": "aatrox",
     "title": "the Darkin Blade",
     "releaseDate": "2013-06-13T19:43:26.000Z",
     "faction": "unaffiliated",
@@ -64,7 +64,7 @@
   },
   {
     "champion": "Amumu",
-    "slug": "Amumu",
+    "slug": "amumu",
     "title": "the Sad Mummy",
     "releaseDate": "2009-06-26T00:00:00.000Z",
     "faction": "shurima",
@@ -73,7 +73,7 @@
   },
   {
     "champion": "Twisted Fate",
-    "slug": "TwistedFate",
+    "slug": "twisted-fate",
     "title": "the Card Master",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "bilgewater",
@@ -82,7 +82,7 @@
   },
   {
     "champion": "Aphelios",
-    "slug": "Aphelios",
+    "slug": "aphelios",
     "title": "the Weapon of the Faithful",
     "releaseDate": "2019-11-19T19:43:26.000Z",
     "faction": "mount-targon",
@@ -91,7 +91,7 @@
   },
   {
     "champion": "Lillia",
-    "slug": "Lillia",
+    "slug": "lillia",
     "title": "the Bashful Bloom",
     "releaseDate": "2020-07-07T00:00:00.000Z",
     "faction": "ionia",
@@ -100,7 +100,7 @@
   },
   {
     "champion": "Blitzcrank",
-    "slug": "Blitzcrank",
+    "slug": "blitzcrank",
     "title": "the Great Steam Golem",
     "releaseDate": "2009-09-02T00:00:00.000Z",
     "faction": "zaun",
@@ -109,7 +109,7 @@
   },
   {
     "champion": "Lulu",
-    "slug": "Lulu",
+    "slug": "lulu",
     "title": "the Fae Sorceress",
     "releaseDate": "2012-03-20T00:00:00.000Z",
     "faction": "bandle-city",
@@ -118,7 +118,7 @@
   },
   {
     "champion": "Miss Fortune",
-    "slug": "MissFortune",
+    "slug": "miss-fortune",
     "title": "the Bounty Hunter",
     "releaseDate": "2010-09-08T00:00:00.000Z",
     "faction": "bilgewater",
@@ -127,7 +127,7 @@
   },
   {
     "champion": "Anivia",
-    "slug": "Anivia",
+    "slug": "anivia",
     "title": "the Cryophoenix",
     "releaseDate": "2009-07-10T00:00:00.000Z",
     "faction": "freljord",
@@ -136,7 +136,7 @@
   },
   {
     "champion": "Diana",
-    "slug": "Diana",
+    "slug": "diana",
     "title": "Scorn of the Moon",
     "releaseDate": "2012-08-07T00:00:00.000Z",
     "faction": "mount-targon",
@@ -145,7 +145,7 @@
   },
   {
     "champion": "Bard",
-    "slug": "Bard",
+    "slug": "bard",
     "title": "the Wandering Caretaker",
     "releaseDate": "2015-03-12T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -154,7 +154,7 @@
   },
   {
     "champion": "Neeko",
-    "slug": "Neeko",
+    "slug": "neeko",
     "title": "the Curious Chameleon",
     "releaseDate": "2018-11-19T08:00:26.000Z",
     "faction": "ixtal",
@@ -163,7 +163,7 @@
   },
   {
     "champion": "Caitlyn",
-    "slug": "Caitlyn",
+    "slug": "caitlyn",
     "title": "the Sheriff of Piltover",
     "releaseDate": "2011-01-04T00:00:00.000Z",
     "faction": "piltover",
@@ -172,7 +172,7 @@
   },
   {
     "champion": "Kalista",
-    "slug": "Kalista",
+    "slug": "kalista",
     "title": "the Spear of Vengeance",
     "releaseDate": "2014-11-20T00:00:00.000Z",
     "faction": "shadow-isles",
@@ -181,7 +181,7 @@
   },
   {
     "champion": "Hecarim",
-    "slug": "Hecarim",
+    "slug": "hecarim",
     "title": "the Shadow of War",
     "releaseDate": "2012-04-18T00:00:00.000Z",
     "faction": "shadow-isles",
@@ -190,7 +190,7 @@
   },
   {
     "champion": "Ivern",
-    "slug": "Ivern",
+    "slug": "ivern",
     "title": "the Green Father",
     "releaseDate": "2016-10-05T00:00:00.000Z",
     "faction": "ionia",
@@ -199,7 +199,7 @@
   },
   {
     "champion": "Corki",
-    "slug": "Corki",
+    "slug": "corki",
     "title": "the Daring Bombardier",
     "releaseDate": "2009-09-19T00:00:00.000Z",
     "faction": "bandle-city",
@@ -208,7 +208,7 @@
   },
   {
     "champion": "Bel'Veth",
-    "slug": "Belveth",
+    "slug": "bel-veth",
     "title": "the Empress of the Void",
     "releaseDate": "2022-05-20T17:00:00.000Z",
     "faction": "void",
@@ -217,7 +217,7 @@
   },
   {
     "champion": "Gangplank",
-    "slug": "Gangplank",
+    "slug": "gangplank",
     "title": "the Saltwater Scourge",
     "releaseDate": "2009-08-19T00:00:00.000Z",
     "faction": "bilgewater",
@@ -226,7 +226,7 @@
   },
   {
     "champion": "Ekko",
-    "slug": "Ekko",
+    "slug": "ekko",
     "title": "the Boy Who Shattered Time",
     "releaseDate": "2015-05-28T00:00:00.000Z",
     "faction": "zaun",
@@ -235,7 +235,7 @@
   },
   {
     "champion": "Kled",
-    "slug": "Kled",
+    "slug": "kled",
     "title": "the Cantankerous Cavalier",
     "releaseDate": "2016-08-10T00:00:00.000Z",
     "faction": "noxus",
@@ -244,7 +244,7 @@
   },
   {
     "champion": "Kassadin",
-    "slug": "Kassadin",
+    "slug": "kassadin",
     "title": "the Void Walker",
     "releaseDate": "2009-08-07T00:00:00.000Z",
     "faction": "void",
@@ -253,7 +253,7 @@
   },
   {
     "champion": "Gwen",
-    "slug": "Gwen",
+    "slug": "gwen",
     "title": "the Hallowed Seamstress",
     "releaseDate": "2021-03-30T00:00:00.000Z",
     "faction": "shadow-isles",
@@ -262,7 +262,7 @@
   },
   {
     "champion": "Qiyana",
-    "slug": "Qiyana",
+    "slug": "qiyana",
     "title": "The Empress of Elements",
     "releaseDate": "2019-06-07T00:00:00.000Z",
     "faction": "ixtal",
@@ -271,7 +271,7 @@
   },
   {
     "champion": "Lucian",
-    "slug": "Lucian",
+    "slug": "lucian",
     "title": "the Purifier",
     "releaseDate": "2013-08-22T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -280,7 +280,7 @@
   },
   {
     "champion": "Briar",
-    "slug": "Briar",
+    "slug": "briar",
     "title": "the Restrained Hunger",
     "releaseDate": "2023-08-28T17:00:00.000Z",
     "faction": "noxus",
@@ -289,7 +289,7 @@
   },
   {
     "champion": "Evelynn",
-    "slug": "Evelynn",
+    "slug": "evelynn",
     "title": "Agony's Embrace",
     "releaseDate": "2009-05-01T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -298,7 +298,7 @@
   },
   {
     "champion": "Lux",
-    "slug": "Lux",
+    "slug": "lux",
     "title": "the Lady of Luminosity",
     "releaseDate": "2010-10-19T00:00:00.000Z",
     "faction": "demacia",
@@ -307,7 +307,7 @@
   },
   {
     "champion": "Karma",
-    "slug": "Karma",
+    "slug": "karma",
     "title": "the Enlightened One",
     "releaseDate": "2011-02-01T00:00:00.000Z",
     "faction": "ionia",
@@ -316,7 +316,7 @@
   },
   {
     "champion": "Ashe",
-    "slug": "Ashe",
+    "slug": "ashe",
     "title": "the Frost Archer",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "freljord",
@@ -325,7 +325,7 @@
   },
   {
     "champion": "Sett",
-    "slug": "Sett",
+    "slug": "sett",
     "title": "the Boss",
     "releaseDate": "2019-12-18T00:00:00.000Z",
     "faction": "ionia",
@@ -334,7 +334,7 @@
   },
   {
     "champion": "Aurora",
-    "slug": "Aurora",
+    "slug": "aurora",
     "title": "the Witch between Worlds",
     "releaseDate": "2024-06-19T17:00:00.000Z",
     "faction": "freljord",
@@ -343,7 +343,7 @@
   },
   {
     "champion": "Alistar",
-    "slug": "Alistar",
+    "slug": "alistar",
     "title": "the Minotaur",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -352,7 +352,7 @@
   },
   {
     "champion": "Fiora",
-    "slug": "Fiora",
+    "slug": "fiora",
     "title": "the Grand Duelist",
     "releaseDate": "2012-02-29T00:00:00.000Z",
     "faction": "demacia",
@@ -361,7 +361,7 @@
   },
   {
     "champion": "Galio",
-    "slug": "Galio",
+    "slug": "galio",
     "title": "the Colossus",
     "releaseDate": "2010-08-10T00:00:00.000Z",
     "faction": "demacia",
@@ -370,7 +370,7 @@
   },
   {
     "champion": "Akshan",
-    "slug": "Akshan",
+    "slug": "akshan",
     "title": "the Rogue Sentinel",
     "releaseDate": "2021-07-08T19:43:26.000Z",
     "faction": "shurima",
@@ -379,7 +379,7 @@
   },
   {
     "champion": "LeBlanc",
-    "slug": "Leblanc",
+    "slug": "leblanc",
     "title": "the Deceiver",
     "releaseDate": "2010-11-02T00:00:00.000Z",
     "faction": "noxus",
@@ -388,7 +388,7 @@
   },
   {
     "champion": "Mordekaiser",
-    "slug": "Mordekaiser",
+    "slug": "mordekaiser",
     "title": "the Iron Revenant",
     "releaseDate": "2010-02-24T00:00:00.000Z",
     "faction": "noxus",
@@ -397,7 +397,7 @@
   },
   {
     "champion": "Nasus",
-    "slug": "Nasus",
+    "slug": "nasus",
     "title": "the Curator of the Sands",
     "releaseDate": "2009-10-01T00:00:00.000Z",
     "faction": "shurima",
@@ -406,7 +406,7 @@
   },
   {
     "champion": "Fizz",
-    "slug": "Fizz",
+    "slug": "fizz",
     "title": "the Tidal Trickster",
     "releaseDate": "2011-11-15T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -415,7 +415,7 @@
   },
   {
     "champion": "Kayle",
-    "slug": "Kayle",
+    "slug": "kayle",
     "title": "The Righteous",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "demacia",
@@ -424,7 +424,7 @@
   },
   {
     "champion": "Syndra",
-    "slug": "Syndra",
+    "slug": "syndra",
     "title": "the Dark Sovereign",
     "releaseDate": "2012-09-13T00:00:00.000Z",
     "faction": "ionia",
@@ -433,7 +433,7 @@
   },
   {
     "champion": "Nautilus",
-    "slug": "Nautilus",
+    "slug": "nautilus",
     "title": "the Titan of the Depths",
     "releaseDate": "2012-02-14T00:00:00.000Z",
     "faction": "bilgewater",
@@ -442,7 +442,7 @@
   },
   {
     "champion": "Fiddlesticks",
-    "slug": "Fiddlesticks",
+    "slug": "fiddlesticks",
     "title": "the Ancient Fear",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -451,7 +451,7 @@
   },
   {
     "champion": "Shyvana",
-    "slug": "Shyvana",
+    "slug": "shyvana",
     "title": "the Half-Dragon",
     "releaseDate": "2011-11-01T00:00:00.000Z",
     "faction": "demacia",
@@ -460,7 +460,7 @@
   },
   {
     "champion": "Maokai",
-    "slug": "Maokai",
+    "slug": "maokai",
     "title": "the Twisted Treant",
     "releaseDate": "2011-02-16T00:00:00.000Z",
     "faction": "shadow-isles",
@@ -469,7 +469,7 @@
   },
   {
     "champion": "Ahri",
-    "slug": "Ahri",
+    "slug": "ahri",
     "title": "the Nine-Tailed Fox",
     "releaseDate": "2011-12-14T00:00:00.000Z",
     "faction": "ionia",
@@ -478,7 +478,7 @@
   },
   {
     "champion": "Elise",
-    "slug": "Elise",
+    "slug": "elise",
     "title": "the Spider Queen",
     "releaseDate": "2012-10-26T00:00:00.000Z",
     "faction": "shadow-isles",
@@ -487,7 +487,7 @@
   },
   {
     "champion": "Hwei",
-    "slug": "Hwei",
+    "slug": "hwei",
     "title": "the Visionary",
     "releaseDate": "2023-11-22T18:00:00.000Z",
     "faction": "ionia",
@@ -496,7 +496,7 @@
   },
   {
     "champion": "Jax",
-    "slug": "Jax",
+    "slug": "jax",
     "title": "Grandmaster at Arms",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -505,7 +505,7 @@
   },
   {
     "champion": "Orianna",
-    "slug": "Orianna",
+    "slug": "orianna",
     "title": "the Lady of Clockwork",
     "releaseDate": "2011-06-01T00:00:00.000Z",
     "faction": "piltover",
@@ -514,7 +514,7 @@
   },
   {
     "champion": "Braum",
-    "slug": "Braum",
+    "slug": "braum",
     "title": "the Heart of the Freljord",
     "releaseDate": "2014-05-12T00:00:00.000Z",
     "faction": "freljord",
@@ -523,7 +523,7 @@
   },
   {
     "champion": "Riven",
-    "slug": "Riven",
+    "slug": "riven",
     "title": "the Exile",
     "releaseDate": "2011-09-14T00:00:00.000Z",
     "faction": "noxus",
@@ -532,7 +532,7 @@
   },
   {
     "champion": "Rell",
-    "slug": "Rell",
+    "slug": "rell",
     "title": "the Iron Maiden",
     "releaseDate": "2020-11-23T00:00:00.000Z",
     "faction": "noxus",
@@ -541,7 +541,7 @@
   },
   {
     "champion": "Heimerdinger",
-    "slug": "Heimerdinger",
+    "slug": "heimerdinger",
     "title": "the Revered Inventor",
     "releaseDate": "2009-10-10T00:00:00.000Z",
     "faction": "piltover",
@@ -550,7 +550,7 @@
   },
   {
     "champion": "Kha'Zix",
-    "slug": "Khazix",
+    "slug": "kha-zix",
     "title": "the Voidreaver",
     "releaseDate": "2012-09-27T00:00:00.000Z",
     "faction": "void",
@@ -559,7 +559,7 @@
   },
   {
     "champion": "Gragas",
-    "slug": "Gragas",
+    "slug": "gragas",
     "title": "the Rabble Rouser",
     "releaseDate": "2010-02-02T00:00:00.000Z",
     "faction": "freljord",
@@ -568,7 +568,7 @@
   },
   {
     "champion": "Rek'Sai",
-    "slug": "RekSai",
+    "slug": "rek-sai",
     "title": "the Void Burrower",
     "releaseDate": "2014-12-11T00:00:00.000Z",
     "faction": "void",
@@ -577,7 +577,7 @@
   },
   {
     "champion": "Jarvan IV",
-    "slug": "JarvanIV",
+    "slug": "jarvan-iv",
     "title": "the Exemplar of Demacia",
     "releaseDate": "2011-03-01T00:00:00.000Z",
     "faction": "demacia",
@@ -586,7 +586,7 @@
   },
   {
     "champion": "Rakan",
-    "slug": "Rakan",
+    "slug": "rakan",
     "title": "the Charmer",
     "releaseDate": "2017-04-11T19:43:26.000Z",
     "faction": "ionia",
@@ -595,7 +595,7 @@
   },
   {
     "champion": "Warwick",
-    "slug": "Warwick",
+    "slug": "warwick",
     "title": "The Uncaged Wrath of Zaun",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "zaun",
@@ -604,7 +604,7 @@
   },
   {
     "champion": "Akali",
-    "slug": "Akali",
+    "slug": "akali",
     "title": "the Rogue Assassin",
     "releaseDate": "2010-05-11T00:00:00.000Z",
     "faction": "ionia",
@@ -613,7 +613,7 @@
   },
   {
     "champion": "Rumble",
-    "slug": "Rumble",
+    "slug": "rumble",
     "title": "the Mechanized Menace",
     "releaseDate": "2011-04-26T00:00:00.000Z",
     "faction": "bandle-city",
@@ -622,7 +622,7 @@
   },
   {
     "champion": "Brand",
-    "slug": "Brand",
+    "slug": "brand",
     "title": "the Burning Vengeance",
     "releaseDate": "2011-04-12T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -631,7 +631,7 @@
   },
   {
     "champion": "Samira",
-    "slug": "Samira",
+    "slug": "samira",
     "title": "the Desert Rose",
     "releaseDate": "2020-09-21T00:00:00.000Z",
     "faction": "noxus",
@@ -640,7 +640,7 @@
   },
   {
     "champion": "Garen",
-    "slug": "Garen",
+    "slug": "garen",
     "title": "The Might of Demacia",
     "releaseDate": "2010-04-27T00:00:00.000Z",
     "faction": "demacia",
@@ -649,7 +649,7 @@
   },
   {
     "champion": "Malphite",
-    "slug": "Malphite",
+    "slug": "malphite",
     "title": "Shard of the Monolith",
     "releaseDate": "2009-09-02T00:00:00.000Z",
     "faction": "ixtal",
@@ -658,7 +658,7 @@
   },
   {
     "champion": "Darius",
-    "slug": "Darius",
+    "slug": "darius",
     "title": "the Hand of Noxus",
     "releaseDate": "2012-05-23T00:00:00.000Z",
     "faction": "noxus",
@@ -667,7 +667,7 @@
   },
   {
     "champion": "Kai'Sa",
-    "slug": "Kaisa",
+    "slug": "kai-sa",
     "title": "Daughter of the Void",
     "releaseDate": "2018-03-02T00:00:00.000Z",
     "faction": "void",
@@ -676,7 +676,7 @@
   },
   {
     "champion": "Kog'Maw",
-    "slug": "KogMaw",
+    "slug": "kog-maw",
     "title": "the Mouth of the Abyss",
     "releaseDate": "2010-06-24T00:00:00.000Z",
     "faction": "void",
@@ -685,7 +685,7 @@
   },
   {
     "champion": "Olaf",
-    "slug": "Olaf",
+    "slug": "olaf",
     "title": "the Berserker",
     "releaseDate": "2010-06-09T00:00:00.000Z",
     "faction": "freljord",
@@ -694,7 +694,7 @@
   },
   {
     "champion": "Sejuani",
-    "slug": "Sejuani",
+    "slug": "sejuani",
     "title": "the Winter's Wrath",
     "releaseDate": "2012-01-17T00:00:00.000Z",
     "faction": "freljord",
@@ -703,7 +703,7 @@
   },
   {
     "champion": "Graves",
-    "slug": "Graves",
+    "slug": "graves",
     "title": "the Outlaw",
     "releaseDate": "2011-10-19T00:00:00.000Z",
     "faction": "bilgewater",
@@ -712,7 +712,7 @@
   },
   {
     "champion": "Kayn",
-    "slug": "Kayn",
+    "slug": "kayn",
     "title": "the Shadow Reaper",
     "releaseDate": "2017-07-10T00:00:00.000Z",
     "faction": "ionia",
@@ -721,7 +721,7 @@
   },
   {
     "champion": "Kindred",
-    "slug": "Kindred",
+    "slug": "kindred",
     "title": "The Eternal Hunters",
     "releaseDate": "2015-10-14T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -730,7 +730,7 @@
   },
   {
     "champion": "Shen",
-    "slug": "Shen",
+    "slug": "shen",
     "title": "the Eye of Twilight",
     "releaseDate": "2010-03-24T00:00:00.000Z",
     "faction": "ionia",
@@ -739,7 +739,7 @@
   },
   {
     "champion": "Naafiri",
-    "slug": "Naafiri",
+    "slug": "naafiri",
     "title": "the Hound of a Hundred Bites",
     "releaseDate": "2023-06-23T18:00:00.000Z",
     "faction": "shurima",
@@ -748,7 +748,7 @@
   },
   {
     "champion": "Tryndamere",
-    "slug": "Tryndamere",
+    "slug": "tryndamere",
     "title": "the Barbarian King",
     "releaseDate": "2009-05-01T00:00:00.000Z",
     "faction": "freljord",
@@ -757,7 +757,7 @@
   },
   {
     "champion": "Swain",
-    "slug": "Swain",
+    "slug": "swain",
     "title": "the Noxian Grand General",
     "releaseDate": "2010-10-05T00:00:00.000Z",
     "faction": "noxus",
@@ -766,7 +766,7 @@
   },
   {
     "champion": "Cho'Gath",
-    "slug": "Chogath",
+    "slug": "cho-gath",
     "title": "the Terror of the Void",
     "releaseDate": "2009-06-26T00:00:00.000Z",
     "faction": "void",
@@ -775,7 +775,7 @@
   },
   {
     "champion": "Thresh",
-    "slug": "Thresh",
+    "slug": "thresh",
     "title": "the Chain Warden",
     "releaseDate": "2013-01-23T00:00:00.000Z",
     "faction": "shadow-isles",
@@ -784,7 +784,7 @@
   },
   {
     "champion": "Tahm Kench",
-    "slug": "TahmKench",
+    "slug": "tahm-kench",
     "title": "the River King",
     "releaseDate": "2015-07-09T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -793,7 +793,7 @@
   },
   {
     "champion": "Pyke",
-    "slug": "Pyke",
+    "slug": "pyke",
     "title": "the Bloodharbor Ripper",
     "releaseDate": "2018-05-31T00:00:00.000Z",
     "faction": "bilgewater",
@@ -802,7 +802,7 @@
   },
   {
     "champion": "Sivir",
-    "slug": "Sivir",
+    "slug": "sivir",
     "title": "the Battle Mistress",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "shurima",
@@ -811,7 +811,7 @@
   },
   {
     "champion": "Nilah",
-    "slug": "Nilah",
+    "slug": "nilah",
     "title": "the Joy Unbound",
     "releaseDate": "2022-06-22T17:00:00.000Z",
     "faction": "bilgewater",
@@ -820,7 +820,7 @@
   },
   {
     "champion": "Taric",
-    "slug": "Taric",
+    "slug": "taric",
     "title": "the Shield of Valoran",
     "releaseDate": "2009-08-19T00:00:00.000Z",
     "faction": "mount-targon",
@@ -829,7 +829,7 @@
   },
   {
     "champion": "Rengar",
-    "slug": "Rengar",
+    "slug": "rengar",
     "title": "the Pridestalker",
     "releaseDate": "2012-08-21T00:00:00.000Z",
     "faction": "ixtal",
@@ -838,7 +838,7 @@
   },
   {
     "champion": "Janna",
-    "slug": "Janna",
+    "slug": "janna",
     "title": "the Storm's Fury",
     "releaseDate": "2009-09-02T00:00:00.000Z",
     "faction": "zaun",
@@ -847,7 +847,7 @@
   },
   {
     "champion": "Lissandra",
-    "slug": "Lissandra",
+    "slug": "lissandra",
     "title": "the Ice Witch",
     "releaseDate": "2013-04-30T00:00:00.000Z",
     "faction": "freljord",
@@ -856,7 +856,7 @@
   },
   {
     "champion": "Varus",
-    "slug": "Varus",
+    "slug": "varus",
     "title": "the Arrow of Retribution",
     "releaseDate": "2012-05-08T00:00:00.000Z",
     "faction": "ionia",
@@ -865,7 +865,7 @@
   },
   {
     "champion": "Vel'Koz",
-    "slug": "Velkoz",
+    "slug": "vel-koz",
     "title": "the Eye of the Void",
     "releaseDate": "2014-02-27T00:00:00.000Z",
     "faction": "void",
@@ -874,7 +874,7 @@
   },
   {
     "champion": "Kennen",
-    "slug": "Kennen",
+    "slug": "kennen",
     "title": "the Heart of the Tempest",
     "releaseDate": "2010-04-08T00:00:00.000Z",
     "faction": "ionia",
@@ -883,7 +883,7 @@
   },
   {
     "champion": "Rammus",
-    "slug": "Rammus",
+    "slug": "rammus",
     "title": "the Armordillo",
     "releaseDate": "2009-07-10T00:00:00.000Z",
     "faction": "shurima",
@@ -892,7 +892,7 @@
   },
   {
     "champion": "Renekton",
-    "slug": "Renekton",
+    "slug": "renekton",
     "title": "the Butcher of the Sands",
     "releaseDate": "2011-01-18T00:00:00.000Z",
     "faction": "shurima",
@@ -901,7 +901,7 @@
   },
   {
     "champion": "Leona",
-    "slug": "Leona",
+    "slug": "leona",
     "title": "the Radiant Dawn",
     "releaseDate": "2011-07-13T00:00:00.000Z",
     "faction": "mount-targon",
@@ -910,7 +910,7 @@
   },
   {
     "champion": "Ornn",
-    "slug": "Ornn",
+    "slug": "ornn",
     "title": "the Fire Below the Mountain",
     "releaseDate": "2017-08-22T00:00:00.000Z",
     "faction": "freljord",
@@ -919,7 +919,7 @@
   },
   {
     "champion": "Yone",
-    "slug": "Yone",
+    "slug": "yone",
     "title": "the Unforgotten",
     "releaseDate": "2020-07-24T00:00:00.000Z",
     "faction": "ionia",
@@ -928,7 +928,7 @@
   },
   {
     "champion": "Draven",
-    "slug": "Draven",
+    "slug": "draven",
     "title": "the Glorious Executioner",
     "releaseDate": "2012-06-06T00:00:00.000Z",
     "faction": "noxus",
@@ -937,7 +937,7 @@
   },
   {
     "champion": "Jhin",
-    "slug": "Jhin",
+    "slug": "jhin",
     "title": "the Virtuoso",
     "releaseDate": "2016-02-01T00:00:00.000Z",
     "faction": "ionia",
@@ -946,7 +946,7 @@
   },
   {
     "champion": "Cassiopeia",
-    "slug": "Cassiopeia",
+    "slug": "cassiopeia",
     "title": "the Serpent's Embrace",
     "releaseDate": "2010-12-14T00:00:00.000Z",
     "faction": "noxus",
@@ -955,7 +955,7 @@
   },
   {
     "champion": "Smolder",
-    "slug": "Smolder",
+    "slug": "smolder",
     "title": "the Fiery Fledgling",
     "releaseDate": "2024-01-31T18:00:00.000Z",
     "faction": "unaffiliated",
@@ -964,7 +964,7 @@
   },
   {
     "champion": "K'Sante",
-    "slug": "KSante",
+    "slug": "k-sante",
     "title": "the Pride of Nazumah",
     "releaseDate": "2022-10-18T15:00:00.000Z",
     "faction": "shurima",
@@ -973,7 +973,7 @@
   },
   {
     "champion": "Singed",
-    "slug": "Singed",
+    "slug": "singed",
     "title": "the Mad Chemist",
     "releaseDate": "2009-04-18T00:00:00.000Z",
     "faction": "zaun",
@@ -982,7 +982,7 @@
   },
   {
     "champion": "Soraka",
-    "slug": "Soraka",
+    "slug": "soraka",
     "title": "the Starchild",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "mount-targon",
@@ -991,7 +991,7 @@
   },
   {
     "champion": "Katarina",
-    "slug": "Katarina",
+    "slug": "katarina",
     "title": "the Sinister Blade",
     "releaseDate": "2009-09-19T00:00:00.000Z",
     "faction": "noxus",
@@ -1000,7 +1000,7 @@
   },
   {
     "champion": "Teemo",
-    "slug": "Teemo",
+    "slug": "teemo",
     "title": "the Swift Scout",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "bandle-city",
@@ -1009,7 +1009,7 @@
   },
   {
     "champion": "Vladimir",
-    "slug": "Vladimir",
+    "slug": "vladimir",
     "title": "the Crimson Reaper",
     "releaseDate": "2010-07-27T00:00:00.000Z",
     "faction": "noxus",
@@ -1018,7 +1018,7 @@
   },
   {
     "champion": "Annie",
-    "slug": "Annie",
+    "slug": "annie",
     "title": "the Dark Child",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -1027,7 +1027,7 @@
   },
   {
     "champion": "Shaco",
-    "slug": "Shaco",
+    "slug": "shaco",
     "title": "the Demon Jester",
     "releaseDate": "2009-10-10T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -1036,7 +1036,7 @@
   },
   {
     "champion": "Malzahar",
-    "slug": "Malzahar",
+    "slug": "malzahar",
     "title": "the Prophet of the Void",
     "releaseDate": "2010-06-01T00:00:00.000Z",
     "faction": "void",
@@ -1045,7 +1045,7 @@
   },
   {
     "champion": "Zyra",
-    "slug": "Zyra",
+    "slug": "zyra",
     "title": "Rise of the Thorns",
     "releaseDate": "2012-07-24T00:00:00.000Z",
     "faction": "ixtal",
@@ -1054,7 +1054,7 @@
   },
   {
     "champion": "Sona",
-    "slug": "Sona",
+    "slug": "sona",
     "title": "Maven of the Strings",
     "releaseDate": "2010-09-21T00:00:00.000Z",
     "faction": "demacia",
@@ -1063,7 +1063,7 @@
   },
   {
     "champion": "Milio",
-    "slug": "Milio",
+    "slug": "milio",
     "title": "the Gentle Flame",
     "releaseDate": "2023-03-04T18:00:00.000Z",
     "faction": "ixtal",
@@ -1072,7 +1072,7 @@
   },
   {
     "champion": "Volibear",
-    "slug": "Volibear",
+    "slug": "volibear",
     "title": "the Relentless Storm",
     "releaseDate": "2011-11-29T00:00:00.000Z",
     "faction": "freljord",
@@ -1081,7 +1081,7 @@
   },
   {
     "champion": "Pantheon",
-    "slug": "Pantheon",
+    "slug": "pantheon",
     "title": "The Unbreakable Spear",
     "releaseDate": "2010-02-02T00:00:00.000Z",
     "faction": "mount-targon",
@@ -1090,7 +1090,7 @@
   },
   {
     "champion": "Karthus",
-    "slug": "Karthus",
+    "slug": "karthus",
     "title": "the Deathsinger",
     "releaseDate": "2009-06-12T00:00:00.000Z",
     "faction": "shadow-isles",
@@ -1099,7 +1099,7 @@
   },
   {
     "champion": "Yasuo",
-    "slug": "Yasuo",
+    "slug": "yasuo",
     "title": "the Unforgiven",
     "releaseDate": "2013-12-13T00:00:00.000Z",
     "faction": "ionia",
@@ -1108,7 +1108,7 @@
   },
   {
     "champion": "Twitch",
-    "slug": "Twitch",
+    "slug": "twitch",
     "title": "the Plague Rat",
     "releaseDate": "2009-05-01T00:00:00.000Z",
     "faction": "zaun",
@@ -1117,7 +1117,7 @@
   },
   {
     "champion": "Aurelion Sol",
-    "slug": "AurelionSol",
+    "slug": "aurelion-sol",
     "title": "The Star Forger",
     "releaseDate": "2016-03-24T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -1126,7 +1126,7 @@
   },
   {
     "champion": "Tristana",
-    "slug": "Tristana",
+    "slug": "tristana",
     "title": "the Yordle Gunner",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "bandle-city",
@@ -1135,7 +1135,7 @@
   },
   {
     "champion": "Skarner",
-    "slug": "Skarner",
+    "slug": "skarner",
     "title": "the Primordial Sovereign",
     "releaseDate": "2011-08-09T00:00:00.000Z",
     "faction": "ixtal",
@@ -1144,7 +1144,7 @@
   },
   {
     "champion": "Vex",
-    "slug": "Vex",
+    "slug": "vex",
     "title": "the Gloomist",
     "releaseDate": "2021-09-08T19:43:26.000Z",
     "faction": "shadow-isles",
@@ -1153,7 +1153,7 @@
   },
   {
     "champion": "Vayne",
-    "slug": "Vayne",
+    "slug": "vayne",
     "title": "the Night Hunter",
     "releaseDate": "2011-05-10T00:00:00.000Z",
     "faction": "demacia",
@@ -1162,7 +1162,7 @@
   },
   {
     "champion": "Xayah",
-    "slug": "Xayah",
+    "slug": "xayah",
     "title": "the Rebel",
     "releaseDate": "2017-04-11T19:43:26.000Z",
     "faction": "ionia",
@@ -1171,7 +1171,7 @@
   },
   {
     "champion": "Urgot",
-    "slug": "Urgot",
+    "slug": "urgot",
     "title": "the Dreadnought",
     "releaseDate": "2010-08-24T00:00:00.000Z",
     "faction": "zaun",
@@ -1180,7 +1180,7 @@
   },
   {
     "champion": "Dr. Mundo",
-    "slug": "DrMundo",
+    "slug": "dr-mundo",
     "title": "the Madman of Zaun",
     "releaseDate": "2009-09-02T00:00:00.000Z",
     "faction": "zaun",
@@ -1189,7 +1189,7 @@
   },
   {
     "champion": "Ezreal",
-    "slug": "Ezreal",
+    "slug": "ezreal",
     "title": "the Prodigal Explorer",
     "releaseDate": "2010-03-16T00:00:00.000Z",
     "faction": "piltover",
@@ -1198,7 +1198,7 @@
   },
   {
     "champion": "Zed",
-    "slug": "Zed",
+    "slug": "zed",
     "title": "the Master of Shadows",
     "releaseDate": "2012-11-13T00:00:00.000Z",
     "faction": "ionia",
@@ -1207,7 +1207,7 @@
   },
   {
     "champion": "Irelia",
-    "slug": "Irelia",
+    "slug": "irelia",
     "title": "the Blade Dancer",
     "releaseDate": "2010-11-16T00:00:00.000Z",
     "faction": "ionia",
@@ -1216,7 +1216,7 @@
   },
   {
     "champion": "Taliyah",
-    "slug": "Taliyah",
+    "slug": "taliyah",
     "title": "the Stoneweaver",
     "releaseDate": "2016-05-18T00:00:00.000Z",
     "faction": "shurima",
@@ -1225,7 +1225,7 @@
   },
   {
     "champion": "Vi",
-    "slug": "Vi",
+    "slug": "vi",
     "title": "the Piltover Enforcer",
     "releaseDate": "2012-12-19T00:00:00.000Z",
     "faction": "piltover",
@@ -1234,7 +1234,7 @@
   },
   {
     "champion": "Veigar",
-    "slug": "Veigar",
+    "slug": "veigar",
     "title": "the Tiny Master of Evil",
     "releaseDate": "2009-07-24T00:00:00.000Z",
     "faction": "bandle-city",
@@ -1243,7 +1243,7 @@
   },
   {
     "champion": "Sion",
-    "slug": "Sion",
+    "slug": "sion",
     "title": "the Undead Juggernaut",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "noxus",
@@ -1252,7 +1252,7 @@
   },
   {
     "champion": "Senna",
-    "slug": "Senna",
+    "slug": "senna",
     "title": "the Redeemer",
     "releaseDate": "2019-10-20T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -1261,7 +1261,7 @@
   },
   {
     "champion": "Gnar",
-    "slug": "Gnar",
+    "slug": "gnar",
     "title": "the Missing Link",
     "releaseDate": "2014-08-14T00:00:00.000Z",
     "faction": "freljord",
@@ -1270,7 +1270,7 @@
   },
   {
     "champion": "Jinx",
-    "slug": "Jinx",
+    "slug": "jinx",
     "title": "the Loose Cannon",
     "releaseDate": "2013-10-10T00:00:00.000Z",
     "faction": "zaun",
@@ -1279,7 +1279,7 @@
   },
   {
     "champion": "Nidalee",
-    "slug": "Nidalee",
+    "slug": "nidalee",
     "title": "the Bestial Huntress",
     "releaseDate": "2009-12-17T00:00:00.000Z",
     "faction": "ixtal",
@@ -1288,7 +1288,7 @@
   },
   {
     "champion": "Trundle",
-    "slug": "Trundle",
+    "slug": "trundle",
     "title": "the Troll King",
     "releaseDate": "2010-12-01T00:00:00.000Z",
     "faction": "freljord",
@@ -1297,7 +1297,7 @@
   },
   {
     "champion": "Morgana",
-    "slug": "Morgana",
+    "slug": "morgana",
     "title": "The Fallen",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "demacia",
@@ -1306,7 +1306,7 @@
   },
   {
     "champion": "Xerath",
-    "slug": "Xerath",
+    "slug": "xerath",
     "title": "the Magus Ascendant",
     "releaseDate": "2011-10-05T00:00:00.000Z",
     "faction": "shurima",
@@ -1315,7 +1315,7 @@
   },
   {
     "champion": "Udyr",
-    "slug": "Udyr",
+    "slug": "udyr",
     "title": "the Spirit Walker",
     "releaseDate": "2022-08-09T00:00:00.000Z",
     "faction": "freljord",
@@ -1324,7 +1324,7 @@
   },
   {
     "champion": "Nocturne",
-    "slug": "Nocturne",
+    "slug": "nocturne",
     "title": "the Eternal Nightmare",
     "releaseDate": "2011-03-15T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -1333,7 +1333,7 @@
   },
   {
     "champion": "Yuumi",
-    "slug": "Yuumi",
+    "slug": "yuumi",
     "title": "the Magical Cat",
     "releaseDate": "2019-04-25T00:00:00.000Z",
     "faction": "bandle-city",
@@ -1342,7 +1342,7 @@
   },
   {
     "champion": "Ziggs",
-    "slug": "Ziggs",
+    "slug": "ziggs",
     "title": "the Hexplosives Expert",
     "releaseDate": "2012-02-01T00:00:00.000Z",
     "faction": "zaun",
@@ -1351,7 +1351,7 @@
   },
   {
     "champion": "Illaoi",
-    "slug": "Illaoi",
+    "slug": "illaoi",
     "title": "the Kraken Priestess",
     "releaseDate": "2015-11-24T00:00:00.000Z",
     "faction": "bilgewater",
@@ -1360,7 +1360,7 @@
   },
   {
     "champion": "Quinn",
-    "slug": "Quinn",
+    "slug": "quinn",
     "title": "Demacia's Wings",
     "releaseDate": "2013-03-01T00:00:00.000Z",
     "faction": "demacia",
@@ -1369,7 +1369,7 @@
   },
   {
     "champion": "Talon",
-    "slug": "Talon",
+    "slug": "talon",
     "title": "the Blade's Shadow",
     "releaseDate": "2011-08-24T00:00:00.000Z",
     "faction": "noxus",
@@ -1378,7 +1378,7 @@
   },
   {
     "champion": "Ryze",
-    "slug": "Ryze",
+    "slug": "ryze",
     "title": "the Rune Mage",
     "releaseDate": "2009-02-21T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -1387,7 +1387,7 @@
   },
   {
     "champion": "Viktor",
-    "slug": "Viktor",
+    "slug": "viktor",
     "title": "Herald of the Arcane",
     "releaseDate": "2011-12-29T00:00:00.000Z",
     "faction": "zaun",
@@ -1396,7 +1396,7 @@
   },
   {
     "champion": "Xin Zhao",
-    "slug": "XinZhao",
+    "slug": "xin-zhao",
     "title": "the Seneschal of Demacia",
     "releaseDate": "2010-07-13T00:00:00.000Z",
     "faction": "demacia",
@@ -1405,7 +1405,7 @@
   },
   {
     "champion": "Zilean",
-    "slug": "Zilean",
+    "slug": "zilean",
     "title": "the Chronokeeper",
     "releaseDate": "2009-04-18T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -1414,7 +1414,7 @@
   },
   {
     "champion": "Wukong",
-    "slug": "MonkeyKing",
+    "slug": "wukong",
     "title": "the Monkey King",
     "releaseDate": "2011-07-26T00:00:00.000Z",
     "faction": "ionia",
@@ -1423,7 +1423,7 @@
   },
   {
     "champion": "Zac",
-    "slug": "Zac",
+    "slug": "zac",
     "title": "the Secret Weapon",
     "releaseDate": "2013-03-29T00:00:00.000Z",
     "faction": "zaun",
@@ -1432,7 +1432,7 @@
   },
   {
     "champion": "Poppy",
-    "slug": "Poppy",
+    "slug": "poppy",
     "title": "Keeper of the Hammer",
     "releaseDate": "2010-01-13T00:00:00.000Z",
     "faction": "demacia",
@@ -1441,7 +1441,7 @@
   },
   {
     "champion": "Zeri",
-    "slug": "Zeri",
+    "slug": "zeri",
     "title": "the Spark of Zaun",
     "releaseDate": "2022-01-05T18:00:00.000Z",
     "faction": "zaun",
@@ -1450,7 +1450,7 @@
   },
   {
     "champion": "Yorick",
-    "slug": "Yorick",
+    "slug": "yorick",
     "title": "Shepherd of Souls",
     "releaseDate": "2011-06-22T00:00:00.000Z",
     "faction": "shadow-isles",
@@ -1459,7 +1459,7 @@
   },
   {
     "champion": "Viego",
-    "slug": "Viego",
+    "slug": "viego",
     "title": "the Ruined King",
     "releaseDate": "2021-01-05T00:00:00.000Z",
     "faction": "shadow-isles",
@@ -1468,7 +1468,7 @@
   },
   {
     "champion": "Sylas",
-    "slug": "Sylas",
+    "slug": "sylas",
     "title": "the Unshackled",
     "releaseDate": "2018-01-08T00:00:00.000Z",
     "faction": "demacia",
@@ -1477,7 +1477,7 @@
   },
   {
     "champion": "Lee Sin",
-    "slug": "LeeSin",
+    "slug": "lee-sin",
     "title": "the Blind Monk",
     "releaseDate": "2011-04-01T00:00:00.000Z",
     "faction": "ionia",
@@ -1486,7 +1486,7 @@
   },
   {
     "champion": "Nami",
-    "slug": "Nami",
+    "slug": "nami",
     "title": "the Tidecaller",
     "releaseDate": "2012-12-07T00:00:00.000Z",
     "faction": "unaffiliated",
@@ -1495,7 +1495,7 @@
   },
   {
     "champion": "Zoe",
-    "slug": "Zoe",
+    "slug": "zoe",
     "title": "the Aspect of Twilight",
     "releaseDate": "2017-11-09T00:00:00.000Z",
     "faction": "mount-targon",
@@ -1504,7 +1504,7 @@
   },
   {
     "champion": "Jayce",
-    "slug": "Jayce",
+    "slug": "jayce",
     "title": "the Defender of Tomorrow",
     "releaseDate": "2012-07-07T00:00:00.000Z",
     "faction": "piltover",
@@ -1513,7 +1513,7 @@
   },
   {
     "champion": "Zaahen",
-    "slug": "Zaahen",
+    "slug": "zaahen",
     "title": "The Unsundered ",
     "releaseDate": "2025-11-19T18:00:00.000Z",
     "faction": "unaffiliated",
@@ -1522,7 +1522,7 @@
   },
   {
     "champion": "Camille",
-    "slug": "Camille",
+    "slug": "camille",
     "title": "the Steel Shadow",
     "releaseDate": "2016-11-28T00:00:00.000Z",
     "faction": "piltover",
@@ -1531,11 +1531,16 @@
   },
   {
     "champion": "Seraphine",
-    "slug": "Seraphine",
+    "slug": "seraphine",
     "title": "the Starry-Eyed Songstress",
     "releaseDate": "2020-10-12T00:00:00.000Z",
     "faction": "piltover",
     "loreShort": "Born in Piltover to Zaunite parents, Seraphine can hear the souls of others—the world sings to her, and she sings back. Though these sounds overwhelmed her in her youth, she now draws on them for inspiration, turning the chaos into a symphony. She performs for the sister cities to remind their citizens that they’re not alone, that they’re stronger together, and that, in her eyes, their potential is limitless.",
+    "loreLong": null
+  },
+  {
+    "slug": "renata-glasc",
+    "loreShort": "Renata Glasc rose from the ashes of her childhood home with nothing but her name and her parents' alchemical research. In the decades since, she has become Zaun's wealthiest chem-baron, a business magnate who built her power by tying everyone's interests to her own. Work with her, and be rewarded beyond measure. Work against her, and live to regret it. But everyone comes to her side, eventually.",
     "loreLong": null
   }
 ]

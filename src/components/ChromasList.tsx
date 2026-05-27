@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { ChromaRecord } from "@/lib/league/types";
@@ -10,23 +10,47 @@ type ChromasListProps = {
   champions: { name: string; slug: string }[];
 };
 
+const PAGE_SIZE = 80;
+
 export function ChromasList({ chromas, champions }: ChromasListProps) {
   const [search, setSearch] = useState("");
-  
-  const filtered = chromas
-    .filter((chroma) =>
-      search === "" ||
-      chroma.name.toLowerCase().includes(search.toLowerCase()) ||
-      chroma.champion.toLowerCase().includes(search.toLowerCase()) ||
-      chroma.skinName.toLowerCase().includes(search.toLowerCase())
-    )
-    .sort((a, b) => {
-      const byChampion = a.champion.localeCompare(b.champion);
-      if (byChampion !== 0) return byChampion;
-      const bySkin = a.skinName.localeCompare(b.skinName);
-      if (bySkin !== 0) return bySkin;
-      return a.name.localeCompare(b.name);
-    });
+  const [championFilter, setChampionFilter] = useState<string | null>(null);
+  const [page, setPage] = useState(0);
+
+  const uniqueChampions = useMemo(
+    () => [...new Set(chromas.map((c) => c.champion).filter(Boolean))].sort(),
+    [chromas]
+  );
+
+  const filtered = useMemo(
+    () =>
+      chromas
+        .filter((chroma) => {
+          const matchChamp = championFilter === null || chroma.champion === championFilter;
+          const matchSearch =
+            search === "" ||
+            chroma.name.toLowerCase().includes(search.toLowerCase()) ||
+            chroma.champion.toLowerCase().includes(search.toLowerCase()) ||
+            chroma.skinName.toLowerCase().includes(search.toLowerCase());
+          return matchChamp && matchSearch;
+        })
+        .sort((a, b) => {
+          const byChampion = a.champion.localeCompare(b.champion);
+          if (byChampion !== 0) return byChampion;
+          const bySkin = a.skinName.localeCompare(b.skinName);
+          if (bySkin !== 0) return bySkin;
+          return a.name.localeCompare(b.name);
+        }),
+    [chromas, search, championFilter]
+  );
+
+  const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
+  const visible = filtered.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+
+  function handleFilterChange(fn: () => void) {
+    fn();
+    setPage(0);
+  }
 
   return (
     <>
@@ -35,63 +59,89 @@ export function ChromasList({ chromas, champions }: ChromasListProps) {
           League of Legends
         </p>
         <h1 className="text-3xl font-semibold text-gray-900">
-          Chromas ({filtered.length})
+          Chromas ({filtered.length.toLocaleString()})
         </h1>
         <p className="text-gray-600">
-          Raw chroma list grouped by champion/skin, sourced from leaguecontent/data/chromas.csv.
+          Champion skin color variants.
         </p>
-        <div className="mt-4">
-          <label className="sr-only" htmlFor="chromas-search">
-            Search chromas by name, champion, or skin
-          </label>
+        <div className="mt-4 flex flex-col gap-3">
           <input
-            id="chromas-search"
             type="text"
-            placeholder="Search chromas by name, champion, or skin..."
-            aria-label="Search chromas by name, champion, or skin"
+            placeholder="Search by name, champion, or skin..."
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => handleFilterChange(() => setSearch(e.target.value))}
             className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
           />
+          <select
+            value={championFilter ?? ""}
+            onChange={(e) =>
+              handleFilterChange(() => setChampionFilter(e.target.value || null))
+            }
+            className="rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          >
+            <option value="">All champions</option>
+            {uniqueChampions.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
         </div>
       </header>
+
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((chroma) => {
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {visible.map((chroma) => {
             const champion = champions.find(
-              (c) => c.name.toLowerCase() === (chroma.champion || "").toLowerCase()
+              (c) => c.name.toLowerCase() === (chroma.champion ?? "").toLowerCase()
             );
-            const championSlug = champion?.slug;
-            const colors = chroma.colors?.length ? chroma.colors.join(", ") : "Unknown";
-            const href = championSlug ? `/league/${championSlug}` : "/league/champions";
+            const href = champion ? `/league/${champion.slug}` : "/league/champions";
+            const colors = chroma.colors?.length ? chroma.colors.join(", ") : null;
             return (
               <Link
                 key={`${chroma.skinId}-${chroma.chromaId}`}
                 href={href}
-                aria-label={championSlug ? `View ${chroma.champion} chroma` : "View champion list"}
                 className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
               >
-                <p className="text-xs uppercase text-gray-500">
-                  {chroma.champion || "Unknown champion"}
-                </p>
-                <h2 className="text-lg font-semibold text-gray-900">
-                  {chroma.name || "Unknown chroma"}
-                </h2>
-                <p className="text-xs text-gray-500">
-                  Base skin: {chroma.skinName || "Unknown"} (#{chroma.skinId ?? "?"})
-                </p>
-                <p className="text-xs text-gray-500">Colors: {colors}</p>
                 {chroma.image && (
                   <ImageWithFallback
                     src={`/leaguecontent/${chroma.image}`}
                     alt={chroma.name || "Chroma image"}
-                    className="mt-2 h-36 w-full rounded-lg object-cover"
+                    className="h-32 w-full rounded-lg object-cover"
                   />
                 )}
+                <p className="text-xs font-semibold uppercase text-emerald-600">
+                  {chroma.champion || "Unknown"}
+                </p>
+                <p className="font-semibold text-gray-900">{chroma.name || "Unknown chroma"}</p>
+                <p className="text-xs text-gray-500">{chroma.skinName}</p>
+                {colors && <p className="text-xs text-gray-400">{colors}</p>}
               </Link>
             );
           })}
         </div>
+
+        {pageCount > 1 && (
+          <div className="mt-6 flex items-center justify-between gap-4">
+            <button
+              onClick={() => setPage((p) => Math.max(0, p - 1))}
+              disabled={page === 0}
+              className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+            >
+              Previous
+            </button>
+            <span className="text-sm text-gray-500">
+              Page {page + 1} of {pageCount}
+            </span>
+            <button
+              onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+              disabled={page === pageCount - 1}
+              className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+            >
+              Next
+            </button>
+          </div>
+        )}
       </section>
     </>
   );
