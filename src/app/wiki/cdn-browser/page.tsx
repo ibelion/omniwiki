@@ -54,7 +54,7 @@ export default async function CdnBrowserPage() {
               <div className="mt-4 pt-3 border-t border-slate-800 flex justify-end">
                  {/* Link to the detailed wiki page we built previously */}
                 <Link 
-                  href={`/league/champions/${champ.uid.replace('lol-', '')}`}
+                  href={`/league/${champ.uid.replace('lol-', '')}`}
                   className="text-xs font-semibold text-indigo-400 hover:text-indigo-300"
                 >
                   View Full Wiki Entry &rarr;
