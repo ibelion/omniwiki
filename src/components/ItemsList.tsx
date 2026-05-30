@@ -68,8 +68,9 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
         {filtered.map((item) => {
           const tier = tierBadge(item.tags);
           return (
-            <article
+            <Link
               key={item.id}
+              href={`/league/items/${item.id}`}
               className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-emerald-200 hover:shadow-md"
             >
               <div className="flex items-center justify-between">
@@ -146,7 +147,7 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
                   </div>
                 </div>
               )}
-            </article>
+            </Link>
           );
         })}
       </section>

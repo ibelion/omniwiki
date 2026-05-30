@@ -219,6 +219,7 @@ export default async function ChampionDetail({ params }: PageProps) {
               { label: "Attack Speed", value: champion.stats.attackspeed, per: champion.stats.attackspeedperlevel },
               { label: "Attack Range", value: champion.stats.attackrange },
               { label: "HP Regen", value: champion.stats.hpregen, per: champion.stats.hpregenperlevel },
+              { label: "Mana Regen", value: champion.stats.mpregen, per: champion.stats.mpregenperlevel },
             ].map(({ label, value, per }) => (
               <div key={label} className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
                 <p className="text-xs uppercase tracking-wide text-gray-500">{label}</p>
@@ -285,6 +286,42 @@ export default async function ChampionDetail({ params }: PageProps) {
         </div>
       </section>
 
+      {((champion.allytips && champion.allytips.length > 0) || (champion.enemytips && champion.enemytips.length > 0)) && (
+        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <h2 className="mb-4 text-base font-semibold text-gray-900">Tips</h2>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {champion.allytips && champion.allytips.length > 0 && (
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-emerald-600">
+                  Playing as {champion.name}
+                </p>
+                <ul className="flex flex-col gap-2">
+                  {champion.allytips.map((tip, i) => (
+                    <li key={i} className="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2 text-sm text-gray-700">
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {champion.enemytips && champion.enemytips.length > 0 && (
+              <div>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-rose-600">
+                  Playing against {champion.name}
+                </p>
+                <ul className="flex flex-col gap-2">
+                  {champion.enemytips.map((tip, i) => (
+                    <li key={i} className="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2 text-sm text-gray-700">
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
       {lore && (
         <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
           <div className="mb-4 flex items-center justify-between">
@@ -312,6 +349,41 @@ export default async function ChampionDetail({ params }: PageProps) {
         </section>
       )}
 
+
+      {lore?.faction && (() => {
+        const factionMates = leagueData.lore
+          .filter((l) => l.faction === lore.faction && l.slug !== slug)
+          .slice(0, 16);
+        if (factionMates.length === 0) return null;
+        return (
+          <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+            <h2 className="mb-4 text-base font-semibold text-gray-900">
+              More from {lore.faction}
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {factionMates.map((fm) => {
+                const fmChamp = leagueData.champions.find((c) => c.slug === fm.slug);
+                return (
+                  <Link
+                    key={fm.slug}
+                    href={`/league/${fm.slug}`}
+                    className="flex items-center gap-2 rounded-xl border border-gray-100 bg-gray-50 px-3 py-2 text-sm transition hover:border-emerald-200 hover:bg-emerald-50"
+                  >
+                    {fmChamp?.image && (
+                      <ImageWithFallback
+                        src={`/leaguecontent/${fmChamp.image}`}
+                        alt={fm.champion}
+                        className="h-7 w-7 rounded-lg object-cover"
+                      />
+                    )}
+                    <span className="text-gray-800">{fm.champion}</span>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })()}
 
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="mb-4 flex items-center justify-between">
