@@ -391,14 +391,14 @@ export default async function ChampionDetail({ params }: PageProps) {
         )}
       </section>
 
-      <section className=”rounded-2xl border border-gray-200 bg-white p-6 shadow-sm”>
-        <div className=”mb-4 flex items-center justify-between”>
-          <h2 className=”text-base font-semibold text-gray-900”>
+      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-base font-semibold text-gray-900">
             Quotes & Voice Lines ({quotes.length})
           </h2>
           <Link
             href={`/league/quotes?champion=${encodeURIComponent(champion.name)}`}
-            className=”text-xs text-emerald-600 hover:underline”
+            className="text-xs text-emerald-600 hover:underline"
           >
             Browse all →
           </Link>
