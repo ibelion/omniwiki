@@ -42,6 +42,25 @@ export default async function ChampionDetail({ params }: PageProps) {
     (quote) =>
       quote.champion.toLowerCase() === champion.name.toLowerCase()
   );
+  const chromasBySkinId = new Map<number, typeof leagueData.chromas>();
+  for (const chroma of leagueData.chromas) {
+    if (chroma.champion.toLowerCase() !== champion.name.toLowerCase()) continue;
+    const list = chromasBySkinId.get(chroma.skinId) ?? [];
+    list.push(chroma);
+    chromasBySkinId.set(chroma.skinId, list);
+  }
+
+  const skinLineBySkinId = new Map<number, { id: number; name: string }>();
+  for (const skinLine of leagueData.skinLines ?? []) {
+    for (const skinId of skinLine.skinIds ?? []) {
+      skinLineBySkinId.set(skinId, { id: skinLine.id, name: skinLine.name });
+    }
+  }
+
+  const championIdStr = String(champion.id);
+  const emotes = (leagueData.emotes ?? []).filter((e) =>
+    e.championIds?.includes(championIdStr)
+  );
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-gray-50 px-6 py-10">
@@ -183,6 +202,16 @@ export default async function ChampionDetail({ params }: PageProps) {
             </p>
           </div>
         </div>
+        {quotes.length > 12 && (
+          <div className="mt-4 text-right">
+            <Link
+              href={`/league/quotes?champion=${encodeURIComponent(champion.name)}`}
+              className="text-xs text-emerald-600 hover:underline"
+            >
+              View all {quotes.length} quotes →
+            </Link>
+          </div>
+        )}
       </section>
 
       {champion.stats && (
@@ -292,41 +321,6 @@ export default async function ChampionDetail({ params }: PageProps) {
         </section>
       )}
 
-      {((champion.allytips && champion.allytips.length > 0) || (champion.enemytips && champion.enemytips.length > 0)) && (
-        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="mb-4 text-base font-semibold text-gray-900">Tips</h2>
-          <div className="grid gap-6 sm:grid-cols-2">
-            {champion.allytips && champion.allytips.length > 0 && (
-              <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-emerald-600">
-                  Playing as {champion.name}
-                </p>
-                <ul className="flex flex-col gap-2">
-                  {champion.allytips.map((tip, idx) => (
-                    <li key={idx} className="rounded-lg border border-emerald-100 bg-emerald-50 px-3 py-2 text-xs text-gray-700">
-                      {tip}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            {champion.enemytips && champion.enemytips.length > 0 && (
-              <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-red-600">
-                  Playing against {champion.name}
-                </p>
-                <ul className="flex flex-col gap-2">
-                  {champion.enemytips.map((tip, idx) => (
-                    <li key={idx} className="rounded-lg border border-red-100 bg-red-50 px-3 py-2 text-xs text-gray-700">
-                      {tip}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        </section>
-      )}
 
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="mb-4 flex items-center justify-between">
@@ -354,12 +348,51 @@ export default async function ChampionDetail({ params }: PageProps) {
                 <p className="text-xs text-gray-500">
                   Cost: {skin.cost ?? "?"} · {skin.availability || "Status unknown"}
                 </p>
+                {skinLineBySkinId.has(skin.skinId) && (() => {
+                  const sl = skinLineBySkinId.get(skin.skinId)!;
+                  const anchor = sl.name
+                    .toLowerCase()
+                    .replace(/[^a-z0-9]+/g, "-")
+                    .replace(/^-+|-+$/g, "");
+                  return (
+                    <Link
+                      href={`/league/skin-lines#${anchor}`}
+                      className="mt-1 inline-block rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-600 hover:bg-indigo-100"
+                    >
+                      {sl.name}
+                    </Link>
+                  );
+                })()}
                 {skin.splash && (
                   <ImageWithFallback
                     src={`/leaguecontent/${skin.splash}`}
                     alt={`${skin.name} splash`}
                     className="mt-3 h-40 w-full rounded-xl object-cover"
                   />
+                )}
+                {chromasBySkinId.has(skin.skinId) && (
+                  <div className="mt-2">
+                    <p className="mb-1 text-xs font-medium text-gray-500">
+                      Chromas ({chromasBySkinId.get(skin.skinId)!.length})
+                    </p>
+                    <div className="flex flex-wrap gap-1">
+                      {chromasBySkinId.get(skin.skinId)!.map((chroma) => (
+                        <div key={chroma.chromaId} className="group relative">
+                          <ImageWithFallback
+                            src={
+                              chroma.sourceUrl ??
+                              (chroma.image ? `/leaguecontent/${chroma.image}` : "/globe.svg")
+                            }
+                            alt={chroma.name}
+                            className="h-10 w-10 rounded-lg border border-gray-200 object-contain"
+                          />
+                          <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
+                            {chroma.name}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 )}
               </div>
             ))}
@@ -395,7 +428,7 @@ export default async function ChampionDetail({ params }: PageProps) {
                     controls
                     preload="none"
                     className="mt-2 w-full"
-                    src={`/leaguecontent/${quote.audio}`}
+                    src={`https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn/leaguecontent/${quote.audio}`}
                   />
                 )}
               </blockquote>
@@ -403,6 +436,39 @@ export default async function ChampionDetail({ params }: PageProps) {
           </div>
         )}
       </section>
+
+      {emotes.length > 0 && (
+        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="text-base font-semibold text-gray-900">
+              Emotes ({emotes.length})
+            </h2>
+            <Link
+              href="/league/emotes"
+              className="text-xs text-emerald-600 hover:underline"
+            >
+              All emotes →
+            </Link>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {emotes.map((emote) => (
+              <div key={emote.id} className="group relative flex flex-col items-center gap-1">
+                <ImageWithFallback
+                  src={
+                    emote.sourceUrl ??
+                    (emote.image ? `/leaguecontent/${emote.image}` : "/globe.svg")
+                  }
+                  alt={emote.name}
+                  className="h-14 w-14 rounded-xl border border-gray-100 object-contain"
+                />
+                <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
+                  {emote.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
     </main>
   );
 }

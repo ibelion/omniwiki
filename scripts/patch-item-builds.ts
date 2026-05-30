@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { execSync } from 'node:child_process';
+import { pipeline } from 'node:stream/promises';
+import zlib from 'node:zlib';
 
 type DDItem = {
-  id: number;
   from?: string[];
   into?: string[];
 };
@@ -24,9 +24,15 @@ type Bundle = {
   [key: string]: unknown;
 };
 
-const DD_VERSION = '15.10.1';
-const ITEMS_URL = `https://ddragon.leagueoflegends.com/cdn/${DD_VERSION}/data/en_US/item.json`;
 const PUBLIC_BUNDLE_PATH = path.resolve('public/leaguecontent/data/bundle.json');
+const CDN_BUNDLE_PATH = path.resolve('cdn/leaguecontent/data/bundle.json');
+
+async function getLatestVersion(): Promise<string> {
+  const res = await fetch('https://ddragon.leagueoflegends.com/api/versions.json');
+  if (!res.ok) throw new Error(`versions fetch HTTP ${res.status}`);
+  const versions = (await res.json()) as string[];
+  return versions[0];
+}
 
 async function main(): Promise<void> {
   try {
@@ -34,12 +40,15 @@ async function main(): Promise<void> {
       throw new Error(`Bundle not found: ${PUBLIC_BUNDLE_PATH}`);
     }
 
+    const version = await getLatestVersion();
+    console.log(`Using Data Dragon version: ${version}`);
+
+    const itemsUrl = `https://ddragon.leagueoflegends.com/cdn/${version}/data/en_US/item.json`;
     console.log('Fetching items from Data Dragon...');
-    const res = await fetch(ITEMS_URL);
+    const res = await fetch(itemsUrl);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const dd = (await res.json()) as DDItemsResponse;
 
-    // id -> { from, into } — key in DD is the string ID (e.g. "1001"), no id field on the value
     const itemMap = new Map<number, { from: number[]; into: number[] }>();
     for (const [key, item] of Object.entries(dd.data)) {
       itemMap.set(parseInt(key, 10), {
@@ -48,24 +57,27 @@ async function main(): Promise<void> {
       });
     }
 
-    const rawBundle = fs.readFileSync(PUBLIC_BUNDLE_PATH, 'utf8');
-    const bundle = JSON.parse(rawBundle) as Bundle;
+    const bundle = JSON.parse(fs.readFileSync(PUBLIC_BUNDLE_PATH, 'utf8')) as Bundle;
 
     let patched = 0;
     for (const item of bundle.items) {
-      const dd = itemMap.get(item.id);
-      if (dd) {
-        if (dd.from.length > 0) item.from = dd.from;
-        if (dd.into.length > 0) item.into = dd.into;
+      const ddItem = itemMap.get(item.id);
+      if (ddItem) {
+        if (ddItem.from.length > 0) item.from = ddItem.from;
+        if (ddItem.into.length > 0) item.into = ddItem.into;
         patched++;
       }
     }
 
-    fs.writeFileSync(PUBLIC_BUNDLE_PATH, JSON.stringify(bundle, null, 2) + '\n', 'utf8');
-    execSync('gzip -c public/leaguecontent/data/bundle.json > cdn/leaguecontent/data/bundle.json', {
-      stdio: 'inherit',
-    });
-    console.log(`Patched build paths for ${patched} items. Done.`);
+    fs.writeFileSync(PUBLIC_BUNDLE_PATH, JSON.stringify(bundle) + '\n', 'utf8');
+
+    await pipeline(
+      fs.createReadStream(PUBLIC_BUNDLE_PATH),
+      zlib.createGzip(),
+      fs.createWriteStream(CDN_BUNDLE_PATH)
+    );
+
+    console.log(`Patched build paths for ${patched} items. Bundle written and compressed.`);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`Failed: ${message}`);

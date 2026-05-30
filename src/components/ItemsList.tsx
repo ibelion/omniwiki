@@ -20,7 +20,7 @@ const tierBadge = (tags: string[]) => {
 
 export function ItemsList({ items }: { items: ItemRecord[] }) {
   const [search, setSearch] = useState("");
-  const itemMap = new Map(items.map((item) => [item.id, item.name]));
+  const itemById = new Map(items.map((item) => [item.id, item]));
   
   const filtered = items
     .filter((item) =>
@@ -103,25 +103,47 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
                 ))}
               </div>
               {item.from && item.from.length > 0 && (
-                <div className="text-xs text-gray-500">
-                  <span className="font-medium text-gray-700">Built from: </span>
-                  {item.from.map((id, idx) => (
-                    <span key={id}>
-                      {idx > 0 && ", "}
-                      <span className="text-gray-600">{itemMap.get(id) ?? `#${id}`}</span>
-                    </span>
-                  ))}
+                <div className="flex flex-col gap-1">
+                  <span className="text-xs font-medium text-gray-700">Built from</span>
+                  <div className="flex flex-wrap gap-1">
+                    {item.from.map((id) => {
+                      const comp = itemById.get(id);
+                      return (
+                        <div key={id} className="group relative">
+                          <ImageWithFallback
+                            src={comp?.image ? `/leaguecontent/${comp.image}` : "/globe.svg"}
+                            alt={comp?.name ?? `#${id}`}
+                            className="h-8 w-8 rounded border border-gray-100 object-contain"
+                          />
+                          <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
+                            {comp?.name ?? `#${id}`}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               )}
               {item.into && item.into.length > 0 && (
-                <div className="text-xs text-gray-500">
-                  <span className="font-medium text-gray-700">Builds into: </span>
-                  {item.into.map((id, idx) => (
-                    <span key={id}>
-                      {idx > 0 && ", "}
-                      <span className="text-gray-600">{itemMap.get(id) ?? `#${id}`}</span>
-                    </span>
-                  ))}
+                <div className="flex flex-col gap-1">
+                  <span className="text-xs font-medium text-gray-700">Builds into</span>
+                  <div className="flex flex-wrap gap-1">
+                    {item.into.map((id) => {
+                      const upgrade = itemById.get(id);
+                      return (
+                        <div key={id} className="group relative">
+                          <ImageWithFallback
+                            src={upgrade?.image ? `/leaguecontent/${upgrade.image}` : "/globe.svg"}
+                            alt={upgrade?.name ?? `#${id}`}
+                            className="h-8 w-8 rounded border border-gray-100 object-contain"
+                          />
+                          <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
+                            {upgrade?.name ?? `#${id}`}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               )}
             </article>

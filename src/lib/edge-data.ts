@@ -7,6 +7,13 @@ import type { TFTDataBundle } from "./tft/types";
 const CDN_BASE =
   "https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn";
 
+// In dev, set NEXT_PUBLIC_BUNDLE_BASE=http://localhost:3000 in .env.local
+// so bundle fetches use local public/ files instead of the GitHub CDN.
+// In production this env var is absent and CDN_BASE is used.
+const BUNDLE_BASE: string =
+  (typeof process !== "undefined" && process.env?.NEXT_PUBLIC_BUNDLE_BASE) ||
+  CDN_BASE;
+
 const ensureAbsoluteUrl = (value?: string | null) => {
   if (!value) return null;
   const trimmed = value.trim();
@@ -97,13 +104,13 @@ const fetchJson = async <T>(path: string): Promise<T> => {
 };
 
 export const getPokemonBundleEdge = cache(async () =>
-  fetchJson<PokemonDataBundle>(`${CDN_BASE}/pokemoncontent/data/bundle.json`)
+  fetchJson<PokemonDataBundle>(`${BUNDLE_BASE}/pokemoncontent/data/bundle.json`)
 );
 
 export const getLeagueBundleEdge = cache(async () =>
-  fetchJson<LeagueDataBundle>(`${CDN_BASE}/leaguecontent/data/bundle.json`)
+  fetchJson<LeagueDataBundle>(`${BUNDLE_BASE}/leaguecontent/data/bundle.json`)
 );
 
 export const getTFTBundleEdge = cache(async () =>
-  fetchJson<TFTDataBundle>(`${CDN_BASE}/tftcontent/data/bundle.json`)
+  fetchJson<TFTDataBundle>(`${BUNDLE_BASE}/tftcontent/data/bundle.json`)
 );

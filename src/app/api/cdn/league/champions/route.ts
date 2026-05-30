@@ -3,9 +3,7 @@ import { NextResponse } from 'next/server';
 import { getLeagueData } from '@/lib/league-service';
 import { OmniCdnResponse } from '@/types/omni-schema';
 
-// Revalidate this data every 24 hours (86400 seconds)
-// This effectively makes it a static CDN that updates once a day
-export const revalidate = 86400; 
+export const runtime = 'edge';
 
 export async function GET() {
   const data = await getLeagueData();

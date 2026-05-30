@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { execSync } from 'node:child_process';
+import zlib from 'node:zlib';
 
 type DDChampionSummary = {
   id: string;  // string key like "Aatrox", "DrMundo"
@@ -35,9 +35,9 @@ type Bundle = {
   [key: string]: unknown;
 };
 
-const DD_VERSION = '15.10.1';
-const BASE = `https://ddragon.leagueoflegends.com/cdn/${DD_VERSION}/data/en_US`;
+const VERSIONS_URL = 'https://ddragon.leagueoflegends.com/api/versions.json';
 const PUBLIC_BUNDLE_PATH = path.resolve('public/leaguecontent/data/bundle.json');
+const CDN_BUNDLE_PATH = path.resolve('cdn/leaguecontent/data/bundle.json');
 
 const STAT_KEYS = [
   'hp', 'hpperlevel', 'mp', 'mpperlevel', 'movespeed',
@@ -60,6 +60,12 @@ async function main(): Promise<void> {
     if (!fs.existsSync(PUBLIC_BUNDLE_PATH)) {
       throw new Error(`Bundle not found: ${PUBLIC_BUNDLE_PATH}`);
     }
+
+    const versionsRes = await fetchWithRetry(VERSIONS_URL);
+    const versions = (await versionsRes.json()) as string[];
+    const latestVersion = versions[0];
+    const BASE = `https://ddragon.leagueoflegends.com/cdn/${latestVersion}/data/en_US`;
+    console.log(`Using Data Dragon version ${latestVersion}`);
 
     console.log('Fetching champion list from Data Dragon...');
     const listRes = await fetchWithRetry(`${BASE}/champion.json`);
@@ -116,10 +122,9 @@ async function main(): Promise<void> {
     }
 
     console.log(`\nPatched ${patched} champions (${skipped} skipped). Writing bundle...`);
-    fs.writeFileSync(PUBLIC_BUNDLE_PATH, JSON.stringify(bundle, null, 2) + '\n', 'utf8');
-    execSync('gzip -c public/leaguecontent/data/bundle.json > cdn/leaguecontent/data/bundle.json', {
-      stdio: 'inherit',
-    });
+    const serialized = `${JSON.stringify(bundle, null, 2)}\n`;
+    fs.writeFileSync(PUBLIC_BUNDLE_PATH, serialized, 'utf8');
+    fs.writeFileSync(CDN_BUNDLE_PATH, zlib.gzipSync(serialized));
     console.log('Done.');
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);

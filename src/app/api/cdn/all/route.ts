@@ -4,8 +4,7 @@ import { getLeagueData } from '@/lib/league-service';
 import { getPokemonData } from '@/lib/pokemon-service';
 import { OmniCdnResponse } from '@/types/omni-schema';
 
-// Revalidate every 24 hours (86400 seconds)
-export const revalidate = 86400;
+export const runtime = 'edge';
 
 export async function GET() {
   const startTime = Date.now();

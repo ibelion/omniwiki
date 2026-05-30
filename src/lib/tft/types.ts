@@ -27,8 +27,19 @@ export type TFTTraitTier = {
   style: number;
 };
 
+export type TFTAugmentRecord = {
+  id: string;
+  name: string;
+  description: string;
+  image: string | null;
+  tier: number | null;
+};
+
 export type TFTDataBundle = {
+  setName?: string;
+  setNumber?: number;
   champions: TFTChampionRecord[];
   items: TFTItemRecord[];
   traits: TFTTraitRecord[];
+  augments?: TFTAugmentRecord[];
 };

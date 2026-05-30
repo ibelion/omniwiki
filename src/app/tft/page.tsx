@@ -10,11 +10,12 @@ export default function TFTPage() {
         </p>
         <h1 className="mt-1 text-4xl font-semibold text-gray-900">TFT</h1>
         <p className="mt-2 text-gray-600">
-          {tftData.champions.length} champions · {tftData.items.length} items · {tftData.traits.length} traits
+          {tftData.champions.length} champions · {tftData.traits.length} traits · {tftData.items.length} items · {(tftData.augments ?? []).length} augments
         </p>
+        <p className="mt-1 text-sm text-gray-400">Set {tftData.setNumber ?? 17}</p>
       </header>
 
-      <nav className="grid gap-4 sm:grid-cols-3">
+      <nav className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Link
           href="/tft/champions"
           className="flex flex-col gap-1 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:border-teal-200 hover:bg-teal-50 hover:shadow-md"
@@ -38,6 +39,14 @@ export default function TFTPage() {
           <p className="text-2xl font-semibold text-gray-900">{tftData.traits.length}</p>
           <p className="text-sm font-semibold text-teal-700">Traits</p>
           <p className="text-xs text-gray-500">Origins and classes with tier breakpoints</p>
+        </Link>
+        <Link
+          href="/tft/augments"
+          className="flex flex-col gap-1 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:border-teal-200 hover:bg-teal-50 hover:shadow-md"
+        >
+          <p className="text-2xl font-semibold text-gray-900">{(tftData.augments ?? []).length}</p>
+          <p className="text-sm font-semibold text-teal-700">Augments</p>
+          <p className="text-xs text-gray-500">Silver, Gold, and Prismatic augments</p>
         </Link>
       </nav>
     </main>

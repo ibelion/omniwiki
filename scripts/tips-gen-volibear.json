@@ -1,0 +1,52 @@
+{
+  "name": "Volibear",
+  "resource": "Mana",
+  "rangeType": "Melee",
+  "roles": [
+    "Fighter",
+    "Tank"
+  ],
+  "stats": {
+    "hp": 650,
+    "movespeed": 340,
+    "armor": 35,
+    "attackrange": 150
+  },
+  "abilities": [
+    {
+      "slot": "P",
+      "name": "The Relentless Storm",
+      "description": "Volibear's Attacks and abilities grant Attack Speed, and eventually cause his Attacks to deal bonus magic damage to nearby enemies.",
+      "cooldown": null,
+      "range": null
+    },
+    {
+      "slot": "Q",
+      "name": "Thundering Smash",
+      "description": "Volibear gains speed towards enemies, Stunning and damaging the first one he Attacks.",
+      "cooldown": "14/13/12/11/10",
+      "range": "300"
+    },
+    {
+      "slot": "W",
+      "name": "Frenzied Maul",
+      "description": "Volibear damages an enemy, applying on-hit effects and marking them.  Casting this ability again on the same target deals bonus damage and Heals Volibear.",
+      "cooldown": "5",
+      "range": "325"
+    },
+    {
+      "slot": "E",
+      "name": "Sky Splitter",
+      "description": "Volibear summons a lightning bolt at a location, dealing damage and Slowing enemies while granting Volibear a Shield if he's inside the blast radius.",
+      "cooldown": "14",
+      "range": "1200"
+    },
+    {
+      "slot": "R",
+      "name": "Stormbringer",
+      "description": "Volibear leaps to a target location, Slowing and damaging enemies beneath him while gaining bonus Health.  Enemy towers near his landing location become temporarily disabled.",
+      "cooldown": "160/135/110",
+      "range": "550"
+    }
+  ]
+}

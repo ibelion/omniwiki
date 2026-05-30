@@ -1,0 +1,52 @@
+{
+  "name": "Illaoi",
+  "resource": "Mana",
+  "rangeType": "Melee",
+  "roles": [
+    "Fighter",
+    "Tank"
+  ],
+  "stats": {
+    "hp": 656,
+    "movespeed": 350,
+    "armor": 35,
+    "attackrange": 125
+  },
+  "abilities": [
+    {
+      "slot": "P",
+      "name": "Prophet of an Elder God",
+      "description": "Illaoi and the Vessels she creates spawn Tentacles on nearby impassible terrain. Tentacles swing at spirits, Vessels , and victims of Illaoi's Harsh lesson. Tentacles deal physical damage to enemies hit, and will heal Illaoi if they damage a champion.",
+      "cooldown": null,
+      "range": null
+    },
+    {
+      "slot": "Q",
+      "name": "Tentacle Smash",
+      "description": "Increases the damage dealt by Tentacles. When activated, Illaoi smashes down a Tentacle that deals physical damage.",
+      "cooldown": "10/9/8/7/6",
+      "range": "850"
+    },
+    {
+      "slot": "W",
+      "name": "Harsh Lesson",
+      "description": "Illaoi leaps to her target, dealing physical damage and causing nearby Tentacles to also swing at the target.",
+      "cooldown": "4",
+      "range": "400"
+    },
+    {
+      "slot": "E",
+      "name": "Test of Spirit",
+      "description": "Illaoi rips the spirit from a foe's body, forcing it to stand before her. Spirits echo a percentage of the damage they take to the original target. If killed, or if the target gets too far from the spirit, the target will become a Vessel and begin spawning Tentacles.",
+      "cooldown": "16/15/14/13/12",
+      "range": "900"
+    },
+    {
+      "slot": "R",
+      "name": "Leap of Faith",
+      "description": "Illaoi smashes her idol into the ground, dealing physical damage to nearby enemies. A Tentacle spawns for each enemy champion hit.",
+      "cooldown": "120/95/70",
+      "range": "450"
+    }
+  ]
+}

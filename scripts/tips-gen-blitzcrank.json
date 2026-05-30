@@ -1,0 +1,52 @@
+{
+  "name": "Blitzcrank",
+  "resource": "Mana",
+  "rangeType": "Melee",
+  "roles": [
+    "Tank",
+    "Support"
+  ],
+  "stats": {
+    "hp": 600,
+    "movespeed": 325,
+    "armor": 37,
+    "attackrange": 125
+  },
+  "abilities": [
+    {
+      "slot": "P",
+      "name": "Mana Barrier",
+      "description": "Blitzcrank gains a shield based on their mana when dropping to low health.",
+      "cooldown": null,
+      "range": null
+    },
+    {
+      "slot": "Q",
+      "name": "Rocket Grab",
+      "description": "Blitzcrank fires their right hand to grab an opponent on its path, dealing damage and dragging it back to them.",
+      "cooldown": "20/19/18/17/16",
+      "range": "1079"
+    },
+    {
+      "slot": "W",
+      "name": "Overdrive",
+      "description": "Blitzcrank super charges themself to get dramatically increased Move and Attack Speed. They are temporarily slowed after the effect ends.",
+      "cooldown": "15",
+      "range": "1"
+    },
+    {
+      "slot": "E",
+      "name": "Power Fist",
+      "description": "Blitzcrank charges up their fist to make the next attack deal double damage and pop their target up in the air.",
+      "cooldown": "7/6.5/6/5.5/5",
+      "range": "300"
+    },
+    {
+      "slot": "R",
+      "name": "Static Field",
+      "description": "Enemies attacked by Blitzcrank are marked and take lightning damage after 1 second. Additionally, Blitzcrank can activate this ability to remove nearby enemies' shields, damage them, and silence them briefly.",
+      "cooldown": "60/40/20",
+      "range": "600"
+    }
+  ]
+}
