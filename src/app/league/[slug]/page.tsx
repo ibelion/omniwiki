@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
+import { ChampionQuotes } from "@/components/ChampionQuotes";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -202,16 +203,6 @@ export default async function ChampionDetail({ params }: PageProps) {
             </p>
           </div>
         </div>
-        {quotes.length > 12 && (
-          <div className="mt-4 text-right">
-            <Link
-              href={`/league/quotes?champion=${encodeURIComponent(champion.name)}`}
-              className="text-xs text-emerald-600 hover:underline"
-            >
-              View all {quotes.length} quotes →
-            </Link>
-          </div>
-        )}
       </section>
 
       {champion.stats && (
@@ -400,41 +391,19 @@ export default async function ChampionDetail({ params }: PageProps) {
         )}
       </section>
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">
+      <section className=”rounded-2xl border border-gray-200 bg-white p-6 shadow-sm”>
+        <div className=”mb-4 flex items-center justify-between”>
+          <h2 className=”text-base font-semibold text-gray-900”>
             Quotes & Voice Lines ({quotes.length})
           </h2>
+          <Link
+            href={`/league/quotes?champion=${encodeURIComponent(champion.name)}`}
+            className=”text-xs text-emerald-600 hover:underline”
+          >
+            Browse all →
+          </Link>
         </div>
-        {quotes.length === 0 ? (
-          <p className="text-sm text-gray-500">
-            No quotes found for this champion.
-          </p>
-        ) : (
-          <div className="flex flex-col gap-3 text-sm text-gray-700">
-            {quotes.slice(0, 12).map((quote, idx) => (
-              <blockquote
-                key={`${quote.champion}-${idx}`}
-                className="rounded-xl border border-gray-100 bg-gray-50 p-4"
-              >
-                <p className="font-semibold text-gray-900">“{quote.text}”</p>
-                {quote.category && (
-                  <p className="text-xs text-gray-500">
-                    Trigger: {quote.category}
-                  </p>
-                )}
-                {quote.audio && (
-                  <audio
-                    controls
-                    preload="none"
-                    className="mt-2 w-full"
-                    src={`https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn/leaguecontent/${quote.audio}`}
-                  />
-                )}
-              </blockquote>
-            ))}
-          </div>
-        )}
+        <ChampionQuotes quotes={quotes} />
       </section>
 
       {emotes.length > 0 && (
