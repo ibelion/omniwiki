@@ -143,6 +143,14 @@ export default async function LeagueQuotesPage({
                       {quote.language && <span>&middot; {quote.language}</span>}
                     </div>
                   )}
+                  {quote.audio && (
+                    <audio
+                      controls
+                      preload="none"
+                      className="mt-1 h-8 w-full"
+                      src={`https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn/leaguecontent/${quote.audio}`}
+                    />
+                  )}
                 </article>
               );
             })}
