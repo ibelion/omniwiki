@@ -58,10 +58,11 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
           {filtered.map((ability, index) => {
             const champion = champions.find(c => c.id === ability.championId);
             const championSlug = champion?.slug || '';
+            const abilityId = championSlug ? `${championSlug}-${ability.slot.toLowerCase()}` : '';
             return (
             <Link
               key={`${ability.championId}-${ability.slot}-${index}`}
-              href={`/league/${championSlug}`}
+              href={abilityId ? `/league/abilities/${abilityId}` : `/league/${championSlug}`}
               className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
             >
               <p className="text-xs uppercase text-gray-500">

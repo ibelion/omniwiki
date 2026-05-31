@@ -240,9 +240,10 @@ export default async function ChampionDetail({ params }: PageProps) {
         </div>
         <div className="grid gap-3">
           {abilities.map((ability) => (
-            <div
+            <Link
               key={`${ability.championId}-${ability.slot}`}
-              className="flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800"
+              href={`/league/abilities/${slug}-${ability.slot.toLowerCase()}`}
+              className="flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800 transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-sm"
             >
               <div className="flex items-center gap-3">
                 <ImageWithFallback
@@ -260,23 +261,13 @@ export default async function ChampionDetail({ params }: PageProps) {
                 </div>
               </div>
               <p className="text-gray-600">{ability.description}</p>
-              {ability.tooltip && (
-                <details className="text-xs">
-                  <summary className="cursor-pointer select-none text-gray-400 hover:text-gray-600">
-                    Tooltip (with values)
-                  </summary>
-                  <p className="mt-1 whitespace-pre-wrap text-gray-500">
-                    {ability.tooltip.replace(/\{\{[^}]+\}\}/g, "??")}
-                  </p>
-                </details>
-              )}
               {ability.cooldown && (
                 <p className="text-xs text-gray-500">
-                  Cooldown: {ability.cooldown} · Cost: {ability.cost || "—"} ·
+                  Cooldown: {ability.cooldown}s · Cost: {ability.cost || "—"} ·
                   Range: {ability.range || "—"}
                 </p>
               )}
-            </div>
+            </Link>
           ))}
           {abilities.length === 0 && (
             <p className="text-sm text-gray-500">

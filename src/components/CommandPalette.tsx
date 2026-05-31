@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { PokemonRecord, MoveRecord, AbilityRecord } from "@/lib/pokemon/types";
-import type { ChampionRecord } from "@/lib/league/types";
+import type { ChampionRecord, ChampionAbility } from "@/lib/league/types";
 
 const OPEN_EVENT = "omniwiki:open-command-palette";
 
@@ -86,6 +86,39 @@ export function CommandPalette() {
                 category: "Champion",
                 href: `/league/${c.slug}`,
               }))
+            );
+          }
+
+          const abilitiesRes = await fetch(
+            "/leaguecontent/data/abilities.json",
+            { cache: "force-cache" }
+          );
+          if (abilitiesRes.ok) {
+            const abilities = (await abilitiesRes.json()) as ChampionAbility[];
+            // Build a slug map from champion name -> slug using loaded champions
+            const slugMap = new Map<number, string>();
+            allEntries
+              .filter((e) => e.category === "Champion")
+              .forEach((e) => {
+                // We only have slug from champion entries already pushed
+              });
+            allEntries.push(
+              ...abilities
+                .map((a) => {
+                  // Find the champion entry we just pushed to get its slug
+                  const champEntry = allEntries.find(
+                    (e) => e.category === "Champion" && e.name === a.championName
+                  );
+                  if (!champEntry) return null;
+                  const id = `${champEntry.slug}-${a.slot.toLowerCase()}`;
+                  return {
+                    slug: id,
+                    name: `${a.name} (${a.championName})`,
+                    category: "Ability",
+                    href: `/league/abilities/${id}`,
+                  };
+                })
+                .filter(Boolean) as typeof allEntries
             );
           }
         }
