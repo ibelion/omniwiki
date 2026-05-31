@@ -389,9 +389,10 @@ export default async function ChampionDetail({ params }: PageProps) {
         ) : (
           <div className="grid gap-4 sm:grid-cols-2">
             {skins.map((skin) => (
-              <div
+              <Link
                 key={skin.skinId}
-                className="rounded-2xl border border-gray-100 bg-gray-50 p-4"
+                href={skin.isBase ? `/league/${slug}` : `/league/skins/${skin.skinId}`}
+                className="flex flex-col gap-0 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-sm"
               >
                 <p className="text-xs uppercase text-gray-500">
                   {skin.rarity || "Standard"}
@@ -400,23 +401,13 @@ export default async function ChampionDetail({ params }: PageProps) {
                   {skin.name}
                 </p>
                 <p className="text-xs text-gray-500">
-                  Cost: {skin.cost ?? "?"} · {skin.availability || "Status unknown"}
+                  {skin.cost ? `${skin.cost} RP · ` : ""}{skin.availability || "Status unknown"}
                 </p>
-                {skinLineBySkinId.has(skin.skinId) && (() => {
-                  const sl = skinLineBySkinId.get(skin.skinId)!;
-                  const anchor = sl.name
-                    .toLowerCase()
-                    .replace(/[^a-z0-9]+/g, "-")
-                    .replace(/^-+|-+$/g, "");
-                  return (
-                    <Link
-                      href={`/league/skin-lines#${anchor}`}
-                      className="mt-1 inline-block rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-600 hover:bg-indigo-100"
-                    >
-                      {sl.name}
-                    </Link>
-                  );
-                })()}
+                {skinLineBySkinId.has(skin.skinId) && (
+                  <span className="mt-1 w-fit rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-600">
+                    {skinLineBySkinId.get(skin.skinId)!.name}
+                  </span>
+                )}
                 {skin.splash && (
                   <ImageWithFallback
                     src={`/leaguecontent/${skin.splash}`}
@@ -448,7 +439,7 @@ export default async function ChampionDetail({ params }: PageProps) {
                     </div>
                   </div>
                 )}
-              </div>
+              </Link>
             ))}
           </div>
         )}

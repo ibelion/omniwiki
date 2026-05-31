@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { RuneRecord, RuneTreeRecord } from "@/lib/league/types";
 
@@ -63,8 +64,9 @@ export function SystemsList({ runes, runeTrees = [] }: { runes: RuneRecord[]; ru
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {filteredKeystones.map((rune) => (
-            <article
+            <Link
               key={rune.runeId}
+              href={`/league/runes/${rune.runeId}`}
               className="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition-all hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
             >
               <div className="flex items-center gap-3">
@@ -85,7 +87,7 @@ export function SystemsList({ runes, runeTrees = [] }: { runes: RuneRecord[]; ru
                 </div>
               </div>
               <p className="text-xs text-gray-600">{rune.shortDesc}</p>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
@@ -117,8 +119,9 @@ export function SystemsList({ runes, runeTrees = [] }: { runes: RuneRecord[]; ru
                 </div>
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {runesInTree.map((rune) => (
-                    <article
+                    <Link
                       key={rune.runeId}
+                      href={`/league/runes/${rune.runeId}`}
                       className="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition-all hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
                     >
                       <div className="flex items-center gap-3">
@@ -133,7 +136,7 @@ export function SystemsList({ runes, runeTrees = [] }: { runes: RuneRecord[]; ru
                         </div>
                       </div>
                       <p className="text-xs text-gray-600">{rune.shortDesc}</p>
-                    </article>
+                    </Link>
                   ))}
                 </div>
               </div>

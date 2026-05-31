@@ -122,7 +122,7 @@ export function SkinsList({ skins, champions }: SkinsListProps) {
             return (
               <Link
                 key={`${skin.championId}-${skin.skinId}`}
-                href={`/league/${slug}`}
+                href={skin.isBase ? `/league/${slug}` : `/league/skins/${skin.skinId}`}
                 className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
               >
                 {(skin.splash || skin.tile || skin.loadScreen) && (
