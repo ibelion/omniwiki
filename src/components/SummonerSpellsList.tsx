@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { SummonerSpellRecord } from "@/lib/league/types";
 
@@ -42,8 +43,9 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((spell) => (
-            <article
+            <Link
               key={spell.key}
+              href={`/league/summoner-spells/${spell.id}`}
               className="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition-all hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
             >
               <div className="flex items-center gap-3">
@@ -67,7 +69,7 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
               <p className="text-xs text-gray-500">
                 Cooldown: {spell.cooldown}s · Level {spell.summonerLevel ?? "?"}
               </p>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

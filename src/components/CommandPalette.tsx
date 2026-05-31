@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { PokemonRecord, MoveRecord, AbilityRecord } from "@/lib/pokemon/types";
-import type { ChampionRecord, ChampionAbility } from "@/lib/league/types";
+import type { ChampionRecord, ChampionAbility, ItemRecord, SummonerSpellRecord } from "@/lib/league/types";
 
 const OPEN_EVENT = "omniwiki:open-command-palette";
 
@@ -95,17 +95,9 @@ export function CommandPalette() {
           );
           if (abilitiesRes.ok) {
             const abilities = (await abilitiesRes.json()) as ChampionAbility[];
-            // Build a slug map from champion name -> slug using loaded champions
-            const slugMap = new Map<number, string>();
-            allEntries
-              .filter((e) => e.category === "Champion")
-              .forEach((e) => {
-                // We only have slug from champion entries already pushed
-              });
             allEntries.push(
               ...abilities
                 .map((a) => {
-                  // Find the champion entry we just pushed to get its slug
                   const champEntry = allEntries.find(
                     (e) => e.category === "Champion" && e.name === a.championName
                   );
@@ -119,6 +111,36 @@ export function CommandPalette() {
                   };
                 })
                 .filter(Boolean) as typeof allEntries
+            );
+          }
+
+          const itemsRes = await fetch("/leaguecontent/data/items.json", {
+            cache: "force-cache",
+          });
+          if (itemsRes.ok) {
+            const items = (await itemsRes.json()) as Pick<ItemRecord, "id" | "name">[];
+            allEntries.push(
+              ...items.map((item) => ({
+                slug: String(item.id),
+                name: item.name,
+                category: "Item",
+                href: `/league/items/${item.id}`,
+              }))
+            );
+          }
+
+          const spellsRes = await fetch("/leaguecontent/data/summoner-spells.json", {
+            cache: "force-cache",
+          });
+          if (spellsRes.ok) {
+            const spells = (await spellsRes.json()) as Pick<SummonerSpellRecord, "id" | "name">[];
+            allEntries.push(
+              ...spells.map((s) => ({
+                slug: s.id,
+                name: s.name,
+                category: "Spell",
+                href: `/league/summoner-spells/${s.id}`,
+              }))
             );
           }
         }

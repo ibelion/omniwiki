@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { leagueData } from "@/lib/league/data";
@@ -36,6 +37,25 @@ const SLOT_COLORS: Record<string, string> = {
 };
 
 type PageProps = { params: Promise<{ id: string }> };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const lastDash = id.lastIndexOf("-");
+  if (lastDash === -1) return { title: "Ability · OmniWiki" };
+  const championSlug = id.slice(0, lastDash);
+  const slot = id.slice(lastDash + 1).toUpperCase();
+  const champion = leagueData.champions.find((c) => c.slug === championSlug);
+  const ability = champion
+    ? leagueData.abilities.find((a) => a.championId === champion.id && a.slot === slot)
+    : undefined;
+  if (!ability || !champion) return { title: "Ability · OmniWiki" };
+  return {
+    title: `${ability.name} · ${champion.name} · OmniWiki`,
+    description:
+      ability.description?.slice(0, 160) ??
+      `${ability.name} — ${champion.name}'s ${SLOT_LABELS[slot] ?? slot} ability in League of Legends.`,
+  };
+}
 
 export default async function AbilityDetailPage({ params }: PageProps) {
   const { id } = await params;

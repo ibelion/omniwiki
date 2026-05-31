@@ -1,5 +1,6 @@
 export const runtime = 'edge';
 
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
@@ -10,6 +11,20 @@ import { ChampionQuotes } from "@/components/ChampionQuotes";
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const leagueData = await getLeagueBundleEdge();
+  const champion = leagueData.champions.find((c) => c.slug === slug);
+  if (!champion) return { title: "Champion · OmniWiki" };
+  const lore = leagueData.lore.find((l) => l.slug === slug);
+  return {
+    title: `${champion.name} · League Champion · OmniWiki`,
+    description:
+      lore?.loreShort?.slice(0, 160) ??
+      `${champion.name}, ${lore?.title ?? "a League of Legends champion"}.`,
+  };
+}
 
 export default async function ChampionDetail({ params }: PageProps) {
   const { slug } = await params;
