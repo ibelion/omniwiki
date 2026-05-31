@@ -317,7 +317,7 @@ export default async function ChampionDetail({ params }: PageProps) {
         <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
           <div className="mb-4 flex items-center justify-between">
             <h2 className="text-base font-semibold text-gray-900">Lore</h2>
-            {lore.faction && (
+            {lore.faction && lore.faction !== "unaffiliated" && (
               <Link
                 href="/league/factions"
                 className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 transition hover:bg-emerald-200"
@@ -341,7 +341,7 @@ export default async function ChampionDetail({ params }: PageProps) {
       )}
 
 
-      {lore?.faction && (() => {
+      {lore?.faction && lore.faction !== "unaffiliated" && (() => {
         const factionMates = leagueData.lore
           .filter((l) => l.faction === lore.faction && l.slug !== slug)
           .slice(0, 16);
