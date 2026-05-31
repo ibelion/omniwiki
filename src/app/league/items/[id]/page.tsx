@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+export const dynamic = "force-static";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { leagueData } from "@/lib/league/data";
