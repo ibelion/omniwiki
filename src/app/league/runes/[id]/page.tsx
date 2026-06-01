@@ -1,16 +1,15 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
+export const runtime = 'edge';
+
 type PageProps = { params: Promise<{ id: string }> };
 
-export function generateStaticParams() {
-  return leagueData.runes.map((r) => ({ id: String(r.runeId) }));
-}
-
 export default async function RuneDetailPage({ params }: PageProps) {
+  const leagueData = await getLeagueBundleEdge();
   const { id } = await params;
   const runeId = Number(id);
 

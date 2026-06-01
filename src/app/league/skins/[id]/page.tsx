@@ -1,8 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
+
+export const runtime = 'edge';
 
 const RARITY_LABELS: Record<string, string> = {
   kNoRarity: "Standard",
@@ -28,13 +30,8 @@ const RARITY_COLORS: Record<string, string> = {
 
 type PageProps = { params: Promise<{ id: string }> };
 
-export function generateStaticParams() {
-  return leagueData.skins
-    .filter((s) => !s.isBase)
-    .map((s) => ({ id: String(s.skinId) }));
-}
-
 export default async function SkinDetailPage({ params }: PageProps) {
+  const leagueData = await getLeagueBundleEdge();
   const { id } = await params;
   const skinId = Number(id);
 

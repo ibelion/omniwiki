@@ -1,12 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
-export function generateStaticParams() {
-  return leagueData.items.map((item) => ({ id: String(item.id) }));
-}
+export const runtime = 'edge';
 
 const STAT_LABELS: Record<string, string> = {
   FlatHPPoolMod: "Bonus HP",
@@ -51,6 +49,7 @@ const tierBadge = (tags: string[]) => {
 type PageProps = { params: Promise<{ id: string }> };
 
 export default async function ItemDetailPage({ params }: PageProps) {
+  const leagueData = await getLeagueBundleEdge();
   const { id } = await params;
   const itemId = Number(id);
   const item = leagueData.items.find((i) => i.id === itemId);

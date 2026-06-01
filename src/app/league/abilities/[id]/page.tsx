@@ -1,23 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
-const champByName = new Map(
-  leagueData.champions.map((c) => [c.name, c])
-);
-
-function abilityId(championName: string, slot: string): string {
-  const champ = champByName.get(championName);
-  return champ ? `${champ.slug}-${slot.toLowerCase()}` : "";
-}
-
-export function generateStaticParams() {
-  return leagueData.abilities
-    .map((a) => ({ id: abilityId(a.championName, a.slot) }))
-    .filter((p) => p.id !== "");
-}
+export const runtime = 'edge';
 
 const SLOT_LABELS: Record<string, string> = {
   P: "Passive",
@@ -38,6 +25,7 @@ const SLOT_COLORS: Record<string, string> = {
 type PageProps = { params: Promise<{ id: string }> };
 
 export default async function AbilityDetailPage({ params }: PageProps) {
+  const leagueData = await getLeagueBundleEdge();
   const { id } = await params;
 
   // id is "{championSlug}-{slot}" e.g. "ahri-q"
@@ -138,7 +126,7 @@ export default async function AbilityDetailPage({ params }: PageProps) {
         </h2>
         <div className="flex flex-wrap gap-2">
           {siblings.map((sib) => {
-            const sibId = abilityId(sib.championName, sib.slot);
+            const sibId = `${championSlug}-${sib.slot.toLowerCase()}`;
             const isActive = sib.slot === slot;
             return (
               <Link
