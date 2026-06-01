@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-export const dynamic = "force-static";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { leagueData } from "@/lib/league/data";
@@ -51,18 +49,6 @@ const tierBadge = (tags: string[]) => {
 };
 
 type PageProps = { params: Promise<{ id: string }> };
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { id } = await params;
-  const item = leagueData.items.find((i) => i.id === Number(id));
-  if (!item) return { title: "Item · OmniWiki" };
-  return {
-    title: `${item.name} · League Item · OmniWiki`,
-    description:
-      item.plaintext?.slice(0, 160) ??
-      `${item.name} — a League of Legends item.`,
-  };
-}
 
 export default async function ItemDetailPage({ params }: PageProps) {
   const { id } = await params;

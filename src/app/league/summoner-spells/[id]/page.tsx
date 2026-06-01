@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-export const dynamic = "force-static";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { leagueData } from "@/lib/league/data";
@@ -37,16 +35,6 @@ const VISIBLE_MODES = new Set([
 ]);
 
 type PageProps = { params: Promise<{ id: string }> };
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { id } = await params;
-  const spell = leagueData.summonerSpells.find((s) => s.id === id);
-  if (!spell) return { title: "Summoner Spell · OmniWiki" };
-  return {
-    title: `${spell.name} · Summoner Spell · OmniWiki`,
-    description: spell.description.slice(0, 160),
-  };
-}
 
 export function generateStaticParams() {
   return leagueData.summonerSpells.map((s) => ({ id: s.id }));

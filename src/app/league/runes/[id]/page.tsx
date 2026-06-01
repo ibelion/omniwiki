@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-export const dynamic = "force-static";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { leagueData } from "@/lib/league/data";
@@ -7,20 +5,6 @@ import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
 type PageProps = { params: Promise<{ id: string }> };
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { id } = await params;
-  const rune = leagueData.runes.find((r) => r.runeId === Number(id));
-  if (!rune) return { title: "Rune · OmniWiki" };
-  const tree = (leagueData.runeTrees ?? []).find((t) => t.id === rune.treeId);
-  const slotLabel = rune.slot === 0 ? "Keystone" : `Slot ${rune.slot}`;
-  return {
-    title: `${rune.name} · ${tree?.name ?? "Runes"} · OmniWiki`,
-    description:
-      rune.shortDesc?.slice(0, 160) ??
-      `${rune.name} — a ${slotLabel} rune in the ${tree?.name ?? "Rune"} path in League of Legends.`,
-  };
-}
 
 export function generateStaticParams() {
   return leagueData.runes.map((r) => ({ id: String(r.runeId) }));

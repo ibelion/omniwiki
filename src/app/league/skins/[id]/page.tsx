@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-export const dynamic = "force-static";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { leagueData } from "@/lib/league/data";
@@ -29,19 +27,6 @@ const RARITY_COLORS: Record<string, string> = {
 };
 
 type PageProps = { params: Promise<{ id: string }> };
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { id } = await params;
-  const skin = leagueData.skins.find((s) => s.skinId === Number(id));
-  if (!skin) return { title: "Skin · OmniWiki" };
-  const champion = leagueData.champions.find((c) => c.id === skin.championId);
-  const championName = champion?.name ?? skin.championName;
-  const rarityLabel = RARITY_LABELS[skin.rarity ?? ""] ?? "Standard";
-  return {
-    title: `${skin.name} · ${championName} Skin · OmniWiki`,
-    description: `${skin.name} is a ${rarityLabel} skin for ${championName} in League of Legends.`,
-  };
-}
 
 export function generateStaticParams() {
   return leagueData.skins
