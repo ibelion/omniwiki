@@ -1,70 +1,68 @@
 // lib/league-service.ts
-import { OmniEntity } from '@/types/omni-schema';
-import { DataDragonResponse, ChampionInfo } from '@/types/league';
+import { getLeagueBundleEdge } from '@/lib/edge-data';
+import type { OmniEntity } from '@/types/omni-schema';
 import { cleanText, normalizeStat } from '@/lib/utils';
 
-const BASE_URL = 'https://ddragon.leagueoflegends.com';
-
-/**
- * Fetches the latest patch version (e.g., "14.1.1")
- */
-const getLatestVersion = async (): Promise<string> => {
-  try {
-    const res = await fetch(`${BASE_URL}/api/versions.json`, { next: { revalidate: 3600 } });
-    const versions = await res.json();
-    return versions[0];
-  } catch (error) {
-    console.error('Error fetching LoL version:', error);
-    return '14.1.1'; // Fallback
-  }
+// Role-based magic score since the bundle doesn't carry AP ratios.
+// Mages/mage-hybrids score high; pure physical carries and tanks score low.
+const MAGIC_BY_ROLE: Record<string, number> = {
+  Mage: 85,
+  Support: 55,
+  Assassin: 50,
+  Fighter: 30,
+  Marksman: 20,
+  Tank: 15,
 };
 
-/**
- * Transforms raw Riot data into the Golden Schema
- */
-const transformChampion = (champ: ChampionInfo, version: string): OmniEntity => {
-  return {
-    uid: `lol-${champ.id.toLowerCase()}`,
-    name: champ.name,
-    title: champ.title,
-    universe: 'league-of-legends',
-    stats: {
-      // Riot stats are 1-10
-      attack: normalizeStat(champ.info.attack, 10),
-      defense: normalizeStat(champ.info.defense, 10),
-      magic: normalizeStat(champ.info.magic, 10),
-      difficulty: normalizeStat(champ.info.difficulty, 10),
-    },
-    images: {
-      icon: `${BASE_URL}/cdn/${version}/img/champion/${champ.image.full}`,
-      portrait: `${BASE_URL}/cdn/img/champion/loading/${champ.id}_0.jpg`,
-    },
-    lore: cleanText(champ.blurb),
-    abilities: [], // The basic list doesn't have spells, detailed fetch required if needed
-    tags: champ.tags,
-  };
-};
+// Extract the PascalCase internal champion name from its splash image path.
+// e.g. "champions/AurelionSol/images/AurelionSol_splash.jpg" → "AurelionSol"
+const internalName = (splashImage: string): string => splashImage.split('/')[1] ?? '';
 
-/**
- * Main function to get all League data for the CDN
- */
 export const getLeagueData = async (): Promise<OmniEntity[]> => {
-  const version = await getLatestVersion();
-  
-  try {
-    // Fetch the "Full" data file to get sprites and stats in one go
-    const res = await fetch(`${BASE_URL}/cdn/${version}/data/en_US/champion.json`, {
-      next: { revalidate: 86400 }
-    });
-    
-    if (!res.ok) throw new Error('Failed to fetch champions');
+  const bundle = await getLeagueBundleEdge();
 
-    const json: DataDragonResponse = await res.json();
-    
-    // Convert the object map to an array
-    return Object.values(json.data).map((champ) => transformChampion(champ, version));
-  } catch (error) {
-    console.error('League Data Fetch Error:', error);
-    return [];
+  // Build lookup: champion slug → lore record
+  const loreBySlug = new Map(bundle.lore.map((l) => [l.slug, l]));
+
+  // Build lookup: championId → ability names (P, Q, W, E, R order preserved by the bundle)
+  const abilitiesByChampionId = new Map<number, string[]>();
+  for (const ability of bundle.abilities ?? []) {
+    const list = abilitiesByChampionId.get(ability.championId) ?? [];
+    list.push(ability.name);
+    abilitiesByChampionId.set(ability.championId, list);
   }
+
+  return bundle.champions.map((champion) => {
+    const lore = loreBySlug.get(champion.slug);
+    const s = champion.stats;
+    const primaryRole = champion.roles[0] ?? 'Fighter';
+
+    // defense: blend base HP and armor into a 0-100 scale.
+    // hp/9 maps ~530-860 to 59-96; armor*1.5 maps ~21-65 to 32-98.
+    // max=130 means only a true tank with both high hp AND armor hits 100.
+    const defenseRaw = (s?.hp ?? 550) / 9 + (s?.armor ?? 28) * 1.5;
+
+    return {
+      uid: `lol-${champion.slug}`,
+      name: champion.name,
+      title: lore?.title ?? '',
+      universe: 'league-of-legends' as const,
+      stats: {
+        attack: normalizeStat(s?.attackdamage ?? 52, 75),
+        defense: normalizeStat(defenseRaw, 130),
+        magic: MAGIC_BY_ROLE[primaryRole] ?? 35,
+        difficulty: (champion.difficulty ?? 5) * 10,
+      },
+      images: {
+        // sourceUrl is an absolute communitydragon URL for the champion icon
+        icon: champion.sourceUrl,
+        // Data Dragon loading screen art; internal name extracted from splash path
+        portrait: `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${internalName(champion.splashImage)}_0.jpg`,
+      },
+      lore: cleanText(lore?.loreShort ?? ''),
+      abilities: abilitiesByChampionId.get(champion.id) ?? [],
+      // roles + positions give the game richer trivia tags (e.g., "Mage", "Mid")
+      tags: [...new Set([...champion.roles, ...champion.positions])],
+    };
+  });
 };
