@@ -1,11 +1,12 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { BackLink } from "@/components/BackLink";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { SkinLineRecord } from "@/lib/league/types";
 
-type SkinStub = { name: string; splash: string | null };
+type SkinStub = { name: string; splash: string | null; tile: string | null };
 
 type Props = {
   skinLines: SkinLineRecord[];
@@ -44,7 +45,7 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
           Skin Lines ({filtered.length})
         </h1>
         <p className="mt-1 text-gray-600">
-          Thematic collections with a featured splash and total skin count.
+          Thematic collections — click any skin to view its full detail page.
         </p>
         <input
           type="text"
@@ -57,13 +58,23 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
 
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {filtered.map((skinLine) => {
-          const firstSkinId = skinLine.skinIds?.[0];
-          const firstSkin = firstSkinId !== undefined ? skinById[firstSkinId] : undefined;
-          const skinCount = skinLine.skinCount ?? skinLine.skinIds?.length ?? 0;
+          const skinIds = skinLine.skinIds ?? [];
+          const skinCount = skinLine.skinCount ?? skinIds.length;
           const anchor = skinLine.name
             .toLowerCase()
             .replace(/[^a-z0-9]+/g, "-")
             .replace(/^-+|-+$/g, "");
+
+          // Featured splash from first skin that has one
+          const featuredSkin = skinIds
+            .map((id) => skinById[id])
+            .find((s) => s?.splash);
+
+          // Up to 5 skins with tiles to show as thumbnails
+          const thumbSkins = skinIds
+            .map((id) => ({ id, ...skinById[id] }))
+            .filter((s) => s.tile)
+            .slice(0, 5);
 
           return (
             <article
@@ -71,28 +82,48 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
               id={anchor}
               className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
             >
-              {firstSkin?.splash ? (
+              {featuredSkin?.splash ? (
                 <ImageWithFallback
-                  src={`/leaguecontent/${firstSkin.splash}`}
+                  src={`/leaguecontent/${featuredSkin.splash}`}
                   alt={skinLine.name}
-                  className="h-48 w-full bg-gray-100"
+                  className="h-40 w-full bg-gray-100 object-cover"
                 />
               ) : (
-                <div className="h-48 w-full bg-gradient-to-br from-gray-100 via-white to-gray-200" />
+                <div className="h-40 w-full bg-gradient-to-br from-gray-100 via-white to-gray-200" />
               )}
 
-              <div className="flex items-start justify-between gap-4 p-5">
-                <div className="min-w-0">
+              <div className="p-5">
+                <div className="flex items-start justify-between gap-4">
                   <h2 className="text-lg font-semibold text-gray-900">{skinLine.name}</h2>
-                  {firstSkin && (
-                    <p className="mt-1 text-sm text-gray-500">
-                      Featured skin: {firstSkin.name}
-                    </p>
-                  )}
+                  <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+                    {skinCount} skins
+                  </span>
                 </div>
-                <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
-                  {skinCount} skins
-                </span>
+
+                {thumbSkins.length > 0 && (
+                  <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
+                    {thumbSkins.map((s) => (
+                      <Link
+                        key={s.id}
+                        href={`/league/skins/${s.id}`}
+                        title={s.name}
+                        className="shrink-0 overflow-hidden rounded-lg border border-gray-100 transition hover:border-emerald-300 hover:shadow-sm"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <ImageWithFallback
+                          src={`/leaguecontent/${s.tile}`}
+                          alt={s.name ?? ""}
+                          className="h-14 w-14 object-cover"
+                        />
+                      </Link>
+                    ))}
+                    {skinCount > thumbSkins.length && (
+                      <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border border-gray-100 bg-gray-50 text-xs font-medium text-gray-500">
+                        +{skinCount - thumbSkins.length}
+                      </span>
+                    )}
+                  </div>
+                )}
               </div>
             </article>
           );

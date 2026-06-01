@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
@@ -37,6 +38,17 @@ const VISIBLE_MODES = new Set([
 ]);
 
 type PageProps = { params: Promise<{ id: string }> };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
+  const spell = leagueData.summonerSpells.find((s) => s.id === id);
+  if (!spell) return { title: "Summoner Spell · OmniWiki" };
+  return {
+    title: `${spell.name} · Summoner Spell · OmniWiki`,
+    description: spell.description?.slice(0, 160) ?? `${spell.name}, a League of Legends summoner spell.`,
+  };
+}
 
 export default async function SummonerSpellDetailPage({ params }: PageProps) {
   const leagueData = await getLeagueBundleEdge();

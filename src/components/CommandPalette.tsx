@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { PokemonRecord, MoveRecord, AbilityRecord } from "@/lib/pokemon/types";
-import type { ChampionRecord, ChampionAbility, ItemRecord, SummonerSpellRecord } from "@/lib/league/types";
+import type { ChampionRecord, ChampionAbility, ItemRecord, SummonerSpellRecord, RuneRecord } from "@/lib/league/types";
 
 const OPEN_EVENT = "omniwiki:open-command-palette";
 
@@ -140,6 +140,21 @@ export function CommandPalette() {
                 name: s.name,
                 category: "Spell",
                 href: `/league/summoner-spells/${s.id}`,
+              }))
+            );
+          }
+
+          const runesRes = await fetch("/leaguecontent/data/runes.json", {
+            cache: "force-cache",
+          });
+          if (runesRes.ok) {
+            const runes = (await runesRes.json()) as Pick<RuneRecord, "runeId" | "name">[];
+            allEntries.push(
+              ...runes.map((r) => ({
+                slug: String(r.runeId),
+                name: r.name,
+                category: "Rune",
+                href: `/league/runes/${r.runeId}`,
               }))
             );
           }

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
@@ -5,6 +6,24 @@ import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
 export const runtime = 'edge';
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const lastDash = id.lastIndexOf("-");
+  if (lastDash === -1) return { title: "Ability · OmniWiki" };
+  const championSlug = id.slice(0, lastDash);
+  const slot = id.slice(lastDash + 1).toUpperCase();
+  const leagueData = await getLeagueBundleEdge();
+  const champion = leagueData.champions.find((c) => c.slug === championSlug);
+  const ability = champion
+    ? leagueData.abilities.find((a) => a.championId === champion.id && a.slot === slot)
+    : null;
+  if (!ability) return { title: "Ability · OmniWiki" };
+  return {
+    title: `${ability.name} · ${champion!.name} · OmniWiki`,
+    description: ability.description?.slice(0, 160) ?? `${ability.name}, a ${champion!.name} ability.`,
+  };
+}
 
 const SLOT_LABELS: Record<string, string> = {
   P: "Passive",

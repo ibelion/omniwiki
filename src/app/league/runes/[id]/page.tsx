@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
@@ -7,6 +8,17 @@ import { BackLink } from "@/components/BackLink";
 export const runtime = 'edge';
 
 type PageProps = { params: Promise<{ id: string }> };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
+  const rune = leagueData.runes.find((r) => r.runeId === Number(id));
+  if (!rune) return { title: "Rune · OmniWiki" };
+  return {
+    title: `${rune.name} · League Rune · OmniWiki`,
+    description: rune.shortDesc?.slice(0, 160) ?? `${rune.name}, a League of Legends rune.`,
+  };
+}
 
 export default async function RuneDetailPage({ params }: PageProps) {
   const leagueData = await getLeagueBundleEdge();

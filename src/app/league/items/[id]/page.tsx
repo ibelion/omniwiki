@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
@@ -5,6 +6,22 @@ import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
 export const runtime = 'edge';
+
+type PageProps = { params: Promise<{ id: string }> };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
+  const item = leagueData.items.find((i) => i.id === Number(id));
+  if (!item) return { title: "Item · OmniWiki" };
+  return {
+    title: `${item.name} · League Item · OmniWiki`,
+    description:
+      item.plaintext?.slice(0, 160) ??
+      item.description?.slice(0, 160) ??
+      `${item.name}, a League of Legends item.`,
+  };
+}
 
 const STAT_LABELS: Record<string, string> = {
   FlatHPPoolMod: "Bonus HP",
@@ -45,8 +62,6 @@ const tierBadge = (tags: string[]) => {
     return { label: "Boots", color: "bg-blue-50 text-blue-700 border-blue-200" };
   return { label: "Standard", color: "bg-gray-100 text-gray-600 border-gray-200" };
 };
-
-type PageProps = { params: Promise<{ id: string }> };
 
 export default async function ItemDetailPage({ params }: PageProps) {
   const leagueData = await getLeagueBundleEdge();

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
@@ -29,6 +30,18 @@ const RARITY_COLORS: Record<string, string> = {
 };
 
 type PageProps = { params: Promise<{ id: string }> };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
+  const skin = leagueData.skins.find((s) => s.skinId === Number(id));
+  if (!skin) return { title: "Skin · OmniWiki" };
+  const rarityLabel = { kEpic: "Epic", kLegendary: "Legendary", kMythic: "Mythic", kUltimate: "Ultimate" }[skin.rarity ?? ""] ?? "Standard";
+  return {
+    title: `${skin.name} · ${skin.championName} Skin · OmniWiki`,
+    description: `${skin.name} is a ${rarityLabel} skin for ${skin.championName} in League of Legends.`,
+  };
+}
 
 export default async function SkinDetailPage({ params }: PageProps) {
   const leagueData = await getLeagueBundleEdge();
