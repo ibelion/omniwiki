@@ -1,35 +1,49 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { ItemRecord } from "@/lib/league/types";
 
+const TIER_TAGS = ["Mythic", "Legendary", "Boots", "Trinket", "Consumable", "Jungle"];
+const STAT_TAGS = [
+  "Damage", "SpellDamage", "Health", "Mana",
+  "ArmorPenetration", "MagicPenetration", "AttackSpeed",
+  "CriticalStrike", "AbilityHaste", "Armor", "MagicResist",
+];
+const FILTER_TAGS = [...TIER_TAGS, ...STAT_TAGS];
+
 const tierBadge = (tags: string[]) => {
-  if (tags.some((tag) => tag.toLowerCase().includes("mythic"))) {
-    return { label: "Mythic", color: "bg-orange-50 text-orange-700" };
-  }
-  if (tags.some((tag) => tag.toLowerCase().includes("legendary"))) {
-    return { label: "Legendary", color: "bg-purple-50 text-purple-700" };
-  }
-  if (tags.some((tag) => tag.toLowerCase().includes("boots"))) {
-    return { label: "Boots", color: "bg-blue-50 text-blue-700" };
-  }
+  if (tags.includes("Mythic")) return { label: "Mythic", color: "bg-orange-50 text-orange-700" };
+  if (tags.includes("Legendary")) return { label: "Legendary", color: "bg-purple-50 text-purple-700" };
+  if (tags.includes("Boots")) return { label: "Boots", color: "bg-blue-50 text-blue-700" };
+  if (tags.includes("Trinket")) return { label: "Trinket", color: "bg-teal-50 text-teal-700" };
+  if (tags.includes("Consumable")) return { label: "Consumable", color: "bg-green-50 text-green-700" };
   return { label: "Standard", color: "bg-gray-100 text-gray-600" };
 };
 
 export function ItemsList({ items }: { items: ItemRecord[] }) {
   const [search, setSearch] = useState("");
-  const itemById = new Map(items.map((item) => [item.id, item]));
-  
-  const filtered = items
-    .filter((item) =>
-      search === "" ||
-      item.name.toLowerCase().includes(search.toLowerCase()) ||
-      (item.plaintext && item.plaintext.toLowerCase().includes(search.toLowerCase())) ||
-      item.tags.some((tag) => tag.toLowerCase().includes(search.toLowerCase()))
-    )
-    .sort((a, b) => a.name.localeCompare(b.name));
+  const [tagFilter, setTagFilter] = useState<string | null>(null);
+
+  const itemById = useMemo(() => new Map(items.map((item) => [item.id, item])), [items]);
+
+  const filtered = useMemo(
+    () =>
+      items
+        .filter((item) => {
+          if (tagFilter && !item.tags.includes(tagFilter)) return false;
+          if (!search) return true;
+          const q = search.toLowerCase();
+          return (
+            item.name.toLowerCase().includes(q) ||
+            (item.plaintext && item.plaintext.toLowerCase().includes(q)) ||
+            item.tags.some((t) => t.toLowerCase().includes(q))
+          );
+        })
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    [items, search, tagFilter]
+  );
 
   return (
     <>
@@ -41,26 +55,41 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
           Item Catalog ({filtered.length})
         </h1>
         <p className="text-gray-600">
-          Mythics, Legendaries, Boots, and component gear synced from the live
-          `leaguecontent` dataset. Click an item for more context or to jump
-          back to champions.
+          Mythics, legendaries, boots, and component gear.
         </p>
-        <div className="mt-4 flex gap-3">
-          <Link
-            href="/league"
-            className="rounded-lg border border-emerald-200 px-3 py-2 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:bg-emerald-50"
+
+        <input
+          type="text"
+          placeholder="Search items by name, description, or tag..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+        />
+
+        <div className="mt-3 flex flex-wrap gap-2">
+          <button
+            onClick={() => setTagFilter(null)}
+            className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+              tagFilter === null
+                ? "bg-emerald-600 text-white"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+            }`}
           >
-            Back to champions
-          </Link>
-        </div>
-        <div className="mt-4">
-          <input
-            type="text"
-            placeholder="Search items by name, description, or tags..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
-          />
+            All
+          </button>
+          {FILTER_TAGS.map((tag) => (
+            <button
+              key={tag}
+              onClick={() => setTagFilter(tagFilter === tag ? null : tag)}
+              className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+                tagFilter === tag
+                  ? "bg-emerald-600 text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              }`}
+            >
+              {tag}
+            </button>
+          ))}
         </div>
       </header>
 
@@ -75,29 +104,21 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
             >
               <div className="flex items-center justify-between">
                 <ImageWithFallback
-                  src={
-                    item.image ? `/leaguecontent/${item.image}` : "/globe.svg"
-                  }
+                  src={item.image ? `/leaguecontent/${item.image}` : "/globe.svg"}
                   alt={item.name}
                   className="h-12 w-12 rounded-lg border border-gray-100 object-contain"
                 />
-                <span
-                  className={`rounded-full px-2 py-1 text-xs font-semibold ${tier.color}`}
-                >
+                <span className={`rounded-full px-2 py-1 text-xs font-semibold ${tier.color}`}>
                   {tier.label}
                 </span>
               </div>
-              <h3 className="text-base font-semibold text-gray-900">
-                {item.name}
-              </h3>
+              <h3 className="text-base font-semibold text-gray-900">{item.name}</h3>
               {item.plaintext && (
                 <p className="text-xs text-gray-600">{item.plaintext}</p>
               )}
               <div className="flex items-center gap-2 text-xs text-gray-500">
                 {item.goldTotal !== null && item.goldTotal > 0 && (
-                  <span className="font-medium text-yellow-600">
-                    {item.goldTotal}g
-                  </span>
+                  <span className="font-medium text-yellow-600">{item.goldTotal}g</span>
                 )}
                 {item.tags.slice(0, 2).map((tag, idx) => (
                   <span key={idx}>#{tag}</span>

@@ -4,11 +4,13 @@ import { BackLink } from "@/components/BackLink";
 
 export default function LeagueFactionsPage() {
   const factions = leagueData.factions;
-  
+  const lore = leagueData.lore ?? [];
+  const champions = leagueData.champions;
+
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-4 bg-gray-50 px-6 py-10">
       <BackLink href="/league" label="Back to League" />
-      <FactionsList factions={factions} />
+      <FactionsList factions={factions} lore={lore} champions={champions} />
     </main>
   );
 }
