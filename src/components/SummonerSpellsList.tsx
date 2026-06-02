@@ -1,25 +1,52 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { SummonerSpellRecord } from "@/lib/league/types";
 
+const MODE_LABELS: Record<string, string> = {
+  CLASSIC: "Summoner's Rift",
+  ARAM: "ARAM",
+  URF: "URF",
+  TUTORIAL: "Tutorial",
+  NEXUSBLITZ: "Nexus Blitz",
+  CHERRY: "Arena",
+};
+
 export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }) {
   const [search, setSearch] = useState("");
-  
-  const filtered = spells
-    .filter((spell) =>
-      search === "" ||
-      spell.name.toLowerCase().includes(search.toLowerCase()) ||
-      spell.description.toLowerCase().includes(search.toLowerCase()) ||
-      spell.id.toLowerCase().includes(search.toLowerCase())
-    )
-    .sort((a, b) => a.name.localeCompare(b.name));
+  const [modeFilter, setModeFilter] = useState<string | null>(null);
+
+  // Collect all unique modes across all spells, sorted
+  const modes = useMemo(() => {
+    const all = new Set<string>();
+    for (const spell of spells) {
+      for (const m of spell.modes ?? []) all.add(m);
+    }
+    return [...all].sort();
+  }, [spells]);
+
+  const filtered = useMemo(
+    () =>
+      spells
+        .filter((spell) => {
+          if (modeFilter && !(spell.modes ?? []).includes(modeFilter)) return false;
+          if (!search) return true;
+          const q = search.toLowerCase();
+          return (
+            spell.name.toLowerCase().includes(q) ||
+            spell.description.toLowerCase().includes(q) ||
+            spell.id.toLowerCase().includes(q)
+          );
+        })
+        .sort((a, b) => a.name.localeCompare(b.name)),
+    [spells, search, modeFilter]
+  );
 
   return (
     <>
-      <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+      <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
           League of Legends
         </p>
@@ -27,17 +54,44 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
           Summoner Spells ({filtered.length})
         </h1>
         <p className="text-gray-600">
-          Every Summoner Spell available on the Rift pulled from CommunityDragon.
+          Every summoner spell across all game modes — Flash, Ignite, ARAM exclusives, and more.
         </p>
-        <div className="mt-4">
-          <input
-            type="text"
-            placeholder="Search summoner spells by name or description..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
-          />
-        </div>
+        <input
+          type="text"
+          placeholder="Search by name or description..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+        />
+
+        {/* Mode filter chips */}
+        {modes.length > 1 && (
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              onClick={() => setModeFilter(null)}
+              className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+                modeFilter === null
+                  ? "bg-emerald-600 text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              }`}
+            >
+              All modes
+            </button>
+            {modes.map((m) => (
+              <button
+                key={m}
+                onClick={() => setModeFilter(modeFilter === m ? null : m)}
+                className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+                  modeFilter === m
+                    ? "bg-emerald-600 text-white"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                }`}
+              >
+                {MODE_LABELS[m] ?? m}
+              </button>
+            ))}
+          </div>
+        )}
       </header>
 
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -50,28 +104,35 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
             >
               <div className="flex items-center gap-3">
                 <ImageWithFallback
-                  src={
-                    spell.image ? `/leaguecontent/${spell.image}` : "/globe.svg"
-                  }
+                  src={spell.image ? `/leaguecontent/${spell.image}` : "/globe.svg"}
                   alt={`${spell.name} icon`}
                   className="h-12 w-12 rounded-lg border border-gray-200 object-cover"
                 />
                 <div>
-                  <p className="text-xs uppercase text-gray-500">
-                    {spell.id}
-                  </p>
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    {spell.name}
-                  </h3>
+                  <h3 className="text-base font-semibold text-gray-900">{spell.name}</h3>
+                  <div className="mt-0.5 flex flex-wrap gap-1">
+                    {(spell.modes ?? []).map((m) => (
+                      <span
+                        key={m}
+                        className="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-500"
+                      >
+                        {MODE_LABELS[m] ?? m}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
               <p className="text-xs text-gray-600">{spell.description}</p>
               <p className="text-xs text-gray-500">
-                Cooldown: {spell.cooldown}s · Level {spell.summonerLevel ?? "?"}
+                Cooldown: {spell.cooldown}s
+                {spell.summonerLevel != null && ` · Level ${spell.summonerLevel} required`}
               </p>
             </Link>
           ))}
         </div>
+        {filtered.length === 0 && (
+          <p className="text-sm text-gray-500">No spells match your search.</p>
+        )}
       </section>
     </>
   );

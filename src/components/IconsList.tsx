@@ -8,19 +8,24 @@ const PAGE_SIZE = 100;
 
 export function IconsList({ icons }: { icons: SummonerIconRecord[] }) {
   const [search, setSearch] = useState("");
+  const [legacyOnly, setLegacyOnly] = useState(false);
   const [page, setPage] = useState(0);
+
+  const legacyCount = useMemo(() => icons.filter((i) => i.isLegacy).length, [icons]);
 
   const filtered = useMemo(
     () =>
       icons
-        .filter(
-          (icon) =>
-            search === "" ||
+        .filter((icon) => {
+          if (legacyOnly && !icon.isLegacy) return false;
+          if (!search) return true;
+          return (
             icon.title.toLowerCase().includes(search.toLowerCase()) ||
             icon.id.toString().includes(search)
-        )
+          );
+        })
         .sort((a, b) => a.title.localeCompare(b.title)),
-    [icons, search]
+    [icons, search, legacyOnly]
   );
 
   const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
@@ -28,6 +33,11 @@ export function IconsList({ icons }: { icons: SummonerIconRecord[] }) {
 
   function handleSearch(value: string) {
     setSearch(value);
+    setPage(0);
+  }
+
+  function handleLegacyToggle() {
+    setLegacyOnly((v) => !v);
     setPage(0);
   }
 
@@ -41,16 +51,38 @@ export function IconsList({ icons }: { icons: SummonerIconRecord[] }) {
           Summoner Icons ({filtered.length.toLocaleString()})
         </h1>
         <p className="text-gray-600">
-          Profile icons and avatars.
+          Profile icons — from default borders to event exclusives and legacy rewards.
         </p>
         <div className="mt-4">
           <input
             type="text"
-            placeholder="Search icons by name or ID..."
+            placeholder="Search by name or icon ID..."
             value={search}
             onChange={(e) => handleSearch(e.target.value)}
             className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
           />
+        </div>
+        <div className="mt-3 flex items-center gap-2 text-sm text-gray-500">
+          <button
+            onClick={() => { setLegacyOnly(false); setPage(0); }}
+            className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+              !legacyOnly
+                ? "bg-emerald-600 text-white"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+            }`}
+          >
+            All
+          </button>
+          <button
+            onClick={handleLegacyToggle}
+            className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+              legacyOnly
+                ? "bg-amber-500 text-white"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+            }`}
+          >
+            Legacy only ({legacyCount})
+          </button>
         </div>
       </header>
 
@@ -70,7 +102,9 @@ export function IconsList({ icons }: { icons: SummonerIconRecord[] }) {
                 <p className="text-xs text-gray-400">#{icon.id}</p>
                 <p className="truncate font-semibold text-gray-900">{icon.title}</p>
                 {icon.isLegacy && (
-                  <span className="text-xs text-amber-600">Legacy</span>
+                  <span className="mt-0.5 inline-block rounded-full bg-amber-50 px-2 py-0.5 text-xs font-medium text-amber-600">
+                    Legacy
+                  </span>
                 )}
               </div>
             </article>

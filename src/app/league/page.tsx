@@ -395,8 +395,7 @@ export default function LeaguePage() {
             Welcome to the League of Legends Universe
           </h1>
           <p className="text-gray-600">
-            Browse the live League roster with roles, regions, patches, ability
-            art, cosmetics, and systems data direct from your scraped data.
+            Browse the full League roster — champions, skins, items, lore, cosmetics, and game systems all in one place.
           </p>
         </div>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -442,7 +441,7 @@ export default function LeaguePage() {
 
       <section className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
         <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
-          Data feeds
+          Browse by category
         </p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {dataLinks.map((link) => {

@@ -88,7 +88,7 @@ export function WardsList({ wards }: { wards: WardSkinRecord[] }) {
             className="flex items-center gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm"
           >
             <ImageWithFallback
-              src={ward.image ? `/leaguecontent/${ward.image}` : (ward.sourceUrl ?? "/globe.svg")}
+              src={ward.image ? `/leaguecontent/${ward.image}` : "/globe.svg"}
               alt={ward.name}
               className="h-16 w-16 flex-shrink-0 rounded-xl border border-gray-100 object-contain"
             />

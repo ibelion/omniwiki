@@ -122,9 +122,9 @@ export function LootClient({ lootItems }: Props) {
             key={item.id}
             className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-emerald-200 hover:shadow-md"
           >
-            {(item.image ?? item.sourceUrl) && (
+            {item.image && (
               <ImageWithFallback
-                src={(item.image ?? item.sourceUrl) as string}
+                src={`/leaguecontent/${item.image}`}
                 alt={item.name}
                 className="h-14 w-14 rounded-xl border border-gray-100 object-contain"
               />
