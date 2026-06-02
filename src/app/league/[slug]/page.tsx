@@ -193,7 +193,7 @@ export default async function ChampionDetail({ params }: PageProps) {
             </div>
           </div>
         </div>
-        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
             <p className="text-xs uppercase tracking-wide text-gray-500">
               Regions
@@ -204,11 +204,18 @@ export default async function ChampionDetail({ params }: PageProps) {
           </div>
           <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
             <p className="text-xs uppercase tracking-wide text-gray-500">
+              Species
+            </p>
+            <p className="text-sm text-gray-800">
+              {champion.species.join(", ") || "Unknown"}
+            </p>
+          </div>
+          <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
+            <p className="text-xs uppercase tracking-wide text-gray-500">
               Release
             </p>
             <p className="text-sm text-gray-800">
-              Patch {champion.releasePatch || "?"} (
-              {champion.releaseYear ?? "Unknown"})
+              Patch {champion.releasePatch || "?"} ({champion.releaseYear ?? "Unknown"})
             </p>
           </div>
           <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
@@ -217,6 +224,12 @@ export default async function ChampionDetail({ params }: PageProps) {
               {positions.length > 0 ? positions.join(", ") : "Unknown"}
             </p>
           </div>
+          {champion.gender && (
+            <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
+              <p className="text-xs uppercase tracking-wide text-gray-500">Gender</p>
+              <p className="text-sm text-gray-800">{champion.gender}</p>
+            </div>
+          )}
         </div>
       </section>
 

@@ -12,9 +12,27 @@ function loadPositionsMap(): Record<string, string[]> {
 
 export default function LeagueChampionsPage() {
   const positionsByName = loadPositionsMap();
+
+  // Build champion → skin line name mapping from skins data
+  const skinLineById = new Map(
+    (leagueData.skinLines ?? []).map((l) => [l.id, l.name])
+  );
+  const skinLinesByChampionId = new Map<number, string[]>();
+  for (const skin of leagueData.skins ?? []) {
+    if (!skin.skinLineIds?.length) continue;
+    for (const lineId of skin.skinLineIds) {
+      const name = skinLineById.get(lineId);
+      if (!name) continue;
+      const arr = skinLinesByChampionId.get(skin.championId) ?? [];
+      if (!arr.includes(name)) arr.push(name);
+      skinLinesByChampionId.set(skin.championId, arr);
+    }
+  }
+
   const champions = leagueData.champions.map((c) => ({
     ...c,
     positions: positionsByName[c.name.toLowerCase()] || c.positions,
+    skinLines: skinLinesByChampionId.get(c.id) ?? [],
   }));
 
   return (
