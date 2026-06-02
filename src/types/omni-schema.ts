@@ -43,6 +43,12 @@ export interface OmniEntity {
   
   /** Categorization tags (e.g., "Mage", "Electric") */
   tags: string[];
+
+  /** Release year for chronological trivia (e.g., 2012) */
+  releaseYear?: number | null;
+
+  /** Number of non-base cosmetic skins available */
+  skinCount?: number;
 }
 
 /**

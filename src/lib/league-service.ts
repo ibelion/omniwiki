@@ -32,6 +32,14 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
     abilitiesByChampionId.set(ability.championId, list);
   }
 
+  // Build lookup: championId → non-base skin count
+  const skinCountById = new Map<number, number>();
+  for (const skin of bundle.skins ?? []) {
+    if (!skin.isBase) {
+      skinCountById.set(skin.championId, (skinCountById.get(skin.championId) ?? 0) + 1);
+    }
+  }
+
   return bundle.champions.map((champion) => {
     const lore = loreBySlug.get(champion.slug);
     const s = champion.stats;
@@ -41,6 +49,17 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
     // hp/9 maps ~530-860 to 59-96; armor*1.5 maps ~21-65 to 32-98.
     // max=130 means only a true tank with both high hp AND armor hits 100.
     const defenseRaw = (s?.hp ?? 550) / 9 + (s?.armor ?? 28) * 1.5;
+
+    // Collect all meaningful classification strings, filter out nulls/empty.
+    const tags = [
+      ...champion.roles,
+      ...champion.positions,
+      ...champion.regions,
+      ...champion.species,
+      champion.rangeType,
+      champion.resource,
+      ...(champion.gender ? [champion.gender] : []),
+    ].filter((t): t is string => Boolean(t));
 
     return {
       uid: `lol-${champion.slug}`,
@@ -61,8 +80,9 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
       },
       lore: cleanText(lore?.loreShort ?? ''),
       abilities: abilitiesByChampionId.get(champion.id) ?? [],
-      // roles + positions + regions for trivia coverage ("Mage", "Mid", "Demacia")
-      tags: [...new Set([...champion.roles, ...champion.positions, ...champion.regions])],
+      tags: [...new Set(tags)],
+      releaseYear: champion.releaseYear ?? null,
+      skinCount: skinCountById.get(champion.id) ?? 0,
     };
   });
 };
