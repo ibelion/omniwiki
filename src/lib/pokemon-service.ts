@@ -1,82 +1,83 @@
 // lib/pokemon-service.ts
-import { OmniEntity } from '@/types/omni-schema';
-import { PokeApiPokemon, PokeApiSpecies } from '@/types/pokemon';
+import { getPokemonBundleEdge } from '@/lib/edge-data';
+import type { OmniEntity } from '@/types/omni-schema';
 import { cleanText, normalizeStat } from '@/lib/utils';
 
-const BASE_URL = 'https://pokeapi.co/api/v2';
-
-/**
- * Transforms raw PokeAPI data into the Golden Schema
- */
-const transformPokemon = (
-  pokemon: PokeApiPokemon, 
-  species: PokeApiSpecies
-): OmniEntity => {
-  // Find English flavor text
-  const flavorEntry = species.flavor_text_entries.find(e => e.language.name === 'en');
-  // Find English Genus (e.g. "Seed Pokemon")
-  const genusEntry = species.genera.find(e => e.language.name === 'en');
-
-  // Map stats (Order: HP, Atk, Def, SpAtk, SpDef, Spd)
-  // We use 180 as a rough "max" for base stats to scale to 100%
-  const atk = pokemon.stats.find(s => s.stat.name === 'attack')?.base_stat || 0;
-  const def = pokemon.stats.find(s => s.stat.name === 'defense')?.base_stat || 0;
-  const spAtk = pokemon.stats.find(s => s.stat.name === 'special-attack')?.base_stat || 0;
-
-  return {
-    uid: `poke-${pokemon.id}`,
-    name: pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1), // Capitalize
-    title: genusEntry ? genusEntry.genus : 'Pokémon',
-    universe: 'pokemon',
-    stats: {
-      attack: normalizeStat(atk, 180),
-      defense: normalizeStat(def, 180),
-      magic: normalizeStat(spAtk, 180), // Mapping Special Attack to Magic
-      difficulty: 0, // Pokemon doesn't have a difficulty stat
-    },
-    images: {
-      icon: pokemon.sprites.front_default,
-      portrait: pokemon.sprites.other['official-artwork'].front_default || pokemon.sprites.front_default,
-    },
-    lore: cleanText(flavorEntry?.flavor_text),
-    abilities: pokemon.abilities.map(a => a.ability.name),
-    tags: pokemon.types.map(t => t.type.name),
-  };
+const GENERATION_YEAR: Record<string, number> = {
+  'generation-i': 1996,
+  'generation-ii': 1999,
+  'generation-iii': 2002,
+  'generation-iv': 2006,
+  'generation-v': 2010,
+  'generation-vi': 2013,
+  'generation-vii': 2016,
+  'generation-viii': 2019,
+  'generation-ix': 2022,
 };
 
-/**
- * Fetches details for a single Pokemon
- */
-const fetchSinglePokemon = async (id: number): Promise<OmniEntity | null> => {
-  try {
-    const [pokeRes, speciesRes] = await Promise.all([
-      fetch(`${BASE_URL}/pokemon/${id}`),
-      fetch(`${BASE_URL}/pokemon-species/${id}`)
-    ]);
+// "solar-power" → "Solar Power"
+const formatName = (s: string): string =>
+  s.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
-    if (!pokeRes.ok || !speciesRes.ok) return null;
+// Flavor text can contain form-feed characters (\f) that act as line breaks.
+const cleanFlavor = (text: string | null): string =>
+  cleanText(text?.replace(/\f/g, ' ').replace(/\n/g, ' ') ?? '');
 
-    const pokemon: PokeApiPokemon = await pokeRes.json();
-    const species: PokeApiSpecies = await speciesRes.json();
+export const getPokemonData = async (
+  // Default to base-form pokemon through Gen 9 (ids 1–1010).
+  // Alternate forms, regional variants, etc. sit above 1010.
+  limit = 1010
+): Promise<OmniEntity[]> => {
+  const bundle = await getPokemonBundleEdge();
 
-    return transformPokemon(pokemon, species);
-  } catch (error) {
-    console.error(`Error fetching Pokemon ${id}:`, error);
-    return null;
-  }
-};
+  // Build species lookup by slug for O(1) access
+  const speciesBySlug = new Map(bundle.species.map((s) => [s.slug, s]));
 
-/**
- * Main function to get Pokemon data for the CDN.
- * Defaults to Gen 1 (151) to keep performance high.
- */
-export const getPokemonData = async (limit = 151): Promise<OmniEntity[]> => {
-  // Create an array of promises [1, 2, ... limit]
-  const ids = Array.from({ length: limit }, (_, i) => i + 1);
-  
-  // Fetch in parallel
-  const results = await Promise.all(ids.map(id => fetchSinglePokemon(id)));
-  
-  // Filter out any failed fetches
-  return results.filter((item): item is OmniEntity => item !== null);
+  return bundle.pokemon
+    .filter((p) => p.id <= limit)
+    .map((pokemon) => {
+      const species = speciesBySlug.get(pokemon.slug);
+
+      const atk = pokemon.stats['attack'] ?? 0;
+      const def = pokemon.stats['defense'] ?? 0;
+      const spAtk = pokemon.stats['special-attack'] ?? 0;
+      const captureRate = species?.captureRate ?? 128;
+
+      // Lower capture rate = rarer/harder → higher difficulty score.
+      // Mewtwo (captureRate=3) → ~99, Caterpie (255) → 0.
+      const difficulty = Math.round(((255 - captureRate) / 255) * 100);
+
+      const tags: string[] = [
+        ...pokemon.types,
+        pokemon.generation,
+        ...(species?.habitat ? [species.habitat] : []),
+        ...(species?.color ? [species.color] : []),
+        ...(species?.isLegendary ? ['legendary'] : []),
+        ...(species?.isMythical ? ['mythical'] : []),
+        ...(species?.isBaby ? ['baby'] : []),
+      ].filter(Boolean);
+
+      const flavorText = cleanFlavor(species?.flavorText ?? null);
+
+      return {
+        uid: `poke-${pokemon.id}`,
+        name: formatName(pokemon.name),
+        title: `#${pokemon.id} · ${pokemon.generation.replace('generation-', 'Gen ').toUpperCase()}`,
+        universe: 'pokemon' as const,
+        stats: {
+          attack: normalizeStat(atk, 180),
+          defense: normalizeStat(def, 180),
+          magic: normalizeStat(spAtk, 180),
+          difficulty,
+        },
+        images: {
+          icon: `/pokemoncontent/${pokemon.sprites.default}`,
+          portrait: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`,
+        },
+        lore: flavorText,
+        abilities: pokemon.abilities.map(formatName),
+        tags,
+        releaseYear: GENERATION_YEAR[pokemon.generation] ?? null,
+      };
+    });
 };

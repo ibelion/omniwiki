@@ -14,7 +14,7 @@ export async function GET() {
     // Fetch all universes in parallel
     const [leagueData, pokemonData, tftData] = await Promise.all([
       getLeagueData(),
-      getPokemonData(151), // Gen 1
+      getPokemonData(), // all base-form pokemon (Gen 1-9)
       getTFTData(),
     ]);
 
