@@ -2,6 +2,7 @@
 import { NextResponse } from 'next/server';
 import { getLeagueData } from '@/lib/league-service';
 import { getPokemonData } from '@/lib/pokemon-service';
+import { getTFTData } from '@/lib/tft-service';
 import { OmniCdnResponse } from '@/types/omni-schema';
 
 export const runtime = 'edge';
@@ -10,13 +11,14 @@ export async function GET() {
   const startTime = Date.now();
 
   try {
-    // Fetch both universes in parallel
-    const [leagueData, pokemonData] = await Promise.all([
+    // Fetch all universes in parallel
+    const [leagueData, pokemonData, tftData] = await Promise.all([
       getLeagueData(),
-      getPokemonData(151) // Fetching Gen 1
+      getPokemonData(151), // Gen 1
+      getTFTData(),
     ]);
 
-    const allData = [...leagueData, ...pokemonData];
+    const allData = [...leagueData, ...pokemonData, ...tftData];
 
     const response: OmniCdnResponse = {
       meta: {

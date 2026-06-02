@@ -1,6 +1,6 @@
 // types/omni-schema.ts
 
-export type OmniUniverse = 'league-of-legends' | 'pokemon';
+export type OmniUniverse = 'league-of-legends' | 'pokemon' | 'tft';
 
 /**
  * The Standardized Entity for OmniGames.
@@ -49,6 +49,9 @@ export interface OmniEntity {
 
   /** Number of non-base cosmetic skins available */
   skinCount?: number;
+
+  /** Voiceline quote texts for "who said this?" trivia (capped per entity) */
+  quotes?: string[];
 }
 
 /**
