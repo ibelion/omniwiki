@@ -43,7 +43,7 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
     [objectives, search, categoryFilter]
   );
 
-  const now = Date.now();
+  const now = useMemo(() => Date.now(), []);
   const active = filtered.filter((o) => (!o.end || o.end > now) && (!o.start || o.start <= now));
 
   return (
@@ -56,7 +56,7 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
           Missions & Objectives ({filtered.length})
         </h1>
         <p className="text-gray-600">
-          Seasonal missions, event objectives, and challenge tasks across League's history.
+          Seasonal missions, event objectives, and challenge tasks across League&apos;s history.
           {active.length > 0 && (
             <span className="ml-2 font-medium text-emerald-600">{active.length} currently active.</span>
           )}

@@ -64,7 +64,7 @@ export function SystemsList({ runes, runeTrees = [] }: { runes: RuneRecord[]; ru
         </p>
         <h1 className="text-3xl font-semibold text-gray-900">Runes</h1>
         <p className="text-gray-600">
-          Keystones define your playstyle. Every rune tree and slot across League's history.
+          Keystones define your playstyle. Every rune tree and slot across League&apos;s history.
         </p>
         <input
           type="text"
