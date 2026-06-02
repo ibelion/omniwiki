@@ -24,13 +24,13 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
   // Build lookup: champion slug → lore record
   const loreBySlug = new Map(bundle.lore.map((l) => [l.slug, l]));
 
-  // Build lookup: champion name (lowercase) → quote texts (up to 10)
+  // Build lookup: champion name (lowercase) → quote texts (up to 25)
   const quotesByName = new Map<string, string[]>();
   for (const q of bundle.quotes ?? []) {
     if (!q.text) continue;
     const key = q.champion.toLowerCase();
     const arr = quotesByName.get(key) ?? [];
-    if (arr.length < 10) arr.push(q.text);
+    if (arr.length < 25) arr.push(q.text);
     quotesByName.set(key, arr);
   }
 
@@ -116,6 +116,7 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
       releaseYear: champion.releaseYear ?? null,
       skinCount: skinCountById.get(champion.id) ?? 0,
       quotes: quotesByName.get(champion.name.toLowerCase()) ?? [],
+      faction: lore?.faction ?? null,
     };
   });
 };

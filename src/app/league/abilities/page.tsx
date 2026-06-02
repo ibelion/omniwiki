@@ -4,7 +4,7 @@ import { BackLink } from "@/components/BackLink";
 
 export default function LeagueAbilitiesPage() {
   const abilities = leagueData.abilities;
-  const champions = leagueData.champions.map(c => ({ id: c.id, slug: c.slug }));
+  const champions = leagueData.champions.map(c => ({ id: c.id, slug: c.slug, image: c.image ?? null }));
 
   return (
     <div className="mx-auto max-w-7xl space-y-6 px-4 py-8">

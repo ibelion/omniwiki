@@ -4,6 +4,18 @@ import { getLeagueBundleEdge } from '@/lib/edge-data';
 
 export const runtime = 'edge';
 
+// Strip HTML tags and decode a handful of common entities.
+const stripHtml = (s: string | null | undefined): string | null => {
+  if (!s) return null;
+  return s
+    .replace(/<[^>]+>/g, '')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/&nbsp;/g, ' ')
+    .trim() || null;
+};
+
 export async function GET() {
   const bundle = await getLeagueBundleEdge();
 
@@ -15,8 +27,8 @@ export async function GET() {
   const runes = bundle.runes.map((rune) => ({
     id: rune.runeId,
     name: rune.name,
-    shortDesc: rune.shortDesc ?? null,
-    longDesc: rune.longDesc ?? null,
+    shortDesc: stripHtml(rune.shortDesc),
+    longDesc: stripHtml(rune.longDesc),
     slot: rune.slot,
     treeId: rune.treeId,
     treeName: treeNameById.get(rune.treeId) ?? null,

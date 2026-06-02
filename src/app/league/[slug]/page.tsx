@@ -7,6 +7,7 @@ import { getLeagueBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 import { ChampionQuotes } from "@/components/ChampionQuotes";
+import { ChampionJump } from "@/components/ChampionJump";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -166,6 +167,7 @@ export default async function ChampionDetail({ params }: PageProps) {
           </div>
           <div className="flex flex-col gap-2 text-sm text-gray-600">
             <p className="font-semibold text-gray-900">Quick navigation</p>
+            <ChampionJump champions={championIndex} />
             <div className="flex flex-wrap gap-2">
               {previous && (
                 <Link

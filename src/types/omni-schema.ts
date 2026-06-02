@@ -52,6 +52,9 @@ export interface OmniEntity {
 
   /** Voiceline quote texts for "who said this?" trivia (capped per entity) */
   quotes?: string[];
+
+  /** Narrative faction/affiliation (e.g., "Demacia", "Shadow Isles") */
+  faction?: string | null;
 }
 
 /**
