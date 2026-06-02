@@ -12,6 +12,10 @@ type QuotesSearchProps = {
   totalCount: number;
 };
 
+function formatCategory(cat: string): string {
+  return cat.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
 export function QuotesSearch({
   champions,
   categories,
@@ -121,7 +125,7 @@ export function QuotesSearch({
           <option value="">All categories</option>
           {categories.map((item) => (
             <option key={item} value={item}>
-              {item}
+              {formatCategory(item)}
             </option>
           ))}
         </select>

@@ -21,16 +21,23 @@ const slotOrder: Record<string, number> = { Passive: 0, P: 0, Q: 1, W: 2, E: 3, 
 export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
   const [search, setSearch] = useState("");
   const [slotFilter, setSlotFilter] = useState<SlotFilter>("All");
+  const [championFilter, setChampionFilter] = useState<string | null>(null);
 
   const championById = useMemo(
     () => new Map(champions.map((c) => [c.id, c])),
     [champions]
   );
 
+  const championNames = useMemo(
+    () => [...new Set(abilities.map((a) => a.championName))].sort(),
+    [abilities]
+  );
+
   const filtered = useMemo(() => {
     const q = search.toLowerCase();
     return abilities
       .filter((ability) => {
+        if (championFilter !== null && ability.championName !== championFilter) return false;
         // Slot filter — "Passive" matches both slot "Passive" and "P"
         if (slotFilter !== "All") {
           const slot = ability.slot.toUpperCase();
@@ -55,7 +62,7 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
         if (slotA !== slotB) return slotA - slotB;
         return a.name.localeCompare(b.name);
       });
-  }, [abilities, search, slotFilter]);
+  }, [abilities, search, slotFilter, championFilter]);
 
   return (
     <>
@@ -78,6 +85,16 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
             onChange={(e) => setSearch(e.target.value)}
             className="flex-1 rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
           />
+          <select
+            value={championFilter ?? ""}
+            onChange={(e) => setChampionFilter(e.target.value || null)}
+            className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          >
+            <option value="">All champions</option>
+            {championNames.map((name) => (
+              <option key={name} value={name}>{name}</option>
+            ))}
+          </select>
         </div>
 
         {/* Slot filter chips */}

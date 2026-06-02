@@ -25,6 +25,7 @@ export function ChampionsList({ champions }: { champions: ChampionWithPositions[
   const [search, setSearch] = useState("");
   const [filterCategory, setFilterCategory] = useState<FilterCategory>("role");
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
+  const [sortBy, setSortBy] = useState<"name" | "release">("name");
 
   // Derive unique values for each category, sorted by champion count descending
   const regionOptions = useMemo(() => {
@@ -85,8 +86,10 @@ export function ChampionsList({ champions }: { champions: ChampionWithPositions[
           (c.positions ?? []).some((p) => p.toLowerCase().includes(q))
         );
       })
-      .sort((a, b) => a.name.localeCompare(b.name));
-  }, [champions, search, activeFilter, filterCategory]);
+      .sort((a, b) =>
+        sortBy === "release" ? a.id - b.id : a.name.localeCompare(b.name)
+      );
+  }, [champions, search, activeFilter, filterCategory, sortBy]);
 
   function handleCategory(cat: FilterCategory) {
     setFilterCategory(cat);
@@ -132,6 +135,25 @@ export function ChampionsList({ champions }: { champions: ChampionWithPositions[
             }}
             className="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
           />
+
+          {/* Sort + filter category tabs */}
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="flex gap-1 rounded-lg border border-gray-200 bg-gray-50 p-1 w-fit">
+              {(["name", "release"] as const).map((s) => (
+                <button
+                  key={s}
+                  onClick={() => setSortBy(s)}
+                  className={`rounded-md px-3 py-1 text-xs font-semibold transition ${
+                    sortBy === s
+                      ? "bg-white text-gray-900 shadow-sm"
+                      : "text-gray-500 hover:text-gray-700"
+                  }`}
+                >
+                  {s === "name" ? "A–Z" : "Release order"}
+                </button>
+              ))}
+            </div>
+          </div>
 
           {/* Filter category tabs */}
           <div className="flex gap-1 rounded-lg border border-gray-200 bg-gray-50 p-1 w-fit">

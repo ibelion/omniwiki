@@ -12,10 +12,21 @@ type SkinsListProps = {
 
 const PAGE_SIZE = 60;
 
+const RARITY_LABELS: Record<string, string> = {
+  kNoRarity: "Standard",
+  kEpic: "Epic",
+  kLegendary: "Legendary",
+  kMythic: "Mythic",
+  kUltimate: "Ultimate",
+  kExalted: "Exalted",
+  kTranscendent: "Transcendent",
+};
+
 export function SkinsList({ skins, champions }: SkinsListProps) {
   const [search, setSearch] = useState("");
   const [championFilter, setChampionFilter] = useState<string | null>(null);
   const [rarityFilter, setRarityFilter] = useState<string | null>(null);
+  const [availabilityFilter, setAvailabilityFilter] = useState<string | null>(null);
   const [page, setPage] = useState(0);
 
   const uniqueChampions = useMemo(
@@ -28,18 +39,24 @@ export function SkinsList({ skins, champions }: SkinsListProps) {
     [skins]
   );
 
+  const availabilities = useMemo(
+    () => [...new Set(skins.map((s) => s.availability).filter(Boolean) as string[])].sort(),
+    [skins]
+  );
+
   const filtered = useMemo(
     () =>
       skins
         .filter((skin) => {
           const matchChamp = championFilter === null || skin.championName === championFilter;
           const matchRarity = rarityFilter === null || skin.rarity === rarityFilter;
+          const matchAvail = availabilityFilter === null || skin.availability === availabilityFilter;
           const matchSearch =
             search === "" ||
             skin.name.toLowerCase().includes(search.toLowerCase()) ||
             skin.championName.toLowerCase().includes(search.toLowerCase()) ||
-            (skin.rarity && skin.rarity.toLowerCase().includes(search.toLowerCase()));
-          return matchChamp && matchRarity && matchSearch;
+            (skin.rarity && (RARITY_LABELS[skin.rarity] ?? skin.rarity).toLowerCase().includes(search.toLowerCase()));
+          return matchChamp && matchRarity && matchAvail && matchSearch;
         })
         .sort((a, b) => {
           const byChampion = a.championName.localeCompare(b.championName);
@@ -107,7 +124,21 @@ export function SkinsList({ skins, champions }: SkinsListProps) {
               <option value="">All rarities</option>
               {rarities.map((r) => (
                 <option key={r} value={r}>
-                  {r}
+                  {RARITY_LABELS[r] ?? r}
+                </option>
+              ))}
+            </select>
+            <select
+              value={availabilityFilter ?? ""}
+              onChange={(e) =>
+                handleFilterChange(() => setAvailabilityFilter(e.target.value || null))
+              }
+              className="rounded-lg border border-gray-300 px-3 py-1.5 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+            >
+              <option value="">All availability</option>
+              {availabilities.map((a) => (
+                <option key={a} value={a}>
+                  {a}
                 </option>
               ))}
             </select>
@@ -136,9 +167,9 @@ export function SkinsList({ skins, champions }: SkinsListProps) {
                   {skin.championName}
                 </p>
                 <p className="text-base font-semibold text-gray-900">{skin.name}</p>
-                {skin.rarity && (
+                {skin.rarity && skin.rarity !== "kNoRarity" && (
                   <span className="w-fit rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-700">
-                    {skin.rarity}
+                    {RARITY_LABELS[skin.rarity] ?? skin.rarity}
                   </span>
                 )}
                 <div className="flex flex-wrap gap-2 text-xs text-gray-500">
