@@ -24,10 +24,27 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
   // Build lookup: champion slug → lore record
   const loreBySlug = new Map(bundle.lore.map((l) => [l.slug, l]));
 
-  // Build lookup: champion name (lowercase) → quote texts (up to 25)
+  // Build a single word-boundary regex covering every champion name.
+  // Longest names first so multi-word names match before their fragments.
+  // This catches both the speaker's own name and any other champion mentioned.
+  const escapedNames = bundle.champions
+    .map((c) => c.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .sort((a, b) => b.length - a.length);
+  const champNameRegex = new RegExp(`\\b(${escapedNames.join('|')})\\b`, 'i');
+
+  const isUsableQuote = (text: string): boolean => {
+    // Skip grunts and very short lines — not enough content for trivia
+    if (text.trim().length < 20) return false;
+    // Must contain at least three consecutive letters (not just sounds/symbols)
+    if (!/[a-zA-Z]{3}/.test(text)) return false;
+    // Discard any quote that mentions a champion name — dead giveaway or strong hint
+    return !champNameRegex.test(text);
+  };
+
+  // Build lookup: champion name (lowercase) → quote texts (up to 25, pre-filtered)
   const quotesByName = new Map<string, string[]>();
   for (const q of bundle.quotes ?? []) {
-    if (!q.text) continue;
+    if (!q.text || !isUsableQuote(q.text)) continue;
     const key = q.champion.toLowerCase();
     const arr = quotesByName.get(key) ?? [];
     if (arr.length < 25) arr.push(q.text);
