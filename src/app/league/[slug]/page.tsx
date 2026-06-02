@@ -1,22 +1,23 @@
-export const runtime = 'edge';
-
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getLeagueBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 import { ChampionQuotes } from "@/components/ChampionQuotes";
 import { ChampionJump } from "@/components/ChampionJump";
 import { cleanText } from "@/lib/utils";
+import { leagueData } from "@/lib/league/data";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  return leagueData.champions.map((c) => ({ slug: c.slug }));
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const leagueData = await getLeagueBundleEdge();
   const champion = leagueData.champions.find((c) => c.slug === slug);
   if (!champion) return { title: "Champion · OmniWiki" };
   const lore = leagueData.lore.find((l) => l.slug === slug);
@@ -30,7 +31,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ChampionDetail({ params }: PageProps) {
   const { slug } = await params;
-  const leagueData = await getLeagueBundleEdge();
   const champion = leagueData.champions.find((c) => c.slug === slug);
   if (!champion) {
     notFound();
