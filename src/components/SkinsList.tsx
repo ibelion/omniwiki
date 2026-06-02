@@ -63,7 +63,7 @@ export function SkinsList({ skins, champions }: SkinsListProps) {
           if (byChampion !== 0) return byChampion;
           return a.name.localeCompare(b.name);
         }),
-    [skins, search, championFilter, rarityFilter]
+    [skins, search, championFilter, rarityFilter, availabilityFilter]
   );
 
   const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
