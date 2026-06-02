@@ -8,6 +8,7 @@ import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 import { ChampionQuotes } from "@/components/ChampionQuotes";
 import { ChampionJump } from "@/components/ChampionJump";
+import { cleanText } from "@/lib/utils";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -290,7 +291,7 @@ export default async function ChampionDetail({ params }: PageProps) {
                   </p>
                 </div>
               </div>
-              <p className="text-gray-600">{ability.description}</p>
+              <p className="text-gray-600">{cleanText(ability.description)}</p>
               {ability.cooldown && (
                 <p className="text-xs text-gray-500">
                   Cooldown: {ability.cooldown}s · Cost: {ability.cost || "—"} ·

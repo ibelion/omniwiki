@@ -24,6 +24,8 @@ export async function GET() {
       buildsFrom: (item.from ?? []).map((id) => ({ id, name: nameById.get(id) ?? null })),
       // Items this component is used to build (e.g. Long Sword → Infinity Edge)
       buildsInto: (item.into ?? []).map((id) => ({ id, name: nameById.get(id) ?? null })),
+      // Raw stat bonuses keyed by stat name (e.g. {"FlatPhysicalDamageMod": 40})
+      stats: Object.keys(item.stats ?? {}).length > 0 ? item.stats : undefined,
     }));
 
   return NextResponse.json(

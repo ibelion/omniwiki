@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { cleanText } from "@/lib/utils";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
@@ -100,7 +101,7 @@ export default async function AbilityDetailPage({ params }: PageProps) {
             </div>
             <h1 className="mt-1 text-2xl font-semibold text-gray-900">{ability.name}</h1>
             {ability.description && (
-              <p className="mt-1 text-sm text-gray-500">{ability.description}</p>
+              <p className="mt-1 text-sm text-gray-500">{cleanText(ability.description)}</p>
             )}
           </div>
         </div>
@@ -134,7 +135,7 @@ export default async function AbilityDetailPage({ params }: PageProps) {
       {ability.tooltip && ability.tooltip.trim() !== "" && (
         <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
           <h2 className="mb-3 text-base font-semibold text-gray-900">Ability Details</h2>
-          <p className="text-sm leading-relaxed text-gray-700 whitespace-pre-wrap">{ability.tooltip}</p>
+          <p className="text-sm leading-relaxed text-gray-700 whitespace-pre-wrap">{cleanText(ability.tooltip)}</p>
         </section>
       )}
 

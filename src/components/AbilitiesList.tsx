@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
+import { cleanText } from "@/lib/utils";
 import type { ChampionAbility } from "@/lib/league/types";
 
 type ChampionStub = { id: number; slug: string; image?: string | null };
@@ -160,7 +161,7 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
 
                   {/* Description */}
                   <p className="text-xs leading-relaxed text-gray-600 line-clamp-3">
-                    {ability.description}
+                    {cleanText(ability.description)}
                   </p>
 
                   {/* Stats row */}
