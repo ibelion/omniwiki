@@ -184,6 +184,25 @@ const dataLinks = [
     },
   },
   {
+    label: "Lore",
+    href: "/league/lore",
+    description: "Champion stories, titles, and faction backgrounds",
+    getPreview: () => {
+      const entry = leagueData.lore?.[0];
+      return entry
+        ? {
+            name: entry.champion,
+            subtitle: entry.title ?? "Champion lore",
+            image: null,
+            extra:
+              entry.loreShort?.slice(0, 50) +
+                (entry.loreShort && entry.loreShort.length > 50 ? "..." : "") ||
+              "No lore",
+          }
+        : null;
+    },
+  },
+  {
     label: "Maps",
     href: "/league/maps",
     description: "Game maps and battlegrounds",

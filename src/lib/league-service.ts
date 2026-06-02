@@ -40,6 +40,25 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
     }
   }
 
+  // Build lookup: skinLineId → skin line name
+  const skinLineById = new Map<number, string>();
+  for (const line of bundle.skinLines ?? []) {
+    skinLineById.set(line.id, line.name);
+  }
+
+  // Build lookup: championId → Set of skin line names from all their non-base skins
+  const skinLinesByChampionId = new Map<number, Set<string>>();
+  for (const skin of bundle.skins ?? []) {
+    if (!skin.skinLineIds?.length) continue;
+    for (const lineId of skin.skinLineIds) {
+      const lineName = skinLineById.get(lineId);
+      if (!lineName) continue;
+      const set = skinLinesByChampionId.get(skin.championId) ?? new Set<string>();
+      set.add(lineName);
+      skinLinesByChampionId.set(skin.championId, set);
+    }
+  }
+
   return bundle.champions.map((champion) => {
     const lore = loreBySlug.get(champion.slug);
     const s = champion.stats;
@@ -50,8 +69,8 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
     // max=130 means only a true tank with both high hp AND armor hits 100.
     const defenseRaw = (s?.hp ?? 550) / 9 + (s?.armor ?? 28) * 1.5;
 
-    // Collect all meaningful classification strings, filter out nulls/empty.
-    const tags = [
+    // Classification tags: roles, positions, regions, species, range, resource, gender
+    const classificationTags = [
       ...champion.roles,
       ...champion.positions,
       ...champion.regions,
@@ -60,6 +79,9 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
       champion.resource,
       ...(champion.gender ? [champion.gender] : []),
     ].filter((t): t is string => Boolean(t));
+
+    // Skin line tags: "PROJECT", "Star Guardian", "Arcade", etc.
+    const skinLineTags = [...(skinLinesByChampionId.get(champion.id) ?? [])];
 
     return {
       uid: `lol-${champion.slug}`,
@@ -80,7 +102,7 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
       },
       lore: cleanText(lore?.loreShort ?? ''),
       abilities: abilitiesByChampionId.get(champion.id) ?? [],
-      tags: [...new Set(tags)],
+      tags: [...new Set([...classificationTags, ...skinLineTags])],
       releaseYear: champion.releaseYear ?? null,
       skinCount: skinCountById.get(champion.id) ?? 0,
     };
