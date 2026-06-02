@@ -18,10 +18,13 @@ type SlotFilter = (typeof SLOTS)[number];
 
 const slotOrder: Record<string, number> = { Passive: 0, P: 0, Q: 1, W: 2, E: 3, R: 4 };
 
+const PAGE_SIZE = 60;
+
 export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
   const [search, setSearch] = useState("");
   const [slotFilter, setSlotFilter] = useState<SlotFilter>("All");
   const [championFilter, setChampionFilter] = useState<string | null>(null);
+  const [page, setPage] = useState(0);
 
   const championById = useMemo(
     () => new Map(champions.map((c) => [c.id, c])),
@@ -64,6 +67,14 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
       });
   }, [abilities, search, slotFilter, championFilter]);
 
+  const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
+  const visible = filtered.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+
+  function handleFilterChange(fn: () => void) {
+    fn();
+    setPage(0);
+  }
+
   return (
     <>
       <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
@@ -82,12 +93,12 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
             type="text"
             placeholder="Search by name, champion, or description..."
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => handleFilterChange(() => setSearch(e.target.value))}
             className="flex-1 rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
           />
           <select
             value={championFilter ?? ""}
-            onChange={(e) => setChampionFilter(e.target.value || null)}
+            onChange={(e) => handleFilterChange(() => setChampionFilter(e.target.value || null))}
             className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
           >
             <option value="">All champions</option>
@@ -102,7 +113,7 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
           {SLOTS.map((slot) => (
             <button
               key={slot}
-              onClick={() => setSlotFilter(slot)}
+              onClick={() => handleFilterChange(() => setSlotFilter(slot))}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                 slotFilter === slot
                   ? "bg-emerald-600 text-white"
@@ -120,7 +131,7 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
           <p className="text-sm text-gray-500">No abilities match your search.</p>
         ) : (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((ability, index) => {
+            {visible.map((ability, index) => {
               const champion = championById.get(ability.championId);
               const championSlug = champion?.slug ?? "";
               const abilityId = championSlug
@@ -200,6 +211,27 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
             })}
           </div>
         )}
+      {pageCount > 1 && (
+        <div className="mt-6 flex items-center justify-between gap-4">
+          <button
+            onClick={() => setPage((p) => Math.max(0, p - 1))}
+            disabled={page === 0}
+            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+          >
+            Previous
+          </button>
+          <span className="text-sm text-gray-500">
+            Page {page + 1} of {pageCount}
+          </span>
+          <button
+            onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+            disabled={page === pageCount - 1}
+            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+          >
+            Next
+          </button>
+        </div>
+      )}
       </section>
     </>
   );
