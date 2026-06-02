@@ -96,7 +96,7 @@ export function ChromasList({ chromas, champions }: ChromasListProps) {
               (c) => c.name.toLowerCase() === (chroma.champion ?? "").toLowerCase()
             );
             const href = champion ? `/league/${champion.slug}` : "/league/champions";
-            const colors = chroma.colors?.length ? chroma.colors.join(", ") : null;
+            const colors = chroma.colors?.length ? chroma.colors : null;
             return (
               <Link
                 key={`${chroma.skinId}-${chroma.chromaId}`}
@@ -115,7 +115,18 @@ export function ChromasList({ chromas, champions }: ChromasListProps) {
                 </p>
                 <p className="font-semibold text-gray-900">{chroma.name || "Unknown chroma"}</p>
                 <p className="text-xs text-gray-500">{chroma.skinName}</p>
-                {colors && <p className="text-xs text-gray-400">{colors}</p>}
+                {colors && (
+                  <div className="flex flex-wrap gap-1.5">
+                    {colors.map((hex, i) => (
+                      <span
+                        key={i}
+                        title={hex}
+                        className="h-4 w-4 rounded-full border border-black/10 shadow-sm"
+                        style={{ backgroundColor: hex }}
+                      />
+                    ))}
+                  </div>
+                )}
               </Link>
             );
           })}
