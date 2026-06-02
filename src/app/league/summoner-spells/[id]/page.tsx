@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
-
-export const runtime = 'edge';
 
 const MODE_LABELS: Record<string, string> = {
   CLASSIC: "Summoner's Rift",
@@ -39,9 +37,12 @@ const VISIBLE_MODES = new Set([
 
 type PageProps = { params: Promise<{ id: string }> };
 
+export async function generateStaticParams() {
+  return leagueData.summonerSpells.map((s) => ({ id: s.id }));
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
-  const leagueData = await getLeagueBundleEdge();
   const spell = leagueData.summonerSpells.find((s) => s.id === id);
   if (!spell) return { title: "Summoner Spell · OmniWiki" };
   return {
@@ -51,7 +52,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function SummonerSpellDetailPage({ params }: PageProps) {
-  const leagueData = await getLeagueBundleEdge();
   const { id } = await params;
 
   const spell = leagueData.summonerSpells.find((s) => s.id === id);

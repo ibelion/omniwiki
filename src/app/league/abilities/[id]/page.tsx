@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { cleanText } from "@/lib/utils";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
-
-export const runtime = 'edge';
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
@@ -14,7 +12,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (lastDash === -1) return { title: "Ability · OmniWiki" };
   const championSlug = id.slice(0, lastDash);
   const slot = id.slice(lastDash + 1).toUpperCase();
-  const leagueData = await getLeagueBundleEdge();
   const champion = leagueData.champions.find((c) => c.slug === championSlug);
   const ability = champion
     ? leagueData.abilities.find((a) => a.championId === champion.id && a.slot === slot)
@@ -44,8 +41,14 @@ const SLOT_COLORS: Record<string, string> = {
 
 type PageProps = { params: Promise<{ id: string }> };
 
+export async function generateStaticParams() {
+  const champById = new Map(leagueData.champions.map((c) => [c.id, c.slug]));
+  return leagueData.abilities
+    .filter((a) => champById.has(a.championId))
+    .map((a) => ({ id: `${champById.get(a.championId)}-${a.slot.toLowerCase()}` }));
+}
+
 export default async function AbilityDetailPage({ params }: PageProps) {
-  const leagueData = await getLeagueBundleEdge();
   const { id } = await params;
 
   // id is "{championSlug}-{slot}" e.g. "ahri-q"

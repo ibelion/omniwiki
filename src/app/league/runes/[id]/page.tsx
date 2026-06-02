@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
-export const runtime = 'edge';
-
 type PageProps = { params: Promise<{ id: string }> };
+
+export async function generateStaticParams() {
+  return leagueData.runes.map((r) => ({ id: String(r.runeId) }));
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
-  const leagueData = await getLeagueBundleEdge();
   const rune = leagueData.runes.find((r) => r.runeId === Number(id));
   if (!rune) return { title: "Rune · OmniWiki" };
   return {
@@ -21,7 +22,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function RuneDetailPage({ params }: PageProps) {
-  const leagueData = await getLeagueBundleEdge();
   const { id } = await params;
   const runeId = Number(id);
 

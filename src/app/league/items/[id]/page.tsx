@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getLeagueBundleEdge } from "@/lib/edge-data";
+import { leagueData } from "@/lib/league/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
-export const runtime = 'edge';
-
 type PageProps = { params: Promise<{ id: string }> };
+
+export async function generateStaticParams() {
+  return leagueData.items.map((i) => ({ id: String(i.id) }));
+}
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
-  const leagueData = await getLeagueBundleEdge();
   const item = leagueData.items.find((i) => i.id === Number(id));
   if (!item) return { title: "Item · OmniWiki" };
   return {
@@ -64,7 +65,6 @@ const tierBadge = (tags: string[]) => {
 };
 
 export default async function ItemDetailPage({ params }: PageProps) {
-  const leagueData = await getLeagueBundleEdge();
   const { id } = await params;
   const itemId = Number(id);
   const item = leagueData.items.find((i) => i.id === itemId);
