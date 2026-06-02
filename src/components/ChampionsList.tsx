@@ -21,11 +21,14 @@ const CATEGORY_LABELS: Record<FilterCategory, string> = {
   skinLine: "Skin Line",
 };
 
+const PAGE_SIZE = 48;
+
 export function ChampionsList({ champions }: { champions: ChampionWithPositions[] }) {
   const [search, setSearch] = useState("");
   const [filterCategory, setFilterCategory] = useState<FilterCategory>("role");
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
   const [sortBy, setSortBy] = useState<"name" | "release">("name");
+  const [page, setPage] = useState(0);
 
   // Derive unique values for each category, sorted by champion count descending
   const regionOptions = useMemo(() => {
@@ -91,13 +94,18 @@ export function ChampionsList({ champions }: { champions: ChampionWithPositions[
       );
   }, [champions, search, activeFilter, filterCategory, sortBy]);
 
+  const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
+  const visible = filtered.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+
   function handleCategory(cat: FilterCategory) {
     setFilterCategory(cat);
     setActiveFilter(null);
+    setPage(0);
   }
 
   function handleChip(value: string) {
     setActiveFilter((prev) => (prev === value ? null : value));
+    setPage(0);
   }
 
   return (
@@ -132,6 +140,7 @@ export function ChampionsList({ champions }: { champions: ChampionWithPositions[
             onChange={(e) => {
               setSearch(e.target.value);
               setActiveFilter(null);
+              setPage(0);
             }}
             className="mt-2 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
           />
@@ -142,7 +151,7 @@ export function ChampionsList({ champions }: { champions: ChampionWithPositions[
               {(["name", "release"] as const).map((s) => (
                 <button
                   key={s}
-                  onClick={() => setSortBy(s)}
+                  onClick={() => { setSortBy(s); setPage(0); }}
                   className={`rounded-md px-3 py-1 text-xs font-semibold transition ${
                     sortBy === s
                       ? "bg-white text-gray-900 shadow-sm"
@@ -175,7 +184,7 @@ export function ChampionsList({ champions }: { champions: ChampionWithPositions[
           {/* Filter chips for the active category */}
           <div className="flex flex-wrap gap-2">
             <button
-              onClick={() => setActiveFilter(null)}
+              onClick={() => { setActiveFilter(null); setPage(0); }}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                 activeFilter === null
                   ? "bg-emerald-600 text-white"
@@ -202,7 +211,7 @@ export function ChampionsList({ champions }: { champions: ChampionWithPositions[
       </section>
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((champion) => (
+        {visible.map((champion) => (
           <Link
             key={champion.id}
             href={`/league/${champion.slug}`}
@@ -245,6 +254,28 @@ export function ChampionsList({ champions }: { champions: ChampionWithPositions[
           </Link>
         ))}
       </section>
+
+      {pageCount > 1 && (
+        <div className="flex items-center justify-between gap-4">
+          <button
+            onClick={() => setPage((p) => Math.max(0, p - 1))}
+            disabled={page === 0}
+            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+          >
+            Previous
+          </button>
+          <span className="text-sm text-gray-500">
+            Page {page + 1} of {pageCount}
+          </span>
+          <button
+            onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+            disabled={page === pageCount - 1}
+            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+          >
+            Next
+          </button>
+        </div>
+      )}
     </>
   );
 }

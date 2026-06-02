@@ -14,6 +14,7 @@ const PAGE_SIZE = 60;
 
 const RARITY_LABELS: Record<string, string> = {
   kNoRarity: "Standard",
+  kRare: "Rare",
   kEpic: "Epic",
   kLegendary: "Legendary",
   kMythic: "Mythic",

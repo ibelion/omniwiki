@@ -22,9 +22,13 @@ const tierBadge = (tags: string[]) => {
   return { label: "Standard", color: "bg-gray-100 text-gray-600" };
 };
 
+const PAGE_SIZE = 60;
+
 export function ItemsList({ items }: { items: ItemRecord[] }) {
   const [search, setSearch] = useState("");
   const [tagFilter, setTagFilter] = useState<string | null>(null);
+  const [sortBy, setSortBy] = useState<"name" | "cost-asc" | "cost-desc">("name");
+  const [page, setPage] = useState(0);
 
   const itemById = useMemo(() => new Map(items.map((item) => [item.id, item])), [items]);
 
@@ -41,9 +45,21 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
             item.tags.some((t) => t.toLowerCase().includes(q))
           );
         })
-        .sort((a, b) => a.name.localeCompare(b.name)),
-    [items, search, tagFilter]
+        .sort((a, b) => {
+          if (sortBy === "cost-asc") return (a.goldTotal ?? 0) - (b.goldTotal ?? 0);
+          if (sortBy === "cost-desc") return (b.goldTotal ?? 0) - (a.goldTotal ?? 0);
+          return a.name.localeCompare(b.name);
+        }),
+    [items, search, tagFilter, sortBy]
   );
+
+  const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
+  const visible = filtered.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+
+  function handleFilterChange(fn: () => void) {
+    fn();
+    setPage(0);
+  }
 
   return (
     <>
@@ -62,13 +78,31 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
           type="text"
           placeholder="Search items by name, description, or tag..."
           value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => handleFilterChange(() => setSearch(e.target.value))}
           className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
         />
 
-        <div className="mt-3 flex flex-wrap gap-2">
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          <div className="flex gap-1 rounded-lg border border-gray-200 bg-gray-50 p-1">
+            {([["name", "A–Z"], ["cost-asc", "Cost ↑"], ["cost-desc", "Cost ↓"]] as const).map(([val, label]) => (
+              <button
+                key={val}
+                onClick={() => handleFilterChange(() => setSortBy(val))}
+                className={`rounded-md px-3 py-1 text-xs font-semibold transition ${
+                  sortBy === val
+                    ? "bg-white text-gray-900 shadow-sm"
+                    : "text-gray-500 hover:text-gray-700"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-2 flex flex-wrap gap-2">
           <button
-            onClick={() => setTagFilter(null)}
+            onClick={() => handleFilterChange(() => setTagFilter(null))}
             className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
               tagFilter === null
                 ? "bg-emerald-600 text-white"
@@ -80,7 +114,7 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
           {FILTER_TAGS.map((tag) => (
             <button
               key={tag}
-              onClick={() => setTagFilter(tagFilter === tag ? null : tag)}
+              onClick={() => handleFilterChange(() => setTagFilter(tagFilter === tag ? null : tag))}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                 tagFilter === tag
                   ? "bg-emerald-600 text-white"
@@ -94,7 +128,7 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
       </header>
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((item) => {
+        {visible.map((item) => {
           const tier = tierBadge(item.tags);
           return (
             <Link
@@ -172,6 +206,28 @@ export function ItemsList({ items }: { items: ItemRecord[] }) {
           );
         })}
       </section>
+
+      {pageCount > 1 && (
+        <div className="flex items-center justify-between gap-4">
+          <button
+            onClick={() => setPage((p) => Math.max(0, p - 1))}
+            disabled={page === 0}
+            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+          >
+            Previous
+          </button>
+          <span className="text-sm text-gray-500">
+            Page {page + 1} of {pageCount}
+          </span>
+          <button
+            onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+            disabled={page === pageCount - 1}
+            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+          >
+            Next
+          </button>
+        </div>
+      )}
     </>
   );
 }

@@ -15,6 +15,7 @@ type Props = {
 
 export function SkinLinesClient({ skinLines, skinById }: Props) {
   const [search, setSearch] = useState("");
+  const [sortBy, setSortBy] = useState<"count" | "name">("count");
 
   const filtered = useMemo(
     () =>
@@ -26,11 +27,12 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
             sl.name.toLowerCase().includes(search.toLowerCase())
         )
         .sort((a, b) => {
+          if (sortBy === "name") return a.name.localeCompare(b.name);
           const aC = a.skinCount ?? a.skinIds?.length ?? 0;
           const bC = b.skinCount ?? b.skinIds?.length ?? 0;
           return bC - aC || a.name.localeCompare(b.name);
         }),
-    [search, skinLines]
+    [search, skinLines, sortBy]
   );
 
   return (
@@ -47,13 +49,30 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
         <p className="mt-1 text-gray-600">
           Thematic collections — click any skin to view its full detail page.
         </p>
-        <input
-          type="text"
-          placeholder="Search skin lines..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
-        />
+        <div className="mt-4 flex flex-col gap-3">
+          <input
+            type="text"
+            placeholder="Search skin lines..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          />
+          <div className="flex gap-1 rounded-lg border border-gray-200 bg-gray-50 p-1 w-fit">
+            {([["count", "Most skins"], ["name", "A–Z"]] as const).map(([val, label]) => (
+              <button
+                key={val}
+                onClick={() => setSortBy(val)}
+                className={`rounded-md px-3 py-1 text-xs font-semibold transition ${
+                  sortBy === val
+                    ? "bg-white text-gray-900 shadow-sm"
+                    : "text-gray-500 hover:text-gray-700"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
       </header>
 
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
