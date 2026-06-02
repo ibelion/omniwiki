@@ -61,8 +61,8 @@ export const getLeagueData = async (): Promise<OmniEntity[]> => {
       },
       lore: cleanText(lore?.loreShort ?? ''),
       abilities: abilitiesByChampionId.get(champion.id) ?? [],
-      // roles + positions give the game richer trivia tags (e.g., "Mage", "Mid")
-      tags: [...new Set([...champion.roles, ...champion.positions])],
+      // roles + positions + regions for trivia coverage ("Mage", "Mid", "Demacia")
+      tags: [...new Set([...champion.roles, ...champion.positions, ...champion.regions])],
     };
   });
 };
