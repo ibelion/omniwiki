@@ -43,6 +43,7 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
     [objectives, search, categoryFilter]
   );
 
+  // eslint-disable-next-line react-hooks/purity
   const now = useMemo(() => Date.now(), []);
   const active = filtered.filter((o) => (!o.end || o.end > now) && (!o.start || o.start <= now));
 

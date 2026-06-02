@@ -57,11 +57,13 @@ export function ChampionJump({ champions }: { champions: ChampionStub[] }) {
         className="w-48 rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-sm text-gray-800 placeholder-gray-400 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100"
         aria-label="Search champions"
         aria-expanded={open && matches.length > 0}
+        aria-controls="champion-jump-listbox"
         aria-autocomplete="list"
         role="combobox"
       />
       {open && matches.length > 0 && (
         <ul
+          id="champion-jump-listbox"
           role="listbox"
           className="absolute left-0 top-full z-50 mt-1 w-56 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg"
         >
