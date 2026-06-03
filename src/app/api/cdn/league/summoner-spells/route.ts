@@ -1,4 +1,6 @@
 // app/api/cdn/league/summoner-spells/route.ts
+export const runtime = 'nodejs';
+
 import { NextResponse } from 'next/server';
 import { getLeagueBundleEdge } from '@/lib/edge-data';
 

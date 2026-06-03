@@ -1,4 +1,6 @@
 // app/api/cdn/all/route.ts
+export const runtime = 'nodejs';
+
 import { NextResponse } from 'next/server';
 import { getLeagueData } from '@/lib/league-service';
 import { getPokemonData } from '@/lib/pokemon-service';

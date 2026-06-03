@@ -1,4 +1,6 @@
 // app/api/cdn/pokemon/all/route.ts
+export const runtime = 'nodejs';
+
 import { NextResponse } from 'next/server';
 import { getPokemonData } from '@/lib/pokemon-service';
 import type { OmniCdnResponse } from '@/types/omni-schema';

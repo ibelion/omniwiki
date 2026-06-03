@@ -1,4 +1,6 @@
 // app/api/cdn/tft/champions/route.ts
+export const runtime = 'nodejs';
+
 import { NextResponse } from 'next/server';
 import { getTFTData } from '@/lib/tft-service';
 import type { OmniCdnResponse } from '@/types/omni-schema';

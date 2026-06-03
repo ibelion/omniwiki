@@ -1,4 +1,6 @@
 // app/api/cdn/league/abilities/route.ts
+export const runtime = 'nodejs';
+
 import { NextResponse } from 'next/server';
 import { getLeagueBundleEdge } from '@/lib/edge-data';
 import { cleanText } from '@/lib/utils';

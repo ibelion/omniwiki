@@ -6,7 +6,7 @@
     "dev": "next dev",
     "prebuild": "tsx scripts/split-learnsets.ts",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 next build",
-    "cf:build": "tsx scripts/split-learnsets.ts && cross-env NODE_OPTIONS=--max-old-space-size=8192 opennextjs-cloudflare build && opennextjs-cloudflare populateCache local && node scripts/remove-large-assets.mjs",
+    "cf:build": "tsx scripts/split-learnsets.ts && cross-env NODE_OPTIONS=--max-old-space-size=8192 opennextjs-cloudflare build && opennextjs-cloudflare populateCache local && node scripts/copy-static-pages.mjs && node scripts/bundle-for-pages.mjs && node scripts/remove-large-assets.mjs",
     "start": "next start",
     "lint": "next lint",
     "build:data": "node --import tsx ./scripts/build-pokemon.ts && node --import tsx ./scripts/build-league.ts"
