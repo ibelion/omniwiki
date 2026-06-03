@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPokemonBundleEdge } from "@/lib/edge-data";

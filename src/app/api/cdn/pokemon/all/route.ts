@@ -3,8 +3,6 @@ import { NextResponse } from 'next/server';
 import { getPokemonData } from '@/lib/pokemon-service';
 import type { OmniCdnResponse } from '@/types/omni-schema';
 
-export const runtime = 'edge';
-
 export async function GET() {
   const data = await getPokemonData();
 

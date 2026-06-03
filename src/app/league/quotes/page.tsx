@@ -3,8 +3,6 @@ import { BackLink } from "@/components/BackLink";
 import { QuotesSearch } from "@/components/QuotesSearch";
 import { leagueData } from "@/lib/league/data";
 
-export const runtime = 'edge';
-
 const PAGE_SIZE = 60;
 
 type SearchParams = Promise<{

@@ -5,8 +5,6 @@ import { getPokemonData } from '@/lib/pokemon-service';
 import { getTFTData } from '@/lib/tft-service';
 import { OmniCdnResponse } from '@/types/omni-schema';
 
-export const runtime = 'edge';
-
 export async function GET() {
   const startTime = Date.now();
 

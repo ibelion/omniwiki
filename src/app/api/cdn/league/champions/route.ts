@@ -3,8 +3,6 @@ import { NextResponse } from 'next/server';
 import { getLeagueData } from '@/lib/league-service';
 import { OmniCdnResponse } from '@/types/omni-schema';
 
-export const runtime = 'edge';
-
 export async function GET() {
   const data = await getLeagueData();
   const verRes = await fetch('https://ddragon.leagueoflegends.com/api/versions.json');

@@ -2,8 +2,6 @@
 import { NextResponse } from 'next/server';
 import { getLeagueBundleEdge } from '@/lib/edge-data';
 
-export const runtime = 'edge';
-
 export async function GET() {
   const bundle = await getLeagueBundleEdge();
 

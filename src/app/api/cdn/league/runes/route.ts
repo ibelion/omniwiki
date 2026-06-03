@@ -2,8 +2,6 @@
 import { NextResponse } from 'next/server';
 import { getLeagueBundleEdge } from '@/lib/edge-data';
 
-export const runtime = 'edge';
-
 // Strip HTML tags and decode a handful of common entities.
 const stripHtml = (s: string | null | undefined): string | null => {
   if (!s) return null;
