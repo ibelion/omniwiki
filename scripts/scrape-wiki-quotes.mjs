@@ -104,8 +104,15 @@ function resolveCategory(headings) {
     return null; // "Sound Effect" rows etc.
   }
 
-  // Movement (any sub-section: First Move, Moving, etc.)
-  if (h0 === 'movement' || h0 === 'first encounter') return 'move';
+  // Movement — First Move subsection is the game-start voice line;
+  // everything else (Moving, etc.) is generic movement.
+  if (h0 === 'movement') {
+    if (h1 === 'first move') return 'game_start';
+    return 'move';
+  }
+  // Standalone "First Move" h2 (some champions structure it this way)
+  if (h0 === 'first move') return 'game_start';
+  if (h0 === 'first encounter') return 'move';
 
   // Attack — wiki uses singular "Attack", not "Attacking"
   if (h0 === 'attack' || h0 === 'attacking') return 'attack';

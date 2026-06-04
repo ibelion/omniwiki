@@ -28,7 +28,7 @@ const DRY_RUN = process.argv.includes('--dry-run');
 const RENAMES = {
   champion_select:   'pick',
   champion_selection:'pick',
-  first_move:        'move',
+  first_move:        'game_start',
   moving:            'move',
   movement:          'move',
   first_encounter:   'move',
