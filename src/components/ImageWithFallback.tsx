@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 const CDN_BASE = "https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn";
 
@@ -31,20 +30,18 @@ export const ImageWithFallback = ({
   const [imgSrc, setImgSrc] = useState(toCdnSrc(src));
 
   const handleError = () => {
-    setImgSrc(fallback);
+    if (imgSrc !== fallback) setImgSrc(fallback);
   };
 
   return (
     <div className={`relative ${className}`}>
-      <Image
+      <img
         src={imgSrc}
         alt={alt}
-        fill
-        className="object-contain"
         loading={loading}
         onError={handleError}
+        className="absolute inset-0 h-full w-full object-contain"
       />
     </div>
   );
 };
-
