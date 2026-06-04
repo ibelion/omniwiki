@@ -4,6 +4,21 @@ const CDN_BASE =
   "https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn";
 
 const nextConfig: NextConfig = {
+  webpack(config, { isServer }) {
+    if (!isServer) {
+      // Prevent webpack from failing on Node.js built-ins when it analyzes
+      // server-only data modules (data.ts files use fs.readFileSync).
+      // The client bundle never actually executes this code — Server Components
+      // run on the server. Setting these to false emits an empty module for
+      // the browser/edge compilation pass so the build succeeds.
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      };
+    }
+    return config;
+  },
   images: {
     remotePatterns: [
       {
