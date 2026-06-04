@@ -138,7 +138,11 @@ export default async function LeagueQuotesPage({
                   </blockquote>
                   {(quote.category || quote.language) && (
                     <div className="flex gap-2 text-xs text-gray-400">
-                      {quote.category && <span>{quote.category}</span>}
+                      {quote.category && (
+                        <span>
+                          {quote.category.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+                        </span>
+                      )}
                       {quote.language && <span>&middot; {quote.language}</span>}
                     </div>
                   )}
