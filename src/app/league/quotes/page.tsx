@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BackLink } from "@/components/BackLink";
 import { QuotesSearch } from "@/components/QuotesSearch";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
 const PAGE_SIZE = 60;
 
@@ -50,6 +50,7 @@ export default async function LeagueQuotesPage({
 }) {
   const { champion, category, q, page: pageStr } = await searchParams;
 
+  const leagueData = await getLeagueBundleEdge();
   const championFilter = getSingleValue(champion);
   const categoryFilter = getSingleValue(category);
   const textQuery = getSingleValue(q)?.trim() ?? "";

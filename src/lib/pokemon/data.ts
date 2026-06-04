@@ -1,8 +1,12 @@
 import type { PokemonDataBundle } from "./types";
-import bundleData from "../../../public/pokemoncontent/data/bundle.json";
 
-export const pokemonData = bundleData as PokemonDataBundle;
+// webpackIgnore prevents webpack/esbuild from bundling this large JSON into handler.mjs.
+// At Next.js SSG build time, Node.js resolves it from the filesystem.
+// At Worker runtime, pre-rendered pages are served from ASSETS — this code never executes.
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const bundleData = require(/* webpackIgnore: true */ process.cwd() + "/public/pokemoncontent/data/bundle.json") as PokemonDataBundle;
+
+export const pokemonData = bundleData;
 
 export const getPokemonBySlug = (slug: string) =>
   pokemonData.pokemon.find((p) => p.slug === slug);
-
