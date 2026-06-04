@@ -60,16 +60,34 @@ const VALID = new Set(Object.values(RENAMES));
 // ---------------------------------------------------------------------------
 function normalize(text) {
   if (!text) return '';
-  return text
-    .replace(/[‘’ʼ]/g, "'")        // curly single quotes -> straight
-    .replace(/[“”„‟«»]/g, '"') // curly double -> straight
-    .replace(/…/g, '...')                     // ellipsis char
-    .replace(/[–—]/g, '-')               // en/em dashes
-    .replace(/[​‌‍﻿]/g, '')   // zero-width spaces and similar
+  let s = text
+    // Curly single quotes -> straight apostrophe
+    .replace(/[‘’ʼ]/g, "'")
+    // Curly double quotes -> straight double quote
+    .replace(/[“”„‟«»]/g, '"')
+    // Ellipsis char -> three dots
+    .replace(/…/g, '...')
+    // En/em dashes -> hyphen
+    .replace(/[–—]/g, '-')
+    // Zero-width spaces and similar invisible chars
+    .replace(/[​‌‍﻿]/g, '')
+    // Strip speaker prefixes: "Willump: " / "Nunu: " in duo-champion lines.
+    // One or two capitalised words (up to 25 chars) followed by ": " then optional opening quote.
+    .replace(/^[A-Z][A-Za-z‘’& ]{1,24}:\s*[“"']?/, '')
     .replace(/\s+/g, ' ')
     .trim()
     .toLowerCase();
+  // Collapse leading zeros on binary strings so "01100010" == "1100010".
+  // Willump's lines are stored without leading zeros in the bundle but with
+  // them in the wiki (e.g. "01100010" vs "1100010").
+  s = s.replace(/\b0+([01]{2,})\b/g, '$1');
+  return s;
 }
+
+// Bundle champion name -> lookup key (when they differ)
+const BUNDLE_ALIASES = {
+  'Nunu': 'Nunu & Willump',
+};
 
 // ---------------------------------------------------------------------------
 // Build per-champion text->category maps from the wiki lookup
@@ -111,13 +129,14 @@ const stats = {
 
 for (const quote of bundle.quotes) {
   stats.total++;
-  const champMap = wikiMaps[quote.champion];
+  const lookupKey = BUNDLE_ALIASES[quote.champion] ?? quote.champion;
+  const champMap = wikiMaps[lookupKey];
   const norm = normalize(quote.text);
 
   // 1. Try wiki match first (authoritative)
   const wikiCat = champMap?.get(norm);
   if (wikiCat) {
-    if (wikiMulti[quote.champion]?.has(norm)) stats.ambiguous++;
+    if (wikiMulti[lookupKey]?.has(norm)) stats.ambiguous++;
     quote.category = wikiCat;
     stats.wikiMatch++;
     continue;

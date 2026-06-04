@@ -233,6 +233,11 @@ function extractQuoteText(line) {
   // These occur when a word is bolded mid-quote, e.g. ''Follow '''no''' false light.''
   text = text.replace(/'{2,}/g, '');
 
+  // Strip speaker prefixes: "Willump: " / "Nunu: " in duo-champion lines.
+  // Pattern: one or two capitalised words followed by ": " then optional opening curly quote.
+  // Keep this narrow (≤25 chars before the colon) to avoid stripping sentence fragments.
+  text = text.replace(/^[A-Z][A-Za-z'’& ]{1,24}:\s*[“”"]?/, '');
+
   // Strip zero-width spaces and other invisible Unicode characters
   text = text.replace(/[​‌‍﻿]/g, '');
 
@@ -308,15 +313,19 @@ function parseWikitext(wikitext) {
 
     // Bullet line
     if (line.startsWith('*')) {
-      if (!h2) continue; // before any section
+      // Some pages put ;Pick / ;Ban before the first == heading (no h2 wrapper).
+      // Treat those as Champion Select lines so they still get pick/ban categories.
+      const semiLow = semi.toLowerCase();
+      const effectiveH2 = h2 || (semiLow === 'pick' || semiLow === 'ban' ? 'champion select' : '');
+      if (!effectiveH2) continue;
 
       // Build heading stack for category lookup
-      const headings = [h2];
+      const headings = [effectiveH2];
 
       // For Champion Select, the sub-type (pick/ban) comes from the semicolon item.
       // For any other section, a champion-specific semicolon ({{ci|X}} / {{csl|X}})
       // signals an opponent interaction regardless of the enclosing section.
-      if (h2.toLowerCase() === 'champion select' && semi) {
+      if (effectiveH2.toLowerCase() === 'champion select' && semi) {
         headings.push(semi);
       } else if (semiIsChampionSpecific) {
         headings.push('__champion_specific__');
