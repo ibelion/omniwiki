@@ -1,9 +1,13 @@
 import type { TFTDataBundle } from "./types";
+import { readFileSync } from "fs";
+import { join } from "path";
 
-// webpackIgnore prevents webpack/esbuild from bundling this large JSON into handler.mjs.
-// At Next.js SSG build time, Node.js resolves it from the filesystem.
-// At Worker runtime, pre-rendered pages are served from ASSETS — this code never executes.
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const bundleData = require(/* webpackIgnore: true */ process.cwd() + "/public/tftcontent/data/bundle.json") as unknown as TFTDataBundle;
+// readFileSync is a runtime operation — webpack/esbuild never bundle the file
+// content into handler.mjs. At Next.js SSG build time Node.js reads it from
+// disk. Pre-rendered pages are served from ASSETS at Worker runtime so this
+// module code never executes there.
+const bundleData: TFTDataBundle = JSON.parse(
+  readFileSync(join(process.cwd(), "public/tftcontent/data/bundle.json"), "utf8")
+) as unknown as TFTDataBundle;
 
 export const tftData = bundleData;
