@@ -103,14 +103,26 @@ const fetchJson = async <T>(path: string): Promise<T> => {
   return JSON.parse(text) as T;
 };
 
-export const getPokemonBundleEdge = cache(async () =>
-  fetchJson<PokemonDataBundle>(`${BUNDLE_BASE}/pokemoncontent/data/bundle.json`)
-);
+// Module-level cache so populateCache local pre-renders reuse one fetch
+// instead of re-fetching and decompressing the bundle for every page.
+let _pokemonBundle: PokemonDataBundle | null = null;
+let _leagueBundle: LeagueDataBundle | null = null;
+let _tftBundle: TFTDataBundle | null = null;
 
-export const getLeagueBundleEdge = cache(async () =>
-  fetchJson<LeagueDataBundle>(`${BUNDLE_BASE}/leaguecontent/data/bundle.json`)
-);
+export const getPokemonBundleEdge = cache(async () => {
+  if (_pokemonBundle) return _pokemonBundle;
+  _pokemonBundle = await fetchJson<PokemonDataBundle>(`${BUNDLE_BASE}/pokemoncontent/data/bundle.json`);
+  return _pokemonBundle;
+});
 
-export const getTFTBundleEdge = cache(async () =>
-  fetchJson<TFTDataBundle>(`${BUNDLE_BASE}/tftcontent/data/bundle.json`)
-);
+export const getLeagueBundleEdge = cache(async () => {
+  if (_leagueBundle) return _leagueBundle;
+  _leagueBundle = await fetchJson<LeagueDataBundle>(`${BUNDLE_BASE}/leaguecontent/data/bundle.json`);
+  return _leagueBundle;
+});
+
+export const getTFTBundleEdge = cache(async () => {
+  if (_tftBundle) return _tftBundle;
+  _tftBundle = await fetchJson<TFTDataBundle>(`${BUNDLE_BASE}/tftcontent/data/bundle.json`);
+  return _tftBundle;
+});

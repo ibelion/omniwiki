@@ -12,6 +12,11 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export async function generateStaticParams() {
+  const data = await getPokemonBundleEdge();
+  return data.moves.map((m) => ({ slug: m.slug }));
+}
+
 type AggregatedLearnsetEntry = {
   method: string;
   generation: string;
