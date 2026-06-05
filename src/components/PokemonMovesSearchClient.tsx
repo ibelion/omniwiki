@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import type { MoveRecord } from "@/lib/pokemon/types";
 
 type Props = {
@@ -48,14 +49,17 @@ export default function PokemonMovesSearchClient({ moves }: Props) {
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((m) => (
-            <article key={m.slug} className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm">
+            <Link
+              key={m.slug}
+              href={`/moves/${m.slug}`}
+              className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm transition hover:border-indigo-200 hover:bg-indigo-50 hover:shadow-md"
+            >
               <p className="text-xs uppercase text-gray-500">{m.generation}</p>
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-semibold text-gray-900">{m.name}</h2>
                 <span className="rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-700">{m.type ?? "—"}</span>
               </div>
               {m.shortEffect && <p className="mt-1 text-xs text-gray-700">{m.shortEffect}</p>}
-              {m.effect && <p className="mt-1 text-xs text-gray-600">{m.effect}</p>}
               <div className="mt-2 flex flex-wrap gap-2 text-[11px] text-gray-600">
                 {m.damageClass && <span className="rounded bg-gray-100 px-1.5 py-0.5">{m.damageClass}</span>}
                 {m.power != null && <span className="rounded bg-gray-100 px-1.5 py-0.5">Power {m.power}</span>}
@@ -63,8 +67,7 @@ export default function PokemonMovesSearchClient({ moves }: Props) {
                 {m.pp != null && <span className="rounded bg-gray-100 px-1.5 py-0.5">PP {m.pp}</span>}
                 {m.priority != null && <span className="rounded bg-gray-100 px-1.5 py-0.5">Prio {m.priority}</span>}
               </div>
-              <a href={m.sourceUrl} target="_blank" className="mt-2 inline-block text-xs font-semibold text-indigo-600">Source →</a>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { ItemRecord } from "@/lib/pokemon/types";
 
 interface ItemsSearchClientProps {
@@ -43,13 +44,22 @@ export function ItemsSearchClient({ items }: ItemsSearchClientProps) {
             key={item.slug}
             className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm"
           >
-            <p className="text-xs uppercase text-gray-500">
-              {item.slug} · Gen {item.generation || "?"}
-            </p>
-            <h2 className="text-lg font-semibold text-gray-900">{item.name}</h2>
-            <p className="text-xs text-gray-500">
-              Cost: {item.cost ?? "—"} · Category: {item.category || "—"}
-            </p>
+            <div className="flex items-center gap-3">
+              {item.sprite && (
+                <ImageWithFallback
+                  src={`/pokemoncontent/${item.sprite}`}
+                  alt={item.name}
+                  className="h-10 w-10 flex-shrink-0 rounded-lg border border-gray-100 bg-gray-50 object-contain"
+                />
+              )}
+              <div className="min-w-0 flex-1">
+                <h2 className="text-lg font-semibold text-gray-900">{item.name}</h2>
+                <p className="text-xs text-gray-500">
+                  {item.category || "—"} · Gen {item.generation || "?"}
+                </p>
+              </div>
+            </div>
+            <p className="text-xs text-gray-500">Cost: {item.cost ?? "—"}</p>
             <p className="text-sm text-gray-600">
               {item.shortEffect || item.effect || "No description available."}
             </p>

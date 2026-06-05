@@ -1,11 +1,52 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import type { AbilityRecord } from "@/lib/pokemon/types";
 
 type Props = {
   abilities: AbilityRecord[];
 };
+
+function AbilityCard({ ability }: { ability: AbilityRecord }) {
+  const [expanded, setExpanded] = useState(false);
+  const PREVIEW = 6;
+  const shown = expanded ? ability.pokemon : ability.pokemon.slice(0, PREVIEW);
+
+  return (
+    <article className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm">
+      <p className="text-xs uppercase text-gray-500">{ability.generation}</p>
+      <h2 className="text-lg font-semibold text-gray-900">{ability.name}</h2>
+      {ability.shortEffect && <p className="mt-1 text-xs text-gray-700">{ability.shortEffect}</p>}
+      {ability.pokemon.length > 0 && (
+        <div className="mt-3">
+          <p className="mb-1.5 text-xs font-semibold text-gray-500">
+            {ability.pokemon.length} Pokémon
+          </p>
+          <div className="flex flex-wrap gap-1">
+            {shown.map((slug) => (
+              <Link
+                key={slug}
+                href={`/pokemon/${slug}`}
+                className="rounded bg-indigo-50 px-1.5 py-0.5 text-[11px] font-semibold text-indigo-700 hover:bg-indigo-100"
+              >
+                {slug.replace(/-/g, " ")}
+              </Link>
+            ))}
+          </div>
+          {ability.pokemon.length > PREVIEW && (
+            <button
+              onClick={() => setExpanded((v) => !v)}
+              className="mt-2 text-xs font-semibold text-indigo-600 hover:underline"
+            >
+              {expanded ? "Show less" : `+${ability.pokemon.length - PREVIEW} more`}
+            </button>
+          )}
+        </div>
+      )}
+    </article>
+  );
+}
 
 export default function PokemonAbilitiesSearchClient({ abilities }: Props) {
   const [query, setQuery] = useState("");
@@ -46,13 +87,7 @@ export default function PokemonAbilitiesSearchClient({ abilities }: Props) {
       <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((a) => (
-            <article key={a.slug} className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm">
-              <p className="text-xs uppercase text-gray-500">{a.generation}</p>
-              <h2 className="text-lg font-semibold text-gray-900">{a.name}</h2>
-              {a.shortEffect && <p className="mt-1 text-xs text-gray-700">{a.shortEffect}</p>}
-              {a.effect && <p className="mt-1 text-xs text-gray-600">{a.effect}</p>}
-              <a href={a.sourceUrl} target="_blank" className="mt-2 inline-block text-xs font-semibold text-indigo-600">Source →</a>
-            </article>
+            <AbilityCard key={a.slug} ability={a} />
           ))}
         </div>
       </section>

@@ -11,11 +11,29 @@ type PokemonSearchProps = {
   typeOptions: string[];
 };
 
+const GENERATION_LABELS: Record<string, string> = {
+  "generation-i": "Gen I",
+  "generation-ii": "Gen II",
+  "generation-iii": "Gen III",
+  "generation-iv": "Gen IV",
+  "generation-v": "Gen V",
+  "generation-vi": "Gen VI",
+  "generation-vii": "Gen VII",
+  "generation-viii": "Gen VIII",
+  "generation-ix": "Gen IX",
+};
+
 export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
   const [query, setQuery] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
+  const [genFilter, setGenFilter] = useState("");
 
   const baseFormsOnly = useMemo(() => pokemon.filter(isBaseForm), [pokemon]);
+
+  const generationOptions = useMemo(() => {
+    const gens = Array.from(new Set(baseFormsOnly.map((p) => p.generation))).sort();
+    return gens;
+  }, [baseFormsOnly]);
 
   const filtered = useMemo(() => {
     return baseFormsOnly.filter((p) => {
@@ -24,9 +42,10 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
         p.name.toLowerCase().includes(query.toLowerCase()) ||
         p.slug.toLowerCase().includes(query.toLowerCase());
       const matchesType = !typeFilter || p.types.includes(typeFilter);
-      return matchesQuery && matchesType;
+      const matchesGen = !genFilter || p.generation === genFilter;
+      return matchesQuery && matchesType && matchesGen;
     });
-  }, [baseFormsOnly, query, typeFilter]);
+  }, [baseFormsOnly, query, typeFilter, genFilter]);
 
   return (
     <>
@@ -53,6 +72,19 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
           {typeOptions.map((type) => (
             <option key={type} value={type}>
               {type}
+            </option>
+          ))}
+        </select>
+        <select
+          value={genFilter}
+          onChange={(e) => setGenFilter(e.target.value)}
+          aria-label="Filter by generation"
+          className="rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+        >
+          <option value="">All generations</option>
+          {generationOptions.map((gen) => (
+            <option key={gen} value={gen}>
+              {GENERATION_LABELS[gen] ?? gen}
             </option>
           ))}
         </select>
