@@ -38,38 +38,6 @@ const dataLinks = [
     },
   },
   {
-    label: "Pokémon ↔ Items",
-    href: "/pokemon/pokemon-items",
-    description: "Mapping of Pokémon to their held items",
-    getPreview: () => {
-      const entry = pokemonData.pokemonItems?.[0];
-      return entry
-        ? {
-            name: entry.pokemonSlug,
-            subtitle: "Holds items",
-            image: null,
-            extra: `Item: ${entry.itemSlug}`,
-          }
-        : null;
-    },
-  },
-  {
-    label: "Pokémon ↔ Types",
-    href: "/pokemon/pokemon-types",
-    description: "Type slot mappings for each Pokémon",
-    getPreview: () => {
-      const entry = pokemonData.pokemonTypes?.[0];
-      return entry
-        ? {
-            name: entry.pokemonSlug,
-            subtitle: "Type mapping",
-            image: null,
-            extra: `Slot ${entry.slot}: ${entry.typeSlug}`,
-          }
-        : null;
-    },
-  },
-  {
     label: "Types",
     href: "/pokemon/types",
     description: "Type relationships and effectiveness",
@@ -97,22 +65,6 @@ const dataLinks = [
             subtitle: species.habitat || "Unknown habitat",
             image: null,
             extra: `Shape: ${species.shape || "—"}`,
-          }
-        : null;
-    },
-  },
-  {
-    label: "Sprites",
-    href: "/pokemon/sprites",
-    description: "Sprite catalog with all available images",
-    getPreview: () => {
-      const sprite = pokemonData.sprites?.[0];
-      return sprite
-        ? {
-            name: sprite.pokemonSlug,
-            subtitle: sprite.spriteType,
-            image: sprite.image,
-            extra: null,
           }
         : null;
     },
