@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPokemonBundleEdge } from "@/lib/edge-data";
-import { pokemonData as staticPokemonData } from "@/lib/pokemon/data";
 import type {
   LearnsetEntry,
   PokemonRecord,
@@ -206,10 +205,6 @@ const summarizeLearners = (
 
   return summariesList.sort((a, b) => a.pokemon.id - b.pokemon.id);
 };
-
-export async function generateStaticParams() {
-  return staticPokemonData.moves.map((m) => ({ slug: m.slug }));
-}
 
 export default async function MoveDetail({ params }: PageProps) {
   const { slug } = await params;

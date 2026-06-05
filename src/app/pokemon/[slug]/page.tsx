@@ -14,10 +14,6 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  return staticPokemonData.pokemon.map((p) => ({ slug: p.slug }));
-}
-
 export default async function PokemonDetail({ params }: PageProps) {
   const { slug } = await params;
   const pokemonData = await getPokemonBundleEdge();
