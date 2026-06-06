@@ -116,7 +116,7 @@ export default function LearnsetsIndexClient({ summaries }: Props) {
         {filtered.map((s) => (
           <Link
             key={s.slug}
-            href={`/pokemon/${s.slug}`}
+            href={`/pokemon/learnsets/${s.slug}`}
             className="flex items-center gap-3 rounded-xl border border-gray-100 bg-white p-3 shadow-sm transition hover:border-indigo-200 hover:bg-indigo-50"
           >
             <ImageWithFallback

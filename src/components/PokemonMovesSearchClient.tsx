@@ -51,7 +51,7 @@ export default function PokemonMovesSearchClient({ moves }: Props) {
           {filtered.map((m) => (
             <Link
               key={m.slug}
-              href={`/moves/${m.slug}`}
+              href={`/pokemon/moves/${m.slug}`}
               className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm transition hover:border-indigo-200 hover:bg-indigo-50 hover:shadow-md"
             >
               <p className="text-xs uppercase text-gray-500">{m.generation}</p>

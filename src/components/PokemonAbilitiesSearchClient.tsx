@@ -16,7 +16,14 @@ function AbilityCard({ ability }: { ability: AbilityRecord }) {
   return (
     <article className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm">
       <p className="text-xs uppercase text-gray-500">{ability.generation}</p>
-      <h2 className="text-lg font-semibold text-gray-900">{ability.name}</h2>
+      <Link
+        href={`/pokemon/abilities/${ability.slug}`}
+        className="group inline-block"
+      >
+        <h2 className="text-lg font-semibold text-gray-900 group-hover:text-indigo-700">
+          {ability.name}
+        </h2>
+      </Link>
       {ability.shortEffect && <p className="mt-1 text-xs text-gray-700">{ability.shortEffect}</p>}
       {ability.pokemon.length > 0 && (
         <div className="mt-3">

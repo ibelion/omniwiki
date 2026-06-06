@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 
 interface TypeRecord {
   slug: string;
@@ -81,15 +82,17 @@ const TYPE_COLORS: Record<string, string> = {
   fairy: "bg-fuchsia-200 text-fuchsia-800",
 };
 
-function TypeBadge({ name, small }: { name: string; small?: boolean }) {
+function TypeBadge({ name, small, href }: { name: string; small?: boolean; href?: string }) {
   const color = TYPE_COLORS[name.toLowerCase()] ?? "bg-gray-100 text-gray-700";
-  return (
-    <span
-      className={`inline-block rounded font-semibold capitalize ${color} ${small ? "px-1 py-0.5 text-[10px]" : "px-2 py-0.5 text-xs"}`}
-    >
-      {name}
-    </span>
-  );
+  const className = `inline-block rounded font-semibold capitalize ${color} ${small ? "px-1 py-0.5 text-[10px]" : "px-2 py-0.5 text-xs"}`;
+  if (href) {
+    return (
+      <Link href={href} className={`${className} transition hover:opacity-80`}>
+        {name}
+      </Link>
+    );
+  }
+  return <span className={className}>{name}</span>;
 }
 
 export function TypesSearchClient({ types }: TypesSearchClientProps) {
@@ -183,7 +186,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
           {sortedTypes.map((attacker) => (
             <div key={attacker.slug} className="flex items-center gap-1 mb-0.5">
               <div className="w-[68px] flex-shrink-0 text-right pr-1">
-                <TypeBadge name={attacker.name} small />
+                <TypeBadge name={attacker.name} small href={`/pokemon/types/${attacker.slug}`} />
               </div>
               {sortedTypes.map((defender) => {
                 // How much does attacker deal to defender?
@@ -227,14 +230,14 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
             >
               <p className="text-xs uppercase text-gray-500">{type.generation}</p>
               <div className="mb-3 mt-1">
-                <TypeBadge name={type.name} />
+                <TypeBadge name={type.name} href={`/pokemon/types/${type.slug}`} />
               </div>
               <div className="grid gap-2">
                 {type.doubleDamageTo.length > 0 && (
                   <div>
                     <p className="mb-1 text-xs font-semibold text-rose-600">2× to</p>
                     <div className="flex flex-wrap gap-1">
-                      {type.doubleDamageTo.map((t) => <TypeBadge key={t} name={t} small />)}
+                      {type.doubleDamageTo.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>
                   </div>
                 )}
@@ -242,7 +245,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                   <div>
                     <p className="mb-1 text-xs font-semibold text-emerald-600">½× to</p>
                     <div className="flex flex-wrap gap-1">
-                      {type.halfDamageTo.map((t) => <TypeBadge key={t} name={t} small />)}
+                      {type.halfDamageTo.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>
                   </div>
                 )}
@@ -250,7 +253,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                   <div>
                     <p className="mb-1 text-xs font-semibold text-slate-500">0× to</p>
                     <div className="flex flex-wrap gap-1">
-                      {type.noDamageTo.map((t) => <TypeBadge key={t} name={t} small />)}
+                      {type.noDamageTo.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>
                   </div>
                 )}
@@ -258,7 +261,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                   <div>
                     <p className="mb-1 text-xs font-semibold text-rose-400">2× from</p>
                     <div className="flex flex-wrap gap-1">
-                      {type.doubleDamageFrom.map((t) => <TypeBadge key={t} name={t} small />)}
+                      {type.doubleDamageFrom.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>
                   </div>
                 )}
@@ -266,7 +269,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                   <div>
                     <p className="mb-1 text-xs font-semibold text-emerald-400">½× from</p>
                     <div className="flex flex-wrap gap-1">
-                      {type.halfDamageFrom.map((t) => <TypeBadge key={t} name={t} small />)}
+                      {type.halfDamageFrom.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>
                   </div>
                 )}
@@ -274,7 +277,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                   <div>
                     <p className="mb-1 text-xs font-semibold text-slate-400">0× from</p>
                     <div className="flex flex-wrap gap-1">
-                      {type.noDamageFrom.map((t) => <TypeBadge key={t} name={t} small />)}
+                      {type.noDamageFrom.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>
                   </div>
                 )}

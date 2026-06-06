@@ -70,6 +70,8 @@ export default async function PokemonDetail({ params }: PageProps) {
     }
   }
   
+  const pokemonById = new Map(pokemonData.pokemon.map((p) => [p.id, p.slug]));
+
   const abilities = pokemonData.abilities.filter((a) =>
     a.pokemon.includes(pokemon?.slug ?? "")
   );
@@ -224,28 +226,31 @@ export default async function PokemonDetail({ params }: PageProps) {
         </h2>
         <div className="flex flex-wrap gap-2 text-xs">
           {pokemon?.defenseProfile.weaknesses.map((w) => (
-            <span
+            <Link
               key={`${w.type}-${w.multiplier}`}
-              className="rounded-full bg-rose-50 px-2 py-1 font-semibold text-rose-700"
+              href={`/pokemon/types/${w.type}`}
+              className="rounded-full bg-rose-50 px-2 py-1 font-semibold text-rose-700 transition hover:bg-rose-100"
             >
               {w.type} ×{w.multiplier}
-            </span>
+            </Link>
           ))}
           {pokemon?.defenseProfile.resistances.map((r) => (
-            <span
+            <Link
               key={`${r.type}-${r.multiplier}`}
-              className="rounded-full bg-emerald-50 px-2 py-1 font-semibold text-emerald-700"
+              href={`/pokemon/types/${r.type}`}
+              className="rounded-full bg-emerald-50 px-2 py-1 font-semibold text-emerald-700 transition hover:bg-emerald-100"
             >
               {r.type} ×{r.multiplier}
-            </span>
+            </Link>
           ))}
           {pokemon?.defenseProfile.immunities.map((i) => (
-            <span
+            <Link
               key={i}
-              className="rounded-full bg-slate-100 px-2 py-1 font-semibold text-slate-700"
+              href={`/pokemon/types/${i}`}
+              className="rounded-full bg-slate-100 px-2 py-1 font-semibold text-slate-700 transition hover:bg-slate-200"
             >
               {i} ×0
-            </span>
+            </Link>
           ))}
         </div>
       </section>
@@ -277,21 +282,39 @@ export default async function PokemonDetail({ params }: PageProps) {
             Evolutions
           </h2>
           <div className="flex flex-col gap-2 text-sm text-gray-700">
-            {evolutions.map((evo) => (
-              <div
-                key={`${evo.chainId}-${evo.stageIndex}-${evo.fromId}-${evo.toId}`}
-                className="rounded-lg border border-gray-100 bg-gray-50 p-3"
-              >
-                <p className="font-semibold">
-                  {evo.fromName} → {evo.toName}
-                </p>
-                <p className="text-gray-600">
-                  Trigger: {evo.trigger || "unknown"} · Min level:{" "}
-                  {evo.minLevel ?? "—"} · Item: {evo.item || "—"} · Time:{" "}
-                  {evo.timeOfDay || "—"}
-                </p>
-              </div>
-            ))}
+            {evolutions.map((evo) => {
+              const fromSlug = evo.fromId ? pokemonById.get(evo.fromId) : null;
+              const toSlug = evo.toId ? pokemonById.get(evo.toId) : null;
+              return (
+                <div
+                  key={`${evo.chainId}-${evo.stageIndex}-${evo.fromId}-${evo.toId}`}
+                  className="rounded-lg border border-gray-100 bg-gray-50 p-3"
+                >
+                  <p className="font-semibold">
+                    {fromSlug ? (
+                      <Link href={`/pokemon/${fromSlug}`} className="text-indigo-700 hover:underline">
+                        {evo.fromName}
+                      </Link>
+                    ) : (
+                      evo.fromName
+                    )}
+                    {" → "}
+                    {toSlug ? (
+                      <Link href={`/pokemon/${toSlug}`} className="text-indigo-700 hover:underline">
+                        {evo.toName}
+                      </Link>
+                    ) : (
+                      evo.toName
+                    )}
+                  </p>
+                  <p className="text-gray-600">
+                    Trigger: {evo.trigger || "unknown"} · Min level:{" "}
+                    {evo.minLevel ?? "—"} · Item: {evo.item || "—"} · Time:{" "}
+                    {evo.timeOfDay || "—"}
+                  </p>
+                </div>
+              );
+            })}
             {evolutions.length === 0 && (
               <p className="text-sm text-gray-500">No evolution data.</p>
             )}
