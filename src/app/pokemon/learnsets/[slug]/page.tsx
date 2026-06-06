@@ -10,9 +10,6 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateStaticParams() {
-  return Object.keys(pokemonData.learnsets ?? {}).map((slug) => ({ slug }));
-}
 
 const GENERATION_ORDER = [
   "generation-i",
