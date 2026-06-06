@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPokemonBundleEdge } from "@/lib/edge-data";
+
+export const dynamic = "force-dynamic";
 import type {
   LearnsetEntry,
   PokemonRecord,
