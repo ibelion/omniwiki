@@ -122,8 +122,8 @@ export default async function PokemonDetail({ params }: PageProps) {
               {pokemon?.types.map((type) => (
                 <Link
                   key={type}
-                  href={`/pokemon?type=${type}`}
-                  className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 transition hover:bg-indigo-100"
+                  href={`/pokemon/types/${type}`}
+                  className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 capitalize transition hover:bg-indigo-100"
                 >
                   {type}
                 </Link>
@@ -257,13 +257,14 @@ export default async function PokemonDetail({ params }: PageProps) {
           </h2>
           <div className="flex flex-col gap-2 text-sm text-gray-700">
             {abilities.map((ability) => (
-              <div
+              <Link
                 key={ability.id}
-                className="rounded-lg border border-gray-100 bg-gray-50 p-3"
+                href={`/pokemon/abilities/${ability.slug}`}
+                className="rounded-lg border border-gray-100 bg-gray-50 p-3 transition hover:border-indigo-200 hover:bg-indigo-50"
               >
-                <p className="font-semibold">{ability.name}</p>
+                <p className="font-semibold text-indigo-700">{ability.name}</p>
                 <p className="text-gray-600">{ability.shortEffect}</p>
-              </div>
+              </Link>
             ))}
             {abilities.length === 0 && (
               <p className="text-sm text-gray-500">No abilities listed.</p>
