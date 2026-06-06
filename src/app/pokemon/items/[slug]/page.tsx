@@ -29,7 +29,7 @@ const PRERENDER_ITEM_CATEGORIES = new Set([
 
 export async function generateStaticParams() {
   return pokemonData.items
-    .filter((i) => i.slug && PRERENDER_ITEM_CATEGORIES.has(i.category))
+    .filter((i) => i.slug && i.category != null && PRERENDER_ITEM_CATEGORIES.has(i.category))
     .map((i) => ({ slug: i.slug }));
 }
 
