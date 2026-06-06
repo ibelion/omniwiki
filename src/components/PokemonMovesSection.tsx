@@ -159,7 +159,7 @@ export const PokemonMovesSection = ({
                               .map(({ move, entry }) => (
                                 <Link
                                   key={`${move.id}-${entry.generation}-${entry.method}-${entry.level ?? "none"}-${entry.versionGroups.join(",")}`}
-                                  href={`/moves/${move.slug}`}
+                                  href={`/pokemon/moves/${move.slug}`}
                                   className="rounded-lg border border-gray-100 bg-white p-3 text-sm text-gray-700 transition hover:border-indigo-200 hover:bg-indigo-50"
                                 >
                                   <div className="flex items-center justify-between">
