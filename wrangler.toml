@@ -6,3 +6,10 @@ compatibility_flags = ["nodejs_compat"]
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
+
+# Incremental cache: new universe pages are rendered on first request and
+# stored here. Existing Pokemon/moves/learnsets pages are served as pre-
+# rendered static HTML from ASSETS and never touch this cache.
+[[kv_namespaces]]
+binding = "NEXT_INC_CACHE_KV"
+id = "f558ac91d1cf49d3a1f731354db1f2d8"
