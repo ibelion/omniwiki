@@ -8,9 +8,28 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+// Pre-render only the item categories that are genuinely useful as detail pages.
+// This keeps us under the Cloudflare Workers 20k static-asset limit while
+// still covering held items, evolution items, mega stones, Z-crystals, Pokéballs,
+// type plates/memories/jewels, vitamins, and healing/status items.
+const PRERENDER_ITEM_CATEGORIES = new Set([
+  "held-items",      // items Pokemon can hold — linked from Pokédex entries
+  "mega-stones",     // Gen 6 mega evolution items
+  "evolution",       // evolution-trigger items (stones, scales, etc.)
+  "vitamins",        // EV-training consumables
+  "z-crystals",      // Gen 7 Z-move holders
+  "nature-mints",    // Sword/Shield nature changers
+  "type-enhancement",// Mystic Water, Charcoal, etc.
+  "plates",          // Arceus type-changing held items
+  "memories",        // Silvally type-changing held items
+  "standard-balls",  // standard Pokéballs
+  "special-balls",   // Master Ball, Sport Ball, etc.
+  "apricorn-balls",  // Friend Ball, Lure Ball, etc.
+]);
+
 export async function generateStaticParams() {
   return pokemonData.items
-    .filter((i) => i.slug)
+    .filter((i) => i.slug && PRERENDER_ITEM_CATEGORIES.has(i.category))
     .map((i) => ({ slug: i.slug }));
 }
 

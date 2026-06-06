@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPokemonBundleEdge } from "@/lib/edge-data";
-
-export const dynamic = "force-dynamic";
+import { pokemonData } from "@/lib/pokemon/data";
 import type {
   LearnsetEntry,
   PokemonRecord,
@@ -210,9 +208,14 @@ const summarizeLearners = (
   return summariesList.sort((a, b) => a.pokemon.id - b.pokemon.id);
 };
 
+export async function generateStaticParams() {
+  return pokemonData.moves
+    .filter((m) => m.slug)
+    .map((m) => ({ slug: m.slug }));
+}
+
 export default async function MoveDetail({ params }: PageProps) {
   const { slug } = await params;
-  const pokemonData = await getPokemonBundleEdge();
   const move = pokemonData.moves.find((m) => m.slug === slug);
   if (!move) {
     notFound();

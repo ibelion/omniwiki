@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPokemonBundleEdge } from "@/lib/edge-data";
-
-export const dynamic = "force-dynamic";
+import { pokemonData } from "@/lib/pokemon/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 import { normalizeMoveSlug, createNormalizedMoveIndex } from "@/lib/pokemon/moveNormalization";
@@ -143,10 +141,15 @@ function groupByMethod(
   return result;
 }
 
+export async function generateStaticParams() {
+  const learnsets = pokemonData.learnsets ?? {};
+  return Object.entries(learnsets)
+    .filter(([, entries]) => entries.length > 0)
+    .map(([slug]) => ({ slug }));
+}
+
 export default async function LearnsetDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  const pokemonData = await getPokemonBundleEdge();
-
   const pokemon = pokemonData.pokemon.find((p) => p.slug === slug);
   if (!pokemon) notFound();
 
