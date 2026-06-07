@@ -12,6 +12,10 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
+// Only serve pre-rendered champion pages; any other slug (e.g. /league/voicelines)
+// returns 404 cleanly rather than crashing at runtime.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return leagueData.champions.map((c) => ({ slug: c.slug }));
 }

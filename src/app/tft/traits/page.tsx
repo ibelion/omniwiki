@@ -42,7 +42,7 @@ export default function TFTTraitsPage() {
                     className={`rounded-full px-2 py-0.5 text-xs font-medium ${TIER_STYLES[tier.style] ?? "bg-gray-100 text-gray-600"}`}
                   >
                     {tier.minUnits}
-                    {tier.minUnits !== tier.maxUnits ? `–${tier.maxUnits}` : ""}
+                    {tier.minUnits !== tier.maxUnits && tier.maxUnits < 9999 ? `–${tier.maxUnits}` : ""}
                   </span>
                 ))}
               </div>

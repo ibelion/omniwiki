@@ -4,10 +4,22 @@ import { useState } from "react";
 import { tftData } from "@/lib/tft/data";
 import { BackLink } from "@/components/BackLink";
 
+// CommunityDragon localization keys that weren't resolved look like
+// "TFT_item_name_foo" or "game_item_displayname_foo" — three or more
+// underscore-separated segments, no spaces, starting with a letter.
+const isLocalizationKey = (s: string) =>
+  /^[A-Za-z][A-Za-z0-9]*(_[A-Za-z0-9]+){2,}$/.test(s.trim());
+
+const isResolved = (item: { name: string; description: string }) =>
+  item.name.trim() !== "" &&
+  !isLocalizationKey(item.name) &&
+  !isLocalizationKey(item.description);
+
 export default function TFTItemsPage() {
   const [search, setSearch] = useState("");
 
   const filtered = tftData.items
+    .filter(isResolved)
     .filter(
       (item) =>
         search === "" ||

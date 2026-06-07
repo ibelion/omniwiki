@@ -7,6 +7,7 @@ import type {
   MoveRecord,
 } from "@/lib/pokemon/types";
 import { formatVersionGroups } from "@/lib/pokemon/versionGroups";
+import { normalizeMoveSlug } from "@/lib/pokemon/moveNormalization";
 import { BackLink } from "@/components/BackLink";
 
 type PageProps = {
@@ -157,7 +158,7 @@ const summarizeLearners = (
     const creature = pokemonMap.get(pokemonSlug);
     if (!creature) continue;
 
-    const relevantEntries = entries.filter((entry) => entry.move === moveSlug);
+    const relevantEntries = entries.filter((entry) => normalizeMoveSlug(entry.move) === moveSlug);
     if (relevantEntries.length === 0) continue;
 
     let existing = summaries.get(pokemonSlug);

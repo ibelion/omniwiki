@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { pokemonData } from "@/lib/pokemon/data";
-import { getPokemonBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
+
+// Only serve pre-rendered item pages; unrecognised slugs return 404 cleanly.
+export const dynamicParams = false;
 
 // Pre-render only the item categories that are genuinely useful as detail pages.
 // This keeps us under the Cloudflare Workers 20k static-asset limit while
@@ -36,10 +38,7 @@ export async function generateStaticParams() {
 
 export default async function ItemDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  // Use edge-data so the Worker can render non-pre-rendered items at runtime
-  // (KV caches the result). generateStaticParams still uses pokemonData for
-  // the 352 most-visited categories so those are served as static HTML.
-  const data = await getPokemonBundleEdge();
+  const data = pokemonData;
   const item = data.items.find((i) => i.slug === slug);
   if (!item) notFound();
 
