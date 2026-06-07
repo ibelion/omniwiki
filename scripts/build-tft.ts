@@ -19,7 +19,12 @@ type CDTrait = {
   name: string;
   desc: string;
   icon: string;
-  effects: { minUnits: number; maxUnits: number; style?: number }[];
+  effects: {
+    minUnits: number;
+    maxUnits: number;
+    style?: number;
+    variables?: Record<string, number | null>;
+  }[];
 };
 
 type CDItem = {
@@ -28,6 +33,7 @@ type CDItem = {
   name: string;
   desc: string;
   icon: string;
+  effects?: Record<string, number | null>;
 };
 
 type CDSetData = {
@@ -55,6 +61,83 @@ function cdToUrl(assetPath: string | undefined | null): string | null {
     .replace(/\.tex$/i, '.png')
     .toLowerCase();
   return `${CD_BASE}/game/${normalized}`;
+}
+
+/**
+ * Substitute @VARNAME@ and @VARNAME*scalar@ tokens in a CommunityDragon description.
+ * varSets is an array of variable maps (one per tier for traits, one entry for items).
+ * When a variable differs across tiers, the unique values are shown as "A/B/C".
+ */
+function substituteVars(
+  desc: string,
+  varSets: Record<string, number | null>[]
+): string {
+  if (!desc) return '';
+
+  let result = desc;
+
+  // Strip unresolvable cross-references like @TFTUnitProperty.:TraitKey@
+  result = result.replace(/@TFTUnitProperty\.[^@]*@/g, '');
+
+  // Replace @VARNAME*scalar@ and @VARNAME@ using values from all provided tier variable sets
+  result = result.replace(/@([A-Za-z0-9_{}.:]+)(?:\*([0-9.]+))?@/g, (_, varName, multStr) => {
+    const mult = multStr ? parseFloat(multStr) : 1;
+    const seen = new Set<string>();
+    const values: string[] = [];
+
+    for (const vars of varSets) {
+      const raw = vars[varName];
+      if (raw == null) continue;
+      const computed = raw * mult;
+      // Use integer format when the result is a whole number
+      const formatted = Number.isInteger(computed)
+        ? computed.toString()
+        : (Math.round(computed * 10) / 10).toString();
+      if (!seen.has(formatted)) {
+        seen.add(formatted);
+        values.push(formatted);
+      }
+    }
+
+    if (values.length === 0) return '';
+    return values.join('/');
+  });
+
+  // Strip <row>...</row> blocks — they contain per-tier numeric breakpoints that are
+  // already captured in the tiers array, so they're redundant in the description.
+  result = result.replace(/<row>[\s\S]*?<\/row>/gi, '');
+
+  // Strip %i:iconname% icon tokens (game UI icons, meaningless as text)
+  result = result.replace(/%i:[a-zA-Z]+%/g, '');
+
+  // Unwrap flavour/rule tags — keep their inner text
+  result = result.replace(/<\/?tftitemrules>/gi, '');
+  result = result.replace(/<\/?rules>/gi, '');
+
+  // Unwrap styled-text tags that wrap colored/bolded content — keep inner text
+  result = result.replace(
+    /<\/?(?:TFTKeyword|tftbold|magicDamage|TFTTrackerLabel|TFTHighlight|TFTShadowItemBonus|TFTStargazer|status|TFTGuildInactive|TFTBonus|li)>/gi,
+    ''
+  );
+
+  // Conditional blocks (ShowIf / ShowIfNot) — include the content, strip the tags
+  result = result.replace(/<\/?ShowIf[^>]*>/gi, '');
+  result = result.replace(/<\/?ShowIfNot[^>]*>/gi, '');
+  result = result.replace(/<\/?expandRow>/gi, '');
+
+  // Strip {{ keyword template references }} (cross-refs to keyword dictionary we don't have)
+  result = result.replace(/\{\{[^}]+\}\}/g, '');
+
+  // Convert HTML line-break tags
+  result = result.replace(/<br\s*\/?>/gi, '\n');
+
+  // Decode basic HTML entities
+  result = result.replace(/&nbsp;/g, ' ');
+
+  // Collapse excess blank lines and trim
+  result = result.replace(/\n{3,}/g, '\n\n').trim();
+
+  return result;
 }
 
 const PUBLIC_BUNDLE_DIR = path.resolve('public/tftcontent/data');
@@ -90,17 +173,20 @@ async function main(): Promise<void> {
 
     const traits = latestSet.traits
       .filter((t) => t.name && t.name.trim())
-      .map((t) => ({
-        id: t.apiName,
-        name: t.name,
-        description: t.desc ?? '',
-        image: cdToUrl(t.icon),
-        tiers: (t.effects ?? []).map((e) => ({
-          minUnits: e.minUnits,
-          maxUnits: e.maxUnits,
-          style: e.style ?? 0,
-        })),
-      }));
+      .map((t) => {
+        const varSets = (t.effects ?? []).map((e) => e.variables ?? {});
+        return {
+          id: t.apiName,
+          name: t.name,
+          description: substituteVars(t.desc ?? '', varSets),
+          image: cdToUrl(t.icon),
+          tiers: (t.effects ?? []).map((e) => ({
+            minUnits: e.minUnits,
+            maxUnits: e.maxUnits,
+            style: e.style ?? 0,
+          })),
+        };
+      });
 
     // Items: filter to TFT_Item prefixed with real names (no template placeholders)
     const items = (data.items ?? [])
@@ -111,12 +197,16 @@ async function main(): Promise<void> {
           !i.name.includes('@') &&
           i.icon
       )
-      .map((i) => ({
-        id: i.apiName,
-        name: i.name,
-        description: i.desc ?? '',
-        image: cdToUrl(i.icon),
-      }));
+      .map((i) => {
+        // Items have a flat effects object (one tier), wrap in array for substituteVars
+        const varSets = i.effects ? [i.effects] : [];
+        return {
+          id: i.apiName,
+          name: i.name,
+          description: substituteVars(i.desc ?? '', varSets),
+          image: cdToUrl(i.icon),
+        };
+      });
 
     const bundle: TFTBundle = { champions, items, traits };
 
