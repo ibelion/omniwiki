@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { pokemonData } from "@/lib/pokemon/data";
+import { getPokemonBundleEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
@@ -35,11 +36,15 @@ export async function generateStaticParams() {
 
 export default async function ItemDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  const item = pokemonData.items.find((i) => i.slug === slug);
+  // Use edge-data so the Worker can render non-pre-rendered items at runtime
+  // (KV caches the result). generateStaticParams still uses pokemonData for
+  // the 352 most-visited categories so those are served as static HTML.
+  const data = await getPokemonBundleEdge();
+  const item = data.items.find((i) => i.slug === slug);
   if (!item) notFound();
 
-  const pokemonMap = new Map(pokemonData.pokemon.map((p) => [p.slug, p]));
-  const holders = (pokemonData.pokemonItems ?? [])
+  const pokemonMap = new Map(data.pokemon.map((p) => [p.slug, p]));
+  const holders = (data.pokemonItems ?? [])
     .filter((e) => e.itemSlug === slug)
     .map((e) => {
       const p = pokemonMap.get(e.pokemonSlug);
@@ -47,12 +52,12 @@ export default async function ItemDetailPage({ params }: PageProps) {
     })
     .filter(Boolean)
     .sort((a, b) => a!.pokemon.id - b!.pokemon.id) as {
-      pokemon: (typeof pokemonData.pokemon)[number];
+      pokemon: (typeof data.pokemon)[number];
       rarity: number | null;
       version: string | null;
     }[];
 
-  const movesWithItem = pokemonData.moves.filter(
+  const movesWithItem = data.moves.filter(
     (m) => m.slug === slug || (item.category === "machines" && m.slug === slug)
   );
 
