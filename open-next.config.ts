@@ -1,5 +1,4 @@
 import type { OpenNextConfig } from "@opennextjs/cloudflare";
-import kvIncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/kv-incremental-cache";
 
 const config: OpenNextConfig = {
   default: {
@@ -7,10 +6,7 @@ const config: OpenNextConfig = {
       wrapper: "cloudflare-node",
       converter: "edge",
       proxyExternalRequest: "fetch",
-      // KV-backed incremental cache: pre-rendered pages are served directly
-      // from static ASSETS; new routes rendered at runtime are cached here.
-      // This removes the 20k static-asset cap for future universe additions.
-      incrementalCache: () => kvIncrementalCache,
+      incrementalCache: "dummy",
       tagCache: "dummy",
       queue: "dummy",
     },
