@@ -40,3 +40,8 @@ log.txt
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Generated build artifacts — too large for git; re-run build scripts to recreate
+public/pokemoncontent/data/bundle.json
+public/exports/pokemon/learnsets/
+.open-next/

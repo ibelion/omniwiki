@@ -12,7 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          lfs: true
+          # Sparse checkout: skip the 2.5 GB cdn/ image/audio tree that is only
+          # used as a GitHub raw CDN source, not needed at build time.
+          # cdn/pokemoncontent/data is included because data.ts reads the gzip
+          # bundle from there (eliminates the 109 MB LFS file from the pipeline).
+          sparse-checkout-cone-mode: true
+          sparse-checkout: |
+            src
+            public
+            scripts
+            cdn/pokemoncontent/data
 
       - uses: actions/setup-node@v4
         with:

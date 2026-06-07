@@ -1,14 +1,14 @@
 import type { PokemonDataBundle } from "./types";
 import { readFileSync } from "fs";
+import { gunzipSync } from "zlib";
 import { join } from "path";
 
-// readFileSync is a runtime operation — webpack/esbuild never bundle the file
-// content into handler.mjs. At Next.js SSG build time Node.js reads it from
-// disk. Pre-rendered pages are served from ASSETS at Worker runtime so this
-// module code never executes there.
-const bundleData: PokemonDataBundle = JSON.parse(
-  readFileSync(join(process.cwd(), "public/pokemoncontent/data/bundle.json"), "utf8")
-);
+// Read the gzip-compressed bundle from cdn/ (3.9 MB) rather than the 109 MB
+// plain-JSON that used to live in public/ under git LFS.  zlib.gunzipSync is
+// synchronous and available in Node; this code only runs at Next.js SSG build
+// time and in scripts/split-learnsets.ts — never in the CF Worker runtime.
+const gzipped = readFileSync(join(process.cwd(), "cdn/pokemoncontent/data/bundle.json"));
+const bundleData: PokemonDataBundle = JSON.parse(gunzipSync(gzipped).toString("utf8"));
 
 export const pokemonData = bundleData;
 
