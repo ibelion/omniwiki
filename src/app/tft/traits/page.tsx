@@ -1,6 +1,9 @@
 import { tftData } from "@/lib/tft/data";
 import { BackLink } from "@/components/BackLink";
 
+// Strip CommunityDragon @variable@ tokens that were never resolved in the bundle.
+const stripTokens = (html: string) => html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").trim();
+
 const TIER_STYLES: Record<number, string> = {
   1: "bg-gray-100 text-gray-700",
   2: "bg-blue-100 text-blue-700",
@@ -31,7 +34,7 @@ export default function TFTTraitsPage() {
             {trait.description && (
               <p
                 className="text-xs text-gray-600"
-                dangerouslySetInnerHTML={{ __html: trait.description }}
+                dangerouslySetInnerHTML={{ __html: stripTokens(trait.description) }}
               />
             )}
             {trait.tiers.length > 0 && (
