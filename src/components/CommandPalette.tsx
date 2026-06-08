@@ -158,6 +158,49 @@ export function CommandPalette() {
               }))
             );
           }
+
+          const bundleRes = await fetch("/leaguecontent/data/bundle.json", {
+            cache: "force-cache",
+          });
+          if (bundleRes.ok) {
+            const bundle = (await bundleRes.json()) as {
+              lore?: { slug: string; champion: string }[];
+              factions?: { slug: string; name: string }[];
+              skinLines?: { id: number; name: string; skinIds?: number[]; skinCount?: number }[];
+            };
+            if (bundle.lore) {
+              allEntries.push(
+                ...bundle.lore.map((l) => ({
+                  slug: l.slug,
+                  name: l.champion,
+                  category: "Lore",
+                  href: `/league/lore/${l.slug}`,
+                }))
+              );
+            }
+            if (bundle.factions) {
+              allEntries.push(
+                ...bundle.factions.map((f) => ({
+                  slug: f.slug,
+                  name: f.name,
+                  category: "Faction",
+                  href: `/league/factions/${f.slug}`,
+                }))
+              );
+            }
+            if (bundle.skinLines) {
+              allEntries.push(
+                ...bundle.skinLines
+                  .filter((sl) => (sl.skinCount ?? sl.skinIds?.length ?? 0) > 0)
+                  .map((sl) => ({
+                    slug: String(sl.id),
+                    name: sl.name,
+                    category: "Skin Line",
+                    href: `/league/skin-lines/${sl.id}`,
+                  }))
+              );
+            }
+          }
         }
 
         if (pathname?.startsWith("/moves") || pathname?.startsWith("/pokemon")) {
@@ -258,8 +301,17 @@ export function CommandPalette() {
   }, [entries, query]);
 
   const placeholder = useMemo(() => {
+    if (pathname?.startsWith("/league/lore")) {
+      return "Search lore, champions, factions… (Ctrl/Cmd + K)";
+    }
+    if (pathname?.startsWith("/league/factions")) {
+      return "Search factions, champions… (Ctrl/Cmd + K)";
+    }
+    if (pathname?.startsWith("/league/skin-lines")) {
+      return "Search skin lines, champions… (Ctrl/Cmd + K)";
+    }
     if (pathname?.startsWith("/league")) {
-      return "Search Champions (Ctrl/Cmd + K)";
+      return "Search champions, items, runes… (Ctrl/Cmd + K)";
     }
     if (pathname?.startsWith("/moves")) {
       return "Search Moves (Ctrl/Cmd + K)";
