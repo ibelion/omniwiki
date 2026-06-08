@@ -100,9 +100,12 @@ export function FactionsList({ factions, lore, champions }: Props) {
                     <p className="text-xs uppercase tracking-wide text-gray-400">
                       {faction.slug}
                     </p>
-                    <h2 className="text-lg font-semibold text-gray-900">
+                    <Link
+                      href={`/league/factions/${faction.slug}`}
+                      className="text-lg font-semibold text-gray-900 hover:text-emerald-700"
+                    >
                       {faction.name}
-                    </h2>
+                    </Link>
                   </div>
                   {factionChampions.length > 0 && (
                     <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
