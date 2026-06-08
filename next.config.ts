@@ -37,6 +37,15 @@ const nextConfig: NextConfig = {
     ],
   },
   headers: async () => [],
+  async redirects() {
+    return [
+      {
+        source: "/league/voicelines",
+        destination: "/league/quotes",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
