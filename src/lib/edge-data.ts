@@ -36,8 +36,8 @@ const getBaseUrl = () => {
       return "http://127.0.0.1:3000";
     }
   }
-  // Default to production URL
-  return "https://omniwiki.pages.dev";
+  // No URL available — relative fetches should have worked above
+  return "";
 };
 
 const decoder = new TextDecoder();

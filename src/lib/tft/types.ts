@@ -31,6 +31,7 @@ export type TFTItemRecord = {
   name: string;
   description: string;
   image: string | null;
+  composition?: string[]; // apiNames of component items (2 for combined, 0 for base components)
 };
 
 export type TFTTraitRecord = {

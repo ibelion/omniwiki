@@ -55,6 +55,7 @@ type CDItem = {
   desc: string;
   icon: string;
   effects?: Record<string, number | null>;
+  composition?: string[]; // apiNames of component items (2 for combined, 0 for base)
 };
 
 type CDSetData = {
@@ -90,7 +91,7 @@ type TFTBundle = {
     ability?: { name: string; description: string; icon: string | null };
     stats?: { hp: number; damage: number; armor: number; magicResist: number; attackSpeed: number; mana: number; initialMana: number; range: number };
   }[];
-  items: { id: string; name: string; description: string; image: string | null }[];
+  items: { id: string; name: string; description: string; image: string | null; composition: string[] }[];
   traits: { id: string; name: string; description: string; image: string | null; tiers: { minUnits: number; maxUnits: number; style: number }[] }[];
   augments: { id: string; name: string; description: string; image: string | null; tier: number | null }[];
 };
@@ -314,6 +315,7 @@ async function main(): Promise<void> {
           name: i.name,
           description: substituteVars(i.desc ?? '', varSets),
           image: cdToUrl(i.icon),
+          composition: (i.composition ?? []).filter(Boolean),
         };
       });
 
