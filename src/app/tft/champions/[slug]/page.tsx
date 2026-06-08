@@ -174,7 +174,7 @@ export default async function TFTChampionPage({ params }: PageProps) {
                         {c.traits.map((t) => (
                           <Link key={t} href={`/tft/traits/${toSlug(t)}`}
                             className="rounded-full bg-teal-50 px-2 py-0.5 text-xs text-teal-700 hover:bg-teal-100"
-                            onClick={(e) => e.stopPropagation()}>
+                          >
                             {t}
                           </Link>
                         ))}

@@ -119,8 +119,7 @@ export default async function TFTTraitPage({ params }: PageProps) {
                       <div className="mt-1 flex flex-wrap gap-1">
                         {c.traits.filter((t) => t !== trait.name).map((t) => (
                           <Link key={t} href={`/tft/traits/${toSlug(t)}`}
-                            className="rounded-full bg-teal-50 px-2 py-0.5 text-xs text-teal-700 hover:bg-teal-100"
-                            onClick={(e) => e.stopPropagation()}>
+                            className="rounded-full bg-teal-50 px-2 py-0.5 text-xs text-teal-700 hover:bg-teal-100">
                             {t}
                           </Link>
                         ))}
