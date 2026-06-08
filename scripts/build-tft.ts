@@ -173,9 +173,10 @@ function substituteVars(
   result = result.replace(/<\/?tftitemrules>/gi, '');
   result = result.replace(/<\/?rules>/gi, '');
 
-  // Unwrap styled-text tags that wrap colored/bolded content — keep inner text
+  // Unwrap styled-text tags — keep inner text, strip the tags (including any attributes).
+  // [^>]* handles attribute forms like <scaleLevel enabled=TFT17_...>.
   result = result.replace(
-    /<\/?(?:TFTKeyword|tftbold|magicDamage|spellPassive|TFTTrackerLabel|TFTHighlight|TFTShadowItemBonus|TFTStargazer|status|TFTGuildInactive|TFTBonus|li)>/gi,
+    /<\/?(?:TFTKeyword|tftbold|magicDamage|physicalDamage|trueDamage|spellPassive|spellActive|TFTActive|TFTPassive|TFTTrackerLabel|TFTHighlight|TFTShadowItemBonus|TFTStargazer|TFTRadiantItemBonus|status|TFTGuildInactive|TFTBonus|li|mainText|scaleHealth|scaleLevel)[^>]*>/gi,
     ''
   );
 

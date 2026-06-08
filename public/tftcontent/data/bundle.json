@@ -214,7 +214,7 @@
       "role": "ADFighter",
       "ability": {
         "name": "Fish Frenzy",
-        "description": "Passive: For every 1% missing Health, gain Attack Speed\n\nActive: Deal <physicalDamage> </physicalDamage> physical damage to the target, increased by 50% if they're a tank.",
+        "description": "Passive: For every 1% missing Health, gain Attack Speed\n\nActive: Deal physical damage to the target, increased by 50% if they're a tank.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_briar/hud/icons2d/tft17_briarq.tft_set17.png"
       },
       "stats": {
@@ -241,7 +241,7 @@
       "role": "ADFighter",
       "ability": {
         "name": "Tidal Slashes",
-        "description": "Unleash a flurry of slashes at the current target over 2 seconds, dealing <physicalDamage> </physicalDamage> physical damage each.",
+        "description": "Unleash a flurry of slashes at the current target over 2 seconds, dealing physical damage each.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_belveth/hud/icons2d/tft17_belvethe.tft_set17.png"
       },
       "stats": {
@@ -292,7 +292,7 @@
       "role": "ADFighter",
       "ability": {
         "name": "Star Strike",
-        "description": "Reposition next to the target to strike the most enemies. Then throw 5 piercing kunai, each dealing <physicalDamage> </physicalDamage> physical damage to the first enemy hit, reduced to <physicalDamage> </physicalDamage> for each subsequent target. Kunai remove 1 Armor, 2 if they crit.\n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Slice all enemies, applying Wound and a bleed that deals <physicalDamage enabled=TFT17_DRX_isSelected> </physicalDamage> physical damage each second. Kunai increase the damage of the bleed by 12%.</scaleLevel>",
+        "description": "Reposition next to the target to strike the most enemies. Then throw 5 piercing kunai, each dealing physical damage to the first enemy hit, reduced to for each subsequent target. Kunai remove 1 Armor, 2 if they crit.\n\nN.O.V.A. Strike: Slice all enemies, applying Wound and a bleed that deals physical damage each second. Kunai increase the damage of the bleed by 12%.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_akali/hud/icons2d/tft17_akali_q.tft_set17.png"
       },
       "stats": {
@@ -318,7 +318,7 @@
       "role": "APCaster",
       "ability": {
         "name": "Ultra Friendly Object",
-        "description": "Summon a flying saucer over the current target that lasts <TFTRadiantItemBonus>5</TFTRadiantItemBonus>4 seconds. Each second it deals magic damage to the target, plus magic damage split between all enemies within 1 hex. The saucer deals 30% increased damage to Tanks.\n\nIf an enemy under the UFO dies, Bard has a 40/15/20% chance to abduct them and create a 1-star copy on your bench.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep bonus:</spellActive> On combat start, grant the nearest (i:set14AmpIcon) Meeple allies an additional Meep.</mainText>\n\nFriends abducted:",
+        "description": "Summon a flying saucer over the current target that lasts 54 seconds. Each second it deals magic damage to the target, plus magic damage split between all enemies within 1 hex. The saucer deals 30% increased damage to Tanks.\n\nIf an enemy under the UFO dies, Bard has a 40/15/20% chance to abduct them and create a 1-star copy on your bench.\n\nMeep bonus: On combat start, grant the nearest (i:set14AmpIcon) Meeple allies an additional Meep.\n\nFriends abducted:",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_bard/hud/icons2d/tft17_bard_e.tft_set17.png"
       },
       "stats": {
@@ -344,7 +344,7 @@
       "role": "ADCarry",
       "ability": {
         "name": "Explosive Attitude",
-        "description": "Fire a barrage of rockets in a cone, each dealing <physicalDamage> </physicalDamage> physical damage to the first target hit.",
+        "description": "Fire a barrage of rockets in a cone, each dealing physical damage to the first target hit.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jinx/hud/icons2d/tft17_jinx_q1.tft_set17.png"
       },
       "stats": {
@@ -371,7 +371,7 @@
       "role": "APTank",
       "ability": {
         "name": "Test of Spirit",
-        "description": "Gain Shield for 3 seconds. Over the duration, drain <trueDamage> </trueDamage> Health from the nearest 3 enemies. Then slam down, dealing magic damage to all enemies within 2 hexes.",
+        "description": "Gain Shield for 3 seconds. Over the duration, drain Health from the nearest 3 enemies. Then slam down, dealing magic damage to all enemies within 2 hexes.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_illaoi/hud/icons2d/tft17_illaoi_e_debuff.tft_set17.png"
       },
       "stats": {
@@ -424,7 +424,7 @@
       "role": "ADFighter",
       "ability": {
         "name": "Perfect Bladework",
-        "description": "Passive: Every 2 attacks, reveal a Vital on the target. If a Vital exists, dash to attack it dealing <trueDamage> </trueDamage> bonus true damage and heal for 15% of the damage dealt.\n\n<spellActive>Active:</spellActive> Reveal 6 Vitals on the target and quickly attack them all. If the target dies, remaining Vitals transfer to the nearest enemy. Upon striking the final Vital, create a two hex aura that heals allies within for <scaleHealth> </scaleHealth> over 5 seconds.",
+        "description": "Passive: Every 2 attacks, reveal a Vital on the target. If a Vital exists, dash to attack it dealing bonus true damage and heal for 15% of the damage dealt.\n\nActive: Reveal 6 Vitals on the target and quickly attack them all. If the target dies, remaining Vitals transfer to the nearest enemy. Upon striking the final Vital, create a two hex aura that heals allies within for over 5 seconds.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fiora/hud/icons2d/tft17_fiora_p.tft_set17.png"
       },
       "stats": {
@@ -450,7 +450,7 @@
       "role": "ADSpecialist",
       "ability": {
         "name": "Slingshot Maneuver",
-        "description": "Passive: Every 5th attack, launch a returning boomerang at the target that travels two hexes past the first enemy it hits. It deals <physicalDamage> </physicalDamage> physical damage, reduced by 75% per hit.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> (i:set14AmpIcon) Meeps attack alongside Gnar, dealing <physicalDamage> </physicalDamage> physical damage per second.</mainText>",
+        "description": "Passive: Every 5th attack, launch a returning boomerang at the target that travels two hexes past the first enemy it hits. It deals physical damage, reduced by 75% per hit.\n\nMeep Bonus: (i:set14AmpIcon) Meeps attack alongside Gnar, dealing physical damage per second.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gnar/hud/icons2d/tft17_gnar_q.tft_set17.png"
       },
       "stats": {
@@ -476,7 +476,7 @@
       "role": "APReaper",
       "ability": {
         "name": "Meep Bait",
-        "description": "Dash through the current target, dealing magic damage. Every third cast also summons a Mega Meep after a delay, briefly knocking the target up and dealing (i:set14AmpIcon) magic damage. Adjacent enemies take 50% damage.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Add (i:set14AmpIcon) Meep to the bait, increasing Mega Meep damage by.</mainText>",
+        "description": "Dash through the current target, dealing magic damage. Every third cast also summons a Mega Meep after a delay, briefly knocking the target up and dealing (i:set14AmpIcon) magic damage. Adjacent enemies take 50% damage.\n\nMeep Bonus: Add (i:set14AmpIcon) Meep to the bait, increasing Mega Meep damage by.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fizz/hud/icons2d/tft17_fizz_r.tft_set17.png"
       },
       "stats": {
@@ -502,7 +502,7 @@
       "role": "APTank",
       "ability": {
         "name": "Gravitational Spin",
-        "description": "Gain shield for 4 seconds. Then, strike enemies in a three hex line, dealing magic damage.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Reduce the damage of incoming attacks by (i:set14AmpIcon). After being attacked 20 times, deal (i:set14AmpIcon) magic damage in a two hex radius.</mainText>",
+        "description": "Gain shield for 4 seconds. Then, strike enemies in a three hex line, dealing magic damage.\n\nMeep Bonus: Reduce the damage of incoming attacks by (i:set14AmpIcon). After being attacked 20 times, deal (i:set14AmpIcon) magic damage in a two hex radius.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rammus/hud/icons2d/armordillo_powerball.tft_set17.png"
       },
       "stats": {
@@ -528,7 +528,7 @@
       "role": "APTank",
       "ability": {
         "name": "Huddle Up!",
-        "description": "Gain Shield for 4 seconds. For the duration, allies within two hexes gain Armor and Magic Resistance.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Meeps grant Shield to the nearest (i:set14AmpIcon) allies for 4 seconds.</mainText>",
+        "description": "Gain Shield for 4 seconds. For the duration, allies within two hexes gain Armor and Magic Resistance.\n\nMeep Bonus: Meeps grant Shield to the nearest (i:set14AmpIcon) allies for 4 seconds.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_poppy/hud/icons2d/tft17_poppy_w.tft_set17.png"
       },
       "stats": {
@@ -554,7 +554,7 @@
       "role": "ADCaster",
       "ability": {
         "name": "Asteroid Blaster",
-        "description": "Strafe to a nearby position, unleashing 21 missiles split between the target and all enemies within two hexes. Missiles deal <physicalDamage> </physicalDamage> physical damage with a 20% Lucky chance of firing a mega missile that deals <physicalDamage> </physicalDamage> instead.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Every (i:set14AmpIcon) seconds, launch an Explosive Meep at the target, dealing <physicalDamage> </physicalDamage> physical damage in a one hex radius on impact.</mainText>\n\nLucky: Check twice and take the better outcome.",
+        "description": "Strafe to a nearby position, unleashing 21 missiles split between the target and all enemies within two hexes. Missiles deal physical damage with a 20% Lucky chance of firing a mega missile that deals instead.\n\nMeep Bonus: Every (i:set14AmpIcon) seconds, launch an Explosive Meep at the target, dealing physical damage in a one hex radius on impact.\n\nLucky: Check twice and take the better outcome.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_corki/hud/icons2d/tft17_corki_missilebarrage.tft_set17.png"
       },
       "stats": {
@@ -580,7 +580,7 @@
       "role": "APCaster",
       "ability": {
         "name": "Meepteor Shower",
-        "description": "Call down a Meepteor on the target that deals magic damage.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> An additional (i:set14AmpIcon) mini Meepteor are called down on nearby targets dealing magic damage each.</mainText>",
+        "description": "Call down a Meepteor on the target that deals magic damage.\n\nMeep Bonus: An additional (i:set14AmpIcon) mini Meepteor are called down on nearby targets dealing magic damage each.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_veigar/hud/icons2d/tft17_veigardarkmatter.tft_set17.png"
       },
       "stats": {
@@ -606,7 +606,7 @@
       "role": "ADTank",
       "ability": {
         "name": "Stellar Slash",
-        "description": "Heal <scaleHealth> </scaleHealth>, then deal <physicalDamage> </physicalDamage> physical damage to the current target.\n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Cleave the battlefield, briefly knocking up all enemies and dealing <physicalDamage enabled=TFT17_DRX_isSelected> </physicalDamage> physical damage.</scaleLevel>",
+        "description": "Heal, then deal physical damage to the current target.\n\nN.O.V.A. Strike: Cleave the battlefield, briefly knocking up all enemies and dealing physical damage.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aatrox/hud/icons2d/tft17_aatrox_q2.tft_set17.png"
       },
       "stats": {
@@ -632,7 +632,7 @@
       "role": "ADSpecialist",
       "ability": {
         "name": "Aim For The Head",
-        "description": "Passive: Attacks have a 15% Lucky chance to fire an empowered Headshot, dealing <physicalDamage> </physicalDamage> physical damage.\n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Mark all enemies, increasing damage taken by 10%. The first time marked targets drop below 50% Health, Headshot them for <physicalDamage enabled=TFT17_DRX_isSelected> </physicalDamage> physical damage.\n\n</scaleLevel>Lucky: Check twice and take the better outcome.",
+        "description": "Passive: Attacks have a 15% Lucky chance to fire an empowered Headshot, dealing physical damage.\n\nN.O.V.A. Strike: Mark all enemies, increasing damage taken by 10%. The first time marked targets drop below 50% Health, Headshot them for physical damage.\n\nLucky: Check twice and take the better outcome.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_caitlyn/hud/icons2d/tft17_caitlyn_headshot.tft_set17.png"
       },
       "stats": {
@@ -658,7 +658,7 @@
       "role": "APTank",
       "ability": {
         "name": "Grasp of Convergence",
-        "description": "Passive: Gain 50% more max Health from all sources.\n\n<spellActive>Active:</spellActive> Converge an X-shape of vines on the target, dealing magic damage to each enemy hit and Stunning them for <scaleLevel>1.5</scaleLevel> seconds. \n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Send forth a wave of dragons that stun all enemies for 1.5 seconds. For the rest of combat, Maokai's attacks deal <physicalDamage enabled=TFT17_DRX_isSelected> </physicalDamage> bonus physical damage.</scaleLevel>",
+        "description": "Passive: Gain 50% more max Health from all sources.\n\nActive: Converge an X-shape of vines on the target, dealing magic damage to each enemy hit and Stunning them for 1.5 seconds. \n\nN.O.V.A. Strike: Send forth a wave of dragons that stun all enemies for 1.5 seconds. For the rest of combat, Maokai's attacks deal bonus physical damage.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_maokai/hud/icons2d/tft17_maokai_w.tft_set17.png"
       },
       "stats": {
@@ -684,7 +684,7 @@
       "role": "ADCarry",
       "ability": {
         "name": "Cosmic Pursuit",
-        "description": "Passive: Attacks and Abilities mark the target. When an enemy reaches 3 marks, Wolf consumes the marks, dealing <physicalDamage> </physicalDamage> physical damage. \n\n<spellActive>Active:</spellActive> Jump up to 1 hex away and fire arrows at the nearest <scaleLevel>3</scaleLevel> targets, each dealing <physicalDamage> </physicalDamage> physical damage. \n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Gain 10% Damage Amp. Now and every 4.5 seconds after, add a mark to all enemies.</scaleLevel>",
+        "description": "Passive: Attacks and Abilities mark the target. When an enemy reaches 3 marks, Wolf consumes the marks, dealing physical damage. \n\nActive: Jump up to 1 hex away and fire arrows at the nearest 3 targets, each dealing physical damage. \n\nN.O.V.A. Strike: Gain 10% Damage Amp. Now and every 4.5 seconds after, add a mark to all enemies.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kindred/hud/icons2d/tft17_kindred_q.tft_set17.png"
       },
       "stats": {
@@ -710,7 +710,7 @@
       "role": "ADCaster",
       "ability": {
         "name": "Bullet Cluster",
-        "description": "<tftPassive>Passive:</tftPassive> On takedown, gain 10 mana.\n\n<tftActive>Active:</tftActive> Fire 16 missiles in a 2-hex radius around the current target, dealing <physicalDamage> </physicalDamage> physical damage each.",
+        "description": "Passive: On takedown, gain 10 mana.\n\nActive: Fire 16 missiles in a 2-hex radius around the current target, dealing physical damage each.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kaisa/hud/icons2d/tft17_kaisa_q2.tft_set17.png"
       },
       "stats": {
@@ -736,7 +736,7 @@
       "role": "APCaster",
       "ability": {
         "name": "Singularity",
-        "description": "Gather the force of a black hole, dealing magic damage split between the target and the <scaleLevel>2</scaleLevel> closest enemies to them. The target takes an additional magic damage.",
+        "description": "Gather the force of a black hole, dealing magic damage split between the target and the 2 closest enemies to them. The target takes an additional magic damage.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_karma/hud/icons2d/tft17_karma_q1.tft_set17.png"
       },
       "stats": {
@@ -763,7 +763,7 @@
       "role": "ADCarry",
       "ability": {
         "name": "Space Opera",
-        "description": "Passive: Jhin has a fixed attack speed of <scaleLevel>0/0.9</scaleLevel> and converts every 1% of bonus Attack Speed into 0.8 bonus Attack Damage.\n\n<spellActive>Active:</spellActive> Summon 4 spectral hands that fire alongside Jhin for the next 4 attacks. Each hand deals <physicalDamage> </physicalDamage> physical damage per shot. The final shots deal 244% more damage and pierce through the most enemies in a line, dealing 44% reduced damage per target hit.",
+        "description": "Passive: Jhin has a fixed attack speed of 0/0.9 and converts every 1% of bonus Attack Speed into 0.8 bonus Attack Damage.\n\nActive: Summon 4 spectral hands that fire alongside Jhin for the next 4 attacks. Each hand deals physical damage per shot. The final shots deal 244% more damage and pierce through the most enemies in a line, dealing 44% reduced damage per target hit.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jhin/hud/icons2d/tft17_jhin_spell_icon.tft_set17.png"
       },
       "stats": {
@@ -790,7 +790,7 @@
       "role": "ADFighter",
       "ability": {
         "name": "Unstoppable Dreadnought",
-        "description": "Passive - Proximity Blast: Whenever an enemy enters a hex radius, fire a blast in a cone towards the closest adjacent hex that deals <physicalDamage> </physicalDamage> physical damage with 30% falloff per hex. Each adjacent hex has a 5 second cooldown, and starts combat on cooldown.\n\n<spellActive>Active:</spellActive> Gain Shield for 3 seconds and reposition up to one hex to maximize the number of targets within Proximity Blast's radius. Reset Proximity Blast's cooldowns.",
+        "description": "Passive - Proximity Blast: Whenever an enemy enters a hex radius, fire a blast in a cone towards the closest adjacent hex that deals physical damage with 30% falloff per hex. Each adjacent hex has a 5 second cooldown, and starts combat on cooldown.\n\nActive: Gain Shield for 3 seconds and reposition up to one hex to maximize the number of targets within Proximity Blast's radius. Reset Proximity Blast's cooldowns.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_urgot/hud/icons2d/tft17_urgot_e.tft_set17.png"
       },
       "stats": {
@@ -816,7 +816,7 @@
       "role": "APCaster",
       "ability": {
         "name": "Deathbeam",
-        "description": "Channel a deathbeam in a line towards the current target for <TFTRadiantItemBonus>4</TFTRadiantItemBonus>3 seconds. It deals magic damage per second, reduced by 80% per enemy it passes through. Deathbeam ignores 30% of the enemy's Magic Resist.",
+        "description": "Channel a deathbeam in a line towards the current target for 43 seconds. It deals magic damage per second, reduced by 80% per enemy it passes through. Deathbeam ignores 30% of the enemy's Magic Resist.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurelionsol/hud/icons2d/tft17_aurelionsolq.tft_set17.png"
       },
       "stats": {
@@ -842,7 +842,7 @@
       "role": "ADTank",
       "ability": {
         "name": "Gravity Matrix",
-        "description": "Enter a defensive stance for 4 seconds gaining 0/20% Durability. While in the defensive stance, attract nearby enemy projectiles and heal <scaleHealth> </scaleHealth> over the duration. When this ends, release a shockwave that deals <physicalDamage> </physicalDamage> as physical damage in a 2-hex range.",
+        "description": "Enter a defensive stance for 4 seconds gaining 0/20% Durability. While in the defensive stance, attract nearby enemy projectiles and heal over the duration. When this ends, release a shockwave that deals as physical damage in a 2-hex range.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_galio/hud/icons2d/tft17_galio_w.tft_set17.png"
       },
       "stats": {
@@ -868,7 +868,7 @@
       "role": "APCaster",
       "ability": {
         "name": "Psionic Storm",
-        "description": "Channel a one-hex psionic storm that follows enemies for <TFTRadiantItemBonus>5</TFTRadiantItemBonus>4 seconds. Each second, it grows larger and deals magic damage to enemies within, reduced by 60% per hex from the epicenter.",
+        "description": "Channel a one-hex psionic storm that follows enemies for 54 seconds. Each second, it grows larger and deals magic damage to enemies within, reduced by 60% per hex from the epicenter.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_viktor/hud/icons2d/tft17_viktor_r1.tft_set17.png"
       },
       "stats": {
@@ -894,7 +894,7 @@
       "role": "ADReaper",
       "ability": {
         "name": "Marked for Death",
-        "description": "Reposition up to one hex to throw a harpoon at the furthest enemy. The harpoon pulls the first enemy hit one hex forward and deals <physicalDamage> </physicalDamage> physical damage. Then, teleport behind them and cleave, dealing <physicalDamage> </physicalDamage> physical damage to them and <physicalDamage> </physicalDamage> physical damage to nearby enemies.",
+        "description": "Reposition up to one hex to throw a harpoon at the furthest enemy. The harpoon pulls the first enemy hit one hex forward and deals physical damage. Then, teleport behind them and cleave, dealing physical damage to them and physical damage to nearby enemies.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pyke/hud/icons2d/tft17_pykeq.tft_set17.png"
       },
       "stats": {
@@ -920,7 +920,7 @@
       "role": "ADFighter",
       "ability": {
         "name": "Psi Strikes",
-        "description": "Passive: Every third attack is a doubleslash that deals <physicalDamage> </physicalDamage> bonus physical damage.\n\n<spellActive>Active:</spellActive> After brief meditation, enter a Psi-State for 5 seconds, gaining 10% Omnivamp, 70% Attack Speed, and increased movement speed. Twice a second, fire a psychic projection at a random nearby enemy that deals <physicalDamage> </physicalDamage> physical damage",
+        "description": "Passive: Every third attack is a doubleslash that deals bonus physical damage.\n\nActive: After brief meditation, enter a Psi-State for 5 seconds, gaining 10% Omnivamp, 70% Attack Speed, and increased movement speed. Twice a second, fire a psychic projection at a random nearby enemy that deals physical damage",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_masteryi/hud/icons2d/tft17_masteryi_q.tft_set17.png"
       },
       "stats": {
@@ -946,7 +946,7 @@
       "role": "APTank",
       "ability": {
         "name": "Chemical Rage",
-        "description": "Heal <scaleHealth> </scaleHealth> over seconds. Then, deal magic damage to target and enemies adjacent to them and 30% Chill them for 2 seconds.",
+        "description": "Heal over seconds. Then, deal magic damage to target and enemies adjacent to them and 30% Chill them for 2 seconds.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gragas/hud/icons2d/tft17_gragasdrunkenrage.tft_set17.png"
       },
       "stats": {
@@ -972,7 +972,7 @@
       "role": "APCarry",
       "ability": {
         "name": "Double Time",
-        "description": "Passive: Attacks deal bonus magic damage and an additional stacking magic damage over 6 seconds. While an enemy has 5 or more stacks, Teemo is in.\n\n<spellActive>Active:</spellActive> Gain 150% Attack Speed for 3 attacks.",
+        "description": "Passive: Attacks deal bonus magic damage and an additional stacking magic damage over 6 seconds. While an enemy has 5 or more stacks, Teemo is in.\n\nActive: Gain 150% Attack Speed for 3 attacks.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_teemo/hud/icons2d/tft17_teemow.tft_set17.png"
       },
       "stats": {
@@ -998,7 +998,7 @@
       "role": "APTank",
       "ability": {
         "name": "Groovin' Susan",
-        "description": "Transform for 6 seconds, temporarily gaining <scaleLevel>400/250/350</scaleLevel> max Health, entering, and dealing magic damage to adjacent enemies each second.",
+        "description": "Transform for 6 seconds, temporarily gaining 400/250/350 max Health, entering, and dealing magic damage to adjacent enemies each second.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nasus/hud/icons2d/tft17_nasus_r.tft_set17.png"
       },
       "stats": {
@@ -1024,7 +1024,7 @@
       "role": "APReaper",
       "ability": {
         "name": "Dance n' Dice",
-        "description": "Passive: Attacks deal magic damage. Gwen is in while targeting an enemy below 40% Health.\n\n<spellActive>Active:</spellActive> Dash to a nearby hex to snip the lowest percent Health enemy, dealing magic damage to the target and magic damage to enemies in a cone. If this kills, dash and snip again at 65% damage!",
+        "description": "Passive: Attacks deal magic damage. Gwen is in while targeting an enemy below 40% Health.\n\nActive: Dash to a nearby hex to snip the lowest percent Health enemy, dealing magic damage to the target and magic damage to enemies in a cone. If this kills, dash and snip again at 65% damage!",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gwen/hud/icons2d/tft17_gwen_e.tft_set17.png"
       },
       "stats": {
@@ -1050,7 +1050,7 @@
       "role": "ADCaster",
       "ability": {
         "name": "Jump and Jive",
-        "description": "Passive: Whenever an enemy is knocked up, shoot them, dealing <physicalDamage> </physicalDamage> physical damage and entering for 3 seconds.\n\n<spellActive>Active:</spellActive> Unleash a volley of bullets at the target, dealing <physicalDamage> </physicalDamage> physical damage and knocking up for 1.3 seconds.",
+        "description": "Passive: Whenever an enemy is knocked up, shoot them, dealing physical damage and entering for 3 seconds.\n\nActive: Unleash a volley of bullets at the target, dealing physical damage and knocking up for 1.3 seconds.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_samira/hud/icons2d/tft17_samirae.tft_set17.png"
       },
       "stats": {
@@ -1076,7 +1076,7 @@
       "role": "APTank",
       "ability": {
         "name": "Disco Inferno",
-        "description": "Passive: On combat start, forge a temporary completed item. If 3 items are already equipped, a random completed item becomes <TFTRadiantItemBonus>Radiant</TFTRadiantItemBonus> this combat instead.\n\n<spellActive>Active:</spellActive> Gain Shield for 3 seconds, then breath fire in a cone dealing magic damage. After any Shield on Ornn expires, Ornn enters for 3 seconds.",
+        "description": "Passive: On combat start, forge a temporary completed item. If 3 items are already equipped, a random completed item becomes Radiant this combat instead.\n\nActive: Gain Shield for 3 seconds, then breath fire in a cone dealing magic damage. After any Shield on Ornn expires, Ornn enters for 3 seconds.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ornn/hud/icons2d/tft17_ornnw.tft_set17.png"
       },
       "stats": {
@@ -1129,7 +1129,7 @@
       "role": "APFighter",
       "ability": {
         "name": "Party Crasher",
-        "description": "Passive: Every <scaleLevel>2</scaleLevel> seconds, call down a bolt on the highest Health nearby enemy that deals magic damage.\n\n<spellActive>Active:</spellActive> Summon a disco ball at the largest clump of enemies, then knock up the current target into it, dealing magic damage. They crash down into the disco ball, dealing magic damage in a three hex radius. Enter for 1 second per enemy hit.",
+        "description": "Passive: Every 2 seconds, call down a bolt on the highest Health nearby enemy that deals magic damage.\n\nActive: Summon a disco ball at the largest clump of enemies, then knock up the current target into it, dealing magic damage. They crash down into the disco ball, dealing magic damage in a three hex radius. Enter for 1 second per enemy hit.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_blitzcrank/hud/icons2d/tft17_blitzcrankw.tft_set17.png"
       },
       "stats": {
@@ -1182,7 +1182,7 @@
       "role": "APCaster",
       "ability": {
         "name": "Fate's Gambit",
-        "description": "Draw a card with a value between 1 and 9 by Lucky chance, then throw it at the target. Based on the card drawn, deal between and magic damage. Overkill damage bounces to the nearest enemy. \n\n<spellActive>3-Star Bonus:</spellActive> If a 9 is thrown, generate 1 gold.\n\nLucky: Check twice and take the better outcome.",
+        "description": "Draw a card with a value between 1 and 9 by Lucky chance, then throw it at the target. Based on the card drawn, deal between and magic damage. Overkill damage bounces to the nearest enemy. \n\n3-Star Bonus: If a 9 is thrown, generate 1 gold.\n\nLucky: Check twice and take the better outcome.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_twistedfate/hud/icons2d/cardmaster_fatesgambit.tft_set17.png"
       },
       "stats": {
@@ -1208,7 +1208,7 @@
       "role": "ADReaper",
       "ability": {
         "name": "Diviner's Judgment",
-        "description": "Stab the target, causing them to bleed for <physicalDamage> </physicalDamage> physical damage over 18 seconds. After the attack, leap to the highest percent Health enemy within 3 hexes.",
+        "description": "Stab the target, causing them to bleed for physical damage over 18 seconds. After the attack, leap to the highest percent Health enemy within 3 hexes.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_talon/hud/icons2d/tft17_talone.tft_set17.png"
       },
       "stats": {
@@ -1234,7 +1234,7 @@
       "role": "APTank",
       "ability": {
         "name": "Counter Star-ike",
-        "description": "Enter a defensive stance for 3 seconds, reducing incoming damage by and gaining Shield. When the stance ends, strike all nearby enemies, dealing magic damage and Stunning them for <scaleLevel>1.5/1/1.3</scaleLevel> second(s).",
+        "description": "Enter a defensive stance for 3 seconds, reducing incoming damage by and gaining Shield. When the stance ends, strike all nearby enemies, dealing magic damage and Stunning them for 1.5/1/1.3 second(s).",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jax/hud/icons2d/tft17_jaxe.tft_set17.png"
       },
       "stats": {
@@ -1260,7 +1260,7 @@
       "role": "APCaster",
       "ability": {
         "name": "It's Raining Stars",
-        "description": "Passive: Gain a different secondary effect each game based on the Stargazer constellation.\n\n<spellActive>Active:</spellActive> Call down something from the sky, dealing magic damage to 3 nearby enemies and do some special effect based on this game's Stargazer Constellation.",
+        "description": "Passive: Gain a different secondary effect each game based on the Stargazer constellation.\n\nActive: Call down something from the sky, dealing magic damage to 3 nearby enemies and do some special effect based on this game's Stargazer Constellation.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lulu/hud/icons2d/tft17_lulu_glitterbolt.tft_set17.png"
       },
       "stats": {
@@ -1311,7 +1311,7 @@
       "role": "APCarry",
       "ability": {
         "name": "Lend Me a Hand, Shadow!",
-        "description": "Passive: Every time Vex attacks, Shadow strikes a nearby enemy, dealing magic damage. Whenever an enemy is struck 5 times by Shadow, Shadow strikes them again.\n\n<spellActive>Active:</spellActive> Shadow launches 3 empowered strikes, dealing magic damage instead.",
+        "description": "Passive: Every time Vex attacks, Shadow strikes a nearby enemy, dealing magic damage. Whenever an enemy is struck 5 times by Shadow, Shadow strikes them again.\n\nActive: Shadow launches 3 empowered strikes, dealing magic damage instead.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_vex/hud/icons2d/icons_tft17_vex_e01.tft_set17.png"
       },
       "stats": {
@@ -1337,7 +1337,7 @@
       "role": "HFighter",
       "ability": {
         "name": "Time Warp",
-        "description": "Passive: This Ability adapts to Attack Damage or Ability Power, whichever is higher. Attacks deal magic<physicalDamage> </physicalDamage> physical damage.\n\n<spellActive>Active:</spellActive> Dash to a nearby hex, gaining 160/100/150 Shield for 2 seconds and slashing adjacent enemies for magic<physicalDamage> </physicalDamage> physical damage. Every third cast, leap into the air and launch a wave of energy that deals magic<physicalDamage> </physicalDamage> physical damage to enemies in a line.",
+        "description": "Passive: This Ability adapts to Attack Damage or Ability Power, whichever is higher. Attacks deal magic physical damage.\n\nActive: Dash to a nearby hex, gaining 160/100/150 Shield for 2 seconds and slashing adjacent enemies for magic physical damage. Every third cast, leap into the air and launch a wave of energy that deals magic physical damage to enemies in a line.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_riven/hud/icons2d/tft17_rivenpathoftheexile.tft_set17.png"
       },
       "stats": {
@@ -1363,7 +1363,7 @@
       "role": "APFighter",
       "ability": {
         "name": "Reality Tear",
-        "description": "Passive: On cast, attacks gain stacking bonus magic damage. Starting from the third cast, gain <trueDamage>true damage</trueDamage> instead.\n\n<spellActive>Active:</spellActive> Gain Shield for 3 seconds, then slice open a rift on the largest group of champions dealing the Passive's bonus damage to all enemies within. Enemies have their Attack Speed slowed by 50% while allies within gain 80% Attack Speed, both rapidly decaying over 3 seconds.",
+        "description": "Passive: On cast, attacks gain stacking bonus magic damage. Starting from the third cast, gain true damage instead.\n\nActive: Gain Shield for 3 seconds, then slice open a rift on the largest group of champions dealing the Passive's bonus damage to all enemies within. Enemies have their Attack Speed slowed by 50% while allies within gain 80% Attack Speed, both rapidly decaying over 3 seconds.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_shen/hud/icons2d/tft17_shen_rshield.tft_set17.png"
       },
       "stats": {
@@ -1415,7 +1415,7 @@
       "role": "ADCaster",
       "ability": {
         "name": "Temporal Shot",
-        "description": "<spellActive>Active:</spellActive> Fire a blast at the current target that deals <physicalDamage> </physicalDamage> physical damage. Every 8 takedowns, gain a drone that deals <physicalDamage> </physicalDamage> physical damage to the current target on cast. \n(Total Takedowns: )",
+        "description": "Active: Fire a blast at the current target that deals physical damage. Every 8 takedowns, gain a drone that deals physical damage to the current target on cast. \n(Total Takedowns: )",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ezreal/hud/icons2d/tft17_ezreal_passive.tft_set17.png"
       },
       "stats": {
@@ -1441,7 +1441,7 @@
       "role": "APTank",
       "ability": {
         "name": "Shield of Daybreak",
-        "description": "Gain Shield for 4 seconds. Bash the current target, dealing magic damage and stunning them for <scaleLevel>0/1.8</scaleLevel> seconds.",
+        "description": "Gain Shield for 4 seconds. Bash the current target, dealing magic damage and stunning them for 0/1.8 seconds.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leona/hud/icons2d/tft17_leonaq.tft_set17.png"
       },
       "stats": {
@@ -1467,7 +1467,7 @@
       "role": "APCaster",
       "ability": {
         "name": "Paddle Star",
-        "description": "Fire a paddle star at the current target, dealing magic damage to the first target hit and to others it passes through. When the missile reaches its destination, redirect it to a distant enemy, increasing its speed and repeating the damage. This redirect can occur <TFTRadiantItemBonus>5</TFTRadiantItemBonus>4 times.",
+        "description": "Fire a paddle star at the current target, dealing magic damage to the first target hit and to others it passes through. When the missile reaches its destination, redirect it to a distant enemy, increasing its speed and repeating the damage. This redirect can occur 54 times.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zoe/hud/icons2d/tft17_zoe_q2.tft_set17.png"
       },
       "stats": {
@@ -1519,7 +1519,7 @@
       "role": "APCarry",
       "ability": {
         "name": "Fracture Reality",
-        "description": "Passive: Attacks deal magic damage instead.\n\n<spellActive>Active:</spellActive> Summon 5 clones that attack alongside for 5 attacks, dealing <scaleLevel>0/25%</scaleLevel> damage. For their final attack, clones fire a bolt that deals magic damage.",
+        "description": "Passive: Attacks deal magic damage instead.\n\nActive: Summon 5 clones that attack alongside for 5 attacks, dealing 0/25% damage. For their final attack, clones fire a bolt that deals magic damage.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leblanc/hud/icons2d/tft17_leblancw.tft_set17.png"
       },
       "stats": {
@@ -1545,7 +1545,7 @@
       "role": "APTank",
       "ability": {
         "name": "Accretion",
-        "description": "Deal magic damage to the lowest Health enemy in range and permanently gain <scaleHealth>0/12/18</scaleHealth> maximum Health. If this kills them, permanently gain <scaleHealth>35/30/40</scaleHealth> maximum Health instead.\n\n(Current Bonus: + Health)",
+        "description": "Deal magic damage to the lowest Health enemy in range and permanently gain 0/12/18 maximum Health. If this kills them, permanently gain 35/30/40 maximum Health instead.\n\n(Current Bonus: + Health)",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_chogath/hud/icons2d/greenterror_feast.tft_set17.png"
       },
       "stats": {
@@ -1620,7 +1620,7 @@
       "role": "APTank",
       "ability": {
         "name": "Screech",
-        "description": "Passive: Attacks deal bonus magic damage.\n\n<spellActive>Active:</spellActive> Gain Shield for 4 seconds and grant allies 20% Ability Power for the rest of combat.",
+        "description": "Passive: Attacks deal bonus magic damage.\n\nActive: Gain Shield for 4 seconds and grant allies 20% Ability Power for the rest of combat.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_summon/hud/tft17_summon_square.tft_set17.png"
       },
       "stats": {
@@ -1647,7 +1647,7 @@
       "role": "APTank",
       "ability": {
         "name": "Meep Impact",
-        "description": "Heal <scaleHealth> </scaleHealth> Health over 3 seconds. Slam the target, dealing magic damage and knocking up for <scaleLevel>1.5/1.8</scaleLevel> seconds. The impact creates meepwaves that deal 50% of these effects in the target's row.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Meeps water Meepsie's flower, increasing all incoming Healing and Shielding by (i:set14AmpIcon).</mainText>",
+        "description": "Heal Health over 3 seconds. Slam the target, dealing magic damage and knocking up for 1.5/1.8 seconds. The impact creates meepwaves that deal 50% of these effects in the target's row.\n\nMeep Bonus: Meeps water Meepsie's flower, increasing all incoming Healing and Shielding by (i:set14AmpIcon).",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ivernminion/hud/icons2d/tft17_ivernminion_r.tft_set17.png"
       },
       "stats": {
@@ -1674,7 +1674,7 @@
       "role": "APTank",
       "ability": {
         "name": "Indestructible",
-        "description": "Gain Shield. Each second for the next <TFTRadiantItemBonus>6</TFTRadiantItemBonus>4 seconds, gain more Shield and deal magic damage to adjacent enemies. When this ability ends, consume the remaining Shield and heal for <scaleHealth>40%</scaleHealth> of its value.",
+        "description": "Gain Shield. Each second for the next 64 seconds, gain more Shield and deal magic damage to adjacent enemies. When this ability ends, consume the remaining Shield and heal for 40% of its value.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_mordekaiser/hud/icons2d/tft17_mordekaiserw.tft_set17.png"
       },
       "stats": {
@@ -1700,7 +1700,7 @@
       "role": "ADCarry",
       "ability": {
         "name": "Stellar Ricochet",
-        "description": "Passive: Attacks bounce to strike <scaleLevel>3</scaleLevel> times, dealing <scaleLevel>60%</scaleLevel> reduced damage per target hit and leaving a Feather behind the final target.\n\n<spellActive>Active:</spellActive> Gain 75% Attack Speed for the next 6 attacks. At the end, recall all Feathers split between the closest 3 enemies, dealing <physicalDamage> </physicalDamage> physical damage each. Xayah's current target takes <physicalDamage> </physicalDamage> additional physical damage per feather.",
+        "description": "Passive: Attacks bounce to strike 3 times, dealing 60% reduced damage per target hit and leaving a Feather behind the final target.\n\nActive: Gain 75% Attack Speed for the next 6 attacks. At the end, recall all Feathers split between the closest 3 enemies, dealing physical damage each. Xayah's current target takes additional physical damage per feather.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_xayah/hud/icons2d/tft17_xayahw.tft_set17.png"
       },
       "stats": {
@@ -1725,7 +1725,7 @@
       "role": "ADCarry",
       "ability": {
         "name": "Collateral Damage",
-        "description": "Passive: Attacks fire 5 projectiles in a cone that deal <physicalDamage> </physicalDamage> physical damage each.\n\n<spellActive>Active:</spellActive> Fire an explosive shell that deals <physicalDamage> </physicalDamage> physical damage to the target, and <physicalDamage> </physicalDamage> physical damage to adjacent enemies.",
+        "description": "Passive: Attacks fire 5 projectiles in a cone that deal physical damage each.\n\nActive: Fire an explosive shell that deals physical damage to the target, and physical damage to adjacent enemies.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_graves/hud/icons2d/tft17_gravesr.tft_set17.png"
       },
       "stats": {
@@ -1751,7 +1751,7 @@
       "role": "APTank",
       "ability": {
         "name": "Tounge Lash",
-        "description": "Passive: Once per combat after dropping below 35% Health, gain Shield for 4 seconds equal to 40% of healing received this combat.\n\n<spellActive>Active:</spellActive> Heal <scaleHealth> </scaleHealth>, then tongue lash all enemies within two hexes dealing magic damage.",
+        "description": "Passive: Once per combat after dropping below 35% Health, gain Shield for 4 seconds equal to 40% of healing received this combat.\n\nActive: Heal, then tongue lash all enemies within two hexes dealing magic damage.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_tahmkench/hud/icons2d/tft17_tahmkenchq.tft_set17.png"
       },
       "stats": {
@@ -1776,7 +1776,7 @@
       "role": "ADTank",
       "ability": {
         "name": "Divine Scythe",
-        "description": "Gain 20% Durability for 2 seconds, healing <scaleHealth> </scaleHealth> over the duration. Afterwards, slash forward in a line, dealing <physicalDamage> </physicalDamage> physical damage to enemies hit and knocking them up for 1 second.",
+        "description": "Gain 20% Durability for 2 seconds, healing over the duration. Afterwards, slash forward in a line, dealing physical damage to enemies hit and knocking them up for 1 second.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rhaast/hud/icons2d/tft17_kayn_passive_slay.tft_set17.png"
       },
       "stats": {
@@ -1824,7 +1824,7 @@
       "role": "APTank",
       "ability": {
         "name": "Upheaval",
-        "description": "Heal <scaleHealth> </scaleHealth>, then briefly knock up adjacent enemies and deal magic damage.",
+        "description": "Heal, then briefly knock up adjacent enemies and deal magic damage.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_reksai/hud/icons2d/tft17_reksai_w2.tft_set17.png"
       },
       "stats": {
@@ -1851,7 +1851,7 @@
       "role": "ADTank",
       "ability": {
         "name": "Advanced Defences",
-        "description": "Gain Shield and 15% Durability for 4 seconds. Over the duration, deal <physicalDamage> </physicalDamage> physical damage each second to enemies in a cone.",
+        "description": "Gain Shield and 15% Durability for 4 seconds. Over the duration, deal physical damage each second to enemies in a cone.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pantheon/hud/icons2d/tft17_pantheon_e1.tft_set17.png"
       },
       "stats": {
@@ -1876,7 +1876,7 @@
       "role": "APTank",
       "ability": {
         "name": "Dark Form",
-        "description": "Transform for 3 seconds, gaining <scaleHealth> </scaleHealth> Health and tethering to nearby champions. Over the duration, deal magic damage to the closest 3 enemies and restore <scaleHealth> </scaleHealth> health to the closest 2 injured allies.",
+        "description": "Transform for 3 seconds, gaining Health and tethering to nearby champions. Over the duration, deal magic damage to the closest 3 enemies and restore health to the closest 2 injured allies.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_morgana/hud/icons2d/fallenangel_empathize.tft_set17.png"
       },
       "stats": {
@@ -2059,7 +2059,7 @@
       "role": "APTank",
       "ability": {
         "name": "Gravitational Collapse",
-        "description": "A miniature black hole created by a supernova.\n\nGains max health equal to <scaleHealth>30%</scaleHealth> of ally Dark Star Health.",
+        "description": "A miniature black hole created by a supernova.\n\nGains max health equal to 30% of ally Dark Star Health.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_darkstar_fakeunit/hud/tft17_darkstar_fakeunit_smallsplash.tft_set17.png"
       },
       "stats": {
@@ -2082,7 +2082,7 @@
       "role": "ADTank",
       "ability": {
         "name": "Harbinger of The End",
-        "description": "Passive: Swords fly out in a grid dealing <physicalDamage> </physicalDamage> physical damage to enemies they hit. \n\nActive: Launch 20 swords into the air and gain 25% Durability. When they land, they deal <physicalDamage> </physicalDamage> physical damage to enemies they hit in a 1-hex range.",
+        "description": "Passive: Swords fly out in a grid dealing physical damage to enemies they hit. \n\nActive: Launch 20 swords into the air and gain 25% Durability. When they land, they deal physical damage to enemies they hit in a 1-hex range.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_enemy_aatrox/hud/icons2d/tft17_enemy_aatrox_r.tft_set17.png"
       },
       "stats": {
