@@ -113,7 +113,13 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
 
               <div className="p-5">
                 <div className="flex items-start justify-between gap-4">
-                  <h2 className="text-lg font-semibold text-gray-900">{skinLine.name}</h2>
+                  <Link
+                    href={`/league/skin-lines/${skinLine.id}`}
+                    className="text-lg font-semibold text-gray-900 hover:text-emerald-700"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {skinLine.name}
+                  </Link>
                   <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
                     {skinCount} skins
                   </span>
