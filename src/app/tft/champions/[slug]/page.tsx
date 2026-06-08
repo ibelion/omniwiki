@@ -66,7 +66,7 @@ export default async function TFTChampionPage({ params }: PageProps) {
         {champion.image && (
           <div className="h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-gray-100 bg-gray-50">
             <ImageWithFallback
-              src={`/tftcontent/${champion.image}`}
+              src={champion.image}
               alt={champion.name}
               className="h-24 w-24"
             />

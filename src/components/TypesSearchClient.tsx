@@ -61,6 +61,15 @@ function buildDefenseMap(types: TypeRecord[]): Record<string, Record<string, num
   return defMap;
 }
 
+const TYPE_ABBR: Record<string, string> = {
+  normal: "Nor", fire: "Fire", water: "Wat", electric: "Elec",
+  grass: "Grs", ice: "Ice", fighting: "Fgt", poison: "Poi",
+  ground: "Gnd", flying: "Fly", psychic: "Psy", bug: "Bug",
+  rock: "Rck", ghost: "Gst", dragon: "Drg", dark: "Drk",
+  steel: "Stl", fairy: "Fai", shadow: "Shd", stellar: "Str",
+  unknown: "Unk",
+};
+
 const TYPE_COLORS: Record<string, string> = {
   normal: "bg-gray-200 text-gray-700",
   fire: "bg-orange-200 text-orange-800",
@@ -178,7 +187,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                   className={`inline-block w-6 rounded text-[9px] font-bold uppercase writing-mode-vertical py-0.5 text-center ${TYPE_COLORS[t.slug] ?? "bg-gray-100 text-gray-700"}`}
                   style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", height: "46px", lineHeight: "1.4" }}
                 >
-                  {t.name.slice(0, 5)}
+                  {TYPE_ABBR[t.slug] ?? t.name.slice(0, 4)}
                 </span>
               </div>
             ))}

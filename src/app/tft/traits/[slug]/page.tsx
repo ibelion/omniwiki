@@ -68,7 +68,7 @@ export default async function TFTTraitPage({ params }: PageProps) {
         {trait.image && (
           <div className="h-20 w-20 shrink-0 overflow-hidden rounded-2xl border border-gray-100 bg-gray-50">
             <ImageWithFallback
-              src={`/tftcontent/${trait.image}`}
+              src={trait.image}
               alt={trait.name}
               className="h-20 w-20"
             />

@@ -42,16 +42,45 @@ type CDSetData = {
   traits: CDTrait[];
 };
 
+// setData array (parallel to sets) — each entry has augments as apiName strings
+type CDSetDataEntry = {
+  name: string;
+  number: number;
+  champions: CDChampion[];
+  traits: CDTrait[];
+  augments: string[]; // apiName references into data.items
+};
+
 type CDTFTJson = {
   sets: Record<string, CDSetData>;
+  setData: CDSetDataEntry[];
   items: CDItem[];
 };
 
 type TFTBundle = {
+  setNumber?: number;
   champions: { id: string; name: string; cost: number; traits: string[]; image: string | null }[];
   items: { id: string; name: string; description: string; image: string | null }[];
   traits: { id: string; name: string; description: string; image: string | null; tiers: { minUnits: number; maxUnits: number; style: number }[] }[];
+  augments: { id: string; name: string; description: string; image: string | null; tier: number | null }[];
 };
+
+/**
+ * Infer augment tier (1=Silver, 2=Gold, 3=Prismatic) from the icon filename.
+ * CommunityDragon uses suffixes like _III.tex, -II.tex, -T2.tex, _T1.tex.
+ */
+function augmentTierFromIcon(icon: string): number | null {
+  const filename = icon.split('/').pop() ?? '';
+  // Roman numeral suffixes (most common): _III, -III, _II, -II, _I, -I before . or end
+  if (/[-_]III[._]/i.test(filename)) return 3;
+  if (/[-_]II[._]/i.test(filename)) return 2;
+  if (/[-_]I[._]/i.test(filename)) return 1;
+  // T-prefixed tier numbers: -T3, _T3, -T2, _T2, -T1, _T1
+  if (/[-_]T3\b/i.test(filename)) return 3;
+  if (/[-_]T2\b/i.test(filename)) return 2;
+  if (/[-_]T1\b/i.test(filename)) return 1;
+  return null;
+}
 
 // Convert a CommunityDragon ASSETS/... path to a full CDN URL (.tex → .png)
 function cdToUrl(assetPath: string | undefined | null): string | null {
@@ -159,6 +188,7 @@ async function main(): Promise<void> {
     const setKeys = Object.keys(data.sets).sort((a, b) => Number(a) - Number(b));
     const latestKey = setKeys[setKeys.length - 1];
     const latestSet = data.sets[latestKey];
+    const setNumber = Number(latestKey);
     console.log(`Using ${latestSet.name} (set key: ${latestKey})`);
 
     const champions = latestSet.champions
@@ -208,10 +238,32 @@ async function main(): Promise<void> {
         };
       });
 
-    const bundle: TFTBundle = { champions, items, traits };
+    // Augments: find the setData entry for this set with the most augment references,
+    // then resolve each apiName against the full items array.
+    const setDataEntries = (data.setData ?? []).filter((s) => s.number === setNumber);
+    const bestSetDataEntry = setDataEntries.reduce<CDSetDataEntry | null>((best, s) =>
+      !best || s.augments.length > best.augments.length ? s : best, null);
+
+    const itemByApiName = new Map<string, CDItem>(
+      (data.items ?? []).map((i) => [i.apiName, i])
+    );
+
+    const augments = (bestSetDataEntry?.augments ?? [])
+      .map((apiName) => itemByApiName.get(apiName))
+      .filter((i): i is CDItem => !!i && !!i.name?.trim() && !i.name.includes('@'))
+      .map((i) => ({
+        id: i.apiName,
+        name: i.name,
+        description: substituteVars(i.desc ?? '', i.effects ? [i.effects] : []),
+        image: cdToUrl(i.icon),
+        tier: augmentTierFromIcon(i.icon ?? ''),
+      }))
+      .sort((a, b) => (a.tier ?? 99) - (b.tier ?? 99) || a.name.localeCompare(b.name));
+
+    const bundle: TFTBundle = { setNumber, champions, items, traits, augments };
 
     console.log(
-      `Built: ${champions.length} champions, ${items.length} items, ${traits.length} traits`
+      `Built: ${champions.length} champions, ${items.length} items, ${traits.length} traits, ${augments.length} augments`
     );
 
     const bundleJson = JSON.stringify(bundle, null, 2) + '\n';
