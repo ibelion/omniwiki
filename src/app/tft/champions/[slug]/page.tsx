@@ -158,15 +158,28 @@ export default async function TFTChampionPage({ params }: PageProps) {
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {sharedTraitChamps.map((c) => (
               <Link key={c.id} href={`/tft/champions/${toSlug(c.name)}`} className="block">
-                <article className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-teal-200 hover:shadow-md">
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm font-semibold text-gray-900">{c.name}</span>
-                    <span className={`${costCls(c.cost)} rounded-full px-2 py-0.5 text-xs font-semibold`}>{c.cost}g</span>
-                  </div>
-                  <div className="flex flex-wrap gap-1">
-                    {c.traits.map((t) => (
-                      <span key={t} className="rounded-full bg-teal-50 px-2 py-0.5 text-xs text-teal-700">{t}</span>
-                    ))}
+                <article className="flex items-center gap-3 rounded-2xl border border-gray-200 bg-white p-3 shadow-sm transition hover:border-teal-200 hover:shadow-md">
+                  {c.image && (
+                    <div className="h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-gray-100 bg-gray-50">
+                      <ImageWithFallback src={c.image} alt={c.name} className="h-10 w-10" />
+                    </div>
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="truncate text-sm font-semibold text-gray-900">{c.name}</span>
+                      <span className={`shrink-0 ${costCls(c.cost)} rounded-full px-2 py-0.5 text-xs font-semibold`}>{c.cost}g</span>
+                    </div>
+                    {c.traits.length > 0 && (
+                      <div className="mt-1 flex flex-wrap gap-1">
+                        {c.traits.map((t) => (
+                          <Link key={t} href={`/tft/traits/${toSlug(t)}`}
+                            className="rounded-full bg-teal-50 px-2 py-0.5 text-xs text-teal-700 hover:bg-teal-100"
+                            onClick={(e) => e.stopPropagation()}>
+                            {t}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </article>
               </Link>
