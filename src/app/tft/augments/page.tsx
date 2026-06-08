@@ -17,6 +17,9 @@ const TIER_STYLES: Record<number, string> = {
   3: "bg-purple-100 text-purple-700",
 };
 
+const stripTokens = (html: string) =>
+  html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
+
 type Augment = {
   name?: string;
   description?: string;
@@ -137,7 +140,7 @@ export default function TftAugmentsPage() {
               <div
                 className="text-sm leading-6 text-slate-600 [&_a]:text-teal-600 [&_a]:underline-offset-2 hover:[&_a]:text-teal-700 [&_a]:hover:underline"
                 dangerouslySetInnerHTML={{
-                  __html: augment.description ?? "",
+                  __html: stripTokens(augment.description ?? ""),
                 }}
               />
             </article>

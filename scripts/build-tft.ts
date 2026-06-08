@@ -166,6 +166,21 @@ function substituteVars(
   // Collapse excess blank lines and trim
   result = result.replace(/\n{3,}/g, '\n\n').trim();
 
+  // Remove punctuation orphaned by empty variable substitution.
+  // /N with no digit before it  → @VAR@/3 when var is null
+  // % with no digit before it   → @VAR*100@% when var is null
+  // whitespace + -word          → @VAR@-star when var is null ("a -star" → "a star")
+  result = result
+    .replace(/(?<!\d)\/\d+/g, '')
+    .replace(/(?<!\d)%/g, '')
+    .replace(/\s+-([a-zA-Z])/g, ' $1')
+    // "(word )" with trailing whitespace indicates the value placeholder was empty
+    .replace(/\(\w[\w\s]*\s\)/g, '')
+    // spaces before punctuation left by removed tokens
+    .replace(/\s+([.,!?])/g, '$1')
+    .replace(/[ \t]{2,}/g, ' ')
+    .trim();
+
   return result;
 }
 
