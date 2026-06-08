@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { pokemonData } from "@/lib/pokemon/data";
 import { leagueData } from "@/lib/league/data";
+import { tftData } from "@/lib/tft/data";
 import {
   UniverseDescriptor,
   UniverseShowcase,
@@ -9,8 +10,8 @@ import {
 const universeTotals = [
   {
     label: "Total Characters",
-    value: pokemonData.pokemon.length + leagueData.champions.length,
-    description: "Pokemon + League champions",
+    value: pokemonData.pokemon.length + leagueData.champions.length + tftData.champions.length,
+    description: "Pokemon + League + TFT units",
   },
   {
     label: "Quotes & Voice Lines",
@@ -19,13 +20,13 @@ const universeTotals = [
   },
   {
     label: "Items & Gear",
-    value: (pokemonData.items?.length || 0) + leagueData.items.length,
-    description: "Held items + shop inventory",
+    value: (pokemonData.items?.length || 0) + leagueData.items.length + tftData.items.length,
+    description: "Held items + shop inventory + TFT",
   },
   {
     label: "Universes Online",
-    value: 2,
-    description: "Pokemon, League - One Piece soon",
+    value: 3,
+    description: "Pokemon, League, TFT - One Piece soon",
   },
 ];
 
@@ -93,6 +94,34 @@ const universes: UniverseDescriptor[] = [
     },
   },
   {
+    id: "tft",
+    name: "Teamfight Tactics",
+    status: "Ready",
+    highlight:
+      "TFT Set data is live: champions, traits, items, and augments with tier breakpoints.",
+    description:
+      "Explore the full champion roster sorted by cost, browse trait synergies with activation thresholds, reference items and their recipes, and look up augment effects for the current set.",
+    stats: [
+      { label: "Champions", value: tftData.champions.length },
+      { label: "Traits", value: tftData.traits.length },
+      { label: "Items", value: tftData.items.length },
+      { label: "Augments", value: (tftData.augments ?? []).length },
+    ],
+    quickLinks: [
+      { label: "Champions", href: "/tft/champions" },
+      { label: "Traits", href: "/tft/traits" },
+      { label: "Items", href: "/tft/items" },
+    ],
+    heroImage: tftData.champions[0]?.image ?? undefined,
+    heroAlt: tftData.champions[0]?.name || "TFT champion",
+    accent: {
+      chip: "bg-teal-50 text-teal-700",
+      text: "text-teal-700",
+      border: "border-teal-200",
+      hover: "hover:border-teal-300 hover:bg-white",
+    },
+  },
+  {
     id: "onepiece",
     name: "One Piece",
     status: "Soon",
@@ -134,9 +163,10 @@ export default function Home() {
             Multiverse gamer wiki hub
           </h1>
           <p className="max-w-3xl text-lg text-gray-600">
-            Browse living dossiers for Pokemon and League of Legends - fueled by
-            your scrapers - and preview the next universe coming online. Pick a
-            card to inspect each world&apos;s live stats, links, and roadmap.
+            Browse living dossiers for Pokemon, League of Legends, and
+            Teamfight Tactics — fueled by your scrapers — and preview the next
+            universe coming online. Pick a card to inspect each world&apos;s
+            live stats, links, and roadmap.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -152,6 +182,13 @@ export default function Home() {
               aria-label="Browse League"
             >
               Browse League
+            </Link>
+            <Link
+              href="/tft"
+              className="rounded-lg border border-teal-200 px-4 py-2 text-sm font-semibold text-teal-700 transition hover:border-teal-300 hover:bg-teal-50"
+              aria-label="Browse TFT"
+            >
+              Browse TFT
             </Link>
           </div>
         </div>
