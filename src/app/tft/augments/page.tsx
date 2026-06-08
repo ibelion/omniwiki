@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 import { BackLink } from "@/components/BackLink";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
@@ -125,8 +126,8 @@ export default function TftAugmentsPage() {
           const tier = augment.tier ?? 1;
 
           return (
+            <Link key={augment.id ?? `${augment.name ?? "augment"}-${tier}`} href={`/tft/augments/${augment.id}`} className="block">
             <article
-              key={augment.id ?? `${augment.name ?? "augment"}-${tier}`}
               className="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-teal-200 hover:shadow-md"
             >
               <div className="flex items-start gap-3">
@@ -161,6 +162,7 @@ export default function TftAugmentsPage() {
                 </div>
               </div>
             </article>
+            </Link>
           );
         })}
       </section>

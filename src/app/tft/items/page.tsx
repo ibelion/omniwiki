@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { tftData } from "@/lib/tft/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
@@ -97,8 +98,8 @@ export default function TFTItemsPage() {
             .filter(Boolean);
 
           return (
+            <Link key={item.id} href={`/tft/items/${item.id}`} className="block">
             <article
-              key={item.id}
               className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-teal-200 hover:shadow-md"
             >
               <div className="flex items-start gap-3">
@@ -148,6 +149,7 @@ export default function TFTItemsPage() {
                 </div>
               )}
             </article>
+            </Link>
           );
         })}
       </section>
