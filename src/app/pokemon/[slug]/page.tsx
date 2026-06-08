@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPokemonBundleEdge } from "@/lib/edge-data";
+import { getPokemonBundleEdge, getSmogonTiersEdge } from "@/lib/edge-data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { PokemonMovesSection } from "@/components/PokemonMovesSection";
 import { aggregateLearnsets } from "@/lib/pokemon/learnsets";
@@ -70,6 +70,9 @@ export default async function PokemonDetail({ params }: PageProps) {
     }
   }
   
+  const tiersBundle = await getSmogonTiersEdge().catch(() => null);
+  const smogonTier = tiersBundle?.tiers[slug] ?? null;
+
   const pokemonById = new Map(pokemonData.pokemon.map((p) => [p.id, p.slug]));
 
   const abilities = pokemonData.abilities.filter((a) =>
@@ -130,6 +133,21 @@ export default async function PokemonDetail({ params }: PageProps) {
                   {type}
                 </Link>
               ))}
+              {smogonTier && smogonTier !== "NFE" && smogonTier !== "LC" && (
+                <span className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                  smogonTier === "Uber" || smogonTier === "AG"
+                    ? "bg-red-100 text-red-700"
+                    : smogonTier === "OU"
+                    ? "bg-amber-100 text-amber-700"
+                    : smogonTier === "UU"
+                    ? "bg-blue-100 text-blue-700"
+                    : smogonTier === "RU"
+                    ? "bg-green-100 text-green-700"
+                    : "bg-gray-100 text-gray-600"
+                }`}>
+                  {smogonTier}
+                </span>
+              )}
             </div>
           </div>
           <div className="flex flex-col items-center gap-3">

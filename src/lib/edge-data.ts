@@ -103,11 +103,14 @@ const fetchJson = async <T>(path: string): Promise<T> => {
   return JSON.parse(text) as T;
 };
 
+type SmogonTiersBundle = { format: string; generatedAt: string; tiers: Record<string, string> };
+
 // Module-level cache so populateCache local pre-renders reuse one fetch
 // instead of re-fetching and decompressing the bundle for every page.
 let _pokemonBundle: PokemonDataBundle | null = null;
 let _leagueBundle: LeagueDataBundle | null = null;
 let _tftBundle: TFTDataBundle | null = null;
+let _smogonTiers: SmogonTiersBundle | null = null;
 
 export const getPokemonBundleEdge = cache(async () => {
   if (_pokemonBundle) return _pokemonBundle;
@@ -125,4 +128,10 @@ export const getTFTBundleEdge = cache(async () => {
   if (_tftBundle) return _tftBundle;
   _tftBundle = await fetchJson<TFTDataBundle>(`${BUNDLE_BASE}/tftcontent/data/bundle.json`);
   return _tftBundle;
+});
+
+export const getSmogonTiersEdge = cache(async () => {
+  if (_smogonTiers) return _smogonTiers;
+  _smogonTiers = await fetchJson<SmogonTiersBundle>(`${BUNDLE_BASE}/pokemoncontent/data/tiers.json`);
+  return _smogonTiers;
 });
