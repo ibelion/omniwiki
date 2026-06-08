@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { tftData } from "@/lib/tft/data";
@@ -23,6 +24,31 @@ export const dynamicParams = false;
 
 export async function generateStaticParams() {
   return tftData.champions.map((c) => ({ slug: toSlug(c.name) }));
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const champion = tftData.champions.find((c) => toSlug(c.name) === slug);
+
+  if (!champion) {
+    return {
+      title: "TFT Champion - OmniWiki",
+    };
+  }
+
+  const description = `${champion.name} is a ${champion.cost}-cost TFT champion with traits ${champion.traits.join(", ")}.`
+    .replace(/@\w+@/g, "")
+    .replace(/\(\s*\)/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim()
+    .slice(0, 155);
+
+  return {
+    title: `${champion.name} - TFT - OmniWiki`,
+    description,
+  };
 }
 
 export default async function TFTChampionPage({ params }: PageProps) {

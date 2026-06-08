@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPokemonBundleEdge, getSmogonTiersEdge } from "@/lib/edge-data";
@@ -16,6 +17,34 @@ type PageProps = {
 export async function generateStaticParams() {
   const data = await getPokemonBundleEdge();
   return data.pokemon.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const data = await getPokemonBundleEdge();
+  const pokemon = data.pokemon.find((p) => p.slug === slug);
+
+  if (!pokemon) {
+    return {
+      title: "Pokemon - OmniWiki",
+    };
+  }
+
+  const types = pokemon.types.join(", ");
+  const description =
+    `${pokemon.name} is a ${types} Pokemon from ${pokemon.generation.replace("generation-", "Generation ")}.`
+      .replace(/@\w+@/g, "")
+      .replace(/\(\s*\)/g, "")
+      .replace(/\s{2,}/g, " ")
+      .trim()
+      .slice(0, 155);
+
+  return {
+    title: `${pokemon.name} - Pokemon - OmniWiki`,
+    description,
+  };
 }
 
 export default async function PokemonDetail({ params }: PageProps) {

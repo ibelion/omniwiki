@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -40,6 +41,34 @@ const stripTokens = (value: string) =>
 
 export async function generateStaticParams() {
   return (tftData.augments ?? []).map((a) => ({ id: a.id }));
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const augment = ((tftData.augments ?? []) as TFTAugmentRecord[]).find(
+    (item) => item.id === id
+  );
+
+  if (!augment) {
+    return {
+      title: "TFT Augment - OmniWiki",
+    };
+  }
+
+  const tierLabel = augment.tier ? TIER_LABELS[augment.tier] : null;
+  const description = `${augment.name}${tierLabel ? ` is a ${tierLabel} TFT augment.` : " is a TFT augment."} ${augment.description}`
+    .replace(/@\w+@/g, "")
+    .replace(/\(\s*\)/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim()
+    .slice(0, 155);
+
+  return {
+    title: `${augment.name} - TFT - OmniWiki`,
+    description,
+  };
 }
 
 export default async function AugmentDetailPage({ params }: PageProps) {

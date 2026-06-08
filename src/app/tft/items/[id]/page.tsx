@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -23,6 +24,35 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   return tftData.items.filter(isResolved).map(item => ({ id: item.id }));
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const item = (tftData.items.filter(isResolved) as TFTItemRecord[]).find(
+    entry => entry.id === id
+  );
+
+  if (!item) {
+    return {
+      title: 'TFT Item - OmniWiki',
+    };
+  }
+
+  const isCombined =
+    Array.isArray(item.composition) && item.composition.length === 2;
+  const description = `${item.name} is a ${isCombined ? 'combined' : 'base'} TFT item. ${item.description}`
+    .replace(/@\w+@/g, '')
+    .replace(/\(\s*\)/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+    .slice(0, 155);
+
+  return {
+    title: `${item.name} - TFT - OmniWiki`,
+    description,
+  };
 }
 
 export default async function TFTItemDetailPage({ params }: PageProps) {

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { tftData } from "@/lib/tft/data";
@@ -30,6 +31,32 @@ export const dynamicParams = false;
 
 export async function generateStaticParams() {
   return tftData.traits.map((t) => ({ slug: toSlug(t.name) }));
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const trait = tftData.traits.find((t) => toSlug(t.name) === slug);
+
+  if (!trait) {
+    return {
+      title: "TFT Trait - OmniWiki",
+    };
+  }
+
+  const minUnits = trait.tiers[0]?.minUnits;
+  const description = `${trait.name} is a TFT trait${minUnits != null ? ` with its first breakpoint at ${minUnits} units` : ""}.`
+    .replace(/@\w+@/g, "")
+    .replace(/\(\s*\)/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim()
+    .slice(0, 155);
+
+  return {
+    title: `${trait.name} - TFT - OmniWiki`,
+    description,
+  };
 }
 
 export default async function TFTTraitPage({ params }: PageProps) {
