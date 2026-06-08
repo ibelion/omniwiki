@@ -178,14 +178,22 @@ export function LoreList({ lore, champions, factions }: Props) {
                   <p className={isOpen ? "" : "line-clamp-3"}>
                     {isOpen ? (entry.loreLong ?? entry.loreShort) : entry.loreShort}
                   </p>
-                  {entry.loreLong && entry.loreLong !== entry.loreShort && (
-                    <button
-                      onClick={() => toggleExpanded(entry.slug)}
-                      className="mt-1 text-xs font-medium text-emerald-600 hover:text-emerald-800"
+                  <div className="mt-2 flex items-center gap-3">
+                    {entry.loreLong && entry.loreLong !== entry.loreShort && (
+                      <button
+                        onClick={() => toggleExpanded(entry.slug)}
+                        className="text-xs font-medium text-emerald-600 hover:text-emerald-800"
+                      >
+                        {isOpen ? "Show less ↑" : "Expand ↓"}
+                      </button>
+                    )}
+                    <Link
+                      href={`/league/lore/${entry.slug}`}
+                      className="text-xs font-medium text-emerald-600 hover:text-emerald-800"
                     >
-                      {isOpen ? "Show less ↑" : "Full lore ↓"}
-                    </button>
-                  )}
+                      Full lore page →
+                    </Link>
+                  </div>
                 </div>
               )}
             </article>
