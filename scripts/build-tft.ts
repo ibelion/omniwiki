@@ -240,7 +240,7 @@ async function main(): Promise<void> {
     console.log(`Using ${latestSet.name} (set key: ${latestKey})`);
 
     const champions = latestSet.champions
-      .filter((c) => c.name && c.cost > 0)
+      .filter((c) => c.name && c.cost >= 1 && c.cost <= 5)
       .map((c) => {
         // Build per-star-level variable maps for ability description substitution.
         // CommunityDragon's value[] has 7 entries; TFT uses indices 0-2 for 1★/2★/3★.
