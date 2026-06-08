@@ -2,6 +2,7 @@ import Link from "next/link";
 import { pokemonData } from "@/lib/pokemon/data";
 import { leagueData } from "@/lib/league/data";
 import { tftData } from "@/lib/tft/data";
+import { onePieceData } from "@/lib/onepiece/data";
 import {
   UniverseDescriptor,
   UniverseShowcase,
@@ -10,13 +11,17 @@ import {
 const universeTotals = [
   {
     label: "Total Characters",
-    value: pokemonData.pokemon.length + leagueData.champions.length + tftData.champions.length,
-    description: "Pokemon + League + TFT units",
+    value:
+      pokemonData.pokemon.length +
+      leagueData.champions.length +
+      tftData.champions.length +
+      onePieceData.characters.length,
+    description: "Pokemon + League + TFT + One Piece",
   },
   {
     label: "Quotes & Voice Lines",
     value: leagueData.quotes.length,
-    description: "League audio lines (One Piece next)",
+    description: "League of Legends audio lines",
   },
   {
     label: "Items & Gear",
@@ -25,8 +30,8 @@ const universeTotals = [
   },
   {
     label: "Universes Online",
-    value: 3,
-    description: "Pokemon, League, TFT - One Piece soon",
+    value: 4,
+    description: "Pokemon, League, TFT, One Piece",
   },
 ];
 
@@ -124,24 +129,25 @@ const universes: UniverseDescriptor[] = [
   {
     id: "onepiece",
     name: "One Piece",
-    status: "Soon",
+    status: "Ready",
     highlight:
-      "Next universe scheduled: crews, devil fruits, arcs, bounties, and voyages.",
+      "One Piece characters are live. Devil fruits and crews are coming next.",
     description:
-      "Data pipeline scaffolding is underway. Drop your scraped One Piece bundle and we will extend the shared UI to cover Straw Hats, Marines, Shichibukai, and beyond.",
+      "Browse the character roster with role filtering and detailed profile pages sourced from MyAnimeList via the Jikan API. Devil fruits, crews, and bounty data are in the pipeline.",
     stats: [
-      { label: "Characters", value: "TBD" },
-      { label: "Devil Fruits", value: "TBD" },
-      { label: "Crews", value: "TBD" },
-      { label: "Bounties", value: "TBD" },
+      { label: "Characters", value: onePieceData.characters.length },
+      { label: "Main", value: onePieceData.characters.filter((c) => c.role === "Main").length },
+      { label: "Devil Fruits", value: "Soon" },
+      { label: "Crews", value: "Soon" },
     ],
     quickLinks: [
-      { label: "Universe Briefing", comingSoon: true },
-      { label: "Data Schema", comingSoon: true },
-      { label: "Roadmap", comingSoon: true },
+      { label: "Character Hub", href: "/onepiece" },
+      { label: "Characters", href: "/onepiece/characters" },
+      { label: "Devil Fruits", comingSoon: true },
     ],
-    heroImage: "/globe.svg",
-    heroAlt: "One Piece placeholder",
+    heroImage:
+      onePieceData.characters[0]?.image ?? "/globe.svg",
+    heroAlt: onePieceData.characters[0]?.name ?? "One Piece character",
     accent: {
       chip: "bg-orange-50 text-orange-700",
       text: "text-orange-700",
@@ -163,10 +169,9 @@ export default function Home() {
             Multiverse gamer wiki hub
           </h1>
           <p className="max-w-3xl text-lg text-gray-600">
-            Browse living dossiers for Pokemon, League of Legends, and
-            Teamfight Tactics — fueled by your scrapers — and preview the next
-            universe coming online. Pick a card to inspect each world&apos;s
-            live stats, links, and roadmap.
+            Browse living dossiers for Pokemon, League of Legends, Teamfight
+            Tactics, and One Piece — fueled by your scrapers. Pick a card to
+            inspect each world&apos;s live stats, links, and roadmap.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
@@ -189,6 +194,13 @@ export default function Home() {
               aria-label="Browse TFT"
             >
               Browse TFT
+            </Link>
+            <Link
+              href="/onepiece"
+              className="rounded-lg border border-orange-200 px-4 py-2 text-sm font-semibold text-orange-700 transition hover:border-orange-300 hover:bg-orange-50"
+              aria-label="Browse One Piece"
+            >
+              Browse One Piece
             </Link>
           </div>
         </div>
