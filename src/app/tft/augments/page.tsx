@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 
 import { BackLink } from "@/components/BackLink";
+import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { tftData } from "@/lib/tft/data";
 
 const TIER_LABELS: Record<number, string> = {
@@ -21,9 +22,11 @@ const stripTokens = (html: string) =>
   html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
 
 type Augment = {
+  id?: string;
   name?: string;
   description?: string;
-  tier?: number;
+  image?: string | null;
+  tier?: number | null;
 };
 
 const augments = (tftData.augments ?? []) as Augment[];
@@ -123,26 +126,40 @@ export default function TftAugmentsPage() {
 
           return (
             <article
-              key={`${augment.name ?? "augment"}-${tier}`}
-              className="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+              key={augment.id ?? `${augment.name ?? "augment"}-${tier}`}
+              className="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-teal-200 hover:shadow-md"
             >
-              <div className="flex items-start justify-between gap-3">
-                <h2 className="text-lg font-semibold text-slate-900">
-                  {augment.name ?? "Unknown Augment"}
-                </h2>
-                <span
-                  className={`inline-flex shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${TIER_STYLES[tier] ?? TIER_STYLES[1]}`}
-                >
-                  {TIER_LABELS[tier] ?? "Silver"}
-                </span>
+              <div className="flex items-start gap-3">
+                {augment.image && (
+                  <div className="h-10 w-10 shrink-0 overflow-hidden rounded-lg border border-gray-100 bg-gray-50">
+                    <ImageWithFallback
+                      src={augment.image}
+                      alt={augment.name ?? ""}
+                      className="h-10 w-10"
+                    />
+                  </div>
+                )}
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-start justify-between gap-2">
+                    <h2 className="text-sm font-semibold leading-snug text-slate-900">
+                      {augment.name ?? "Unknown Augment"}
+                    </h2>
+                    <span
+                      className={`inline-flex shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold ${TIER_STYLES[tier] ?? TIER_STYLES[1]}`}
+                    >
+                      {TIER_LABELS[tier] ?? "Silver"}
+                    </span>
+                  </div>
+                  {augment.description && (
+                    <div
+                      className="mt-1 text-xs leading-relaxed text-slate-500"
+                      dangerouslySetInnerHTML={{
+                        __html: stripTokens(augment.description),
+                      }}
+                    />
+                  )}
+                </div>
               </div>
-
-              <div
-                className="text-sm leading-6 text-slate-600 [&_a]:text-teal-600 [&_a]:underline-offset-2 hover:[&_a]:text-teal-700 [&_a]:hover:underline"
-                dangerouslySetInnerHTML={{
-                  __html: stripTokens(augment.description ?? ""),
-                }}
-              />
             </article>
           );
         })}
