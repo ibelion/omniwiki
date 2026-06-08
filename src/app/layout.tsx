@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "OmniWiki",
-  description: "Multiverse wiki for Pokémon now, League and more next",
+  description: "Multiverse wiki for Pokémon, League of Legends, Teamfight Tactics, and One Piece.",
 };
 
 export default function RootLayout({
@@ -38,10 +38,10 @@ export default function RootLayout({
               </span>
               <div className="text-sm text-gray-600">
                 <p className="font-semibold text-gray-900">
-                  Pokémon, League & TFT live now
+                  Pokémon, League, TFT & One Piece live
                 </p>
                 <p className="text-xs text-gray-500">
-                  One Piece data pipeline is up next
+                  Four universes — run build:onepiece to populate One Piece data
                 </p>
               </div>
             </div>
@@ -75,13 +75,13 @@ export default function RootLayout({
                 >
                   TFT
                 </Link>
-                <a
-                  href="#"
-                  className="rounded-lg px-3 py-2 text-gray-400 transition hover:bg-gray-100"
-                  aria-label="One Piece universe (coming soon)"
+                <Link
+                  href="/onepiece"
+                  className="rounded-lg px-3 py-2 text-orange-700 transition hover:bg-orange-50"
+                  aria-label="One Piece universe"
                 >
-                  One Piece (soon)
-                </a>
+                  One Piece
+                </Link>
               </nav>
               <CommandPaletteButton />
             </div>

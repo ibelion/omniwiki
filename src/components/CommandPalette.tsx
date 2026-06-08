@@ -200,6 +200,25 @@ export function CommandPalette() {
           }
         }
 
+        if (pathname?.startsWith("/onepiece") || pathname === "/") {
+          const onePieceRes = await fetch("/onepiececontent/data/bundle.json", {
+            cache: "force-cache",
+          });
+          if (onePieceRes.ok) {
+            const bundle = (await onePieceRes.json()) as {
+              characters: { id: string; name: string }[];
+            };
+            allEntries.push(
+              ...(bundle.characters ?? []).map((c) => ({
+                slug: c.id,
+                name: c.name,
+                category: "One Piece",
+                href: `/onepiece/characters/${c.id}`,
+              }))
+            );
+          }
+        }
+
         if (!cancelled) {
           setEntries(allEntries);
         }
@@ -247,6 +266,9 @@ export function CommandPalette() {
     }
     if (pathname?.startsWith("/abilities")) {
       return "Search Abilities (Ctrl/Cmd + K)";
+    }
+    if (pathname?.startsWith("/onepiece")) {
+      return "Search One Piece characters (Ctrl/Cmd + K)";
     }
     return "Search (Ctrl/Cmd + K)";
   }, [pathname]);
