@@ -10,7 +10,8 @@
     "cf:build": "tsx scripts/split-learnsets.ts && cross-env NODE_OPTIONS=--max-old-space-size=8192 opennextjs-cloudflare build && node scripts/remove-large-assets.mjs && node scripts/copy-static-pages.mjs",
     "start": "next start",
     "lint": "next lint",
-    "build:data": "node --import tsx ./scripts/build-pokemon.ts && node --import tsx ./scripts/build-league.ts"
+    "build:data": "node --import tsx ./scripts/build-pokemon.ts && node --import tsx ./scripts/build-league.ts",
+    "build:onepiece": "node --import tsx ./scripts/build-onepiece.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
