@@ -13,7 +13,7 @@ type PageProps = {
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return leagueData.lore.map((l) => ({ slug: l.slug }));
+  return leagueData.lore.filter((l) => l.slug && l.champion).map((l) => ({ slug: l.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -39,9 +39,9 @@ export default async function LoreDetailPage({ params }: PageProps) {
       ? (leagueData.factions ?? []).find((f) => f.slug === entry.faction)
       : null;
 
-  const sorted = [...leagueData.lore].sort((a, b) =>
-    a.champion.localeCompare(b.champion)
-  );
+  const sorted = [...leagueData.lore]
+    .filter((l) => l.champion)
+    .sort((a, b) => a.champion.localeCompare(b.champion));
   const idx = sorted.findIndex((l) => l.slug === slug);
   const previous = idx > 0 ? sorted[idx - 1] : null;
   const next = idx < sorted.length - 1 ? sorted[idx + 1] : null;
