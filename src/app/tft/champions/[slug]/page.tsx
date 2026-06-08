@@ -8,6 +8,9 @@ type PageProps = { params: Promise<{ slug: string }> };
 
 const toSlug = (name: string) => name.toLowerCase().replace(/\s+/g, "-");
 
+const stripTokens = (html: string) =>
+  html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
+
 const COST_COLORS: Record<number, string> = {
   1: "bg-gray-100 text-gray-700",
   2: "bg-green-100 text-green-700",
@@ -49,6 +52,22 @@ export default async function TFTChampionPage({ params }: PageProps) {
   const costCls = (cost: number) =>
     COST_COLORS[cost] ?? "bg-gray-100 text-gray-700";
 
+  const stats = champion.stats;
+  const statRows = stats
+    ? [
+        { label: "HP", value: stats.hp != null ? Math.round(stats.hp).toString() : null },
+        { label: "Damage", value: stats.damage != null ? Math.round(stats.damage).toString() : null },
+        { label: "Armor", value: stats.armor != null ? Math.round(stats.armor).toString() : null },
+        { label: "Magic Resist", value: stats.magicResist != null ? Math.round(stats.magicResist).toString() : null },
+        { label: "Attack Speed", value: stats.attackSpeed != null ? stats.attackSpeed.toFixed(2) : null },
+        {
+          label: "Mana",
+          value: stats.mana != null ? `${Math.round(stats.initialMana ?? 0)} / ${Math.round(stats.mana)}` : null,
+        },
+        { label: "Range", value: stats.range != null ? Math.round(stats.range).toString() : null },
+      ].filter((s) => s.value !== null && s.value !== "0")
+    : [];
+
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-gray-50 px-6 py-10">
       <BackLink href="/tft/champions" label="Back to Champions" />
@@ -78,6 +97,11 @@ export default async function TFTChampionPage({ params }: PageProps) {
             <span className={`${costCls(champion.cost)} rounded-full px-3 py-1 text-sm font-semibold`}>
               {champion.cost}g
             </span>
+            {champion.role && (
+              <span className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-500">
+                {champion.role}
+              </span>
+            )}
           </div>
           {champion.traits.length > 0 && (
             <div className="flex flex-wrap gap-2">
@@ -90,6 +114,43 @@ export default async function TFTChampionPage({ params }: PageProps) {
           )}
         </div>
       </header>
+
+      {champion.ability && (
+        <section className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+          <div className="flex items-center gap-3">
+            {champion.ability.icon && (
+              <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-gray-100 bg-gray-50">
+                <ImageWithFallback
+                  src={champion.ability.icon}
+                  alt={champion.ability.name}
+                  className="h-12 w-12"
+                />
+              </div>
+            )}
+            <h2 className="text-lg font-semibold text-gray-900">{champion.ability.name}</h2>
+          </div>
+          {champion.ability.description && (
+            <p
+              className="text-sm leading-relaxed text-gray-600"
+              dangerouslySetInnerHTML={{ __html: stripTokens(champion.ability.description) }}
+            />
+          )}
+        </section>
+      )}
+
+      {statRows.length > 0 && (
+        <section className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-lg font-semibold text-gray-900">Base Stats</h2>
+          <div className="flex flex-wrap gap-2">
+            {statRows.map((s) => (
+              <div key={s.label} className="flex items-center gap-1.5 rounded-lg bg-gray-50 px-3 py-1.5 text-sm">
+                <span className="text-gray-500">{s.label}</span>
+                <span className="font-semibold text-gray-900">{s.value}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {sharedTraitChamps.length > 0 && (
         <section className="flex flex-col gap-4">

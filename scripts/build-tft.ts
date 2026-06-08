@@ -6,12 +6,33 @@ import zlib from 'node:zlib';
 const CD_BASE = 'https://raw.communitydragon.org/latest';
 const TFT_JSON = `${CD_BASE}/cdragon/tft/en_us.json`;
 
+type CDChampionAbility = {
+  name: string;
+  desc: string;
+  icon: string;
+  variables: { name: string; value: number[] }[];
+};
+
+type CDChampionStats = {
+  hp: number;
+  damage: number;
+  armor: number;
+  magicResist: number;
+  attackSpeed: number;
+  mana: number;
+  initialMana: number;
+  range: number;
+};
+
 type CDChampion = {
   apiName: string;
   name: string;
   cost: number;
+  role?: string;
   traits: string[];
   squareIcon: string;
+  ability?: CDChampionAbility;
+  stats?: CDChampionStats;
 };
 
 type CDTrait = {
@@ -59,7 +80,16 @@ type CDTFTJson = {
 
 type TFTBundle = {
   setNumber?: number;
-  champions: { id: string; name: string; cost: number; traits: string[]; image: string | null }[];
+  champions: {
+    id: string;
+    name: string;
+    cost: number;
+    traits: string[];
+    image: string | null;
+    role?: string;
+    ability?: { name: string; description: string; icon: string | null };
+    stats?: { hp: number; damage: number; armor: number; magicResist: number; attackSpeed: number; mana: number; initialMana: number; range: number };
+  }[];
   items: { id: string; name: string; description: string; image: string | null }[];
   traits: { id: string; name: string; description: string; image: string | null; tiers: { minUnits: number; maxUnits: number; style: number }[] }[];
   augments: { id: string; name: string; description: string; image: string | null; tier: number | null }[];
@@ -145,7 +175,7 @@ function substituteVars(
 
   // Unwrap styled-text tags that wrap colored/bolded content — keep inner text
   result = result.replace(
-    /<\/?(?:TFTKeyword|tftbold|magicDamage|TFTTrackerLabel|TFTHighlight|TFTShadowItemBonus|TFTStargazer|status|TFTGuildInactive|TFTBonus|li)>/gi,
+    /<\/?(?:TFTKeyword|tftbold|magicDamage|spellPassive|TFTTrackerLabel|TFTHighlight|TFTShadowItemBonus|TFTStargazer|status|TFTGuildInactive|TFTBonus|li)>/gi,
     ''
   );
 
@@ -174,8 +204,9 @@ function substituteVars(
     .replace(/(?<!\d)\/\d+/g, '')
     .replace(/(?<!\d)%/g, '')
     .replace(/\s+-([a-zA-Z])/g, ' $1')
-    // "(word )" with trailing whitespace indicates the value placeholder was empty
+    // "(word )" with trailing whitespace, or bare "()" from empty token resolution
     .replace(/\(\w[\w\s]*\s\)/g, '')
+    .replace(/\(\s*\)/g, '')
     // spaces before punctuation left by removed tokens
     .replace(/\s+([.,!?])/g, '$1')
     .replace(/[ \t]{2,}/g, ' ')
@@ -208,13 +239,45 @@ async function main(): Promise<void> {
 
     const champions = latestSet.champions
       .filter((c) => c.name && c.cost > 0)
-      .map((c) => ({
-        id: c.apiName,
-        name: c.name,
-        cost: c.cost,
-        traits: c.traits ?? [],
-        image: cdToUrl(c.squareIcon),
-      }));
+      .map((c) => {
+        // Build per-star-level variable maps for ability description substitution.
+        // CommunityDragon's value[] has 7 entries; TFT uses indices 0-2 for 1★/2★/3★.
+        const abilityVarSets: Record<string, number | null>[] = [0, 1, 2].map((starIdx) => {
+          const vars: Record<string, number | null> = {};
+          for (const v of c.ability?.variables ?? []) {
+            vars[v.name] = v.value?.[starIdx] ?? null;
+          }
+          return vars;
+        });
+
+        return {
+          id: c.apiName,
+          name: c.name,
+          cost: c.cost,
+          traits: c.traits ?? [],
+          image: cdToUrl(c.squareIcon),
+          ...(c.role ? { role: c.role } : {}),
+          ...(c.ability ? {
+            ability: {
+              name: c.ability.name,
+              description: substituteVars(c.ability.desc ?? '', abilityVarSets),
+              icon: cdToUrl(c.ability.icon),
+            },
+          } : {}),
+          ...(c.stats ? {
+            stats: {
+              hp: c.stats.hp,
+              damage: c.stats.damage,
+              armor: c.stats.armor,
+              magicResist: c.stats.magicResist,
+              attackSpeed: c.stats.attackSpeed,
+              mana: c.stats.mana,
+              initialMana: c.stats.initialMana,
+              range: c.stats.range,
+            },
+          } : {}),
+        };
+      });
 
     const traits = latestSet.traits
       .filter((t) => t.name && t.name.trim())

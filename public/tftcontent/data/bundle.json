@@ -6,63 +6,200 @@
       "name": "Golem",
       "cost": 1,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_bluegolem_mobile.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_bluegolem_mobile.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Golem Smash",
+        "description": "Slam the target dealing magic damage.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft_bluegolem/hud/tft_bluegolem_spell.png"
+      },
+      "stats": {
+        "hp": 600,
+        "damage": 55,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.550000011920929,
+        "mana": 100,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT9_SLIME_Crab",
       "name": "Rift Scuttler",
       "cost": 1,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_scuttlecrab_mobile.tft_set13.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft_scuttlecrab_mobile.tft_set13.png",
+      "ability": {
+        "name": "Swimming Speed",
+        "description": "Passive: Occasionally dash around the board.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft9_slime_crab/hud/icons2d/tft9_slime_crab_spell.tft_set13.png"
+      },
+      "stats": {
+        "hp": null,
+        "damage": 20,
+        "armor": 10,
+        "magicResist": 10,
+        "attackSpeed": 0.800000011920929,
+        "mana": 100,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT_TrainingDummy",
       "name": "Training Dummy",
       "cost": 1,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tftdebug_dummy_mobile.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tftdebug_dummy_mobile.png",
+      "role": "ADTank",
+      "ability": {
+        "name": "On Duty!",
+        "description": "The Training Dummy cannot move or attack. It is also dressed like a devilishly handsome Yordle.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft_trainingdummy/hud/icons2d/tftdebug_dummy_donothing.png"
+      },
+      "stats": {
+        "hp": 550,
+        "damage": 50,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.5,
+        "mana": 0,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT5_EmblemArmoryKey",
       "name": "Tome of Traits",
       "cost": 8,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft5_draconicegg_mobile.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft5_draconicegg_mobile.png",
+      "ability": {
+        "name": "Tome of Traits",
+        "description": "Drag this Tome to the Shop to open an Armory full of emblems! You will have 30 seconds to choose.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft8_teamupprop/hud/icons2d/tft5_emblemarmorykey_square.png"
+      },
+      "stats": {
+        "hp": 10,
+        "damage": null,
+        "armor": 10,
+        "magicResist": 10,
+        "attackSpeed": 1,
+        "mana": 100,
+        "initialMana": 0,
+        "range": 0
+      }
     },
     {
       "id": "TFT_ArmoryKeyCompleted",
       "name": "Completed Item Anvil",
       "cost": 8,
       "traits": [],
-      "image": null
+      "image": null,
+      "ability": {
+        "name": "Completed Item Anvil",
+        "description": "Drag this to the Shop to open an Armory full of completed items! You will have 30 seconds to choose.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft_armorykeycompleted/hud/icons2d/tft_armorykeycompleted_square.png"
+      },
+      "stats": {
+        "hp": 10,
+        "damage": 70,
+        "armor": 10,
+        "magicResist": 10,
+        "attackSpeed": 1,
+        "mana": 100,
+        "initialMana": 0,
+        "range": 0
+      }
     },
     {
       "id": "TFT_ArmoryKeyComponent",
       "name": "Component Anvil",
       "cost": 8,
       "traits": [],
-      "image": null
+      "image": null,
+      "ability": {
+        "name": "Component Anvil",
+        "description": "Drag this to the Shop to open an Armory full of component items! You will have 30 seconds to choose.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft_armorykeycomponent/hud/icons2d/tft_armorykeycomponent_square.png"
+      },
+      "stats": {
+        "hp": 10,
+        "damage": 70,
+        "armor": 10,
+        "magicResist": 10,
+        "attackSpeed": 1,
+        "mana": 100,
+        "initialMana": 0,
+        "range": 0
+      }
     },
     {
       "id": "TFT_ArmoryKeyOrnn",
       "name": "Artifact Item Anvil",
       "cost": 8,
       "traits": [],
-      "image": null
+      "image": null,
+      "ability": {
+        "name": "Artifact Item Anvil",
+        "description": "Drag this to the Shop to open an Armory full of Artifact items! You will have 30 seconds to choose.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft_armorykeyornn/hud/icons2d/tft_armorykeyornn_square.png"
+      },
+      "stats": {
+        "hp": 10,
+        "damage": 70,
+        "armor": 10,
+        "magicResist": 10,
+        "attackSpeed": 1,
+        "mana": 100,
+        "initialMana": 0,
+        "range": 0
+      }
     },
     {
       "id": "TFT_ArmoryKeySupport",
       "name": "Support item anvil",
       "cost": 8,
       "traits": [],
-      "image": null
+      "image": null,
+      "ability": {
+        "name": "Support item anvil",
+        "description": "Drag this to the Shop to open an Armory full of Support items! You will have 30 seconds to choose.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft_armorykeysupport/hud/tft_armorykeysupport_square.png"
+      },
+      "stats": {
+        "hp": 10,
+        "damage": 70,
+        "armor": 10,
+        "magicResist": 10,
+        "attackSpeed": 1,
+        "mana": 100,
+        "initialMana": 0,
+        "range": 0
+      }
     },
     {
       "id": "TFT6_MercenaryChest",
       "name": "Mercenary Chest",
       "cost": 11,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft6_mercenarychest_mobile.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft6_mercenarychest_mobile.png",
+      "ability": {
+        "name": "Mercenary Chest",
+        "description": "This chest stores all of the accumulated loot you've collected. Win a combat against a player to open it!",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft6_mercenarychest/hud/icons2d/tft6_mercenarychest_eyeofthestorm.png"
+      },
+      "stats": {
+        "hp": 1,
+        "damage": 0,
+        "armor": 0,
+        "magicResist": null,
+        "attackSpeed": null,
+        "mana": 12,
+        "initialMana": 0,
+        "range": 0
+      }
     },
     {
       "id": "TFT17_Briar",
@@ -73,7 +210,23 @@
         "Primordian",
         "Rogue"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_briar/skins/base/images/tft17_briar_splash_tile_10.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_briar/skins/base/images/tft17_briar_splash_tile_10.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Fish Frenzy",
+        "description": "Passive: For every 1% missing Health, gain Attack Speed\n\nActive: Deal <physicalDamage> </physicalDamage> physical damage to the target, increased by 50% if they're a tank.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_briar/hud/icons2d/tft17_briarq.tft_set17.png"
+      },
+      "stats": {
+        "hp": 650,
+        "damage": 35,
+        "armor": 35,
+        "magicResist": 35,
+        "attackSpeed": 0.75,
+        "mana": 40,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Belveth",
@@ -84,7 +237,23 @@
         "Challenger",
         "Marauder"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_belveth/skins/base/images/tft17_belveth_splash_tile_19.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_belveth/skins/base/images/tft17_belveth_splash_tile_19.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Tidal Slashes",
+        "description": "Unleash a flurry of slashes at the current target over 2 seconds, dealing <physicalDamage> </physicalDamage> physical damage each.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_belveth/hud/icons2d/tft17_belvethe.tft_set17.png"
+      },
+      "stats": {
+        "hp": 750,
+        "damage": 47,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.75,
+        "mana": 50,
+        "initialMana": 0,
+        "range": 2
+      }
     },
     {
       "id": "TFT17_MissFortune",
@@ -94,7 +263,22 @@
         "Gun Goddess",
         "Choose Trait"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_missfortune/skins/base/images/tft17_missfortune_splash_tile_16.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_missfortune/skins/base/images/tft17_missfortune_splash_tile_16.tft_set17.png",
+      "ability": {
+        "name": "Gun Goddess Arsenal",
+        "description": "Field Miss Fortune to choose whether she activates Conduit Mode, Challenger Mode, or Replicator Mode. The chosen mode determines her ability and her trait.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_missfortune/hud/icons2d/tft17_missfortune_w.tft_set17.png"
+      },
+      "stats": {
+        "hp": 650,
+        "damage": 50,
+        "armor": 30,
+        "magicResist": 30,
+        "attackSpeed": 0.75,
+        "mana": 100,
+        "initialMana": 0,
+        "range": 6
+      }
     },
     {
       "id": "TFT17_Akali",
@@ -104,7 +288,23 @@
         "N.O.V.A.",
         "Marauder"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_akali/skins/base/images/tft17_akali_splash_tile_68.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_akali/skins/base/images/tft17_akali_splash_tile_68.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Star Strike",
+        "description": "Reposition next to the target to strike the most enemies. Then throw 5 piercing kunai, each dealing <physicalDamage> </physicalDamage> physical damage to the first enemy hit, reduced to <physicalDamage> </physicalDamage> for each subsequent target. Kunai remove 1 Armor, 2 if they crit.\n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Slice all enemies, applying Wound and a bleed that deals <physicalDamage enabled=TFT17_DRX_isSelected> </physicalDamage> physical damage each second. Kunai increase the damage of the bleed by 12%.</scaleLevel>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_akali/hud/icons2d/tft17_akali_q.tft_set17.png"
+      },
+      "stats": {
+        "hp": 750,
+        "damage": 45,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.800000011920929,
+        "mana": 30,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Bard",
@@ -114,7 +314,23 @@
         "Meeple",
         "Conduit"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_bard/skins/base/images/tft17_bard_splash_tile_8.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_bard/skins/base/images/tft17_bard_splash_tile_8.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Ultra Friendly Object",
+        "description": "Summon a flying saucer over the current target that lasts <TFTRadiantItemBonus>5</TFTRadiantItemBonus>4 seconds. Each second it deals magic damage to the target, plus magic damage split between all enemies within 1 hex. The saucer deals 30% increased damage to Tanks.\n\nIf an enemy under the UFO dies, Bard has a 40/15/20% chance to abduct them and create a 1-star copy on your bench.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep bonus:</spellActive> On combat start, grant the nearest (i:set14AmpIcon) Meeple allies an additional Meep.</mainText>\n\nFriends abducted:",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_bard/hud/icons2d/tft17_bard_e.tft_set17.png"
+      },
+      "stats": {
+        "hp": 900,
+        "damage": 30,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.8500000238418579,
+        "mana": 65,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Jinx",
@@ -124,7 +340,23 @@
         "Anima",
         "Challenger"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jinx/skins/base/images/tft17_jinx_splash_tile_38.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jinx/skins/base/images/tft17_jinx_splash_tile_38.tft_set17.png",
+      "role": "ADCarry",
+      "ability": {
+        "name": "Explosive Attitude",
+        "description": "Fire a barrage of rockets in a cone, each dealing <physicalDamage> </physicalDamage> physical damage to the first target hit.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jinx/hud/icons2d/tft17_jinx_q1.tft_set17.png"
+      },
+      "stats": {
+        "hp": 550,
+        "damage": 55,
+        "armor": 20,
+        "magicResist": 20,
+        "attackSpeed": 0.75,
+        "mana": 80,
+        "initialMana": 20,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Illaoi",
@@ -135,7 +367,23 @@
         "Vanguard",
         "Shepherd"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_illaoi/skins/base/images/tft17_illaoi_splash_tile_27.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_illaoi/skins/base/images/tft17_illaoi_splash_tile_27.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Test of Spirit",
+        "description": "Gain Shield for 3 seconds. Over the duration, drain <trueDamage> </trueDamage> Health from the nearest 3 enemies. Then slam down, dealing magic damage to all enemies within 2 hexes.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_illaoi/hud/icons2d/tft17_illaoi_e_debuff.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1100,
+        "damage": 50,
+        "armor": 50,
+        "magicResist": 50,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 100,
+        "initialMana": 40,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Aurora",
@@ -145,7 +393,23 @@
         "Anima",
         "Voyager"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurora/skins/base/images/tft17_aurora_splash_tile_1.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurora/skins/base/images/tft17_aurora_splash_tile_1.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Hopped-Up Hacks",
+        "description": "Open a 2 hex rift containing the target, Hacking enemies within for 4 seconds and dealing magic damage to each, plus magic damage split between all enemies hit.\n\nHacked enemies store 10% of all damage they take. When the Hack ends, they take true damage equal to the stored damage. The Hack ends early if it would kill the target.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurora/hud/icons2d/tft17_aurorae.tft_set17.png"
+      },
+      "stats": {
+        "hp": 700,
+        "damage": 30,
+        "armor": 25,
+        "magicResist": 25,
+        "attackSpeed": 0.800000011920929,
+        "mana": 80,
+        "initialMana": 20,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Fiora",
@@ -156,7 +420,23 @@
         "Anima",
         "Marauder"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fiora/skins/base/images/tft17_fiora_splash_tile_51.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fiora/skins/base/images/tft17_fiora_splash_tile_51.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Perfect Bladework",
+        "description": "Passive: Every 2 attacks, reveal a Vital on the target. If a Vital exists, dash to attack it dealing <trueDamage> </trueDamage> bonus true damage and heal for 15% of the damage dealt.\n\n<spellActive>Active:</spellActive> Reveal 6 Vitals on the target and quickly attack them all. If the target dies, remaining Vitals transfer to the nearest enemy. Upon striking the final Vital, create a two hex aura that heals allies within for <scaleHealth> </scaleHealth> over 5 seconds.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fiora/hud/icons2d/tft17_fiora_p.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1200,
+        "damage": 80,
+        "armor": 65,
+        "magicResist": 65,
+        "attackSpeed": 0.8999999761581421,
+        "mana": 70,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Gnar",
@@ -166,7 +446,23 @@
         "Meeple",
         "Sniper"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gnar/skins/base/images/tft17_gnar_splash_tile_15.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gnar/skins/base/images/tft17_gnar_splash_tile_15.tft_set17.png",
+      "role": "ADSpecialist",
+      "ability": {
+        "name": "Slingshot Maneuver",
+        "description": "Passive: Every 5th attack, launch a returning boomerang at the target that travels two hexes past the first enemy it hits. It deals <physicalDamage> </physicalDamage> physical damage, reduced by 75% per hit.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> (i:set14AmpIcon) Meeps attack alongside Gnar, dealing <physicalDamage> </physicalDamage> physical damage per second.</mainText>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gnar/hud/icons2d/tft17_gnar_q.tft_set17.png"
+      },
+      "stats": {
+        "hp": 550,
+        "damage": 50,
+        "armor": 20,
+        "magicResist": 20,
+        "attackSpeed": 0.75,
+        "mana": 5,
+        "initialMana": 0,
+        "range": 6
+      }
     },
     {
       "id": "TFT17_Fizz",
@@ -176,7 +472,23 @@
         "Meeple",
         "Rogue"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fizz/skins/base/images/tft17_fizz_splash_tile_26.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fizz/skins/base/images/tft17_fizz_splash_tile_26.tft_set17.png",
+      "role": "APReaper",
+      "ability": {
+        "name": "Meep Bait",
+        "description": "Dash through the current target, dealing magic damage. Every third cast also summons a Mega Meep after a delay, briefly knocking the target up and dealing (i:set14AmpIcon) magic damage. Adjacent enemies take 50% damage.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Add (i:set14AmpIcon) Meep to the bait, increasing Mega Meep damage by.</mainText>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_fizz/hud/icons2d/tft17_fizz_r.tft_set17.png"
+      },
+      "stats": {
+        "hp": 850,
+        "damage": 30,
+        "armor": 55,
+        "magicResist": 55,
+        "attackSpeed": 0.8500000238418579,
+        "mana": 20,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Rammus",
@@ -186,7 +498,23 @@
         "Meeple",
         "Bastion"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rammus/skins/base/images/tft17_rammus_splash_tile_17.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rammus/skins/base/images/tft17_rammus_splash_tile_17.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Gravitational Spin",
+        "description": "Gain shield for 4 seconds. Then, strike enemies in a three hex line, dealing magic damage.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Reduce the damage of incoming attacks by (i:set14AmpIcon). After being attacked 20 times, deal (i:set14AmpIcon) magic damage in a two hex radius.</mainText>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rammus/hud/icons2d/armordillo_powerball.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1300,
+        "damage": 60,
+        "armor": 60,
+        "magicResist": 60,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 90,
+        "initialMana": 20,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Poppy",
@@ -196,7 +524,23 @@
         "Meeple",
         "Bastion"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_poppy/skins/base/images/tft17_poppy_splash_tile_16.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_poppy/skins/base/images/tft17_poppy_splash_tile_16.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Huddle Up!",
+        "description": "Gain Shield for 4 seconds. For the duration, allies within two hexes gain Armor and Magic Resistance.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Meeps grant Shield to the nearest (i:set14AmpIcon) allies for 4 seconds.</mainText>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_poppy/hud/icons2d/tft17_poppy_w.tft_set17.png"
+      },
+      "stats": {
+        "hp": 700,
+        "damage": 60,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 100,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Corki",
@@ -206,7 +550,23 @@
         "Meeple",
         "Fateweaver"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_corki/skins/base/images/tft17_corki_splash_tile_26.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_corki/skins/base/images/tft17_corki_splash_tile_26.tft_set17.png",
+      "role": "ADCaster",
+      "ability": {
+        "name": "Asteroid Blaster",
+        "description": "Strafe to a nearby position, unleashing 21 missiles split between the target and all enemies within two hexes. Missiles deal <physicalDamage> </physicalDamage> physical damage with a 20% Lucky chance of firing a mega missile that deals <physicalDamage> </physicalDamage> instead.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Every (i:set14AmpIcon) seconds, launch an Explosive Meep at the target, dealing <physicalDamage> </physicalDamage> physical damage in a one hex radius on impact.</mainText>\n\nLucky: Check twice and take the better outcome.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_corki/hud/icons2d/tft17_corki_missilebarrage.tft_set17.png"
+      },
+      "stats": {
+        "hp": 850,
+        "damage": 45,
+        "armor": 30,
+        "magicResist": 30,
+        "attackSpeed": 0.800000011920929,
+        "mana": 60,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Veigar",
@@ -216,7 +576,23 @@
         "Meeple",
         "Replicator"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_veigar/skins/base/images/tft17_veigar_splash_tile_32.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_veigar/skins/base/images/tft17_veigar_splash_tile_32.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Meepteor Shower",
+        "description": "Call down a Meepteor on the target that deals magic damage.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> An additional (i:set14AmpIcon) mini Meepteor are called down on nearby targets dealing magic damage each.</mainText>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_veigar/hud/icons2d/tft17_veigardarkmatter.tft_set17.png"
+      },
+      "stats": {
+        "hp": 500,
+        "damage": 30,
+        "armor": 15,
+        "magicResist": 15,
+        "attackSpeed": 0.699999988079071,
+        "mana": 50,
+        "initialMana": 10,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Aatrox",
@@ -226,7 +602,23 @@
         "N.O.V.A.",
         "Bastion"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aatrox/skins/base/images/tft17_aatrox_splash_tile_30.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aatrox/skins/base/images/tft17_aatrox_splash_tile_30.tft_set17.png",
+      "role": "ADTank",
+      "ability": {
+        "name": "Stellar Slash",
+        "description": "Heal <scaleHealth> </scaleHealth>, then deal <physicalDamage> </physicalDamage> physical damage to the current target.\n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Cleave the battlefield, briefly knocking up all enemies and dealing <physicalDamage enabled=TFT17_DRX_isSelected> </physicalDamage> physical damage.</scaleLevel>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aatrox/hud/icons2d/tft17_aatrox_q2.tft_set17.png"
+      },
+      "stats": {
+        "hp": 700,
+        "damage": 50,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.6000000238418579,
+        "mana": 90,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Caitlyn",
@@ -236,7 +628,23 @@
         "N.O.V.A.",
         "Fateweaver"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_caitlyn/skins/base/images/tft17_caitlyn_splash_tile_48.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_caitlyn/skins/base/images/tft17_caitlyn_splash_tile_48.tft_set17.png",
+      "role": "ADSpecialist",
+      "ability": {
+        "name": "Aim For The Head",
+        "description": "Passive: Attacks have a 15% Lucky chance to fire an empowered Headshot, dealing <physicalDamage> </physicalDamage> physical damage.\n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Mark all enemies, increasing damage taken by 10%. The first time marked targets drop below 50% Health, Headshot them for <physicalDamage enabled=TFT17_DRX_isSelected> </physicalDamage> physical damage.\n\n</scaleLevel>Lucky: Check twice and take the better outcome.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_caitlyn/hud/icons2d/tft17_caitlyn_headshot.tft_set17.png"
+      },
+      "stats": {
+        "hp": 500,
+        "damage": 65,
+        "armor": 15,
+        "magicResist": 15,
+        "attackSpeed": 0.550000011920929,
+        "mana": 0,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Maokai",
@@ -246,7 +654,23 @@
         "N.O.V.A.",
         "Brawler"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_maokai/skins/base/images/tft17_maokai_splash_tile_33.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_maokai/skins/base/images/tft17_maokai_splash_tile_33.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Grasp of Convergence",
+        "description": "Passive: Gain 50% more max Health from all sources.\n\n<spellActive>Active:</spellActive> Converge an X-shape of vines on the target, dealing magic damage to each enemy hit and Stunning them for <scaleLevel>1.5</scaleLevel> seconds. \n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Send forth a wave of dragons that stun all enemies for 1.5 seconds. For the rest of combat, Maokai's attacks deal <physicalDamage enabled=TFT17_DRX_isSelected> </physicalDamage> bonus physical damage.</scaleLevel>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_maokai/hud/icons2d/tft17_maokai_w.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1100,
+        "damage": 60,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.6000000238418579,
+        "mana": 100,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Kindred",
@@ -256,7 +680,23 @@
         "N.O.V.A.",
         "Challenger"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kindred/skins/base/images/tft17_kindred_splash_tile_23.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kindred/skins/base/images/tft17_kindred_splash_tile_23.tft_set17.png",
+      "role": "ADCarry",
+      "ability": {
+        "name": "Cosmic Pursuit",
+        "description": "Passive: Attacks and Abilities mark the target. When an enemy reaches 3 marks, Wolf consumes the marks, dealing <physicalDamage> </physicalDamage> physical damage. \n\n<spellActive>Active:</spellActive> Jump up to 1 hex away and fire arrows at the nearest <scaleLevel>3</scaleLevel> targets, each dealing <physicalDamage> </physicalDamage> physical damage. \n\n<scaleLevel enabled=TFT17_DRX_isSelected alternate=TFTGuildInactive>N.O.V.A. Strike: Gain 10% Damage Amp. Now and every 4.5 seconds after, add a mark to all enemies.</scaleLevel>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kindred/hud/icons2d/tft17_kindred_q.tft_set17.png"
+      },
+      "stats": {
+        "hp": 850,
+        "damage": 55,
+        "armor": 30,
+        "magicResist": 30,
+        "attackSpeed": 0.800000011920929,
+        "mana": 40,
+        "initialMana": 0,
+        "range": 6
+      }
     },
     {
       "id": "TFT17_Kaisa",
@@ -266,7 +706,23 @@
         "Dark Star",
         "Rogue"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kaisa/skins/base/images/tft17_kaisa_splash_tile_69.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kaisa/skins/base/images/tft17_kaisa_splash_tile_69.tft_set17.png",
+      "role": "ADCaster",
+      "ability": {
+        "name": "Bullet Cluster",
+        "description": "<tftPassive>Passive:</tftPassive> On takedown, gain 10 mana.\n\n<tftActive>Active:</tftActive> Fire 16 missiles in a 2-hex radius around the current target, dealing <physicalDamage> </physicalDamage> physical damage each.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_kaisa/hud/icons2d/tft17_kaisa_q2.tft_set17.png"
+      },
+      "stats": {
+        "hp": 650,
+        "damage": 45,
+        "armor": 25,
+        "magicResist": 25,
+        "attackSpeed": 0.800000011920929,
+        "mana": 50,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Karma",
@@ -276,7 +732,23 @@
         "Dark Star",
         "Voyager"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_karma/skins/base/images/tft17_karma_splash_tile_8.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_karma/skins/base/images/tft17_karma_splash_tile_8.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Singularity",
+        "description": "Gather the force of a black hole, dealing magic damage split between the target and the <scaleLevel>2</scaleLevel> closest enemies to them. The target takes an additional magic damage.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_karma/hud/icons2d/tft17_karma_q1.tft_set17.png"
+      },
+      "stats": {
+        "hp": 850,
+        "damage": 40,
+        "armor": 30,
+        "magicResist": 30,
+        "attackSpeed": 0.800000011920929,
+        "mana": 55,
+        "initialMana": 10,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Jhin",
@@ -287,7 +759,23 @@
         "Eradicator",
         "Sniper"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jhin/skins/base/images/tft17_jhin_splash_tile_37.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jhin/skins/base/images/tft17_jhin_splash_tile_37.tft_set17.png",
+      "role": "ADCarry",
+      "ability": {
+        "name": "Space Opera",
+        "description": "Passive: Jhin has a fixed attack speed of <scaleLevel>0/0.9</scaleLevel> and converts every 1% of bonus Attack Speed into 0.8 bonus Attack Damage.\n\n<spellActive>Active:</spellActive> Summon 4 spectral hands that fire alongside Jhin for the next 4 attacks. Each hand deals <physicalDamage> </physicalDamage> physical damage per shot. The final shots deal 244% more damage and pierce through the most enemies in a line, dealing 44% reduced damage per target hit.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jhin/hud/icons2d/tft17_jhin_spell_icon.tft_set17.png"
+      },
+      "stats": {
+        "hp": 900,
+        "damage": 80,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.8999999761581421,
+        "mana": 44,
+        "initialMana": 0,
+        "range": 6
+      }
     },
     {
       "id": "TFT17_Urgot",
@@ -298,7 +786,23 @@
         "Brawler",
         "Marauder"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_urgot/skins/base/images/tft17_urgot_splash_tile_32.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_urgot/skins/base/images/tft17_urgot_splash_tile_32.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Unstoppable Dreadnought",
+        "description": "Passive - Proximity Blast: Whenever an enemy enters a hex radius, fire a blast in a cone towards the closest adjacent hex that deals <physicalDamage> </physicalDamage> physical damage with 30% falloff per hex. Each adjacent hex has a 5 second cooldown, and starts combat on cooldown.\n\n<spellActive>Active:</spellActive> Gain Shield for 3 seconds and reposition up to one hex to maximize the number of targets within Proximity Blast's radius. Reset Proximity Blast's cooldowns.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_urgot/hud/icons2d/tft17_urgot_e.tft_set17.png"
+      },
+      "stats": {
+        "hp": 600,
+        "damage": 60,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.800000011920929,
+        "mana": 50,
+        "initialMana": 0,
+        "range": 2
+      }
     },
     {
       "id": "TFT17_AurelionSol",
@@ -308,7 +812,23 @@
         "Mecha",
         "Conduit"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurelionsol/skins/base/images/tft17_aurelionsol_splash_tile_2.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurelionsol/skins/base/images/tft17_aurelionsol_splash_tile_2.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Deathbeam",
+        "description": "Channel a deathbeam in a line towards the current target for <TFTRadiantItemBonus>4</TFTRadiantItemBonus>3 seconds. It deals magic damage per second, reduced by 80% per enemy it passes through. Deathbeam ignores 30% of the enemy's Magic Resist.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_aurelionsol/hud/icons2d/tft17_aurelionsolq.tft_set17.png"
+      },
+      "stats": {
+        "hp": 850,
+        "damage": 30,
+        "armor": 30,
+        "magicResist": 30,
+        "attackSpeed": 0.75,
+        "mana": 75,
+        "initialMana": 15,
+        "range": 6
+      }
     },
     {
       "id": "TFT17_Galio",
@@ -318,7 +838,23 @@
         "Mecha",
         "Voyager"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_galio/skins/base/images/tft17_galio_mobile.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_galio/skins/base/images/tft17_galio_mobile.tft_set17.png",
+      "role": "ADTank",
+      "ability": {
+        "name": "Gravity Matrix",
+        "description": "Enter a defensive stance for 4 seconds gaining 0/20% Durability. While in the defensive stance, attract nearby enemy projectiles and heal <scaleHealth> </scaleHealth> over the duration. When this ends, release a shockwave that deals <physicalDamage> </physicalDamage> as physical damage in a 2-hex range.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_galio/hud/icons2d/tft17_galio_w.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1300,
+        "damage": 70,
+        "armor": 60,
+        "magicResist": 60,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 100,
+        "initialMana": 40,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Viktor",
@@ -328,7 +864,23 @@
         "Psionic",
         "Conduit"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_viktor/skins/base/images/tft17_viktor_splash_tile_5.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_viktor/skins/base/images/tft17_viktor_splash_tile_5.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Psionic Storm",
+        "description": "Channel a one-hex psionic storm that follows enemies for <TFTRadiantItemBonus>5</TFTRadiantItemBonus>4 seconds. Each second, it grows larger and deals magic damage to enemies within, reduced by 60% per hex from the epicenter.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_viktor/hud/icons2d/tft17_viktor_r1.tft_set17.png"
+      },
+      "stats": {
+        "hp": 650,
+        "damage": 30,
+        "armor": 25,
+        "magicResist": 25,
+        "attackSpeed": 0.800000011920929,
+        "mana": 80,
+        "initialMana": 20,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Pyke",
@@ -338,7 +890,23 @@
         "Psionic",
         "Voyager"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pyke/skins/base/images/tft17_pyke_splash_tile_25.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pyke/skins/base/images/tft17_pyke_splash_tile_25.tft_set17.png",
+      "role": "ADReaper",
+      "ability": {
+        "name": "Marked for Death",
+        "description": "Reposition up to one hex to throw a harpoon at the furthest enemy. The harpoon pulls the first enemy hit one hex forward and deals <physicalDamage> </physicalDamage> physical damage. Then, teleport behind them and cleave, dealing <physicalDamage> </physicalDamage> physical damage to them and <physicalDamage> </physicalDamage> physical damage to nearby enemies.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pyke/hud/icons2d/tft17_pykeq.tft_set17.png"
+      },
+      "stats": {
+        "hp": 700,
+        "damage": 45,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.800000011920929,
+        "mana": 40,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_MasterYi",
@@ -348,7 +916,23 @@
         "Psionic",
         "Marauder"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_masteryi/skins/base/images/tft17_masteryi_splash_tile_33.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_masteryi/skins/base/images/tft17_masteryi_splash_tile_33.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Psi Strikes",
+        "description": "Passive: Every third attack is a doubleslash that deals <physicalDamage> </physicalDamage> bonus physical damage.\n\n<spellActive>Active:</spellActive> After brief meditation, enter a Psi-State for 5 seconds, gaining 10% Omnivamp, 70% Attack Speed, and increased movement speed. Twice a second, fire a psychic projection at a random nearby enemy that deals <physicalDamage> </physicalDamage> physical damage",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_masteryi/hud/icons2d/tft17_masteryi_q.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1100,
+        "damage": 60,
+        "armor": 65,
+        "magicResist": 65,
+        "attackSpeed": 0.8500000238418579,
+        "mana": 70,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Gragas",
@@ -358,7 +942,23 @@
         "Psionic",
         "Brawler"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gragas/skins/base/images/tft17_gragas_splash_tile_10.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gragas/skins/base/images/tft17_gragas_splash_tile_10.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Chemical Rage",
+        "description": "Heal <scaleHealth> </scaleHealth> over seconds. Then, deal magic damage to target and enemies adjacent to them and 30% Chill them for 2 seconds.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gragas/hud/icons2d/tft17_gragasdrunkenrage.tft_set17.png"
+      },
+      "stats": {
+        "hp": 950,
+        "damage": 50,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.6000000238418579,
+        "mana": 80,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Teemo",
@@ -368,7 +968,23 @@
         "Space Groove",
         "Shepherd"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_teemo/skins/base/images/tft17_teemo_splash_tile_47.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_teemo/skins/base/images/tft17_teemo_splash_tile_47.tft_set17.png",
+      "role": "APCarry",
+      "ability": {
+        "name": "Double Time",
+        "description": "Passive: Attacks deal bonus magic damage and an additional stacking magic damage over 6 seconds. While an enemy has 5 or more stacks, Teemo is in.\n\n<spellActive>Active:</spellActive> Gain 150% Attack Speed for 3 attacks.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_teemo/hud/icons2d/tft17_teemow.tft_set17.png"
+      },
+      "stats": {
+        "hp": 450,
+        "damage": 15,
+        "armor": 15,
+        "magicResist": 15,
+        "attackSpeed": 0.699999988079071,
+        "mana": 50,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Nasus",
@@ -378,7 +994,23 @@
         "Space Groove",
         "Vanguard"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nasus/skins/base/images/tft17_nasus_splash_tile_25.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nasus/skins/base/images/tft17_nasus_splash_tile_25.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Groovin' Susan",
+        "description": "Transform for 6 seconds, temporarily gaining <scaleLevel>400/250/350</scaleLevel> max Health, entering, and dealing magic damage to adjacent enemies each second.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nasus/hud/icons2d/tft17_nasus_r.tft_set17.png"
+      },
+      "stats": {
+        "hp": 700,
+        "damage": 40,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 120,
+        "initialMana": 60,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Gwen",
@@ -388,7 +1020,23 @@
         "Space Groove",
         "Rogue"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gwen/skins/base/images/tft17_gwen_splash_tile_1.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gwen/skins/base/images/tft17_gwen_splash_tile_1.tft_set17.png",
+      "role": "APReaper",
+      "ability": {
+        "name": "Dance n' Dice",
+        "description": "Passive: Attacks deal magic damage. Gwen is in while targeting an enemy below 40% Health.\n\n<spellActive>Active:</spellActive> Dash to a nearby hex to snip the lowest percent Health enemy, dealing magic damage to the target and magic damage to enemies in a cone. If this kills, dash and snip again at 65% damage!",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_gwen/hud/icons2d/tft17_gwen_e.tft_set17.png"
+      },
+      "stats": {
+        "hp": 750,
+        "damage": 50,
+        "armor": 50,
+        "magicResist": 50,
+        "attackSpeed": 0.8500000238418579,
+        "mana": 30,
+        "initialMana": 0,
+        "range": 2
+      }
     },
     {
       "id": "TFT17_Samira",
@@ -398,7 +1046,23 @@
         "Space Groove",
         "Sniper"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_samira/skins/base/images/tft17_samira_splash_tile_10.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_samira/skins/base/images/tft17_samira_splash_tile_10.tft_set17.png",
+      "role": "ADCaster",
+      "ability": {
+        "name": "Jump and Jive",
+        "description": "Passive: Whenever an enemy is knocked up, shoot them, dealing <physicalDamage> </physicalDamage> physical damage and entering for 3 seconds.\n\n<spellActive>Active:</spellActive> Unleash a volley of bullets at the target, dealing <physicalDamage> </physicalDamage> physical damage and knocking up for 1.3 seconds.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_samira/hud/icons2d/tft17_samirae.tft_set17.png"
+      },
+      "stats": {
+        "hp": 650,
+        "damage": 50,
+        "armor": 25,
+        "magicResist": 25,
+        "attackSpeed": 0.75,
+        "mana": 60,
+        "initialMana": 0,
+        "range": 6
+      }
     },
     {
       "id": "TFT17_Ornn",
@@ -408,7 +1072,23 @@
         "Space Groove",
         "Bastion"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ornn/skins/base/images/tft17_ornn_splash_tile_11.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ornn/skins/base/images/tft17_ornn_splash_tile_11.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Disco Inferno",
+        "description": "Passive: On combat start, forge a temporary completed item. If 3 items are already equipped, a random completed item becomes <TFTRadiantItemBonus>Radiant</TFTRadiantItemBonus> this combat instead.\n\n<spellActive>Active:</spellActive> Gain Shield for 3 seconds, then breath fire in a cone dealing magic damage. After any Shield on Ornn expires, Ornn enters for 3 seconds.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ornn/hud/icons2d/tft17_ornnw.tft_set17.png"
+      },
+      "stats": {
+        "hp": 950,
+        "damage": 50,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 100,
+        "initialMana": 40,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Nami",
@@ -418,7 +1098,23 @@
         "Space Groove",
         "Replicator"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nami/skins/base/images/tft17_nami_splash_tile_41.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nami/skins/base/images/tft17_nami_splash_tile_41.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Bubble Pop",
+        "description": "Toss a disco bubble at the target that deals split between enemies in a one hex radius. The explosion sends 3 globs towards nearby enemies that deal magic damage. On cast, Nami enters for 3 seconds.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nami/hud/icons2d/tft17_namiq.tft_set17.png"
+      },
+      "stats": {
+        "hp": 850,
+        "damage": 40,
+        "armor": 30,
+        "magicResist": 30,
+        "attackSpeed": 0.800000011920929,
+        "mana": 65,
+        "initialMana": 20,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Blitzcrank",
@@ -429,7 +1125,23 @@
         "Space Groove",
         "Vanguard"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_blitzcrank/skins/base/images/tft17_blitzcrank_splash_tile_65.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_blitzcrank/skins/base/images/tft17_blitzcrank_splash_tile_65.tft_set17.png",
+      "role": "APFighter",
+      "ability": {
+        "name": "Party Crasher",
+        "description": "Passive: Every <scaleLevel>2</scaleLevel> seconds, call down a bolt on the highest Health nearby enemy that deals magic damage.\n\n<spellActive>Active:</spellActive> Summon a disco ball at the largest clump of enemies, then knock up the current target into it, dealing magic damage. They crash down into the disco ball, dealing magic damage in a three hex radius. Enter for 1 second per enemy hit.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_blitzcrank/hud/icons2d/tft17_blitzcrankw.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1000,
+        "damage": 50,
+        "armor": 50,
+        "magicResist": 50,
+        "attackSpeed": 0.8999999761581421,
+        "mana": 120,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Sona",
@@ -440,7 +1152,23 @@
         "Psionic",
         "Shepherd"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_sona/skins/base/images/tft17_sona_splash_tile_17.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_sona/skins/base/images/tft17_sona_splash_tile_17.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Psionic Crush",
+        "description": "Hurl a chunk of magnetic debris at the nearest target without one, dealing magic damage and sticking it to them. If an enemy with debris dies, it passes to the nearest enemy without one.\n\nEvery 5 casts, instead rip off all debris dealing magic damage, then crush all the debris onto the target, dealing magic damage and briefly stunning them.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_sona/hud/icons2d/tft17_sona_e.tft_set17.png"
+      },
+      "stats": {
+        "hp": 900,
+        "damage": 35,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.8999999761581421,
+        "mana": 25,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_TwistedFate",
@@ -450,7 +1178,23 @@
         "Stargazer",
         "Fateweaver"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_twistedfate/skins/base/images/tft17_twistedfate_splash_tile_45.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_twistedfate/skins/base/images/tft17_twistedfate_splash_tile_45.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Fate's Gambit",
+        "description": "Draw a card with a value between 1 and 9 by Lucky chance, then throw it at the target. Based on the card drawn, deal between and magic damage. Overkill damage bounces to the nearest enemy. \n\n<spellActive>3-Star Bonus:</spellActive> If a 9 is thrown, generate 1 gold.\n\nLucky: Check twice and take the better outcome.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_twistedfate/hud/icons2d/cardmaster_fatesgambit.tft_set17.png"
+      },
+      "stats": {
+        "hp": 500,
+        "damage": 30,
+        "armor": 15,
+        "magicResist": 15,
+        "attackSpeed": 0.699999988079071,
+        "mana": 50,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Talon",
@@ -460,7 +1204,23 @@
         "Stargazer",
         "Rogue"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_talon/skins/base/images/tft17_talon_splash_tile_39.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_talon/skins/base/images/tft17_talon_splash_tile_39.tft_set17.png",
+      "role": "ADReaper",
+      "ability": {
+        "name": "Diviner's Judgment",
+        "description": "Stab the target, causing them to bleed for <physicalDamage> </physicalDamage> physical damage over 18 seconds. After the attack, leap to the highest percent Health enemy within 3 hexes.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_talon/hud/icons2d/tft17_talone.tft_set17.png"
+      },
+      "stats": {
+        "hp": 650,
+        "damage": 35,
+        "armor": 35,
+        "magicResist": 35,
+        "attackSpeed": 0.75,
+        "mana": 30,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Jax",
@@ -470,7 +1230,23 @@
         "Stargazer",
         "Bastion"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jax/skins/base/images/tft17_jax_mobile.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jax/skins/base/images/tft17_jax_mobile.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Counter Star-ike",
+        "description": "Enter a defensive stance for 3 seconds, reducing incoming damage by and gaining Shield. When the stance ends, strike all nearby enemies, dealing magic damage and Stunning them for <scaleLevel>1.5/1/1.3</scaleLevel> second(s).",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_jax/hud/icons2d/tft17_jaxe.tft_set17.png"
+      },
+      "stats": {
+        "hp": 950,
+        "damage": 50,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 80,
+        "initialMana": 20,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Lulu",
@@ -480,7 +1256,23 @@
         "Stargazer",
         "Replicator"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lulu/skins/base/images/tft17_lulu_splash_tile_14.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lulu/skins/base/images/tft17_lulu_splash_tile_14.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "It's Raining Stars",
+        "description": "Passive: Gain a different secondary effect each game based on the Stargazer constellation.\n\n<spellActive>Active:</spellActive> Call down something from the sky, dealing magic damage to 3 nearby enemies and do some special effect based on this game's Stargazer Constellation.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lulu/hud/icons2d/tft17_lulu_glitterbolt.tft_set17.png"
+      },
+      "stats": {
+        "hp": 650,
+        "damage": 30,
+        "armor": 25,
+        "magicResist": 25,
+        "attackSpeed": 0.75,
+        "mana": 55,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Nunu",
@@ -490,7 +1282,23 @@
         "Stargazer",
         "Vanguard"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nunu/skins/base/images/tft17_nunu_splash_tile_35.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nunu/skins/base/images/tft17_nunu_splash_tile_35.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Calamity",
+        "description": "Gain Shield for 4 seconds. Summon an astrolabe to crash down on a nearby hex, dealing magic damage to enemies within 2 hexes. Then, push the astrolabe towards the end of the board, dealing magic damage. All enemies hit by the astrolabe are knocked up for 0/1.5/1.8 seconds.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nunu/hud/icons2d/tft17_nunue.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1300,
+        "damage": 60,
+        "armor": 60,
+        "magicResist": 60,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 145,
+        "initialMana": 40,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Vex",
@@ -499,7 +1307,23 @@
       "traits": [
         "Doomer"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_vex/skins/base/images/tft17_vex_splash_tile_10.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_vex/skins/base/images/tft17_vex_splash_tile_10.tft_set17.png",
+      "role": "APCarry",
+      "ability": {
+        "name": "Lend Me a Hand, Shadow!",
+        "description": "Passive: Every time Vex attacks, Shadow strikes a nearby enemy, dealing magic damage. Whenever an enemy is struck 5 times by Shadow, Shadow strikes them again.\n\n<spellActive>Active:</spellActive> Shadow launches 3 empowered strikes, dealing magic damage instead.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_vex/hud/icons2d/icons_tft17_vex_e01.tft_set17.png"
+      },
+      "stats": {
+        "hp": 900,
+        "damage": 15,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.800000011920929,
+        "mana": 60,
+        "initialMana": 0,
+        "range": 6
+      }
     },
     {
       "id": "TFT17_Riven",
@@ -509,7 +1333,23 @@
         "Timebreaker",
         "Rogue"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_riven/skins/base/images/tft17_riven_splash_tile_18.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_riven/skins/base/images/tft17_riven_splash_tile_18.tft_set17.png",
+      "role": "HFighter",
+      "ability": {
+        "name": "Time Warp",
+        "description": "Passive: This Ability adapts to Attack Damage or Ability Power, whichever is higher. Attacks deal magic<physicalDamage> </physicalDamage> physical damage.\n\n<spellActive>Active:</spellActive> Dash to a nearby hex, gaining 160/100/150 Shield for 2 seconds and slashing adjacent enemies for magic<physicalDamage> </physicalDamage> physical damage. Every third cast, leap into the air and launch a wave of energy that deals magic<physicalDamage> </physicalDamage> physical damage to enemies in a line.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_riven/hud/icons2d/tft17_rivenpathoftheexile.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1100,
+        "damage": 0,
+        "armor": 60,
+        "magicResist": 60,
+        "attackSpeed": 0.8500000238418579,
+        "mana": 20,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Shen",
@@ -519,7 +1359,23 @@
         "Bulwark",
         "Bastion"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_shen/skins/base/images/tft17_shen_splash_tile_49.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_shen/skins/base/images/tft17_shen_splash_tile_49.tft_set17.png",
+      "role": "APFighter",
+      "ability": {
+        "name": "Reality Tear",
+        "description": "Passive: On cast, attacks gain stacking bonus magic damage. Starting from the third cast, gain <trueDamage>true damage</trueDamage> instead.\n\n<spellActive>Active:</spellActive> Gain Shield for 3 seconds, then slice open a rift on the largest group of champions dealing the Passive's bonus damage to all enemies within. Enemies have their Attack Speed slowed by 50% while allies within gain 80% Attack Speed, both rapidly decaying over 3 seconds.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_shen/hud/icons2d/tft17_shen_rshield.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1300,
+        "damage": 50,
+        "armor": 65,
+        "magicResist": 65,
+        "attackSpeed": 0.8999999761581421,
+        "mana": 70,
+        "initialMana": 20,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Milio",
@@ -529,7 +1385,23 @@
         "Timebreaker",
         "Fateweaver"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_milio/skins/base/images/tft17_milio_splash_tile_0.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_milio/skins/base/images/tft17_milio_splash_tile_0.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Mega Time Kick",
+        "description": "Kick a ball at the current target that deals magic damage. On impact, the ball has a 100% Lucky chance to bounce to a new target dealing magic damage. These bounces can trigger additional bounces, but the odds halve with each bounce.\n\nLucky: Check twice and take the better outcome.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_milio/hud/icons2d/tft17_milio_q.tft_set17.png"
+      },
+      "stats": {
+        "hp": 550,
+        "damage": 30,
+        "armor": 20,
+        "magicResist": 20,
+        "attackSpeed": 0.699999988079071,
+        "mana": 30,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Ezreal",
@@ -539,7 +1411,23 @@
         "Timebreaker",
         "Sniper"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ezreal/skins/base/images/tft17_ezreal_splash_tile_5.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ezreal/skins/base/images/tft17_ezreal_splash_tile_5.tft_set17.png",
+      "role": "ADCaster",
+      "ability": {
+        "name": "Temporal Shot",
+        "description": "<spellActive>Active:</spellActive> Fire a blast at the current target that deals <physicalDamage> </physicalDamage> physical damage. Every 8 takedowns, gain a drone that deals <physicalDamage> </physicalDamage> physical damage to the current target on cast. \n(Total Takedowns: )",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ezreal/hud/icons2d/tft17_ezreal_passive.tft_set17.png"
+      },
+      "stats": {
+        "hp": 450,
+        "damage": 45,
+        "armor": 15,
+        "magicResist": 15,
+        "attackSpeed": 0.699999988079071,
+        "mana": 30,
+        "initialMana": 0,
+        "range": 6
+      }
     },
     {
       "id": "TFT17_Leona",
@@ -549,7 +1437,23 @@
         "Arbiter",
         "Vanguard"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leona/skins/base/images/tft17_leona_splash_tile_64.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leona/skins/base/images/tft17_leona_splash_tile_64.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Shield of Daybreak",
+        "description": "Gain Shield for 4 seconds. Bash the current target, dealing magic damage and stunning them for <scaleLevel>0/1.8</scaleLevel> seconds.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leona/hud/icons2d/tft17_leonaq.tft_set17.png"
+      },
+      "stats": {
+        "hp": 700,
+        "damage": 50,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.6000000238418579,
+        "mana": 110,
+        "initialMana": 50,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Zoe",
@@ -559,7 +1463,23 @@
         "Arbiter",
         "Conduit"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zoe/skins/base/images/tft17_zoe_splash_tile_43.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zoe/skins/base/images/tft17_zoe_splash_tile_43.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Paddle Star",
+        "description": "Fire a paddle star at the current target, dealing magic damage to the first target hit and to others it passes through. When the missile reaches its destination, redirect it to a distant enemy, increasing its speed and repeating the damage. This redirect can occur <TFTRadiantItemBonus>5</TFTRadiantItemBonus>4 times.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zoe/hud/icons2d/tft17_zoe_q2.tft_set17.png"
+      },
+      "stats": {
+        "hp": 550,
+        "damage": 30,
+        "armor": 20,
+        "magicResist": 20,
+        "attackSpeed": 0.699999988079071,
+        "mana": 50,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Diana",
@@ -569,7 +1489,23 @@
         "Arbiter",
         "Challenger"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_diana/skins/base/images/tft17_dianasplash_mobile.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_diana/skins/base/images/tft17_dianasplash_mobile.tft_set17.png",
+      "role": "APFighter",
+      "ability": {
+        "name": "Pale Cascade",
+        "description": "Passive: Attacks deal bonus magic damage.\n\nActive: Gain Shield and summon 3 encircling orbs for 3 seconds. Orbs deal magic damage to enemies they pass through, and rotate faster based on Attack Speed.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_diana/hud/icons2d/tft17_diana_w_lunarshower.tft_set17.png"
+      },
+      "stats": {
+        "hp": 850,
+        "damage": null,
+        "armor": 50,
+        "magicResist": 50,
+        "attackSpeed": 0.800000011920929,
+        "mana": 50,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Leblanc",
@@ -579,7 +1515,23 @@
         "Arbiter",
         "Shepherd"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leblanc/skins/base/images/tft17_leblanc_splash_tile_29.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leblanc/skins/base/images/tft17_leblanc_splash_tile_29.tft_set17.png",
+      "role": "APCarry",
+      "ability": {
+        "name": "Fracture Reality",
+        "description": "Passive: Attacks deal magic damage instead.\n\n<spellActive>Active:</spellActive> Summon 5 clones that attack alongside for 5 attacks, dealing <scaleLevel>0/25%</scaleLevel> damage. For their final attack, clones fire a bolt that deals magic damage.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_leblanc/hud/icons2d/tft17_leblancw.tft_set17.png"
+      },
+      "stats": {
+        "hp": 850,
+        "damage": 0,
+        "armor": 30,
+        "magicResist": 30,
+        "attackSpeed": 0.800000011920929,
+        "mana": 40,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Chogath",
@@ -589,7 +1541,23 @@
         "Dark Star",
         "Brawler"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_chogath/skins/base/images/tft17_chogath_splash_tile_7.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_chogath/skins/base/images/tft17_chogath_splash_tile_7.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Accretion",
+        "description": "Deal magic damage to the lowest Health enemy in range and permanently gain <scaleHealth>0/12/18</scaleHealth> maximum Health. If this kills them, permanently gain <scaleHealth>35/30/40</scaleHealth> maximum Health instead.\n\n(Current Bonus: + Health)",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_chogath/hud/icons2d/greenterror_feast.tft_set17.png"
+      },
+      "stats": {
+        "hp": 700,
+        "damage": 45,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.6000000238418579,
+        "mana": 70,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Lissandra",
@@ -600,7 +1568,23 @@
         "Shepherd",
         "Replicator"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lissandra/skins/base/images/tft17_lissandra_splash_tile_12.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lissandra/skins/base/images/tft17_lissandra_splash_tile_12.tft_set17.png",
+      "role": "APCaster",
+      "ability": {
+        "name": "Dark Matter",
+        "description": "Hurl a shard towards the current target, dealing magic damage to the first target it hits. After hitting its initial target or at its final destination, the dagger explodes dealing magic damage to nearby targets.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_lissandra/hud/icons2d/tft17_lissandra_q.tft_set17.png"
+      },
+      "stats": {
+        "hp": 450,
+        "damage": 30,
+        "armor": 15,
+        "magicResist": 15,
+        "attackSpeed": 0.699999988079071,
+        "mana": 30,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_Zed",
@@ -609,14 +1593,46 @@
       "traits": [
         "Galaxy Hunter"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zed/skins/base/images/tft17_zed_splash_tile_68.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zed/skins/base/images/tft17_zed_splash_tile_68.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Quantum Clone",
+        "description": "Create a clone behind the target with 33/45% reduced max Health and 30 increased Mana cost. The clone inherits its creator's items, stats, and current Health, and can cast Quantum Clone.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_zed/hud/icons2d/3.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1300,
+        "damage": 85,
+        "armor": 60,
+        "magicResist": 60,
+        "attackSpeed": 0.8500000238418579,
+        "mana": 100,
+        "initialMana": 40,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Summon",
       "name": "Bia & Bayin",
       "cost": 11,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_summon/skins/base/images/shiro_small.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_summon/skins/base/images/shiro_small.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Screech",
+        "description": "Passive: Attacks deal bonus magic damage.\n\n<spellActive>Active:</spellActive> Gain Shield for 4 seconds and grant allies 20% Ability Power for the rest of combat.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_summon/hud/tft17_summon_square.tft_set17.png"
+      },
+      "stats": {
+        "hp": 320,
+        "damage": 20,
+        "armor": 0,
+        "magicResist": null,
+        "attackSpeed": 0.6000000238418579,
+        "mana": 50,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_IvernMinion",
@@ -627,7 +1643,23 @@
         "Shepherd",
         "Voyager"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ivernminion/skins/base/images/tft17_ivernminion_splash_tile_27.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ivernminion/skins/base/images/tft17_ivernminion_splash_tile_27.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Meep Impact",
+        "description": "Heal <scaleHealth> </scaleHealth> Health over 3 seconds. Slam the target, dealing magic damage and knocking up for <scaleLevel>1.5/1.8</scaleLevel> seconds. The impact creates meepwaves that deal 50% of these effects in the target's row.\n\n<mainText enabled=TFT17_Astronaut_IsActive alternate=rules><spellActive enabled=TFT17_Astronaut_IsActive alternate=rules>Meep Bonus:</spellActive> Meeps water Meepsie's flower, increasing all incoming Healing and Shielding by (i:set14AmpIcon).</mainText>",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ivernminion/hud/icons2d/tft17_ivernminion_r.tft_set17.png"
+      },
+      "stats": {
+        "hp": 950,
+        "damage": 65,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.550000011920929,
+        "mana": 100,
+        "initialMana": 50,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Mordekaiser",
@@ -638,7 +1670,23 @@
         "Conduit",
         "Vanguard"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_mordekaiser/skins/base/images/tft17_mordekaiser_splash_tile_6.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_mordekaiser/skins/base/images/tft17_mordekaiser_splash_tile_6.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Indestructible",
+        "description": "Gain Shield. Each second for the next <TFTRadiantItemBonus>6</TFTRadiantItemBonus>4 seconds, gain more Shield and deal magic damage to adjacent enemies. When this ability ends, consume the remaining Shield and heal for <scaleHealth>40%</scaleHealth> of its value.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_mordekaiser/hud/icons2d/tft17_mordekaiserw.tft_set17.png"
+      },
+      "stats": {
+        "hp": 950,
+        "damage": 40,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.6000000238418579,
+        "mana": 100,
+        "initialMana": 40,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Xayah",
@@ -648,7 +1696,23 @@
         "Stargazer",
         "Sniper"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_xayah/skins/base/images/tft17_xayah_splash_tile_1.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_xayah/skins/base/images/tft17_xayah_splash_tile_1.tft_set17.png",
+      "role": "ADCarry",
+      "ability": {
+        "name": "Stellar Ricochet",
+        "description": "Passive: Attacks bounce to strike <scaleLevel>3</scaleLevel> times, dealing <scaleLevel>60%</scaleLevel> reduced damage per target hit and leaving a Feather behind the final target.\n\n<spellActive>Active:</spellActive> Gain 75% Attack Speed for the next 6 attacks. At the end, recall all Feathers split between the closest 3 enemies, dealing <physicalDamage> </physicalDamage> physical damage each. Xayah's current target takes <physicalDamage> </physicalDamage> additional physical damage per feather.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_xayah/hud/icons2d/tft17_xayahw.tft_set17.png"
+      },
+      "stats": {
+        "hp": 850,
+        "damage": 49,
+        "armor": 30,
+        "magicResist": 30,
+        "attackSpeed": 0.75,
+        "mana": 50,
+        "initialMana": 0,
+        "range": 6
+      }
     },
     {
       "id": "TFT17_Graves",
@@ -657,7 +1721,23 @@
       "traits": [
         "Factory New"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_graves/skins/base/images/tft17_graves_splash_tile_18.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_graves/skins/base/images/tft17_graves_splash_tile_18.tft_set17.png",
+      "role": "ADCarry",
+      "ability": {
+        "name": "Collateral Damage",
+        "description": "Passive: Attacks fire 5 projectiles in a cone that deal <physicalDamage> </physicalDamage> physical damage each.\n\n<spellActive>Active:</spellActive> Fire an explosive shell that deals <physicalDamage> </physicalDamage> physical damage to the target, and <physicalDamage> </physicalDamage> physical damage to adjacent enemies.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_graves/hud/icons2d/tft17_gravesr.tft_set17.png"
+      },
+      "stats": {
+        "hp": 900,
+        "damage": 60,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 0.75,
+        "mana": 60,
+        "initialMana": 0,
+        "range": 4
+      }
     },
     {
       "id": "TFT17_TahmKench",
@@ -667,7 +1747,23 @@
         "Oracle",
         "Brawler"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_tahmkench/skins/base/images/tft17_tahmkench_splash_tile_11.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_tahmkench/skins/base/images/tft17_tahmkench_splash_tile_11.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Tounge Lash",
+        "description": "Passive: Once per combat after dropping below 35% Health, gain Shield for 4 seconds equal to 40% of healing received this combat.\n\n<spellActive>Active:</spellActive> Heal <scaleHealth> </scaleHealth>, then tongue lash all enemies within two hexes dealing magic damage.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_tahmkench/hud/icons2d/tft17_tahmkenchq.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1300,
+        "damage": 75,
+        "armor": 60,
+        "magicResist": 60,
+        "attackSpeed": 0.5,
+        "mana": 110,
+        "initialMana": 50,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Rhaast",
@@ -676,14 +1772,45 @@
       "traits": [
         "Redeemer"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rhaast/skins/base/images/tft17_kaynsplash_tile.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rhaast/skins/base/images/tft17_kaynsplash_tile.tft_set17.png",
+      "role": "ADTank",
+      "ability": {
+        "name": "Divine Scythe",
+        "description": "Gain 20% Durability for 2 seconds, healing <scaleHealth> </scaleHealth> over the duration. Afterwards, slash forward in a line, dealing <physicalDamage> </physicalDamage> physical damage to enemies hit and knocking them up for 1 second.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_rhaast/hud/icons2d/tft17_kayn_passive_slay.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1200,
+        "damage": 60,
+        "armor": 60,
+        "magicResist": 60,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 90,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_TimebreakerCore",
       "name": "TimebreakerCore",
       "cost": 11,
       "traits": [],
-      "image": null
+      "image": null,
+      "ability": {
+        "name": "Temporal Core",
+        "description": "Sell Core to gain XP",
+        "icon": null
+      },
+      "stats": {
+        "hp": null,
+        "damage": null,
+        "armor": null,
+        "magicResist": 20,
+        "attackSpeed": 0.800000011920929,
+        "mana": 100,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_RekSai",
@@ -693,7 +1820,23 @@
         "Primordian",
         "Brawler"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_reksai/skins/base/images/tft17_reksai_splash_tile_26.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_reksai/skins/base/images/tft17_reksai_splash_tile_26.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Upheaval",
+        "description": "Heal <scaleHealth> </scaleHealth>, then briefly knock up adjacent enemies and deal magic damage.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_reksai/hud/icons2d/tft17_reksai_w2.tft_set17.png"
+      },
+      "stats": {
+        "hp": 700,
+        "damage": 50,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.6000000238418579,
+        "mana": 100,
+        "initialMana": 40,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Pantheon",
@@ -704,7 +1847,23 @@
         "Brawler",
         "Replicator"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pantheon/skins/base/images/tft17_pantheon_splash_tile_16.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pantheon/skins/base/images/tft17_pantheon_splash_tile_16.tft_set17.png",
+      "role": "ADTank",
+      "ability": {
+        "name": "Advanced Defences",
+        "description": "Gain Shield and 15% Durability for 4 seconds. Over the duration, deal <physicalDamage> </physicalDamage> physical damage each second to enemies in a cone.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pantheon/hud/icons2d/tft17_pantheon_e1.tft_set17.png"
+      },
+      "stats": {
+        "hp": 900,
+        "damage": 50,
+        "armor": 45,
+        "magicResist": 45,
+        "attackSpeed": 0.6000000238418579,
+        "mana": 80,
+        "initialMana": 20,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_Morgana",
@@ -713,70 +1872,229 @@
       "traits": [
         "Dark Lady"
       ],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_morgana/skins/base/images/tft17_morgana_splash_tile_50.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_morgana/skins/base/images/tft17_morgana_splash_tile_50.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Dark Form",
+        "description": "Transform for 3 seconds, gaining <scaleHealth> </scaleHealth> Health and tethering to nearby champions. Over the duration, deal magic damage to the closest 3 enemies and restore <scaleHealth> </scaleHealth> health to the closest 2 injured allies.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_morgana/hud/icons2d/fallenangel_empathize.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1300,
+        "damage": 60,
+        "armor": 70,
+        "magicResist": 70,
+        "attackSpeed": 0.6499999761581421,
+        "mana": 80,
+        "initialMana": 30,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_PVE_Minion",
       "name": "Cosmic Squid",
       "cost": 11,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Nothing To See Here!",
+        "description": "Cosmic Squids lack the intelligence to do anything but mindlessly attack. They're very squishy, though.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pve_minion/hud/tft17_pve_minion_abilityicon.tft_set17.png"
+      },
+      "stats": {
+        "hp": 250,
+        "damage": 20,
+        "armor": 10,
+        "magicResist": 10,
+        "attackSpeed": 0.800000011920929,
+        "mana": 0,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_PVE_Raptor",
       "name": "Cosmic Scrapper",
       "cost": 11,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Nothing To See Here!",
+        "description": "Cosmic Scrappers lack the intelligence to do anything but mindlessly attack. They're doing their best though!",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pve_raptor/hud/tft17_pve_raptor_abilityicon.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1200,
+        "damage": 100,
+        "armor": 25,
+        "magicResist": 25,
+        "attackSpeed": 1.2000000476837158,
+        "mana": 0,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_PVE_Krug",
       "name": "Cosmic Bruiser",
       "cost": 11,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png",
+      "role": "ADTank",
+      "ability": {
+        "name": "Nothing To See Here!",
+        "description": "Cosmic Bruisers lack the intelligence to do anything but mindlessly attack. Careful, they pack a punch!",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pve_krug/skins/hud/tft17_pve_krug_abilityicon.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1200,
+        "damage": 95,
+        "armor": 50,
+        "magicResist": 25,
+        "attackSpeed": 0.800000011920929,
+        "mana": 0,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_PVE_Pix",
       "name": "Cosmic Flutterbye",
       "cost": 11,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png",
+      "role": "ADFighter",
+      "ability": {
+        "name": "Nothing To See Here! ",
+        "description": "Cosmic Flutterbyes lack the intelligence to do anything but mindlessly attack. A bit annoying, really.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pve_pix/hud/tft17_pve_pix_abilityicon.tft_set17.png"
+      },
+      "stats": {
+        "hp": null,
+        "damage": null,
+        "armor": 20,
+        "magicResist": 20,
+        "attackSpeed": 0.800000011920929,
+        "mana": 0,
+        "initialMana": 0,
+        "range": 1
+      }
     },
     {
       "id": "TFT17_PVE_Gromp",
       "name": "Cosmic Gromp",
       "cost": 11,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_pve_defaultmobile.tft_set17.png",
+      "role": "ADTank",
+      "ability": {
+        "name": "Nothing To See Here!",
+        "description": "Cosmic Gromps lack the intelligence to do anything but mindlessly attack. They're just protecting their...part of the cosmos?",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pve_gromp/hud/tft17_pve_gromp_abilityicon.tft_set17.png"
+      },
+      "stats": {
+        "hp": 3000,
+        "damage": 350,
+        "armor": 30,
+        "magicResist": 30,
+        "attackSpeed": 0.699999988079071,
+        "mana": 0,
+        "initialMana": 0,
+        "range": 2
+      }
     },
     {
       "id": "TFT17_PVE_ElderDragon",
       "name": "Cosmic Elder Dragon",
       "cost": 11,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_elderdragonsquare.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft17_elderdragonsquare.tft_set17.png",
+      "role": "ADTank",
+      "ability": {
+        "name": "Primordial Breath",
+        "description": "Passive: Attacks splash in a cone behind the target. Watch out!",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_pve_elderdragon/hud/dragon_square_elder.tft_set17.png"
+      },
+      "stats": {
+        "hp": 10000,
+        "damage": 900,
+        "armor": 50,
+        "magicResist": 50,
+        "attackSpeed": 0.800000011920929,
+        "mana": 0,
+        "initialMana": 0,
+        "range": 2
+      }
     },
     {
       "id": "TFT14_EmblemArmoryKey",
       "name": "Tome of Traits",
       "cost": 8,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft5_draconicegg_mobile.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/ux/tft/championsplashes/tft5_draconicegg_mobile.png",
+      "ability": {
+        "name": "Tome of Traits",
+        "description": "Drag this Tome to the Shop to open an Armory full of emblems! You will have 30 seconds to choose.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft8_teamupprop/hud/icons2d/tft5_emblemarmorykey_square.png"
+      },
+      "stats": {
+        "hp": 10,
+        "damage": null,
+        "armor": 10,
+        "magicResist": 10,
+        "attackSpeed": 1,
+        "mana": 100,
+        "initialMana": 0,
+        "range": 0
+      }
     },
     {
       "id": "TFT17_DarkStar_FakeUnit",
       "name": "Mini Black Hole",
       "cost": 1,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_darkstar_fakeunit/hud/tft17_darkstar_fakeunit_smallsplash.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_darkstar_fakeunit/hud/tft17_darkstar_fakeunit_smallsplash.tft_set17.png",
+      "role": "APTank",
+      "ability": {
+        "name": "Gravitational Collapse",
+        "description": "A miniature black hole created by a supernova.\n\nGains max health equal to <scaleHealth>30%</scaleHealth> of ally Dark Star Health.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_darkstar_fakeunit/hud/tft17_darkstar_fakeunit_smallsplash.tft_set17.png"
+      },
+      "stats": {
+        "hp": 1,
+        "damage": 421,
+        "armor": 40,
+        "magicResist": 40,
+        "attackSpeed": 4.949999809265137,
+        "mana": 0,
+        "initialMana": 0,
+        "range": 0
+      }
     },
     {
       "id": "TFT17_Enemy_Aatrox",
       "name": "Apex Primordian",
       "cost": 5,
       "traits": [],
-      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_enemy_aatrox/skins/base/images/tft17_enemy_aatrox_splash_tile_33.tft_set17.png"
+      "image": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_enemy_aatrox/skins/base/images/tft17_enemy_aatrox_splash_tile_33.tft_set17.png",
+      "role": "ADTank",
+      "ability": {
+        "name": "Harbinger of The End",
+        "description": "Passive: Swords fly out in a grid dealing <physicalDamage> </physicalDamage> physical damage to enemies they hit. \n\nActive: Launch 20 swords into the air and gain 25% Durability. When they land, they deal <physicalDamage> </physicalDamage> physical damage to enemies they hit in a 1-hex range.",
+        "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_enemy_aatrox/hud/icons2d/tft17_enemy_aatrox_r.tft_set17.png"
+      },
+      "stats": {
+        "hp": 8452,
+        "damage": 90,
+        "armor": 60,
+        "magicResist": 60,
+        "attackSpeed": 0.8999999761581421,
+        "mana": 90,
+        "initialMana": 30,
+        "range": 1
+      }
     }
   ],
   "items": [
@@ -1023,7 +2341,7 @@
     {
       "id": "TFT_Item_Artifact_MirroredPersona",
       "name": "Mirrored Persona",
-      "description": "Every 6 player combats gain a lesser copy of Mirrored Persona (). \n\nShare 15% of the holder's bonus Attack Damage, Ability Power, Attack Speed, Armor, Magic Resist, and Health with other Mirrored Persona holders.\n\nCan't be Reforged, Lesser copies do not produce copies.\nUnique: one per champion",
+      "description": "Every 6 player combats gain a lesser copy of Mirrored Persona. \n\nShare 15% of the holder's bonus Attack Damage, Ability Power, Attack Speed, Armor, Magic Resist, and Health with other Mirrored Persona holders.\n\nCan't be Reforged, Lesser copies do not produce copies.\nUnique: one per champion",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/items/hexcore/tft16_artifact_mirroredpersona.tft_set16.png"
     },
     {
@@ -1823,7 +3141,7 @@
     {
       "id": "TFT17_Stargazer_Wolf",
       "name": "Stargazer",
-      "description": "Stargazers chart a different constellation every game. This game: The Boar.\n\nGain gold after winning player combat. Allies in empowered hexes gain 8% Health, Attack Damage, and Ability Power. Stargazers gain more.\n\n(Gold Earned: )\n\n() 1/2/4/6 gold, 2/8/15/22%, 10/15/25/30% \n\nMore hexes reveal at each player level",
+      "description": "Stargazers chart a different constellation every game. This game: The Boar.\n\nGain gold after winning player combat. Allies in empowered hexes gain 8% Health, Attack Damage, and Ability Power. Stargazers gain more.\n\n(Gold Earned: )\n\n 1/2/4/6 gold, 2/8/15/22%, 10/15/25/30% \n\nMore hexes reveal at each player level",
       "image": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_17_stargazer.tft_set17.png",
       "tiers": [
         {
@@ -1851,7 +3169,7 @@
     {
       "id": "TFT17_APTrait",
       "name": "Replicator",
-      "description": "Replicator abilities occur a second time at reduced effectiveness.\n\n() 22/45% strength",
+      "description": "Replicator abilities occur a second time at reduced effectiveness.\n\n 22/45% strength",
       "image": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_17_replicator.tft_set17.png",
       "tiers": [
         {
@@ -2044,7 +3362,7 @@
     {
       "id": "TFT17_SonaUniqueTrait",
       "name": "Commander",
-      "description": "() Sona gives you a random Command Mod every 2 rounds which allows you to alter the way an ally behaves during combat. Command Mods last 2 player combats even if they are not equipped.",
+      "description": "Sona gives you a random Command Mod every 2 rounds which allows you to alter the way an ally behaves during combat. Command Mods last 2 player combats even if they are not equipped.",
       "image": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_17_commander.tft_set17.png",
       "tiers": [
         {
@@ -2106,7 +3424,7 @@
     {
       "id": "TFT17_Stargazer_Serpent",
       "name": "Stargazer",
-      "description": "Stargazers chart a different constellation every game. This game: The Serpent.\n\nAllies in empowered hexes gain 5% Durability. Stargazers in empowered hexes gain more and poison enemies, repeating a portion of damage dealt as magic damage over 3 seconds.\n\n() 5/10/15%, 20/40/60% poison damage\n\nMore hexes reveal at each player level",
+      "description": "Stargazers chart a different constellation every game. This game: The Serpent.\n\nAllies in empowered hexes gain 5% Durability. Stargazers in empowered hexes gain more and poison enemies, repeating a portion of damage dealt as magic damage over 3 seconds.\n\n 5/10/15%, 20/40/60% poison damage\n\nMore hexes reveal at each player level",
       "image": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_17_stargazer.tft_set17.png",
       "tiers": [
         {
@@ -2374,7 +3692,7 @@
     {
       "id": "TFT17_HPTank",
       "name": "Brawler",
-      "description": "Your team gains 5% Health. Brawlers gain more.\n\n() +25/45/65% maximum Health",
+      "description": "Your team gains 5% Health. Brawlers gain more.\n\n +25/45/65% maximum Health",
       "image": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_brawler.png",
       "tiers": [
         {
@@ -2448,7 +3766,7 @@
     {
       "id": "TFT17_ManaTrait",
       "name": "Conduit",
-      "description": "Innate: Conduits gain 20% additional Mana from all sources.\n\nYour team gains Mana Regen, increased for Conduits.\n\n() 1/2/3 | 3/5/7/9",
+      "description": "Innate: Conduits gain 20% additional Mana from all sources.\n\nYour team gains Mana Regen, increased for Conduits.\n\n 1/2/3 | 3/5/7/9",
       "image": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_17_channeler.tft_set17.png",
       "tiers": [
         {
@@ -2512,7 +3830,7 @@
     {
       "id": "TFT17_Stargazer",
       "name": "Stargazer",
-      "description": "Stargazers chart a different constellation every game.\n\nStargazers in empowered hexes gain various bonuses, starting at () units.\n\nMore hexes reveal at each player level.",
+      "description": "Stargazers chart a different constellation every game.\n\nStargazers in empowered hexes gain various bonuses, starting at units.\n\nMore hexes reveal at each player level.",
       "image": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_17_stargazer.tft_set17.png",
       "tiers": [
         {
@@ -2550,7 +3868,7 @@
     {
       "id": "TFT17_FlexTrait",
       "name": "Voyager",
-      "description": "Combat Start: Your Tanks gain a Shield for 15 seconds. Your other allies gain Damage Amp. \n\nVoyagers gain double.\n\n() 175/250/350/500/700 Shield; 9/15/18/22/27%",
+      "description": "Combat Start: Your Tanks gain a Shield for 15 seconds. Your other allies gain Damage Amp. \n\nVoyagers gain double.\n\n 175/250/350/500/700 Shield; 9/15/18/22/27%",
       "image": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_17_voyager.tft_set17.png",
       "tiers": [
         {
