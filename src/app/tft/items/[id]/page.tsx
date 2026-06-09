@@ -113,7 +113,7 @@ export default async function TFTItemDetailPage({ params }: PageProps) {
               <h1 className="text-3xl font-semibold text-[#F2E8D5]">{item.name}</h1>
               <span
                 className={`inline-flex w-fit rounded-full px-3 py-1 text-xs font-medium ${
-                  isCombined ? 'bg-[#0d181c] text-teal-800' : 'bg-[#1c1c22] text-[#9a8c7e]'
+                  isCombined ? 'bg-[#0d181c] text-[#4ab8c8]' : 'bg-[#1c1c22] text-[#9a8c7e]'
                 }`}
               >
                 {isCombined ? 'Combined' : 'Base Component'}
