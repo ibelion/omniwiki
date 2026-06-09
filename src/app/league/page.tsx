@@ -385,16 +385,16 @@ export default function LeaguePage() {
   ];
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-gray-50 px-6 py-10">
-      <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="flex flex-col gap-3">
-          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+          <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
             League of Legends Universe
           </p>
-          <h1 className="text-3xl font-semibold text-gray-900">
+          <h1 className="text-3xl font-semibold text-[#F2E8D5]">
             Welcome to the League of Legends Universe
           </h1>
-          <p className="text-gray-600">
+          <p className="text-[#6b6055]">
             Browse the full League roster — champions, skins, items, lore, cosmetics, and game systems all in one place.
           </p>
         </div>
@@ -403,33 +403,33 @@ export default function LeaguePage() {
             <Link
               key={stat.label}
               href={stat.href}
-              className="group flex flex-col gap-3 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
+              className="group flex flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#0c0c0e] p-4 transition hover:border-[#1c3622] hover:bg-[#0e1c14] hover:shadow-md"
               aria-label={`View ${stat.label}`}
             >
               <div className="flex items-center justify-between">
-                <p className="text-sm font-semibold text-gray-500">{stat.label}</p>
-                <p className="text-2xl font-semibold text-gray-900">
+                <p className="text-sm font-semibold text-[#6b6055]">{stat.label}</p>
+                <p className="text-2xl font-semibold text-[#F2E8D5]">
                   {stat.value.toLocaleString()}
                 </p>
               </div>
               {stat.preview && (
-                <div className="mt-2 flex flex-col gap-2 border-t border-gray-200 pt-3">
+                <div className="mt-2 flex flex-col gap-2 border-t border-[#1c1c22] pt-3">
                   {stat.preview.image && (
                     <ImageWithFallback
                       src={`/leaguecontent/${stat.preview.image}`}
                       alt={stat.preview.name}
-                      className="h-16 w-16 rounded-lg border border-gray-100 bg-white object-contain"
+                      className="h-16 w-16 rounded-lg border border-[#1c1c22] bg-[#141418] object-contain"
                       loading="lazy"
                       fallback="/globe.svg"
                     />
                   )}
                   <div>
-                    <p className="text-sm font-semibold text-gray-900">
+                    <p className="text-sm font-semibold text-[#F2E8D5]">
                       {stat.preview.name}
                     </p>
-                    <p className="text-xs text-gray-600">{stat.preview.subtitle}</p>
+                    <p className="text-xs text-[#6b6055]">{stat.preview.subtitle}</p>
                     {stat.preview.extra && (
-                      <p className="mt-1 text-xs text-gray-500">{stat.preview.extra}</p>
+                      <p className="mt-1 text-xs text-[#6b6055]">{stat.preview.extra}</p>
                     )}
                   </div>
                 </div>
@@ -439,8 +439,8 @@ export default function LeaguePage() {
         </div>
       </section>
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#6b6055]">
           Browse by category
         </p>
         <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -450,31 +450,31 @@ export default function LeaguePage() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="group flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
+                className="group flex flex-col gap-3 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-4 transition hover:border-[#1c3622] hover:bg-[#0e1c14] hover:shadow-md"
                 aria-label={`View ${link.label}`}
               >
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">{link.label}</p>
-                  <p className="mt-1 text-xs text-gray-600">{link.description}</p>
+                  <p className="text-sm font-semibold text-[#F2E8D5]">{link.label}</p>
+                  <p className="mt-1 text-xs text-[#6b6055]">{link.description}</p>
                 </div>
                 {preview && (
-                  <div className="mt-2 flex items-start gap-3 border-t border-gray-200 pt-3">
+                  <div className="mt-2 flex items-start gap-3 border-t border-[#1c1c22] pt-3">
                     {preview.image && (
                       <ImageWithFallback
                         src={`/leaguecontent/${preview.image}`}
                         alt={preview.name}
-                        className="h-12 w-12 flex-shrink-0 rounded-lg border border-gray-100 bg-white object-contain"
+                        className="h-12 w-12 flex-shrink-0 rounded-lg border border-[#1c1c22] bg-[#141418] object-contain"
                         loading="lazy"
                         fallback="/globe.svg"
                       />
                     )}
                     <div className="min-w-0 flex-1">
-                      <p className="truncate text-sm font-semibold text-gray-900">
+                      <p className="truncate text-sm font-semibold text-[#F2E8D5]">
                         {preview.name}
                       </p>
-                      <p className="text-xs text-gray-600">{preview.subtitle}</p>
+                      <p className="text-xs text-[#6b6055]">{preview.subtitle}</p>
                       {preview.extra && (
-                        <p className="mt-1 text-xs text-gray-500">{preview.extra}</p>
+                        <p className="mt-1 text-xs text-[#6b6055]">{preview.extra}</p>
                       )}
                     </div>
                   </div>

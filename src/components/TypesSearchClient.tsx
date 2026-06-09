@@ -21,8 +21,8 @@ interface TypesSearchClientProps {
 
 const MULTIPLIER_STYLES: Record<string, string> = {
   "2": "bg-rose-100 text-rose-700 font-bold",
-  "0.5": "bg-emerald-100 text-emerald-700",
-  "0": "bg-slate-100 text-slate-500",
+  "0.5": "bg-[#0e1c14] text-[#4caf72]",
+  "0": "bg-[#1c1c22] text-[#6b6055]",
   "1": "text-gray-300",
 };
 
@@ -71,7 +71,7 @@ const TYPE_ABBR: Record<string, string> = {
 };
 
 const TYPE_COLORS: Record<string, string> = {
-  normal: "bg-gray-200 text-gray-700",
+  normal: "bg-[#252528] text-[#9a8c7e]",
   fire: "bg-orange-200 text-orange-800",
   water: "bg-blue-200 text-blue-800",
   electric: "bg-yellow-200 text-yellow-800",
@@ -85,14 +85,14 @@ const TYPE_COLORS: Record<string, string> = {
   bug: "bg-lime-200 text-lime-800",
   rock: "bg-stone-200 text-stone-700",
   ghost: "bg-violet-200 text-violet-800",
-  dragon: "bg-indigo-200 text-indigo-800",
+  dragon: "bg-indigo-200 text-[#8892f0]",
   dark: "bg-gray-700 text-gray-100",
-  steel: "bg-slate-200 text-slate-700",
+  steel: "bg-slate-200 text-[#9a8c7e]",
   fairy: "bg-fuchsia-200 text-fuchsia-800",
 };
 
 function TypeBadge({ name, small, href }: { name: string; small?: boolean; href?: string }) {
-  const color = TYPE_COLORS[name.toLowerCase()] ?? "bg-gray-100 text-gray-700";
+  const color = TYPE_COLORS[name.toLowerCase()] ?? "bg-[#1c1c22] text-[#9a8c7e]";
   const className = `inline-block rounded font-semibold capitalize ${color} ${small ? "px-1 py-0.5 text-[10px]" : "px-2 py-0.5 text-xs"}`;
   if (href) {
     return (
@@ -128,22 +128,22 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
 
   return (
     <>
-      <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
+      <header className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#8892f0]">
           Pokémon
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Types ({sortedTypes.length})
         </h1>
-        <p className="text-gray-600">Type effectiveness — who hits who, and for how much.</p>
+        <p className="text-[#6b6055]">Type effectiveness — who hits who, and for how much.</p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <div className="flex rounded-lg border border-gray-200 overflow-hidden">
+          <div className="flex rounded-lg border border-[#1c1c22] overflow-hidden">
             <button
               onClick={() => setView("chart")}
               className={`px-4 py-2 text-sm font-semibold transition ${
                 view === "chart"
-                  ? "bg-indigo-600 text-white"
-                  : "bg-white text-gray-700 hover:bg-gray-50"
+                  ? "bg-[#3344aa] text-white"
+                  : "bg-[#141418] text-[#9a8c7e] hover:bg-[#1c1c22]"
               }`}
             >
               Effectiveness chart
@@ -152,8 +152,8 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
               onClick={() => setView("cards")}
               className={`px-4 py-2 text-sm font-semibold transition ${
                 view === "cards"
-                  ? "bg-indigo-600 text-white"
-                  : "bg-white text-gray-700 hover:bg-gray-50"
+                  ? "bg-[#3344aa] text-white"
+                  : "bg-[#141418] text-[#9a8c7e] hover:bg-[#1c1c22]"
               }`}
             >
               Type cards
@@ -165,15 +165,15 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
               placeholder="Search by type name or generation..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="flex-1 min-w-[200px] rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+              className="flex-1 min-w-[200px] rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
             />
           )}
         </div>
       </header>
 
       {view === "chart" ? (
-        <section className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm overflow-x-auto">
-          <p className="mb-3 text-xs text-gray-500">
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm overflow-x-auto">
+          <p className="mb-3 text-xs text-[#6b6055]">
             Rows = <strong>attacking</strong> type · Columns = <strong>defending</strong> type
           </p>
           <div className="flex gap-1 mb-1 ml-[72px]">
@@ -184,7 +184,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                 title={t.name}
               >
                 <span
-                  className={`inline-block w-6 rounded text-[9px] font-bold uppercase writing-mode-vertical py-0.5 text-center ${TYPE_COLORS[t.slug] ?? "bg-gray-100 text-gray-700"}`}
+                  className={`inline-block w-6 rounded text-[9px] font-bold uppercase writing-mode-vertical py-0.5 text-center ${TYPE_COLORS[t.slug] ?? "bg-[#1c1c22] text-[#9a8c7e]"}`}
                   style={{ writingMode: "vertical-rl", transform: "rotate(180deg)", height: "46px", lineHeight: "1.4" }}
                 >
                   {TYPE_ABBR[t.slug] ?? t.name.slice(0, 4)}
@@ -215,17 +215,17 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
               })}
             </div>
           ))}
-          <div className="mt-4 flex gap-4 text-xs text-gray-600">
+          <div className="mt-4 flex gap-4 text-xs text-[#6b6055]">
             <span className="flex items-center gap-1.5">
               <span className="rounded bg-rose-100 px-1.5 py-0.5 font-bold text-rose-700">2×</span>
               Super effective
             </span>
             <span className="flex items-center gap-1.5">
-              <span className="rounded bg-emerald-100 px-1.5 py-0.5 text-emerald-700">½</span>
+              <span className="rounded bg-[#0e1c14] px-1.5 py-0.5 text-[#4caf72]">½</span>
               Not very effective
             </span>
             <span className="flex items-center gap-1.5">
-              <span className="rounded bg-slate-100 px-1.5 py-0.5 text-slate-500">0</span>
+              <span className="rounded bg-[#1c1c22] px-1.5 py-0.5 text-[#6b6055]">0</span>
               No effect
             </span>
           </div>
@@ -235,9 +235,9 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
           {filteredCards.map((type) => (
             <article
               key={type.slug}
-              className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm text-sm"
+              className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm text-sm"
             >
-              <p className="text-xs uppercase text-gray-500">{type.generation}</p>
+              <p className="text-xs uppercase text-[#6b6055]">{type.generation}</p>
               <div className="mb-3 mt-1">
                 <TypeBadge name={type.name} href={`/pokemon/types/${type.slug}`} />
               </div>
@@ -252,7 +252,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                 )}
                 {type.halfDamageTo.length > 0 && (
                   <div>
-                    <p className="mb-1 text-xs font-semibold text-emerald-600">½× to</p>
+                    <p className="mb-1 text-xs font-semibold text-[#4caf72]">½× to</p>
                     <div className="flex flex-wrap gap-1">
                       {type.halfDamageTo.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>
@@ -260,7 +260,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                 )}
                 {type.noDamageTo.length > 0 && (
                   <div>
-                    <p className="mb-1 text-xs font-semibold text-slate-500">0× to</p>
+                    <p className="mb-1 text-xs font-semibold text-[#6b6055]">0× to</p>
                     <div className="flex flex-wrap gap-1">
                       {type.noDamageTo.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>
@@ -276,7 +276,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                 )}
                 {type.halfDamageFrom.length > 0 && (
                   <div>
-                    <p className="mb-1 text-xs font-semibold text-emerald-400">½× from</p>
+                    <p className="mb-1 text-xs font-semibold text-[#4caf72]">½× from</p>
                     <div className="flex flex-wrap gap-1">
                       {type.halfDamageFrom.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>
@@ -284,7 +284,7 @@ export function TypesSearchClient({ types }: TypesSearchClientProps) {
                 )}
                 {type.noDamageFrom.length > 0 && (
                   <div>
-                    <p className="mb-1 text-xs font-semibold text-slate-400">0× from</p>
+                    <p className="mb-1 text-xs font-semibold text-[#6b6055]">0× from</p>
                     <div className="flex flex-wrap gap-1">
                       {type.noDamageFrom.map((t) => <TypeBadge key={t} name={t} small href={`/pokemon/types/${t}`} />)}
                     </div>

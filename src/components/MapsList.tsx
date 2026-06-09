@@ -36,14 +36,14 @@ export function MapsList({ maps }: { maps: MapRecord[] }) {
 
   return (
     <>
-      <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+      <header className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Maps ({filtered.length})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           Every map surface in League history, including retired and event arenas.
         </p>
         <input
@@ -51,7 +51,7 @@ export function MapsList({ maps }: { maps: MapRecord[] }) {
           placeholder="Search by name or map ID..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          className="mt-4 w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
         />
       </header>
 
@@ -59,20 +59,20 @@ export function MapsList({ maps }: { maps: MapRecord[] }) {
         {filtered.map((map) => (
           <article
             key={map.id}
-            className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm"
+            className="flex flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm"
           >
             <ImageWithFallback
               src={map.image ? `/leaguecontent/${map.image}` : "/globe.svg"}
               alt={map.name}
-              className="h-32 w-full rounded-xl border border-gray-100 object-cover"
+              className="h-32 w-full rounded-xl border border-[#1c1c22] object-cover"
             />
             <div>
-              <p className="text-xs font-medium uppercase tracking-wide text-emerald-600">
+              <p className="text-xs font-medium uppercase tracking-wide text-[#4caf72]">
                 Map {map.id}
               </p>
-              <p className="text-lg font-semibold text-gray-900">{map.name}</p>
+              <p className="text-lg font-semibold text-[#F2E8D5]">{map.name}</p>
               {MAP_DESCRIPTIONS[map.id] && (
-                <p className="mt-1 text-sm text-gray-500">{MAP_DESCRIPTIONS[map.id]}</p>
+                <p className="mt-1 text-sm text-[#6b6055]">{MAP_DESCRIPTIONS[map.id]}</p>
               )}
             </div>
           </article>

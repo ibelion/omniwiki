@@ -112,14 +112,14 @@ export default async function PokemonDetail({ params }: PageProps) {
   );
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-[#0c0c0e] px-6 py-10">
       <div className="flex flex-col gap-6">
-        <nav className="text-sm text-gray-500" aria-label="Breadcrumb">
+        <nav className="text-sm text-[#6b6055]" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-1">
             <li>
               <Link
                 href="/"
-                className="rounded px-2 py-1 transition hover:bg-gray-100 hover:text-gray-900"
+                className="rounded px-2 py-1 transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]"
               >
                 Home
               </Link>
@@ -128,27 +128,27 @@ export default async function PokemonDetail({ params }: PageProps) {
             <li>
               <Link
                 href="/pokemon"
-                className="rounded px-2 py-1 transition hover:bg-gray-100 hover:text-gray-900"
+                className="rounded px-2 py-1 transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]"
               >
                 Pokémon
               </Link>
             </li>
             <li aria-hidden="true">/</li>
-            <li className="rounded px-2 py-1 text-gray-700">{pokemon?.name}</li>
+            <li className="rounded px-2 py-1 text-[#9a8c7e]">{pokemon?.name}</li>
           </ol>
         </nav>
         <div className="flex items-center justify-between">
           <BackLink href="/pokemon" label="Back to Pokémon" />
         </div>
-        <div className="flex flex-col gap-6 rounded-3xl border border-gray-200 bg-white p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-6 rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-2">
-            <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#8892f0]">
               Pokémon
             </p>
-            <h1 className="text-3xl font-semibold text-gray-900">
+            <h1 className="text-3xl font-semibold text-[#F2E8D5]">
               {pokemon?.name}
             </h1>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-[#6b6055]">
               #{pokemon?.id.toString().padStart(3, "0")} ·{" "}
               {pokemon?.generation.replace("generation-", "Gen ")}
             </p>
@@ -157,7 +157,7 @@ export default async function PokemonDetail({ params }: PageProps) {
                 <Link
                   key={type}
                   href={`/pokemon/types/${type}`}
-                  className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 capitalize transition hover:bg-indigo-100"
+                  className="rounded-full bg-[#12122a] px-3 py-1 text-xs font-semibold text-[#8892f0] capitalize transition hover:bg-[#12122a]"
                 >
                   {type}
                 </Link>
@@ -172,7 +172,7 @@ export default async function PokemonDetail({ params }: PageProps) {
                     ? "bg-blue-100 text-blue-700"
                     : smogonTier === "RU"
                     ? "bg-green-100 text-green-700"
-                    : "bg-gray-100 text-gray-600"
+                    : "bg-[#1c1c22] text-[#6b6055]"
                 }`}>
                   {smogonTier}
                 </span>
@@ -183,23 +183,23 @@ export default async function PokemonDetail({ params }: PageProps) {
             <ImageWithFallback
               src={`/pokemoncontent/${pokemon?.sprites.default}`}
               alt={`${pokemon?.name} sprite`}
-              className="h-32 w-32 rounded-2xl border border-gray-200 bg-white object-contain shadow-sm"
+              className="h-32 w-32 rounded-2xl border border-[#1c1c22] bg-[#141418] object-contain shadow-sm"
             />
-            <p className="text-xs text-gray-500">Default</p>
+            <p className="text-xs text-[#6b6055]">Default</p>
             <ImageWithFallback
               src={`/pokemoncontent/${pokemon?.sprites.shiny}`}
               alt={`${pokemon?.name} shiny sprite`}
-              className="h-24 w-24 rounded-xl border border-gray-200 bg-white object-contain shadow-sm"
+              className="h-24 w-24 rounded-xl border border-[#1c1c22] bg-[#141418] object-contain shadow-sm"
             />
             <p className="text-xs text-amber-600">Shiny</p>
           </div>
-          <div className="flex flex-col gap-2 text-sm text-gray-600">
-            <p className="font-semibold text-gray-900">Quick navigation</p>
+          <div className="flex flex-col gap-2 text-sm text-[#6b6055]">
+            <p className="font-semibold text-[#F2E8D5]">Quick navigation</p>
             <div className="flex flex-wrap gap-2">
               {previous && (
                 <Link
                   href={`/pokemon/${previous.slug}`}
-                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-indigo-200 hover:bg-indigo-50"
+                  className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#22224a] hover:bg-[#12122a]"
                 >
                   ← {previous.name}
                 </Link>
@@ -207,14 +207,14 @@ export default async function PokemonDetail({ params }: PageProps) {
               {next && (
                 <Link
                   href={`/pokemon/${next.slug}`}
-                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-indigo-200 hover:bg-indigo-50"
+                  className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#22224a] hover:bg-[#12122a]"
                 >
                   {next.name} →
                 </Link>
               )}
               <Link
                 href="/pokemon"
-                className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-gray-300 hover:bg-gray-50"
+                className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#2c2c32] hover:bg-[#1c1c22]"
                 aria-label="Back to Pokémon list"
               >
                 Index
@@ -225,31 +225,31 @@ export default async function PokemonDetail({ params }: PageProps) {
       </div>
 
       <section className="grid gap-4 sm:grid-cols-2">
-        <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-          <h2 className="mb-3 text-base font-semibold text-gray-900">Stats</h2>
-          <div className="grid grid-cols-2 gap-2 text-sm text-gray-700">
+        <div className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
+          <h2 className="mb-3 text-base font-semibold text-[#F2E8D5]">Stats</h2>
+          <div className="grid grid-cols-2 gap-2 text-sm text-[#9a8c7e]">
             {pokemon &&
               Object.entries(pokemon.stats).map(([stat, value]) => (
                 <div
                   key={stat}
-                  className="flex items-center justify-between rounded-lg bg-gray-50 px-3 py-2"
+                  className="flex items-center justify-between rounded-lg bg-[#0c0c0e] px-3 py-2"
                 >
                   <span className="font-semibold capitalize">{stat}</span>
                   <span>{value}</span>
                 </div>
               ))}
           </div>
-          <p className="mt-3 text-sm text-gray-600">
+          <p className="mt-3 text-sm text-[#6b6055]">
             Base stat total:{" "}
             <span className="font-semibold">{pokemon?.baseStatTotal}</span>
           </p>
         </div>
 
-        <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-          <h2 className="mb-3 text-base font-semibold text-gray-900">
+        <div className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
+          <h2 className="mb-3 text-base font-semibold text-[#F2E8D5]">
             Biology
           </h2>
-          <div className="grid gap-2 text-sm text-gray-700">
+          <div className="grid gap-2 text-sm text-[#9a8c7e]">
             <p>Height: {pokemon?.height}</p>
             <p>Weight: {pokemon?.weight}</p>
             <p>Abilities: {pokemon?.abilities.join(", ")}</p>
@@ -262,13 +262,13 @@ export default async function PokemonDetail({ params }: PageProps) {
               Capture rate: {species?.captureRate ?? "unknown"} · Base happiness:{" "}
               {species?.baseHappiness ?? "unknown"}
             </p>
-            <p className="text-gray-600">{species?.flavorText}</p>
+            <p className="text-[#6b6055]">{species?.flavorText}</p>
           </div>
         </div>
       </section>
 
-      <section className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-        <h2 className="mb-3 text-base font-semibold text-gray-900">
+      <section className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
+        <h2 className="mb-3 text-base font-semibold text-[#F2E8D5]">
           Defense profile
         </h2>
         <div className="flex flex-wrap gap-2 text-xs">
@@ -285,7 +285,7 @@ export default async function PokemonDetail({ params }: PageProps) {
             <Link
               key={`${r.type}-${r.multiplier}`}
               href={`/pokemon/types/${r.type}`}
-              className="rounded-full bg-emerald-50 px-2 py-1 font-semibold text-emerald-700 transition hover:bg-emerald-100"
+              className="rounded-full bg-[#0e1c14] px-2 py-1 font-semibold text-[#4caf72] transition hover:bg-[#0e1c14]"
             >
               {r.type} ×{r.multiplier}
             </Link>
@@ -294,7 +294,7 @@ export default async function PokemonDetail({ params }: PageProps) {
             <Link
               key={i}
               href={`/pokemon/types/${i}`}
-              className="rounded-full bg-slate-100 px-2 py-1 font-semibold text-slate-700 transition hover:bg-slate-200"
+              className="rounded-full bg-[#1c1c22] px-2 py-1 font-semibold text-[#9a8c7e] transition hover:bg-slate-200"
             >
               {i} ×0
             </Link>
@@ -303,43 +303,43 @@ export default async function PokemonDetail({ params }: PageProps) {
       </section>
 
       <section className="grid gap-4 sm:grid-cols-2">
-        <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-          <h2 className="mb-3 text-base font-semibold text-gray-900">
+        <div className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
+          <h2 className="mb-3 text-base font-semibold text-[#F2E8D5]">
             Abilities
           </h2>
-          <div className="flex flex-col gap-2 text-sm text-gray-700">
+          <div className="flex flex-col gap-2 text-sm text-[#9a8c7e]">
             {abilities.map((ability) => (
               <Link
                 key={ability.id}
                 href={`/pokemon/abilities/${ability.slug}`}
-                className="rounded-lg border border-gray-100 bg-gray-50 p-3 transition hover:border-indigo-200 hover:bg-indigo-50"
+                className="rounded-lg border border-[#1c1c22] bg-[#0c0c0e] p-3 transition hover:border-[#22224a] hover:bg-[#12122a]"
               >
-                <p className="font-semibold text-indigo-700">{ability.name}</p>
-                <p className="text-gray-600">{ability.shortEffect}</p>
+                <p className="font-semibold text-[#8892f0]">{ability.name}</p>
+                <p className="text-[#6b6055]">{ability.shortEffect}</p>
               </Link>
             ))}
             {abilities.length === 0 && (
-              <p className="text-sm text-gray-500">No abilities listed.</p>
+              <p className="text-sm text-[#6b6055]">No abilities listed.</p>
             )}
           </div>
         </div>
 
-        <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-          <h2 className="mb-3 text-base font-semibold text-gray-900">
+        <div className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
+          <h2 className="mb-3 text-base font-semibold text-[#F2E8D5]">
             Evolutions
           </h2>
-          <div className="flex flex-col gap-2 text-sm text-gray-700">
+          <div className="flex flex-col gap-2 text-sm text-[#9a8c7e]">
             {evolutions.map((evo) => {
               const fromSlug = evo.fromId ? pokemonById.get(evo.fromId) : null;
               const toSlug = evo.toId ? pokemonById.get(evo.toId) : null;
               return (
                 <div
                   key={`${evo.chainId}-${evo.stageIndex}-${evo.fromId}-${evo.toId}`}
-                  className="rounded-lg border border-gray-100 bg-gray-50 p-3"
+                  className="rounded-lg border border-[#1c1c22] bg-[#0c0c0e] p-3"
                 >
                   <p className="font-semibold">
                     {fromSlug ? (
-                      <Link href={`/pokemon/${fromSlug}`} className="text-indigo-700 hover:underline">
+                      <Link href={`/pokemon/${fromSlug}`} className="text-[#8892f0] hover:underline">
                         {evo.fromName}
                       </Link>
                     ) : (
@@ -347,14 +347,14 @@ export default async function PokemonDetail({ params }: PageProps) {
                     )}
                     {" → "}
                     {toSlug ? (
-                      <Link href={`/pokemon/${toSlug}`} className="text-indigo-700 hover:underline">
+                      <Link href={`/pokemon/${toSlug}`} className="text-[#8892f0] hover:underline">
                         {evo.toName}
                       </Link>
                     ) : (
                       evo.toName
                     )}
                   </p>
-                  <p className="text-gray-600">
+                  <p className="text-[#6b6055]">
                     Trigger: {evo.trigger || "unknown"} · Min level:{" "}
                     {evo.minLevel ?? "—"} · Item: {evo.item || "—"} · Time:{" "}
                     {evo.timeOfDay || "—"}
@@ -363,15 +363,15 @@ export default async function PokemonDetail({ params }: PageProps) {
               );
             })}
             {evolutions.length === 0 && (
-              <p className="text-sm text-gray-500">No evolution data.</p>
+              <p className="text-sm text-[#6b6055]">No evolution data.</p>
             )}
           </div>
         </div>
       </section>
 
       {alternateForms.length > 0 && (
-        <section className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
-          <h2 className="mb-3 text-base font-semibold text-gray-900">
+        <section className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
+          <h2 className="mb-3 text-base font-semibold text-[#F2E8D5]">
             Alternate Forms ({alternateForms.length})
           </h2>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -379,26 +379,26 @@ export default async function PokemonDetail({ params }: PageProps) {
               <Link
                 key={form.id}
                 href={`/pokemon/${form.slug}`}
-                className="flex items-center gap-3 rounded-lg border border-gray-100 bg-gray-50 p-3 transition hover:border-indigo-200 hover:bg-indigo-50"
+                className="flex items-center gap-3 rounded-lg border border-[#1c1c22] bg-[#0c0c0e] p-3 transition hover:border-[#22224a] hover:bg-[#12122a]"
               >
                 <ImageWithFallback
                   src={`/pokemoncontent/${form.sprites.default}`}
                   alt={`${form.name} sprite`}
-                  className="h-12 w-12 rounded-lg border border-gray-100 bg-white object-contain"
+                  className="h-12 w-12 rounded-lg border border-[#1c1c22] bg-[#141418] object-contain"
                 />
                 <div className="flex-1">
-                  <p className="font-semibold text-gray-900">{form.name}</p>
+                  <p className="font-semibold text-[#F2E8D5]">{form.name}</p>
                   <div className="mt-1 flex flex-wrap gap-1">
                     {form.types.map((type) => (
                       <span
                         key={type}
-                        className="rounded-full bg-indigo-50 px-1.5 py-0.5 text-[10px] font-semibold text-indigo-700"
+                        className="rounded-full bg-[#12122a] px-1.5 py-0.5 text-[10px] font-semibold text-[#8892f0]"
                       >
                         {type}
                       </span>
                     ))}
                   </div>
-                  <p className="mt-1 text-xs text-gray-500">
+                  <p className="mt-1 text-xs text-[#6b6055]">
                     BST {form.baseStatTotal}
                   </p>
                 </div>

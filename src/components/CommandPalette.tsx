@@ -335,22 +335,22 @@ export function CommandPalette() {
       onClick={() => setIsOpen(false)}
     >
       <div
-        className="w-full max-w-xl rounded-2xl border border-gray-200 bg-white shadow-2xl"
+        className="w-full max-w-xl rounded-2xl border border-[#1c1c22] bg-[#141418] shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="border-b border-gray-100 px-4 py-3">
+        <div className="border-b border-[#1c1c22] px-4 py-3">
           <input
             ref={inputRef}
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder={placeholder}
-            className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-900 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="w-full rounded-lg border border-[#1c1c22] px-3 py-2 text-sm text-[#F2E8D5] focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
             aria-label="Command palette search"
           />
         </div>
         <ul className="max-h-80 overflow-y-auto">
           {results.length === 0 && (
-            <li className="px-4 py-3 text-sm text-gray-500">
+            <li className="px-4 py-3 text-sm text-[#6b6055]">
               No results match &ldquo;{query}&rdquo;.
             </li>
           )}
@@ -358,25 +358,25 @@ export function CommandPalette() {
             <li key={`${entry.category}-${entry.slug}`}>
               <Link
                 href={entry.href}
-                className="flex items-center justify-between px-4 py-3 text-sm text-gray-900 transition hover:bg-indigo-50"
+                className="flex items-center justify-between px-4 py-3 text-sm text-[#F2E8D5] transition hover:bg-[#12122a]"
                 onClick={() => setIsOpen(false)}
               >
                 <span>{entry.name}</span>
-                <span className="text-xs uppercase tracking-wide text-gray-400">
+                <span className="text-xs uppercase tracking-wide text-[#6b6055]">
                   {entry.category}
                 </span>
               </Link>
             </li>
           ))}
         </ul>
-        <div className="flex items-center justify-between border-t border-gray-100 px-4 py-2 text-xs text-gray-500">
+        <div className="flex items-center justify-between border-t border-[#1c1c22] px-4 py-2 text-xs text-[#6b6055]">
           <p>Press Esc to close</p>
           <div className="flex items-center gap-2">
-            <kbd className="rounded border border-gray-300 px-1.5 py-0.5 text-[11px]">
+            <kbd className="rounded border border-[#2c2c32] px-1.5 py-0.5 text-[11px]">
               Ctrl
             </kbd>
             <span>+</span>
-            <kbd className="rounded border border-gray-300 px-1.5 py-0.5 text-[11px]">
+            <kbd className="rounded border border-[#2c2c32] px-1.5 py-0.5 text-[11px]">
               K
             </kbd>
           </div>

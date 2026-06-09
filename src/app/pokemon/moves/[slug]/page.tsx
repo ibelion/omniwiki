@@ -251,13 +251,13 @@ export default async function MoveDetail({ params }: PageProps) {
   const featuredLearners = learnerSummaries.slice(0, 12);
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-gray-50 px-6 py-10">
-      <nav className="text-sm text-gray-500" aria-label="Breadcrumb">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-[#0c0c0e] px-6 py-10">
+      <nav className="text-sm text-[#6b6055]" aria-label="Breadcrumb">
         <ol className="flex flex-wrap items-center gap-1">
           <li>
             <Link
               href="/"
-              className="rounded px-2 py-1 transition hover:bg-gray-100 hover:text-gray-900"
+              className="rounded px-2 py-1 transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]"
             >
               Home
             </Link>
@@ -266,58 +266,58 @@ export default async function MoveDetail({ params }: PageProps) {
           <li>
             <Link
               href="/pokemon/moves"
-              className="rounded px-2 py-1 transition hover:bg-gray-100 hover:text-gray-900"
+              className="rounded px-2 py-1 transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]"
             >
               Moves
             </Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li className="rounded px-2 py-1 text-gray-700">{move.name}</li>
+          <li className="rounded px-2 py-1 text-[#9a8c7e]">{move.name}</li>
         </ol>
       </nav>
 
-      <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#8892f0]">
               Move
             </p>
-            <h1 className="text-3xl font-semibold text-gray-900">{move.name}</h1>
-            <p className="text-sm text-gray-600">
+            <h1 className="text-3xl font-semibold text-[#F2E8D5]">{move.name}</h1>
+            <p className="text-sm text-[#6b6055]">
               {move.shortEffect || "No short effect text available."}
             </p>
             {move.effect && (
-              <p className="mt-3 text-sm text-gray-500">{move.effect}</p>
+              <p className="mt-3 text-sm text-[#6b6055]">{move.effect}</p>
             )}
           </div>
-          <div className="flex flex-wrap gap-2 text-sm font-semibold text-gray-900">
+          <div className="flex flex-wrap gap-2 text-sm font-semibold text-[#F2E8D5]">
             {move.type && (
               <Link
                 href={`/pokemon/types/${move.type}`}
-                className="rounded-full bg-indigo-50 px-3 py-1 text-indigo-700 transition hover:bg-indigo-100"
+                className="rounded-full bg-[#12122a] px-3 py-1 text-[#8892f0] transition hover:bg-[#12122a]"
               >
                 {move.type}
               </Link>
             )}
             {!move.type && (
-              <span className="rounded-full bg-indigo-50 px-3 py-1 text-indigo-700">
+              <span className="rounded-full bg-[#12122a] px-3 py-1 text-[#8892f0]">
                 Typeless
               </span>
             )}
-            <span className="rounded-full bg-emerald-50 px-3 py-1 text-emerald-700">
+            <span className="rounded-full bg-[#0e1c14] px-3 py-1 text-[#4caf72]">
               {move.damageClass || "Neutral"}
             </span>
-            <span className="rounded-full bg-gray-100 px-3 py-1 text-gray-700">
+            <span className="rounded-full bg-[#1c1c22] px-3 py-1 text-[#9a8c7e]">
               {move.generation}
             </span>
           </div>
-          <div className="flex flex-col gap-2 text-sm text-gray-600">
-            <p className="font-semibold text-gray-900">Quick navigation</p>
+          <div className="flex flex-col gap-2 text-sm text-[#6b6055]">
+            <p className="font-semibold text-[#F2E8D5]">Quick navigation</p>
             <div className="flex flex-wrap gap-2">
               {previous && (
                 <Link
                   href={`/pokemon/moves/${previous.slug}`}
-                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-indigo-200 hover:bg-indigo-50"
+                  className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#22224a] hover:bg-[#12122a]"
                 >
                   ← {previous.name}
                 </Link>
@@ -325,14 +325,14 @@ export default async function MoveDetail({ params }: PageProps) {
               {next && (
                 <Link
                   href={`/pokemon/moves/${next.slug}`}
-                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-indigo-200 hover:bg-indigo-50"
+                  className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#22224a] hover:bg-[#12122a]"
                 >
                   {next.name} →
                 </Link>
               )}
               <Link
                 href="/pokemon/moves"
-                className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-gray-300 hover:bg-gray-50"
+                className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#2c2c32] hover:bg-[#1c1c22]"
                 aria-label="Back to Moves list"
               >
                 Index
@@ -344,9 +344,9 @@ export default async function MoveDetail({ params }: PageProps) {
           {moveMeta.map(({ label, key }) => (
             <div
               key={key}
-              className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3 text-sm text-gray-700"
+              className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3 text-sm text-[#9a8c7e]"
             >
-              <p className="text-xs uppercase tracking-wide text-gray-500">
+              <p className="text-xs uppercase tracking-wide text-[#6b6055]">
                 {label}
               </p>
               <p className="text-lg font-semibold">
@@ -357,25 +357,25 @@ export default async function MoveDetail({ params }: PageProps) {
         </div>
       </section>
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="mb-4 flex items-center justify-between">
           <div>
-            <h2 className="text-base font-semibold text-gray-900">
+            <h2 className="text-base font-semibold text-[#F2E8D5]">
               Learned by Pokémon
             </h2>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm text-[#6b6055]">
               Showing {featuredLearners.length} of {totalLearners} learners.
             </p>
           </div>
           <Link
             href="/pokemon"
-            className="rounded-lg border border-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 transition hover:border-indigo-200 hover:bg-indigo-50"
+            className="rounded-lg border border-[#1c1c22] px-3 py-1 text-sm font-semibold text-[#9a8c7e] transition hover:border-[#22224a] hover:bg-[#12122a]"
           >
             View Pokédex
           </Link>
         </div>
         {featuredLearners.length === 0 ? (
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-[#6b6055]">
             No Pokémon learn this move in the current data set.
           </p>
         ) : (
@@ -386,13 +386,13 @@ export default async function MoveDetail({ params }: PageProps) {
                 <Link
                   key={pokemon.slug}
                   href={`/pokemon/${pokemon.slug}`}
-                  className="rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800 transition hover:border-indigo-200 hover:bg-white"
+                  className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-4 text-sm text-[#d9cebe] transition hover:border-[#22224a] hover:bg-[#141418]"
                 >
                   <div className="flex items-center justify-between">
-                    <p className="text-base font-semibold text-gray-900">
+                    <p className="text-base font-semibold text-[#F2E8D5]">
                       {pokemon.name}
                     </p>
-                    <span className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+                    <span className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
                       {entries.length} pattern{entries.length === 1 ? "" : "s"}
                     </span>
                   </div>
@@ -400,7 +400,7 @@ export default async function MoveDetail({ params }: PageProps) {
                     {pokemon.types.map((type) => (
                       <span
                         key={type}
-                        className="rounded-full bg-indigo-100 px-2 py-0.5 text-[11px] font-semibold text-indigo-700"
+                        className="rounded-full bg-[#12122a] px-2 py-0.5 text-[11px] font-semibold text-[#8892f0]"
                       >
                         {type}
                       </span>
@@ -410,20 +410,20 @@ export default async function MoveDetail({ params }: PageProps) {
                     {preview.map((entrySummary) => (
                       <div
                         key={`${entrySummary.method}-${entrySummary.generation}-${entrySummary.level ?? "none"}`}
-                        className="rounded-lg border border-gray-100 bg-white/80 px-3 py-2"
+                        className="rounded-lg border border-[#1c1c22] bg-[#141418]/80 px-3 py-2"
                       >
-                        <div className="flex items-center justify-between text-xs font-semibold text-gray-700">
+                        <div className="flex items-center justify-between text-xs font-semibold text-[#9a8c7e]">
                           <span>{formatMethodLabel(entrySummary.method)}</span>
-                          <span className="text-[11px] font-medium uppercase text-gray-500">
+                          <span className="text-[11px] font-medium uppercase text-[#6b6055]">
                             {formatGenerationLabel(entrySummary.generation)}
                           </span>
                         </div>
-                        <p className="text-xs text-gray-500">
+                        <p className="text-xs text-[#6b6055]">
                           {entrySummary.level !== null
                             ? `Level ${entrySummary.level}`
                             : "No level requirement"}
                         </p>
-                        <p className="text-xs text-gray-500">
+                        <p className="text-xs text-[#6b6055]">
                           {formatVersionGroupSummary(
                             entrySummary.versionGroups,
                             entrySummary.generation
@@ -433,7 +433,7 @@ export default async function MoveDetail({ params }: PageProps) {
                     ))}
                   </div>
                   {entries.length > LEARN_VARIATION_PREVIEW_LIMIT && (
-                    <p className="mt-2 text-xs text-gray-500">
+                    <p className="mt-2 text-xs text-[#6b6055]">
                       +{entries.length - LEARN_VARIATION_PREVIEW_LIMIT} more learn
                       variation
                       {entries.length - LEARN_VARIATION_PREVIEW_LIMIT === 1

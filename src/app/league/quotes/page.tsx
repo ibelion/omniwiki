@@ -98,7 +98,7 @@ export default async function LeagueQuotesPage({
   const visibleQuotes = filtered.slice(start, start + PAGE_SIZE);
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-4 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-4 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/league" label="Back to League" />
 
       <QuotesSearch
@@ -110,9 +110,9 @@ export default async function LeagueQuotesPage({
         totalCount={totalCount}
       />
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         {visibleQuotes.length === 0 ? (
-          <p className="text-sm text-gray-500">No quotes match your filters.</p>
+          <p className="text-sm text-[#6b6055]">No quotes match your filters.</p>
         ) : (
           <div className="grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
             {visibleQuotes.map((quote, index) => {
@@ -126,18 +126,18 @@ export default async function LeagueQuotesPage({
               return (
                 <article
                   key={`${quote.champion}-${quote.text}-${index}`}
-                  className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
+                  className="flex flex-col gap-2 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-4 text-sm transition hover:border-[#1c3622] hover:bg-[#0e1c14] hover:shadow-md"
                 >
-                  <p className="text-xs font-semibold uppercase text-emerald-600">
+                  <p className="text-xs font-semibold uppercase text-[#4caf72]">
                     <Link href={championHref} className="hover:underline">
                       {quote.champion}
                     </Link>
                   </p>
-                  <blockquote className="text-base italic font-medium text-gray-900">
+                  <blockquote className="text-base italic font-medium text-[#F2E8D5]">
                     &quot;{quote.text}&quot;
                   </blockquote>
                   {(quote.category || quote.language) && (
-                    <div className="flex gap-2 text-xs text-gray-400">
+                    <div className="flex gap-2 text-xs text-[#6b6055]">
                       {quote.category && (
                         <span>
                           {quote.category.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
@@ -161,7 +161,7 @@ export default async function LeagueQuotesPage({
         )}
       </section>
 
-      <nav className="flex items-center justify-between gap-4 rounded-2xl border border-gray-200 bg-white px-6 py-4 shadow-sm">
+      <nav className="flex items-center justify-between gap-4 rounded-2xl border border-[#1c1c22] bg-[#141418] px-6 py-4 shadow-sm">
         {currentPage > 1 ? (
           <Link
             href={buildPageHref(currentPage - 1, {
@@ -169,17 +169,17 @@ export default async function LeagueQuotesPage({
               category: categoryFilter,
               q: textQuery || undefined,
             })}
-            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50"
+            className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm transition hover:bg-[#1c1c22]"
           >
             Previous
           </Link>
         ) : (
-          <span className="rounded-lg border border-gray-200 px-4 py-2 text-sm opacity-40">
+          <span className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm opacity-40">
             Previous
           </span>
         )}
 
-        <span className="text-sm text-gray-500">
+        <span className="text-sm text-[#6b6055]">
           Page {currentPage} of {pageCount}
         </span>
 
@@ -190,12 +190,12 @@ export default async function LeagueQuotesPage({
               category: categoryFilter,
               q: textQuery || undefined,
             })}
-            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50"
+            className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm transition hover:bg-[#1c1c22]"
           >
             Next
           </Link>
         ) : (
-          <span className="rounded-lg border border-gray-200 px-4 py-2 text-sm opacity-40">
+          <span className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm opacity-40">
             Next
           </span>
         )}

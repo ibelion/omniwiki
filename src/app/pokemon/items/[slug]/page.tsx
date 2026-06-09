@@ -42,28 +42,28 @@ export default async function ItemDetailPage({ params }: PageProps) {
   );
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-gray-50 px-6 py-10">
-      <nav className="text-sm text-gray-500" aria-label="Breadcrumb">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-[#0c0c0e] px-6 py-10">
+      <nav className="text-sm text-[#6b6055]" aria-label="Breadcrumb">
         <ol className="flex flex-wrap items-center gap-1">
           <li>
-            <Link href="/" className="rounded px-2 py-1 transition hover:bg-gray-100 hover:text-gray-900">
+            <Link href="/" className="rounded px-2 py-1 transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]">
               Home
             </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li>
-            <Link href="/pokemon/items" className="rounded px-2 py-1 transition hover:bg-gray-100 hover:text-gray-900">
+            <Link href="/pokemon/items" className="rounded px-2 py-1 transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]">
               Items
             </Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li className="rounded px-2 py-1 text-gray-700">{item.name}</li>
+          <li className="rounded px-2 py-1 text-[#9a8c7e]">{item.name}</li>
         </ol>
       </nav>
 
-      <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-          <div className="flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-2xl border border-gray-100 bg-gray-50">
+          <div className="flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-2xl border border-[#1c1c22] bg-[#0c0c0e]">
             {item.sprite ? (
               <ImageWithFallback
                 src={`/pokemoncontent/${item.sprite}`}
@@ -75,18 +75,18 @@ export default async function ItemDetailPage({ params }: PageProps) {
             )}
           </div>
           <div className="flex-1">
-            <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#8892f0]">
               Item
             </p>
-            <h1 className="text-3xl font-semibold text-gray-900">{item.name}</h1>
+            <h1 className="text-3xl font-semibold text-[#F2E8D5]">{item.name}</h1>
             <div className="mt-2 flex flex-wrap gap-2">
               {item.category && (
-                <span className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700">
+                <span className="rounded-full bg-[#12122a] px-3 py-1 text-xs font-semibold text-[#8892f0]">
                   {item.category}
                 </span>
               )}
               {item.generation && (
-                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-600">
+                <span className="rounded-full bg-[#1c1c22] px-3 py-1 text-xs font-semibold text-[#6b6055]">
                   {item.generation}
                 </span>
               )}
@@ -95,37 +95,37 @@ export default async function ItemDetailPage({ params }: PageProps) {
         </div>
 
         <div className="mt-6 grid gap-3 sm:grid-cols-3">
-          <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-gray-400">Cost</p>
-            <p className="text-lg font-semibold text-gray-900">
+          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+            <p className="text-xs uppercase tracking-wide text-[#6b6055]">Cost</p>
+            <p className="text-lg font-semibold text-[#F2E8D5]">
               {item.cost != null ? `₽${item.cost.toLocaleString()}` : "—"}
             </p>
           </div>
-          <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-gray-400">Fling power</p>
-            <p className="text-lg font-semibold text-gray-900">
+          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+            <p className="text-xs uppercase tracking-wide text-[#6b6055]">Fling power</p>
+            <p className="text-lg font-semibold text-[#F2E8D5]">
               {item.flingPower ?? "—"}
             </p>
           </div>
-          <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-gray-400">Category</p>
-            <p className="text-lg font-semibold text-gray-900">
+          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+            <p className="text-xs uppercase tracking-wide text-[#6b6055]">Category</p>
+            <p className="text-lg font-semibold text-[#F2E8D5]">
               {item.category ?? "—"}
             </p>
           </div>
         </div>
 
         {item.shortEffect && (
-          <p className="mt-5 text-sm text-gray-600">{item.shortEffect}</p>
+          <p className="mt-5 text-sm text-[#6b6055]">{item.shortEffect}</p>
         )}
         {item.effect && item.effect !== item.shortEffect && (
-          <p className="mt-2 text-sm text-gray-500">{item.effect}</p>
+          <p className="mt-2 text-sm text-[#6b6055]">{item.effect}</p>
         )}
       </section>
 
       {holders.length > 0 && (
-        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="mb-4 text-base font-semibold text-gray-900">
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+          <h2 className="mb-4 text-base font-semibold text-[#F2E8D5]">
             Held by in the wild ({holders.length})
           </h2>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -133,21 +133,21 @@ export default async function ItemDetailPage({ params }: PageProps) {
               <Link
                 key={pokemon.slug}
                 href={`/pokemon/${pokemon.slug}`}
-                className="flex items-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-3 transition hover:border-indigo-200 hover:bg-indigo-50"
+                className="flex items-center gap-3 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-3 transition hover:border-[#22224a] hover:bg-[#12122a]"
               >
                 <ImageWithFallback
                   src={`/pokemoncontent/${pokemon.sprites.default}`}
                   alt={`${pokemon.name} sprite`}
-                  className="h-12 w-12 flex-shrink-0 rounded-lg border border-gray-100 bg-white object-contain"
+                  className="h-12 w-12 flex-shrink-0 rounded-lg border border-[#1c1c22] bg-[#141418] object-contain"
                 />
                 <div className="min-w-0">
-                  <p className="font-semibold text-gray-900">{pokemon.name}</p>
-                  <p className="text-xs text-gray-400">
+                  <p className="font-semibold text-[#F2E8D5]">{pokemon.name}</p>
+                  <p className="text-xs text-[#6b6055]">
                     #{pokemon.id.toString().padStart(3, "0")}
                     {rarity != null ? ` · ${rarity}% chance` : ""}
                   </p>
                   {version && (
-                    <p className="text-xs text-gray-400">{version}</p>
+                    <p className="text-xs text-[#6b6055]">{version}</p>
                   )}
                 </div>
               </Link>

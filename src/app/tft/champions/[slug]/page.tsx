@@ -13,7 +13,7 @@ const stripTokens = (html: string) =>
   html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
 
 const COST_COLORS: Record<number, string> = {
-  1: "bg-gray-100 text-gray-700",
+  1: "bg-[#1c1c22] text-[#9a8c7e]",
   2: "bg-green-100 text-green-700",
   3: "bg-blue-100 text-blue-700",
   4: "bg-purple-100 text-purple-700",
@@ -76,7 +76,7 @@ export default async function TFTChampionPage({ params }: PageProps) {
     .sort((a, b) => a.name.localeCompare(b.name));
 
   const costCls = (cost: number) =>
-    COST_COLORS[cost] ?? "bg-gray-100 text-gray-700";
+    COST_COLORS[cost] ?? "bg-[#1c1c22] text-[#9a8c7e]";
 
   const stats = champion.stats;
   const statRows = stats
@@ -95,21 +95,21 @@ export default async function TFTChampionPage({ params }: PageProps) {
     : [];
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/tft/champions" label="Back to Champions" />
-      <nav className="flex flex-wrap items-center gap-1 text-sm text-gray-500">
-        <Link href="/" className="hover:text-teal-600">Home</Link>
+      <nav className="flex flex-wrap items-center gap-1 text-sm text-[#6b6055]">
+        <Link href="/" className="hover:text-[#4ab8c8]">Home</Link>
         <span>/</span>
-        <Link href="/tft" className="hover:text-teal-600">TFT</Link>
+        <Link href="/tft" className="hover:text-[#4ab8c8]">TFT</Link>
         <span>/</span>
-        <Link href="/tft/champions" className="hover:text-teal-600">Champions</Link>
+        <Link href="/tft/champions" className="hover:text-[#4ab8c8]">Champions</Link>
         <span>/</span>
-        <span className="font-semibold text-gray-900">{champion.name}</span>
+        <span className="font-semibold text-[#F2E8D5]">{champion.name}</span>
       </nav>
 
-      <header className="flex flex-col gap-4 rounded-3xl border border-gray-200 bg-white p-6 shadow-sm sm:flex-row sm:items-start">
+      <header className="flex flex-col gap-4 rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm sm:flex-row sm:items-start">
         {champion.image && (
-          <div className="h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-gray-100 bg-gray-50">
+          <div className="h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-[#1c1c22] bg-[#0c0c0e]">
             <ImageWithFallback
               src={champion.image}
               alt={champion.name}
@@ -119,12 +119,12 @@ export default async function TFTChampionPage({ params }: PageProps) {
         )}
         <div className="flex flex-col gap-3">
           <div className="flex flex-wrap items-center gap-3">
-            <h1 className="text-3xl font-semibold text-gray-900">{champion.name}</h1>
+            <h1 className="text-3xl font-semibold text-[#F2E8D5]">{champion.name}</h1>
             <span className={`${costCls(champion.cost)} rounded-full px-3 py-1 text-sm font-semibold`}>
               {champion.cost}g
             </span>
             {champion.role && (
-              <span className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-500">
+              <span className="rounded-full bg-[#1c1c22] px-3 py-1 text-sm text-[#6b6055]">
                 {champion.role}
               </span>
             )}
@@ -132,7 +132,7 @@ export default async function TFTChampionPage({ params }: PageProps) {
           {champion.traits.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {champion.traits.map((trait) => (
-                <Link key={trait} href={`/tft/traits/${toSlug(trait)}`} className="rounded-full bg-teal-50 px-3 py-1 text-sm text-teal-700 hover:bg-teal-100">
+                <Link key={trait} href={`/tft/traits/${toSlug(trait)}`} className="rounded-full bg-[#0d181c] px-3 py-1 text-sm text-[#4ab8c8] hover:bg-[#0d181c]">
                   {trait}
                 </Link>
               ))}
@@ -142,10 +142,10 @@ export default async function TFTChampionPage({ params }: PageProps) {
       </header>
 
       {champion.ability && (
-        <section className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+        <section className="flex flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm">
           <div className="flex items-center gap-3">
             {champion.ability.icon && (
-              <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-gray-100 bg-gray-50">
+              <div className="h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-[#1c1c22] bg-[#0c0c0e]">
                 <ImageWithFallback
                   src={champion.ability.icon}
                   alt={champion.ability.name}
@@ -153,11 +153,11 @@ export default async function TFTChampionPage({ params }: PageProps) {
                 />
               </div>
             )}
-            <h2 className="text-lg font-semibold text-gray-900">{champion.ability.name}</h2>
+            <h2 className="text-lg font-semibold text-[#F2E8D5]">{champion.ability.name}</h2>
           </div>
           {champion.ability.description && (
             <p
-              className="text-sm leading-relaxed text-gray-600"
+              className="text-sm leading-relaxed text-[#6b6055]"
               dangerouslySetInnerHTML={{ __html: stripTokens(champion.ability.description) }}
             />
           )}
@@ -165,13 +165,13 @@ export default async function TFTChampionPage({ params }: PageProps) {
       )}
 
       {statRows.length > 0 && (
-        <section className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-semibold text-gray-900">Base Stats</h2>
+        <section className="flex flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm">
+          <h2 className="text-lg font-semibold text-[#F2E8D5]">Base Stats</h2>
           <div className="flex flex-wrap gap-2">
             {statRows.map((s) => (
-              <div key={s.label} className="flex items-center gap-1.5 rounded-lg bg-gray-50 px-3 py-1.5 text-sm">
-                <span className="text-gray-500">{s.label}</span>
-                <span className="font-semibold text-gray-900">{s.value}</span>
+              <div key={s.label} className="flex items-center gap-1.5 rounded-lg bg-[#0c0c0e] px-3 py-1.5 text-sm">
+                <span className="text-[#6b6055]">{s.label}</span>
+                <span className="font-semibold text-[#F2E8D5]">{s.value}</span>
               </div>
             ))}
           </div>
@@ -180,26 +180,26 @@ export default async function TFTChampionPage({ params }: PageProps) {
 
       {sharedTraitChamps.length > 0 && (
         <section className="flex flex-col gap-4">
-          <h2 className="text-xl font-semibold text-gray-900">Champions with shared traits</h2>
+          <h2 className="text-xl font-semibold text-[#F2E8D5]">Champions with shared traits</h2>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {sharedTraitChamps.map((c) => (
               <Link key={c.id} href={`/tft/champions/${toSlug(c.name)}`} className="block">
-                <article className="flex items-center gap-3 rounded-2xl border border-gray-200 bg-white p-3 shadow-sm transition hover:border-teal-200 hover:shadow-md">
+                <article className="flex items-center gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-3 shadow-sm transition hover:border-[#1a3038] hover:shadow-md">
                   {c.image && (
-                    <div className="h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-gray-100 bg-gray-50">
+                    <div className="h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-[#1c1c22] bg-[#0c0c0e]">
                       <ImageWithFallback src={c.image} alt={c.name} className="h-10 w-10" />
                     </div>
                   )}
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center justify-between gap-2">
-                      <span className="truncate text-sm font-semibold text-gray-900">{c.name}</span>
+                      <span className="truncate text-sm font-semibold text-[#F2E8D5]">{c.name}</span>
                       <span className={`shrink-0 ${costCls(c.cost)} rounded-full px-2 py-0.5 text-xs font-semibold`}>{c.cost}g</span>
                     </div>
                     {c.traits.length > 0 && (
                       <div className="mt-1 flex flex-wrap gap-1">
                         {c.traits.map((t) => (
                           <Link key={t} href={`/tft/traits/${toSlug(t)}`}
-                            className="rounded-full bg-teal-50 px-2 py-0.5 text-xs text-teal-700 hover:bg-teal-100"
+                            className="rounded-full bg-[#0d181c] px-2 py-0.5 text-xs text-[#4ab8c8] hover:bg-[#0d181c]"
                           >
                             {t}
                           </Link>
@@ -213,18 +213,18 @@ export default async function TFTChampionPage({ params }: PageProps) {
           </div>
         </section>
       )}
-      <nav className="flex items-center justify-between rounded-2xl border border-gray-200 bg-white px-4 py-3 shadow-sm">
+      <nav className="flex items-center justify-between rounded-2xl border border-[#1c1c22] bg-[#141418] px-4 py-3 shadow-sm">
         <div className="flex-1">
           {prev && (
-            <Link href={`/tft/champions/${toSlug(prev.name)}`} className="inline-flex items-center gap-1 text-sm text-gray-600 hover:text-teal-600">
+            <Link href={`/tft/champions/${toSlug(prev.name)}`} className="inline-flex items-center gap-1 text-sm text-[#6b6055] hover:text-[#4ab8c8]">
               &larr; {prev.name}
             </Link>
           )}
         </div>
-        <Link href="/tft/champions" className="text-sm font-medium text-gray-500 hover:text-teal-600">Index</Link>
+        <Link href="/tft/champions" className="text-sm font-medium text-[#6b6055] hover:text-[#4ab8c8]">Index</Link>
         <div className="flex flex-1 justify-end">
           {next && (
-            <Link href={`/tft/champions/${toSlug(next.name)}`} className="inline-flex items-center gap-1 text-sm text-gray-600 hover:text-teal-600">
+            <Link href={`/tft/champions/${toSlug(next.name)}`} className="inline-flex items-center gap-1 text-sm text-[#6b6055] hover:text-[#4ab8c8]">
               {next.name} &rarr;
             </Link>
           )}

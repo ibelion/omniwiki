@@ -46,18 +46,18 @@ export default function OnePieceCharactersPage() {
   const filterOptions: RoleFilter[] = ["All", "Main", "Supporting"];
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/onepiece" label="Back to One Piece" />
 
-      <section className="flex flex-col gap-4 rounded-3xl border border-orange-200 bg-white p-6 shadow-sm">
+      <section className="flex flex-col gap-4 rounded-3xl border border-[#3a2410] bg-[#141418] p-6 shadow-sm">
         <div className="space-y-2">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#d4933a]">
             Character Directory
           </p>
-          <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+          <h1 className="text-3xl font-bold tracking-tight text-[#F2E8D5]">
             One Piece Characters
           </h1>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-[#6b6055]">
             Showing {filteredCharacters.length} of {dataBundle.characters.length}{" "}
             characters.
           </p>
@@ -73,8 +73,8 @@ export default function OnePieceCharactersPage() {
                   key={option}
                   className={`rounded-full px-4 py-2 text-sm font-medium transition ${
                     isActive
-                      ? "bg-orange-600 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-orange-100 hover:text-orange-700"
+                      ? "bg-[#7a3c10] text-white"
+                      : "bg-[#1c1c22] text-[#9a8c7e] hover:bg-[#1c1208] hover:text-[#d4933a]"
                   }`}
                   onClick={() => setRoleFilter(option)}
                   type="button"
@@ -88,7 +88,7 @@ export default function OnePieceCharactersPage() {
           <label className="w-full md:max-w-sm">
             <span className="sr-only">Search characters</span>
             <input
-              className="w-full rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-orange-400 focus:ring-2 focus:ring-orange-200"
+              className="w-full rounded-full border border-[#2c2c32] bg-[#141418] px-4 py-2 text-sm text-[#F2E8D5] outline-none transition placeholder:text-gray-400 focus:border-orange-400 focus:ring-2 focus:ring-orange-200"
               onChange={(event) => setSearchQuery(event.target.value)}
               placeholder="Search by name or about text"
               type="search"
@@ -107,7 +107,7 @@ export default function OnePieceCharactersPage() {
           {filteredCharacters.map((character) => (
             <Link
               key={character.id}
-              className="flex h-full flex-col gap-4 rounded-3xl border border-gray-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-orange-300 hover:shadow-md"
+              className="flex h-full flex-col gap-4 rounded-3xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-[#4a3420] hover:shadow-md"
               href={`/onepiece/characters/${character.id}`}
             >
               <div className="flex items-center gap-3">
@@ -117,14 +117,14 @@ export default function OnePieceCharactersPage() {
                   src={character.image ?? ""}
                 />
                 <div className="min-w-0">
-                  <h2 className="truncate text-lg font-semibold text-gray-900">
+                  <h2 className="truncate text-lg font-semibold text-[#F2E8D5]">
                     {character.name}
                   </h2>
                   <span
                     className={`inline-flex rounded-full px-2.5 py-1 text-xs font-semibold ${
                       character.role === "Main"
-                        ? "bg-orange-100 text-orange-700"
-                        : "bg-gray-100 text-gray-700"
+                        ? "bg-[#1c1208] text-[#d4933a]"
+                        : "bg-[#1c1c22] text-[#9a8c7e]"
                     }`}
                   >
                     {character.role}
@@ -132,7 +132,7 @@ export default function OnePieceCharactersPage() {
                 </div>
               </div>
 
-              <p className="text-sm leading-6 text-gray-600">
+              <p className="text-sm leading-6 text-[#6b6055]">
                 {truncateAbout(character.about)}
               </p>
             </Link>
@@ -141,7 +141,7 @@ export default function OnePieceCharactersPage() {
       )}
 
       {dataBundle.characters.length > 0 && filteredCharacters.length === 0 ? (
-        <section className="rounded-2xl border border-gray-200 bg-white p-6 text-sm text-gray-600 shadow-sm">
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 text-sm text-[#6b6055] shadow-sm">
           No characters matched the current filters.
         </section>
       ) : null}

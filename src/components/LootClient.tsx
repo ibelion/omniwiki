@@ -43,16 +43,16 @@ export function LootClient({ lootItems }: Props) {
   );
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/league" label="Back to League" />
-      <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+      <header className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Loot ({filtered.length})
         </h1>
-        <p className="mt-1 text-gray-600">
+        <p className="mt-1 text-[#6b6055]">
           Hextech chests, capsules, shards, tokens, and more.
         </p>
         <input
@@ -60,15 +60,15 @@ export function LootClient({ lootItems }: Props) {
           placeholder="Search loot by name or description..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          className="mt-4 w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
         />
         <div className="mt-3 flex flex-wrap gap-2">
           <button
             onClick={() => setTypeFilter(null)}
             className={`rounded-full px-3 py-1 text-sm font-medium transition ${
               typeFilter === null
-                ? "bg-emerald-600 text-white"
-                : "bg-gray-100 text-gray-700 hover:bg-emerald-50"
+                ? "bg-[#1A5228] text-white"
+                : "bg-[#1c1c22] text-[#9a8c7e] hover:bg-[#0e1c14]"
             }`}
           >
             All types
@@ -79,8 +79,8 @@ export function LootClient({ lootItems }: Props) {
               onClick={() => setTypeFilter(typeFilter === t ? null : t)}
               className={`rounded-full px-3 py-1 text-sm font-medium transition ${
                 typeFilter === t
-                  ? "bg-emerald-600 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-emerald-50"
+                  ? "bg-[#1A5228] text-white"
+                  : "bg-[#1c1c22] text-[#9a8c7e] hover:bg-[#0e1c14]"
               }`}
             >
               {t}
@@ -93,8 +93,8 @@ export function LootClient({ lootItems }: Props) {
               onClick={() => setRarityFilter(null)}
               className={`rounded-full px-3 py-1 text-xs font-medium transition ${
                 rarityFilter === null
-                  ? "bg-indigo-600 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-indigo-50"
+                  ? "bg-[#3344aa] text-white"
+                  : "bg-[#1c1c22] text-[#9a8c7e] hover:bg-[#12122a]"
               }`}
             >
               All rarities
@@ -105,8 +105,8 @@ export function LootClient({ lootItems }: Props) {
                 onClick={() => setRarityFilter(rarityFilter === r ? null : r)}
                 className={`rounded-full px-3 py-1 text-xs font-medium transition ${
                   rarityFilter === r
-                    ? "bg-indigo-600 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-indigo-50"
+                    ? "bg-[#3344aa] text-white"
+                    : "bg-[#1c1c22] text-[#9a8c7e] hover:bg-[#12122a]"
                 }`}
               >
                 {r}
@@ -120,32 +120,32 @@ export function LootClient({ lootItems }: Props) {
         {filtered.map((item) => (
           <article
             key={item.id}
-            className="flex flex-col gap-2 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-emerald-200 hover:shadow-md"
+            className="flex flex-col gap-2 rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm transition hover:border-[#1c3622] hover:shadow-md"
           >
             {item.image && (
               <ImageWithFallback
                 src={`/leaguecontent/${item.image}`}
                 alt={item.name}
-                className="h-14 w-14 rounded-xl border border-gray-100 object-contain"
+                className="h-14 w-14 rounded-xl border border-[#1c1c22] object-contain"
               />
             )}
             <div>
-              <h3 className="text-sm font-semibold text-gray-900">{item.name}</h3>
+              <h3 className="text-sm font-semibold text-[#F2E8D5]">{item.name}</h3>
               <div className="mt-0.5 flex flex-wrap gap-1">
                 {item.type && (
-                  <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-xs text-emerald-700">
+                  <span className="rounded-full bg-[#0e1c14] px-2 py-0.5 text-xs text-[#4caf72]">
                     {item.type}
                   </span>
                 )}
                 {item.rarity && (
-                  <span className="rounded-full bg-indigo-50 px-2 py-0.5 text-xs text-indigo-700">
+                  <span className="rounded-full bg-[#12122a] px-2 py-0.5 text-xs text-[#8892f0]">
                     {item.rarity}
                   </span>
                 )}
               </div>
             </div>
             {item.description && (
-              <p className="text-xs text-gray-600">{item.description}</p>
+              <p className="text-xs text-[#6b6055]">{item.description}</p>
             )}
           </article>
         ))}

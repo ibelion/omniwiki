@@ -30,6 +30,7 @@ export type UniverseDescriptor = {
     text: string;
     border: string;
     hover: string;
+    bg: string;
   };
 };
 
@@ -78,47 +79,45 @@ export function UniverseShowcase({ universes }: UniverseShowcaseProps) {
               onClick={() => setSelectedId(universe.id)}
               className={`text-left transition ${
                 isSelected
-                  ? `${universe.accent.border} border-2 bg-gray-50 shadow-md`
-                  : "border border-gray-200 bg-white shadow-sm hover:border-gray-300"
+                  ? `border-2 ${universe.accent.border} ${universe.accent.bg}`
+                  : "border border-[#1c1c22] bg-[#141418] hover:border-[#2c2c32]"
               } rounded-2xl p-5`}
             >
               <div className="flex items-center justify-between">
-                <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+                <p className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
                   Universe
                 </p>
                 <span
                   className={`rounded-full px-3 py-1 text-xs font-semibold ${
                     universe.status === "Ready"
                       ? universe.accent.chip
-                      : "bg-gray-100 text-gray-600"
+                      : "bg-[#1c1c22] text-[#6b6055]"
                   }`}
                 >
                   {universe.status}
                 </span>
               </div>
-              <h2 className="mt-2 text-xl font-semibold text-gray-900">
+              <h2 className="mt-2 text-xl font-semibold text-[#F2E8D5]">
                 {universe.name}
               </h2>
-              <p className="text-sm text-gray-600">{universe.highlight}</p>
+              <p className="text-sm text-[#6b6055]">{universe.highlight}</p>
             </button>
           );
         })}
       </div>
 
-      <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p
-              className={`text-sm font-semibold uppercase tracking-wide ${activeUniverse.accent.text}`}
-            >
+            <p className={`text-sm font-semibold uppercase tracking-wide ${activeUniverse.accent.text}`}>
               {activeUniverse.name}
             </p>
-            <h3 className="text-3xl font-semibold text-gray-900">
+            <h3 className="text-3xl font-extrabold tracking-tight text-[#F2E8D5]">
               {activeUniverse.status === "Ready"
                 ? `${activeUniverse.name} is live`
                 : `${activeUniverse.name} coming soon`}
             </h3>
-            <p className="text-gray-600">{activeUniverse.description}</p>
+            <p className="text-[#6b6055]">{activeUniverse.description}</p>
           </div>
           {activeUniverse.heroImage && (
             <img
@@ -126,7 +125,7 @@ export function UniverseShowcase({ universes }: UniverseShowcaseProps) {
               alt={activeUniverse.heroAlt || activeUniverse.name}
               width={128}
               height={128}
-              className="rounded-2xl border border-gray-100 object-cover"
+              className="rounded-2xl border border-[#1c1c22] object-cover"
             />
           )}
         </div>
@@ -138,10 +137,10 @@ export function UniverseShowcase({ universes }: UniverseShowcaseProps) {
               <Link
                 key={stat.label}
                 href={href}
-                className="rounded-2xl border border-gray-100 bg-gray-50 p-4 text-center transition hover:border-indigo-200 hover:bg-indigo-50"
+                className={`rounded-2xl border border-[#252528] bg-[#1c1c22] p-4 text-center transition hover:border-[#353538] hover:bg-[#252528]`}
               >
-                <p className="text-sm text-gray-500">{stat.label}</p>
-                <p className="text-2xl font-semibold text-gray-900">
+                <p className="text-sm text-[#6b6055]">{stat.label}</p>
+                <p className="text-2xl font-extrabold text-[#F2E8D5]">
                   {typeof stat.value === "number"
                     ? stat.value.toLocaleString()
                     : stat.value}
@@ -157,14 +156,14 @@ export function UniverseShowcase({ universes }: UniverseShowcaseProps) {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`rounded-xl border ${activeUniverse.accent.border} bg-gray-50 p-4 text-sm font-semibold text-gray-900 transition ${activeUniverse.accent.hover}`}
+                className={`rounded-xl border ${activeUniverse.accent.border} bg-[#1c1c22] p-4 text-sm font-semibold text-[#F2E8D5] transition ${activeUniverse.accent.hover}`}
               >
                 {link.label}
               </Link>
             ) : (
               <span
                 key={link.label}
-                className="rounded-xl border border-dashed border-gray-300 bg-gray-50 p-4 text-sm font-semibold text-gray-500"
+                className="rounded-xl border border-dashed border-[#2c2c32] bg-[#141418] p-4 text-sm font-semibold text-[#6b6055]"
               >
                 {link.label} {link.comingSoon ? "(soon)" : ""}
               </span>

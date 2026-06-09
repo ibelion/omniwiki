@@ -57,14 +57,14 @@ export function FactionsList({ factions, lore, champions }: Props) {
 
   return (
     <>
-      <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+      <header className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Factions ({filtered.length})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           Runeterra&apos;s regions and factions — click any champion icon to go to their page.
         </p>
         <input
@@ -72,7 +72,7 @@ export function FactionsList({ factions, lore, champions }: Props) {
           placeholder="Search factions..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          className="mt-4 w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
         />
       </header>
 
@@ -85,7 +85,7 @@ export function FactionsList({ factions, lore, champions }: Props) {
           return (
             <article
               key={faction.slug}
-              className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm"
+              className="overflow-hidden rounded-2xl border border-[#1c1c22] bg-[#141418] shadow-sm"
             >
               {faction.image && (
                 <ImageWithFallback
@@ -97,25 +97,25 @@ export function FactionsList({ factions, lore, champions }: Props) {
               <div className="p-5">
                 <div className="flex items-start justify-between gap-3">
                   <div>
-                    <p className="text-xs uppercase tracking-wide text-gray-400">
+                    <p className="text-xs uppercase tracking-wide text-[#6b6055]">
                       {faction.slug}
                     </p>
                     <Link
                       href={`/league/factions/${faction.slug}`}
-                      className="text-lg font-semibold text-gray-900 hover:text-emerald-700"
+                      className="text-lg font-semibold text-[#F2E8D5] hover:text-[#4caf72]"
                     >
                       {faction.name}
                     </Link>
                   </div>
                   {factionChampions.length > 0 && (
-                    <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+                    <span className="shrink-0 rounded-full bg-[#0e1c14] px-3 py-1 text-xs font-semibold text-[#4caf72]">
                       {factionChampions.length} champions
                     </span>
                   )}
                 </div>
 
                 {faction.description && (
-                  <p className="mt-2 text-sm text-gray-600">{faction.description}</p>
+                  <p className="mt-2 text-sm text-[#6b6055]">{faction.description}</p>
                 )}
 
                 {shown.length > 0 && (
@@ -130,15 +130,15 @@ export function FactionsList({ factions, lore, champions }: Props) {
                         <ImageWithFallback
                           src={`/leaguecontent/${champ.image}`}
                           alt={champ.name}
-                          className="h-10 w-10 rounded-xl border border-gray-100 object-cover transition group-hover:border-emerald-300 group-hover:shadow-sm"
+                          className="h-10 w-10 rounded-xl border border-[#1c1c22] object-cover transition group-hover:border-[#2a4a30] group-hover:shadow-sm"
                         />
-                        <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
+                        <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-[#141418] px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
                           {champ.name}
                         </span>
                       </Link>
                     ))}
                     {overflow > 0 && (
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gray-100 bg-gray-50 text-xs font-medium text-gray-500">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#1c1c22] bg-[#0c0c0e] text-xs font-medium text-[#6b6055]">
                         +{overflow}
                       </span>
                     )}

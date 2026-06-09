@@ -49,17 +49,17 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
 
   return (
     <>
-      <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+      <header className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Missions & Objectives ({filtered.length})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           Seasonal missions, event objectives, and challenge tasks across League&apos;s history.
           {active.length > 0 && (
-            <span className="ml-2 font-medium text-emerald-600">{active.length} currently active.</span>
+            <span className="ml-2 font-medium text-[#4caf72]">{active.length} currently active.</span>
           )}
         </p>
 
@@ -68,7 +68,7 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
           placeholder="Search by title, category, or type..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          className="mt-4 w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
         />
 
         {/* Category chips */}
@@ -78,8 +78,8 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
               onClick={() => setCategoryFilter(null)}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                 categoryFilter === null
-                  ? "bg-emerald-600 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-[#1A5228] text-white"
+                  : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
               }`}
             >
               All
@@ -90,8 +90,8 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
                 onClick={() => setCategoryFilter(categoryFilter === cat ? null : cat)}
                 className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                   categoryFilter === cat
-                    ? "bg-emerald-600 text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    ? "bg-[#1A5228] text-white"
+                    : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
                 }`}
               >
                 {cat}
@@ -108,14 +108,14 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
           return (
             <article
               key={obj.objectiveId}
-              className="flex flex-col gap-2 rounded-xl border border-gray-200 bg-white px-4 py-3 shadow-sm"
+              className="flex flex-col gap-2 rounded-xl border border-[#1c1c22] bg-[#141418] px-4 py-3 shadow-sm"
             >
               <div className="flex items-start justify-between gap-2">
-                <p className="text-xs font-medium uppercase tracking-wide text-emerald-600">
+                <p className="text-xs font-medium uppercase tracking-wide text-[#4caf72]">
                   {obj.category || "General"}
                 </p>
                 {isActive && (
-                  <span className="shrink-0 rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-700">
+                  <span className="shrink-0 rounded-full bg-[#0e1c14] px-2 py-0.5 text-xs font-semibold text-[#4caf72]">
                     Active
                   </span>
                 )}
@@ -125,12 +125,12 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
                   </span>
                 )}
               </div>
-              <h2 className="text-sm font-semibold leading-snug text-gray-900">{obj.title}</h2>
-              <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-gray-500">
+              <h2 className="text-sm font-semibold leading-snug text-[#F2E8D5]">{obj.title}</h2>
+              <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs text-[#6b6055]">
                 {obj.objectiveType && <span>{obj.objectiveType}</span>}
-                {obj.tag && <span className="text-gray-400">#{obj.tag}</span>}
+                {obj.tag && <span className="text-[#6b6055]">#{obj.tag}</span>}
               </div>
-              <div className="text-xs text-gray-400">
+              <div className="text-xs text-[#6b6055]">
                 {obj.start && <span>{formatDate(obj.start)}</span>}
                 {obj.start && obj.end && <span> → </span>}
                 {obj.end && <span>{formatDate(obj.end)}</span>}
@@ -139,7 +139,7 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
           );
         })}
         {filtered.length === 0 && (
-          <p className="col-span-full text-sm text-gray-500">No objectives match your search.</p>
+          <p className="col-span-full text-sm text-[#6b6055]">No objectives match your search.</p>
         )}
       </section>
     </>

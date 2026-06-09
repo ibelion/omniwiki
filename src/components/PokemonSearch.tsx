@@ -65,13 +65,13 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
           onChange={(e) => setQuery(e.target.value)}
           aria-label="Search Pokémon"
           placeholder="Search Pokémon"
-          className="min-w-[220px] rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+          className="min-w-[220px] rounded-lg border border-[#1c1c22] px-3 py-2 text-sm text-[#F2E8D5] shadow-sm focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
         />
         <select
           value={typeFilter}
           onChange={(e) => setTypeFilter(e.target.value)}
           aria-label="Filter by type"
-          className="rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+          className="rounded-lg border border-[#1c1c22] px-3 py-2 text-sm text-[#F2E8D5] shadow-sm focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
         >
           <option value="">All types</option>
           {typeOptions.map((type) => (
@@ -84,7 +84,7 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
           value={genFilter}
           onChange={(e) => setGenFilter(e.target.value)}
           aria-label="Filter by generation"
-          className="rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+          className="rounded-lg border border-[#1c1c22] px-3 py-2 text-sm text-[#F2E8D5] shadow-sm focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
         >
           <option value="">All generations</option>
           {generationOptions.map((gen) => (
@@ -102,9 +102,9 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
             min={0}
             max={1200}
             aria-label="Minimum base stat total"
-            className="w-24 rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="w-24 rounded-lg border border-[#1c1c22] px-3 py-2 text-sm text-[#F2E8D5] shadow-sm focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
           />
-          <span className="text-gray-400">–</span>
+          <span className="text-[#6b6055]">–</span>
           <input
             type="number"
             value={bstMax}
@@ -113,21 +113,21 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
             min={0}
             max={1200}
             aria-label="Maximum base stat total"
-            className="w-24 rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="w-24 rounded-lg border border-[#1c1c22] px-3 py-2 text-sm text-[#F2E8D5] shadow-sm focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
           />
         </div>
-        <label className="flex cursor-pointer items-center gap-2 rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-700 shadow-sm hover:bg-gray-50">
+        <label className="flex cursor-pointer items-center gap-2 rounded-lg border border-[#1c1c22] px-3 py-2 text-sm text-[#9a8c7e] shadow-sm hover:bg-[#1c1c22]">
           <input
             type="checkbox"
             checked={showAltForms}
             onChange={(e) => setShowAltForms(e.target.checked)}
-            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+            className="h-4 w-4 rounded border-[#2c2c32] text-[#8892f0] focus:ring-[#3344aa]"
           />
           Alt forms
         </label>
       </form>
 
-      <p className="mt-3 text-sm text-gray-500">
+      <p className="mt-3 text-sm text-[#6b6055]">
         {filtered.length.toLocaleString()} result{filtered.length !== 1 ? "s" : ""}
       </p>
 
@@ -136,18 +136,18 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
           <Link
             key={p.slug}
             href={`/pokemon/${p.slug}`}
-            className="flex flex-col gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md"
+            className="flex flex-col gap-3 rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-[#22224a] hover:shadow-md"
             aria-label={`View ${p.name} details`}
           >
             <div className="flex items-center justify-between">
-              <div className="text-sm font-semibold text-gray-500">
+              <div className="text-sm font-semibold text-[#6b6055]">
                 #{p.id.toString().padStart(3, "0")}
               </div>
               <div className="flex gap-2">
                 {p.types.map((type) => (
                   <span
                     key={type}
-                    className="rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-semibold capitalize text-indigo-700"
+                    className="rounded-full bg-[#12122a] px-2 py-0.5 text-xs font-semibold capitalize text-[#8892f0]"
                   >
                     {type}
                   </span>
@@ -158,24 +158,24 @@ export const PokemonSearch = ({ pokemon, typeOptions }: PokemonSearchProps) => {
               <ImageWithFallback
                 src={`/pokemoncontent/${p.sprites.default}`}
                 alt={`${p.name} sprite`}
-                className="h-16 w-16 rounded-lg border border-gray-100 bg-gray-50 object-contain"
+                className="h-16 w-16 rounded-lg border border-[#1c1c22] bg-[#0c0c0e] object-contain"
                 loading="lazy"
               />
-              <h2 className="text-lg font-semibold text-gray-900">{p.name}</h2>
+              <h2 className="text-lg font-semibold text-[#F2E8D5]">{p.name}</h2>
             </div>
-            <div className="flex flex-wrap gap-2 text-xs text-gray-600">
-              <span className="rounded-full bg-gray-100 px-2 py-1">
+            <div className="flex flex-wrap gap-2 text-xs text-[#6b6055]">
+              <span className="rounded-full bg-[#1c1c22] px-2 py-1">
                 BST {p.baseStatTotal}
               </span>
-              <span className="rounded-full bg-gray-100 px-2 py-1">
+              <span className="rounded-full bg-[#1c1c22] px-2 py-1">
                 {GENERATION_LABELS[p.generation] ?? p.generation}
               </span>
             </div>
-            <div className="flex flex-wrap gap-2 text-xs text-gray-700">
+            <div className="flex flex-wrap gap-2 text-xs text-[#9a8c7e]">
               {Object.entries(p.stats).map(([stat, value]) => (
                 <span
                   key={stat}
-                  className="rounded-md bg-gray-50 px-2 py-1 text-[11px] font-semibold text-gray-700"
+                  className="rounded-md bg-[#0c0c0e] px-2 py-1 text-[11px] font-semibold text-[#9a8c7e]"
                 >
                   {stat}: {value}
                 </span>

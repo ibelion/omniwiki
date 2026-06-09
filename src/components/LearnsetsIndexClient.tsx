@@ -44,10 +44,10 @@ const METHOD_COLORS: Record<string, string> = {
   "level-up": "bg-blue-50 text-blue-700",
   "machine": "bg-purple-50 text-purple-700",
   "egg": "bg-amber-50 text-amber-700",
-  "tutor": "bg-emerald-50 text-emerald-700",
-  "transfer": "bg-gray-100 text-gray-600",
+  "tutor": "bg-[#0e1c14] text-[#4caf72]",
+  "transfer": "bg-[#1c1c22] text-[#6b6055]",
   "light-ball-egg": "bg-amber-50 text-amber-700",
-  "form-change": "bg-slate-100 text-slate-600",
+  "form-change": "bg-[#1c1c22] text-[#6b6055]",
   "special": "bg-rose-50 text-rose-700",
 };
 
@@ -78,14 +78,14 @@ export default function LearnsetsIndexClient({ summaries }: Props) {
 
   return (
     <>
-      <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
+      <header className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#8892f0]">
           Pokémon
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Learnsets ({filtered.length.toLocaleString()})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           Move counts by learn method for all Pokémon. Click any card to see the
           full move list.
         </p>
@@ -95,12 +95,12 @@ export default function LearnsetsIndexClient({ summaries }: Props) {
             placeholder="Search by name…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="flex-1 min-w-[180px] rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="flex-1 min-w-[180px] rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
           />
           <select
             value={genFilter}
             onChange={(e) => setGenFilter(e.target.value)}
-            className="rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="rounded-lg border border-[#2c2c32] px-3 py-2 text-sm text-[#9a8c7e] focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
           >
             <option value="all">All generations</option>
             {generations.map((g) => (
@@ -117,17 +117,17 @@ export default function LearnsetsIndexClient({ summaries }: Props) {
           <Link
             key={s.slug}
             href={`/pokemon/learnsets/${s.slug}`}
-            className="flex items-center gap-3 rounded-xl border border-gray-100 bg-white p-3 shadow-sm transition hover:border-indigo-200 hover:bg-indigo-50"
+            className="flex items-center gap-3 rounded-xl border border-[#1c1c22] bg-[#141418] p-3 shadow-sm transition hover:border-[#22224a] hover:bg-[#12122a]"
           >
             <ImageWithFallback
               src={`/pokemoncontent/${s.spriteDefault}`}
               alt={`${s.name} sprite`}
-              className="h-14 w-14 flex-shrink-0 rounded-lg border border-gray-100 bg-gray-50 object-contain"
+              className="h-14 w-14 flex-shrink-0 rounded-lg border border-[#1c1c22] bg-[#0c0c0e] object-contain"
             />
             <div className="min-w-0 flex-1">
               <div className="flex items-baseline justify-between gap-1">
-                <p className="truncate font-semibold text-gray-900">{s.name}</p>
-                <span className="flex-shrink-0 text-xs text-gray-400">
+                <p className="truncate font-semibold text-[#F2E8D5]">{s.name}</p>
+                <span className="flex-shrink-0 text-xs text-[#6b6055]">
                   #{s.id.toString().padStart(3, "0")}
                 </span>
               </div>
@@ -135,7 +135,7 @@ export default function LearnsetsIndexClient({ summaries }: Props) {
                 {s.types.map((t) => (
                   <span
                     key={t}
-                    className="rounded-full bg-indigo-50 px-1.5 py-0.5 text-[10px] font-semibold text-indigo-700"
+                    className="rounded-full bg-[#12122a] px-1.5 py-0.5 text-[10px] font-semibold text-[#8892f0]"
                   >
                     {t}
                   </span>
@@ -145,7 +145,7 @@ export default function LearnsetsIndexClient({ summaries }: Props) {
                 {FEATURED_METHODS.filter((m) => s.byMethod[m]).map((m) => (
                   <span
                     key={m}
-                    className={`rounded px-1.5 py-0.5 text-[10px] font-semibold ${METHOD_COLORS[m] ?? "bg-gray-100 text-gray-600"}`}
+                    className={`rounded px-1.5 py-0.5 text-[10px] font-semibold ${METHOD_COLORS[m] ?? "bg-[#1c1c22] text-[#6b6055]"}`}
                   >
                     {METHOD_LABELS[m]}: {s.byMethod[m]}
                   </span>
@@ -156,12 +156,12 @@ export default function LearnsetsIndexClient({ summaries }: Props) {
                   .map(([m, count]) => (
                     <span
                       key={m}
-                      className={`rounded px-1.5 py-0.5 text-[10px] font-semibold ${METHOD_COLORS[m] ?? "bg-gray-100 text-gray-600"}`}
+                      className={`rounded px-1.5 py-0.5 text-[10px] font-semibold ${METHOD_COLORS[m] ?? "bg-[#1c1c22] text-[#6b6055]"}`}
                     >
                       {METHOD_LABELS[m] ?? m}: {count}
                     </span>
                   ))}
-                <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] font-semibold text-gray-500">
+                <span className="rounded bg-[#1c1c22] px-1.5 py-0.5 text-[10px] font-semibold text-[#6b6055]">
                   {s.totalMoves} total
                 </span>
               </div>
@@ -169,7 +169,7 @@ export default function LearnsetsIndexClient({ summaries }: Props) {
           </Link>
         ))}
         {filtered.length === 0 && (
-          <p className="col-span-full py-8 text-center text-sm text-gray-500">
+          <p className="col-span-full py-8 text-center text-sm text-[#6b6055]">
             No Pokémon match your search.
           </p>
         )}

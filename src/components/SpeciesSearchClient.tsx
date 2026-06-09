@@ -51,14 +51,14 @@ export function SpeciesSearchClient({ groups, spritesMap }: SpeciesSearchClientP
 
   return (
     <>
-      <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
+      <header className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#8892f0]">
           Pokémon
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Species Codex ({filtered.length.toLocaleString()})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           Habitats, shapes, capture rates, and flavor text for every species.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
@@ -67,12 +67,12 @@ export function SpeciesSearchClient({ groups, spritesMap }: SpeciesSearchClientP
             placeholder="Search by name, habitat, shape, or color…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 min-w-[200px] rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="flex-1 min-w-[200px] rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
           />
           <select
             value={habitatFilter}
             onChange={(e) => setHabitatFilter(e.target.value)}
-            className="rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="rounded-lg border border-[#2c2c32] px-3 py-2 text-sm text-[#9a8c7e] focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
           >
             {habitats.map((h) => (
               <option key={h} value={h}>
@@ -85,7 +85,7 @@ export function SpeciesSearchClient({ groups, spritesMap }: SpeciesSearchClientP
             onChange={(e) =>
               setLegendaryFilter(e.target.value as "all" | "legendary" | "mythical")
             }
-            className="rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="rounded-lg border border-[#2c2c32] px-3 py-2 text-sm text-[#9a8c7e] focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
           >
             <option value="all">All species</option>
             <option value="legendary">Legendary only</option>
@@ -101,25 +101,25 @@ export function SpeciesSearchClient({ groups, spritesMap }: SpeciesSearchClientP
           return (
             <article
               key={group.id}
-              className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm"
+              className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm"
             >
               <div className="flex items-start gap-4">
                 {sprite && (
                   <ImageWithFallback
                     src={`/pokemoncontent/${sprite}`}
                     alt={`${rep.name} sprite`}
-                    className="h-16 w-16 flex-shrink-0 rounded-xl border border-gray-100 bg-gray-50 object-contain"
+                    className="h-16 w-16 flex-shrink-0 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] object-contain"
                   />
                 )}
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <div>
-                      <p className="text-xs uppercase text-gray-400">
+                      <p className="text-xs uppercase text-[#6b6055]">
                         #{group.id.toString().padStart(3, "0")} ·{" "}
                         {group.entries.length} generation
                         {group.entries.length !== 1 ? "s" : ""}
                       </p>
-                      <h2 className="text-xl font-semibold text-gray-900">
+                      <h2 className="text-xl font-semibold text-[#F2E8D5]">
                         {rep.name}
                       </h2>
                     </div>
@@ -141,14 +141,14 @@ export function SpeciesSearchClient({ groups, spritesMap }: SpeciesSearchClientP
                       )}
                       <Link
                         href={`/pokemon/${rep.slug}`}
-                        className="rounded-full border border-indigo-100 bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-700 transition hover:bg-indigo-100"
+                        className="rounded-full border border-indigo-100 bg-[#12122a] px-2 py-0.5 text-xs font-semibold text-[#8892f0] transition hover:bg-[#12122a]"
                         onClick={(e) => e.stopPropagation()}
                       >
                         Pokédex →
                       </Link>
                     </div>
                   </div>
-                  <div className="mt-1 flex flex-wrap gap-3 text-xs text-gray-500">
+                  <div className="mt-1 flex flex-wrap gap-3 text-xs text-[#6b6055]">
                     <span>Habitat: {rep.habitat ?? "unknown"}</span>
                     <span>Shape: {rep.shape ?? "unknown"}</span>
                     <span>Color: {rep.color ?? "unknown"}</span>
@@ -158,19 +158,19 @@ export function SpeciesSearchClient({ groups, spritesMap }: SpeciesSearchClientP
                 </div>
               </div>
 
-              <div className="mt-4 space-y-2 border-t border-gray-100 pt-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-gray-400">
+              <div className="mt-4 space-y-2 border-t border-[#1c1c22] pt-4">
+                <p className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
                   Flavor text
                 </p>
                 {group.entries.map((entry) => (
                   <div
                     key={`${group.id}-${entry.generation}`}
-                    className="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2"
+                    className="rounded-lg border border-[#1c1c22] bg-[#0c0c0e] px-3 py-2"
                   >
-                    <p className="mb-0.5 text-[10px] font-semibold uppercase tracking-wide text-gray-400">
+                    <p className="mb-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#6b6055]">
                       {entry.generation.replace("generation-", "Gen ").toUpperCase()}
                     </p>
-                    <p className="text-sm text-gray-700">
+                    <p className="text-sm text-[#9a8c7e]">
                       {cleanFlavorText(entry.flavorText)}
                     </p>
                   </div>
@@ -180,7 +180,7 @@ export function SpeciesSearchClient({ groups, spritesMap }: SpeciesSearchClientP
           );
         })}
         {filtered.length === 0 && (
-          <p className="py-10 text-center text-sm text-gray-500">
+          <p className="py-10 text-center text-sm text-[#6b6055]">
             No species match your filters.
           </p>
         )}

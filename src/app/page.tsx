@@ -41,9 +41,9 @@ const universes: UniverseDescriptor[] = [
     name: "Pokemon",
     status: "Ready",
     highlight:
-      "Pokemon universe is fully live with Pokedex, moves, abilities, and evolutions.",
+      "Pokédex, moves, abilities, and evolutions — all live.",
     description:
-      "Dive into the Pokedex, filter by type, generation, or stats, and open deep-dive articles with sprites, lore, evolutions, abilities, and move references.",
+      "Dive into the Pokédex, filter by type, generation, or stats, and open deep-dive articles with sprites, lore, evolutions, abilities, and move references.",
     stats: [
       { label: "Pokemon", value: pokemonData.pokemon.length },
       { label: "Moves", value: pokemonData.moves.length },
@@ -61,10 +61,11 @@ const universes: UniverseDescriptor[] = [
         : undefined,
     heroAlt: pokemonData.pokemon[0]?.name || "Pokemon sprite",
     accent: {
-      chip: "bg-indigo-50 text-indigo-700",
-      text: "text-indigo-700",
-      border: "border-indigo-200",
-      hover: "hover:border-indigo-300 hover:bg-white",
+      chip: "bg-[#12122a] text-[#8892f0]",
+      text: "text-[#8892f0]",
+      border: "border-[#22224a]",
+      hover: "hover:border-[#33335a] hover:bg-[#16162e]",
+      bg: "bg-[#12122a]",
     },
   },
   {
@@ -72,7 +73,7 @@ const universes: UniverseDescriptor[] = [
     name: "League of Legends",
     status: "Ready",
     highlight:
-      "League data is synced: champions, abilities, items, runes, spells, skins, lore, and quotes.",
+      "Champions, items, runes, skins, lore, and quotes — all synced.",
     description:
       "Search the champion roster, inspect cosmetics, reference shop items, and explore rune or spell details sourced from the CommunityDragon feeds.",
     stats: [
@@ -92,10 +93,11 @@ const universes: UniverseDescriptor[] = [
         : undefined,
     heroAlt: leagueData.champions[0]?.name || "League champion",
     accent: {
-      chip: "bg-emerald-50 text-emerald-700",
-      text: "text-emerald-700",
-      border: "border-emerald-200",
-      hover: "hover:border-emerald-300 hover:bg-white",
+      chip: "bg-[#0e1c14] text-[#4caf72]",
+      text: "text-[#4caf72]",
+      border: "border-[#1c3622]",
+      hover: "hover:border-[#2a4a30] hover:bg-[#0e1c14]",
+      bg: "bg-[#0e1c14]",
     },
   },
   {
@@ -103,7 +105,7 @@ const universes: UniverseDescriptor[] = [
     name: "Teamfight Tactics",
     status: "Ready",
     highlight:
-      "TFT Set data is live: champions, traits, items, and augments with tier breakpoints.",
+      "Champions, traits, items, and augments with tier breakpoints.",
     description:
       "Explore the full champion roster sorted by cost, browse trait synergies with activation thresholds, reference items and their recipes, and look up augment effects for the current set.",
     stats: [
@@ -120,10 +122,11 @@ const universes: UniverseDescriptor[] = [
     heroImage: tftData.champions[0]?.image ?? undefined,
     heroAlt: tftData.champions[0]?.name || "TFT champion",
     accent: {
-      chip: "bg-teal-50 text-teal-700",
-      text: "text-teal-700",
-      border: "border-teal-200",
-      hover: "hover:border-teal-300 hover:bg-white",
+      chip: "bg-[#0d181c] text-[#4ab8c8]",
+      text: "text-[#4ab8c8]",
+      border: "border-[#1a3038]",
+      hover: "hover:border-[#2a4850] hover:bg-[#0d181c]",
+      bg: "bg-[#0d181c]",
     },
   },
   {
@@ -131,7 +134,7 @@ const universes: UniverseDescriptor[] = [
     name: "One Piece",
     status: "Ready",
     highlight:
-      "One Piece characters are live. Devil fruits and crews are coming next.",
+      "Character roster live. Devil fruits and crews coming next.",
     description:
       "Browse the character roster with role filtering and detailed profile pages sourced from MyAnimeList via the Jikan API. Devil fruits, crews, and bounty data are in the pipeline.",
     stats: [
@@ -149,55 +152,55 @@ const universes: UniverseDescriptor[] = [
       onePieceData.characters[0]?.image ?? "/globe.svg",
     heroAlt: onePieceData.characters[0]?.name ?? "One Piece character",
     accent: {
-      chip: "bg-orange-50 text-orange-700",
-      text: "text-orange-700",
-      border: "border-orange-200",
-      hover: "hover:border-orange-300 hover:bg-white",
+      chip: "bg-[#1c1208] text-[#d4933a]",
+      text: "text-[#d4933a]",
+      border: "border-[#3a2410]",
+      hover: "hover:border-[#4a3420] hover:bg-[#1c1208]",
+      bg: "bg-[#1c1208]",
     },
   },
 ];
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-10 bg-gray-50 px-6 py-12 text-gray-900">
-      <section className="mx-auto flex w-full max-w-6xl flex-col gap-8 rounded-3xl bg-white p-8 shadow-sm">
+    <main className="flex min-h-screen flex-col gap-10 bg-[#0c0c0e] px-6 py-12 text-[#F2E8D5]">
+      <section className="mx-auto flex w-full max-w-6xl flex-col gap-8 rounded-3xl border border-[#1c1c22] bg-[#141418] p-8">
         <div className="flex flex-col gap-3">
-          <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
-            OmniWiki
+          <p className="text-[11px] font-semibold uppercase tracking-[.22em] text-[#B87D20]">
+            OmniWiki — Multiverse Reference
           </p>
-          <h1 className="text-4xl font-semibold leading-tight">
-            Multiverse gamer wiki hub
+          <h1 className="text-4xl font-extrabold leading-[1.04] tracking-tight text-[#F2E8D5]">
+            The <span className="text-[#B87D20]">Multiverse</span> Wiki
           </h1>
-          <p className="max-w-3xl text-lg text-gray-600">
-            Browse living dossiers for Pokemon, League of Legends, Teamfight
-            Tactics, and One Piece — fueled by your scrapers. Pick a card to
-            inspect each world&apos;s live stats, links, and roadmap.
+          <p className="max-w-3xl text-base text-[#6b6055]">
+            Browse living dossiers for Pokémon, League of Legends, Teamfight
+            Tactics, and One Piece — fueled by live data and real scrapers.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/pokemon"
-              className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700"
+              className="rounded-lg bg-[#B87D20] px-4 py-2 text-sm font-bold text-[#0c0c0e] transition hover:bg-[#D49430]"
               aria-label="Browse Pokemon"
             >
               Browse Pokemon
             </Link>
             <Link
               href="/league"
-              className="rounded-lg border border-emerald-200 px-4 py-2 text-sm font-semibold text-emerald-700 transition hover:border-emerald-300 hover:bg-emerald-50"
+              className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm font-semibold text-[#6b6055] transition hover:border-[#2c2c32] hover:text-[#F2E8D5]"
               aria-label="Browse League"
             >
               Browse League
             </Link>
             <Link
               href="/tft"
-              className="rounded-lg border border-teal-200 px-4 py-2 text-sm font-semibold text-teal-700 transition hover:border-teal-300 hover:bg-teal-50"
+              className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm font-semibold text-[#6b6055] transition hover:border-[#2c2c32] hover:text-[#F2E8D5]"
               aria-label="Browse TFT"
             >
               Browse TFT
             </Link>
             <Link
               href="/onepiece"
-              className="rounded-lg border border-orange-200 px-4 py-2 text-sm font-semibold text-orange-700 transition hover:border-orange-300 hover:bg-orange-50"
+              className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm font-semibold text-[#6b6055] transition hover:border-[#2c2c32] hover:text-[#F2E8D5]"
               aria-label="Browse One Piece"
             >
               Browse One Piece
@@ -209,16 +212,16 @@ export default function Home() {
           {universeTotals.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-2xl border border-gray-100 bg-gray-50 p-4"
+              className="rounded-2xl border border-[#1c1c22] bg-[#1c1c22] p-4"
             >
-              <p className="text-sm text-gray-500">{stat.label}</p>
-              <p className="text-2xl font-semibold">
+              <p className="text-sm text-[#6b6055]">{stat.label}</p>
+              <p className="text-2xl font-extrabold text-[#B87D20]">
                 {Number.isFinite(stat.value)
                   ? Number(stat.value).toLocaleString()
                   : stat.value}
               </p>
               {stat.description && (
-                <p className="text-xs text-gray-500">{stat.description}</p>
+                <p className="text-xs text-[#6b6055]">{stat.description}</p>
               )}
             </div>
           ))}

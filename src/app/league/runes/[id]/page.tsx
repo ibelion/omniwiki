@@ -36,31 +36,31 @@ export default async function RuneDetailPage({ params }: PageProps) {
   const isKeystone = rune.slot === 0;
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-3xl flex-col gap-6 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-3xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/league/runes" label="Back to Runes" />
 
       {/* Header */}
-      <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="flex items-start gap-5">
           <ImageWithFallback
             src={rune.icon ? `/leaguecontent/${rune.icon}` : "/globe.svg"}
             alt={rune.name}
-            className="h-20 w-20 flex-shrink-0 rounded-2xl border border-gray-100 object-contain p-2"
+            className="h-20 w-20 flex-shrink-0 rounded-2xl border border-[#1c1c22] object-contain p-2"
           />
           <div className="flex-1">
             <div className="flex flex-wrap items-center gap-2">
               {tree && (
-                <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700">
+                <span className="rounded-full bg-[#0e1c14] px-2 py-0.5 text-xs font-semibold text-[#4caf72]">
                   {tree.name}
                 </span>
               )}
-              <span className="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-600">
+              <span className="rounded-full bg-[#1c1c22] px-2 py-0.5 text-xs font-medium text-[#6b6055]">
                 {isKeystone ? "Keystone" : `Slot ${rune.slot}`}
               </span>
             </div>
-            <h1 className="mt-1 text-2xl font-semibold text-gray-900">{rune.name}</h1>
+            <h1 className="mt-1 text-2xl font-semibold text-[#F2E8D5]">{rune.name}</h1>
             {rune.shortDesc && (
-              <p className="mt-1 text-sm text-gray-500">{rune.shortDesc}</p>
+              <p className="mt-1 text-sm text-[#6b6055]">{rune.shortDesc}</p>
             )}
           </div>
         </div>
@@ -68,9 +68,9 @@ export default async function RuneDetailPage({ params }: PageProps) {
 
       {/* Full description */}
       {rune.longDesc && rune.longDesc.trim() !== "" && (
-        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="mb-3 text-base font-semibold text-gray-900">Full Description</h2>
-          <p className="text-sm leading-relaxed text-gray-700 whitespace-pre-wrap">
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+          <h2 className="mb-3 text-base font-semibold text-[#F2E8D5]">Full Description</h2>
+          <p className="text-sm leading-relaxed text-[#9a8c7e] whitespace-pre-wrap">
             {rune.longDesc}
           </p>
         </section>
@@ -78,7 +78,7 @@ export default async function RuneDetailPage({ params }: PageProps) {
 
       {/* Other runes in the same tree */}
       {siblings.length > 0 && (
-        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
           <div className="mb-4 flex items-center gap-2">
             {tree?.icon && (
               <ImageWithFallback
@@ -87,7 +87,7 @@ export default async function RuneDetailPage({ params }: PageProps) {
                 className="h-5 w-5 object-contain"
               />
             )}
-            <h2 className="text-base font-semibold text-gray-900">
+            <h2 className="text-base font-semibold text-[#F2E8D5]">
               Other {tree?.name ?? "Tree"} Runes
             </h2>
           </div>
@@ -96,7 +96,7 @@ export default async function RuneDetailPage({ params }: PageProps) {
               <Link
                 key={sib.runeId}
                 href={`/league/runes/${sib.runeId}`}
-                className="flex items-center gap-2 rounded-xl border border-gray-100 bg-gray-50 px-3 py-2 text-sm transition hover:border-emerald-200 hover:bg-emerald-50"
+                className="flex items-center gap-2 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-3 py-2 text-sm transition hover:border-[#1c3622] hover:bg-[#0e1c14]"
               >
                 {sib.icon && (
                   <ImageWithFallback
@@ -106,10 +106,10 @@ export default async function RuneDetailPage({ params }: PageProps) {
                   />
                 )}
                 <div>
-                  <p className="text-xs text-gray-500">
+                  <p className="text-xs text-[#6b6055]">
                     {sib.slot === 0 ? "Keystone" : `Slot ${sib.slot}`}
                   </p>
-                  <p className="font-medium text-gray-900">{sib.name}</p>
+                  <p className="font-medium text-[#F2E8D5]">{sib.name}</p>
                 </div>
               </Link>
             ))}

@@ -85,12 +85,12 @@ export function QuotesSearch({
   };
 
   return (
-    <div className="space-y-4 rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm">
+    <div className="space-y-4 rounded-2xl border border-emerald-100 bg-[#141418] p-6 shadow-sm">
       <div className="space-y-1">
-        <p className="text-sm font-medium uppercase tracking-[0.18em] text-emerald-600">
+        <p className="text-sm font-medium uppercase tracking-[0.18em] text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold tracking-tight text-slate-900">
+        <h1 className="text-3xl font-semibold tracking-tight text-[#F2E8D5]">
           Voicelines ({totalCount.toLocaleString()})
         </h1>
       </div>
@@ -101,13 +101,13 @@ export function QuotesSearch({
           value={searchInput}
           onChange={(event) => setSearchInput(event.target.value)}
           placeholder="Search by champion or quote text..."
-          className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+          className="w-full rounded-xl border border-slate-200 bg-[#141418] px-4 py-3 text-sm text-[#F2E8D5] outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
         />
 
         <select
           value={champion}
           onChange={(event) => handleChampionChange(event.target.value)}
-          className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+          className="w-full rounded-xl border border-slate-200 bg-[#141418] px-4 py-3 text-sm text-[#F2E8D5] outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
         >
           <option value="">All champions</option>
           {champions.map((item) => (
@@ -120,7 +120,7 @@ export function QuotesSearch({
         <select
           value={category}
           onChange={(event) => handleCategoryChange(event.target.value)}
-          className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+          className="w-full rounded-xl border border-slate-200 bg-[#141418] px-4 py-3 text-sm text-[#F2E8D5] outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
         >
           <option value="">All categories</option>
           {categories.map((item) => (

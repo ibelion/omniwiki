@@ -1,18 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./globals.css";
 import { CommandPalette } from "../components/CommandPalette";
 import { CommandPaletteButton } from "../components/CommandPaletteButton";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -27,59 +23,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-gray-50 text-gray-900 antialiased`}
-      >
-        <header className="border-b border-gray-200 bg-white">
-          <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-6 py-4">
-            <div className="flex items-center gap-3">
-              <span className="rounded-full bg-indigo-600 px-3 py-1 text-sm font-semibold text-white">
-                OmniWiki
-              </span>
-              <div className="text-sm text-gray-600">
-                <p className="font-semibold text-gray-900">
-                  Pokémon, League, TFT & One Piece live
-                </p>
-                <p className="text-xs text-gray-500">
-                  Four universes — run build:onepiece to populate One Piece data
-                </p>
+      <body className={`${sora.variable} bg-[#0c0c0e] text-[#F2E8D5] antialiased`}>
+        <header className="border-b border-[#1c1c22] bg-[#0c0c0e]">
+          <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-6 py-3">
+            <Link href="/" className="flex items-center gap-3">
+              <svg width="36" height="36" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+                <circle cx="40" cy="40" r="21" stroke="#1A5228" strokeWidth="7" fill="none"/>
+                <text x="40" y="47" textAnchor="middle" fontFamily="Sora, sans-serif" fontSize="18" fontWeight="800" fill="#0c0c0e">W</text>
+              </svg>
+              <div>
+                <div className="text-[15px] font-extrabold tracking-tight text-[#F2E8D5] leading-none">OmniWiki</div>
+                <div className="mt-0.5 text-[9px] font-semibold uppercase tracking-[.22em] text-[#6b6055]">Multiverse Reference</div>
               </div>
-            </div>
+            </Link>
             <div className="flex items-center gap-2">
-              <nav className="flex items-center gap-2 text-sm font-semibold">
-                <Link
-                  href="/"
-                  className="rounded-lg px-3 py-2 text-gray-900 transition hover:bg-gray-100"
-                  aria-label="Home"
-                >
+              <nav className="flex items-center gap-1 text-[13px] font-semibold">
+                <Link href="/" className="rounded-lg px-3 py-2 text-[#F2E8D5] transition hover:bg-[#1c1c22]" aria-label="Home">
                   Home
                 </Link>
-                <Link
-                  href="/pokemon"
-                  className="rounded-lg px-3 py-2 text-indigo-700 transition hover:bg-indigo-50"
-                  aria-label="Pokemon universe"
-                >
+                <Link href="/pokemon" className="rounded-lg px-3 py-2 text-[#6b6055] transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]" aria-label="Pokemon universe">
                   Pokemon
                 </Link>
-                <Link
-                  href="/league"
-                  className="rounded-lg px-3 py-2 text-emerald-700 transition hover:bg-emerald-50"
-                  aria-label="League universe"
-                >
+                <Link href="/league" className="rounded-lg px-3 py-2 text-[#6b6055] transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]" aria-label="League universe">
                   League
                 </Link>
-                <Link
-                  href="/tft"
-                  className="rounded-lg px-3 py-2 text-teal-700 transition hover:bg-teal-50"
-                  aria-label="TFT universe"
-                >
+                <Link href="/tft" className="rounded-lg px-3 py-2 text-[#6b6055] transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]" aria-label="TFT universe">
                   TFT
                 </Link>
-                <Link
-                  href="/onepiece"
-                  className="rounded-lg px-3 py-2 text-orange-700 transition hover:bg-orange-50"
-                  aria-label="One Piece universe"
-                >
+                <Link href="/onepiece" className="rounded-lg px-3 py-2 text-[#6b6055] transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]" aria-label="One Piece universe">
                   One Piece
                 </Link>
               </nav>

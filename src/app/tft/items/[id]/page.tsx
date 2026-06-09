@@ -74,34 +74,34 @@ export default async function TFTItemDetailPage({ params }: PageProps) {
   const component1 = isCombined ? allItems.find(entry => entry.id === item.composition?.[1]) ?? null : null;
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/tft/items" label="Back to Items" />
 
-      <nav aria-label="Breadcrumb" className="text-sm text-gray-500">
+      <nav aria-label="Breadcrumb" className="text-sm text-[#6b6055]">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
-            <Link href="/" className="hover:text-teal-600">
+            <Link href="/" className="hover:text-[#4ab8c8]">
               Home
             </Link>
           </li>
           <li>/</li>
           <li>
-            <Link href="/tft" className="hover:text-teal-600">
+            <Link href="/tft" className="hover:text-[#4ab8c8]">
               TFT
             </Link>
           </li>
           <li>/</li>
           <li>
-            <Link href="/tft/items" className="hover:text-teal-600">
+            <Link href="/tft/items" className="hover:text-[#4ab8c8]">
               Items
             </Link>
           </li>
           <li>/</li>
-          <li className="text-gray-900">{item.name}</li>
+          <li className="text-[#F2E8D5]">{item.name}</li>
         </ol>
       </nav>
 
-      <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
           <ImageWithFallback
             src={item.image ?? ""}
@@ -110,17 +110,17 @@ export default async function TFTItemDetailPage({ params }: PageProps) {
           />
           <div className="min-w-0 flex-1">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <h1 className="text-3xl font-semibold text-gray-900">{item.name}</h1>
+              <h1 className="text-3xl font-semibold text-[#F2E8D5]">{item.name}</h1>
               <span
                 className={`inline-flex w-fit rounded-full px-3 py-1 text-xs font-medium ${
-                  isCombined ? 'bg-teal-100 text-teal-800' : 'bg-gray-100 text-gray-700'
+                  isCombined ? 'bg-[#0d181c] text-teal-800' : 'bg-[#1c1c22] text-[#9a8c7e]'
                 }`}
               >
                 {isCombined ? 'Combined' : 'Base Component'}
               </span>
             </div>
             <div
-              className="mt-3 text-sm text-gray-600"
+              className="mt-3 text-sm text-[#6b6055]"
               dangerouslySetInnerHTML={{ __html: stripTokens(item.description) }}
             />
           </div>
@@ -128,39 +128,39 @@ export default async function TFTItemDetailPage({ params }: PageProps) {
       </section>
 
       {isCombined && component0 && component1 ? (
-        <section className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
-          <h2 className="text-lg font-semibold text-gray-900">Recipe</h2>
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
+          <h2 className="text-lg font-semibold text-[#F2E8D5]">Recipe</h2>
           <div className="mt-4 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href={`/tft/items/${component0.id}`}
-              className="flex w-full items-center gap-3 rounded-2xl border border-gray-200 p-4 transition hover:border-teal-300 hover:bg-teal-50 sm:w-auto"
+              className="flex w-full items-center gap-3 rounded-2xl border border-[#1c1c22] p-4 transition hover:border-[#2a4050] hover:bg-[#0d181c] sm:w-auto"
             >
               <ImageWithFallback
                 src={component0.image ?? ""}
                 alt={component0.name}
                 className="h-14 w-14 rounded-2xl object-contain"
               />
-              <span className="font-medium text-gray-900">{component0.name}</span>
+              <span className="font-medium text-[#F2E8D5]">{component0.name}</span>
             </Link>
-            <span className="text-2xl font-semibold text-teal-600">+</span>
+            <span className="text-2xl font-semibold text-[#4ab8c8]">+</span>
             <Link
               href={`/tft/items/${component1.id}`}
-              className="flex w-full items-center gap-3 rounded-2xl border border-gray-200 p-4 transition hover:border-teal-300 hover:bg-teal-50 sm:w-auto"
+              className="flex w-full items-center gap-3 rounded-2xl border border-[#1c1c22] p-4 transition hover:border-[#2a4050] hover:bg-[#0d181c] sm:w-auto"
             >
               <ImageWithFallback
                 src={component1.image ?? ""}
                 alt={component1.name}
                 className="h-14 w-14 rounded-2xl object-contain"
               />
-              <span className="font-medium text-gray-900">{component1.name}</span>
+              <span className="font-medium text-[#F2E8D5]">{component1.name}</span>
             </Link>
           </div>
         </section>
       ) : null}
 
       {usedIn.length > 0 ? (
-        <section className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
-          <h2 className="text-lg font-semibold text-gray-900">Used In</h2>
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
+          <h2 className="text-lg font-semibold text-[#F2E8D5]">Used In</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {usedIn
               .slice()
@@ -169,7 +169,7 @@ export default async function TFTItemDetailPage({ params }: PageProps) {
                 <Link
                   key={usedItem.id}
                   href={`/tft/items/${usedItem.id}`}
-                  className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition hover:border-teal-300 hover:bg-teal-50"
+                  className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm transition hover:border-[#2a4050] hover:bg-[#0d181c]"
                 >
                   <div className="flex items-center gap-3">
                     <ImageWithFallback
@@ -178,8 +178,8 @@ export default async function TFTItemDetailPage({ params }: PageProps) {
                       className="h-12 w-12 rounded-2xl object-contain"
                     />
                     <div className="min-w-0">
-                      <div className="font-medium text-gray-900">{usedItem.name}</div>
-                      <div className="text-sm text-gray-500">View item details</div>
+                      <div className="font-medium text-[#F2E8D5]">{usedItem.name}</div>
+                      <div className="text-sm text-[#6b6055]">View item details</div>
                     </div>
                   </div>
                 </Link>
@@ -188,12 +188,12 @@ export default async function TFTItemDetailPage({ params }: PageProps) {
         </section>
       ) : null}
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
         <div className="flex items-center justify-between gap-4">
           {prevItem ? (
             <Link
               href={`/tft/items/${prevItem.id}`}
-              className="text-sm font-medium text-gray-700 transition hover:text-teal-600"
+              className="text-sm font-medium text-[#9a8c7e] transition hover:text-[#4ab8c8]"
             >
               ← {prevItem.name}
             </Link>
@@ -203,7 +203,7 @@ export default async function TFTItemDetailPage({ params }: PageProps) {
           {nextItem ? (
             <Link
               href={`/tft/items/${nextItem.id}`}
-              className="text-right text-sm font-medium text-gray-700 transition hover:text-teal-600"
+              className="text-right text-sm font-medium text-[#9a8c7e] transition hover:text-[#4ab8c8]"
             >
               {nextItem.name} →
             </Link>

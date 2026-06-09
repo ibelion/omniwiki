@@ -85,14 +85,14 @@ export default async function ChampionDetail({ params }: PageProps) {
   );
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/league" label="Back to League" />
-      <nav className="text-sm text-gray-500" aria-label="Breadcrumb">
+      <nav className="text-sm text-[#6b6055]" aria-label="Breadcrumb">
         <ol className="flex flex-wrap items-center gap-1">
           <li>
             <Link
               href="/"
-              className="rounded px-2 py-1 transition hover:bg-gray-100 hover:text-gray-900"
+              className="rounded px-2 py-1 transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]"
             >
               Home
             </Link>
@@ -101,40 +101,40 @@ export default async function ChampionDetail({ params }: PageProps) {
           <li>
             <Link
               href="/league"
-              className="rounded px-2 py-1 transition hover:bg-gray-100 hover:text-gray-900"
+              className="rounded px-2 py-1 transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]"
             >
               League
             </Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li className="rounded px-2 py-1 text-gray-700">{champion.name}</li>
+          <li className="rounded px-2 py-1 text-[#9a8c7e]">{champion.name}</li>
         </ol>
       </nav>
 
-      <section className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
             <ImageWithFallback
               src={`/leaguecontent/${champion.image}`}
               alt={`${champion.name} icon`}
-              className="h-24 w-24 rounded-2xl border border-gray-100 object-cover"
+              className="h-24 w-24 rounded-2xl border border-[#1c1c22] object-cover"
             />
             <div>
-              <p className="text-sm uppercase tracking-wide text-emerald-600">
+              <p className="text-sm uppercase tracking-wide text-[#4caf72]">
                 Champion
               </p>
-              <h1 className="text-3xl font-semibold text-gray-900">
+              <h1 className="text-3xl font-semibold text-[#F2E8D5]">
                 {champion.name}
               </h1>
               {lore?.title && (
-                <p className="text-sm italic text-gray-500">{lore.title}</p>
+                <p className="text-sm italic text-[#6b6055]">{lore.title}</p>
               )}
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-[#6b6055]">
                 Difficulty {champion.difficulty ?? "?"} ·{" "}
                 {champion.rangeType} · {champion.resource}
               </p>
               {mainPosition && (
-                <p className="mt-1 text-sm font-semibold text-emerald-700">
+                <p className="mt-1 text-sm font-semibold text-[#4caf72]">
                   Main Position: {mainPosition}
                 </p>
               )}
@@ -143,14 +143,14 @@ export default async function ChampionDetail({ params }: PageProps) {
           <div className="flex flex-col gap-2">
             {/* Top row: champion positions from CSV (main highlighted) */}
             {positions.length > 0 && (
-              <div className="flex flex-wrap gap-2 text-xs font-semibold text-gray-900">
+              <div className="flex flex-wrap gap-2 text-xs font-semibold text-[#F2E8D5]">
                 {positions.map((pos, idx) => (
                   <span
                     key={`pos-${idx}`}
                     className={
                       idx === 0
-                        ? "rounded-full bg-emerald-100 px-3 py-1 text-emerald-700"
-                        : "rounded-full bg-gray-100 px-3 py-1 text-gray-700"
+                        ? "rounded-full bg-[#0e1c14] px-3 py-1 text-[#4caf72]"
+                        : "rounded-full bg-[#1c1c22] px-3 py-1 text-[#9a8c7e]"
                     }
                   >
                     {pos}
@@ -159,25 +159,25 @@ export default async function ChampionDetail({ params }: PageProps) {
               </div>
             )}
             {/* Bottom row: roles badges */}
-            <div className="flex flex-wrap gap-2 text-xs font-medium text-gray-900">
+            <div className="flex flex-wrap gap-2 text-xs font-medium text-[#F2E8D5]">
               {champion.roles.map((role) => (
                 <span
                   key={role}
-                  className="rounded-full bg-indigo-100 px-3 py-1 text-indigo-700"
+                  className="rounded-full bg-[#12122a] px-3 py-1 text-[#8892f0]"
                 >
                   {role}
                 </span>
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-2 text-sm text-gray-600">
-            <p className="font-semibold text-gray-900">Quick navigation</p>
+          <div className="flex flex-col gap-2 text-sm text-[#6b6055]">
+            <p className="font-semibold text-[#F2E8D5]">Quick navigation</p>
             <ChampionJump champions={championIndex} />
             <div className="flex flex-wrap gap-2">
               {previous && (
                 <Link
                   href={`/league/${previous.slug}`}
-                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-emerald-200 hover:bg-emerald-50"
+                  className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#1c3622] hover:bg-[#0e1c14]"
                 >
                   ← {previous.name}
                 </Link>
@@ -185,14 +185,14 @@ export default async function ChampionDetail({ params }: PageProps) {
               {next && (
                 <Link
                   href={`/league/${next.slug}`}
-                  className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-emerald-200 hover:bg-emerald-50"
+                  className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#1c3622] hover:bg-[#0e1c14]"
                 >
                   {next.name} →
                 </Link>
               )}
               <Link
                 href="/league"
-                className="rounded-lg border border-gray-200 px-3 py-1 transition hover:border-gray-300 hover:bg-gray-50"
+                className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#2c2c32] hover:bg-[#1c1c22]"
                 aria-label="Back to League champions list"
               >
                 Index
@@ -201,48 +201,48 @@ export default async function ChampionDetail({ params }: PageProps) {
           </div>
         </div>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-gray-500">
+          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+            <p className="text-xs uppercase tracking-wide text-[#6b6055]">
               Regions
             </p>
-            <p className="text-sm text-gray-800">
+            <p className="text-sm text-[#d9cebe]">
               {champion.regions.join(", ") || "Unknown"}
             </p>
           </div>
-          <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-gray-500">
+          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+            <p className="text-xs uppercase tracking-wide text-[#6b6055]">
               Species
             </p>
-            <p className="text-sm text-gray-800">
+            <p className="text-sm text-[#d9cebe]">
               {champion.species.join(", ") || "Unknown"}
             </p>
           </div>
-          <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-gray-500">
+          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+            <p className="text-xs uppercase tracking-wide text-[#6b6055]">
               Release
             </p>
-            <p className="text-sm text-gray-800">
+            <p className="text-sm text-[#d9cebe]">
               Patch {champion.releasePatch || "?"} ({champion.releaseYear ?? "Unknown"})
             </p>
           </div>
-          <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-gray-500">Positions</p>
-            <p className="text-sm text-gray-800">
+          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+            <p className="text-xs uppercase tracking-wide text-[#6b6055]">Positions</p>
+            <p className="text-sm text-[#d9cebe]">
               {positions.length > 0 ? positions.join(", ") : "Unknown"}
             </p>
           </div>
           {champion.gender && (
-            <div className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-              <p className="text-xs uppercase tracking-wide text-gray-500">Gender</p>
-              <p className="text-sm text-gray-800">{champion.gender}</p>
+            <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+              <p className="text-xs uppercase tracking-wide text-[#6b6055]">Gender</p>
+              <p className="text-sm text-[#d9cebe]">{champion.gender}</p>
             </div>
           )}
         </div>
       </section>
 
       {champion.stats && (
-        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="mb-4 text-base font-semibold text-gray-900">Base Stats</h2>
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+          <h2 className="mb-4 text-base font-semibold text-[#F2E8D5]">Base Stats</h2>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {[
               { label: "HP", value: champion.stats.hp, per: champion.stats.hpperlevel },
@@ -256,11 +256,11 @@ export default async function ChampionDetail({ params }: PageProps) {
               { label: "HP Regen", value: champion.stats.hpregen, per: champion.stats.hpregenperlevel },
               { label: "Mana Regen", value: champion.stats.mpregen, per: champion.stats.mpregenperlevel },
             ].map(({ label, value, per }) => (
-              <div key={label} className="rounded-xl border border-gray-100 bg-gray-50 px-4 py-3">
-                <p className="text-xs uppercase tracking-wide text-gray-500">{label}</p>
-                <p className="text-sm font-semibold text-gray-900">{value}</p>
+              <div key={label} className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+                <p className="text-xs uppercase tracking-wide text-[#6b6055]">{label}</p>
+                <p className="text-sm font-semibold text-[#F2E8D5]">{value}</p>
                 {per !== undefined && per > 0 && (
-                  <p className="text-xs text-gray-400">+{per}/lvl</p>
+                  <p className="text-xs text-[#6b6055]">+{per}/lvl</p>
                 )}
               </div>
             ))}
@@ -268,36 +268,36 @@ export default async function ChampionDetail({ params }: PageProps) {
         </section>
       )}
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">Abilities</h2>
-          <span className="text-sm text-gray-500">{abilities.length} listed</span>
+          <h2 className="text-base font-semibold text-[#F2E8D5]">Abilities</h2>
+          <span className="text-sm text-[#6b6055]">{abilities.length} listed</span>
         </div>
         <div className="grid gap-3">
           {abilities.map((ability) => (
             <Link
               key={`${ability.championId}-${ability.slot}`}
               href={`/league/abilities/${slug}-${ability.slot.toLowerCase()}`}
-              className="flex flex-col gap-3 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm text-gray-800 transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-sm"
+              className="flex flex-col gap-3 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-4 text-sm text-[#d9cebe] transition hover:border-[#1c3622] hover:bg-[#0e1c14] hover:shadow-sm"
             >
               <div className="flex items-center gap-3">
                 <ImageWithFallback
                   src={`/leaguecontent/${ability.image}`}
                   alt={`${ability.name} icon`}
-                  className="h-12 w-12 rounded-lg border border-gray-200 object-cover"
+                  className="h-12 w-12 rounded-lg border border-[#1c1c22] object-cover"
                 />
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-[#4caf72]">
                     {ability.slot}
                   </p>
-                  <p className="text-base font-semibold text-gray-900">
+                  <p className="text-base font-semibold text-[#F2E8D5]">
                     {ability.name}
                   </p>
                 </div>
               </div>
-              <p className="text-gray-600">{cleanText(ability.description)}</p>
+              <p className="text-[#6b6055]">{cleanText(ability.description)}</p>
               {ability.cooldown && (
-                <p className="text-xs text-gray-500">
+                <p className="text-xs text-[#6b6055]">
                   Cooldown: {ability.cooldown}s · Cost: {ability.cost || "—"} ·
                   Range: {ability.range || "—"}
                 </p>
@@ -305,7 +305,7 @@ export default async function ChampionDetail({ params }: PageProps) {
             </Link>
           ))}
           {abilities.length === 0 && (
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-[#6b6055]">
               No abilities found for this champion in the dataset.
             </p>
           )}
@@ -313,17 +313,17 @@ export default async function ChampionDetail({ params }: PageProps) {
       </section>
 
       {((champion.allytips && champion.allytips.length > 0) || (champion.enemytips && champion.enemytips.length > 0)) && (
-        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="mb-4 text-base font-semibold text-gray-900">Tips</h2>
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+          <h2 className="mb-4 text-base font-semibold text-[#F2E8D5]">Tips</h2>
           <div className="grid gap-6 sm:grid-cols-2">
             {champion.allytips && champion.allytips.length > 0 && (
               <div>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-emerald-600">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-[#4caf72]">
                   Playing as {champion.name}
                 </p>
                 <ul className="flex flex-col gap-2">
                   {champion.allytips.map((tip, i) => (
-                    <li key={i} className="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2 text-sm text-gray-700">
+                    <li key={i} className="rounded-lg border border-[#1c1c22] bg-[#0c0c0e] px-3 py-2 text-sm text-[#9a8c7e]">
                       {tip}
                     </li>
                   ))}
@@ -337,7 +337,7 @@ export default async function ChampionDetail({ params }: PageProps) {
                 </p>
                 <ul className="flex flex-col gap-2">
                   {champion.enemytips.map((tip, i) => (
-                    <li key={i} className="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2 text-sm text-gray-700">
+                    <li key={i} className="rounded-lg border border-[#1c1c22] bg-[#0c0c0e] px-3 py-2 text-sm text-[#9a8c7e]">
                       {tip}
                     </li>
                   ))}
@@ -349,27 +349,27 @@ export default async function ChampionDetail({ params }: PageProps) {
       )}
 
       {lore && (
-        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-base font-semibold text-gray-900">Lore</h2>
+            <h2 className="text-base font-semibold text-[#F2E8D5]">Lore</h2>
             {lore.faction && lore.faction !== "unaffiliated" && (
               <Link
                 href="/league/factions"
-                className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 transition hover:bg-emerald-200"
+                className="rounded-full bg-[#0e1c14] px-3 py-1 text-xs font-medium text-[#4caf72] transition hover:bg-emerald-200"
               >
                 {lore.faction}
               </Link>
             )}
           </div>
           {lore.loreShort && (
-            <p className="text-sm leading-relaxed text-gray-700">{lore.loreShort}</p>
+            <p className="text-sm leading-relaxed text-[#9a8c7e]">{lore.loreShort}</p>
           )}
           {lore.loreLong && (
             <details className="mt-3">
-              <summary className="cursor-pointer select-none text-sm font-medium text-gray-500 hover:text-gray-700">
+              <summary className="cursor-pointer select-none text-sm font-medium text-[#6b6055] hover:text-[#9a8c7e]">
                 Full lore
               </summary>
-              <p className="mt-2 text-sm leading-relaxed text-gray-600">{lore.loreLong}</p>
+              <p className="mt-2 text-sm leading-relaxed text-[#6b6055]">{lore.loreLong}</p>
             </details>
           )}
         </section>
@@ -382,8 +382,8 @@ export default async function ChampionDetail({ params }: PageProps) {
           .slice(0, 16);
         if (factionMates.length === 0) return null;
         return (
-          <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-            <h2 className="mb-4 text-base font-semibold text-gray-900">
+          <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+            <h2 className="mb-4 text-base font-semibold text-[#F2E8D5]">
               More from {lore.faction}
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -393,7 +393,7 @@ export default async function ChampionDetail({ params }: PageProps) {
                   <Link
                     key={fm.slug}
                     href={`/league/${fm.slug}`}
-                    className="flex items-center gap-2 rounded-xl border border-gray-100 bg-gray-50 px-3 py-2 text-sm transition hover:border-emerald-200 hover:bg-emerald-50"
+                    className="flex items-center gap-2 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-3 py-2 text-sm transition hover:border-[#1c3622] hover:bg-[#0e1c14]"
                   >
                     {fmChamp?.image && (
                       <ImageWithFallback
@@ -402,7 +402,7 @@ export default async function ChampionDetail({ params }: PageProps) {
                         className="h-7 w-7 rounded-lg object-cover"
                       />
                     )}
-                    <span className="text-gray-800">{fm.champion}</span>
+                    <span className="text-[#d9cebe]">{fm.champion}</span>
                   </Link>
                 );
               })}
@@ -411,14 +411,14 @@ export default async function ChampionDetail({ params }: PageProps) {
         );
       })()}
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">
+          <h2 className="text-base font-semibold text-[#F2E8D5]">
             Skins ({skins.length})
           </h2>
         </div>
         {skins.length === 0 ? (
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-[#6b6055]">
             No skins available in the current dataset.
           </p>
         ) : (
@@ -427,19 +427,19 @@ export default async function ChampionDetail({ params }: PageProps) {
               <Link
                 key={skin.skinId}
                 href={skin.isBase ? `/league/${slug}` : `/league/skins/${skin.skinId}`}
-                className="flex flex-col gap-0 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-sm"
+                className="flex flex-col gap-0 rounded-2xl border border-[#1c1c22] bg-[#0c0c0e] p-4 transition hover:border-[#1c3622] hover:bg-[#0e1c14] hover:shadow-sm"
               >
-                <p className="text-xs uppercase text-gray-500">
+                <p className="text-xs uppercase text-[#6b6055]">
                   {skin.rarity || "Standard"}
                 </p>
-                <p className="text-lg font-semibold text-gray-900">
+                <p className="text-lg font-semibold text-[#F2E8D5]">
                   {skin.name}
                 </p>
-                <p className="text-xs text-gray-500">
+                <p className="text-xs text-[#6b6055]">
                   {skin.cost ? `${skin.cost} RP · ` : ""}{skin.availability || "Status unknown"}
                 </p>
                 {skinLineBySkinId.has(skin.skinId) && (
-                  <span className="mt-1 w-fit rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-600">
+                  <span className="mt-1 w-fit rounded-full bg-[#12122a] px-2 py-0.5 text-xs font-medium text-[#8892f0]">
                     {skinLineBySkinId.get(skin.skinId)!.name}
                   </span>
                 )}
@@ -452,7 +452,7 @@ export default async function ChampionDetail({ params }: PageProps) {
                 )}
                 {chromasBySkinId.has(skin.skinId) && (
                   <div className="mt-2">
-                    <p className="mb-1 text-xs font-medium text-gray-500">
+                    <p className="mb-1 text-xs font-medium text-[#6b6055]">
                       Chromas ({chromasBySkinId.get(skin.skinId)!.length})
                     </p>
                     <div className="flex flex-wrap gap-1">
@@ -464,9 +464,9 @@ export default async function ChampionDetail({ params }: PageProps) {
                               (chroma.image ? `/leaguecontent/${chroma.image}` : "/globe.svg")
                             }
                             alt={chroma.name}
-                            className="h-10 w-10 rounded-lg border border-gray-200 object-contain"
+                            className="h-10 w-10 rounded-lg border border-[#1c1c22] object-contain"
                           />
-                          <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
+                          <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-[#141418] px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
                             {chroma.name}
                           </span>
                         </div>
@@ -480,14 +480,14 @@ export default async function ChampionDetail({ params }: PageProps) {
         )}
       </section>
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">
+          <h2 className="text-base font-semibold text-[#F2E8D5]">
             Quotes & Voice Lines ({quotes.length})
           </h2>
           <Link
             href={`/league/quotes?champion=${encodeURIComponent(champion.name)}`}
-            className="text-xs text-emerald-600 hover:underline"
+            className="text-xs text-[#4caf72] hover:underline"
           >
             Browse all →
           </Link>
@@ -496,14 +496,14 @@ export default async function ChampionDetail({ params }: PageProps) {
       </section>
 
       {emotes.length > 0 && (
-        <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+        <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
           <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-base font-semibold text-gray-900">
+            <h2 className="text-base font-semibold text-[#F2E8D5]">
               Emotes ({emotes.length})
             </h2>
             <Link
               href="/league/emotes"
-              className="text-xs text-emerald-600 hover:underline"
+              className="text-xs text-[#4caf72] hover:underline"
             >
               All emotes →
             </Link>
@@ -517,9 +517,9 @@ export default async function ChampionDetail({ params }: PageProps) {
                     (emote.image ? `/leaguecontent/${emote.image}` : "/globe.svg")
                   }
                   alt={emote.name}
-                  className="h-14 w-14 rounded-xl border border-gray-100 object-contain"
+                  className="h-14 w-14 rounded-xl border border-[#1c1c22] object-contain"
                 />
-                <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
+                <span className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-1 -translate-x-1/2 whitespace-nowrap rounded bg-[#141418] px-2 py-0.5 text-xs text-white opacity-0 transition group-hover:opacity-100">
                   {emote.name}
                 </span>
               </div>

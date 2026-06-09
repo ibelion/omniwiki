@@ -66,17 +66,17 @@ export const PokemonMovesSection = ({
 
   if (generations.length === 0) {
     return (
-      <section className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+      <section className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
         <div className="mb-3 flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">Moves</h2>
+          <h2 className="text-base font-semibold text-[#F2E8D5]">Moves</h2>
           <Link
             href="/pokemon/moves"
-            className="text-sm font-semibold text-indigo-600 transition hover:text-indigo-800"
+            className="text-sm font-semibold text-[#8892f0] transition hover:text-[#8892f0]"
           >
             Browse moves →
           </Link>
         </div>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-[#6b6055]">
           No learnset data is available for this Pokémon.
         </p>
       </section>
@@ -96,12 +96,12 @@ export const PokemonMovesSection = ({
   };
 
   return (
-    <section className="rounded-xl border border-gray-200 bg-white p-4 shadow-sm">
+    <section className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
       <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-base font-semibold text-gray-900">Moves</h2>
+        <h2 className="text-base font-semibold text-[#F2E8D5]">Moves</h2>
         <Link
           href="/pokemon/moves"
-          className="text-sm font-semibold text-indigo-600 transition hover:text-indigo-800"
+          className="text-sm font-semibold text-[#8892f0] transition hover:text-[#8892f0]"
         >
           Browse moves →
         </Link>
@@ -114,26 +114,26 @@ export const PokemonMovesSection = ({
           return (
             <div
               key={generation}
-              className="rounded-lg border border-gray-100 bg-gray-50"
+              className="rounded-lg border border-[#1c1c22] bg-[#0c0c0e]"
             >
               <button
                 type="button"
                 onClick={() => handleToggleGeneration(generation)}
-                className="w-full flex items-center justify-between px-4 py-3 text-left transition hover:bg-gray-100"
+                className="w-full flex items-center justify-between px-4 py-3 text-left transition hover:bg-[#1c1c22]"
                 aria-expanded={isExpanded}
               >
-                <span className="text-sm font-semibold text-gray-900">
+                <span className="text-sm font-semibold text-[#F2E8D5]">
                   {GENERATION_LABELS[generation] || generation}
                 </span>
-                <span className="text-xs text-gray-500">
+                <span className="text-xs text-[#6b6055]">
                   {moves.length} move{moves.length === 1 ? "" : "s"}
                 </span>
-                <span className="text-gray-400">
+                <span className="text-[#6b6055]">
                   {isExpanded ? "−" : "+"}
                 </span>
               </button>
               {isExpanded && (
-                <div className="border-t border-gray-200 p-4">
+                <div className="border-t border-[#1c1c22] p-4">
                   <div className="space-y-4">
                     {Array.from(methodGroups.entries())
                       .sort(([a], [b]) => {
@@ -145,7 +145,7 @@ export const PokemonMovesSection = ({
                       })
                       .map(([method, methodMoves]) => (
                         <div key={method}>
-                          <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">
+                          <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
                             {METHOD_LABELS[method] || method}
                           </h3>
                           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
@@ -160,26 +160,26 @@ export const PokemonMovesSection = ({
                                 <Link
                                   key={`${move.id}-${entry.generation}-${entry.method}-${entry.level ?? "none"}-${entry.versionGroups.join(",")}`}
                                   href={`/pokemon/moves/${move.slug}`}
-                                  className="rounded-lg border border-gray-100 bg-white p-3 text-sm text-gray-700 transition hover:border-indigo-200 hover:bg-indigo-50"
+                                  className="rounded-lg border border-[#1c1c22] bg-[#141418] p-3 text-sm text-[#9a8c7e] transition hover:border-[#22224a] hover:bg-[#12122a]"
                                 >
                                   <div className="flex items-center justify-between">
-                                    <p className="font-semibold text-gray-900">
+                                    <p className="font-semibold text-[#F2E8D5]">
                                       {move.name}
                                     </p>
-                                    <span className="rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-700">
+                                    <span className="rounded-full bg-[#12122a] px-2 py-0.5 text-xs font-semibold text-[#8892f0]">
                                       {move.type || "—"}
                                     </span>
                                   </div>
-                                  <p className="mt-1 text-xs text-gray-600">
+                                  <p className="mt-1 text-xs text-[#6b6055]">
                                     {move.shortEffect}
                                   </p>
-                                  <div className="mt-2 flex flex-wrap gap-1 text-[11px] text-gray-500">
+                                  <div className="mt-2 flex flex-wrap gap-1 text-[11px] text-[#6b6055]">
                                     {entry.level !== null && (
-                                      <span className="rounded bg-gray-100 px-1.5 py-0.5">
+                                      <span className="rounded bg-[#1c1c22] px-1.5 py-0.5">
                                         Lv. {entry.level}
                                       </span>
                                     )}
-                                    <span className="rounded bg-gray-100 px-1.5 py-0.5">
+                                    <span className="rounded bg-[#1c1c22] px-1.5 py-0.5">
                                       {formatVersionGroups(
                                         entry.versionGroups,
                                         entry.generation

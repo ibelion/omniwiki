@@ -79,14 +79,14 @@ export function LoreList({ lore, champions, factions }: Props) {
 
   return (
     <>
-      <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+      <header className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Champion Lore ({filtered.length})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           Runeterra&apos;s stories — filter by faction or search by name and lore text.
         </p>
         <input
@@ -94,15 +94,15 @@ export function LoreList({ lore, champions, factions }: Props) {
           placeholder="Search by champion name or lore..."
           value={search}
           onChange={(e) => handleSearch(e.target.value)}
-          className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          className="mt-4 w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
         />
         <div className="mt-3 flex flex-wrap gap-2">
           <button
             onClick={() => handleFaction(null)}
             className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
               faction === null
-                ? "bg-emerald-600 text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                ? "bg-[#1A5228] text-white"
+                : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
             }`}
           >
             All
@@ -113,8 +113,8 @@ export function LoreList({ lore, champions, factions }: Props) {
               onClick={() => handleFaction(faction === f.slug ? null : f.slug)}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                 faction === f.slug
-                  ? "bg-emerald-600 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-[#1A5228] text-white"
+                  : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
               }`}
             >
               {f.name}
@@ -134,7 +134,7 @@ export function LoreList({ lore, champions, factions }: Props) {
           return (
             <article
               key={entry.slug}
-              className="flex flex-col gap-3 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm"
+              className="flex flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm"
             >
               <div className="flex items-start gap-3">
                 {champ && (
@@ -142,7 +142,7 @@ export function LoreList({ lore, champions, factions }: Props) {
                     <ImageWithFallback
                       src={`/leaguecontent/${champ.image}`}
                       alt={entry.champion}
-                      className="h-12 w-12 rounded-xl border border-gray-100 object-cover transition hover:border-emerald-300"
+                      className="h-12 w-12 rounded-xl border border-[#1c1c22] object-cover transition hover:border-[#2a4a30]"
                     />
                   </Link>
                 )}
@@ -151,22 +151,22 @@ export function LoreList({ lore, champions, factions }: Props) {
                     <div>
                       <Link
                         href={`/league/${entry.slug}`}
-                        className="font-semibold text-gray-900 hover:text-emerald-700"
+                        className="font-semibold text-[#F2E8D5] hover:text-[#4caf72]"
                       >
                         {entry.champion}
                       </Link>
                       {entry.title && (
-                        <p className="text-xs italic text-gray-500">{entry.title}</p>
+                        <p className="text-xs italic text-[#6b6055]">{entry.title}</p>
                       )}
                     </div>
                     <div className="flex shrink-0 flex-col items-end gap-1">
                       {factionName && (
-                        <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700">
+                        <span className="rounded-full bg-[#0e1c14] px-2 py-0.5 text-xs font-semibold text-[#4caf72]">
                           {factionName}
                         </span>
                       )}
                       {entry.releaseDate && (
-                        <span className="text-xs text-gray-400">{entry.releaseDate}</span>
+                        <span className="text-xs text-[#6b6055]">{entry.releaseDate}</span>
                       )}
                     </div>
                   </div>
@@ -174,7 +174,7 @@ export function LoreList({ lore, champions, factions }: Props) {
               </div>
 
               {(entry.loreShort || entry.loreLong) && (
-                <div className="text-sm text-gray-600">
+                <div className="text-sm text-[#6b6055]">
                   <p className={isOpen ? "" : "line-clamp-3"}>
                     {isOpen ? (entry.loreLong ?? entry.loreShort) : entry.loreShort}
                   </p>
@@ -182,14 +182,14 @@ export function LoreList({ lore, champions, factions }: Props) {
                     {entry.loreLong && entry.loreLong !== entry.loreShort && (
                       <button
                         onClick={() => toggleExpanded(entry.slug)}
-                        className="text-xs font-medium text-emerald-600 hover:text-emerald-800"
+                        className="text-xs font-medium text-[#4caf72] hover:text-emerald-800"
                       >
                         {isOpen ? "Show less ↑" : "Expand ↓"}
                       </button>
                     )}
                     <Link
                       href={`/league/lore/${entry.slug}`}
-                      className="text-xs font-medium text-emerald-600 hover:text-emerald-800"
+                      className="text-xs font-medium text-[#4caf72] hover:text-emerald-800"
                     >
                       Full lore page →
                     </Link>
@@ -206,17 +206,17 @@ export function LoreList({ lore, champions, factions }: Props) {
           <button
             onClick={() => setPage((p) => Math.max(0, p - 1))}
             disabled={page === 0}
-            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+            className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm transition hover:bg-[#1c1c22] disabled:opacity-40"
           >
             Previous
           </button>
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-[#6b6055]">
             Page {page + 1} of {pageCount}
           </span>
           <button
             onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
             disabled={page === pageCount - 1}
-            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+            className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm transition hover:bg-[#1c1c22] disabled:opacity-40"
           >
             Next
           </button>

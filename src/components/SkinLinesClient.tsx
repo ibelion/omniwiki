@@ -36,17 +36,17 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
   );
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/league" label="Back to League" />
 
-      <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+      <header className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Skin Lines ({filtered.length})
         </h1>
-        <p className="mt-1 text-gray-600">
+        <p className="mt-1 text-[#6b6055]">
           Thematic collections — click any skin to view its full detail page.
         </p>
         <div className="mt-4 flex flex-col gap-3">
@@ -55,17 +55,17 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
             placeholder="Search skin lines..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+            className="w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
           />
-          <div className="flex gap-1 rounded-lg border border-gray-200 bg-gray-50 p-1 w-fit">
+          <div className="flex gap-1 rounded-lg border border-[#1c1c22] bg-[#0c0c0e] p-1 w-fit">
             {([["count", "Most skins"], ["name", "A–Z"]] as const).map(([val, label]) => (
               <button
                 key={val}
                 onClick={() => setSortBy(val)}
                 className={`rounded-md px-3 py-1 text-xs font-semibold transition ${
                   sortBy === val
-                    ? "bg-white text-gray-900 shadow-sm"
-                    : "text-gray-500 hover:text-gray-700"
+                    ? "bg-[#141418] text-[#F2E8D5] shadow-sm"
+                    : "text-[#6b6055] hover:text-[#9a8c7e]"
                 }`}
               >
                 {label}
@@ -99,13 +99,13 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
             <article
               key={skinLine.id}
               id={anchor}
-              className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              className="overflow-hidden rounded-2xl border border-[#1c1c22] bg-[#141418] shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
             >
               {featuredSkin?.splash ? (
                 <ImageWithFallback
                   src={`/leaguecontent/${featuredSkin.splash}`}
                   alt={skinLine.name}
-                  className="h-40 w-full bg-gray-100 object-cover"
+                  className="h-40 w-full bg-[#1c1c22] object-cover"
                 />
               ) : (
                 <div className="h-40 w-full bg-gradient-to-br from-gray-100 via-white to-gray-200" />
@@ -115,12 +115,12 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
                 <div className="flex items-start justify-between gap-4">
                   <Link
                     href={`/league/skin-lines/${skinLine.id}`}
-                    className="text-lg font-semibold text-gray-900 hover:text-emerald-700"
+                    className="text-lg font-semibold text-[#F2E8D5] hover:text-[#4caf72]"
                     onClick={(e) => e.stopPropagation()}
                   >
                     {skinLine.name}
                   </Link>
-                  <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+                  <span className="shrink-0 rounded-full bg-[#0e1c14] px-3 py-1 text-xs font-semibold text-[#4caf72]">
                     {skinCount} skins
                   </span>
                 </div>
@@ -132,7 +132,7 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
                         key={s.id}
                         href={`/league/skins/${s.id}`}
                         title={s.name}
-                        className="shrink-0 overflow-hidden rounded-lg border border-gray-100 transition hover:border-emerald-300 hover:shadow-sm"
+                        className="shrink-0 overflow-hidden rounded-lg border border-[#1c1c22] transition hover:border-[#2a4a30] hover:shadow-sm"
                         onClick={(e) => e.stopPropagation()}
                       >
                         <ImageWithFallback
@@ -143,7 +143,7 @@ export function SkinLinesClient({ skinLines, skinById }: Props) {
                       </Link>
                     ))}
                     {skinCount > thumbSkins.length && (
-                      <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border border-gray-100 bg-gray-50 text-xs font-medium text-gray-500">
+                      <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border border-[#1c1c22] bg-[#0c0c0e] text-xs font-medium text-[#6b6055]">
                         +{skinCount - thumbSkins.length}
                       </span>
                     )}

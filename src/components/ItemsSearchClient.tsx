@@ -36,14 +36,14 @@ export function ItemsSearchClient({ items }: ItemsSearchClientProps) {
 
   return (
     <>
-      <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
+      <header className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#8892f0]">
           Pokémon
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Items ({filtered.length.toLocaleString()})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           Held items, TMs, berries, and more. Click any item for full details.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
@@ -52,12 +52,12 @@ export function ItemsSearchClient({ items }: ItemsSearchClientProps) {
             placeholder="Search by name or effect…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 min-w-[200px] rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="flex-1 min-w-[200px] rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
           />
           <select
             value={categoryFilter}
             onChange={(e) => setCategoryFilter(e.target.value)}
-            className="rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-700 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            className="rounded-lg border border-[#2c2c32] px-3 py-2 text-sm text-[#9a8c7e] focus:border-[#3344aa] focus:outline-none focus:ring-2 focus:ring-[#12122a]"
           >
             {categories.map((c) => (
               <option key={c} value={c}>
@@ -72,9 +72,9 @@ export function ItemsSearchClient({ items }: ItemsSearchClientProps) {
           <Link
             key={item.slug}
             href={`/pokemon/items/${item.slug}`}
-            className="flex items-start gap-3 rounded-xl border border-gray-100 bg-white p-3 shadow-sm transition hover:border-indigo-200 hover:bg-indigo-50"
+            className="flex items-start gap-3 rounded-xl border border-[#1c1c22] bg-[#141418] p-3 shadow-sm transition hover:border-[#22224a] hover:bg-[#12122a]"
           >
-            <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg border border-gray-100 bg-gray-50">
+            <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg border border-[#1c1c22] bg-[#0c0c0e]">
               {item.sprite ? (
                 <ImageWithFallback
                   src={`/pokemoncontent/${item.sprite}`}
@@ -86,19 +86,19 @@ export function ItemsSearchClient({ items }: ItemsSearchClientProps) {
               )}
             </div>
             <div className="min-w-0 flex-1">
-              <p className="truncate font-semibold text-gray-900">{item.name}</p>
-              <p className="text-xs text-gray-400">
+              <p className="truncate font-semibold text-[#F2E8D5]">{item.name}</p>
+              <p className="text-xs text-[#6b6055]">
                 {item.category ?? "—"}
                 {item.cost != null ? ` · ₽${item.cost.toLocaleString()}` : ""}
               </p>
-              <p className="mt-1 line-clamp-2 text-xs text-gray-500">
+              <p className="mt-1 line-clamp-2 text-xs text-[#6b6055]">
                 {item.shortEffect ?? item.effect ?? "No description."}
               </p>
             </div>
           </Link>
         ))}
         {filtered.length === 0 && (
-          <p className="col-span-full py-8 text-center text-sm text-gray-500">
+          <p className="col-span-full py-8 text-center text-sm text-[#6b6055]">
             No items match your search.
           </p>
         )}

@@ -46,14 +46,14 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
 
   return (
     <>
-      <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+      <header className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Summoner Spells ({filtered.length})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           Every summoner spell across all game modes — Flash, Ignite, ARAM exclusives, and more.
         </p>
         <input
@@ -61,7 +61,7 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
           placeholder="Search by name or description..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="mt-4 w-full rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+          className="mt-4 w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
         />
 
         {/* Mode filter chips */}
@@ -71,8 +71,8 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
               onClick={() => setModeFilter(null)}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                 modeFilter === null
-                  ? "bg-emerald-600 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-[#1A5228] text-white"
+                  : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
               }`}
             >
               All modes
@@ -83,8 +83,8 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
                 onClick={() => setModeFilter(modeFilter === m ? null : m)}
                 className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                   modeFilter === m
-                    ? "bg-emerald-600 text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    ? "bg-[#1A5228] text-white"
+                    : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
                 }`}
               >
                 {MODE_LABELS[m] ?? m}
@@ -94,27 +94,27 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
         )}
       </header>
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((spell) => (
             <Link
               key={spell.key}
               href={`/league/summoner-spells/${spell.id}`}
-              className="flex flex-col gap-3 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition-all hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
+              className="flex flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#0c0c0e] p-4 transition-all hover:border-[#1c3622] hover:bg-[#0e1c14] hover:shadow-md"
             >
               <div className="flex items-center gap-3">
                 <ImageWithFallback
                   src={spell.image ? `/leaguecontent/${spell.image}` : "/globe.svg"}
                   alt={`${spell.name} icon`}
-                  className="h-12 w-12 rounded-lg border border-gray-200 object-cover"
+                  className="h-12 w-12 rounded-lg border border-[#1c1c22] object-cover"
                 />
                 <div>
-                  <h3 className="text-base font-semibold text-gray-900">{spell.name}</h3>
+                  <h3 className="text-base font-semibold text-[#F2E8D5]">{spell.name}</h3>
                   <div className="mt-0.5 flex flex-wrap gap-1">
                     {(spell.modes ?? []).map((m) => (
                       <span
                         key={m}
-                        className="rounded-full bg-gray-100 px-2 py-0.5 text-xs text-gray-500"
+                        className="rounded-full bg-[#1c1c22] px-2 py-0.5 text-xs text-[#6b6055]"
                       >
                         {MODE_LABELS[m] ?? m}
                       </span>
@@ -122,8 +122,8 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
                   </div>
                 </div>
               </div>
-              <p className="text-xs text-gray-600">{spell.description}</p>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-[#6b6055]">{spell.description}</p>
+              <p className="text-xs text-[#6b6055]">
                 Cooldown: {spell.cooldown}s
                 {spell.summonerLevel != null && ` · Level ${spell.summonerLevel} required`}
               </p>
@@ -131,7 +131,7 @@ export function SummonerSpellsList({ spells }: { spells: SummonerSpellRecord[] }
           ))}
         </div>
         {filtered.length === 0 && (
-          <p className="text-sm text-gray-500">No spells match your search.</p>
+          <p className="text-sm text-[#6b6055]">No spells match your search.</p>
         )}
       </section>
     </>

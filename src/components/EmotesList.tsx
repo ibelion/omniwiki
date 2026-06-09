@@ -70,14 +70,14 @@ export function EmotesList({ emotes, champions }: Props) {
 
   return (
     <>
-      <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+      <header className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Emotes ({filtered.length.toLocaleString()})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           Every summoner emote — champion-specific and general.
         </p>
         <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -86,12 +86,12 @@ export function EmotesList({ emotes, champions }: Props) {
             placeholder="Search by name or description..."
             value={search}
             onChange={(e) => handleSearch(e.target.value)}
-            className="flex-1 rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+            className="flex-1 rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
           />
           <select
             value={championFilter ?? ""}
             onChange={(e) => handleChampion(e.target.value ? Number(e.target.value) : null)}
-            className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+            className="rounded-lg border border-[#2c2c32] px-3 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
           >
             <option value="">All champions</option>
             <option value="">— General emotes —</option>
@@ -104,7 +104,7 @@ export function EmotesList({ emotes, champions }: Props) {
         </div>
       </header>
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {visible.map((emote) => {
             const imgSrc = emote.image ? `/leaguecontent/${emote.image}` : null;
@@ -115,28 +115,28 @@ export function EmotesList({ emotes, champions }: Props) {
             return (
               <article
                 key={emote.id}
-                className="flex items-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-3 text-sm"
+                className="flex items-center gap-3 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-3 text-sm"
               >
                 {imgSrc ? (
                   <ImageWithFallback
                     src={imgSrc}
                     alt={emote.name || `Emote ${emote.id}`}
-                    className="h-12 w-12 flex-shrink-0 rounded-lg border border-gray-200 object-contain"
+                    className="h-12 w-12 flex-shrink-0 rounded-lg border border-[#1c1c22] object-contain"
                   />
                 ) : (
-                  <div className="h-12 w-12 flex-shrink-0 rounded-lg border border-gray-100 bg-gray-200" />
+                  <div className="h-12 w-12 flex-shrink-0 rounded-lg border border-[#1c1c22] bg-[#252528]" />
                 )}
                 <div className="min-w-0">
-                  <p className="truncate text-sm font-semibold text-gray-900">
+                  <p className="truncate text-sm font-semibold text-[#F2E8D5]">
                     {emote.name || "Unnamed"}
                   </p>
                   {champNames.length > 0 && (
-                    <p className="truncate text-xs text-emerald-600">
+                    <p className="truncate text-xs text-[#4caf72]">
                       {champNames.join(", ")}
                     </p>
                   )}
                   {emote.description && (
-                    <p className="truncate text-xs text-gray-500">
+                    <p className="truncate text-xs text-[#6b6055]">
                       {emote.description}
                     </p>
                   )}
@@ -147,7 +147,7 @@ export function EmotesList({ emotes, champions }: Props) {
         </div>
 
         {filtered.length === 0 && (
-          <p className="text-sm text-gray-500">No emotes match your search.</p>
+          <p className="text-sm text-[#6b6055]">No emotes match your search.</p>
         )}
 
         {pageCount > 1 && (
@@ -155,17 +155,17 @@ export function EmotesList({ emotes, champions }: Props) {
             <button
               onClick={() => setPage((p) => Math.max(0, p - 1))}
               disabled={page === 0}
-              className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+              className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm transition hover:bg-[#1c1c22] disabled:opacity-40"
             >
               Previous
             </button>
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-[#6b6055]">
               Page {page + 1} of {pageCount}
             </span>
             <button
               onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
               disabled={page === pageCount - 1}
-              className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+              className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm transition hover:bg-[#1c1c22] disabled:opacity-40"
             >
               Next
             </button>

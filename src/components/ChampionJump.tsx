@@ -54,7 +54,7 @@ export function ChampionJump({ champions }: { champions: ChampionStub[] }) {
             navigate(matches[0].slug);
           }
         }}
-        className="w-48 rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-sm text-gray-800 placeholder-gray-400 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100"
+        className="w-48 rounded-lg border border-[#1c1c22] bg-[#141418] px-3 py-1.5 text-sm text-[#d9cebe] placeholder-[#6b6055] focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-100"
         aria-label="Search champions"
         aria-expanded={open && matches.length > 0}
         aria-controls="champion-jump-listbox"
@@ -65,14 +65,14 @@ export function ChampionJump({ champions }: { champions: ChampionStub[] }) {
         <ul
           id="champion-jump-listbox"
           role="listbox"
-          className="absolute left-0 top-full z-50 mt-1 w-56 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg"
+          className="absolute left-0 top-full z-50 mt-1 w-56 overflow-hidden rounded-xl border border-[#1c1c22] bg-[#141418] shadow-lg"
         >
           {matches.map((c) => (
             <li key={c.slug}>
               <button
                 type="button"
                 onClick={() => navigate(c.slug)}
-                className="w-full px-4 py-2 text-left text-sm text-gray-800 hover:bg-emerald-50 hover:text-emerald-700"
+                className="w-full px-4 py-2 text-left text-sm text-[#d9cebe] hover:bg-[#0e1c14] hover:text-[#4caf72]"
               >
                 {c.name}
               </button>

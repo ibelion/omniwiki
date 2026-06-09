@@ -7,7 +7,7 @@ import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 
 const COST_COLORS: Record<number, string> = {
-  1: "bg-gray-100 text-gray-700",
+  1: "bg-[#1c1c22] text-[#9a8c7e]",
   2: "bg-green-100 text-green-700",
   3: "bg-blue-100 text-blue-700",
   4: "bg-purple-100 text-purple-700",
@@ -33,13 +33,13 @@ export default function TFTChampionsPage() {
     .sort((a, b) => a.cost - b.cost || a.name.localeCompare(b.name));
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/tft" label="Back to TFT" />
-      <header className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-teal-600">
+      <header className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4ab8c8]">
           TFT · Set {tftData.setNumber ?? 17}
         </p>
-        <h1 className="mt-1 text-3xl font-semibold text-gray-900">
+        <h1 className="mt-1 text-3xl font-semibold text-[#F2E8D5]">
           Champions ({filtered.length})
         </h1>
         <div className="mt-4 flex flex-wrap gap-2">
@@ -49,8 +49,8 @@ export default function TFTChampionsPage() {
               onClick={() => setCostFilter(cost)}
               className={`rounded-full px-3 py-1 text-sm font-medium transition ${
                 costFilter === cost
-                  ? "bg-teal-600 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-teal-50"
+                  ? "bg-[#1a4050] text-white"
+                  : "bg-[#1c1c22] text-[#9a8c7e] hover:bg-[#0d181c]"
               }`}
             >
               {cost === null ? "All" : `${cost}g`}
@@ -63,14 +63,14 @@ export default function TFTChampionsPage() {
             placeholder="Search champions..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-200"
+            className="flex-1 rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1a4050] focus:outline-none focus:ring-2 focus:ring-[#0d181c]"
           />
           <input
             type="text"
             placeholder="Filter by trait..."
             value={traitFilter}
             onChange={(e) => setTraitFilter(e.target.value)}
-            className="w-40 rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-200"
+            className="w-40 rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1a4050] focus:outline-none focus:ring-2 focus:ring-[#0d181c]"
           />
         </div>
       </header>
@@ -82,9 +82,9 @@ export default function TFTChampionsPage() {
             href={`/tft/champions/${toSlug(champ.name)}`}
             className="block"
           >
-            <article className="flex items-center gap-3 rounded-2xl border border-gray-200 bg-white p-3 shadow-sm transition hover:border-teal-200 hover:shadow-md">
+            <article className="flex items-center gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-3 shadow-sm transition hover:border-[#1a3038] hover:shadow-md">
               {champ.image && (
-                <div className="h-14 w-14 shrink-0 overflow-hidden rounded-xl border border-gray-100 bg-gray-50">
+                <div className="h-14 w-14 shrink-0 overflow-hidden rounded-xl border border-[#1c1c22] bg-[#0c0c0e]">
                   <ImageWithFallback
                     src={champ.image}
                     alt={champ.name}
@@ -94,11 +94,11 @@ export default function TFTChampionsPage() {
               )}
               <div className="min-w-0 flex-1">
                 <div className="flex items-center justify-between gap-2">
-                  <h3 className="truncate text-sm font-semibold text-gray-900">
+                  <h3 className="truncate text-sm font-semibold text-[#F2E8D5]">
                     {champ.name}
                   </h3>
                   <span
-                    className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${COST_COLORS[champ.cost] ?? "bg-gray-100 text-gray-700"}`}
+                    className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${COST_COLORS[champ.cost] ?? "bg-[#1c1c22] text-[#9a8c7e]"}`}
                   >
                     {champ.cost}g
                   </span>
@@ -107,7 +107,7 @@ export default function TFTChampionsPage() {
                   {champ.traits.map((trait) => (
                     <span
                       key={trait}
-                      className="rounded-full bg-teal-50 px-2 py-0.5 text-xs text-teal-700"
+                      className="rounded-full bg-[#0d181c] px-2 py-0.5 text-xs text-[#4ab8c8]"
                     >
                       {trait}
                     </span>

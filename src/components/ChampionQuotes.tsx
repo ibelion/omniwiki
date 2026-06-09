@@ -73,7 +73,7 @@ export function ChampionQuotes({ quotes }: Props) {
   };
 
   if (quotes.length === 0) {
-    return <p className="text-sm text-gray-500">No quotes found for this champion.</p>;
+    return <p className="text-sm text-[#6b6055]">No quotes found for this champion.</p>;
   }
 
   return (
@@ -81,20 +81,20 @@ export function ChampionQuotes({ quotes }: Props) {
       {grouped.map(([key, items]) => {
         const isOpen = openKeys.has(key);
         return (
-          <div key={key} className="rounded-xl border border-gray-100 overflow-hidden">
+          <div key={key} className="rounded-xl border border-[#1c1c22] overflow-hidden">
             <button
               onClick={() => toggle(key)}
-              className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left transition hover:bg-gray-50"
+              className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left transition hover:bg-[#1c1c22]"
             >
-              <span className="text-sm font-semibold text-gray-800">
+              <span className="text-sm font-semibold text-[#d9cebe]">
                 {formatCategory(key)}
               </span>
               <div className="flex items-center gap-2 shrink-0">
-                <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700">
+                <span className="rounded-full bg-[#0e1c14] px-2 py-0.5 text-xs font-medium text-[#4caf72]">
                   {items.length}
                 </span>
                 <svg
-                  className={`h-4 w-4 text-gray-400 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                  className={`h-4 w-4 text-[#6b6055] transition-transform ${isOpen ? "rotate-180" : ""}`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -106,10 +106,10 @@ export function ChampionQuotes({ quotes }: Props) {
             </button>
 
             {isOpen && (
-              <div className="border-t border-gray-100 bg-gray-50 px-4 py-3 flex flex-col gap-3">
+              <div className="border-t border-[#1c1c22] bg-[#0c0c0e] px-4 py-3 flex flex-col gap-3">
                 {items.map((quote, idx) => (
-                  <div key={idx} className="rounded-lg border border-gray-100 bg-white p-3">
-                    <p className="text-sm font-medium text-gray-900">
+                  <div key={idx} className="rounded-lg border border-[#1c1c22] bg-[#141418] p-3">
+                    <p className="text-sm font-medium text-[#F2E8D5]">
                       &ldquo;{quote.text}&rdquo;
                     </p>
                     {quote.audio && (

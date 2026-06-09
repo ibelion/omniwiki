@@ -77,14 +77,14 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
 
   return (
     <>
-      <header className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+      <header className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
           League of Legends
         </p>
-        <h1 className="text-3xl font-semibold text-gray-900">
+        <h1 className="text-3xl font-semibold text-[#F2E8D5]">
           Champion Abilities ({filtered.length})
         </h1>
-        <p className="text-gray-600">
+        <p className="text-[#6b6055]">
           All champion abilities including passives, basic abilities, and ultimates.
         </p>
 
@@ -94,12 +94,12 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
             placeholder="Search by name, champion, or description..."
             value={search}
             onChange={(e) => handleFilterChange(() => setSearch(e.target.value))}
-            className="flex-1 rounded-lg border border-gray-300 px-4 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+            className="flex-1 rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
           />
           <select
             value={championFilter ?? ""}
             onChange={(e) => handleFilterChange(() => setChampionFilter(e.target.value || null))}
-            className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+            className="rounded-lg border border-[#2c2c32] px-3 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
           >
             <option value="">All champions</option>
             {championNames.map((name) => (
@@ -116,8 +116,8 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
               onClick={() => handleFilterChange(() => setSlotFilter(slot))}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                 slotFilter === slot
-                  ? "bg-emerald-600 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "bg-[#1A5228] text-white"
+                  : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
               }`}
             >
               {slot}
@@ -126,9 +126,9 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
         </div>
       </header>
 
-      <section className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+      <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         {filtered.length === 0 ? (
-          <p className="text-sm text-gray-500">No abilities match your search.</p>
+          <p className="text-sm text-[#6b6055]">No abilities match your search.</p>
         ) : (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {visible.map((ability, index) => {
@@ -146,7 +146,7 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
                       ? `/league/abilities/${abilityId}`
                       : `/league/${championSlug}`
                   }
-                  className="flex flex-col gap-2 rounded-xl border border-gray-100 bg-gray-50 p-4 text-sm transition hover:border-emerald-200 hover:bg-emerald-50 hover:shadow-md"
+                  className="flex flex-col gap-2 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-4 text-sm transition hover:border-[#1c3622] hover:bg-[#0e1c14] hover:shadow-md"
                 >
                   {/* Slot label + champion name */}
                   <div className="flex items-center justify-between">
@@ -156,12 +156,12 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
                           ? "bg-rose-100 text-rose-700"
                           : ability.slot === "Passive" || ability.slot === "P"
                           ? "bg-violet-100 text-violet-700"
-                          : "bg-emerald-100 text-emerald-700"
+                          : "bg-[#0e1c14] text-[#4caf72]"
                       }`}
                     >
                       {ability.slot}
                     </span>
-                    <span className="flex items-center gap-1.5 text-xs text-gray-500">
+                    <span className="flex items-center gap-1.5 text-xs text-[#6b6055]">
                       {champion?.image && (
                         <ImageWithFallback
                           src={`/leaguecontent/${champion.image}`}
@@ -179,22 +179,22 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
                       <ImageWithFallback
                         src={`/leaguecontent/${ability.image}`}
                         alt={ability.name}
-                        className="h-12 w-12 shrink-0 rounded-lg border border-gray-200 object-cover"
+                        className="h-12 w-12 shrink-0 rounded-lg border border-[#1c1c22] object-cover"
                       />
                     )}
-                    <h2 className="text-base font-semibold leading-snug text-gray-900">
+                    <h2 className="text-base font-semibold leading-snug text-[#F2E8D5]">
                       {ability.name}
                     </h2>
                   </div>
 
                   {/* Description */}
-                  <p className="text-xs leading-relaxed text-gray-600 line-clamp-3">
+                  <p className="text-xs leading-relaxed text-[#6b6055] line-clamp-3">
                     {cleanText(ability.description)}
                   </p>
 
                   {/* Stats row */}
                   {(ability.cooldown || ability.cost || ability.range) && (
-                    <div className="flex flex-wrap gap-3 text-xs text-gray-500">
+                    <div className="flex flex-wrap gap-3 text-xs text-[#6b6055]">
                       {ability.cooldown && ability.cooldown !== "0" && (
                         <span>CD: {ability.cooldown}s</span>
                       )}
@@ -216,17 +216,17 @@ export function AbilitiesList({ abilities, champions }: AbilitiesListProps) {
           <button
             onClick={() => setPage((p) => Math.max(0, p - 1))}
             disabled={page === 0}
-            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+            className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm transition hover:bg-[#1c1c22] disabled:opacity-40"
           >
             Previous
           </button>
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-[#6b6055]">
             Page {page + 1} of {pageCount}
           </span>
           <button
             onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
             disabled={page === pageCount - 1}
-            className="rounded-lg border border-gray-200 px-4 py-2 text-sm transition hover:bg-gray-50 disabled:opacity-40"
+            className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm transition hover:bg-[#1c1c22] disabled:opacity-40"
           >
             Next
           </button>

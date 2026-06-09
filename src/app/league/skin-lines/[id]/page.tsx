@@ -50,34 +50,34 @@ export default async function SkinLineDetailPage({ params }: PageProps) {
   const next = idx < allLines.length - 1 ? allLines[idx + 1] : null;
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/league/skin-lines" label="Back to Skin Lines" />
 
-      <nav aria-label="Breadcrumb" className="text-sm text-gray-600">
+      <nav aria-label="Breadcrumb" className="text-sm text-[#6b6055]">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
-            <Link className="hover:text-emerald-700 hover:underline" href="/">
+            <Link className="hover:text-[#4caf72] hover:underline" href="/">
               Home
             </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li>
-            <Link className="hover:text-emerald-700 hover:underline" href="/league">
+            <Link className="hover:text-[#4caf72] hover:underline" href="/league">
               League
             </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li>
-            <Link className="hover:text-emerald-700 hover:underline" href="/league/skin-lines">
+            <Link className="hover:text-[#4caf72] hover:underline" href="/league/skin-lines">
               Skin Lines
             </Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li className="font-medium text-emerald-700">{skinLine.name}</li>
+          <li className="font-medium text-[#4caf72]">{skinLine.name}</li>
         </ol>
       </nav>
 
-      <section className="overflow-hidden rounded-3xl border border-emerald-200 bg-white shadow-sm">
+      <section className="overflow-hidden rounded-3xl border border-[#1c3622] bg-[#141418] shadow-sm">
         {featuredSplash && (
           <ImageWithFallback
             src={`/leaguecontent/${featuredSplash}`}
@@ -86,26 +86,26 @@ export default async function SkinLineDetailPage({ params }: PageProps) {
           />
         )}
         <div className="p-8">
-          <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
+          <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
             Skin Line
           </p>
-          <h1 className="mt-1 text-4xl font-bold tracking-tight text-gray-900">
+          <h1 className="mt-1 text-4xl font-bold tracking-tight text-[#F2E8D5]">
             {skinLine.name}
           </h1>
-          <p className="mt-1 text-sm text-gray-500">
+          <p className="mt-1 text-sm text-[#6b6055]">
             {skins.length} skin{skins.length !== 1 ? "s" : ""}
           </p>
         </div>
       </section>
 
-      <section className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
-        <h2 className="text-2xl font-semibold text-gray-900">Skins</h2>
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-8 shadow-sm">
+        <h2 className="text-2xl font-semibold text-[#F2E8D5]">Skins</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {skins.map((skin) => (
             <Link
               key={skin.skinId}
               href={`/league/skins/${skin.skinId}`}
-              className="group overflow-hidden rounded-2xl border border-gray-100 bg-gray-50 transition hover:border-emerald-300 hover:shadow-md"
+              className="group overflow-hidden rounded-2xl border border-[#1c1c22] bg-[#0c0c0e] transition hover:border-[#2a4a30] hover:shadow-md"
             >
               {skin.tile ? (
                 <ImageWithFallback
@@ -117,10 +117,10 @@ export default async function SkinLineDetailPage({ params }: PageProps) {
                 <div className="h-32 w-full bg-gradient-to-br from-gray-100 to-gray-200" />
               )}
               <div className="p-3">
-                <p className="truncate font-semibold text-gray-900 text-sm">{skin.name}</p>
-                <p className="truncate text-xs text-gray-500">{skin.championName}</p>
+                <p className="truncate font-semibold text-[#F2E8D5] text-sm">{skin.name}</p>
+                <p className="truncate text-xs text-[#6b6055]">{skin.championName}</p>
                 {skin.rarity && skin.rarity !== "NoRarity" && (
-                  <span className="mt-1 inline-block rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700">
+                  <span className="mt-1 inline-block rounded-full bg-[#0e1c14] px-2 py-0.5 text-xs font-medium text-[#4caf72]">
                     {skin.rarity}
                   </span>
                 )}
@@ -134,13 +134,13 @@ export default async function SkinLineDetailPage({ params }: PageProps) {
         {previous ? (
           <Link
             href={`/league/skin-lines/${previous.id}`}
-            className="rounded-3xl border border-gray-200 bg-white p-5 shadow-sm transition hover:border-emerald-300 hover:shadow-md"
+            className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm transition hover:border-[#2a4a30] hover:shadow-md"
           >
-            <p className="text-sm text-gray-500">Previous</p>
-            <p className="mt-1 text-lg font-semibold text-gray-900">{previous.name}</p>
+            <p className="text-sm text-[#6b6055]">Previous</p>
+            <p className="mt-1 text-lg font-semibold text-[#F2E8D5]">{previous.name}</p>
           </Link>
         ) : (
-          <div className="rounded-3xl border border-dashed border-gray-200 bg-white p-5 text-sm text-gray-400">
+          <div className="rounded-3xl border border-dashed border-[#1c1c22] bg-[#141418] p-5 text-sm text-[#6b6055]">
             Start of skin lines
           </div>
         )}
@@ -148,13 +148,13 @@ export default async function SkinLineDetailPage({ params }: PageProps) {
         {next ? (
           <Link
             href={`/league/skin-lines/${next.id}`}
-            className="rounded-3xl border border-gray-200 bg-white p-5 text-right shadow-sm transition hover:border-emerald-300 hover:shadow-md"
+            className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-5 text-right shadow-sm transition hover:border-[#2a4a30] hover:shadow-md"
           >
-            <p className="text-sm text-gray-500">Next</p>
-            <p className="mt-1 text-lg font-semibold text-gray-900">{next.name}</p>
+            <p className="text-sm text-[#6b6055]">Next</p>
+            <p className="mt-1 text-lg font-semibold text-[#F2E8D5]">{next.name}</p>
           </Link>
         ) : (
-          <div className="rounded-3xl border border-dashed border-gray-200 bg-white p-5 text-right text-sm text-gray-400">
+          <div className="rounded-3xl border border-dashed border-[#1c1c22] bg-[#141418] p-5 text-right text-sm text-[#6b6055]">
             End of skin lines
           </div>
         )}

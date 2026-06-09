@@ -83,20 +83,20 @@ export default async function OnePieceCharacterDetailPage({
       : null;
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-gray-50 px-6 py-10">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/onepiece/characters" label="Back to Characters" />
 
-      <nav aria-label="Breadcrumb" className="text-sm text-gray-600">
+      <nav aria-label="Breadcrumb" className="text-sm text-[#6b6055]">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
-            <Link className="hover:text-orange-700 hover:underline" href="/">
+            <Link className="hover:text-[#d4933a] hover:underline" href="/">
               Home
             </Link>
           </li>
           <li aria-hidden="true">/</li>
           <li>
             <Link
-              className="hover:text-orange-700 hover:underline"
+              className="hover:text-[#d4933a] hover:underline"
               href="/onepiece"
             >
               One Piece
@@ -105,18 +105,18 @@ export default async function OnePieceCharacterDetailPage({
           <li aria-hidden="true">/</li>
           <li>
             <Link
-              className="hover:text-orange-700 hover:underline"
+              className="hover:text-[#d4933a] hover:underline"
               href="/onepiece/characters"
             >
               Characters
             </Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li className="font-medium text-orange-700">{character.name}</li>
+          <li className="font-medium text-[#d4933a]">{character.name}</li>
         </ol>
       </nav>
 
-      <section className="rounded-3xl border border-orange-200 bg-white p-8 shadow-sm">
+      <section className="rounded-3xl border border-[#3a2410] bg-[#141418] p-8 shadow-sm">
         <div className="flex flex-col gap-6 md:flex-row md:items-start">
           <ImageWithFallback
             alt={character.name}
@@ -129,19 +129,19 @@ export default async function OnePieceCharacterDetailPage({
               <span
                 className={`inline-flex rounded-full px-3 py-1 text-sm font-semibold ${
                   character.role === "Main"
-                    ? "bg-orange-100 text-orange-700"
-                    : "bg-gray-100 text-gray-700"
+                    ? "bg-[#1c1208] text-[#d4933a]"
+                    : "bg-[#1c1c22] text-[#9a8c7e]"
                 }`}
               >
                 {character.role}
               </span>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900">
+              <h1 className="text-4xl font-bold tracking-tight text-[#F2E8D5]">
                 {character.name}
               </h1>
             </div>
 
             <div className="space-y-2">
-              <p className="text-sm font-semibold uppercase tracking-wide text-gray-500">
+              <p className="text-sm font-semibold uppercase tracking-wide text-[#6b6055]">
                 Nicknames
               </p>
               {character.nicknames.length > 0 ? (
@@ -156,16 +156,16 @@ export default async function OnePieceCharacterDetailPage({
                   ))}
                 </div>
               ) : (
-                <p className="text-sm text-gray-600">No nicknames listed.</p>
+                <p className="text-sm text-[#6b6055]">No nicknames listed.</p>
               )}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
-        <h2 className="text-2xl font-semibold text-gray-900">About</h2>
-        <p className="mt-4 whitespace-pre-wrap text-base leading-7 text-gray-700">
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-8 shadow-sm">
+        <h2 className="text-2xl font-semibold text-[#F2E8D5]">About</h2>
+        <p className="mt-4 whitespace-pre-wrap text-base leading-7 text-[#9a8c7e]">
           {character.about ?? "No description available."}
         </p>
       </section>
@@ -173,32 +173,32 @@ export default async function OnePieceCharacterDetailPage({
       <section className="grid gap-4 md:grid-cols-2">
         {previousCharacter ? (
           <Link
-            className="rounded-3xl border border-gray-200 bg-white p-5 shadow-sm transition hover:border-orange-300 hover:shadow-md"
+            className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm transition hover:border-[#4a3420] hover:shadow-md"
             href={`/onepiece/characters/${previousCharacter.id}`}
           >
-            <p className="text-sm text-gray-500">Previous</p>
-            <p className="mt-1 text-lg font-semibold text-gray-900">
+            <p className="text-sm text-[#6b6055]">Previous</p>
+            <p className="mt-1 text-lg font-semibold text-[#F2E8D5]">
               {previousCharacter.name}
             </p>
           </Link>
         ) : (
-          <div className="rounded-3xl border border-dashed border-gray-200 bg-white p-5 text-sm text-gray-400">
+          <div className="rounded-3xl border border-dashed border-[#1c1c22] bg-[#141418] p-5 text-sm text-[#6b6055]">
             Start of character list
           </div>
         )}
 
         {nextCharacter ? (
           <Link
-            className="rounded-3xl border border-gray-200 bg-white p-5 text-right shadow-sm transition hover:border-orange-300 hover:shadow-md"
+            className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-5 text-right shadow-sm transition hover:border-[#4a3420] hover:shadow-md"
             href={`/onepiece/characters/${nextCharacter.id}`}
           >
-            <p className="text-sm text-gray-500">Next</p>
-            <p className="mt-1 text-lg font-semibold text-gray-900">
+            <p className="text-sm text-[#6b6055]">Next</p>
+            <p className="mt-1 text-lg font-semibold text-[#F2E8D5]">
               {nextCharacter.name}
             </p>
           </Link>
         ) : (
-          <div className="rounded-3xl border border-dashed border-gray-200 bg-white p-5 text-right text-sm text-gray-400">
+          <div className="rounded-3xl border border-dashed border-[#1c1c22] bg-[#141418] p-5 text-right text-sm text-[#6b6055]">
             End of character list
           </div>
         )}
