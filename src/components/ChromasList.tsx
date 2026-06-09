@@ -103,9 +103,9 @@ export function ChromasList({ chromas, champions }: ChromasListProps) {
                 href={href}
                 className="flex flex-col gap-2 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-4 text-sm transition hover:border-[#1c3622] hover:bg-[#0e1c14] hover:shadow-md"
               >
-                {chroma.image && (
+                {(chroma.sourceUrl || chroma.image) && (
                   <ImageWithFallback
-                    src={`/leaguecontent/${chroma.image}`}
+                    src={chroma.sourceUrl ?? `/leaguecontent/${chroma.image}`}
                     alt={chroma.name || "Chroma image"}
                     className="h-32 w-full rounded-lg object-cover"
                   />

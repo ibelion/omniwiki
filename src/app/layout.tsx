@@ -24,6 +24,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sora.variable} bg-[#0c0c0e] text-[#F2E8D5] antialiased`}>
+        <div className="pointer-events-none fixed inset-0 -z-10" aria-hidden="true">
+          <div
+            className="absolute inset-0 opacity-[0.02]"
+            style={{
+              backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.7) 1px, transparent 1px)",
+              backgroundSize: "28px 28px",
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background: [
+                "radial-gradient(ellipse 800px 700px at 0% 0%, rgba(76,175,114,0.05) 0%, transparent 70%)",
+                "radial-gradient(ellipse 800px 700px at 100% 0%, rgba(74,184,200,0.05) 0%, transparent 70%)",
+                "radial-gradient(ellipse 800px 700px at 100% 100%, rgba(136,146,240,0.05) 0%, transparent 70%)",
+                "radial-gradient(ellipse 800px 700px at 0% 100%, rgba(212,147,58,0.05) 0%, transparent 70%)",
+              ].join(", "),
+            }}
+          />
+        </div>
         <header className="border-b border-[#1c1c22] bg-[#0c0c0e]">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-6 py-3">
             <Link href="/" className="flex items-center gap-3">

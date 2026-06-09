@@ -10,15 +10,42 @@ export default function TFTPage() {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-4xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
-      <header className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-8 shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-wide text-[#4ab8c8]">
-          Teamfight Tactics
-        </p>
-        <h1 className="mt-1 text-4xl font-semibold text-[#F2E8D5]">TFT</h1>
-        <p className="mt-2 text-[#6b6055]">
-          {tftData.champions.length} champions · {tftData.traits.length} traits · {tftData.items.length} items · {(tftData.augments ?? []).length} augments
-        </p>
-        <p className="mt-1 text-sm text-[#6b6055]">Set {tftData.setNumber ?? 17}</p>
+      <header className="relative overflow-hidden rounded-3xl" style={{ minHeight: 240 }}>
+        <img
+          src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg"
+          alt="Teamfight Tactics"
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ filter: "brightness(0.5) saturate(1.1)" }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(7,14,16,0.9) 30%, transparent 80%), linear-gradient(to top, rgba(6,12,14,1) 0%, transparent 55%)",
+          }}
+        />
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.025]"
+          style={{
+            backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
+            backgroundSize: "28px 28px",
+          }}
+        />
+        <div className="relative z-10 flex flex-col gap-2 p-8 pb-10">
+          <p className="text-[11px] font-semibold uppercase tracking-[.24em] text-[#4ab8c8]">
+            Teamfight Tactics
+          </p>
+          <h1
+            className="text-4xl font-extrabold leading-[1.04] tracking-tight text-[#F2E8D5]"
+            style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
+          >
+            TFT
+          </h1>
+          <p className="mt-1 text-sm text-[#9a8c7e]">
+            {tftData.champions.length} champions · {tftData.traits.length} traits · {tftData.items.length} items · {(tftData.augments ?? []).length} augments
+          </p>
+          <p className="text-xs text-[#6b6055]">Set {tftData.setNumber ?? 17}</p>
+        </div>
       </header>
 
       <nav className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

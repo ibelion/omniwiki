@@ -7,6 +7,7 @@ import {
   UniverseDescriptor,
   UniverseShowcase,
 } from "@/components/UniverseShowcase";
+import { HeroRotator } from "@/components/HeroRotator";
 
 const universeTotals = [
   {
@@ -119,7 +120,7 @@ const universes: UniverseDescriptor[] = [
       { label: "Traits", href: "/tft/traits" },
       { label: "Items", href: "/tft/items" },
     ],
-    heroImage: tftData.champions[0]?.image ?? undefined,
+    heroImage: "https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/Lux_0.jpg",
     heroAlt: tftData.champions[0]?.name || "TFT champion",
     accent: {
       chip: "bg-[#0d181c] text-[#4ab8c8]",
@@ -163,51 +164,12 @@ const universes: UniverseDescriptor[] = [
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col gap-10 bg-[#0c0c0e] px-6 py-12 text-[#F2E8D5]">
-      <section className="mx-auto flex w-full max-w-6xl flex-col gap-8 rounded-3xl border border-[#1c1c22] bg-[#141418] p-8">
-        <div className="flex flex-col gap-3">
-          <p className="text-[11px] font-semibold uppercase tracking-[.22em] text-[#B87D20]">
-            OmniWiki — Multiverse Reference
-          </p>
-          <h1 className="text-4xl font-extrabold leading-[1.04] tracking-tight text-[#F2E8D5]">
-            The <span className="text-[#B87D20]">Multiverse</span> Wiki
-          </h1>
-          <p className="max-w-3xl text-base text-[#6b6055]">
-            Browse living dossiers for Pokémon, League of Legends, Teamfight
-            Tactics, and One Piece — fueled by live data and real scrapers.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/pokemon"
-              className="rounded-lg bg-[#B87D20] px-4 py-2 text-sm font-bold text-[#0c0c0e] transition hover:bg-[#D49430]"
-              aria-label="Browse Pokemon"
-            >
-              Browse Pokemon
-            </Link>
-            <Link
-              href="/league"
-              className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm font-semibold text-[#6b6055] transition hover:border-[#2c2c32] hover:text-[#F2E8D5]"
-              aria-label="Browse League"
-            >
-              Browse League
-            </Link>
-            <Link
-              href="/tft"
-              className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm font-semibold text-[#6b6055] transition hover:border-[#2c2c32] hover:text-[#F2E8D5]"
-              aria-label="Browse TFT"
-            >
-              Browse TFT
-            </Link>
-            <Link
-              href="/onepiece"
-              className="rounded-lg border border-[#1c1c22] px-4 py-2 text-sm font-semibold text-[#6b6055] transition hover:border-[#2c2c32] hover:text-[#F2E8D5]"
-              aria-label="Browse One Piece"
-            >
-              Browse One Piece
-            </Link>
-          </div>
-        </div>
+    <main className="flex min-h-screen flex-col gap-6 px-6 py-8 text-[#F2E8D5]">
+      <div className="mx-auto w-full max-w-6xl">
+        <HeroRotator />
+      </div>
 
+      <section className="mx-auto flex w-full max-w-6xl flex-col gap-6 rounded-3xl border border-[#1c1c22] bg-[#141418] p-6">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {universeTotals.map((stat) => (
             <div

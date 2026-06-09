@@ -189,20 +189,50 @@ export default function PokemonIndex() {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
-      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
-        <div className="flex flex-col gap-3">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#8892f0]">
+      {/* splash art hero */}
+      <section className="relative overflow-hidden rounded-3xl" style={{ minHeight: 260 }}>
+        <div
+          className="absolute inset-0"
+          style={{ background: "radial-gradient(ellipse at 65% 45%, #1a1a3a 0%, #0c0c18 55%, #090910 100%)" }}
+        />
+        <img
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+          alt="Charizard"
+          className="absolute right-0 top-0 h-full w-[48%] object-contain object-right-top"
+          style={{ filter: "drop-shadow(0 0 60px rgba(136,146,240,0.25))" }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(8,8,20,0.92) 38%, rgba(8,8,20,0.2) 80%), linear-gradient(to top, rgba(8,8,18,1) 0%, transparent 55%)",
+          }}
+        />
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.025]"
+          style={{
+            backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
+            backgroundSize: "28px 28px",
+          }}
+        />
+        <div className="relative z-10 flex flex-col gap-3 p-8 pb-10">
+          <p className="text-[11px] font-semibold uppercase tracking-[.24em] text-[#8892f0]">
             Pokémon Universe
           </p>
-          <h1 className="text-3xl font-semibold text-[#F2E8D5]">
-            Welcome to the Pokémon Universe
+          <h1
+            className="text-4xl font-extrabold leading-[1.04] tracking-tight text-[#F2E8D5]"
+            style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
+          >
+            Pokémon
           </h1>
-          <p className="text-[#6b6055]">
-            Explore the complete Pokémon database with detailed information about stats,
-            moves, evolutions, abilities, and gear pulled from your scraped data.
+          <p className="max-w-xl text-sm text-[#9a8c7e]">
+            Explore the complete Pokédex — stats, moves, evolutions, abilities, and gear across every generation.
           </p>
         </div>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      </section>
+
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {universeStats.map((stat) => (
             <Link
               key={stat.label}

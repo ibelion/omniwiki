@@ -386,19 +386,44 @@ export default function LeaguePage() {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
-      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
-        <div className="flex flex-col gap-3">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#4caf72]">
+      {/* splash art hero */}
+      <section className="relative overflow-hidden rounded-3xl" style={{ minHeight: 260 }}>
+        <img
+          src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg"
+          alt="League of Legends"
+          className="absolute inset-0 h-full w-full object-cover"
+          style={{ filter: "brightness(0.5) saturate(1.1)" }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(8,20,12,0.9) 30%, transparent 80%), linear-gradient(to top, rgba(8,12,10,1) 0%, transparent 55%)",
+          }}
+        />
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.025]"
+          style={{
+            backgroundImage: "radial-gradient(circle, #ffffff 1px, transparent 1px)",
+            backgroundSize: "28px 28px",
+          }}
+        />
+        <div className="relative z-10 flex flex-col gap-3 p-8 pb-10">
+          <p className="text-[11px] font-semibold uppercase tracking-[.24em] text-[#4caf72]">
             League of Legends Universe
           </p>
-          <h1 className="text-3xl font-semibold text-[#F2E8D5]">
-            Welcome to the League of Legends Universe
+          <h1 className="text-4xl font-extrabold leading-[1.04] tracking-tight text-[#F2E8D5]"
+            style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}>
+            League of Legends
           </h1>
-          <p className="text-[#6b6055]">
-            Browse the full League roster — champions, skins, items, lore, cosmetics, and game systems all in one place.
+          <p className="max-w-xl text-sm text-[#9a8c7e]">
+            Browse the full roster — champions, skins, items, lore, cosmetics, and game systems all in one place.
           </p>
         </div>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      </section>
+
+      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {universeStats.map((stat) => (
             <Link
               key={stat.label}

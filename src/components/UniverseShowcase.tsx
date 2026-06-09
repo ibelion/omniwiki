@@ -2,16 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-
-const CDN_BASE = "https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn";
-
-function toCdnSrc(src: string): string {
-  if (!src || src.startsWith("http") || !src.startsWith("/")) return src;
-  if (src.startsWith("/leaguecontent/") || src.startsWith("/pokemoncontent/")) {
-    return `${CDN_BASE}${src}`;
-  }
-  return src;
-}
+import { ImageWithFallback } from "./ImageWithFallback";
 
 export type UniverseId = "pokemon" | "league" | "onepiece" | string;
 
@@ -120,12 +111,10 @@ export function UniverseShowcase({ universes }: UniverseShowcaseProps) {
             <p className="text-[#6b6055]">{activeUniverse.description}</p>
           </div>
           {activeUniverse.heroImage && (
-            <img
-              src={toCdnSrc(activeUniverse.heroImage)}
+            <ImageWithFallback
+              src={activeUniverse.heroImage}
               alt={activeUniverse.heroAlt || activeUniverse.name}
-              width={128}
-              height={128}
-              className="rounded-2xl border border-[#1c1c22] object-cover"
+              className="h-32 w-32 flex-shrink-0 rounded-2xl border border-[#1c1c22]"
             />
           )}
         </div>
