@@ -4,6 +4,7 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 import { CommandPalette } from "../components/CommandPalette";
 import { CommandPaletteButton } from "../components/CommandPaletteButton";
+import { NavLinks } from "../components/NavLinks";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -58,23 +59,7 @@ export default function RootLayout({
               </div>
             </Link>
             <div className="flex items-center gap-2">
-              <nav className="flex items-center gap-1 text-[13px] font-semibold">
-                <Link href="/" className="rounded-lg px-3 py-2 text-[#F2E8D5] transition hover:bg-[#1c1c22]" aria-label="Home">
-                  Home
-                </Link>
-                <Link href="/pokemon" className="rounded-lg px-3 py-2 text-[#6b6055] transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]" aria-label="Pokemon universe">
-                  Pokemon
-                </Link>
-                <Link href="/league" className="rounded-lg px-3 py-2 text-[#6b6055] transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]" aria-label="League universe">
-                  League
-                </Link>
-                <Link href="/tft" className="rounded-lg px-3 py-2 text-[#6b6055] transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]" aria-label="TFT universe">
-                  TFT
-                </Link>
-                <Link href="/onepiece" className="rounded-lg px-3 py-2 text-[#6b6055] transition hover:bg-[#1c1c22] hover:text-[#F2E8D5]" aria-label="One Piece universe">
-                  One Piece
-                </Link>
-              </nav>
+              <NavLinks />
               <CommandPaletteButton />
             </div>
           </div>

@@ -47,7 +47,14 @@ export function TFTItemsClient({
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
       <BackLink href="/tft" label="Back to TFT" />
 
-      <header className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+      <header className="relative overflow-hidden rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 120% at 100% 50%, rgba(74,184,200,0.10) 0%, transparent 70%)",
+          }}
+        />
         <p className="text-sm font-semibold uppercase tracking-wide text-[#4ab8c8]">TFT · Set {setNumber}</p>
         <h1 className="mt-1 text-3xl font-semibold text-[#F2E8D5]">Items</h1>
         <p className="mt-1 text-sm text-[#6b6055]">

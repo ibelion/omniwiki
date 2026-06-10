@@ -56,7 +56,7 @@ export default async function ChampionDetail({ params }: PageProps) {
     (ability) => ability.championId === champion.id
   );
   const positions = champion.positions;
-  const mainPosition = positions[0];
+  const ddragonKey = champion.splashImage.split('/')[1] ?? '';
   const skins = leagueData.skins.filter(
     (skin) => skin.championId === champion.id
   );
@@ -111,46 +111,51 @@ export default async function ChampionDetail({ params }: PageProps) {
         </ol>
       </nav>
 
-      <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-4">
+      <section className="overflow-hidden rounded-3xl border border-[#1c1c22] shadow-lg">
+        {/* Splash art hero */}
+        <div className="relative h-64 sm:h-80">
+          {ddragonKey ? (
+            <img
+              src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${ddragonKey}_0.jpg`}
+              alt={`${champion.name} splash art`}
+              className="absolute inset-0 h-full w-full object-cover object-top"
+            />
+          ) : (
+            <div className="absolute inset-0 bg-[#0e1c14]" />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0c0c0e] via-[#0c0c0e]/50 to-transparent" />
+
+          {/* Champion icon + name bottom-left */}
+          <div className="absolute bottom-0 left-0 flex items-end gap-4 p-6">
             <ImageWithFallback
               src={`/leaguecontent/${champion.image}`}
               alt={`${champion.name} icon`}
-              className="h-24 w-24 rounded-2xl border border-[#1c1c22] object-cover"
+              className="h-20 w-20 flex-shrink-0 rounded-2xl border-2 border-[#4caf72]/60 object-cover shadow-lg"
             />
             <div>
-              <p className="text-sm uppercase tracking-wide text-[#4caf72]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#4caf72]">
                 Champion
               </p>
-              <h1 className="text-3xl font-semibold text-[#F2E8D5]">
+              <h1 className="text-4xl font-extrabold leading-tight text-[#F2E8D5]">
                 {champion.name}
               </h1>
               {lore?.title && (
-                <p className="text-sm italic text-[#6b6055]">{lore.title}</p>
-              )}
-              <p className="text-sm text-[#6b6055]">
-                Difficulty {champion.difficulty ?? "?"} ·{" "}
-                {champion.rangeType} · {champion.resource}
-              </p>
-              {mainPosition && (
-                <p className="mt-1 text-sm font-semibold text-[#4caf72]">
-                  Main Position: {mainPosition}
-                </p>
+                <p className="text-sm italic text-[#9a8c7e]">{lore.title}</p>
               )}
             </div>
           </div>
-          <div className="flex flex-col gap-2">
-            {/* Top row: champion positions from CSV (main highlighted) */}
+
+          {/* Positions + roles bottom-right */}
+          <div className="absolute bottom-0 right-0 flex flex-col items-end gap-2 p-6">
             {positions.length > 0 && (
-              <div className="flex flex-wrap gap-2 text-xs font-semibold text-[#F2E8D5]">
+              <div className="flex flex-wrap justify-end gap-2">
                 {positions.map((pos, idx) => (
                   <span
                     key={`pos-${idx}`}
                     className={
                       idx === 0
-                        ? "rounded-full bg-[#0e1c14] px-3 py-1 text-[#4caf72]"
-                        : "rounded-full bg-[#1c1c22] px-3 py-1 text-[#9a8c7e]"
+                        ? "rounded-full bg-[#0e1c14]/90 px-3 py-1 text-xs font-semibold text-[#4caf72]"
+                        : "rounded-full bg-[#1c1c22]/80 px-3 py-1 text-xs font-semibold text-[#9a8c7e]"
                     }
                   >
                     {pos}
@@ -158,85 +163,93 @@ export default async function ChampionDetail({ params }: PageProps) {
                 ))}
               </div>
             )}
-            {/* Bottom row: roles badges */}
-            <div className="flex flex-wrap gap-2 text-xs font-medium text-[#F2E8D5]">
+            <div className="flex flex-wrap justify-end gap-2">
               {champion.roles.map((role) => (
                 <span
                   key={role}
-                  className="rounded-full bg-[#12122a] px-3 py-1 text-[#8892f0]"
+                  className="rounded-full bg-[#12122a]/80 px-3 py-1 text-xs font-medium text-[#8892f0]"
                 >
                   {role}
                 </span>
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-2 text-sm text-[#6b6055]">
-            <p className="font-semibold text-[#F2E8D5]">Quick navigation</p>
-            <ChampionJump champions={championIndex} />
-            <div className="flex flex-wrap gap-2">
-              {previous && (
-                <Link
-                  href={`/league/${previous.slug}`}
-                  className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#1c3622] hover:bg-[#0e1c14]"
-                >
-                  ← {previous.name}
-                </Link>
-              )}
-              {next && (
-                <Link
-                  href={`/league/${next.slug}`}
-                  className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#1c3622] hover:bg-[#0e1c14]"
-                >
-                  {next.name} →
-                </Link>
-              )}
-              <Link
-                href="/league"
-                className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#2c2c32] hover:bg-[#1c1c22]"
-                aria-label="Back to League champions list"
-              >
-                Index
-              </Link>
-            </div>
-          </div>
         </div>
-        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-[#6b6055]">
-              Regions
-            </p>
-            <p className="text-sm text-[#d9cebe]">
-              {champion.regions.join(", ") || "Unknown"}
-            </p>
+
+        {/* Quick nav + meta stats */}
+        <div className="bg-[#141418] p-6">
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm">
+            <ChampionJump champions={championIndex} />
+            {previous && (
+              <Link
+                href={`/league/${previous.slug}`}
+                className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#1c3622] hover:bg-[#0e1c14]"
+              >
+                ← {previous.name}
+              </Link>
+            )}
+            {next && (
+              <Link
+                href={`/league/${next.slug}`}
+                className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#1c3622] hover:bg-[#0e1c14]"
+              >
+                {next.name} →
+              </Link>
+            )}
+            <Link
+              href="/league"
+              className="rounded-lg border border-[#1c1c22] px-3 py-1 transition hover:border-[#2c2c32] hover:bg-[#1c1c22]"
+              aria-label="Back to League champions list"
+            >
+              Index
+            </Link>
           </div>
-          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-[#6b6055]">
-              Species
-            </p>
-            <p className="text-sm text-[#d9cebe]">
-              {champion.species.join(", ") || "Unknown"}
-            </p>
-          </div>
-          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-[#6b6055]">
-              Release
-            </p>
-            <p className="text-sm text-[#d9cebe]">
-              Patch {champion.releasePatch || "?"} ({champion.releaseYear ?? "Unknown"})
-            </p>
-          </div>
-          <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
-            <p className="text-xs uppercase tracking-wide text-[#6b6055]">Positions</p>
-            <p className="text-sm text-[#d9cebe]">
-              {positions.length > 0 ? positions.join(", ") : "Unknown"}
-            </p>
-          </div>
-          {champion.gender && (
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
-              <p className="text-xs uppercase tracking-wide text-[#6b6055]">Gender</p>
-              <p className="text-sm text-[#d9cebe]">{champion.gender}</p>
+              <p className="text-xs uppercase tracking-wide text-[#6b6055]">
+                Difficulty · Range · Resource
+              </p>
+              <p className="text-sm text-[#d9cebe]">
+                {champion.difficulty ?? "?"} · {champion.rangeType} · {champion.resource}
+              </p>
             </div>
-          )}
+            <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+              <p className="text-xs uppercase tracking-wide text-[#6b6055]">
+                Regions
+              </p>
+              <p className="text-sm text-[#d9cebe]">
+                {champion.regions.join(", ") || "Unknown"}
+              </p>
+            </div>
+            <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+              <p className="text-xs uppercase tracking-wide text-[#6b6055]">
+                Species
+              </p>
+              <p className="text-sm text-[#d9cebe]">
+                {champion.species.join(", ") || "Unknown"}
+              </p>
+            </div>
+            <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+              <p className="text-xs uppercase tracking-wide text-[#6b6055]">
+                Release
+              </p>
+              <p className="text-sm text-[#d9cebe]">
+                Patch {champion.releasePatch || "?"} ({champion.releaseYear ?? "Unknown"})
+              </p>
+            </div>
+            <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+              <p className="text-xs uppercase tracking-wide text-[#6b6055]">Positions</p>
+              <p className="text-sm text-[#d9cebe]">
+                {positions.length > 0 ? positions.join(", ") : "Unknown"}
+              </p>
+            </div>
+            {champion.gender && (
+              <div className="rounded-xl border border-[#1c1c22] bg-[#0c0c0e] px-4 py-3">
+                <p className="text-xs uppercase tracking-wide text-[#6b6055]">Gender</p>
+                <p className="text-sm text-[#d9cebe]">{champion.gender}</p>
+              </div>
+            )}
+          </div>
         </div>
       </section>
 

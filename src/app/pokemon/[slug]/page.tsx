@@ -47,6 +47,27 @@ export async function generateMetadata({
   };
 }
 
+const TYPE_COLORS: Record<string, string> = {
+  normal: "#9a9a7e",
+  fire: "#f08030",
+  water: "#6890f0",
+  grass: "#78c850",
+  electric: "#d4b830",
+  ice: "#5ac8c8",
+  fighting: "#c03028",
+  poison: "#a040a0",
+  ground: "#c09840",
+  flying: "#a890f0",
+  psychic: "#f85888",
+  bug: "#a8b820",
+  rock: "#b8a038",
+  ghost: "#705898",
+  dragon: "#7038f8",
+  dark: "#8a6858",
+  steel: "#8888aa",
+  fairy: "#ee99ac",
+};
+
 export default async function PokemonDetail({ params }: PageProps) {
   const { slug } = await params;
   const pokemonData = await getPokemonBundleEdge();
@@ -54,6 +75,7 @@ export default async function PokemonDetail({ params }: PageProps) {
   if (!pokemon) {
     notFound();
   }
+  const typeAccent = TYPE_COLORS[pokemon.types[0]?.toLowerCase() ?? ""] ?? "#8892f0";
   const baseName = getBasePokemonName(pokemon.slug);
   const alternateForms = getAlternateForms(pokemonData.pokemon, baseName, pokemon.slug);
 
@@ -140,9 +162,12 @@ export default async function PokemonDetail({ params }: PageProps) {
         <div className="flex items-center justify-between">
           <BackLink href="/pokemon" label="Back to Pokémon" />
         </div>
-        <div className="flex flex-col gap-6 rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm md:flex-row md:items-center md:justify-between">
+        <div
+          className="flex flex-col gap-6 rounded-3xl border bg-[#141418] p-6 shadow-sm md:flex-row md:items-center md:justify-between"
+          style={{ borderColor: typeAccent + "55" }}
+        >
           <div className="flex flex-col gap-2">
-            <p className="text-sm font-semibold uppercase tracking-wide text-[#8892f0]">
+            <p className="text-sm font-semibold uppercase tracking-wide" style={{ color: typeAccent }}>
               Pokémon
             </p>
             <h1 className="text-3xl font-semibold text-[#F2E8D5]">
@@ -153,25 +178,29 @@ export default async function PokemonDetail({ params }: PageProps) {
               {pokemon?.generation.replace("generation-", "Gen ")}
             </p>
             <div className="flex flex-wrap gap-2">
-              {pokemon?.types.map((type) => (
-                <Link
-                  key={type}
-                  href={`/pokemon/types/${type}`}
-                  className="rounded-full bg-[#12122a] px-3 py-1 text-xs font-semibold text-[#8892f0] capitalize transition hover:bg-[#12122a]"
-                >
-                  {type}
-                </Link>
-              ))}
+              {pokemon?.types.map((type) => {
+                const typeColor = TYPE_COLORS[type.toLowerCase()] ?? "#8892f0";
+                return (
+                  <Link
+                    key={type}
+                    href={`/pokemon/types/${type}`}
+                    className="rounded-full px-3 py-1 text-xs font-semibold capitalize transition"
+                    style={{ color: typeColor, backgroundColor: typeColor + "22", borderColor: typeColor + "44" }}
+                  >
+                    {type}
+                  </Link>
+                );
+              })}
               {smogonTier && smogonTier !== "NFE" && smogonTier !== "LC" && (
                 <span className={`rounded-full px-3 py-1 text-xs font-semibold ${
                   smogonTier === "Uber" || smogonTier === "AG"
-                    ? "bg-red-100 text-red-700"
+                    ? "bg-[#2a0a0a] text-[#f87171]"
                     : smogonTier === "OU"
-                    ? "bg-amber-100 text-amber-700"
+                    ? "bg-[#1c1208] text-[#d4933a]"
                     : smogonTier === "UU"
-                    ? "bg-blue-100 text-blue-700"
+                    ? "bg-[#0d1520] text-[#60a5fa]"
                     : smogonTier === "RU"
-                    ? "bg-green-100 text-green-700"
+                    ? "bg-[#0e1c14] text-[#4caf72]"
                     : "bg-[#1c1c22] text-[#6b6055]"
                 }`}>
                   {smogonTier}
@@ -191,7 +220,7 @@ export default async function PokemonDetail({ params }: PageProps) {
               alt={`${pokemon?.name} shiny sprite`}
               className="h-24 w-24 rounded-xl border border-[#1c1c22] bg-[#141418] object-contain shadow-sm"
             />
-            <p className="text-xs text-amber-600">Shiny</p>
+            <p className="text-xs text-[#d4933a]">Shiny</p>
           </div>
           <div className="flex flex-col gap-2 text-sm text-[#6b6055]">
             <p className="font-semibold text-[#F2E8D5]">Quick navigation</p>

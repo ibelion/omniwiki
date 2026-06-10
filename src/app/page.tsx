@@ -162,6 +162,8 @@ const universes: UniverseDescriptor[] = [
   },
 ];
 
+const STAT_ACCENTS = ["#8892f0", "#4caf72", "#4ab8c8", "#d4933a"];
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col gap-6 px-6 py-8 text-[#F2E8D5]">
@@ -171,13 +173,13 @@ export default function Home() {
 
       <section className="mx-auto flex w-full max-w-6xl flex-col gap-6 rounded-3xl border border-[#1c1c22] bg-[#141418] p-6">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {universeTotals.map((stat) => (
+          {universeTotals.map((stat, i) => (
             <div
               key={stat.label}
               className="rounded-2xl border border-[#1c1c22] bg-[#1c1c22] p-4"
             >
               <p className="text-sm text-[#6b6055]">{stat.label}</p>
-              <p className="text-2xl font-extrabold text-[#B87D20]">
+              <p className="text-2xl font-extrabold" style={{ color: STAT_ACCENTS[i] }}>
                 {Number.isFinite(stat.value)
                   ? Number(stat.value).toLocaleString()
                   : stat.value}

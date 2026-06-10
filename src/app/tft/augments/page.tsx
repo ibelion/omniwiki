@@ -15,8 +15,8 @@ const TIER_LABELS: Record<number, string> = {
 
 const TIER_STYLES: Record<number, string> = {
   1: "bg-[#1c1c22] text-[#9a8c7e]",
-  2: "bg-yellow-100 text-yellow-700",
-  3: "bg-purple-100 text-purple-700",
+  2: "bg-[#1c1208] text-[#d4933a]",
+  3: "bg-[#1c0e2a] text-[#c084fc]",
 };
 
 const stripTokens = (html: string) =>
@@ -66,21 +66,26 @@ export default function TftAugmentsPage() {
     <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 py-8 sm:px-6 lg:px-8">
       <BackLink href="/tft" label="Back to TFT" />
 
-      <header className="space-y-3">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#4ab8c8]">
-          TFT
+      <header className="relative overflow-hidden rounded-3xl border border-[#1c1c22] bg-[#141418] p-8 shadow-sm">
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 60% 120% at 100% 50%, rgba(74,184,200,0.10) 0%, transparent 70%)",
+          }}
+        />
+        <p className="text-sm font-semibold uppercase tracking-widest text-[#4ab8c8]">
+          TFT · Set {tftData.setNumber ?? 17}
         </p>
-        <div className="space-y-2">
-          <h1 className="text-3xl font-bold tracking-tight text-[#F2E8D5] sm:text-4xl">
-            Augments ({filteredAugments.length})
-          </h1>
-          <p className="max-w-3xl text-sm text-[#6b6055] sm:text-base">
-            Silver, Gold, and Prismatic augments for Set {tftData.setNumber ?? 17}.
-          </p>
-        </div>
+        <h1 className="mt-1 text-4xl font-extrabold tracking-tight text-[#F2E8D5]">
+          Augments ({filteredAugments.length})
+        </h1>
+        <p className="mt-2 max-w-xl text-sm text-[#6b6055]">
+          Silver, Gold, and Prismatic augments — search or filter by tier.
+        </p>
       </header>
 
-      <section className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-[#141418] p-4 shadow-sm">
+      <section className="flex flex-col gap-4 rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm">
         <div className="flex flex-wrap gap-2">
           <button
             type="button"
@@ -88,7 +93,7 @@ export default function TftAugmentsPage() {
             className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
               tierFilter === null
                 ? "border-[#1a4050] bg-[#1a4050] text-white"
-                : "border-slate-200 bg-[#141418] text-[#9a8c7e] hover:border-[#1a3038] hover:text-[#4ab8c8]"
+                : "border-[#1c1c22] bg-[#141418] text-[#9a8c7e] hover:border-[#1a3038] hover:text-[#4ab8c8]"
             }`}
           >
             All
@@ -101,7 +106,7 @@ export default function TftAugmentsPage() {
               className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
                 tierFilter === tier
                   ? "border-[#1a4050] bg-[#1a4050] text-white"
-                  : "border-slate-200 bg-[#141418] text-[#9a8c7e] hover:border-[#1a3038] hover:text-[#4ab8c8]"
+                  : "border-[#1c1c22] bg-[#141418] text-[#9a8c7e] hover:border-[#1a3038] hover:text-[#4ab8c8]"
               }`}
             >
               {TIER_LABELS[tier]}
@@ -116,7 +121,7 @@ export default function TftAugmentsPage() {
             value={search}
             onChange={(event) => setSearch(event.target.value)}
             placeholder="Search augments by name or description"
-            className="w-full rounded-xl border border-slate-200 bg-[#141418] px-4 py-3 text-sm text-[#F2E8D5] outline-none transition placeholder:text-slate-400 focus:border-[#1a4050] focus:ring-2 focus:ring-teal-100"
+            className="w-full rounded-xl border border-[#1c1c22] bg-[#141418] px-4 py-3 text-sm text-[#F2E8D5] outline-none transition placeholder:text-[#6b6055] focus:border-[#1a4050] focus:ring-2 focus:ring-[#0d181c]"
           />
         </label>
       </section>
@@ -128,7 +133,7 @@ export default function TftAugmentsPage() {
           return (
             <Link key={augment.id ?? `${augment.name ?? "augment"}-${tier}`} href={`/tft/augments/${augment.id}`} className="block">
             <article
-              className="flex h-full flex-col gap-3 rounded-2xl border border-slate-200 bg-[#141418] p-4 shadow-sm transition hover:border-[#1a3038] hover:shadow-md"
+              className="flex h-full flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm transition hover:border-[#1a3038] hover:shadow-md"
             >
               <div className="flex items-start gap-3">
                 {augment.image && (
