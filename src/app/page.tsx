@@ -56,6 +56,14 @@ const universes: UniverseDescriptor[] = [
       { label: "Moves Explorer", href: "/pokemon/moves" },
       { label: "Abilities Library", href: "/pokemon/abilities" },
     ],
+    roadmap: [
+      { label: "Pokédex", done: true },
+      { label: "Moves", done: true },
+      { label: "Abilities", done: true },
+      { label: "Items", done: true },
+      { label: "Type chart", done: false },
+      { label: "Evolution tree", done: false },
+    ],
     heroImage:
       pokemonData.pokemon[0]?.sprites.default
         ? `/pokemoncontent/${pokemonData.pokemon[0].sprites.default}`
@@ -87,6 +95,18 @@ const universes: UniverseDescriptor[] = [
       { label: "Champion Hub", href: "/league/champions" },
       { label: "Item Catalog", href: "/league/items" },
       { label: "Skins", href: "/league/skins" },
+    ],
+    roadmap: [
+      { label: "Champions", done: true },
+      { label: "Items", done: true },
+      { label: "Runes", done: true },
+      { label: "Skins & Skin Lines", done: true },
+      { label: "Factions & Lore", done: true },
+      { label: "Abilities", done: true },
+      { label: "Maps", done: true },
+      { label: "Ward Skins", done: true },
+      { label: "Emote details", done: false },
+      { label: "Icon details", done: false },
     ],
     heroImage:
       leagueData.champions[0]?.image
@@ -120,6 +140,12 @@ const universes: UniverseDescriptor[] = [
       { label: "Traits", href: "/tft/traits" },
       { label: "Items", href: "/tft/items" },
     ],
+    roadmap: [
+      { label: "Champions", done: true },
+      { label: "Traits", done: true },
+      { label: "Items", done: true },
+      { label: "Augments", done: true },
+    ],
     heroImage: "https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/Lux_0.jpg",
     heroAlt: tftData.champions[0]?.name || "TFT champion",
     accent: {
@@ -148,6 +174,12 @@ const universes: UniverseDescriptor[] = [
       { label: "Character Hub", href: "/onepiece" },
       { label: "Characters", href: "/onepiece/characters" },
       { label: "Devil Fruits", comingSoon: true },
+    ],
+    roadmap: [
+      { label: "Characters", done: true },
+      { label: "Devil Fruits", done: false },
+      { label: "Crews", done: false },
+      { label: "Bounties", done: false },
     ],
     heroImage:
       onePieceData.characters[0]?.image ?? "/globe.svg",

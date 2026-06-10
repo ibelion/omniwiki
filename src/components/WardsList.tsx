@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { WardSkinRecord } from "@/lib/league/types";
 
@@ -83,9 +84,10 @@ export function WardsList({ wards }: { wards: WardSkinRecord[] }) {
 
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {visible.map((ward) => (
-          <article
+          <Link
             key={ward.id}
-            className="flex items-center gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm"
+            href={`/league/wards/${ward.id}`}
+            className="flex items-center gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm transition hover:border-[#2a4a30] hover:bg-[#0e1c14]"
           >
             <ImageWithFallback
               src={ward.image ? `/leaguecontent/${ward.image}` : "/globe.svg"}
@@ -104,7 +106,7 @@ export function WardsList({ wards }: { wards: WardSkinRecord[] }) {
                 </span>
               )}
             </div>
-          </article>
+          </Link>
         ))}
       </section>
 

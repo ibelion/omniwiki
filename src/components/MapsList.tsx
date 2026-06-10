@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { MapRecord } from "@/lib/league/types";
 
@@ -57,9 +58,10 @@ export function MapsList({ maps }: { maps: MapRecord[] }) {
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((map) => (
-          <article
+          <Link
             key={map.id}
-            className="flex flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm"
+            href={`/league/maps/${map.id}`}
+            className="flex flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm transition hover:border-[#2a4a30] hover:bg-[#0e1c14]"
           >
             <ImageWithFallback
               src={map.image ? `/leaguecontent/${map.image}` : "/globe.svg"}
@@ -75,7 +77,7 @@ export function MapsList({ maps }: { maps: MapRecord[] }) {
                 <p className="mt-1 text-sm text-[#6b6055]">{MAP_DESCRIPTIONS[map.id]}</p>
               )}
             </div>
-          </article>
+          </Link>
         ))}
       </section>
     </>

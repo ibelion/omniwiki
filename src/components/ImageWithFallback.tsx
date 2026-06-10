@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const CDN_BASE = "https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn";
 
@@ -28,6 +28,10 @@ export const ImageWithFallback = ({
   loading,
 }: ImageWithFallbackProps) => {
   const [imgSrc, setImgSrc] = useState(toCdnSrc(src));
+
+  useEffect(() => {
+    setImgSrc(toCdnSrc(src));
+  }, [src]);
 
   const handleError = () => {
     if (imgSrc !== fallback) setImgSrc(fallback);

@@ -14,6 +14,7 @@ export type UniverseDescriptor = {
   description: string;
   stats: { label: string; value: number | string }[];
   quickLinks: { label: string; href?: string; comingSoon?: boolean }[];
+  roadmap?: { label: string; done: boolean }[];
   heroImage?: string | null;
   heroAlt?: string;
   accent: {
@@ -159,6 +160,31 @@ export function UniverseShowcase({ universes }: UniverseShowcaseProps) {
             )
           )}
         </div>
+
+        {activeUniverse.roadmap && activeUniverse.roadmap.length > 0 && (
+          <div className="mt-6 border-t border-[#1c1c22] pt-5">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+              Content coverage
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {activeUniverse.roadmap.map((item) => (
+                <span
+                  key={item.label}
+                  className={`rounded-full px-3 py-1 text-xs font-medium ${
+                    item.done
+                      ? activeUniverse.accent.chip
+                      : "bg-[#1c1c22] text-[#6b6055]"
+                  }`}
+                >
+                  {item.label}
+                  {!item.done && (
+                    <span className="ml-1 opacity-60">soon</span>
+                  )}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
     </>
   );
