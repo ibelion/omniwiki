@@ -3,6 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 
+const formatName = (s: string) =>
+  s.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+
 interface PokemonItem {
   pokemonSlug: string;
   itemSlug: string;
@@ -54,8 +57,8 @@ export function PokemonItemsSearchClient({ items, pokemonNames, itemNames }: Pok
       </header>
       <section className="flex flex-col gap-3 text-sm text-[#d9cebe]">
         {filtered.map((entry) => {
-          const pokemonName = pokemonNames[entry.pokemonSlug] ?? entry.pokemonSlug;
-          const itemName = itemNames[entry.itemSlug] ?? entry.itemSlug;
+          const pokemonName = formatName(pokemonNames[entry.pokemonSlug] ?? entry.pokemonSlug);
+          const itemName = formatName(itemNames[entry.itemSlug] ?? entry.itemSlug);
           return (
             <article
               key={`${entry.pokemonSlug}-${entry.itemSlug}`}
