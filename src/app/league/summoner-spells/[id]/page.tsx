@@ -21,8 +21,6 @@ const MODE_LABELS: Record<string, string> = {
   DOOMBOTSTEEMO: "Doom Bots",
   ASSASSINATE: "Assassinate",
   RUBY: "Arena",
-  WIPMODEWIP: "WIP Mode",
-  WIPMODEWIP3: "WIP Mode 3",
   RUBY_TRIAL_1: "Arena Trial 1",
   RUBY_TRIAL_2: "Arena Trial 2",
   RUBY_TRIAL_3: "Arena Trial 3",

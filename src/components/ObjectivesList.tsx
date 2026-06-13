@@ -13,17 +13,30 @@ const formatDate = (ms: number | null): string => {
 export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }) {
   const [search, setSearch] = useState("");
   const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
+  const [yearFilter, setYearFilter] = useState<number | null>(null);
 
   const categories = useMemo(
     () => [...new Set(objectives.map((o) => o.category).filter(Boolean) as string[])].sort(),
     [objectives]
   );
 
+  const years = useMemo(() => {
+    const set = new Set<number>();
+    for (const o of objectives) {
+      if (o.start) set.add(new Date(o.start).getFullYear());
+    }
+    return [...set].sort((a, b) => b - a);
+  }, [objectives]);
+
   const filtered = useMemo(
     () =>
       objectives
         .filter((o) => {
           if (categoryFilter && o.category !== categoryFilter) return false;
+          if (yearFilter != null) {
+            if (!o.start) return false;
+            if (new Date(o.start).getFullYear() !== yearFilter) return false;
+          }
           if (!search) return true;
           const s = search.toLowerCase();
           return (
@@ -34,13 +47,12 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
           );
         })
         .sort((a, b) => {
-          // Sort by start date descending (newest first), fall back to title
           if (a.start && b.start) return b.start - a.start;
           if (a.start) return -1;
           if (b.start) return 1;
           return a.title.localeCompare(b.title);
         }),
-    [objectives, search, categoryFilter]
+    [objectives, search, categoryFilter, yearFilter]
   );
 
   // eslint-disable-next-line react-hooks/purity
@@ -71,18 +83,47 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
           className="mt-4 w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
         />
 
-        {/* Category chips */}
-        {categories.length > 0 && (
+        {/* Year chips */}
+        {years.length > 0 && (
           <div className="mt-3 flex flex-wrap gap-2">
             <button
-              onClick={() => setCategoryFilter(null)}
+              onClick={() => setYearFilter(null)}
               className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
-                categoryFilter === null
+                yearFilter === null
                   ? "bg-[#1A5228] text-white"
                   : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
               }`}
             >
-              All
+              All seasons
+            </button>
+            {years.map((y) => (
+              <button
+                key={y}
+                onClick={() => setYearFilter(yearFilter === y ? null : y)}
+                className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+                  yearFilter === y
+                    ? "bg-[#1A5228] text-white"
+                    : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
+                }`}
+              >
+                {y}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Category chips */}
+        {categories.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-2">
+            <button
+              onClick={() => setCategoryFilter(null)}
+              className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+                categoryFilter === null
+                  ? "bg-[#12122a] text-[#8892f0]"
+                  : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
+              }`}
+            >
+              All categories
             </button>
             {categories.map((cat) => (
               <button
@@ -90,7 +131,7 @@ export function ObjectivesList({ objectives }: { objectives: ObjectiveRecord[] }
                 onClick={() => setCategoryFilter(categoryFilter === cat ? null : cat)}
                 className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
                   categoryFilter === cat
-                    ? "bg-[#1A5228] text-white"
+                    ? "bg-[#12122a] text-[#8892f0]"
                     : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
                 }`}
               >

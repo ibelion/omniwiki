@@ -10,18 +10,17 @@ export default function TFTPage() {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-4xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
-      <header className="relative overflow-hidden rounded-3xl" style={{ minHeight: 240 }}>
-        <img
-          src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg"
-          alt="Teamfight Tactics"
-          className="absolute inset-0 h-full w-full object-cover"
-          style={{ filter: "brightness(0.5) saturate(1.1)" }}
-        />
+      <header
+        className="relative overflow-hidden rounded-3xl"
+        style={{
+          minHeight: 240,
+          background: "linear-gradient(135deg, #071014 0%, #0d2030 40%, #071014 100%)",
+        }}
+      >
         <div
-          className="absolute inset-0"
+          className="pointer-events-none absolute inset-0"
           style={{
-            background:
-              "linear-gradient(to right, rgba(7,14,16,0.9) 30%, transparent 80%), linear-gradient(to top, rgba(6,12,14,1) 0%, transparent 55%)",
+            background: "radial-gradient(ellipse at 70% 50%, rgba(74,184,200,0.15) 0%, transparent 65%)",
           }}
         />
         <div

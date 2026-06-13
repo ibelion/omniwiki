@@ -43,6 +43,8 @@ export default async function ItemDetailPage({ params }: PageProps) {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-8 bg-[#0c0c0e] px-6 py-10">
+      <BackLink href="/pokemon/items" label="Back to Items" />
+
       <nav className="text-sm text-[#6b6055]" aria-label="Breadcrumb">
         <ol className="flex flex-wrap items-center gap-1">
           <li>
@@ -69,6 +71,7 @@ export default async function ItemDetailPage({ params }: PageProps) {
                 src={`/pokemoncontent/${item.sprite}`}
                 alt={item.name}
                 className="h-20 w-20 object-contain"
+                imgStyle={{ imageRendering: "pixelated" }}
               />
             ) : (
               <span className="text-4xl text-gray-200">?</span>
@@ -156,9 +159,6 @@ export default async function ItemDetailPage({ params }: PageProps) {
         </section>
       )}
 
-      <div className="flex gap-3">
-        <BackLink href="/pokemon/items" label="Back to Items" />
-      </div>
     </main>
   );
 }

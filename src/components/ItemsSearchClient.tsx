@@ -80,6 +80,7 @@ export function ItemsSearchClient({ items }: ItemsSearchClientProps) {
                   src={`/pokemoncontent/${item.sprite}`}
                   alt={item.name}
                   className="h-10 w-10 object-contain"
+                  imgStyle={{ imageRendering: "pixelated" }}
                 />
               ) : (
                 <span className="text-xl text-gray-300">?</span>

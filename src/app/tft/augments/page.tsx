@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BackLink } from "@/components/BackLink";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { tftData } from "@/lib/tft/data";
+import { stripTFTTokens } from "@/lib/tft/utils";
 
 const TIER_LABELS: Record<number, string> = {
   1: "Silver",
@@ -18,9 +19,6 @@ const TIER_STYLES: Record<number, string> = {
   2: "bg-[#1c1208] text-[#d4933a]",
   3: "bg-[#1c0e2a] text-[#c084fc]",
 };
-
-const stripTokens = (html: string) =>
-  html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
 
 type Augment = {
   id?: string;
@@ -160,7 +158,7 @@ export default function TftAugmentsPage() {
                     <div
                       className="mt-1 text-xs leading-relaxed text-[#6b6055]"
                       dangerouslySetInnerHTML={{
-                        __html: stripTokens(augment.description),
+                        __html: stripTFTTokens(augment.description),
                       }}
                     />
                   )}

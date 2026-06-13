@@ -5,11 +5,9 @@ import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 import type { TFTItemRecord } from "@/lib/tft/types";
+import { stripTFTTokens } from "@/lib/tft/utils";
 
 type FilterMode = "all" | "base" | "combined";
-
-const stripTokens = (html: string) =>
-  html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
 
 export function TFTItemsClient({
   items,
@@ -113,7 +111,7 @@ export function TFTItemsClient({
                     {item.description && (
                       <p
                         className="mt-1 text-xs leading-relaxed text-[#6b6055]"
-                        dangerouslySetInnerHTML={{ __html: stripTokens(item.description) }}
+                        dangerouslySetInnerHTML={{ __html: stripTFTTokens(item.description) }}
                       />
                     )}
                   </div>

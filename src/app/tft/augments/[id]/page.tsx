@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { BackLink } from "@/components/BackLink";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { tftData } from "@/lib/tft/data";
+import { stripTFTTokens } from "@/lib/tft/utils";
 
 type TFTAugmentRecord = {
   id: string;
@@ -32,13 +33,6 @@ const TIER_STYLES: Record<number, string> = {
   3: "bg-purple-100 text-purple-700",
 };
 
-const stripTokens = (value: string) =>
-  value
-    .replace(/@\w+@/g, "")
-    .replace(/\(\s*\)/g, "")
-    .replace(/\s{2,}/g, " ")
-    .trim();
-
 export async function generateStaticParams() {
   return (tftData.augments ?? []).map((a) => ({ id: a.id }));
 }
@@ -58,12 +52,9 @@ export async function generateMetadata({
   }
 
   const tierLabel = augment.tier ? TIER_LABELS[augment.tier] : null;
-  const description = `${augment.name}${tierLabel ? ` is a ${tierLabel} TFT augment.` : " is a TFT augment."} ${augment.description}`
-    .replace(/@\w+@/g, "")
-    .replace(/\(\s*\)/g, "")
-    .replace(/\s{2,}/g, " ")
-    .trim()
-    .slice(0, 155);
+  const description = stripTFTTokens(
+    `${augment.name}${tierLabel ? ` is a ${tierLabel} TFT augment.` : " is a TFT augment."} ${augment.description}`
+  ).slice(0, 155);
 
   return {
     title: `${augment.name} - TFT - OmniWiki`,
@@ -149,7 +140,7 @@ export default async function AugmentDetailPage({ params }: PageProps) {
 
         <div
           className="mt-4 text-sm text-[#6b6055]"
-          dangerouslySetInnerHTML={{ __html: stripTokens(augment.description) }}
+          dangerouslySetInnerHTML={{ __html: stripTFTTokens(augment.description) }}
         />
       </section>
 

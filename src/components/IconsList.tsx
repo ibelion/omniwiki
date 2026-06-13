@@ -9,23 +9,43 @@ const PAGE_SIZE = 100;
 export function IconsList({ icons }: { icons: SummonerIconRecord[] }) {
   const [search, setSearch] = useState("");
   const [legacyOnly, setLegacyOnly] = useState(false);
+  const [yearFilter, setYearFilter] = useState<number | null | "unknown">(null);
   const [page, setPage] = useState(0);
 
   const legacyCount = useMemo(() => icons.filter((i) => i.isLegacy).length, [icons]);
+
+  const years = useMemo(() => {
+    const set = new Set<number>();
+    for (const icon of icons) {
+      if (icon.year != null) set.add(icon.year);
+    }
+    return [...set].sort((a, b) => b - a);
+  }, [icons]);
+
+  const unknownYearCount = useMemo(() => icons.filter((i) => i.year == null).length, [icons]);
 
   const filtered = useMemo(
     () =>
       icons
         .filter((icon) => {
           if (legacyOnly && !icon.isLegacy) return false;
+          if (yearFilter === "unknown" && icon.year != null) return false;
+          if (typeof yearFilter === "number" && icon.year !== yearFilter) return false;
           if (!search) return true;
           return (
             icon.title.toLowerCase().includes(search.toLowerCase()) ||
             icon.id.toString().includes(search)
           );
         })
-        .sort((a, b) => a.title.localeCompare(b.title)),
-    [icons, search, legacyOnly]
+        .sort((a, b) => {
+          if (a.year !== b.year) {
+            if (a.year == null) return 1;
+            if (b.year == null) return -1;
+            return b.year - a.year;
+          }
+          return a.title.localeCompare(b.title);
+        }),
+    [icons, search, legacyOnly, yearFilter]
   );
 
   const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
@@ -38,6 +58,11 @@ export function IconsList({ icons }: { icons: SummonerIconRecord[] }) {
 
   function handleLegacyToggle() {
     setLegacyOnly((v) => !v);
+    setPage(0);
+  }
+
+  function handleYearChange(y: number | null | "unknown") {
+    setYearFilter(y);
     setPage(0);
   }
 
@@ -62,7 +87,7 @@ export function IconsList({ icons }: { icons: SummonerIconRecord[] }) {
             className="w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1A5228] focus:outline-none focus:ring-2 focus:ring-[#0e1c14]"
           />
         </div>
-        <div className="mt-3 flex items-center gap-2 text-sm text-[#6b6055]">
+        <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-[#6b6055]">
           <button
             onClick={() => { setLegacyOnly(false); setPage(0); }}
             className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
@@ -84,6 +109,46 @@ export function IconsList({ icons }: { icons: SummonerIconRecord[] }) {
             Legacy only ({legacyCount})
           </button>
         </div>
+
+        {years.length > 0 && (
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              onClick={() => handleYearChange(null)}
+              className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+                yearFilter === null
+                  ? "bg-[#1A5228] text-white"
+                  : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
+              }`}
+            >
+              All years
+            </button>
+            {years.map((y) => (
+              <button
+                key={y}
+                onClick={() => handleYearChange(yearFilter === y ? null : y)}
+                className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+                  yearFilter === y
+                    ? "bg-[#1A5228] text-white"
+                    : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
+                }`}
+              >
+                {y}
+              </button>
+            ))}
+            {unknownYearCount > 0 && (
+              <button
+                onClick={() => handleYearChange(yearFilter === "unknown" ? null : "unknown")}
+                className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+                  yearFilter === "unknown"
+                    ? "bg-[#1A5228] text-white"
+                    : "bg-[#1c1c22] text-[#6b6055] hover:bg-[#252528]"
+                }`}
+              >
+                Unknown year ({unknownYearCount})
+              </button>
+            )}
+          </div>
+        )}
       </header>
 
       <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">

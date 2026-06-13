@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { BackLink } from '@/components/BackLink';
 import { ImageWithFallback } from '@/components/ImageWithFallback';
 import { tftData } from '@/lib/tft/data';
+import { stripTFTTokens } from '@/lib/tft/utils';
 
 type PageProps = { params: Promise<{ id: string }> };
 
@@ -18,7 +19,6 @@ type TFTItemRecord = {
 
 const isLocalizationKey = (s: string) => /^[A-Za-z][A-Za-z0-9]*(_[A-Za-z0-9]+){2,}$/.test(s.trim());
 const isResolved = (item: TFTItemRecord) => item.name.trim() !== '' && !isLocalizationKey(item.name) && !isLocalizationKey(item.description);
-const stripTokens = (html: string) => html.replace(/@\w+@/g, '').replace(/\(\s*\)/g, '').replace(/\s{2,}/g, ' ').trim();
 
 export const dynamicParams = false;
 
@@ -42,12 +42,9 @@ export async function generateMetadata({
 
   const isCombined =
     Array.isArray(item.composition) && item.composition.length === 2;
-  const description = `${item.name} is a ${isCombined ? 'combined' : 'base'} TFT item. ${item.description}`
-    .replace(/@\w+@/g, '')
-    .replace(/\(\s*\)/g, '')
-    .replace(/\s{2,}/g, ' ')
-    .trim()
-    .slice(0, 155);
+  const description = stripTFTTokens(
+    `${item.name} is a ${isCombined ? 'combined' : 'base'} TFT item. ${item.description}`
+  ).slice(0, 155);
 
   return {
     title: `${item.name} - TFT - OmniWiki`,
@@ -121,7 +118,7 @@ export default async function TFTItemDetailPage({ params }: PageProps) {
             </div>
             <div
               className="mt-3 text-sm text-[#6b6055]"
-              dangerouslySetInnerHTML={{ __html: stripTokens(item.description) }}
+              dangerouslySetInnerHTML={{ __html: stripTFTTokens(item.description) }}
             />
           </div>
         </div>

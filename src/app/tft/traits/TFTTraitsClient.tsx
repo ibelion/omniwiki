@@ -5,16 +5,7 @@ import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 import type { TFTTraitRecord } from "@/lib/tft/types";
-
-const TIER_STYLES: Record<number, string> = {
-  1: "bg-[#1c1c22] text-[#9a8c7e]",
-  2: "bg-[#12122a] text-[#8892f0]",
-  3: "bg-[#1c0e2a] text-[#c084fc]",
-  4: "bg-[#1c1208] text-[#d4933a]",
-};
-
-const stripTokens = (html: string) =>
-  html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
+import { stripTFTTokens, TFT_TIER_STYLES } from "@/lib/tft/utils";
 
 const toSlug = (name: string) => name.toLowerCase().replace(/\s+/g, "-");
 
@@ -86,7 +77,7 @@ export function TFTTraitsClient({
                 {trait.description && (
                   <p
                     className="mt-0.5 line-clamp-2 text-xs text-[#6b6055]"
-                    dangerouslySetInnerHTML={{ __html: stripTokens(trait.description) }}
+                    dangerouslySetInnerHTML={{ __html: stripTFTTokens(trait.description) }}
                   />
                 )}
                 {trait.tiers.length > 0 && (
@@ -94,7 +85,7 @@ export function TFTTraitsClient({
                     {trait.tiers.map((tier, idx) => (
                       <span
                         key={idx}
-                        className={`rounded-full px-2 py-0.5 text-xs font-medium ${TIER_STYLES[tier.style] ?? "bg-[#1c1c22] text-[#6b6055]"}`}
+                        className={`rounded-full px-2 py-0.5 text-xs font-medium ${TFT_TIER_STYLES[tier.style] ?? "bg-[#1c1c22] text-[#6b6055]"}`}
                       >
                         {tier.minUnits}
                         {tier.minUnits !== tier.maxUnits && tier.maxUnits < 9999

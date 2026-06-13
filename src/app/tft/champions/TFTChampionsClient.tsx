@@ -5,14 +5,7 @@ import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
 import type { TFTChampionRecord } from "@/lib/tft/types";
-
-const COST_COLORS: Record<number, string> = {
-  1: "bg-[#1c1c22] text-[#9a8c7e]",
-  2: "bg-[#0e1c14] text-[#4caf72]",
-  3: "bg-[#12122a] text-[#8892f0]",
-  4: "bg-[#1c0e2a] text-[#c084fc]",
-  5: "bg-[#1c1208] text-[#d4933a]",
-};
+import { TFT_COST_COLORS } from "@/lib/tft/utils";
 
 const toSlug = (name: string) => name.toLowerCase().replace(/\s+/g, "-");
 
@@ -25,7 +18,11 @@ export function TFTChampionsClient({
 }) {
   const [search, setSearch] = useState("");
   const [costFilter, setCostFilter] = useState<number | null>(null);
-  const [traitFilter, setTraitFilter] = useState("");
+  const [traitFilter, setTraitFilter] = useState<string | null>(null);
+
+  const allTraits = Array.from(
+    new Set(champions.flatMap((c) => c.traits))
+  ).sort();
 
   const filtered = champions
     .filter((c) => {
@@ -33,8 +30,8 @@ export function TFTChampionsClient({
         search === "" || c.name.toLowerCase().includes(search.toLowerCase());
       const matchCost = costFilter === null || c.cost === costFilter;
       const matchTrait =
-        traitFilter === "" ||
-        c.traits.some((t) => t.toLowerCase().includes(traitFilter.toLowerCase()));
+        traitFilter === null ||
+        c.traits.includes(traitFilter);
       return matchSearch && matchCost && matchTrait;
     })
     .sort((a, b) => a.cost - b.cost || a.name.localeCompare(b.name));
@@ -71,21 +68,30 @@ export function TFTChampionsClient({
             </button>
           ))}
         </div>
-        <div className="mt-3 flex gap-2">
+        <div className="mt-3">
           <input
             type="text"
             placeholder="Search champions..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="flex-1 rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1a4050] focus:outline-none focus:ring-2 focus:ring-[#0d181c]"
+            className="w-full rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1a4050] focus:outline-none focus:ring-2 focus:ring-[#0d181c]"
           />
-          <input
-            type="text"
-            placeholder="Filter by trait..."
-            value={traitFilter}
-            onChange={(e) => setTraitFilter(e.target.value)}
-            className="w-40 rounded-lg border border-[#2c2c32] px-4 py-2 text-sm focus:border-[#1a4050] focus:outline-none focus:ring-2 focus:ring-[#0d181c]"
-          />
+        </div>
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {allTraits.map((trait) => (
+            <button
+              key={trait}
+              type="button"
+              onClick={() => setTraitFilter(traitFilter === trait ? null : trait)}
+              className={`rounded-full border px-2.5 py-1 text-xs font-medium transition ${
+                traitFilter === trait
+                  ? "border-[#1a4050] bg-[#0d181c] text-[#4ab8c8]"
+                  : "border-[#1c1c22] bg-[#0c0c0e] text-[#6b6055] hover:border-[#1a3038] hover:text-[#4ab8c8]"
+              }`}
+            >
+              {trait}
+            </button>
+          ))}
         </div>
       </header>
 
@@ -112,7 +118,7 @@ export function TFTChampionsClient({
                     {champ.name}
                   </h3>
                   <span
-                    className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${COST_COLORS[champ.cost] ?? "bg-[#1c1c22] text-[#9a8c7e]"}`}
+                    className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${TFT_COST_COLORS[champ.cost] ?? "bg-[#1c1c22] text-[#9a8c7e]"}`}
                   >
                     {champ.cost}g
                   </span>

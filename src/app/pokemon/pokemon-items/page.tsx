@@ -13,8 +13,16 @@ const getGenerationWeight = (generation: string) => {
 };
 
 export default function PokemonItemsMappingPage() {
-  const pokemonMap = new Map(pokemonData.pokemon.map(p => [p.slug, { id: p.id, generation: p.generation }]));
-  
+  const pokemonMap = new Map(pokemonData.pokemon.map(p => [p.slug, { id: p.id, generation: p.generation, name: p.name }]));
+  const itemNameMap: Record<string, string> = {};
+  for (const item of pokemonData.items) {
+    itemNameMap[item.slug] = item.name;
+  }
+  const pokemonNameMap: Record<string, string> = {};
+  for (const p of pokemonData.pokemon) {
+    pokemonNameMap[p.slug] = p.name;
+  }
+
   // Group by pokemon + item, aggregate versions
   const grouped = new Map<string, { pokemonSlug: string; itemSlug: string; rarity: number | null; versions: string[] }>();
   for (const entry of pokemonData.pokemonItems ?? []) {
@@ -32,7 +40,7 @@ export default function PokemonItemsMappingPage() {
       group.versions.push(entry.version);
     }
   }
-  
+
   const pokemonItems = Array.from(grouped.values()).sort((a, b) => {
     const aData = pokemonMap.get(a.pokemonSlug);
     const bData = pokemonMap.get(b.pokemonSlug);
@@ -49,7 +57,7 @@ export default function PokemonItemsMappingPage() {
       <div className="flex items-center justify-between">
         <BackLink href="/pokemon" label="Back to Pokémon" />
       </div>
-      <PokemonItemsSearchClient items={pokemonItems} />
+      <PokemonItemsSearchClient items={pokemonItems} pokemonNames={pokemonNameMap} itemNames={itemNameMap} />
     </main>
   );
 }

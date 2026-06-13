@@ -16,6 +16,7 @@ type ImageWithFallbackProps = {
   src: string;
   alt: string;
   className?: string;
+  imgStyle?: React.CSSProperties;
   fallback?: string;
   loading?: "lazy" | "eager";
 };
@@ -24,6 +25,7 @@ export const ImageWithFallback = ({
   src,
   alt,
   className,
+  imgStyle,
   fallback = "/globe.svg",
   loading,
 }: ImageWithFallbackProps) => {
@@ -45,6 +47,7 @@ export const ImageWithFallback = ({
         loading={loading}
         onError={handleError}
         className="absolute inset-0 h-full w-full object-contain"
+        style={imgStyle}
       />
     </div>
   );

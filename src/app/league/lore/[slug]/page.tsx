@@ -98,7 +98,7 @@ export default async function LoreDetailPage({ params }: PageProps) {
             <div className="flex flex-wrap items-center gap-2">
               {faction && (
                 <Link
-                  href="/league/factions"
+                  href={`/league/factions/${faction.slug}`}
                   className="rounded-full bg-[#0e1c14] px-3 py-1 text-sm font-semibold text-[#4caf72] transition hover:bg-[#0e1c14]"
                 >
                   {faction.name}

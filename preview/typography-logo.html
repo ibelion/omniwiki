@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OmniWiki — Logo Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:  #0c0c0e;
+      --black2: #141418;
+      --black3: #1c1c22;
+      --gold:   #B87D20;
+      --gold-l: #D49430;
+      --green:  #0F3319;
+      --green-m:#1A5228;
+      --green-l:#2A7A3E;
+      --cream:  #F2E8D5;
+      --muted:  #6b6055;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+      padding: 56px 40px 100px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--black3);
+      padding-bottom: 10px;
+      margin: 52px 0 28px;
+    }
+
+    h2:first-of-type { margin-top: 0; }
+
+    /* ─── THE LOGO MARK ─── */
+    /* reusable via inline SVG */
+
+    /* ─── SIZE ROW ─── */
+    .size-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 32px;
+      flex-wrap: wrap;
+      background: var(--black2);
+      border: 1px solid var(--black3);
+      border-radius: 14px;
+      padding: 36px;
+    }
+
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .size-item span {
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ─── LOGO + WORDMARK COMBOS ─── */
+    .combo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    .combo-card {
+      background: var(--black2);
+      border: 1px solid var(--black3);
+      border-radius: 14px;
+      padding: 32px 24px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .combo-card .label {
+      font-size: 10px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      align-self: flex-start;
+    }
+
+    .combo-card .note {
+      font-size: 11px;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* wordmark styles */
+    .wm-a { /* icon left, name right stacked */
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .wm-a .text .top {
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--cream);
+      letter-spacing: -.02em;
+      line-height: 1;
+    }
+    .wm-a .text .bottom {
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: .28em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .wm-b { /* icon above, name below centered */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .wm-b .top {
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--cream);
+      letter-spacing: -.02em;
+      line-height: 1;
+    }
+    .wm-b .bottom {
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: .3em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .wm-c { /* icon + OMNI gold + WIKI cream inline */
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .wm-c .text {
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      line-height: 1;
+    }
+    .wm-c .text .g { color: var(--gold); }
+    .wm-c .text .w { color: var(--cream); }
+
+    /* ─── NAV PREVIEWS ─── */
+    .nav-preview {
+      background: var(--black2);
+      border: 1px solid var(--black3);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 14px;
+    }
+
+    .nav-bar {
+      padding: 14px 24px;
+      background: var(--black);
+      border-bottom: 1px solid var(--black3);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2px;
+      font-family: 'Sora', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .nav-links span {
+      padding: 6px 11px;
+      border-radius: 6px;
+      color: var(--muted);
+    }
+
+    .nav-links span.active {
+      color: var(--cream);
+      background: var(--black3);
+    }
+
+    .nav-links .cmd {
+      background: var(--green-m);
+      color: var(--cream);
+      font-size: 11px;
+    }
+
+    .nav-body {
+      padding: 40px 32px;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Sora', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .hero-h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 1.04;
+      color: var(--cream);
+      letter-spacing: -.03em;
+      margin-bottom: 14px;
+    }
+
+    .hero-h1 .g { color: var(--gold); }
+
+    .hero-body {
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 480px;
+      margin-bottom: 24px;
+    }
+
+    .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--black);
+      font-family: 'Sora', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 9px 20px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--cream);
+      font-family: 'Sora', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 9px 20px;
+      border-radius: 8px;
+      border: 1px solid var(--black3);
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .stat-box {
+      background: var(--black3);
+      border: 1px solid rgba(255,255,255,.04);
+      border-radius: 10px;
+      padding: 14px 12px;
+    }
+
+    .stat-box .sv {
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: -.02em;
+    }
+
+    .stat-box .sl {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* ─── UNIVERSE CARD STRIP ─── */
+    .universe-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 0 32px 32px;
+    }
+
+    .u-card {
+      border-radius: 10px;
+      padding: 16px;
+      border: 1px solid rgba(255,255,255,.06);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .u-card .u-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--cream);
+    }
+
+    .u-card .u-count {
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: -.02em;
+    }
+
+    .u-card .u-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    .u-card.pokemon { background: #12122a; border-color: #22224a; }
+    .u-card.league  { background: #0e1c14; border-color: #1c3622; }
+    .u-card.tft     { background: #0d181c; border-color: #1a3038; }
+    .u-card.op      { background: #1c1208; border-color: #3a2410; }
+
+    /* ─── MOBILE NAV ─── */
+    .mobile-frame {
+      width: 360px;
+      background: var(--black);
+      border: 1px solid var(--black3);
+      border-radius: 24px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .mobile-nav {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--black3);
+    }
+
+    .mobile-hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .mobile-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--muted);
+      border-radius: 2px;
+    }
+
+    .mobile-body {
+      padding: 28px 20px;
+    }
+
+    .mobile-h1 {
+      font-family: 'Sora', sans-serif;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.05;
+      color: var(--cream);
+      letter-spacing: -.03em;
+      margin-bottom: 10px;
+    }
+
+    .mobile-h1 .g { color: var(--gold); }
+
+    .mobile-body-text {
+      font-family: 'Sora', sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .mobile-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .mobile-stat {
+      background: var(--black2);
+      border: 1px solid var(--black3);
+      border-radius: 8px;
+      padding: 12px;
+    }
+
+    .mobile-stat .sv {
+      font-family: 'Sora', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--gold);
+    }
+
+    .mobile-stat .sl {
+      font-family: 'Inter', sans-serif;
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    /* ─── ON LIGHT BG ─── */
+    .light-strip {
+      background: #F2E8D5;
+      border-radius: 14px;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    /* ─── LOADING SCREEN ─── */
+    .splash {
+      background: var(--black);
+      border: 1px solid var(--black3);
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 40px;
+      gap: 20px;
+    }
+
+    .splash .splash-name {
+      font-family: 'Sora', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--cream);
+      letter-spacing: -.02em;
+    }
+
+    .splash .splash-name .g { color: var(--gold); }
+
+    .splash .splash-tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .splash .loading-bar {
+      width: 120px;
+      height: 2px;
+      background: var(--black3);
+      border-radius: 2px;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+
+    .splash .loading-fill {
+      width: 60%;
+      height: 100%;
+      background: var(--gold);
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── MARK AT ALL SIZES ── -->
+  <h2>The Mark — All Sizes</h2>
+  <div class="size-row">
+    <div class="size-item">
+      <!-- 128px -->
+      <svg width="128" height="128" viewBox="0 0 80 80" fill="none">
+        <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+        <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+        <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+      </svg>
+      <span>128px</span>
+    </div>
+    <div class="size-item">
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+        <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+        <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+        <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+      </svg>
+      <span>80px</span>
+    </div>
+    <div class="size-item">
+      <svg width="48" height="48" viewBox="0 0 80 80" fill="none">
+        <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+        <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+        <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+      </svg>
+      <span>48px</span>
+    </div>
+    <div class="size-item">
+      <svg width="32" height="32" viewBox="0 0 80 80" fill="none">
+        <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+        <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+        <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+      </svg>
+      <span>32px</span>
+    </div>
+    <div class="size-item">
+      <svg width="24" height="24" viewBox="0 0 80 80" fill="none">
+        <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+        <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+        <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+      </svg>
+      <span>24px</span>
+    </div>
+    <div class="size-item">
+      <svg width="16" height="16" viewBox="0 0 80 80" fill="none">
+        <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+        <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+        <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+      </svg>
+      <span>16px favicon</span>
+    </div>
+  </div>
+
+  <!-- ── WORDMARK COMBOS ── -->
+  <h2>Logo + Wordmark Combinations</h2>
+  <div class="combo-grid">
+
+    <div class="combo-card">
+      <span class="label">Icon Left — Stacked</span>
+      <div class="wm-a">
+        <svg width="40" height="40" viewBox="0 0 80 80" fill="none">
+          <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+          <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+          <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+        </svg>
+        <div class="text">
+          <div class="top">OmniWiki</div>
+          <div class="bottom">Multiverse Reference</div>
+        </div>
+      </div>
+      <p class="note">Default nav lockup. Icon + name + tagline. Clean at 36–40px icon height.</p>
+    </div>
+
+    <div class="combo-card">
+      <span class="label">Icon Above — Centered</span>
+      <div class="wm-b">
+        <svg width="56" height="56" viewBox="0 0 80 80" fill="none">
+          <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+          <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+          <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+        </svg>
+        <div class="top">OmniWiki</div>
+        <div class="bottom">Multiverse Reference</div>
+      </div>
+      <p class="note">Centered stacked version. Good for splash screens, loading states, about pages.</p>
+    </div>
+
+    <div class="combo-card">
+      <span class="label">Gold/Cream Split Name</span>
+      <div class="wm-c">
+        <svg width="40" height="40" viewBox="0 0 80 80" fill="none">
+          <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+          <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+          <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+        </svg>
+        <div class="text">
+          <span class="g">Omni</span><span class="w">Wiki</span>
+        </div>
+      </div>
+      <p class="note">Omni in gold, Wiki in cream. The mark mirrors the split — gold body, green ring.</p>
+    </div>
+
+    <div class="combo-card">
+      <span class="label">Mark Only — No Text</span>
+      <svg width="64" height="64" viewBox="0 0 80 80" fill="none">
+        <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+        <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+        <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+      </svg>
+      <p class="note">Standalone mark. Works as favicon, app icon, tab icon, and social avatar.</p>
+    </div>
+
+    <div class="combo-card">
+      <span class="label">Compact — Small Icon</span>
+      <div class="wm-a">
+        <svg width="28" height="28" viewBox="0 0 80 80" fill="none">
+          <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+          <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+          <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+        </svg>
+        <div class="text">
+          <div class="top" style="font-size:15px">OmniWiki</div>
+          <div class="bottom">Multiverse Reference</div>
+        </div>
+      </div>
+      <p class="note">Tight compact version for dense nav bars or breadcrumb headers.</p>
+    </div>
+
+    <div class="combo-card">
+      <span class="label">Large Centered — Hero Use</span>
+      <div class="wm-b">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+          <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+          <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+        </svg>
+        <div class="top" style="font-size:28px">OmniWiki</div>
+        <div class="bottom" style="font-size:10px">Multiverse Reference</div>
+      </div>
+      <p class="note">Large centered version for above-the-fold hero or 404 / error screens.</p>
+    </div>
+
+  </div>
+
+  <!-- ── DESKTOP NAV IN CONTEXT ── -->
+  <h2>Desktop Nav — Full Page Context</h2>
+  <div class="nav-preview">
+    <div class="nav-bar">
+      <div style="display:flex;align-items:center;gap:12px">
+        <svg width="36" height="36" viewBox="0 0 80 80" fill="none">
+          <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+          <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+          <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+        </svg>
+        <div>
+          <div style="font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:var(--cream);letter-spacing:-.02em;line-height:1">OmniWiki</div>
+          <div style="font-family:'Inter',sans-serif;font-size:9px;font-weight:600;letter-spacing:.22em;color:var(--muted);text-transform:uppercase">Multiverse Reference</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <span class="active">Home</span>
+        <span>Pokemon</span>
+        <span>League</span>
+        <span>TFT</span>
+        <span>One Piece</span>
+        <span class="cmd">⌘K</span>
+      </div>
+    </div>
+    <div class="nav-body">
+      <div class="hero-eyebrow">OmniWiki — Multiverse Reference</div>
+      <div class="hero-h1">The <span class="g">Multiverse</span><br>Wiki</div>
+      <div class="hero-body">Browse living dossiers for Pokémon, League of Legends, Teamfight Tactics, and One Piece — fueled by live data and real scrapers.</div>
+      <div class="btn-row">
+        <button class="btn-primary">Browse Pokemon</button>
+        <button class="btn-ghost">Browse League</button>
+      </div>
+      <div class="stats-row">
+        <div class="stat-box"><div class="sv">1,568</div><div class="sl">Characters</div></div>
+        <div class="stat-box"><div class="sv">32,402</div><div class="sl">Quotes</div></div>
+        <div class="stat-box"><div class="sv">2,984</div><div class="sl">Items</div></div>
+        <div class="stat-box"><div class="sv">4</div><div class="sl">Universes</div></div>
+      </div>
+    </div>
+    <div class="universe-strip">
+      <div class="u-card pokemon">
+        <div class="u-name">Pokemon</div>
+        <div class="u-count">1,328</div>
+        <div class="u-label">Pokémon</div>
+      </div>
+      <div class="u-card league">
+        <div class="u-name">League</div>
+        <div class="u-count">172</div>
+        <div class="u-label">Champions</div>
+      </div>
+      <div class="u-card tft">
+        <div class="u-name">TFT</div>
+        <div class="u-count">Live</div>
+        <div class="u-label">Current Set</div>
+      </div>
+      <div class="u-card op">
+        <div class="u-name">One Piece</div>
+        <div class="u-count">Live</div>
+        <div class="u-label">Characters</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MOBILE ── -->
+  <h2>Mobile View</h2>
+  <div class="mobile-frame">
+    <div class="mobile-nav">
+      <div style="display:flex;align-items:center;gap:10px">
+        <svg width="28" height="28" viewBox="0 0 80 80" fill="none">
+          <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+          <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+          <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+        </svg>
+        <span style="font-family:'Sora',sans-serif;font-size:14px;font-weight:800;color:var(--cream);letter-spacing:-.02em">OmniWiki</span>
+      </div>
+      <div class="mobile-hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="mobile-body">
+      <div style="font-family:'Sora',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Multiverse Reference</div>
+      <div class="mobile-h1">The <span class="g">Multiverse</span> Wiki</div>
+      <div class="mobile-body-text">Pokémon, League, TFT, and One Piece — all in one place.</div>
+      <div class="mobile-stats">
+        <div class="mobile-stat"><div class="sv">1,568</div><div class="sl">Characters</div></div>
+        <div class="mobile-stat"><div class="sv">32k</div><div class="sl">Quotes</div></div>
+        <div class="mobile-stat"><div class="sv">2,984</div><div class="sl">Items</div></div>
+        <div class="mobile-stat"><div class="sv">4</div><div class="sl">Universes</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SPLASH / LOADING ── -->
+  <h2>Splash Screen / Loading State</h2>
+  <div class="splash">
+    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+      <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+      <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+      <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+    </svg>
+    <div class="splash-name">Omni<span class="g">Wiki</span></div>
+    <div class="splash-tagline">Loading the Multiverse</div>
+    <div class="loading-bar"><div class="loading-fill"></div></div>
+  </div>
+
+  <!-- ── ON LIGHT BG ── -->
+  <h2>On a Light Background</h2>
+  <div class="light-strip">
+    <svg width="64" height="64" viewBox="0 0 80 80" fill="none">
+      <rect x="8" y="8" width="64" height="64" rx="6" transform="rotate(45 40 40)" fill="#B87D20"/>
+      <circle cx="40" cy="40" r="21" stroke="#1A5228" stroke-width="7" fill="none"/>
+      <text x="40" y="47" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="800" fill="#0c0c0e">W</text>
+    </svg>
+    <div>
+      <div style="font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:#0c0c0e;letter-spacing:-.02em">OmniWiki</div>
+      <div style="font-family:'Inter',sans-serif;font-size:10px;font-weight:600;letter-spacing:.25em;color:#6b5a40;text-transform:uppercase">Multiverse Reference</div>
+    </div>
+    <div style="font-family:'Inter',sans-serif;font-size:12px;color:#6b5a40;max-width:280px;line-height:1.6">The mark holds well on cream/light backgrounds too — the gold diamond and green ring both read clearly without needing to invert anything.</div>
+  </div>
+
+</body>
+</html>

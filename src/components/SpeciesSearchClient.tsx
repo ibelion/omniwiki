@@ -119,9 +119,11 @@ export function SpeciesSearchClient({ groups, spritesMap }: SpeciesSearchClientP
                         {group.entries.length} generation
                         {group.entries.length !== 1 ? "s" : ""}
                       </p>
-                      <h2 className="text-xl font-semibold text-[#F2E8D5]">
-                        {rep.name}
-                      </h2>
+                      <Link href={`/pokemon/${rep.slug}`} className="group/name">
+                        <h2 className="text-xl font-semibold text-[#F2E8D5] group-hover/name:text-[#8892f0] transition-colors">
+                          {rep.name}
+                        </h2>
+                      </Link>
                     </div>
                     <div className="flex flex-wrap gap-1.5">
                       {rep.isLegendary && (
@@ -139,13 +141,6 @@ export function SpeciesSearchClient({ groups, spritesMap }: SpeciesSearchClientP
                           Baby
                         </span>
                       )}
-                      <Link
-                        href={`/pokemon/${rep.slug}`}
-                        className="rounded-full border border-indigo-100 bg-[#12122a] px-2 py-0.5 text-xs font-semibold text-[#8892f0] transition hover:bg-[#12122a]"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        Pokédex →
-                      </Link>
                     </div>
                   </div>
                   <div className="mt-1 flex flex-wrap gap-3 text-xs text-[#6b6055]">

@@ -14,6 +14,15 @@ const getGenerationWeight = (generation: string) => {
 
 export default function PokemonTypesMappingPage() {
   const pokemonMap = new Map(pokemonData.pokemon.map(p => [p.slug, { id: p.id, generation: p.generation }]));
+  const pokemonNameMap: Record<string, string> = {};
+  for (const p of pokemonData.pokemon) {
+    pokemonNameMap[p.slug] = p.name;
+  }
+  const typeNameMap: Record<string, string> = {};
+  for (const t of pokemonData.types) {
+    typeNameMap[t.slug] = t.name;
+  }
+
   const pokemonTypes = [...(pokemonData.pokemonTypes ?? [])].sort((a, b) => {
     const aData = pokemonMap.get(a.pokemonSlug);
     const bData = pokemonMap.get(b.pokemonSlug);
@@ -30,7 +39,7 @@ export default function PokemonTypesMappingPage() {
       <div className="flex items-center justify-between">
         <BackLink href="/pokemon" label="Back to Pokémon" />
       </div>
-      <PokemonTypesSearchClient types={pokemonTypes} />
+      <PokemonTypesSearchClient types={pokemonTypes} pokemonNames={pokemonNameMap} typeNames={typeNameMap} />
     </main>
   );
 }

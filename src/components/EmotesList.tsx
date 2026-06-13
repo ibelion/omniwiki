@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { EmoteRecord } from "@/lib/league/types";
 
@@ -113,35 +114,38 @@ export function EmotesList({ emotes, champions }: Props) {
               .filter(Boolean) as string[];
 
             return (
-              <article
+              <Link
                 key={emote.id}
-                className="flex items-center gap-3 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-3 text-sm"
+                href={`/league/emotes/${emote.id}`}
+                className="block"
               >
-                {imgSrc ? (
-                  <ImageWithFallback
-                    src={imgSrc}
-                    alt={emote.name || `Emote ${emote.id}`}
-                    className="h-12 w-12 flex-shrink-0 rounded-lg border border-[#1c1c22] object-contain"
-                  />
-                ) : (
-                  <div className="h-12 w-12 flex-shrink-0 rounded-lg border border-[#1c1c22] bg-[#252528]" />
-                )}
-                <div className="min-w-0">
-                  <p className="truncate text-sm font-semibold text-[#F2E8D5]">
-                    {emote.name || "Unnamed"}
-                  </p>
-                  {champNames.length > 0 && (
-                    <p className="truncate text-xs text-[#4caf72]">
-                      {champNames.join(", ")}
-                    </p>
+                <article className="flex items-center gap-3 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-3 text-sm transition hover:border-[#1c3622] hover:bg-[#0e1c14]">
+                  {imgSrc ? (
+                    <ImageWithFallback
+                      src={imgSrc}
+                      alt={emote.name || `Emote ${emote.id}`}
+                      className="h-12 w-12 flex-shrink-0 rounded-lg border border-[#1c1c22] object-contain"
+                    />
+                  ) : (
+                    <div className="h-12 w-12 flex-shrink-0 rounded-lg border border-[#1c1c22] bg-[#252528]" />
                   )}
-                  {emote.description && (
-                    <p className="truncate text-xs text-[#6b6055]">
-                      {emote.description}
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-semibold text-[#F2E8D5]">
+                      {emote.name || "Unnamed"}
                     </p>
-                  )}
-                </div>
-              </article>
+                    {champNames.length > 0 && (
+                      <p className="truncate text-xs text-[#4caf72]">
+                        {champNames.join(", ")}
+                      </p>
+                    )}
+                    {emote.description && (
+                      <p className="truncate text-xs text-[#6b6055]">
+                        {emote.description}
+                      </p>
+                    )}
+                  </div>
+                </article>
+              </Link>
             );
           })}
         </div>

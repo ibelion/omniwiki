@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 interface PokemonType {
   pokemonSlug: string;
@@ -10,16 +11,25 @@ interface PokemonType {
 
 interface PokemonTypesSearchClientProps {
   types: PokemonType[];
+  pokemonNames: Record<string, string>;
+  typeNames: Record<string, string>;
 }
 
-export function PokemonTypesSearchClient({ types }: PokemonTypesSearchClientProps) {
+export function PokemonTypesSearchClient({ types, pokemonNames, typeNames }: PokemonTypesSearchClientProps) {
   const [search, setSearch] = useState("");
-  
-  const filtered = types.filter((entry) =>
-    search === "" ||
-    entry.pokemonSlug.toLowerCase().includes(search.toLowerCase()) ||
-    entry.typeSlug.toLowerCase().includes(search.toLowerCase())
-  );
+
+  const filtered = types.filter((entry) => {
+    if (search === "") return true;
+    const q = search.toLowerCase();
+    const pokemonName = (pokemonNames[entry.pokemonSlug] ?? entry.pokemonSlug).toLowerCase();
+    const typeName = (typeNames[entry.typeSlug] ?? entry.typeSlug).toLowerCase();
+    return (
+      pokemonName.includes(q) ||
+      entry.pokemonSlug.toLowerCase().includes(q) ||
+      typeName.includes(q) ||
+      entry.typeSlug.toLowerCase().includes(q)
+    );
+  });
 
   return (
     <>
@@ -31,8 +41,7 @@ export function PokemonTypesSearchClient({ types }: PokemonTypesSearchClientProp
           Pokémon Type Slots ({filtered.length})
         </h1>
         <p className="text-[#6b6055]">
-          Direct mapping from `pokemon_types.csv`. Useful for verifying type
-          slots and bridging to external systems.
+          Direct mapping from pokemon_types data. Useful for verifying type slots and bridging to external systems.
         </p>
         <input
           type="text"
@@ -43,19 +52,35 @@ export function PokemonTypesSearchClient({ types }: PokemonTypesSearchClientProp
         />
       </header>
       <section className="flex flex-col gap-3 text-sm text-[#d9cebe]">
-        {filtered.map((entry) => (
-          <article
-            key={`${entry.pokemonSlug}-${entry.slot}-${entry.typeSlug}`}
-            className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm"
-          >
-            <p className="text-xs uppercase text-[#6b6055]">
-              {entry.pokemonSlug}
-            </p>
-            <p>
-              Slot {entry.slot ?? "?"}: {entry.typeSlug}
-            </p>
-          </article>
-        ))}
+        {filtered.map((entry) => {
+          const pokemonName = pokemonNames[entry.pokemonSlug] ?? entry.pokemonSlug;
+          const typeName = typeNames[entry.typeSlug] ?? entry.typeSlug;
+          return (
+            <article
+              key={`${entry.pokemonSlug}-${entry.slot}-${entry.typeSlug}`}
+              className="rounded-xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm"
+            >
+              <Link
+                href={`/pokemon/${entry.pokemonSlug}`}
+                className="text-xs uppercase text-[#4ab8c8] hover:underline"
+              >
+                {pokemonName}
+              </Link>
+              <p>
+                <span className="text-[#6b6055]">Slot {entry.slot ?? "?"}: </span>
+                <Link
+                  href={`/pokemon/types/${entry.typeSlug}`}
+                  className="font-semibold text-[#F2E8D5] hover:text-[#4ab8c8] hover:underline"
+                >
+                  {typeName}
+                </Link>
+              </p>
+            </article>
+          );
+        })}
+        {filtered.length === 0 && (
+          <p className="text-sm text-[#6b6055]">No results match your search.</p>
+        )}
       </section>
     </>
   );

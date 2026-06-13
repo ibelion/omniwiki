@@ -4,21 +4,12 @@ import { notFound } from "next/navigation";
 import { tftData } from "@/lib/tft/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
+import { stripTFTTokens, TFT_COST_COLORS } from "@/lib/tft/utils";
+import { TFTStarStats } from "@/components/TFTStarStats";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
 const toSlug = (name: string) => name.toLowerCase().replace(/\s+/g, "-");
-
-const stripTokens = (html: string) =>
-  html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").replace(/\s{2,}/g, " ").trim();
-
-const COST_COLORS: Record<number, string> = {
-  1: "bg-[#1c1c22] text-[#9a8c7e]",
-  2: "bg-green-100 text-green-700",
-  3: "bg-blue-100 text-blue-700",
-  4: "bg-purple-100 text-purple-700",
-  5: "bg-yellow-100 text-yellow-700",
-};
 
 export const dynamicParams = false;
 
@@ -38,12 +29,9 @@ export async function generateMetadata({
     };
   }
 
-  const description = `${champion.name} is a ${champion.cost}-cost TFT champion with traits ${champion.traits.join(", ")}.`
-    .replace(/@\w+@/g, "")
-    .replace(/\(\s*\)/g, "")
-    .replace(/\s{2,}/g, " ")
-    .trim()
-    .slice(0, 155);
+  const description = stripTFTTokens(
+    `${champion.name} is a ${champion.cost}-cost TFT champion with traits ${champion.traits.join(", ")}.`
+  ).slice(0, 155);
 
   return {
     title: `${champion.name} - TFT - OmniWiki`,
@@ -76,23 +64,9 @@ export default async function TFTChampionPage({ params }: PageProps) {
     .sort((a, b) => a.name.localeCompare(b.name));
 
   const costCls = (cost: number) =>
-    COST_COLORS[cost] ?? "bg-[#1c1c22] text-[#9a8c7e]";
+    TFT_COST_COLORS[cost] ?? "bg-[#1c1c22] text-[#9a8c7e]";
 
   const stats = champion.stats;
-  const statRows = stats
-    ? [
-        { label: "HP", value: stats.hp != null ? Math.round(stats.hp).toString() : null },
-        { label: "Damage", value: stats.damage != null ? Math.round(stats.damage).toString() : null },
-        { label: "Armor", value: stats.armor != null ? Math.round(stats.armor).toString() : null },
-        { label: "Magic Resist", value: stats.magicResist != null ? Math.round(stats.magicResist).toString() : null },
-        { label: "Attack Speed", value: stats.attackSpeed != null ? stats.attackSpeed.toFixed(2) : null },
-        {
-          label: "Mana",
-          value: stats.mana != null ? `${Math.round(stats.initialMana ?? 0)} / ${Math.round(stats.mana)}` : null,
-        },
-        { label: "Range", value: stats.range != null ? Math.round(stats.range).toString() : null },
-      ].filter((s) => s.value !== null && s.value !== "0")
-    : [];
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
@@ -158,25 +132,13 @@ export default async function TFTChampionPage({ params }: PageProps) {
           {champion.ability.description && (
             <p
               className="text-sm leading-relaxed text-[#6b6055]"
-              dangerouslySetInnerHTML={{ __html: stripTokens(champion.ability.description) }}
+              dangerouslySetInnerHTML={{ __html: stripTFTTokens(champion.ability.description) }}
             />
           )}
         </section>
       )}
 
-      {statRows.length > 0 && (
-        <section className="flex flex-col gap-3 rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm">
-          <h2 className="text-lg font-semibold text-[#F2E8D5]">Base Stats</h2>
-          <div className="flex flex-wrap gap-2">
-            {statRows.map((s) => (
-              <div key={s.label} className="flex items-center gap-1.5 rounded-lg bg-[#0c0c0e] px-3 py-1.5 text-sm">
-                <span className="text-[#6b6055]">{s.label}</span>
-                <span className="font-semibold text-[#F2E8D5]">{s.value}</span>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+      {stats && <TFTStarStats stats={stats} />}
 
       {sharedTraitChamps.length > 0 && (
         <section className="flex flex-col gap-4">

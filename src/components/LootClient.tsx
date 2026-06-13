@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { BackLink } from "@/components/BackLink";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import type { LootItemRecord } from "@/lib/league/types";
@@ -118,36 +119,39 @@ export function LootClient({ lootItems }: Props) {
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {filtered.map((item) => (
-          <article
+          <Link
             key={item.id}
-            className="flex flex-col gap-2 rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm transition hover:border-[#1c3622] hover:shadow-md"
+            href={`/league/loot/${encodeURIComponent(item.id)}`}
+            className="block"
           >
-            {item.image && (
-              <ImageWithFallback
-                src={`/leaguecontent/${item.image}`}
-                alt={item.name}
-                className="h-14 w-14 rounded-xl border border-[#1c1c22] object-contain"
-              />
-            )}
-            <div>
-              <h3 className="text-sm font-semibold text-[#F2E8D5]">{item.name}</h3>
-              <div className="mt-0.5 flex flex-wrap gap-1">
-                {item.type && (
-                  <span className="rounded-full bg-[#0e1c14] px-2 py-0.5 text-xs text-[#4caf72]">
-                    {item.type}
-                  </span>
-                )}
-                {item.rarity && (
-                  <span className="rounded-full bg-[#12122a] px-2 py-0.5 text-xs text-[#8892f0]">
-                    {item.rarity}
-                  </span>
-                )}
+            <article className="flex flex-col gap-2 rounded-2xl border border-[#1c1c22] bg-[#141418] p-4 shadow-sm transition hover:border-[#1c3622] hover:shadow-md">
+              {item.image && (
+                <ImageWithFallback
+                  src={`/leaguecontent/${item.image}`}
+                  alt={item.name}
+                  className="h-14 w-14 rounded-xl border border-[#1c1c22] object-contain"
+                />
+              )}
+              <div>
+                <h3 className="text-sm font-semibold text-[#F2E8D5]">{item.name}</h3>
+                <div className="mt-0.5 flex flex-wrap gap-1">
+                  {item.type && (
+                    <span className="rounded-full bg-[#0e1c14] px-2 py-0.5 text-xs text-[#4caf72]">
+                      {item.type}
+                    </span>
+                  )}
+                  {item.rarity && (
+                    <span className="rounded-full bg-[#12122a] px-2 py-0.5 text-xs text-[#8892f0]">
+                      {item.rarity}
+                    </span>
+                  )}
+                </div>
               </div>
-            </div>
-            {item.description && (
-              <p className="text-xs text-[#6b6055]">{item.description}</p>
-            )}
-          </article>
+              {item.description && (
+                <p className="text-xs text-[#6b6055]">{item.description}</p>
+              )}
+            </article>
+          </Link>
         ))}
       </section>
     </main>

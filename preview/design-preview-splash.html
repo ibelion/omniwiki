@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OmniWiki — Splash Art Background Concepts</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #0c0c0e;
+  --surface:    #141418;
+  --border:     #1c1c22;
+  --border-2:   #2c2c32;
+  --text:       #F2E8D5;
+  --muted:      #6b6055;
+  --subtle:     #9a8c7e;
+  --gold:       #B87D20;
+  --gold-lt:    #d4a843;
+
+  --league:     #4caf72;
+  --league-dk:  #0e1c14;
+  --tft:        #4ab8c8;
+  --tft-dk:     #0d181c;
+  --pokemon:    #8892f0;
+  --pokemon-dk: #12122a;
+  --op:         #d4933a;
+  --op-dk:      #1c1208;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ── Util ── */
+.flex     { display: flex; }
+.col      { flex-direction: column; }
+.items-c  { align-items: center; }
+.justify-b{ justify-content: space-between; }
+.gap-2    { gap: 8px; }
+.gap-3    { gap: 12px; }
+.gap-4    { gap: 16px; }
+.flex-1   { flex: 1; }
+.shrink-0 { flex-shrink: 0; }
+
+.label {
+  display: inline-block;
+  font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--gold-lt);
+  background: rgba(184,125,32,.12);
+  border: 1px solid rgba(184,125,32,.25);
+  padding: 3px 10px; border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.gradient-gold {
+  background: linear-gradient(120deg, var(--text) 0%, var(--gold-lt) 55%, var(--text) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.gradient-league {
+  background: linear-gradient(120deg, var(--text) 10%, var(--league) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.gradient-tft {
+  background: linear-gradient(120deg, var(--text) 10%, var(--tft) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.gradient-pokemon {
+  background: linear-gradient(120deg, var(--text) 10%, var(--pokemon) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.gradient-op {
+  background: linear-gradient(120deg, var(--text) 10%, var(--op) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+/* pill */
+.pill { display: inline-flex; align-items: center; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+.pill-league  { background: var(--league-dk); color: var(--league); border: 1px solid rgba(76,175,114,.25); }
+.pill-tft     { background: var(--tft-dk);    color: var(--tft);    border: 1px solid rgba(74,184,200,.25); }
+.pill-pokemon { background: var(--pokemon-dk);color: var(--pokemon);border: 1px solid rgba(136,146,240,.25); }
+.pill-op      { background: var(--op-dk);     color: var(--op);     border: 1px solid rgba(212,147,58,.25); }
+.pill-gold    { background: rgba(184,125,32,.12); color: var(--gold-lt); border: 1px solid rgba(184,125,32,.28); }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; gap: 7px; padding: 10px 20px; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; transition: all .2s; }
+.btn-gold { background: linear-gradient(135deg, #6b4008, var(--gold)); color: var(--text); box-shadow: 0 2px 12px rgba(184,125,32,.28); }
+.btn-gold:hover { background: linear-gradient(135deg, #7d4c0a, #c98f28); box-shadow: 0 4px 22px rgba(184,125,32,.42); transform: translateY(-1px); }
+.btn-ghost { background: rgba(255,255,255,.06); color: var(--subtle); border: 1px solid var(--border); }
+.btn-ghost:hover { background: rgba(255,255,255,.09); color: var(--text); }
+
+/* stat bars */
+.stat-row  { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.stat-lbl  { font-size: 11px; color: var(--muted); width: 70px; text-align: right; flex-shrink: 0; }
+.stat-track{ flex: 1; height: 4px; background: rgba(255,255,255,.06); border-radius: 999px; overflow: hidden; }
+.stat-fill { height: 100%; border-radius: 999px; }
+.sf-league { background: linear-gradient(90deg, #1a5228, var(--league)); }
+.sf-tft    { background: linear-gradient(90deg, #0d3038, var(--tft)); }
+.sf-pokemon{ background: linear-gradient(90deg, #101028, var(--pokemon)); }
+.sf-op     { background: linear-gradient(90deg, #3d1e00, var(--op)); }
+
+/* search */
+.search-wrap { position: relative; }
+.search-icon { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); font-size: 13px; color: var(--muted); pointer-events: none; }
+.search-input {
+  width: 100%; padding: 10px 14px 10px 38px;
+  background: rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px; color: var(--text); font-size: 14px; outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.search-input::placeholder { color: var(--muted); }
+.search-input:focus { border-color: rgba(74,184,200,.4); box-shadow: 0 0 0 3px rgba(74,184,200,.08); }
+
+/* section wrapper */
+.section { padding: 56px 48px; border-bottom: 1px solid var(--border); max-width: 1200px; margin: 0 auto; }
+.section:last-child { border-bottom: none; }
+.section-title { font-size: 26px; font-weight: 800; margin-bottom: 6px; }
+.section-desc  { font-size: 14px; color: var(--muted); margin-bottom: 32px; }
+
+/* ══════════════════════════════════════════
+   HERO — ROTATING SPLASH ART
+══════════════════════════════════════════ */
+
+.hero-outer {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  height: 520px;
+  background: #080808;
+}
+
+/* Slide stack */
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.4s ease-in-out;
+  pointer-events: none;
+}
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Splash art fills the slide */
+.slide-img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transform: scale(1.04);
+  transition: transform 8s ease-out;
+  filter: brightness(0.55) saturate(1.1);
+}
+.slide.active .slide-img {
+  transform: scale(1.0);
+}
+
+/* Pokemon art: centered + large on gradient BG */
+.slide-pokemon-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 70% at 65% 40%, #1a1a40 0%, #0c0c1e 50%, #080810 100%);
+}
+.slide-pokemon-img {
+  position: absolute;
+  right: 4%;
+  bottom: 0;
+  height: 90%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 60px rgba(136,146,240,.25)) drop-shadow(0 0 20px rgba(136,146,240,.15));
+  transform: scale(1.04);
+  transition: transform 8s ease-out;
+}
+.slide.active .slide-pokemon-img {
+  transform: scale(1.0);
+}
+
+/* One Piece: stylized gradient art stand-in */
+.slide-op-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 50% 60% at 70% 35%, rgba(212,147,58,.22) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 25% 70%, rgba(180,60,40,.15) 0%, transparent 55%),
+    linear-gradient(135deg, #0e0704 0%, #140a03 40%, #0c0c0e 100%);
+}
+/* decorative lines suggesting movement/adventure */
+.slide-op-lines {
+  position: absolute;
+  inset: 0;
+  opacity: .04;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 28px,
+    rgba(212,147,58,.8) 28px,
+    rgba(212,147,58,.8) 29px
+  );
+}
+.slide-op-text {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 96px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(212,147,58,.12);
+  letter-spacing: -.04em;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Per-universe colored overlay */
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.overlay-league {
+  background:
+    linear-gradient(to right, rgba(8,20,12,.8) 30%, transparent 75%),
+    linear-gradient(to top, rgba(8,12,10,.95) 0%, transparent 45%);
+}
+.overlay-tft {
+  background:
+    linear-gradient(to right, rgba(7,14,16,.8) 30%, transparent 75%),
+    linear-gradient(to top, rgba(6,12,14,.95) 0%, transparent 45%);
+}
+.overlay-pokemon {
+  background:
+    linear-gradient(to right, rgba(8,8,20,.88) 35%, rgba(8,8,20,.2) 75%),
+    linear-gradient(to top, rgba(8,8,18,.95) 0%, transparent 45%);
+}
+.overlay-op {
+  background:
+    linear-gradient(to right, rgba(14,8,2,.88) 35%, transparent 75%),
+    linear-gradient(to top, rgba(12,7,2,.95) 0%, transparent 45%);
+}
+
+/* dot-grid on top of everything */
+.slide-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 26px 26px;
+  pointer-events: none;
+}
+
+/* hero content */
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 48px 52px;
+  pointer-events: none;
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase;
+  margin-bottom: 12px;
+  transition: color .6s;
+}
+.hero-eyebrow::before {
+  content: '';
+  width: 18px; height: 1.5px;
+  border-radius: 1px;
+  transition: background .6s;
+}
+.hero-h1 {
+  font-size: 48px; font-weight: 900; letter-spacing: -.025em; line-height: 1.1;
+  margin-bottom: 14px;
+}
+.hero-sub {
+  font-size: 15px; color: rgba(242,232,213,.65); max-width: 420px; line-height: 1.65; margin-bottom: 28px;
+}
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; pointer-events: auto; }
+
+/* universe dot indicator */
+.dot-bar {
+  position: absolute;
+  bottom: 20px;
+  right: 52px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  z-index: 10;
+}
+.dot {
+  width: 28px; height: 4px;
+  border-radius: 2px;
+  background: rgba(255,255,255,.18);
+  border: none; cursor: pointer;
+  transition: background .3s, width .3s;
+}
+.dot.active { width: 40px; }
+.dot-league.active  { background: var(--league); box-shadow: 0 0 8px rgba(76,175,114,.5); }
+.dot-tft.active     { background: var(--tft);    box-shadow: 0 0 8px rgba(74,184,200,.5); }
+.dot-pokemon.active { background: var(--pokemon);box-shadow: 0 0 8px rgba(136,146,240,.5); }
+.dot-op.active      { background: var(--op);     box-shadow: 0 0 8px rgba(212,147,58,.5); }
+
+/* progress bar at top of hero */
+.progress-bar {
+  position: absolute;
+  top: 0; left: 0;
+  height: 2px;
+  transition: background .6s;
+  animation: progress-fill 4s linear infinite;
+  transform-origin: left;
+}
+@keyframes progress-fill {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+/* ══════════════════════════════════════════
+   PER-UNIVERSE HUB CARDS
+══════════════════════════════════════════ */
+
+.hub-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.hub-card {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  height: 440px;
+  border: 1px solid var(--border);
+}
+
+/* Art layer */
+.hub-art {
+  position: absolute;
+  inset: 0;
+}
+.hub-art-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: brightness(0.45) saturate(1.05);
+}
+.hub-art-pokemon-bg {
+  width: 100%; height: 100%;
+  background: radial-gradient(ellipse 50% 65% at 65% 35%, #1a1a40 0%, #0c0c1e 55%, #080810 100%);
+}
+.hub-art-pokemon-img {
+  position: absolute;
+  right: 2%;
+  bottom: 0;
+  height: 88%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 40px rgba(136,146,240,.2));
+}
+.hub-art-op-bg {
+  width: 100%; height: 100%;
+  background:
+    radial-gradient(ellipse 55% 55% at 65% 30%, rgba(212,147,58,.2) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 45% at 20% 75%, rgba(180,60,40,.12) 0%, transparent 55%),
+    linear-gradient(135deg, #0e0704, #140a03 50%, #0c0c0e);
+}
+.hub-art-op-lines {
+  position: absolute; inset: 0;
+  opacity: .035;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 28px, rgba(212,147,58,1) 28px, rgba(212,147,58,1) 29px);
+}
+
+/* Per-universe overlays for hub cards */
+.hub-overlay-league {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(6,14,10,.97) 0%, rgba(6,14,10,.6) 40%, transparent 70%),
+    linear-gradient(to right, rgba(6,14,10,.4) 0%, transparent 50%);
+}
+.hub-overlay-tft {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(5,12,14,.97) 0%, rgba(5,12,14,.6) 40%, transparent 70%),
+    linear-gradient(to right, rgba(5,12,14,.4) 0%, transparent 50%);
+}
+.hub-overlay-pokemon {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(6,6,16,.97) 0%, rgba(6,6,16,.7) 40%, transparent 70%),
+    linear-gradient(to right, rgba(6,6,16,.5) 0%, transparent 60%);
+}
+.hub-overlay-op {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to top, rgba(10,6,2,.97) 0%, rgba(10,6,2,.65) 40%, transparent 70%),
+    linear-gradient(to right, rgba(10,6,2,.4) 0%, transparent 50%);
+}
+
+.hub-dots-overlay {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,.02) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+/* Hub content */
+.hub-content {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  padding: 24px;
+}
+
+/* Top row: badge + rotation dots */
+.hub-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hub-mini-dots {
+  display: flex; gap: 5px;
+}
+.hub-mini-dot {
+  width: 20px; height: 3px; border-radius: 2px;
+  background: rgba(255,255,255,.15);
+}
+.hub-mini-dot.active { background: rgba(255,255,255,.55); }
+
+/* Search sits at top of hub */
+.hub-search {
+  width: 100%;
+  padding: 9px 13px 9px 34px;
+  background: rgba(0,0,0,.4);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 13px; outline: none;
+  margin-top: 12px;
+}
+.hub-search::placeholder { color: rgba(107,96,85,.7); }
+
+/* Hub bottom: name + stats */
+.hub-bottom {
+  margin-top: auto;
+}
+.hub-universe-name {
+  font-size: 30px; font-weight: 900; letter-spacing: -.02em; margin-bottom: 4px;
+}
+.hub-universe-sub {
+  font-size: 13px; color: rgba(242,232,213,.5); margin-bottom: 16px;
+}
+.hub-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.hub-stat {
+  background: rgba(0,0,0,.3);
+  border: 1px solid rgba(255,255,255,.05);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.hub-stat-num { font-size: 18px; font-weight: 800; line-height: 1.2; }
+.hub-stat-lbl { font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+
+/* accent top border on hub cards */
+.hub-accent-league { border-top: 2px solid rgba(76,175,114,.5); }
+.hub-accent-tft    { border-top: 2px solid rgba(74,184,200,.5); }
+.hub-accent-pokemon{ border-top: 2px solid rgba(136,146,240,.5); }
+.hub-accent-op     { border-top: 2px solid rgba(212,147,58,.5); }
+
+/* ══════════════════════════════════════════
+   NOTES STRIP
+══════════════════════════════════════════ */
+.note-strip {
+  display: flex; gap: 16px; flex-wrap: wrap;
+}
+.note {
+  flex: 1; min-width: 200px;
+  background: rgba(0,0,0,.2);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+  font-size: 12px; color: var(--muted); line-height: 1.6;
+}
+.note strong { color: var(--subtle); }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+  SECTION 1 — ROTATING HOMEPAGE HERO
+═══════════════════════════════════════════════ -->
+<div class="section">
+  <div class="label">Concept A</div>
+  <div class="section-title">Homepage Hero — Rotating Universe Art</div>
+  <p class="section-desc">Slides cross-fade every 4 seconds. Click the indicator dots to jump. Each universe has its own color tint overlay. The art slowly zooms out as it enters.</p>
+
+  <div class="hero-outer">
+
+    <!-- Progress bar -->
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- ── LEAGUE SLIDE ── -->
+    <div class="slide active" id="slide-0">
+      <img class="slide-img"
+        src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg"
+        alt="Jinx" />
+      <div class="slide-overlay overlay-league"></div>
+      <div class="slide-dots"></div>
+    </div>
+
+    <!-- ── TFT SLIDE ── -->
+    <div class="slide" id="slide-1">
+      <img class="slide-img"
+        src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg"
+        alt="Lux" />
+      <div class="slide-overlay overlay-tft"></div>
+      <div class="slide-dots"></div>
+    </div>
+
+    <!-- ── POKEMON SLIDE ── -->
+    <div class="slide" id="slide-2">
+      <div class="slide-pokemon-bg"></div>
+      <img class="slide-pokemon-img"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+        alt="Charizard" />
+      <div class="slide-overlay overlay-pokemon"></div>
+      <div class="slide-dots"></div>
+    </div>
+
+    <!-- ── ONE PIECE SLIDE ── -->
+    <div class="slide" id="slide-3">
+      <div class="slide-op-bg"></div>
+      <div class="slide-op-lines"></div>
+      <div class="slide-op-text">GRAND LINE</div>
+      <div class="slide-overlay overlay-op"></div>
+      <div class="slide-dots"></div>
+    </div>
+
+    <!-- Hero content sitting above all slides -->
+    <div class="hero-content">
+      <div class="hero-eyebrow" id="hero-eyebrow"></div>
+      <h1 class="hero-h1" id="hero-h1"></h1>
+      <p class="hero-sub" id="hero-sub"></p>
+      <div class="hero-btns">
+        <button class="btn btn-gold" id="hero-cta"></button>
+        <button class="btn btn-ghost">Browse all</button>
+      </div>
+    </div>
+
+    <!-- Dot indicator -->
+    <div class="dot-bar">
+      <button class="dot dot-league active" data-slide="0"></button>
+      <button class="dot dot-tft"     data-slide="1"></button>
+      <button class="dot dot-pokemon" data-slide="2"></button>
+      <button class="dot dot-op"      data-slide="3"></button>
+    </div>
+
+  </div><!-- /hero-outer -->
+
+  <div class="note-strip" style="margin-top:20px;">
+    <div class="note"><strong>Art source:</strong> League + TFT slides use Riot Data Dragon splash URLs (already used in the project). Pokémon uses the PokeAPI official-artwork CDN. One Piece uses a stylized gradient until an art CDN is identified.</div>
+    <div class="note"><strong>Performance:</strong> 4 images preloaded on the homepage. The next/prev slides are already decoded in the DOM, so cross-fades are instant with no re-download flash.</div>
+    <div class="note"><strong>Dial back option:</strong> If the rotation feels too heavy, the hero can show only the active universe's art based on which hub the user last visited, defaulting to a generic gradient.</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+  SECTION 2 — PER-UNIVERSE HUB BACKGROUNDS
+═══════════════════════════════════════════════ -->
+<div class="section">
+  <div class="label">Concept B</div>
+  <div class="section-title">Per-Universe Hub Page Backgrounds</div>
+  <p class="section-desc">Each universe hub gets its own rotating art behind the page header. The mini dots in the top-right show which art from that universe is active. Content stays fully readable via the gradient overlay.</p>
+
+  <div class="hub-grid">
+
+    <!-- LEAGUE HUB -->
+    <div class="hub-card hub-accent-league">
+      <div class="hub-art">
+        <img class="hub-art-img"
+          src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg"
+          alt="League art" />
+      </div>
+      <div class="hub-overlay-league"></div>
+      <div class="hub-dots-overlay"></div>
+      <div class="hub-content">
+        <div class="hub-top">
+          <span class="pill pill-league">League of Legends</span>
+          <div class="hub-mini-dots">
+            <div class="hub-mini-dot active"></div>
+            <div class="hub-mini-dot"></div>
+            <div class="hub-mini-dot"></div>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <div class="hub-search" style="pointer-events:none;cursor:default;padding-left:13px;">Search champions, items, lore…</div>
+        </div>
+        <div class="hub-bottom">
+          <div class="hub-universe-name gradient-league">League of Legends</div>
+          <div class="hub-universe-sub">Champions · Items · Runes · Lore · Factions</div>
+          <div class="hub-stat-row">
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--league);">170</div><div class="hub-stat-lbl">Champions</div></div>
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--league);">250+</div><div class="hub-stat-lbl">Items</div></div>
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--league);">14+</div><div class="hub-stat-lbl">Regions</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TFT HUB -->
+    <div class="hub-card hub-accent-tft">
+      <div class="hub-art">
+        <img class="hub-art-img"
+          src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg"
+          alt="TFT art" />
+      </div>
+      <div class="hub-overlay-tft"></div>
+      <div class="hub-dots-overlay"></div>
+      <div class="hub-content">
+        <div class="hub-top">
+          <span class="pill pill-tft">Teamfight Tactics</span>
+          <div class="hub-mini-dots">
+            <div class="hub-mini-dot active"></div>
+            <div class="hub-mini-dot"></div>
+            <div class="hub-mini-dot"></div>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <div class="hub-search" style="pointer-events:none;cursor:default;padding-left:13px;">Search champions, items, traits…</div>
+        </div>
+        <div class="hub-bottom">
+          <div class="hub-universe-name gradient-tft">Teamfight Tactics</div>
+          <div class="hub-universe-sub">Champions · Items · Traits · Augments</div>
+          <div class="hub-stat-row">
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--tft);">58</div><div class="hub-stat-lbl">Champions</div></div>
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--tft);">165</div><div class="hub-stat-lbl">Items</div></div>
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--tft);">Set 14</div><div class="hub-stat-lbl">Current</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POKEMON HUB -->
+    <div class="hub-card hub-accent-pokemon">
+      <div class="hub-art" style="position:relative;">
+        <div class="hub-art-pokemon-bg"></div>
+        <img class="hub-art-pokemon-img"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+          alt="Charizard" />
+      </div>
+      <div class="hub-overlay-pokemon"></div>
+      <div class="hub-dots-overlay"></div>
+      <div class="hub-content">
+        <div class="hub-top">
+          <span class="pill pill-pokemon">Pokémon</span>
+          <div class="hub-mini-dots">
+            <div class="hub-mini-dot active"></div>
+            <div class="hub-mini-dot"></div>
+            <div class="hub-mini-dot"></div>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <div class="hub-search" style="pointer-events:none;cursor:default;padding-left:13px;">Search Pokémon, moves, abilities…</div>
+        </div>
+        <div class="hub-bottom">
+          <div class="hub-universe-name gradient-pokemon">Pokémon</div>
+          <div class="hub-universe-sub">Pokédex · Moves · Abilities · Items</div>
+          <div class="hub-stat-row">
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--pokemon);">1,025</div><div class="hub-stat-lbl">Pokémon</div></div>
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--pokemon);">900+</div><div class="hub-stat-lbl">Moves</div></div>
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--pokemon);">Gen 9</div><div class="hub-stat-lbl">Latest</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ONE PIECE HUB -->
+    <div class="hub-card hub-accent-op">
+      <div class="hub-art" style="position:relative;">
+        <div class="hub-art-op-bg" style="position:absolute;inset:0;"></div>
+        <div class="hub-art-op-lines"></div>
+        <div style="position:absolute;right:6%;top:50%;transform:translateY(-50%);font-size:80px;font-weight:900;color:transparent;-webkit-text-stroke:1px rgba(212,147,58,.1);letter-spacing:-.04em;line-height:1;white-space:nowrap;user-select:none;">GRAND<br>LINE</div>
+      </div>
+      <div class="hub-overlay-op"></div>
+      <div class="hub-dots-overlay"></div>
+      <div class="hub-content">
+        <div class="hub-top">
+          <span class="pill pill-op">One Piece</span>
+          <div class="hub-mini-dots">
+            <div class="hub-mini-dot active"></div>
+            <div class="hub-mini-dot"></div>
+            <div class="hub-mini-dot"></div>
+          </div>
+        </div>
+        <div style="position:relative;">
+          <div class="hub-search" style="pointer-events:none;cursor:default;padding-left:13px;">Search characters, crews, Devil Fruits…</div>
+        </div>
+        <div class="hub-bottom">
+          <div class="hub-universe-name gradient-op">One Piece</div>
+          <div class="hub-universe-sub">Characters · Crews · Devil Fruits · Arcs</div>
+          <div class="hub-stat-row">
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--op);">100+</div><div class="hub-stat-lbl">Characters</div></div>
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--op);">Soon</div><div class="hub-stat-lbl">Devil Fruits</div></div>
+            <div class="hub-stat"><div class="hub-stat-num" style="color:var(--op);">Live</div><div class="hub-stat-lbl">Status</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hub-grid -->
+
+  <div class="note-strip" style="margin-top:20px;">
+    <div class="note"><strong>Rotation pool per hub:</strong> Each universe card would pick from a curated list of splash arts for that universe — maybe 5-8 images — and rotate through them on a slow timer or on page reload.</div>
+    <div class="note"><strong>List pages:</strong> The per-universe treatment can be dialed back to just a subtle tinted banner on list pages (champions, items, Pokédex) rather than a full rotating background — keeping the art in the hub and detail pages only.</div>
+    <div class="note"><strong>Detail pages:</strong> The same approach extends naturally to champion/Pokémon detail pages — the individual splash art fills the header banner, no rotation needed since there's one subject.</div>
+  </div>
+</div>
+
+<script>
+  const universes = [
+    {
+      eyebrow: 'League of Legends',
+      accentColor: '#4caf72',
+      h1: 'One wiki.<br><span style="background:linear-gradient(120deg,#F2E8D5 10%,#4caf72 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Every champion.</span>',
+      sub: 'Deep stats, lore, and builds for every League of Legends champion, item, and rune — updated every patch.',
+      cta: 'Browse champions',
+      progressBg: '#4caf72',
+    },
+    {
+      eyebrow: 'Teamfight Tactics',
+      accentColor: '#4ab8c8',
+      h1: 'Build smarter.<br><span style="background:linear-gradient(120deg,#F2E8D5 10%,#4ab8c8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Win harder.</span>',
+      sub: 'Complete TFT reference for Set 14 — champions, traits, items, augments, and team comp data.',
+      cta: 'Browse TFT',
+      progressBg: '#4ab8c8',
+    },
+    {
+      eyebrow: 'Pokémon',
+      accentColor: '#8892f0',
+      h1: 'Gotta know<br><span style="background:linear-gradient(120deg,#F2E8D5 10%,#8892f0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">them all.</span>',
+      sub: 'Full Pokédex with stats, movesets, abilities, and learnsets across all 9 generations.',
+      cta: 'Open Pokédex',
+      progressBg: '#8892f0',
+    },
+    {
+      eyebrow: 'One Piece',
+      accentColor: '#d4933a',
+      h1: 'Chart the<br><span style="background:linear-gradient(120deg,#F2E8D5 10%,#d4933a 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Grand Line.</span>',
+      sub: 'Characters, crews, Devil Fruits, and arcs — your complete One Piece universe reference.',
+      cta: 'Explore One Piece',
+      progressBg: '#d4933a',
+    },
+  ];
+
+  let current = 0;
+  let timer = null;
+
+  const slides      = document.querySelectorAll('.slide');
+  const dots        = document.querySelectorAll('.dot');
+  const eyebrow     = document.getElementById('hero-eyebrow');
+  const h1          = document.getElementById('hero-h1');
+  const sub         = document.getElementById('hero-sub');
+  const cta         = document.getElementById('hero-cta');
+  const progressBar = document.getElementById('progress-bar');
+
+  function applyContent(u) {
+    eyebrow.style.color = u.accentColor;
+    eyebrow.querySelector('::before'); // not needed — done via CSS class swap below
+    const before = eyebrow;
+    before.style.setProperty('--dot-color', u.accentColor);
+    eyebrow.innerHTML = u.eyebrow;
+    h1.innerHTML = u.h1;
+    sub.textContent = u.sub;
+    cta.textContent = u.cta;
+    progressBar.style.background = u.accentColor;
+    progressBar.style.boxShadow  = `0 0 8px ${u.accentColor}88`;
+    // restart the CSS animation
+    progressBar.style.animation = 'none';
+    void progressBar.offsetWidth;
+    progressBar.style.animation = 'progress-fill 4s linear infinite';
+  }
+
+  function goTo(n, restartTimer) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = n;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+    applyContent(universes[current]);
+
+    if (restartTimer) {
+      clearInterval(timer);
+      timer = setInterval(advance, 4000);
+    }
+  }
+
+  function advance() { goTo((current + 1) % slides.length, false); }
+
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      goTo(parseInt(dot.dataset.slide, 10), true);
+    });
+  });
+
+  // init first slide content
+  applyContent(universes[0]);
+
+  // start auto-rotation
+  timer = setInterval(advance, 4000);
+</script>
+</body>
+</html>

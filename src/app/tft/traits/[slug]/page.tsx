@@ -4,28 +4,11 @@ import { notFound } from "next/navigation";
 import { tftData } from "@/lib/tft/data";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { BackLink } from "@/components/BackLink";
+import { stripTFTTokens, TFT_COST_COLORS, TFT_TIER_STYLES } from "@/lib/tft/utils";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
 const toSlug = (name: string) => name.toLowerCase().replace(/\s+/g, "-");
-
-const stripTokens = (html: string) =>
-  html.replace(/@\w+@/g, "").replace(/\(\s*\)/g, "").trim();
-
-const COST_COLORS: Record<number, string> = {
-  1: "bg-[#1c1c22] text-[#9a8c7e]",
-  2: "bg-green-100 text-green-700",
-  3: "bg-blue-100 text-blue-700",
-  4: "bg-purple-100 text-purple-700",
-  5: "bg-yellow-100 text-yellow-700",
-};
-
-const TIER_STYLES: Record<number, string> = {
-  1: "bg-[#1c1c22] text-[#9a8c7e]",
-  2: "bg-blue-100 text-blue-700",
-  3: "bg-purple-100 text-purple-700",
-  4: "bg-yellow-100 text-yellow-700",
-};
 
 export const dynamicParams = false;
 
@@ -46,12 +29,9 @@ export async function generateMetadata({
   }
 
   const minUnits = trait.tiers[0]?.minUnits;
-  const description = `${trait.name} is a TFT trait${minUnits != null ? ` with its first breakpoint at ${minUnits} units` : ""}.`
-    .replace(/@\w+@/g, "")
-    .replace(/\(\s*\)/g, "")
-    .replace(/\s{2,}/g, " ")
-    .trim()
-    .slice(0, 155);
+  const description = stripTFTTokens(
+    `${trait.name} is a TFT trait${minUnits != null ? ` with its first breakpoint at ${minUnits} units` : ""}.`
+  ).slice(0, 155);
 
   return {
     title: `${trait.name} - TFT - OmniWiki`,
@@ -74,10 +54,10 @@ export default async function TFTTraitPage({ params }: PageProps) {
     .sort((a, b) => a.cost - b.cost || a.name.localeCompare(b.name));
 
   const costCls = (cost: number) =>
-    COST_COLORS[cost] ?? "bg-[#1c1c22] text-[#9a8c7e]";
+    TFT_COST_COLORS[cost] ?? "bg-[#1c1c22] text-[#9a8c7e]";
 
   const tierCls = (style: number) =>
-    TIER_STYLES[style] ?? "bg-[#1c1c22] text-[#9a8c7e]";
+    TFT_TIER_STYLES[style] ?? "bg-[#1c1c22] text-[#9a8c7e]";
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-6 bg-[#0c0c0e] px-6 py-10">
@@ -106,7 +86,7 @@ export default async function TFTTraitPage({ params }: PageProps) {
           {trait.description && (
             <p
               className="text-sm text-[#6b6055]"
-              dangerouslySetInnerHTML={{ __html: stripTokens(trait.description) }}
+              dangerouslySetInnerHTML={{ __html: stripTFTTokens(trait.description) }}
             />
           )}
           {trait.tiers.length > 0 && (

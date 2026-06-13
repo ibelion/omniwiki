@@ -7,12 +7,11 @@ import type { ChromaRecord } from "@/lib/league/types";
 
 type ChromasListProps = {
   chromas: ChromaRecord[];
-  champions: { name: string; slug: string }[];
 };
 
 const PAGE_SIZE = 80;
 
-export function ChromasList({ chromas, champions }: ChromasListProps) {
+export function ChromasList({ chromas }: ChromasListProps) {
   const [search, setSearch] = useState("");
   const [championFilter, setChampionFilter] = useState<string | null>(null);
   const [page, setPage] = useState(0);
@@ -92,15 +91,11 @@ export function ChromasList({ chromas, champions }: ChromasListProps) {
       <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {visible.map((chroma) => {
-            const champion = champions.find(
-              (c) => c.name.toLowerCase() === (chroma.champion ?? "").toLowerCase()
-            );
-            const href = champion ? `/league/${champion.slug}` : "/league/champions";
             const colors = chroma.colors?.length ? chroma.colors : null;
             return (
               <Link
                 key={`${chroma.skinId}-${chroma.chromaId}`}
-                href={href}
+                href={`/league/chromas/${chroma.chromaId}`}
                 className="flex flex-col gap-2 rounded-xl border border-[#1c1c22] bg-[#0c0c0e] p-4 text-sm transition hover:border-[#1c3622] hover:bg-[#0e1c14] hover:shadow-md"
               >
                 {(chroma.sourceUrl || chroma.image) && (
