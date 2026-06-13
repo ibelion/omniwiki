@@ -36,6 +36,8 @@ export default function OnePiecePage() {
     },
   ];
 
+  const bountiedCount = characters.filter((c) => c.bounty).length;
+
   const browseLinks = [
     {
       href: "/onepiece/characters",
@@ -57,6 +59,13 @@ export default function OnePiecePage() {
       description: "Explore pirate crews and factions with their rosters.",
       badge: crews.length > 0 ? "Live" : "Coming Soon",
       live: crews.length > 0,
+    },
+    {
+      href: "/onepiece/bounties",
+      label: "Bounties",
+      description: "World Government most-wanted ranked by bounty amount.",
+      badge: bountiedCount > 0 ? "Live" : "Coming Soon",
+      live: bountiedCount > 0,
     },
   ];
 
@@ -154,7 +163,7 @@ export default function OnePiecePage() {
       {/* browse */}
       <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm">
         <p className="text-sm font-semibold uppercase tracking-wide text-[#6b6055]">Browse</p>
-        <div className="mt-4 grid gap-4 md:grid-cols-3">
+        <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {browseLinks.map((link) => (
             <Link
               key={link.href}

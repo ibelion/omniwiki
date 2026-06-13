@@ -5,6 +5,7 @@ export type OnePieceCharacterRecord = {
   name: string;
   role: 'Main' | 'Supporting';
   image: string | null;
+  favorites?: number;
   about: string | null;
   nicknames: string[];
   // parsed structured fields

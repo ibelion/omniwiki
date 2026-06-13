@@ -5,7 +5,9 @@ import type { DevilFruitType, OnePieceDevilFruitRecord, OnePieceCrewRecord } fro
 
 const JIKAN_BASE = 'https://api.jikan.moe/v4';
 const ONE_PIECE_MAL_ID = 21;
-const MAX_MAIN_DETAIL_FETCHES = 100;
+const FETCH_DELAY_MS = 420;
+const MAX_RETRIES = 5;
+const SAVE_CACHE_EVERY = 25;
 
 const delay = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
@@ -18,6 +20,7 @@ type JikanAnimeCharacterEntry = {
     images: { jpg: { image_url: string | null } };
   };
   role: string;
+  favorites: number;
 };
 
 type JikanCharacterDetail = {
@@ -27,6 +30,23 @@ type JikanCharacterDetail = {
   };
 };
 
+// ─── Cache ────────────────────────────────────────────────────────────────────
+
+type CacheEntry = { about: string | null; nicknames: string[] };
+type DetailCache = Record<string, CacheEntry>;
+
+function loadCache(cachePath: string): DetailCache {
+  try {
+    return JSON.parse(fs.readFileSync(cachePath, 'utf8')) as DetailCache;
+  } catch {
+    return {};
+  }
+}
+
+function saveCache(cachePath: string, cache: DetailCache): void {
+  fs.writeFileSync(cachePath, JSON.stringify(cache) + '\n', 'utf8');
+}
+
 // ─── Output bundle shape ──────────────────────────────────────────────────────
 
 type OnePieceCharacter = {
@@ -34,6 +54,7 @@ type OnePieceCharacter = {
   name: string;
   role: 'Main' | 'Supporting';
   image: string | null;
+  favorites: number;
   about: string | null;
   nicknames: string[];
   affiliation: string[];
@@ -122,22 +143,57 @@ function slugify(name: string): string {
     .replace(/^-+|-+$/g, '');
 }
 
-async function fetchCharacterDetail(malId: number): Promise<{ about: string | null; nicknames: string[] }> {
-  try {
-    const res = await fetch(`${JIKAN_BASE}/characters/${malId}`);
-    if (!res.ok) {
-      console.warn(`  detail HTTP ${res.status} for ID ${malId} — skipping`);
-      return { about: null, nicknames: [] };
-    }
-    const json = (await res.json()) as JikanCharacterDetail;
-    return {
-      about: json.data.about ?? null,
-      nicknames: json.data.nicknames ?? [],
-    };
-  } catch (err) {
-    console.warn(`  detail fetch failed for ID ${malId}: ${String(err)} — skipping`);
-    return { about: null, nicknames: [] };
+async function fetchCharacterDetail(
+  malId: number,
+  cache: DetailCache,
+  cachePath: string,
+  cacheChangesRef: { count: number },
+): Promise<CacheEntry> {
+  const key = String(malId);
+
+  if (key in cache) {
+    return cache[key];
   }
+
+  await delay(FETCH_DELAY_MS);
+
+  let lastStatus = 0;
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    if (attempt > 0) {
+      const wait = Math.min(Math.pow(2, attempt) * 1500, 30_000);
+      console.log(`    ↻ retry ${attempt}/${MAX_RETRIES} for ID ${malId} (${wait}ms)`);
+      await delay(wait);
+    }
+    try {
+      const res = await fetch(`${JIKAN_BASE}/characters/${malId}`);
+      lastStatus = res.status;
+      if (res.status === 429) continue;
+      if (!res.ok) {
+        console.warn(`    ✗ HTTP ${res.status} for ID ${malId}`);
+        break;
+      }
+      const json = (await res.json()) as JikanCharacterDetail;
+      const entry: CacheEntry = {
+        about: json.data.about ?? null,
+        nicknames: json.data.nicknames ?? [],
+      };
+      cache[key] = entry;
+      cacheChangesRef.count++;
+      if (cacheChangesRef.count % SAVE_CACHE_EVERY === 0) {
+        saveCache(cachePath, cache);
+        process.stdout.write(`  [cache ${Object.keys(cache).length}] `);
+      }
+      return entry;
+    } catch (err) {
+      console.warn(`    ✗ network error for ID ${malId}: ${String(err)}`);
+    }
+  }
+
+  console.warn(`    ✗ gave up on ID ${malId} (last status: ${lastStatus})`);
+  const fallback: CacheEntry = { about: null, nicknames: [] };
+  cache[key] = fallback;
+  cacheChangesRef.count++;
+  return fallback;
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
@@ -145,8 +201,15 @@ async function fetchCharacterDetail(malId: number): Promise<{ about: string | nu
 async function main(): Promise<void> {
   const PUBLIC_DIR = path.resolve(process.cwd(), 'public/onepiececontent/data');
   const CDN_DIR = path.resolve(process.cwd(), 'cdn/onepiececontent/data');
+  const CACHE_PATH = path.resolve(PUBLIC_DIR, 'char-detail-cache.json');
+
   fs.mkdirSync(PUBLIC_DIR, { recursive: true });
   fs.mkdirSync(CDN_DIR, { recursive: true });
+
+  const cache = loadCache(CACHE_PATH);
+  const cacheChanges = { count: 0 };
+  const cachedCount = Object.keys(cache).length;
+  console.log(`Loaded detail cache: ${cachedCount} entries`);
 
   console.log('Fetching One Piece character list from Jikan v4...');
   const listRes = await fetch(`${JIKAN_BASE}/anime/${ONE_PIECE_MAL_ID}/characters`);
@@ -158,18 +221,43 @@ async function main(): Promise<void> {
   const rawList = listJson.data ?? [];
   console.log(`  ${rawList.length} characters in response`);
 
-  const characters: OnePieceCharacter[] = [];
-  let mainCount = 0;
+  // Sort: Main first, then Supporting by favorites desc
+  const sortedList = [...rawList].sort((a, b) => {
+    if (a.role === 'Main' && b.role !== 'Main') return -1;
+    if (a.role !== 'Main' && b.role === 'Main') return 1;
+    return (b.favorites ?? 0) - (a.favorites ?? 0);
+  });
 
-  for (const entry of rawList) {
+  const newFetches = sortedList.filter((e) => !(String(e.character.mal_id) in cache)).length;
+  console.log(`  ${newFetches} new detail fetches needed (~${Math.round(newFetches * FETCH_DELAY_MS / 60000)} min at ${FETCH_DELAY_MS}ms/req)`);
+
+  const characters: OnePieceCharacter[] = [];
+  let idx = 0;
+
+  for (const entry of sortedList) {
+    idx++;
     const isMain = entry.role === 'Main';
+    const isCached = String(entry.character.mal_id) in cache;
+
+    if (!isCached && idx % 50 === 0) {
+      console.log(`  [${idx}/${sortedList.length}] fetching...`);
+    }
+
+    const detail = await fetchCharacterDetail(
+      entry.character.mal_id,
+      cache,
+      CACHE_PATH,
+      cacheChanges,
+    );
+
     const char: OnePieceCharacter = {
       id: `mal-${entry.character.mal_id}`,
       name: entry.character.name,
       role: isMain ? 'Main' : 'Supporting',
       image: entry.character.images?.jpg?.image_url ?? null,
-      about: null,
-      nicknames: [],
+      favorites: entry.favorites ?? 0,
+      about: detail.about,
+      nicknames: detail.nicknames,
       affiliation: [],
       formerAffiliation: [],
       position: null,
@@ -179,45 +267,50 @@ async function main(): Promise<void> {
       bounty: null,
     };
 
-    if (isMain && mainCount < MAX_MAIN_DETAIL_FETCHES) {
-      await delay(350);
-      const detail = await fetchCharacterDetail(entry.character.mal_id);
-      char.about = detail.about;
-      char.nicknames = detail.nicknames;
-      if (detail.about) {
-        const parsed = parseAboutText(detail.about);
-        char.affiliation = parsed.affiliation;
-        char.formerAffiliation = parsed.formerAffiliation;
-        char.position = parsed.position;
-        char.devilFruit = parsed.devilFruit;
-        char.devilFruitEnglish = parsed.devilFruitEnglish;
-        char.devilFruitType = parsed.devilFruitType;
-        char.bounty = parsed.bounty;
-      }
-      mainCount++;
-      console.log(`  [${mainCount}] ${char.name}${char.devilFruit ? ` (${char.devilFruit})` : ''}`);
+    if (detail.about) {
+      const parsed = parseAboutText(detail.about);
+      char.affiliation = parsed.affiliation;
+      char.formerAffiliation = parsed.formerAffiliation;
+      char.position = parsed.position;
+      char.devilFruit = parsed.devilFruit;
+      char.devilFruitEnglish = parsed.devilFruitEnglish;
+      char.devilFruitType = parsed.devilFruitType;
+      char.bounty = parsed.bounty;
+    }
+
+    if (isMain && detail.devilFruit !== undefined) {
+      console.log(`  ★ ${char.name}${char.devilFruit ? ` → ${char.devilFruit}` : ''}${char.bounty ? ` [${char.bounty}]` : ''}`);
     }
 
     characters.push(char);
   }
 
-  // Build devil fruits from characters that have one
-  const devilFruits: OnePieceDevilFruitRecord[] = characters
-    .filter((c) => c.devilFruit)
-    .map((c) => ({
-      id: slugify(c.devilFruit!),
-      name: c.devilFruit!,
-      englishName: c.devilFruitEnglish,
-      type: (c.devilFruitType ?? 'Unknown') as OnePieceDevilFruitRecord['type'],
-      userId: c.id,
-      userName: c.name,
-    }));
+  // Final cache save
+  saveCache(CACHE_PATH, cache);
+  console.log(`Cache saved: ${Object.keys(cache).length} total entries`);
 
-  // Build crews from affiliation data
+  // Build devil fruits (deduplicate by fruit name)
+  const fruitMap = new Map<string, OnePieceDevilFruitRecord>();
+  for (const c of characters) {
+    if (!c.devilFruit) continue;
+    const id = slugify(c.devilFruit);
+    if (!fruitMap.has(id)) {
+      fruitMap.set(id, {
+        id,
+        name: c.devilFruit,
+        englishName: c.devilFruitEnglish,
+        type: (c.devilFruitType ?? 'Unknown') as OnePieceDevilFruitRecord['type'],
+        userId: c.id,
+        userName: c.name,
+      });
+    }
+  }
+  const devilFruits = [...fruitMap.values()].sort((a, b) => a.name.localeCompare(b.name));
+
+  // Build crews from affiliation data (2+ members)
   const crewMap = new Map<string, OnePieceCrewRecord>();
   for (const char of characters) {
-    const allAffiliations = [...char.affiliation, ...char.formerAffiliation];
-    for (const crewName of allAffiliations) {
+    for (const crewName of [...char.affiliation, ...char.formerAffiliation]) {
       const id = slugify(crewName);
       if (!crewMap.has(id)) {
         crewMap.set(id, { id, name: crewName, memberIds: [], memberNames: [] });
@@ -229,9 +322,8 @@ async function main(): Promise<void> {
       }
     }
   }
-  // Only keep crews with more than 1 member or known major crews (avoid solo "pirate" entries)
   const crews: OnePieceCrewRecord[] = [...crewMap.values()]
-    .filter((c) => c.memberIds.length > 1)
+    .filter((c) => c.memberIds.length >= 2)
     .sort((a, b) => b.memberIds.length - a.memberIds.length);
 
   const bundle: OnePieceBundle = {
@@ -242,9 +334,14 @@ async function main(): Promise<void> {
   };
 
   const mainTotal = characters.filter((c) => c.role === 'Main').length;
-  const supportingTotal = characters.filter((c) => c.role === 'Supporting').length;
-  console.log(`Built: ${mainTotal} main + ${supportingTotal} supporting characters`);
-  console.log(`       ${devilFruits.length} devil fruits, ${crews.length} crews`);
+  const supTotal = characters.filter((c) => c.role === 'Supporting').length;
+  const withData = characters.filter((c) => c.about || c.affiliation.length > 0).length;
+  console.log(`\nBundle stats:`);
+  console.log(`  ${mainTotal} main + ${supTotal} supporting characters (${withData} with parsed data)`);
+  console.log(`  ${devilFruits.length} devil fruits`);
+  console.log(`  ${crews.length} crews`);
+  console.log(`  Top fruits: ${devilFruits.slice(0, 5).map((f) => f.name).join(', ')}`);
+  console.log(`  Top crews: ${crews.slice(0, 5).map((c) => c.name + '(' + c.memberIds.length + ')').join(', ')}`);
 
   const bundleJson = JSON.stringify(bundle, null, 2) + '\n';
   fs.writeFileSync(path.join(PUBLIC_DIR, 'bundle.json'), bundleJson, 'utf8');
@@ -252,7 +349,7 @@ async function main(): Promise<void> {
   const compressed = zlib.gzipSync(Buffer.from(bundleJson, 'utf8'));
   fs.writeFileSync(path.join(CDN_DIR, 'bundle.json'), compressed);
 
-  console.log('One Piece bundle written. Done.');
+  console.log('\nOne Piece bundle written. Done.');
 }
 
 void main().catch((err: unknown) => {
