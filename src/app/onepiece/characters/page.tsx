@@ -99,7 +99,7 @@ export default function OnePieceCharactersPage() {
       </section>
 
       {dataBundle.characters.length === 0 ? (
-        <section className="rounded-2xl border border-amber-200 bg-amber-50 p-6 text-sm text-amber-900">
+        <section className="rounded-2xl border border-[#3a2410] bg-[#1c1208] p-6 text-sm text-[#9a8c7e]">
           No character data is available yet.
         </section>
       ) : (

@@ -16,9 +16,10 @@ export const cleanText = (text: string | undefined): string => {
   if (!text) return '';
   
   return text
-    .replace(/<[^>]*>?/gm, '') // Remove HTML tags
-    .replace(/[\n\f\r]/g, ' ') // Replace newlines with spaces
-    .replace(/\s+/g, ' ')      // Collapse multiple spaces
+    .replace(/\{\{[^}]*\}\}/g, '') // Remove {{ template }} placeholders (Riot data format)
+    .replace(/<[^>]*>?/gm, '')     // Remove HTML tags
+    .replace(/[\n\f\r]/g, ' ')     // Replace newlines with spaces
+    .replace(/\s+/g, ' ')          // Collapse multiple spaces
     .trim();
 };
 

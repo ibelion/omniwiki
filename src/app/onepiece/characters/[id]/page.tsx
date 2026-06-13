@@ -149,7 +149,7 @@ export default async function OnePieceCharacterDetailPage({
                   {character.nicknames.map((nickname) => (
                     <span
                       key={nickname}
-                      className="rounded-full bg-red-50 px-3 py-1 text-sm text-red-700"
+                      className="rounded-full border border-[#3a2410] bg-[#1a1208] px-3 py-1 text-sm text-[#c47830]"
                     >
                       {nickname}
                     </span>
@@ -162,6 +162,129 @@ export default async function OnePieceCharacterDetailPage({
           </div>
         </div>
       </section>
+
+      {(character.position ||
+        character.bounty ||
+        character.devilFruit ||
+        character.affiliation.length > 0 ||
+        character.formerAffiliation.length > 0) && (
+        <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-[#6b6055]">
+            Profile
+          </h2>
+          <dl className="mt-4 grid gap-4 sm:grid-cols-2">
+            {character.position && (
+              <div className="flex flex-col gap-1">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Position
+                </dt>
+                <dd className="text-sm text-[#F2E8D5]">{character.position}</dd>
+              </div>
+            )}
+            {character.bounty && (
+              <div className="flex flex-col gap-1">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Bounty
+                </dt>
+                <dd className="text-sm font-semibold text-[#d4933a]">{character.bounty}</dd>
+              </div>
+            )}
+            {character.devilFruit && (
+              <div className="flex flex-col gap-1 sm:col-span-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Devil Fruit
+                </dt>
+                <dd className="flex flex-wrap items-center gap-2">
+                  {(() => {
+                    const slugify = (s: string) =>
+                      s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+                    const fruitId = slugify(character.devilFruit!);
+                    const fruitExists = onePieceData.devilFruits.some((f) => f.id === fruitId);
+                    return fruitExists ? (
+                      <Link
+                        href={`/onepiece/devil-fruits/${fruitId}`}
+                        className="rounded-full border border-[#3a2410] bg-[#1c1208] px-3 py-1 text-sm text-[#d4933a] hover:border-[#5a3820] hover:underline"
+                      >
+                        {character.devilFruit}
+                      </Link>
+                    ) : (
+                      <span className="rounded-full border border-[#3a2410] bg-[#1c1208] px-3 py-1 text-sm text-[#d4933a]">
+                        {character.devilFruit}
+                      </span>
+                    );
+                  })()}
+                  {character.devilFruitEnglish && (
+                    <span className="text-sm text-[#6b6055]">
+                      ({character.devilFruitEnglish})
+                    </span>
+                  )}
+                  {character.devilFruitType && (
+                    <span
+                      className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
+                        character.devilFruitType === "Paramecia"
+                          ? "bg-[#1a1520] text-[#b890e0]"
+                          : character.devilFruitType === "Zoan"
+                            ? "bg-[#0e1a10] text-[#56b870]"
+                            : "bg-[#0e1520] text-[#4090d0]"
+                      }`}
+                    >
+                      {character.devilFruitType}
+                    </span>
+                  )}
+                </dd>
+              </div>
+            )}
+            {character.affiliation.length > 0 && (
+              <div className="flex flex-col gap-1 sm:col-span-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Affiliation
+                </dt>
+                <dd className="flex flex-wrap gap-1.5">
+                  {character.affiliation.map((a) => {
+                    const slugify = (s: string) =>
+                      s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+                    const crewId = slugify(a);
+                    const crewExists = onePieceData.crews.some((c) => c.id === crewId);
+                    return crewExists ? (
+                      <Link
+                        key={a}
+                        href={`/onepiece/crews/${crewId}`}
+                        className="rounded-full border border-[#1c1c22] bg-[#0c0c0e] px-2.5 py-1 text-xs text-[#9a8c7e] hover:border-[#4a3420] hover:text-[#d4933a]"
+                      >
+                        {a}
+                      </Link>
+                    ) : (
+                      <span
+                        key={a}
+                        className="rounded-full border border-[#1c1c22] bg-[#0c0c0e] px-2.5 py-1 text-xs text-[#9a8c7e]"
+                      >
+                        {a}
+                      </span>
+                    );
+                  })}
+                </dd>
+              </div>
+            )}
+            {character.formerAffiliation.length > 0 && (
+              <div className="flex flex-col gap-1 sm:col-span-2">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Former Affiliation
+                </dt>
+                <dd className="flex flex-wrap gap-1.5">
+                  {character.formerAffiliation.map((a) => (
+                    <span
+                      key={a}
+                      className="rounded-full border border-dashed border-[#2c2c32] bg-[#0c0c0e] px-2.5 py-1 text-xs text-[#6b6055]"
+                    >
+                      {a}
+                    </span>
+                  ))}
+                </dd>
+              </div>
+            )}
+          </dl>
+        </section>
+      )}
 
       <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-8 shadow-sm">
         <h2 className="text-2xl font-semibold text-[#F2E8D5]">About</h2>
