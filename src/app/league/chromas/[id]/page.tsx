@@ -4,12 +4,13 @@ import { notFound } from "next/navigation";
 
 import { BackLink } from "@/components/BackLink";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
 type PageProps = { params: Promise<{ id: string }> };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
   const chroma = leagueData.chromas.find((c) => String(c.chromaId) === id);
   if (!chroma) return { title: "Chroma · OmniWiki" };
   return {
@@ -20,6 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ChromaDetailPage({ params }: PageProps) {
   const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
   const chroma = leagueData.chromas.find((c) => String(c.chromaId) === id);
   if (!chroma) notFound();
 

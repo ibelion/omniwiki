@@ -4,12 +4,13 @@ import { notFound } from "next/navigation";
 
 import { BackLink } from "@/components/BackLink";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
 type PageProps = { params: Promise<{ id: string }> };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
   const emote = leagueData.emotes.find((e) => String(e.id) === id);
   if (!emote) return { title: "Emote · OmniWiki" };
   return {
@@ -20,6 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function EmoteDetailPage({ params }: PageProps) {
   const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
   const emote = leagueData.emotes.find((e) => String(e.id) === id);
   if (!emote) notFound();
 

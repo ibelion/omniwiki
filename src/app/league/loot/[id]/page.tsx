@@ -4,12 +4,13 @@ import { notFound } from "next/navigation";
 
 import { BackLink } from "@/components/BackLink";
 import { ImageWithFallback } from "@/components/ImageWithFallback";
-import { leagueData } from "@/lib/league/data";
+import { getLeagueBundleEdge } from "@/lib/edge-data";
 
 type PageProps = { params: Promise<{ id: string }> };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
   const decoded = decodeURIComponent(id);
   const item = (leagueData.lootItems ?? []).find((i) => i.id === decoded);
   if (!item) return { title: "Loot · OmniWiki" };
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function LootDetailPage({ params }: PageProps) {
   const { id } = await params;
+  const leagueData = await getLeagueBundleEdge();
   const decoded = decodeURIComponent(id);
   const item = (leagueData.lootItems ?? []).find((i) => i.id === decoded);
   if (!item) notFound();
