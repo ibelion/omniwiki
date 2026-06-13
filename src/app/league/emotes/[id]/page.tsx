@@ -8,12 +8,6 @@ import { leagueData } from "@/lib/league/data";
 
 type PageProps = { params: Promise<{ id: string }> };
 
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  return leagueData.emotes.map((e) => ({ id: String(e.id) }));
-}
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
   const emote = leagueData.emotes.find((e) => String(e.id) === id);

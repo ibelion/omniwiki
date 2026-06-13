@@ -8,14 +8,6 @@ import { leagueData } from "@/lib/league/data";
 
 type PageProps = { params: Promise<{ id: string }> };
 
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  return (leagueData.lootItems ?? []).map((item) => ({
-    id: encodeURIComponent(item.id),
-  }));
-}
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
   const decoded = decodeURIComponent(id);

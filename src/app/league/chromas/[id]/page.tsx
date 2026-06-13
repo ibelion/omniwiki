@@ -8,12 +8,6 @@ import { leagueData } from "@/lib/league/data";
 
 type PageProps = { params: Promise<{ id: string }> };
 
-export const dynamicParams = false;
-
-export function generateStaticParams() {
-  return leagueData.chromas.map((c) => ({ id: String(c.chromaId) }));
-}
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { id } = await params;
   const chroma = leagueData.chromas.find((c) => String(c.chromaId) === id);
