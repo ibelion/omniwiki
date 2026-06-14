@@ -1,6 +1,6 @@
 // types/omni-schema.ts
 
-export type OmniUniverse = 'league-of-legends' | 'pokemon' | 'tft';
+export type OmniUniverse = 'league-of-legends' | 'pokemon' | 'tft' | 'one-piece';
 
 /**
  * The Standardized Entity for OmniGames.
