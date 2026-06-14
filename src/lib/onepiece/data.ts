@@ -213,12 +213,12 @@ function applyStaticCrews(bundle: OnePieceDataBundle): OnePieceDataBundle {
 
 function applyStaticCharacterData(bundle: OnePieceDataBundle): OnePieceDataBundle {
   const characters = bundle.characters.map((c) => {
-    // Bundle JSON predates these fields — initialize defaults so the type is satisfied.
+    // Bundle JSON predates these fields — spread c first, then default missing fields.
     const base = {
-      gender: null as 'Male' | 'Female' | 'Unknown' | null,
-      haki: [] as HakiType[],
-      firstArc: null as string | null,
       ...c,
+      gender: c.gender ?? null,
+      haki: c.haki ?? ([] as HakiType[]),
+      firstArc: c.firstArc ?? null,
     };
     const key = normalizeName(c.name);
     const override = STATIC_CHARACTER_DATA[key];
