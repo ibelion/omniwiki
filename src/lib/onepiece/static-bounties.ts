@@ -99,8 +99,6 @@ export const STATIC_BOUNTIES: Record<string, string> = {
   'arlong': '20,000,000',
   'don krieg': '17,000,000',
 
-  // "Drake" is a duplicate MAL entry for X Drake — same person, same bounty
-  'drake': '222,000,000',
 };
 
 /** Normalize a name to a plain lowercase string for lookup matching */

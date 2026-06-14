@@ -150,6 +150,8 @@ const UNCONFIRMED_BOUNTIES = new Set([
   'zambai',             // Franky Family — no canon bounty
   'kibagaeru',          // anime-only filler character
   'rice rice',          // anime-only; 23,800 is a product price, not a bounty
+  'drake',              // duplicate MAL alias for X Drake — "x drake" key handles the real entry
+  'lilith',             // Vegapunk Punk-02 (government scientist); 1 Berry is a bad placeholder
   // Group 9 — all unconfirmed per Codex
   'vergo',              // no canon bounty revealed
   'monet',              // no canon bounty revealed
