@@ -166,6 +166,12 @@ export default async function OnePieceCharacterDetailPage({
       {(character.position ||
         character.bounty ||
         character.devilFruit ||
+        character.status ||
+        character.origin ||
+        character.age ||
+        character.height ||
+        character.birthday ||
+        character.bloodType ||
         character.affiliation.length > 0 ||
         character.formerAffiliation.length > 0) && (
         <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
@@ -173,6 +179,54 @@ export default async function OnePieceCharacterDetailPage({
             Profile
           </h2>
           <dl className="mt-4 grid gap-4 sm:grid-cols-2">
+            {character.status && (
+              <div className="flex flex-col gap-1">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Status
+                </dt>
+                <dd className="text-sm text-[#F2E8D5]">{character.status}</dd>
+              </div>
+            )}
+            {character.origin && (
+              <div className="flex flex-col gap-1">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Origin
+                </dt>
+                <dd className="text-sm text-[#F2E8D5]">{character.origin}</dd>
+              </div>
+            )}
+            {character.age && (
+              <div className="flex flex-col gap-1">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Age
+                </dt>
+                <dd className="text-sm text-[#F2E8D5]">{character.age}</dd>
+              </div>
+            )}
+            {character.birthday && (
+              <div className="flex flex-col gap-1">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Birthday
+                </dt>
+                <dd className="text-sm text-[#F2E8D5]">{character.birthday}</dd>
+              </div>
+            )}
+            {character.height && (
+              <div className="flex flex-col gap-1">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Height
+                </dt>
+                <dd className="text-sm text-[#F2E8D5]">{character.height}</dd>
+              </div>
+            )}
+            {character.bloodType && (
+              <div className="flex flex-col gap-1">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  Blood Type
+                </dt>
+                <dd className="text-sm text-[#F2E8D5]">{character.bloodType}</dd>
+              </div>
+            )}
             {character.position && (
               <div className="flex flex-col gap-1">
                 <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">

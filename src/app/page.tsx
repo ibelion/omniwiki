@@ -161,25 +161,28 @@ const universes: UniverseDescriptor[] = [
     name: "One Piece",
     status: "Ready",
     highlight:
-      "Character roster live. Devil fruits and crews coming next.",
+      "Characters, devil fruits, crews, bounties, Haki, locations, and factions — all live.",
     description:
-      "Browse the character roster with role filtering and detailed profile pages sourced from MyAnimeList via the Jikan API. Devil fruits, crews, and bounty data are in the pipeline.",
+      "Browse 1,400+ characters with detailed profiles, explore devil fruits by type, trace pirate crews and their rosters, check bounty rankings, and map key locations across all four seas and the Grand Line.",
     stats: [
       { label: "Characters", value: onePieceData.characters.length },
-      { label: "Main", value: onePieceData.characters.filter((c) => c.role === "Main").length },
-      { label: "Devil Fruits", value: "Soon" },
-      { label: "Crews", value: "Soon" },
+      { label: "Devil Fruits", value: onePieceData.devilFruits.length },
+      { label: "Crews", value: onePieceData.crews.length },
+      { label: "Bounties", value: onePieceData.characters.filter((c) => c.bounty).length },
     ],
     quickLinks: [
-      { label: "Character Hub", href: "/onepiece" },
       { label: "Characters", href: "/onepiece/characters" },
-      { label: "Devil Fruits", comingSoon: true },
+      { label: "Devil Fruits", href: "/onepiece/devil-fruits" },
+      { label: "Wanted Board", href: "/onepiece/wanted" },
     ],
     roadmap: [
       { label: "Characters", done: true },
-      { label: "Devil Fruits", done: false },
-      { label: "Crews", done: false },
-      { label: "Bounties", done: false },
+      { label: "Devil Fruits", done: true },
+      { label: "Crews", done: true },
+      { label: "Bounties", done: true },
+      { label: "Factions", done: true },
+      { label: "Haki", done: true },
+      { label: "Locations", done: true },
     ],
     heroImage:
       onePieceData.characters[0]?.image ?? "/globe.svg",

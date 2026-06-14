@@ -2,12 +2,15 @@ import Link from "next/link";
 
 import { ImageWithFallback } from "@/components/ImageWithFallback";
 import { onePieceData } from "@/lib/onepiece/data";
+import { ONEPIECE_SAGAS } from "@/lib/onepiece/arcs";
+import { LOCATIONS } from "@/lib/onepiece/locations";
 
 export default function OnePiecePage() {
   const { characters, devilFruits, crews } = onePieceData;
   const totalCharacters = characters.length;
   const mainCharacters = characters.filter((c) => c.role === "Main").length;
   const sampleMain = characters.find((c) => c.role === "Main" && c.image);
+  const totalArcs = ONEPIECE_SAGAS.reduce((n, s) => n + s.arcs.length, 0);
 
   const universeStats = [
     {
@@ -17,10 +20,10 @@ export default function OnePiecePage() {
       sub: `${mainCharacters} main`,
     },
     {
-      label: "Main Cast",
-      value: mainCharacters,
-      href: "/onepiece/characters",
-      sub: "straw hats & more",
+      label: "Locations",
+      value: LOCATIONS.length,
+      href: "/onepiece/locations",
+      sub: "across all seas",
     },
     {
       label: "Devil Fruits",
@@ -33,6 +36,12 @@ export default function OnePiecePage() {
       value: crews.length,
       href: "/onepiece/crews",
       sub: crews.length > 0 ? `${crews[0]?.name ?? ""}` : "coming soon",
+    },
+    {
+      label: "Story Arcs",
+      value: totalArcs,
+      href: "/onepiece/arcs",
+      sub: `${ONEPIECE_SAGAS.length} sagas`,
     },
   ];
 
@@ -61,11 +70,39 @@ export default function OnePiecePage() {
       live: crews.length > 0,
     },
     {
-      href: "/onepiece/bounties",
-      label: "Bounties",
-      description: "World Government most-wanted ranked by bounty amount.",
-      badge: bountiedCount > 0 ? "Live" : "Coming Soon",
-      live: bountiedCount > 0,
+      href: "/onepiece/wanted",
+      label: "Wanted Board",
+      description: `Every pirate posted on the World Government's board — ${bountiedCount} known bounties across ${totalCharacters} characters.`,
+      badge: "Live",
+      live: true,
+    },
+    {
+      href: "/onepiece/arcs",
+      label: "Arcs & Sagas",
+      description: `Full story timeline — ${ONEPIECE_SAGAS.length} sagas, ${totalArcs} arcs from East Blue to the Final Saga.`,
+      badge: "Live",
+      live: true,
+    },
+    {
+      href: "/onepiece/factions",
+      label: "Factions",
+      description: "Characters grouped by affiliation — crews, organizations, and alliances.",
+      badge: "Live",
+      live: true,
+    },
+    {
+      href: "/onepiece/haki",
+      label: "Haki",
+      description: "The three types of Haki — Conqueror's, Armament, and Observation — with known users.",
+      badge: "Live",
+      live: true,
+    },
+    {
+      href: "/onepiece/locations",
+      label: "Locations",
+      description: `${LOCATIONS.length} key locations across the Grand Line world — islands, seas, and legendary places.`,
+      badge: "Live",
+      live: true,
     },
   ];
 
@@ -123,14 +160,14 @@ export default function OnePiecePage() {
             One Piece
           </h1>
           <p className="max-w-xl text-sm text-[#9a8c7e]">
-            Browse the full cast — characters, devil fruits, crews, and factions from across the Grand Line.
+            Characters, devil fruits, crews, bounties, Haki, locations, and factions — the full Grand Line indexed.
           </p>
         </div>
       </section>
 
       {/* stats panel */}
       <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {universeStats.map((stat) => (
             <Link
               key={stat.label}
@@ -163,7 +200,7 @@ export default function OnePiecePage() {
       {/* browse */}
       <section className="rounded-2xl border border-[#1c1c22] bg-[#141418] p-5 shadow-sm">
         <p className="text-sm font-semibold uppercase tracking-wide text-[#6b6055]">Browse</p>
-        <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {browseLinks.map((link) => (
             <Link
               key={link.href}

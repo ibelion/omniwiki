@@ -16,6 +16,12 @@ export type OnePieceCharacterRecord = {
   devilFruitEnglish: string | null;
   devilFruitType: DevilFruitType | null;
   bounty: string | null;
+  status: string | null;
+  origin: string | null;
+  age: string | null;
+  height: string | null;
+  birthday: string | null;
+  bloodType: string | null;
 };
 
 export type OnePieceDevilFruitRecord = {

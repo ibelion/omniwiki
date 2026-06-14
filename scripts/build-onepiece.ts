@@ -9,6 +9,10 @@ const FETCH_DELAY_MS = 420;
 const MAX_RETRIES = 5;
 const SAVE_CACHE_EVERY = 25;
 
+const WIKI_BASE = 'https://onepiece.fandom.com/api.php';
+const WIKI_DELAY_MS = 650;
+const WIKI_SAVE_EVERY = 50;
+
 const delay = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
 // ─── Jikan response shapes ───────────────────────────────────────────────────
@@ -30,7 +34,7 @@ type JikanCharacterDetail = {
   };
 };
 
-// ─── Cache ────────────────────────────────────────────────────────────────────
+// ─── Jikan cache ─────────────────────────────────────────────────────────────
 
 type CacheEntry = { about: string | null; nicknames: string[] };
 type DetailCache = Record<string, CacheEntry>;
@@ -45,6 +49,94 @@ function loadCache(cachePath: string): DetailCache {
 
 function saveCache(cachePath: string, cache: DetailCache): void {
   fs.writeFileSync(cachePath, JSON.stringify(cache) + '\n', 'utf8');
+}
+
+// ─── Wiki cache ───────────────────────────────────────────────────────────────
+
+type WikiEntry = { bounty: string | null };
+type WikiCache = Record<string, WikiEntry>;
+
+function loadWikiCache(cachePath: string): WikiCache {
+  try {
+    return JSON.parse(fs.readFileSync(cachePath, 'utf8')) as WikiCache;
+  } catch {
+    return {};
+  }
+}
+
+function saveWikiCache(cachePath: string, cache: WikiCache): void {
+  fs.writeFileSync(cachePath, JSON.stringify(cache) + '\n', 'utf8');
+}
+
+function malToWikiTitle(malName: string): string {
+  return malName.replace(/,\s*/g, ' ').replace(/\s+/g, ' ').trim().replace(/ /g, '_');
+}
+
+function parseWikiBounty(wikitext: string): string | null {
+  // Strip wiki bold/italic markup before parsing so "5,0'''46''',000,000" reads cleanly
+  const clean = wikitext.replace(/'{2,3}/g, '');
+  const matches = [...clean.matchAll(/\{\{[Bb]\}\}([\d,]+)/g)];
+  if (matches.length === 0) return null;
+  const nums = matches
+    .map((m) => parseInt(m[1].replace(/,/g, ''), 10))
+    .filter((n) => !isNaN(n) && n > 0);
+  if (nums.length === 0) return null;
+  return Math.max(...nums).toLocaleString('en-US');
+}
+
+async function fetchWikiCharacter(
+  malName: string,
+  wikiCache: WikiCache,
+  wikiCachePath: string,
+  wikiCacheChanges: { count: number },
+): Promise<WikiEntry> {
+  const key = malToWikiTitle(malName);
+
+  if (key in wikiCache) {
+    const cached = wikiCache[key] as unknown;
+    // Legacy format: standalone mjs script stored bounty as plain string/null
+    if (typeof cached === 'string') return { bounty: cached };
+    if (cached === null) return { bounty: null };
+    return wikiCache[key];
+  }
+
+  await delay(WIKI_DELAY_MS);
+
+  try {
+    const url = `${WIKI_BASE}?action=query&prop=revisions&rvprop=content&format=json&titles=${encodeURIComponent(key)}&redirects=true`;
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'OmniWiki/1.0 (educational; non-commercial)' },
+    });
+    if (!res.ok) {
+      const entry: WikiEntry = { bounty: null };
+      wikiCache[key] = entry;
+      wikiCacheChanges.count++;
+      return entry;
+    }
+
+    type WikiRevResponse = {
+      query?: { pages?: Record<string, { missing?: string; revisions?: [{ '*': string }] }> };
+    };
+    const json = (await res.json()) as WikiRevResponse;
+    const page = Object.values(json.query?.pages ?? {})[0];
+
+    const entry: WikiEntry = { bounty: null };
+    if (page && page.missing === undefined && page.revisions?.[0]) {
+      entry.bounty = parseWikiBounty(page.revisions[0]['*']);
+    }
+    wikiCache[key] = entry;
+    wikiCacheChanges.count++;
+    if (wikiCacheChanges.count % WIKI_SAVE_EVERY === 0) {
+      saveWikiCache(wikiCachePath, wikiCache);
+      process.stdout.write(`  [wiki ${Object.keys(wikiCache).length}] `);
+    }
+    return entry;
+  } catch {
+    const entry: WikiEntry = { bounty: null };
+    wikiCache[key] = entry;
+    wikiCacheChanges.count++;
+    return entry;
+  }
 }
 
 // ─── Output bundle shape ──────────────────────────────────────────────────────
@@ -64,6 +156,12 @@ type OnePieceCharacter = {
   devilFruitEnglish: string | null;
   devilFruitType: DevilFruitType | null;
   bounty: string | null;
+  status: string | null;
+  origin: string | null;
+  age: string | null;
+  height: string | null;
+  birthday: string | null;
+  bloodType: string | null;
 };
 
 type OnePieceBundle = {
@@ -77,7 +175,7 @@ type OnePieceBundle = {
 
 function parseAboutText(about: string): Pick<
   OnePieceCharacter,
-  'affiliation' | 'formerAffiliation' | 'position' | 'devilFruit' | 'devilFruitEnglish' | 'devilFruitType' | 'bounty'
+  'affiliation' | 'formerAffiliation' | 'position' | 'devilFruit' | 'devilFruitEnglish' | 'devilFruitType' | 'bounty' | 'status' | 'origin' | 'age' | 'height' | 'birthday' | 'bloodType'
 > {
   const result = {
     affiliation: [] as string[],
@@ -87,6 +185,12 @@ function parseAboutText(about: string): Pick<
     devilFruitEnglish: null as string | null,
     devilFruitType: null as DevilFruitType | null,
     bounty: null as string | null,
+    status: null as string | null,
+    origin: null as string | null,
+    age: null as string | null,
+    height: null as string | null,
+    birthday: null as string | null,
+    bloodType: null as string | null,
   };
 
   const lines = about.split('\n');
@@ -128,8 +232,47 @@ function parseAboutText(about: string): Pick<
         result.devilFruitType = val;
       }
     } else if (lower.startsWith('bounty:')) {
-      const val = line.replace(/^bounty:\s*/i, '').trim().replace(/,.*$/, '').trim();
-      result.bounty = val || null;
+      const raw = line.replace(/^bounty:\s*/i, '').trim();
+      // strip currency label but keep commas within the number
+      const stripped = raw.replace(/\s*(Beli|Berry|Berries).*$/i, '').trim();
+      // must start with a digit to be a valid bounty
+      result.bounty = /^\d/.test(stripped) ? stripped : null;
+    } else if (lower.startsWith('status:')) {
+      const val = line.replace(/^status:\s*/i, '').trim().replace(/,.*$/, '').trim();
+      result.status = val || null;
+    } else if (lower.startsWith('origin:') || lower.startsWith('hometown:')) {
+      const val = line.replace(/^(origin|hometown):\s*/i, '').trim().replace(/,.*$/, '').trim();
+      result.origin = val || null;
+    } else if (lower.startsWith('age:')) {
+      const raw = line.replace(/^age:\s*/i, '').trim();
+      // "17; 19" or "18→20" — take the last value (post-timeskip)
+      const parts = raw.split(/[;→]/).map((s) => s.trim()).filter(Boolean);
+      const last = parts[parts.length - 1] ?? '';
+      // strip parenthetical notes, take just the number
+      const num = last.replace(/\(.*?\)/g, '').trim().replace(/\D.*$/, '').trim();
+      result.age = num || null;
+    } else if (lower.startsWith('height:')) {
+      const raw = line.replace(/^height:\s*/i, '').trim();
+      // "178 cm (5'10") , 181 (5'11") (after timeskip)" or "169 cm → 170 cm"
+      let cleaned = raw;
+      // prefer post-timeskip value if present
+      const timeskipMatch = raw.match(/[,→]\s*([\d.]+\s*cm)/i);
+      if (timeskipMatch) {
+        cleaned = timeskipMatch[1].trim();
+      } else {
+        // take first "N cm" group
+        const firstMatch = raw.match(/([\d.]+\s*cm)/i);
+        cleaned = firstMatch ? firstMatch[1].trim() : raw.split('(')[0].trim();
+      }
+      result.height = cleaned || null;
+    } else if (lower.startsWith('birthdate:') || lower.startsWith('birthday:')) {
+      const raw = line.replace(/^(birthdate|birthday):\s*/i, '').trim();
+      // "May 5, Taurus" — drop zodiac, keep date
+      const dateOnly = raw.replace(/,\s*\w+$/, '').trim();
+      result.birthday = dateOnly || null;
+    } else if (lower.startsWith('blood type:') || lower.startsWith('blood:')) {
+      const val = line.replace(/^blood\s*type:\s*/i, '').trim().replace(/\s.*$/, '').trim();
+      result.bloodType = val || null;
     }
   }
 
@@ -218,8 +361,28 @@ async function main(): Promise<void> {
   }
 
   const listJson = (await listRes.json()) as { data: JikanAnimeCharacterEntry[] };
-  const rawList = listJson.data ?? [];
+  let rawList = listJson.data ?? [];
   console.log(`  ${rawList.length} characters in response`);
+
+  if (rawList.length === 0) {
+    const existingBundlePath = path.join(PUBLIC_DIR, 'bundle.json');
+    if (fs.existsSync(existingBundlePath)) {
+      console.warn('  ⚠ Jikan returned 0 — falling back to existing bundle character list');
+      const existing = JSON.parse(fs.readFileSync(existingBundlePath, 'utf8')) as OnePieceBundle;
+      rawList = existing.characters.map((c) => ({
+        character: {
+          mal_id: Number(c.id.replace('mal-', '')),
+          name: c.name,
+          images: { jpg: { image_url: c.image } },
+        },
+        role: c.role,
+        favorites: c.favorites ?? 0,
+      }));
+      console.log(`  Using ${rawList.length} characters from existing bundle`);
+    } else {
+      throw new Error('Jikan returned 0 characters and no existing bundle found. Bundle NOT overwritten.');
+    }
+  }
 
   // Sort: Main first, then Supporting by favorites desc
   const sortedList = [...rawList].sort((a, b) => {
@@ -265,6 +428,12 @@ async function main(): Promise<void> {
       devilFruitEnglish: null,
       devilFruitType: null,
       bounty: null,
+      status: null,
+      origin: null,
+      age: null,
+      height: null,
+      birthday: null,
+      bloodType: null,
     };
 
     if (detail.about) {
@@ -276,18 +445,44 @@ async function main(): Promise<void> {
       char.devilFruitEnglish = parsed.devilFruitEnglish;
       char.devilFruitType = parsed.devilFruitType;
       char.bounty = parsed.bounty;
+      char.status = parsed.status;
+      char.origin = parsed.origin;
+      char.age = parsed.age;
+      char.height = parsed.height;
+      char.birthday = parsed.birthday;
+      char.bloodType = parsed.bloodType;
     }
 
-    if (isMain && detail.devilFruit !== undefined) {
+    if (isMain) {
       console.log(`  ★ ${char.name}${char.devilFruit ? ` → ${char.devilFruit}` : ''}${char.bounty ? ` [${char.bounty}]` : ''}`);
     }
 
     characters.push(char);
   }
 
-  // Final cache save
+  // Final Jikan cache save
   saveCache(CACHE_PATH, cache);
-  console.log(`Cache saved: ${Object.keys(cache).length} total entries`);
+  console.log(`Jikan cache saved: ${Object.keys(cache).length} total entries`);
+
+  // ─── Wiki enrichment pass ────────────────────────────────────────────────────
+  const WIKI_CACHE_PATH = path.resolve(PUBLIC_DIR, 'char-wiki-cache.json');
+  const wikiCache = loadWikiCache(WIKI_CACHE_PATH);
+  const wikiCacheChanges = { count: 0 };
+
+  const noBounty = characters.filter((c) => !c.bounty);
+  const newWikiFetches = noBounty.filter((c) => !(malToWikiTitle(c.name) in wikiCache)).length;
+  console.log(`\nWiki enrichment: ${noBounty.length} characters missing bounty, ${newWikiFetches} new wiki fetches needed`);
+
+  let wikiEnriched = 0;
+  for (const char of noBounty) {
+    const wiki = await fetchWikiCharacter(char.name, wikiCache, WIKI_CACHE_PATH, wikiCacheChanges);
+    if (wiki.bounty) {
+      char.bounty = wiki.bounty;
+      wikiEnriched++;
+    }
+  }
+  saveWikiCache(WIKI_CACHE_PATH, wikiCache);
+  console.log(`Wiki enriched ${wikiEnriched} bounties (${Object.keys(wikiCache).length} wiki pages cached)`);
 
   // Build devil fruits (deduplicate by fruit name)
   const fruitMap = new Map<string, OnePieceDevilFruitRecord>();
