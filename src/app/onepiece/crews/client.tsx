@@ -95,11 +95,6 @@ export function CrewsClient({ crews }: { crews: CrewWithImages[] }) {
           {filtered.map((crew) => {
             const label = factionLabel(crew.name);
             const borderColor = factionColor(crew.name);
-            // Up to 8 members shown as avatars; prioritize those with images
-            const withImg = crew.members.filter((m) => m.image);
-            const withoutImg = crew.members.filter((m) => !m.image);
-            const avatarSlots = [...withImg, ...withoutImg].slice(0, 8);
-            const overflow = crew.members.length - avatarSlots.length;
 
             return (
               <div
@@ -125,13 +120,33 @@ export function CrewsClient({ crews }: { crews: CrewWithImages[] }) {
                   </span>
                 </div>
 
-                {/* member avatars */}
-                <div className="flex flex-wrap items-center gap-3 bg-[#0f0f12] px-5 py-4">
-                  {avatarSlots.map((member, i) => (
-                    <div key={i} className="flex flex-col items-center gap-1">
-                      {member.id ? (
-                        <Link href={`/onepiece/characters/${member.id}`}>
-                          <div className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-[#2c2c32] transition hover:border-[#d4933a]">
+                {/* member avatars — horizontally scrollable, show all */}
+                <div className="overflow-x-auto bg-[#0f0f12] px-5 py-4 scrollbar-thin">
+                  <div className="flex gap-3" style={{ width: "max-content" }}>
+                    {crew.members.map((member, i) => (
+                      <div key={i} className="flex flex-col items-center gap-1">
+                        {member.id ? (
+                          <Link href={`/onepiece/characters/${member.id}`}>
+                            <div className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-[#2c2c32] transition hover:border-[#d4933a]">
+                              {member.image ? (
+                                <img
+                                  src={member.image}
+                                  alt={member.name}
+                                  className="h-full w-full object-cover object-top"
+                                  loading="lazy"
+                                  style={{ filter: "brightness(0.95) contrast(1.05)" }}
+                                />
+                              ) : (
+                                <div className="flex h-full w-full items-center justify-center bg-[#1c1c22]">
+                                  <span className="text-lg font-bold text-[#3a3a44]">
+                                    {shortName(member.name)[0]}
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          </Link>
+                        ) : (
+                          <div className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-[#2c2c32]">
                             {member.image ? (
                               <img
                                 src={member.image}
@@ -148,40 +163,13 @@ export function CrewsClient({ crews }: { crews: CrewWithImages[] }) {
                               </div>
                             )}
                           </div>
-                        </Link>
-                      ) : (
-                        <div className="relative h-14 w-14 overflow-hidden rounded-full border-2 border-[#2c2c32]">
-                          {member.image ? (
-                            <img
-                              src={member.image}
-                              alt={member.name}
-                              className="h-full w-full object-cover object-top"
-                              loading="lazy"
-                              style={{ filter: "brightness(0.95) contrast(1.05)" }}
-                            />
-                          ) : (
-                            <div className="flex h-full w-full items-center justify-center bg-[#1c1c22]">
-                              <span className="text-lg font-bold text-[#3a3a44]">
-                                {shortName(member.name)[0]}
-                              </span>
-                            </div>
-                          )}
-                        </div>
-                      )}
-                      <span className="max-w-[56px] truncate text-center text-[9px] text-[#6b6055]">
-                        {shortName(member.name)}
-                      </span>
-                    </div>
-                  ))}
-
-                  {overflow > 0 && (
-                    <div className="flex flex-col items-center gap-1">
-                      <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-dashed border-[#2c2c32] bg-[#141418]">
-                        <span className="text-xs font-bold text-[#d4933a]">+{overflow}</span>
+                        )}
+                        <span className="w-14 truncate text-center text-[9px] text-[#6b6055]">
+                          {shortName(member.name)}
+                        </span>
                       </div>
-                      <span className="text-[9px] text-[#4a4444]">more</span>
-                    </div>
-                  )}
+                    ))}
+                  </div>
                 </div>
               </div>
             );
