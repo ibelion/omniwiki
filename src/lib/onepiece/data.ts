@@ -4,6 +4,7 @@ import { join } from 'path';
 import { STATIC_BOUNTIES, normalizeName } from './static-bounties';
 import { STATIC_DEVIL_FRUITS } from './static-devil-fruits';
 import { STATIC_CREWS } from './static-crews';
+import { STATIC_CHARACTER_DATA } from './static-character-data';
 
 // Marine/World Government characters — MAL assigns them fake bounties; strip those entirely.
 // These are people who would never appear on a pirate wanted board.
@@ -210,6 +211,28 @@ function applyStaticCrews(bundle: OnePieceDataBundle): OnePieceDataBundle {
   return { ...bundle, crews: [...bundle.crews, ...toAdd] };
 }
 
+function applyStaticCharacterData(bundle: OnePieceDataBundle): OnePieceDataBundle {
+  const characters = bundle.characters.map((c) => {
+    const key = normalizeName(c.name);
+    const override = STATIC_CHARACTER_DATA[key];
+    if (!override) return c;
+    return {
+      ...c,
+      ...(override.affiliation !== undefined ? { affiliation: override.affiliation } : {}),
+      ...(override.devilFruit !== undefined ? { devilFruit: override.devilFruit } : {}),
+      ...(override.devilFruitEnglish !== undefined ? { devilFruitEnglish: override.devilFruitEnglish } : {}),
+      ...(override.devilFruitType !== undefined ? { devilFruitType: override.devilFruitType } : {}),
+      ...(override.status !== undefined ? { status: override.status } : {}),
+      ...(override.position !== undefined ? { position: override.position } : {}),
+    };
+  });
+  return { ...bundle, characters };
+}
+
 export const onePieceData = applyStaticCrews(
-  applyStaticDevilFruits(applyStaticBounties(loadBundle())),
+  applyStaticDevilFruits(
+    applyStaticCharacterData(
+      applyStaticBounties(loadBundle()),
+    ),
+  ),
 );
