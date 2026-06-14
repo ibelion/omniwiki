@@ -88,6 +88,14 @@ const nextConfig: NextConfig = {
         source: "/cdn/pokemoncontent/images/:path*",
         destination: `${CDN_BASE}/pokemoncontent/images/:path*`,
       },
+      {
+        source: "/onepiececontent/wanted/:path*",
+        destination: `${CDN_BASE}/onepiececontent/wanted/:path*`,
+      },
+      {
+        source: "/cdn/onepiececontent/wanted/:path*",
+        destination: `${CDN_BASE}/onepiececontent/wanted/:path*`,
+      },
     ];
   },
 };

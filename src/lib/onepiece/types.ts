@@ -1,5 +1,7 @@
 export type DevilFruitType = 'Paramecia' | 'Zoan' | 'Logia';
 
+export type HakiType = 'Armament' | 'Observation' | 'Conqueror';
+
 export type OnePieceCharacterRecord = {
   id: string;
   name: string;
@@ -22,6 +24,10 @@ export type OnePieceCharacterRecord = {
   height: string | null;
   birthday: string | null;
   bloodType: string | null;
+  // DLE game fields (populated by static-character-data overrides)
+  gender: 'Male' | 'Female' | 'Unknown' | null;
+  haki: HakiType[];
+  firstArc: string | null;
 };
 
 export type OnePieceDevilFruitRecord = {

@@ -1,4 +1,4 @@
-import type { DevilFruitType } from './types';
+import type { DevilFruitType, HakiType } from './types';
 
 type StaticCharData = {
   affiliation?: string[];
@@ -7,12 +7,14 @@ type StaticCharData = {
   devilFruitType?: DevilFruitType | null;
   status?: 'Alive' | 'Deceased' | null;
   position?: string | null;
+  gender?: 'Male' | 'Female' | 'Unknown' | null;
+  haki?: HakiType[];
+  firstArc?: string | null;
 };
 
-// Codex-verified overrides for the top 100 characters by favorites.
-// Keys are normalized via normalizeName() (same as static-bounties).
-// Undefined fields = leave bundle value unchanged.
-// Explicit null = clear the field.
+// Codex-verified overrides for the top characters by favorites.
+// Keys are normalized via normalizeName() (lowercase, strip punctuation, collapse spaces).
+// Undefined = leave bundle value unchanged. Explicit null = clear the field.
 export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
   // ── Straw Hat Pirates ────────────────────────────────────────────────────
   'monkey d luffy': {
@@ -23,16 +25,25 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Romance Dawn',
   },
   'roronoa zoro': {
     affiliation: ['Straw Hat Pirates'],
     status: 'Alive',
     position: 'Swordsman',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Romance Dawn',
   },
   'sanji': {
     affiliation: ['Straw Hat Pirates'],
     status: 'Alive',
     position: 'Cook',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Baratie',
   },
   'nico robin': {
     affiliation: ['Straw Hat Pirates'],
@@ -41,6 +52,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Archaeologist',
+    gender: 'Female',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Alabasta',
   },
   'trafalgar law': {
     affiliation: ['Heart Pirates'],
@@ -49,6 +63,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Sabaody Archipelago',
   },
   'tony tony chopper': {
     affiliation: ['Straw Hat Pirates'],
@@ -57,16 +74,25 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'Doctor',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Drum Island',
   },
   'nami': {
     affiliation: ['Straw Hat Pirates'],
     status: 'Alive',
     position: 'Navigator',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Orange Town',
   },
   'usopp': {
     affiliation: ['Straw Hat Pirates'],
     status: 'Alive',
     position: 'Sniper',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Syrup Village',
   },
   'portgas d ace': {
     affiliation: ['Whitebeard Pirates'],
@@ -75,6 +101,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Deceased',
     position: '2nd Division Commander',
+    gender: 'Male',
+    haki: ['Armament', 'Conqueror'],
+    firstArc: 'Drum Island',
   },
   'brook': {
     affiliation: ['Straw Hat Pirates'],
@@ -83,16 +112,25 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Musician',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Thriller Bark',
   },
   'franky': {
     affiliation: ['Straw Hat Pirates'],
     status: 'Alive',
     position: 'Shipwright',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Water 7',
   },
   'jinbe': {
     affiliation: ['Straw Hat Pirates'],
     status: 'Alive',
     position: 'Helmsman',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Marineford',
   },
 
   // ── Yonko / Emperor-class ────────────────────────────────────────────────
@@ -100,6 +138,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     affiliation: ['Red Hair Pirates'],
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Romance Dawn',
   },
   'edward newgate': {
     affiliation: ['Whitebeard Pirates'],
@@ -108,6 +149,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Deceased',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Marineford',
   },
   'charlotte linlin': {
     affiliation: ['Big Mom Pirates'],
@@ -115,6 +159,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitEnglish: 'Soul-Soul Fruit',
     devilFruitType: 'Paramecia',
     position: 'Captain',
+    gender: 'Female',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Whole Cake Island',
   },
   'kaidou': {
     affiliation: ['Beasts Pirates'],
@@ -122,6 +169,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitEnglish: 'Fish-Fish Fruit, Model: Azure Dragon',
     devilFruitType: 'Zoan',
     position: 'Governor-General',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Wano',
   },
   'marshall d teach': {
     affiliation: ['Blackbeard Pirates'],
@@ -131,6 +181,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: null,
     status: 'Alive',
     position: 'Admiral',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Jaya',
   },
   'buggy': {
     affiliation: ['Cross Guild'],
@@ -139,6 +192,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Emperor',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Orange Town',
   },
 
   // ── Warlords / Shichibukai ────────────────────────────────────────────────
@@ -146,6 +202,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     affiliation: ['Cross Guild'],
     status: 'Alive',
     position: 'Co-Founder',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Baratie',
   },
   'donquixote doflamingo': {
     affiliation: ['Donquixote Pirates'],
@@ -154,6 +213,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Marineford',
   },
   'boa hancock': {
     affiliation: ['Kuja Pirates'],
@@ -162,6 +224,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Captain',
+    gender: 'Female',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Amazon Lily',
   },
   'crocodile': {
     affiliation: ['Cross Guild'],
@@ -170,6 +235,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Alive',
     position: 'Officer',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Alabasta',
   },
   'bartholomew kuma': {
     affiliation: ['Revolutionary Army'],
@@ -178,6 +246,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Army Commander',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Thriller Bark',
   },
   'gecko moria': {
     affiliation: ['Thriller Bark Pirates'],
@@ -186,6 +257,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Thriller Bark',
   },
 
   // ── Charlotte (Big Mom) Family ────────────────────────────────────────────
@@ -196,6 +270,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Sweet Commander',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Whole Cake Island',
   },
   'charlotte pudding': {
     affiliation: ['Big Mom Pirates'],
@@ -204,6 +281,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Minister of Chocolate',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Whole Cake Island',
   },
 
   // ── Revolutionary Army ────────────────────────────────────────────────────
@@ -214,11 +294,17 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Alive',
     position: 'Chief of Staff',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Post-War',
   },
   'monkey d dragon': {
     affiliation: ['Revolutionary Army'],
     status: 'Alive',
     position: 'Supreme Commander',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Loguetown',
   },
   'emporio ivankov': {
     affiliation: ['Revolutionary Army'],
@@ -227,11 +313,17 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Commander',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Impel Down',
   },
   'koala': {
     affiliation: ['Revolutionary Army'],
     status: 'Alive',
     position: 'Officer',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Dressrosa',
   },
 
   // ── Marines / World Government ────────────────────────────────────────────
@@ -239,6 +331,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     affiliation: ['Marines'],
     status: 'Alive',
     position: 'Vice Admiral',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Water 7',
   },
   'sengoku': {
     affiliation: ['Marines'],
@@ -247,6 +342,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'Inspector General',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Marineford',
   },
   'sakazuki': {
     affiliation: ['Marines'],
@@ -255,6 +353,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Alive',
     position: 'Fleet Admiral',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Marineford',
   },
   'kuzan': {
     affiliation: ['Blackbeard Pirates'],
@@ -263,6 +364,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Alive',
     position: 'Titanic Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Long Ring Long Land',
   },
   'borsalino': {
     affiliation: ['Marines'],
@@ -271,6 +375,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Alive',
     position: 'Admiral',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Sabaody Archipelago',
   },
   'isshou': {
     affiliation: ['Marines'],
@@ -279,6 +386,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Admiral',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Dressrosa',
   },
   'smoker': {
     affiliation: ['Marines'],
@@ -287,16 +397,25 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Alive',
     position: 'Vice Admiral',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Loguetown',
   },
   'koby': {
     affiliation: ['Marines'],
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Romance Dawn',
   },
   'tashigi': {
     affiliation: ['Marines'],
     status: 'Alive',
     position: 'Captain',
+    gender: 'Female',
+    haki: ['Armament'],
+    firstArc: 'Loguetown',
   },
   'rob lucci': {
     affiliation: ['CP0'],
@@ -305,6 +424,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'Agent',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Water 7',
   },
   'magellan': {
     affiliation: ['Impel Down'],
@@ -313,6 +435,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Vice Warden',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Impel Down',
   },
   'kaku': {
     affiliation: ['CP0'],
@@ -321,6 +446,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'Agent',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Water 7',
   },
 
   // ── Donquixote Pirates ────────────────────────────────────────────────────
@@ -331,6 +459,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Deceased',
     position: 'Commander',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Dressrosa',
   },
   'monet': {
     affiliation: ['Donquixote Pirates'],
@@ -339,6 +470,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Deceased',
     position: 'Officer',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Punk Hazard',
   },
   'senor pink': {
     affiliation: ['Donquixote Pirates'],
@@ -347,6 +481,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Officer',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Dressrosa',
   },
 
   // ── Beasts Pirates ────────────────────────────────────────────────────────
@@ -357,6 +494,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'Guardian Deity',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Wano',
   },
   'ulti': {
     affiliation: ['Beasts Pirates'],
@@ -365,6 +505,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'Tobiroppo',
+    gender: 'Female',
+    haki: ['Armament'],
+    firstArc: 'Wano',
   },
   'king': {
     affiliation: ['Beasts Pirates'],
@@ -373,6 +516,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'All-Star',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Wano',
   },
 
   // ── Heart Pirates ─────────────────────────────────────────────────────────
@@ -380,6 +526,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     affiliation: ['Heart Pirates'],
     status: 'Alive',
     position: 'Navigator',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Sabaody Archipelago',
   },
 
   // ── Kid Pirates ───────────────────────────────────────────────────────────
@@ -389,11 +538,17 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitEnglish: 'Magnet-Magnet Fruit',
     devilFruitType: 'Paramecia',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Conqueror'],
+    firstArc: 'Sabaody Archipelago',
   },
   'killer': {
     affiliation: ['Kid Pirates'],
     status: 'Alive',
     position: 'Combatant',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Sabaody Archipelago',
   },
 
   // ── Beautiful Pirates / Grand Fleet ──────────────────────────────────────
@@ -401,6 +556,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     affiliation: ['Beautiful Pirates'],
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Dressrosa',
   },
   'bartolomeo': {
     affiliation: ['Barto Club'],
@@ -409,6 +567,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Dressrosa',
   },
 
   // ── Perona / Misc ─────────────────────────────────────────────────────────
@@ -417,6 +578,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitEnglish: 'Hollow-Hollow Fruit',
     devilFruitType: 'Paramecia',
     status: 'Alive',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Thriller Bark',
   },
   'bentham': {
     affiliation: ['Newkama Land'],
@@ -425,6 +589,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Queen',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Alabasta',
   },
   'enel': {
     devilFruit: 'Goro Goro no Mi',
@@ -432,27 +599,39 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Alive',
     position: 'Leader',
+    gender: 'Male',
+    haki: ['Observation'],
+    firstArc: 'Skypiea',
   },
-
-  // ── Cross Guild ───────────────────────────────────────────────────────────
-  // (Buggy, Mihawk, Crocodile covered above)
 
   // ── Roger Pirates / Legends ───────────────────────────────────────────────
   'gol d roger': {
     status: 'Deceased',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Romance Dawn',
   },
   'silvers rayleigh': {
     status: 'Alive',
     position: 'Coating Mechanic',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Sabaody Archipelago',
   },
   'kozuki oden': {
     status: 'Deceased',
     position: 'Daimyo',
+    gender: 'Male',
+    haki: ['Armament', 'Observation', 'Conqueror'],
+    firstArc: 'Wano',
   },
   'rocks d xebec': {
     status: 'Deceased',
     position: 'Captain',
+    gender: 'Male',
+    haki: ['Conqueror'],
+    firstArc: 'Marineford',
   },
 
   // ── Whitebeard Pirates ────────────────────────────────────────────────────
@@ -462,6 +641,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'Doctor',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Marineford',
   },
 
   // ── Bonney Pirates ────────────────────────────────────────────────────────
@@ -472,6 +654,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Captain',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Sabaody Archipelago',
   },
 
   // ── Vinsmoke / Germa 66 ───────────────────────────────────────────────────
@@ -479,6 +664,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     affiliation: ['Germa 66'],
     status: 'Alive',
     position: 'Princess',
+    gender: 'Female',
+    haki: ['Armament'],
+    firstArc: 'Whole Cake Island',
   },
 
   // ── Wano / Nine Red Scabbards ─────────────────────────────────────────────
@@ -489,16 +677,25 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Leader of the Nine Red Scabbards',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Punk Hazard',
   },
   'nekomamushi': {
     affiliation: ['Nine Red Scabbards'],
     status: 'Alive',
     position: 'Retainer',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Zou',
   },
   'okiku': {
     affiliation: ['Kozuki Family'],
     status: 'Alive',
     position: 'Retainer',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Wano',
   },
 
   // ── Other notable characters ──────────────────────────────────────────────
@@ -506,32 +703,50 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     affiliation: ['Arabasta Kingdom'],
     status: 'Alive',
     position: 'Princess',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Whiskey Peak',
   },
   'carrot': {
     affiliation: ['Mokomo Dukedom'],
     status: 'Alive',
     position: 'Ruler',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Zou',
   },
   'shirahoshi': {
     affiliation: ['Ryugu Kingdom'],
     status: 'Alive',
     position: 'Princess',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Fishman Island',
   },
   'loki': {
     affiliation: ['Elbaf'],
     status: 'Alive',
     position: 'Prince',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Egghead',
   },
   'uta': {
     devilFruit: 'Uta Uta no Mi',
     devilFruitEnglish: 'Sing-Sing Fruit',
     devilFruitType: 'Paramecia',
     position: 'Singer',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Film Red',
   },
   'imu': {
     affiliation: ['World Government'],
     status: 'Alive',
     position: 'King of the World',
+    gender: 'Unknown',
+    haki: [],
+    firstArc: 'Reverie',
   },
   // Caesar Clown — bundle stores name as "Clown, Caesar" → key "clown caesar"
   'clown caesar': {
@@ -541,6 +756,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Logia',
     status: 'Alive',
     position: 'Scientist',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Punk Hazard',
   },
   'pell': {
     affiliation: ['Arabasta Kingdom'],
@@ -549,11 +767,17 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Zoan',
     status: 'Alive',
     position: 'Commander of the Royal Guards',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Alabasta',
   },
   'arlong': {
     affiliation: ['Arlong Pirates'],
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Arlong Park',
   },
   'baby 5': {
     affiliation: ['Happo Navy'],
@@ -561,6 +785,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitEnglish: 'Arms-Arms Fruit',
     devilFruitType: 'Paramecia',
     status: 'Alive',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Punk Hazard',
   },
   'foxy': {
     affiliation: ['Foxy Pirates'],
@@ -569,6 +796,9 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitType: 'Paramecia',
     status: 'Alive',
     position: 'Captain',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Long Ring Long Land',
   },
   'otama': {
     affiliation: ['Wano Country'],
@@ -576,44 +806,71 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     devilFruitEnglish: 'Millet-Millet Fruit',
     devilFruitType: 'Paramecia',
     status: 'Alive',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Wano',
   },
   'benn beckman': {
     affiliation: ['Red Hair Pirates'],
     status: 'Alive',
     position: 'First Mate',
+    gender: 'Male',
+    haki: ['Armament', 'Observation'],
+    firstArc: 'Romance Dawn',
   },
   // Deceased characters
   'hiluluk': {
     status: 'Deceased',
     position: 'Doctor',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Drum Island',
   },
   'bellemere': {
     affiliation: ['Marines'],
     status: 'Deceased',
     position: 'Former Marine',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Arlong Park',
   },
   'shimotsuki ryuuma': {
     status: 'Deceased',
     position: 'Samurai',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Thriller Bark',
   },
   'fisher tiger': {
     affiliation: ['Sun Pirates'],
     status: 'Deceased',
     position: 'Captain',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Fishman Island',
   },
   'pedro': {
     status: 'Deceased',
     position: 'Captain of the Guardians',
+    gender: 'Male',
+    haki: [],
+    firstArc: 'Zou',
   },
   // Other
   'kyros': {
     affiliation: ['Dressrosa Kingdom'],
     status: 'Alive',
     position: 'Gladiator',
+    gender: 'Male',
+    haki: ['Armament'],
+    firstArc: 'Dressrosa',
   },
   'rebecca': {
     affiliation: ['Dressrosa'],
     status: 'Alive',
     position: 'Lady-in-waiting',
+    gender: 'Female',
+    haki: [],
+    firstArc: 'Dressrosa',
   },
 };

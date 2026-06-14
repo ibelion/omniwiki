@@ -1,4 +1,4 @@
-import type { OnePieceDataBundle } from './types';
+import type { OnePieceDataBundle, HakiType } from './types';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { STATIC_BOUNTIES, normalizeName } from './static-bounties';
@@ -213,17 +213,27 @@ function applyStaticCrews(bundle: OnePieceDataBundle): OnePieceDataBundle {
 
 function applyStaticCharacterData(bundle: OnePieceDataBundle): OnePieceDataBundle {
   const characters = bundle.characters.map((c) => {
+    // Bundle JSON predates these fields — initialize defaults so the type is satisfied.
+    const base = {
+      gender: null as 'Male' | 'Female' | 'Unknown' | null,
+      haki: [] as HakiType[],
+      firstArc: null as string | null,
+      ...c,
+    };
     const key = normalizeName(c.name);
     const override = STATIC_CHARACTER_DATA[key];
-    if (!override) return c;
+    if (!override) return base;
     return {
-      ...c,
+      ...base,
       ...(override.affiliation !== undefined ? { affiliation: override.affiliation } : {}),
       ...(override.devilFruit !== undefined ? { devilFruit: override.devilFruit } : {}),
       ...(override.devilFruitEnglish !== undefined ? { devilFruitEnglish: override.devilFruitEnglish } : {}),
       ...(override.devilFruitType !== undefined ? { devilFruitType: override.devilFruitType } : {}),
       ...(override.status !== undefined ? { status: override.status } : {}),
       ...(override.position !== undefined ? { position: override.position } : {}),
+      ...(override.gender !== undefined ? { gender: override.gender } : {}),
+      ...(override.haki !== undefined ? { haki: override.haki } : {}),
+      ...(override.firstArc !== undefined ? { firstArc: override.firstArc } : {}),
     };
   });
   return { ...bundle, characters };
