@@ -5,26 +5,46 @@
 export const runtime = 'nodejs';
 
 import { NextResponse } from 'next/server';
-import fs from 'node:fs';
-import path from 'node:path';
-import { onePieceData } from '@/lib/onepiece/data';
+import { getOnePieceDataEdge } from '@/lib/onepiece/data';
 
 const CDN_RAW = 'https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn';
 
-// Build a map of char-id → file extension for downloaded wanted posters.
-// Runs once at module load (server startup).
-function buildPosterIndex(): Map<string, string> {
-  const map = new Map<string, string>();
-  const dir = path.join(process.cwd(), 'cdn/onepiececontent/wanted');
-  if (!fs.existsSync(dir)) return map;
-  for (const file of fs.readdirSync(dir)) {
-    const m = file.match(/^(.+?)\.(png|jpe?g)$/i);
-    if (m) map.set(m[1], m[2].toLowerCase());
-  }
-  return map;
-}
-
-const posterIndex = buildPosterIndex();
+// All PNG files committed to cdn/onepiececontent/wanted/. All are .png.
+const POSTER_IDS = new Set([
+  'mal-40','mal-61','mal-62','mal-64','mal-305','mal-309',
+  'mal-723','mal-724','mal-725','mal-727',
+  'mal-2064','mal-2072','mal-2519','mal-2748','mal-2749','mal-2751','mal-2754',
+  'mal-3331','mal-3879',
+  'mal-4875','mal-4883','mal-4886','mal-4887','mal-4899',
+  'mal-5420','mal-5421','mal-5627',
+  'mal-6865',
+  'mal-7453','mal-7454',
+  'mal-8064',
+  'mal-9320','mal-9324',
+  'mal-12232','mal-12361',
+  'mal-13767',
+  'mal-14989',
+  'mal-16342',
+  'mal-17004','mal-17492',
+  'mal-18938',
+  'mal-20177','mal-20288','mal-20289','mal-20292','mal-20294','mal-20295',
+  'mal-21213','mal-21556','mal-21810',
+  'mal-22412',
+  'mal-23367','mal-23677',
+  'mal-27944',
+  'mal-32554','mal-32893',
+  'mal-37459','mal-37462',
+  'mal-40259','mal-40261',
+  'mal-46109',
+  'mal-54495','mal-54499',
+  'mal-85649',
+  'mal-88131',
+  'mal-142324','mal-143178',
+  'mal-153725',
+  'mal-162402',
+  'mal-183892',
+  'mal-273285',
+]);
 
 // "Roronoa, Zoro" → "Zoro Roronoa"  |  "Monkey D. Luffy" → unchanged
 function formatName(name: string): string {
@@ -34,7 +54,7 @@ function formatName(name: string): string {
 }
 
 export async function GET() {
-  const { characters } = onePieceData;
+  const { characters } = await getOnePieceDataEdge();
 
   const seen = new Set<string>();
 
@@ -46,27 +66,22 @@ export async function GET() {
       seen.add(key);
       return true;
     })
-    .map((c) => {
-      const ext = posterIndex.get(c.id);
-      const wantedPoster = ext
-        ? `${CDN_RAW}/onepiececontent/wanted/${c.id}.${ext}`
-        : null;
-
-      return {
-        id: c.id,
-        name: formatName(c.name),
-        image: c.image,
-        wantedPoster,
-        gender: c.gender ?? null,
-        affiliation: c.affiliation[0] ?? 'Unknown',
-        devilFruitType: c.devilFruitType ?? 'None',
-        haki: c.haki ?? [],
-        lastBounty: c.bounty,
-        height: c.height,
-        origin: c.origin,
-        firstArc: c.firstArc ?? null,
-      };
-    });
+    .map((c) => ({
+      id: c.id,
+      name: formatName(c.name),
+      image: c.image,
+      wantedPoster: POSTER_IDS.has(c.id)
+        ? `${CDN_RAW}/onepiececontent/wanted/${c.id}.png`
+        : null,
+      gender: c.gender ?? null,
+      affiliation: c.affiliation[0] ?? 'Unknown',
+      devilFruitType: c.devilFruitType ?? 'None',
+      haki: c.haki ?? [],
+      lastBounty: c.bounty,
+      height: c.height,
+      origin: c.origin,
+      firstArc: c.firstArc ?? null,
+    }));
 
   return NextResponse.json(
     { count: data.length, data },

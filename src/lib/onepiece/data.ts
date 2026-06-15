@@ -175,6 +175,28 @@ function loadBundle(): OnePieceDataBundle {
   }
 }
 
+// Edge-compatible loader — uses fetch() so it works in Cloudflare Workers.
+const ONEPIECE_CDN_BASE =
+  (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_BUNDLE_BASE) ||
+  'https://raw.githubusercontent.com/ibelion/omniwiki/main/cdn';
+
+let _edgeBundleCache: OnePieceDataBundle | null = null;
+
+export async function getOnePieceDataEdge(): Promise<OnePieceDataBundle> {
+  if (_edgeBundleCache) return _edgeBundleCache;
+  const res = await fetch(`${ONEPIECE_CDN_BASE}/onepiececontent/data/bundle.json`);
+  if (!res.ok) throw new Error(`onepiece bundle fetch failed: ${res.status}`);
+  const raw = (await res.json()) as OnePieceDataBundle;
+  _edgeBundleCache = applyStaticCrews(
+    applyStaticDevilFruits(
+      applyStaticCharacterData(
+        applyStaticBounties(raw),
+      ),
+    ),
+  );
+  return _edgeBundleCache;
+}
+
 function applyStaticBounties(bundle: OnePieceDataBundle): OnePieceDataBundle {
   const characters = bundle.characters.map((c) => {
     // MAL copy-pastes the captain's bounty onto numbered minor crew members (e.g. "Acrobatic Fuwas #1").
