@@ -59,7 +59,7 @@ export async function GET() {
   const seen = new Set<string>();
 
   const data = characters
-    .filter((c) => c.bounty && c.image && !c.name.includes('#'))
+    .filter((c) => c.image && !c.name.includes('#'))
     .filter((c) => {
       const key = c.name.toLowerCase().replace(/[^a-z0-9]/g, '');
       if (seen.has(key)) return false;
