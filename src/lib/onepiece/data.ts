@@ -1,6 +1,7 @@
 import type { OnePieceDataBundle, HakiType } from './types';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import { gunzipSync } from 'fflate';
 import { STATIC_BOUNTIES, normalizeName } from './static-bounties';
 import { STATIC_DEVIL_FRUITS } from './static-devil-fruits';
 import { STATIC_CREWS } from './static-crews';
@@ -186,7 +187,11 @@ export async function getOnePieceDataEdge(): Promise<OnePieceDataBundle> {
   if (_edgeBundleCache) return _edgeBundleCache;
   const res = await fetch(`${ONEPIECE_CDN_BASE}/onepiececontent/data/bundle.json`);
   if (!res.ok) throw new Error(`onepiece bundle fetch failed: ${res.status}`);
-  const raw = (await res.json()) as OnePieceDataBundle;
+  const buffer = await res.arrayBuffer();
+  const bytes = new Uint8Array(buffer);
+  const isGzip = bytes.length > 2 && bytes[0] === 0x1f && bytes[1] === 0x8b;
+  const text = isGzip ? new TextDecoder().decode(gunzipSync(bytes)) : new TextDecoder().decode(bytes);
+  const raw = JSON.parse(text) as OnePieceDataBundle;
   _edgeBundleCache = applyStaticCrews(
     applyStaticDevilFruits(
       applyStaticCharacterData(
