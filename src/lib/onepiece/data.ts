@@ -6,6 +6,7 @@ import { STATIC_BOUNTIES, normalizeName } from './static-bounties';
 import { STATIC_DEVIL_FRUITS } from './static-devil-fruits';
 import { STATIC_CREWS } from './static-crews';
 import { STATIC_CHARACTER_DATA } from './static-character-data';
+import { STATIC_ORIGINS } from './static-origins';
 
 // Marine/World Government characters — MAL assigns them fake bounties; strip those entirely.
 // These are people who would never appear on a pirate wanted board.
@@ -192,10 +193,12 @@ export async function getOnePieceDataEdge(): Promise<OnePieceDataBundle> {
   const isGzip = bytes.length > 2 && bytes[0] === 0x1f && bytes[1] === 0x8b;
   const text = isGzip ? new TextDecoder().decode(gunzipSync(bytes)) : new TextDecoder().decode(bytes);
   const raw = JSON.parse(text) as OnePieceDataBundle;
-  _edgeBundleCache = applyStaticCrews(
-    applyStaticDevilFruits(
-      applyStaticCharacterData(
-        applyStaticBounties(raw),
+  _edgeBundleCache = applyStaticOrigins(
+    applyStaticCrews(
+      applyStaticDevilFruits(
+        applyStaticCharacterData(
+          applyStaticBounties(raw),
+        ),
       ),
     ),
   );
@@ -262,6 +265,16 @@ function applyStaticCharacterData(bundle: OnePieceDataBundle): OnePieceDataBundl
       ...(override.haki !== undefined ? { haki: override.haki } : {}),
       ...(override.firstArc !== undefined ? { firstArc: override.firstArc } : {}),
     };
+  });
+  return { ...bundle, characters };
+}
+
+function applyStaticOrigins(bundle: OnePieceDataBundle): OnePieceDataBundle {
+  const characters = bundle.characters.map((c) => {
+    if (c.origin) return c;
+    const key = normalizeName(c.name);
+    const origin = STATIC_ORIGINS[key] ?? null;
+    return origin ? { ...c, origin } : c;
   });
   return { ...bundle, characters };
 }

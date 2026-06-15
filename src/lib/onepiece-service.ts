@@ -1,5 +1,5 @@
 // lib/onepiece-service.ts
-import { onePieceData } from '@/lib/onepiece/data';
+import { getOnePieceDataEdge } from '@/lib/onepiece/data';
 import type { OmniEntity } from '@/types/omni-schema';
 import { cleanText } from '@/lib/utils';
 
@@ -57,7 +57,7 @@ function difficultyScore(favorites: number | undefined): number {
 }
 
 export const getOnePieceData = async (): Promise<OmniEntity[]> => {
-  const { characters } = onePieceData;
+  const { characters } = await getOnePieceDataEdge();
 
   // Skip numbered filler crew members (e.g. "Acrobatic Fuwas #3") and
   // any character without an image (nothing to show in trivia).
