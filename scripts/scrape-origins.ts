@@ -112,12 +112,27 @@ async function main() {
   };
 
   // Only process characters with images; skip numbered filler entries.
-  const targets = bundle.characters.filter((c) => c.image && !c.name.includes('#'));
+  const allTargets = bundle.characters.filter((c) => c.image && !c.name.includes('#'));
 
-  console.log(`Fetching origins for ${targets.length} characters...\n`);
-
+  // Resume: load any existing origins so a restart doesn't lose prior work.
+  const outPath = path.join(ROOT, 'src/lib/onepiece/static-origins.ts');
   const origins: Record<string, string> = {};
-  let found = 0;
+  if (fs.existsSync(outPath)) {
+    const existing = fs.readFileSync(outPath, 'utf8');
+    for (const m of existing.matchAll(/'([^']+)':\s*'([^']+)'/g)) {
+      origins[m[1]] = m[2];
+    }
+    if (Object.keys(origins).length > 0) {
+      console.log(`Resumed with ${Object.keys(origins).length} existing entries.\n`);
+    }
+  }
+
+  // Skip characters already in the seed data.
+  const targets = allTargets.filter((c) => !origins[normalizeName(c.name)]);
+
+  console.log(`Fetching origins for ${targets.length} remaining characters...\n`);
+
+  let found = Object.keys(origins).length;
   let missed = 0;
 
   for (let i = 0; i < targets.length; i++) {
@@ -147,7 +162,7 @@ async function main() {
     // Save a checkpoint every 100 characters in case we need to restart.
     if ((i + 1) % 100 === 0) {
       writeOutput(origins);
-      console.log(`  [checkpoint saved — ${found} found so far]`);
+      console.log(`  [checkpoint saved — ${found} total so far]`);
     }
   }
 
