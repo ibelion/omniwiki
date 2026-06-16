@@ -11,7 +11,10 @@
     "start": "next start",
     "lint": "next lint",
     "build:data": "node --import tsx ./scripts/build-pokemon.ts && node --import tsx ./scripts/build-league.ts",
-    "build:onepiece": "node --import tsx ./scripts/build-onepiece.ts"
+    "build:tft": "node --import tsx ./scripts/build-tft.ts",
+    "build:onepiece": "node --import tsx ./scripts/build-onepiece.ts && node --import tsx ./scripts/enrich-onepiece-bundle.ts",
+    "enrich:onepiece": "node --import tsx ./scripts/enrich-onepiece-bundle.ts",
+    "scrape:onepiece-meta": "node --import tsx ./scripts/scrape-wiki-meta.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",

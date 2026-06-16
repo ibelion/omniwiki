@@ -24,6 +24,8 @@ export type OnePieceCharacterRecord = {
   height: string | null;
   birthday: string | null;
   bloodType: string | null;
+  epithet: string | null;
+  firstAppearance: string | null;
   // DLE game fields (populated by static-character-data overrides)
   gender: 'Male' | 'Female' | 'Unknown' | null;
   haki: HakiType[];

@@ -379,7 +379,7 @@
         "armor": 60,
         "magicResist": 60,
         "attackSpeed": 0.6499999761581421,
-        "mana": 90,
+        "mana": 80,
         "initialMana": 20,
         "range": 1
       }
@@ -557,7 +557,7 @@
       },
       "stats": {
         "hp": 850,
-        "damage": 55,
+        "damage": 58,
         "armor": 30,
         "magicResist": 30,
         "attackSpeed": 0.800000011920929,
@@ -866,7 +866,7 @@
       "role": "APTank",
       "ability": {
         "name": "Groovin' Susan",
-        "description": "Transform for 6 seconds, temporarily gaining 400/250/350 max Health, entering, and dealing magic damage to adjacent enemies each second.",
+        "description": "Transform for 6 seconds, temporarily gaining 400/300 max Health, entering, and dealing magic damage to adjacent enemies each second.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_nasus/hud/icons2d/tft17_nasus_r.tft_set17.png"
       },
       "stats": {
@@ -900,7 +900,7 @@
         "damage": 50,
         "armor": 50,
         "magicResist": 50,
-        "attackSpeed": 0.8500000238418579,
+        "attackSpeed": 0.800000011920929,
         "mana": 30,
         "initialMana": 0,
         "range": 2
@@ -918,7 +918,7 @@
       "role": "ADCaster",
       "ability": {
         "name": "Jump and Jive",
-        "description": "Passive: Whenever an enemy is knocked up, shoot them, dealing physical damage and entering for 3 seconds.\n\nActive: Unleash a volley of bullets at the target, dealing physical damage and knocking up for 1.3 seconds.",
+        "description": "Passive: Whenever an enemy is knocked up, shoot them, dealing physical damage and entering for 3 seconds.\n\nActive: Unleash a volley of bullets at the target, dealing physical damage and knocking up for 1 seconds.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_samira/hud/icons2d/tft17_samirae.tft_set17.png"
       },
       "stats": {
@@ -927,7 +927,7 @@
         "armor": 25,
         "magicResist": 25,
         "attackSpeed": 0.75,
-        "mana": 60,
+        "mana": 65,
         "initialMana": 0,
         "range": 6
       }
@@ -944,7 +944,7 @@
       "role": "APTank",
       "ability": {
         "name": "Disco Inferno",
-        "description": "Passive: On combat start, forge a temporary completed item. If 3 items are already equipped, a random completed item becomes Radiant this combat instead.\n\nActive: Gain Shield for 3 seconds, then breath fire in a cone dealing magic damage. After any Shield on Ornn expires, Ornn enters for 3 seconds.",
+        "description": "Passive: On combat start, forge a temporary completed item. If 3 items are already equipped, a random completed item becomes Radiant this combat instead.\n\nActive: Gain Shield for 3 seconds, then breath fire in a cone dealing magic damage. After any Shield on Ornn expires, Ornn enters for 2.5 seconds.",
         "icon": "https://raw.communitydragon.org/latest/game/assets/characters/tft17_ornn/hud/icons2d/tft17_ornnw.tft_set17.png"
       },
       "stats": {
@@ -3405,7 +3405,7 @@
     {
       "id": "TFT17_Stargazer_Serpent",
       "name": "Stargazer",
-      "description": "Stargazers chart a different constellation every game. This game: The Serpent.\n\nAllies in empowered hexes gain 5% Durability. Stargazers in empowered hexes gain more and poison enemies, repeating a portion of damage dealt as magic damage over 3 seconds.\n\n 5/10/15%, 20/40/60% poison damage\n\nMore hexes reveal at each player level",
+      "description": "Stargazers chart a different constellation every game. This game: The Serpent.\n\nAllies in empowered hexes gain 5% Durability. Stargazers in empowered hexes gain more and poison enemies, repeating a portion of damage dealt as magic damage over 3 seconds.\n\n 5/10/15%, 25/45/60% poison damage\n\nMore hexes reveal at each player level",
       "image": "https://raw.communitydragon.org/latest/game/assets/ux/traiticons/trait_icon_17_stargazer.tft_set17.png",
       "tiers": [
         {
@@ -4075,7 +4075,7 @@
     {
       "id": "TFT_Augment_ComponentQuestRod",
       "name": "Continuous Conjuration",
-      "description": "Gain a Needlessly Large Rod. After your team deals 38000 magic damage, gain 2 more.\n\nDamage dealt:",
+      "description": "Gain a Needlessly Large Rod. After your team deals 42000 magic damage, gain 2 more.\n\nDamage dealt:",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/hyperbolicrodextender_i.tft_set16.png",
       "tier": 1
     },
@@ -4180,7 +4180,7 @@
     {
       "id": "TFT9_Augment_HealingOrbsI",
       "name": "Healing Orbs I",
-      "description": "When an enemy dies, the nearest ally is healed for 220.",
+      "description": "When an enemy dies, the nearest ally is healed for 250.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/healing-orbs-i.png",
       "tier": 1
     },
@@ -4201,7 +4201,7 @@
     {
       "id": "TFT7_Augment_LategameSpecialist",
       "name": "Late Game Specialist",
-      "description": "When you reach Level 9, gain 36 gold.",
+      "description": "When you reach Level 9, gain 30 gold.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/late-game-specialist-i.png",
       "tier": 1
     },
@@ -4278,7 +4278,7 @@
     {
       "id": "TFT9_Augment_RiskyMoves",
       "name": "Risky Moves",
-      "description": "Your Tactician loses 20 Health, but after 7 player combats, gain 30 gold.",
+      "description": "Your Tactician loses 20 Health, but after 7 player combats, gain 26 gold.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/risky-moves-i.png",
       "tier": 1
     },
@@ -4558,7 +4558,7 @@
     {
       "id": "TFT_Augment_HomeCooking",
       "name": "Care Package",
-      "description": "Now and at the start of the next 2 Stages, receive a care package with loot and 3 gold.",
+      "description": "Now and at the start of the next 2 Stages, receive a care package with loot and 1 gold.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/carepackage_ii.tft_set15.png",
       "tier": 2
     },
@@ -4572,7 +4572,7 @@
     {
       "id": "TFT_Augment_ClimbTheLadder2",
       "name": "Climb The Ladder II",
-      "description": "Each time an ally dies, allies that share at least one trait with them gain 6% Ability Power, 6% Attack Damage, 6 Armor, and 6 Magic Resist.",
+      "description": "Each time an ally dies, allies that share at least one trait with them gain 7% Ability Power, 7% Attack Damage, 6 Armor, and 6 Magic Resist.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/climbtheladder_ii.tft_set13.png",
       "tier": 2
     },
@@ -4628,7 +4628,7 @@
     {
       "id": "TFT_Augment_CryMeARiver",
       "name": "Cry Me A River",
-      "description": "Gain a Tear of the Goddess. Your team gains 1 Mana Regen. After 12 seconds in combat, increase this to 3.",
+      "description": "Gain a Tear of the Goddess. Your team gains 1 Mana Regen. After 12 seconds in combat, increase this to 4.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/crymeariver_ii.tft_set15.png",
       "tier": 2
     },
@@ -4670,7 +4670,7 @@
     {
       "id": "TFT_Augment_EarlyLearning",
       "name": "Early Learnings",
-      "description": "Your team gains 1% Attack Damage & Ability Power. This increases by 1% after each player combat. 1-cost champions gain double.\n\nTFT Vegas Open, 2023",
+      "description": "Your team gains 8% Attack Damage & Ability Power. This increases by 1% after each player combat. 1-cost champions gain double.\n\nTFT Vegas Open, 2023",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/earlylearning_ii.png",
       "tier": 2
     },
@@ -4796,7 +4796,7 @@
     {
       "id": "TFT9_Augment_HealingOrbsII",
       "name": "Healing Orbs II",
-      "description": "When an enemy dies, the nearest ally is healed for 500.",
+      "description": "When an enemy dies, the nearest ally is healed for 575.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/healing-orbs-ii.png",
       "tier": 2
     },
@@ -4908,7 +4908,7 @@
     {
       "id": "TFT10_Augment_LittleBuddies",
       "name": "Little Buddies",
-      "description": "Your 4-cost and 5-cost champions gain Health and 6% Attack Speed for every 1-cost and 2-cost champion on your board.",
+      "description": "Your 4-cost and 5-cost champions gain Health and 7% Attack Speed for every 1-cost and 2-cost champion on your board.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/little-buddies-ii.png",
       "tier": 2
     },
@@ -5013,7 +5013,7 @@
     {
       "id": "TFT_Augment_SavingsAccount",
       "name": "Savings Account",
-      "description": "After you earn gold in interest, gain 25 gold. Your max interest is increased to 7. Gain 4 gold now.\n\nGold earned:",
+      "description": "After you earn gold in interest, gain 25 gold. Your max interest is increased to 7. Gain 2 gold now.\n\nGold earned:",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/savingsaccount_ii.tft_set16.png",
       "tier": 2
     },
@@ -5055,7 +5055,7 @@
     {
       "id": "TFT11_Augment_Slammin_Plus",
       "name": "Slammin'+",
-      "description": "Gain 8 gold and 10 XP now. After each player combat, if there are no items on your bench (other than consumables), gain 2 XP.",
+      "description": "Gain 4 gold and 10 XP now. After each player combat, if there are no items on your bench (other than consumables), gain 2 XP.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/slammin_ii.png",
       "tier": 2
     },
@@ -5188,14 +5188,14 @@
     {
       "id": "TFT_Augment_TwoTanky",
       "name": "Two Tanky",
-      "description": "When you field exactly 2 copies of a champion, they both gain 500 Health. When one copy dies, the other gains a 40% max Health Shield for 12 seconds. When you 3-star, gain a 2-star copy.",
+      "description": "When you field exactly 2 copies of a champion, they both gain 450 Health. When one copy dies, the other gains a 40% max Health Shield for 12 seconds. When you 3-star, gain a 2-star copy.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/two-tanky-ii.png",
       "tier": 2
     },
     {
       "id": "TFT16_Augment_UltraRapidFire",
       "name": "U.R.F",
-      "description": "Gain a Spatula. Champions holding Spatula or Frying Pan items gain 15% Attack Speed and 2 Mana Regen.",
+      "description": "Gain a Spatula. Champions holding Spatula or Frying Pan items gain 20% Attack Speed and 3 Mana Regen.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/ultrarapidfire_ii.tft_set16.png",
       "tier": 2
     },
@@ -5307,7 +5307,7 @@
     {
       "id": "TFT9_Augment_BuildingACollectionPlusPlus",
       "name": "Buried Treasures",
-      "description": "Gain a random item component now and at the start of the next 4 rounds.",
+      "description": "Gain a random item component now and at the start of the next 5 rounds.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/buried-treasures-iii.png",
       "tier": 3
     },
@@ -5356,7 +5356,7 @@
     {
       "id": "TFT_Augment_ForgeAFriend",
       "name": "Forge a Friend",
-      "description": "The next 1-cost champion you buy is 3-star. Gain 2 gold.",
+      "description": "The next 1-cost champion you buy is 3-star. Gain 5 gold.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/constructacompanion_iii.tft_set16.png",
       "tier": 3
     },
@@ -5580,7 +5580,7 @@
     {
       "id": "TFT11_Augment_TinyButDeadly",
       "name": "Tiny, but Deadly",
-      "description": "Your team becomes small, gaining 30% Attack Speed and Movement Speed.",
+      "description": "Your team becomes small, gaining 33% Attack Speed and Movement Speed.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/tinybutdeadly_iii.png",
       "tier": 3
     },
@@ -5594,7 +5594,7 @@
     {
       "id": "TFT_Augment_UpwardMobility",
       "name": "Upward Mobility",
-      "description": "Buying XP costs 1 less. Gain 2 Health and 2 free rerolls whenever you level up.",
+      "description": "Buying XP costs 1 less. Gain 2 Health and 1 free rerolls whenever you level up.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/upwardmobility_iii.tft_set12.png",
       "tier": 3
     },
@@ -5622,7 +5622,7 @@
     {
       "id": "TFT_Augment_WinOut",
       "name": "Win Out",
-      "description": "When you reach level 9, immediately level to 10 and gain 8 free Shop rerolls. Gain 6 XP now.",
+      "description": "When you reach level 9, immediately level to 10 and gain 8 free Shop rerolls. Gain 10 XP now.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/winout_iii.tft_set16.png",
       "tier": 3
     },
@@ -5748,7 +5748,7 @@
     {
       "id": "TFT6_Augment_MaxLevel10",
       "name": "Level Up!",
-      "description": "When you buy XP, gain an additional 2. Gain 10 immediately.",
+      "description": "When you buy XP, gain an additional 2. Gain 6 immediately.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/levelup3.png",
       "tier": null
     },
@@ -5769,7 +5769,7 @@
     {
       "id": "TFT6_Augment_ForceOfNature",
       "name": "New Recruit",
-      "description": "Gain +1 max team size and 1 four-cost champions.",
+      "description": "Gain +1 max team size and 1 four-cost champion.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/newrecruit3.png",
       "tier": null
     },
@@ -5846,7 +5846,7 @@
     {
       "id": "TFT6_Augment_SunfireBoard",
       "name": "Sunfire Board",
-      "description": "Combat Start: Burn all enemies for 15% of their max Health over 15 seconds and reduce healing received by 33%.",
+      "description": "Combat Start: Burn all enemies for 18% of their max Health over 18 seconds and reduce healing received by 33%.",
       "image": "https://raw.communitydragon.org/latest/game/assets/maps/tft/icons/augments/hexcore/sunfireboard2.png",
       "tier": null
     },
