@@ -209,7 +209,6 @@ function applyStaticWikiPositions(bundle: OnePieceDataBundle): OnePieceDataBundl
 
 function applyStaticWikiAges(bundle: OnePieceDataBundle): OnePieceDataBundle {
   const characters = bundle.characters.map((c) => {
-    if (c.age) return c;
     const key = normalizeName(c.name);
     const age = STATIC_WIKI_AGES[key] ?? null;
     return age ? { ...c, age } : c;

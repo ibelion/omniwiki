@@ -94,6 +94,9 @@ export async function GET() {
       height: c.height,
       origin: c.origin,
       firstArc: c.firstArc ?? null,
+      age: c.age ?? null,
+      bloodType: c.bloodType ?? null,
+      position: c.position ?? null,
     }));
 
   return NextResponse.json(
