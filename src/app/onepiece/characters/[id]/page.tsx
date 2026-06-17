@@ -138,6 +138,9 @@ export default async function OnePieceCharacterDetailPage({
               <h1 className="text-4xl font-bold tracking-tight text-[#F2E8D5]">
                 {character.name}
               </h1>
+              {character.epithet && (
+                <p className="text-lg italic text-[#9a7850]">{character.epithet}</p>
+              )}
             </div>
 
             <div className="space-y-2">
@@ -172,6 +175,7 @@ export default async function OnePieceCharacterDetailPage({
         character.height ||
         character.birthday ||
         character.bloodType ||
+        character.firstAppearance ||
         character.affiliation.length > 0 ||
         character.formerAffiliation.length > 0) && (
         <section className="rounded-3xl border border-[#1c1c22] bg-[#141418] p-6 shadow-sm">
@@ -193,6 +197,14 @@ export default async function OnePieceCharacterDetailPage({
                   Origin
                 </dt>
                 <dd className="text-sm text-[#F2E8D5]">{character.origin}</dd>
+              </div>
+            )}
+            {character.firstAppearance && (
+              <div className="flex flex-col gap-1">
+                <dt className="text-xs font-semibold uppercase tracking-wide text-[#6b6055]">
+                  First Appearance
+                </dt>
+                <dd className="text-sm text-[#F2E8D5]">{character.firstAppearance}</dd>
               </div>
             )}
             {character.age && (

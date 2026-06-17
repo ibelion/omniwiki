@@ -144,6 +144,9 @@ export function CharactersClient({
                   <h2 className="truncate text-lg font-semibold text-[#F2E8D5]">
                     {character.name}
                   </h2>
+                  {character.epithet && (
+                    <p className="truncate text-xs italic text-[#9a7850]">{character.epithet}</p>
+                  )}
                   <span
                     className={`inline-flex rounded-full px-2.5 py-1 text-xs font-semibold ${
                       character.role === "Main"

@@ -157,8 +157,10 @@ function processOccupation(raw: string): string | null {
 
 function processAge(raw: string): string | null {
   const clean = raw.replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
-  const first = clean.split(/;\s*/)[0].trim();
-  const num = first.match(/\d+/);
+  // Multiple ages listed oldest→newest; take the last (most current)
+  const parts = clean.split(/;\s*/);
+  const last = parts[parts.length - 1].trim();
+  const num = last.match(/\d+/);
   return num ? num[0] : null;
 }
 
@@ -170,6 +172,10 @@ function processBirthday(raw: string): string | null {
 
 function processHeight(raw: string): string | null {
   const clean = raw.replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
+  // Multiple heights may be listed (child → adult); take the last cm measurement
+  // Trailing digits after "N cm" are wiki footnote references — discard them
+  const allCm = [...clean.matchAll(/(\d[\d,.]*)\s*cm/gi)];
+  if (allCm.length > 0) return `${allCm[allCm.length - 1][1]} cm`;
   const first = clean.split(/;\s*/)[0].trim();
   return first.length >= 2 ? first : null;
 }
@@ -177,7 +183,9 @@ function processHeight(raw: string): string | null {
 function processBloodType(raw: string): string | null {
   const clean = raw.replace(/\([^)]*\)/g, '').replace(/\s+/g, ' ').trim();
   const first = clean.split(/;\s*/)[0].trim();
-  return first.length >= 1 ? first : null;
+  // One Piece blood types are F, S, X, XF — strip trailing wiki footnote digits
+  const match = first.match(/^(XF|[FSX])/i);
+  return match ? match[1].toUpperCase() : (first.length >= 1 ? first : null);
 }
 
 interface WikiData {

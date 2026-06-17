@@ -229,7 +229,6 @@ function applyStaticWikiBirthdays(bundle: OnePieceDataBundle): OnePieceDataBundl
 
 function applyStaticWikiHeights(bundle: OnePieceDataBundle): OnePieceDataBundle {
   const characters = bundle.characters.map((c) => {
-    if (c.height) return c;
     const key = normalizeName(c.name);
     const height = STATIC_WIKI_HEIGHTS[key] ?? null;
     return height ? { ...c, height } : c;
@@ -239,7 +238,6 @@ function applyStaticWikiHeights(bundle: OnePieceDataBundle): OnePieceDataBundle 
 
 function applyStaticWikiBloodTypes(bundle: OnePieceDataBundle): OnePieceDataBundle {
   const characters = bundle.characters.map((c) => {
-    if (c.bloodType) return c;
     const key = normalizeName(c.name);
     const bloodType = STATIC_WIKI_BLOOD_TYPES[key] ?? null;
     return bloodType ? { ...c, bloodType } : c;
