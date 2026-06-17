@@ -54,7 +54,7 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     position: 'Archaeologist',
     gender: 'Female',
     haki: ['Armament', 'Observation'],
-    firstArc: 'Alabasta',
+    firstArc: 'Whisky Peak',
   },
   'trafalgar law': {
     affiliation: ['Heart Pirates'],
@@ -636,6 +636,7 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
 
   // ── Whitebeard Pirates ────────────────────────────────────────────────────
   'marco': {
+    affiliation: ['Whitebeard Pirates'],
     devilFruit: 'Tori Tori no Mi, Model: Phoenix',
     devilFruitEnglish: 'Bird-Bird Fruit, Model: Phoenix',
     devilFruitType: 'Zoan',
@@ -705,7 +706,7 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     position: 'Princess',
     gender: 'Female',
     haki: [],
-    firstArc: 'Whiskey Peak',
+    firstArc: 'Whisky Peak',
   },
   'carrot': {
     affiliation: ['Mokomo Dukedom'],
@@ -720,7 +721,7 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     status: 'Alive',
     position: 'Princess',
     gender: 'Female',
-    haki: [],
+    haki: ['Observation'],
     firstArc: 'Fishman Island',
   },
   'loki': {
@@ -873,4 +874,138 @@ export const STATIC_CHARACTER_DATA: Record<string, StaticCharData> = {
     haki: [],
     firstArc: 'Dressrosa',
   },
+  // ── Giants ────────────────────────────────────────────────────────────────
+  'dorry': {
+    affiliation: ['Giant Warrior Pirates'],
+    status: 'Alive',
+    position: 'Captain',
+    gender: 'Male',
+    haki: [],
+    // firstArc derived from firstAppearance (Chapter 116 → Little Garden)
+  },
+  'brogy': {
+    affiliation: ['Giant Warrior Pirates'],
+    status: 'Alive',
+    position: 'Captain',
+    gender: 'Male',
+    haki: [],
+    // firstArc derived from firstAppearance
+  },
+  // ── Drum Island / Sakura Kingdom ──────────────────────────────────────────
+  'kureha': {
+    affiliation: ['Sakura Kingdom'],
+    status: 'Alive',
+    position: 'Doctor',
+    gender: 'Female',
+    haki: [],
+    // firstArc derived from firstAppearance (Chapter 134 → Drum Island)
+  },
+
+  // ── Gender fills: characters with affil+firstArc in bundle but missing gender ──
+  // Sorted alphabetically for maintainability.
+  'alvida': { gender: 'Female' },
+  'aramaki': { gender: 'Male' },
+  'bellamy': { gender: 'Male' },
+  'capone bege': { gender: 'Male' },            // MAL: "Capone, Bege"
+  'black maria': { gender: 'Female' },
+  'blueno': { gender: 'Male' },
+  'bonez daz': { gender: 'Male', affiliation: ['Cross Guild'], firstArc: 'Alabasta' },  // MAL: "Bonez, Daz"
+  'burgess jesus': { gender: 'Male' },          // MAL: "Burgess, Jesus"
+  'camie': { gender: 'Female' },
+  'caribou': { gender: 'Male' },
+  'charlotte brulee': { gender: 'Female', affiliation: ['Big Mom Pirates'], firstArc: 'Whole Cake Island' },
+  'charlotte chiffon': { gender: 'Female' },
+  'charlotte mont d or': { gender: 'Male', affiliation: ['Big Mom Pirates'], firstArc: 'Whole Cake Island' },  // "Mont-d'Or"
+  'charlotte perospero': { gender: 'Male' },
+  'charlotte smoothie': { gender: 'Female' },
+  'coby': { gender: 'Male' },                   // alternate romanization for Koby
+  'denjiro': { gender: 'Male', affiliation: ['Kozuki Family'], firstArc: 'Wano' },
+  'diamante': { gender: 'Male' },
+  'galdino': { gender: 'Male', affiliation: ['Cross Guild'], firstArc: 'Little Garden' },
+  'gin': { gender: 'Male' },
+  'hatchan': { gender: 'Male' },
+  'hogback': { gender: 'Male' },
+  'hody jones': { gender: 'Male', affiliation: ['New Fish-Man Pirates'], firstArc: 'Fishman Island' },
+  'iceburg': { gender: 'Male' },
+  'inuarashi': { gender: 'Male' },
+  'izou': { gender: 'Male' },
+  'jabra': { gender: 'Male' },                  // alternate romanization
+  'jabura': { gender: 'Male' },                 // MAL romanization
+  'jones hody': { gender: 'Male', affiliation: ['New Fish-Man Pirates'], firstArc: 'Fishman Island' },  // MAL: "Jones, Hody"
+  'kalifa': { gender: 'Female' },
+  'karasu': { gender: 'Male' },
+  'kawamatsu': { gender: 'Male' },
+  'kaya': { gender: 'Female', affiliation: ['Syrup Village'], firstArc: 'Syrup Village' },
+  'kikunojo': { gender: 'Female', affiliation: ['Kozuki Family'], firstArc: 'Wano' },
+  'kozuki hiyori': { gender: 'Female', affiliation: ['Kozuki Family'], firstArc: 'Wano' },
+  'kozuki momonosuke': { gender: 'Male', affiliation: ['Kozuki Family'], firstArc: 'Punk Hazard' },
+  'krieg': { gender: 'Male' },                  // MAL: "Krieg" (Don Krieg)
+  'kuro': { gender: 'Male' },
+  'kurozumi kanjuro': { gender: 'Male', affiliation: ['Kurozumi Family'], firstArc: 'Dressrosa' },
+  'lindbergh': { gender: 'Male' },
+  'marguerite': { gender: 'Female' },
+  'mont blanc cricket': { gender: 'Male', affiliation: ['Jaya'], firstArc: 'Jaya' },
+  'mont blanc noland': { gender: 'Male', affiliation: ['Lvneel Kingdom'], firstArc: 'Skypiea' },
+  'morgans': { gender: 'Male' },
+  'morley': { gender: 'Male' },
+  'nojiko': { gender: 'Female' },
+  'oars': { gender: 'Male' },
+  'ohm': { gender: 'Male' },
+  'paulie': { gender: 'Male' },
+  'pekoms': { gender: 'Male' },
+  'pica': { gender: 'Male' },
+  'queen': { gender: 'Male' },
+  'raizou': { gender: 'Male', affiliation: ['Kozuki Family'], firstArc: 'Zou' },  // MAL: "Raizou"
+  'scratchmen apoo': { gender: 'Male' },         // MAL: "Scratchmen, Apoo"
+  'spandam': { gender: 'Male' },
+  'urouge': { gender: 'Male' },
+  'vegapunk': { gender: 'Male' },
+  'vinsmoke judge': { gender: 'Male' },
+  'viola': { gender: 'Female' },
+  'wanda': { gender: 'Female' },
+  'wyper': { gender: 'Male', affiliation: ['Shandia'], firstArc: 'Skypiea' },
+  'x drake': { gender: 'Male' },                // MAL: "X, Drake" → key 'x drake'
+  'zeff': { gender: 'Male' },
+  'charlotte cracker': { gender: 'Male' },
+  'charlotte daifuku': { gender: 'Male' },
+  'charlotte oven': { gender: 'Male' },
+  'curly dadan': { gender: 'Female' },          // MAL: "Curly, Dadan"
+  'dellinger': { gender: 'Male' },
+  'duval': { gender: 'Male' },
+  'hannyabal': { gender: 'Male' },
+  'helmeppo': { gender: 'Male' },
+  'hina': { gender: 'Female' },
+  'jaguar d saul': { gender: 'Male' },          // MAL: "Jaguar D., Saul"
+  'jango': { gender: 'Male' },
+  'kumadori': { gender: 'Male' },
+  'leo': { gender: 'Male' },
+  'lucky roux': { gender: 'Male' },             // MAL: "Lucky, Roux" → 'lucky roux'
+  'makino': { gender: 'Female' },
+  'portgas d rouge': { gender: 'Female' },
+  'sadi': { gender: 'Female' },
+  'sugar': { gender: 'Female' },
+  'yasopp': { gender: 'Male' },
+  'zeus': { gender: 'Male' },
+  'shyarly': { gender: 'Female' },
+  'stussy': { gender: 'Female' },
+  'thatch': { gender: 'Male' },
+  'vergo': { gender: 'Male' },
+  'wapol': { gender: 'Male' },
+  'nico olvia': { gender: 'Female' },           // MAL: "Nico, Olvia"
+  'olvia nico': { gender: 'Female' },           // alternate key
+  'inazuma': { gender: 'Male' },
+  'corazon': { gender: 'Male' },                // Rosinante's alias key
+  'boa marigold': { gender: 'Female' },
+  'boa sandersonia': { gender: 'Female' },      // MAL: "Boa, Sandersonia"
+  'sandersonia boa': { gender: 'Female' },      // alternate key
+  'marigold boa': { gender: 'Female' },
+  'nefertari cobra': { gender: 'Male' },
+  'igaram': { gender: 'Male' },
+  'vinsmoke ichiji': { gender: 'Male' },
+  'vinsmoke niji': { gender: 'Male' },          // MAL: "Vinsmoke, Niji"
+  'vinsmoke yonji': { gender: 'Male' },
+
+  // ── Characters absent from bundle under expected name – full data ─────────
+  'ashura doji': { gender: 'Male', affiliation: ['Wano Country'], firstArc: 'Wano' },
+  'shutenmaru': { gender: 'Male', affiliation: ['Wano Country'], firstArc: 'Wano' },  // Ashura Doji alias
 };

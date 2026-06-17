@@ -23,6 +23,7 @@ import { STATIC_WIKI_AGES } from '../src/lib/onepiece/static-wiki-ages';
 import { STATIC_WIKI_BIRTHDAYS } from '../src/lib/onepiece/static-wiki-birthdays';
 import { STATIC_WIKI_HEIGHTS } from '../src/lib/onepiece/static-wiki-heights';
 import { STATIC_WIKI_BLOOD_TYPES } from '../src/lib/onepiece/static-wiki-blood-types';
+import { chapterToArc, parseFirstAppearanceChapter } from '../src/lib/onepiece/chapter-to-arc';
 import type { OnePieceDataBundle, OnePieceCharacterRecord, HakiType } from '../src/lib/onepiece/types';
 
 const PUBLIC_PATH = path.resolve('public/onepiececontent/data/bundle.json');
@@ -235,6 +236,17 @@ function applyStaticWikiHeights(bundle: OnePieceDataBundle): OnePieceDataBundle 
   return { ...bundle, characters };
 }
 
+function applyChapterToArc(bundle: OnePieceDataBundle): OnePieceDataBundle {
+  const characters = bundle.characters.map((c) => {
+    if (c.firstArc || !c.firstAppearance) return c;
+    const chapter = parseFirstAppearanceChapter(c.firstAppearance);
+    if (chapter === null) return c;
+    const arc = chapterToArc(chapter);
+    return arc ? { ...c, firstArc: arc } : c;
+  });
+  return { ...bundle, characters };
+}
+
 function applyStaticWikiBloodTypes(bundle: OnePieceDataBundle): OnePieceDataBundle {
   const characters = bundle.characters.map((c) => {
     const key = normalizeName(c.name);
@@ -250,7 +262,7 @@ function main(): void {
   console.log(`  ${raw.characters.length} characters, ${raw.devilFruits.length} devil fruits, ${raw.crews.length} crews`);
 
   console.log('Applying static enrichment layers...');
-  const enriched = applyStaticWikiBloodTypes(
+  const enriched = applyChapterToArc(applyStaticWikiBloodTypes(
     applyStaticWikiHeights(
       applyStaticWikiBirthdays(
         applyStaticWikiAges(
@@ -282,12 +294,13 @@ function main(): void {
         ),
       ),
     ),
-  );
+  ));
 
   const n = enriched.characters.length;
   const withOrigin = enriched.characters.filter((c) => c.origin).length;
   const withEpithet = enriched.characters.filter((c) => c.epithet).length;
   const withFirst = enriched.characters.filter((c) => c.firstAppearance).length;
+  const withFirstArc = enriched.characters.filter((c) => c.firstArc).length;
   const withStatus = enriched.characters.filter((c) => c.status).length;
   const withGender = enriched.characters.filter((c) => c.gender).length;
   const withBounty = enriched.characters.filter((c) => c.bounty).length;
@@ -304,6 +317,7 @@ function main(): void {
   console.log(`  origin:            ${withOrigin} / ${n}`);
   console.log(`  epithet:           ${withEpithet} / ${n}`);
   console.log(`  firstAppearance:   ${withFirst} / ${n}`);
+  console.log(`  firstArc:          ${withFirstArc} / ${n}`);
   console.log(`  status:            ${withStatus} / ${n}`);
   console.log(`  gender:            ${withGender} / ${n}`);
   console.log(`  bounty:            ${withBounty} / ${n}`);
