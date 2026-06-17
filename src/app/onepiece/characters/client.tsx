@@ -9,6 +9,7 @@ import type { OnePieceCharacterRecord } from "@/lib/onepiece/types";
 
 type RoleFilter = "All" | OnePieceCharacterRecord["role"];
 type ExtraFilter = "All" | "HasDevilFruit" | "HasBounty";
+type DFTypeFilter = "All" | "Paramecia" | "Zoan" | "Logia";
 
 function truncateAbout(about: string | null): string {
   if (!about) return "No description available.";
@@ -23,6 +24,7 @@ export function CharactersClient({
   const [searchQuery, setSearchQuery] = useState("");
   const [roleFilter, setRoleFilter] = useState<RoleFilter>("All");
   const [extraFilter, setExtraFilter] = useState<ExtraFilter>("All");
+  const [dfTypeFilter, setDfTypeFilter] = useState<DFTypeFilter>("All");
 
   const filteredCharacters = useMemo(() => {
     const normalizedQuery = searchQuery.trim().toLowerCase();
@@ -34,20 +36,34 @@ export function CharactersClient({
           : extraFilter === "HasDevilFruit"
             ? Boolean(character.devilFruit)
             : Boolean(character.bounty);
+      const matchesDFType =
+        dfTypeFilter === "All"
+          ? true
+          : character.devilFruitType === dfTypeFilter;
       const matchesSearch =
         normalizedQuery.length === 0
           ? true
           : character.name.toLowerCase().includes(normalizedQuery) ||
-            (character.about ?? "").toLowerCase().includes(normalizedQuery);
-      return matchesRole && matchesExtra && matchesSearch;
+            (character.about ?? "").toLowerCase().includes(normalizedQuery) ||
+            (character.epithet ?? "").toLowerCase().includes(normalizedQuery) ||
+            character.affiliation.some((a) =>
+              a.toLowerCase().includes(normalizedQuery),
+            );
+      return matchesRole && matchesExtra && matchesDFType && matchesSearch;
     });
-  }, [characters, roleFilter, extraFilter, searchQuery]);
+  }, [characters, roleFilter, extraFilter, dfTypeFilter, searchQuery]);
 
   const filterOptions: RoleFilter[] = ["All", "Main", "Supporting"];
   const extraOptions: { value: ExtraFilter; label: string }[] = [
     { value: "All", label: "All" },
     { value: "HasDevilFruit", label: "Devil Fruit" },
     { value: "HasBounty", label: "Has Bounty" },
+  ];
+  const dfTypeOptions: { value: DFTypeFilter; label: string }[] = [
+    { value: "All", label: "All" },
+    { value: "Paramecia", label: "Paramecia" },
+    { value: "Zoan", label: "Zoan" },
+    { value: "Logia", label: "Logia" },
   ];
 
   return (
@@ -100,6 +116,32 @@ export function CharactersClient({
                   className={`rounded-full px-4 py-2 text-sm font-medium transition ${
                     isActive
                       ? "bg-[#7a3c10] text-white"
+                      : "bg-[#1c1c22] text-[#9a8c7e] hover:bg-[#1c1208] hover:text-[#d4933a]"
+                  }`}
+                >
+                  {opt.label}
+                </button>
+              );
+            })}
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-xs text-[#6b6055]">Devil Fruit Type:</span>
+            {dfTypeOptions.map((opt) => {
+              const isActive = dfTypeFilter === opt.value;
+              return (
+                <button
+                  key={opt.value}
+                  type="button"
+                  onClick={() => setDfTypeFilter(opt.value)}
+                  className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+                    isActive
+                      ? opt.value === "Paramecia"
+                        ? "bg-[#2a1a40] text-[#b890e0]"
+                        : opt.value === "Zoan"
+                          ? "bg-[#0e2410] text-[#56b870]"
+                          : opt.value === "Logia"
+                            ? "bg-[#0e1a28] text-[#4090d0]"
+                            : "bg-[#7a3c10] text-white"
                       : "bg-[#1c1c22] text-[#9a8c7e] hover:bg-[#1c1208] hover:text-[#d4933a]"
                   }`}
                 >
