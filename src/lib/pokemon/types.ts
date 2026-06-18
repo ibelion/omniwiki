@@ -40,6 +40,10 @@ export type PokemonRecord = {
     resistances: { type: string; multiplier: number }[];
     immunities: string[];
   };
+  color: string | null;
+  habitat: string | null;
+  isLegendary: boolean;
+  isMythical: boolean;
 };
 
 export type SpeciesRecord = {

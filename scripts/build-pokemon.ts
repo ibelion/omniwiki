@@ -73,7 +73,7 @@ const parseTypes = (): TypeRecord[] => {
   }));
 };
 
-const parsePokemon = (types: TypeRecord[]): PokemonRecord[] => {
+const parsePokemon = (types: TypeRecord[], speciesMap: Map<number, SpeciesRecord>): PokemonRecord[] => {
   const rows = readCsv("pokemon.csv");
   const typeIndex = new Map(types.map((t) => [t.slug, t]));
 
@@ -118,6 +118,7 @@ const parsePokemon = (types: TypeRecord[]): PokemonRecord[] => {
       .filter((d) => d.multiplier === 0)
       .map((d) => d.attackType);
 
+    const sp = speciesMap.get(Number(row.id));
     return {
       id: Number(row.id),
       name: row.name,
@@ -140,6 +141,10 @@ const parsePokemon = (types: TypeRecord[]): PokemonRecord[] => {
         resistances,
         immunities,
       },
+      color: sp?.color ?? null,
+      habitat: sp?.habitat ?? null,
+      isLegendary: sp?.isLegendary ?? false,
+      isMythical: sp?.isMythical ?? false,
     };
   });
 };
@@ -342,8 +347,9 @@ const main = () => {
   ensureOutput();
 
   const types = parseTypes();
-  const pokemon = parsePokemon(types);
   const species = parseSpecies();
+  const speciesMap = new Map(species.map((s) => [s.id, s]));
+  const pokemon = parsePokemon(types, speciesMap);
   const moves = parseMoves();
   const abilities = parseAbilities();
   const items = parseItems();
