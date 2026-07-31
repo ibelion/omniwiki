@@ -1544,5 +1544,14 @@
     "loreLong": null,
     "faction": "Zaun",
     "title": "the Chem-Baroness"
+  },
+  {
+    "champion": "Locke",
+    "slug": "locke",
+    "title": "the Ashen Exorcist",
+    "releaseDate": "2026-06-24",
+    "faction": "Demacia",
+    "loreShort": "Locke was born with the rare ability to perceive and interact with the realm of the dead. For years, he has lived in solitude, exorcising restless spirits and guiding them to the Beyond. When fearsome specters begin terrorizing Demacia, Locke emerges to face them—and quickly finds himself drawn into a much larger conspiracy involving a mysterious Black Rose agent...",
+    "loreLong": null
   }
 ]

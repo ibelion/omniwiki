@@ -1110,6 +1110,21 @@
     "sourceUrl": ""
   },
   {
+    "id": "Locke",
+    "name": "Locke",
+    "image": "https://omniwiki.pages.dev/cdn/leaguecontent/champions/Locke/images/Locke_icon.png",
+    "roles": "Assassin, Mage",
+    "positions": "Middle",
+    "resource": "Mana",
+    "range_type": "Melee",
+    "gender": "Male",
+    "species": "Human",
+    "regions": "Demacia",
+    "release_year": "2026",
+    "tags": "",
+    "sourceUrl": "https://www.leagueoflegends.com/en-us/champions/locke/"
+  },
+  {
     "id": "Lucian",
     "name": "Lucian",
     "image": "https://omniwiki.pages.dev/cdn/leaguecontent/champions/Lucian/images/Lucian_icon.png",

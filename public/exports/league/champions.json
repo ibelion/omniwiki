@@ -4626,23 +4626,20 @@
     "image": "champions/Pantheon/images/Pantheon_icon.png",
     "splashImage": "champions/Pantheon/images/Pantheon_splash.jpg",
     "roles": [
-      "ASSASSIN",
-      "DIVER",
-      "FIGHTER"
+      "Fighter",
+      "Assassin"
     ],
     "positions": [
-      "JUNGLE",
-      "MIDDLE",
-      "SUPPORT",
-      "TOP"
+      "Jungle",
+      "Support",
+      "Top"
     ],
     "resource": "Mana",
     "rangeType": "Melee",
     "regions": [
-      "mount-targon",
-      "mount-targon"
+      "Targon"
     ],
-    "releaseYear": 2010,
+    "releaseYear": 2011,
     "releasePatch": "1.0.0.72",
     "lastPatch": "25.15",
     "difficulty": 4,
@@ -5013,14 +5010,22 @@
     "name": "Zaahen",
     "image": "champions/Zaahen/images/Zaahen_icon.png",
     "splashImage": "champions/Zaahen/images/Zaahen_splash.jpg",
-    "roles": [],
-    "positions": [],
+    "roles": [
+      "Fighter",
+      "Assassin"
+    ],
+    "positions": [
+      "Top",
+      "Jungle"
+    ],
     "resource": "Mana",
     "rangeType": "Melee",
     "regions": [
-      "unaffiliated"
+      "Shurima",
+      "Ionia",
+      "Runeterra"
     ],
-    "releaseYear": null,
+    "releaseYear": 2025,
     "releasePatch": null,
     "lastPatch": null,
     "difficulty": 2,
@@ -5121,5 +5126,33 @@
       "Mage"
     ],
     "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/15.24.1/img/champion/Nami.png"
+  },
+  {
+    "id": 805,
+    "slug": "locke",
+    "name": "Locke",
+    "image": "champions/Locke/images/Locke_icon.png",
+    "splashImage": "champions/Locke/images/Locke_splash.jpg",
+    "roles": [
+      "Assassin",
+      "Mage"
+    ],
+    "positions": [
+      "Middle"
+    ],
+    "resource": "Mana",
+    "rangeType": "Melee",
+    "regions": [
+      "Demacia"
+    ],
+    "releaseYear": 2026,
+    "releasePatch": "26.13",
+    "lastPatch": "26.15",
+    "difficulty": 5,
+    "tags": [
+      "Assassin",
+      "Mage"
+    ],
+    "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/805.png"
   }
 ]

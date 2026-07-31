@@ -1537,5 +1537,14 @@
     "faction": "piltover",
     "loreShort": "Born in Piltover to Zaunite parents, Seraphine can hear the souls of others—the world sings to her, and she sings back. Though these sounds overwhelmed her in her youth, she now draws on them for inspiration, turning the chaos into a symphony. She performs for the sister cities to remind their citizens that they’re not alone, that they’re stronger together, and that, in her eyes, their potential is limitless.",
     "loreLong": null
+  },
+  {
+    "champion": "Locke",
+    "slug": "locke",
+    "title": "the Ashen Exorcist",
+    "releaseDate": "2026-06-24",
+    "faction": "Demacia",
+    "loreShort": "Locke was born with the rare ability to perceive and interact with the realm of the dead. For years, he has lived in solitude, exorcising restless spirits and guiding them to the Beyond. When fearsome specters begin terrorizing Demacia, Locke emerges to face them—and quickly finds himself drawn into a much larger conspiracy involving a mysterious Black Rose agent...",
+    "loreLong": null
   }
 ]

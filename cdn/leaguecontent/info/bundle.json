@@ -5071,7 +5071,7 @@
       "regions": [
         "Targon"
       ],
-      "releaseYear": 2010,
+      "releaseYear": 2011,
       "releasePatch": "1.0.0.72",
       "lastPatch": "25.15",
       "difficulty": 4,
@@ -5497,7 +5497,7 @@
         "Ionia",
         "Runeterra"
       ],
-      "releaseYear": null,
+      "releaseYear": 2025,
       "releasePatch": null,
       "lastPatch": null,
       "difficulty": 2,
@@ -5609,6 +5609,38 @@
       "gender": "Female",
       "species": [
         "Vastayan"
+      ]
+    },
+    {
+      "id": 805,
+      "slug": "locke",
+      "name": "Locke",
+      "image": "champions/Locke/images/Locke_icon.png",
+      "splashImage": "champions/Locke/images/Locke_splash.jpg",
+      "roles": [
+        "Assassin",
+        "Mage"
+      ],
+      "positions": [
+        "Middle"
+      ],
+      "resource": "Mana",
+      "rangeType": "Melee",
+      "regions": [
+        "Demacia"
+      ],
+      "releaseYear": 2026,
+      "releasePatch": "26.13",
+      "lastPatch": "26.15",
+      "difficulty": 5,
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "sourceUrl": "https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/805.png",
+      "gender": "Male",
+      "species": [
+        "Human"
       ]
     }
   ],
@@ -61994,6 +62026,15 @@
       "releaseDate": "2020-10-12T00:00:00.000Z",
       "faction": "piltover",
       "loreShort": "Born in Piltover to Zaunite parents, Seraphine can hear the souls of others—the world sings to her, and she sings back. Though these sounds overwhelmed her in her youth, she now draws on them for inspiration, turning the chaos into a symphony. She performs for the sister cities to remind their citizens that they’re not alone, that they’re stronger together, and that, in her eyes, their potential is limitless.",
+      "loreLong": null
+    },
+    {
+      "champion": "Locke",
+      "slug": "locke",
+      "title": "the Ashen Exorcist",
+      "releaseDate": "2026-06-24",
+      "faction": "Demacia",
+      "loreShort": "Locke was born with the rare ability to perceive and interact with the realm of the dead. For years, he has lived in solitude, exorcising restless spirits and guiding them to the Beyond. When fearsome specters begin terrorizing Demacia, Locke emerges to face them—and quickly finds himself drawn into a much larger conspiracy involving a mysterious Black Rose agent...",
       "loreLong": null
     }
   ],
@@ -230592,6 +230633,10 @@
       {
         "slug": "nami",
         "name": "Nami"
+      },
+      {
+        "slug": "locke",
+        "name": "Locke"
       }
     ]
   }
